@@ -1,0 +1,815 @@
+1
+00:00:00,000 --> 00:00:08,320
+Hola, mi nombre es Pablo Pitel. En este video vamos a retomar los procesos asociados a la
+
+2
+00:00:08,320 --> 00:00:14,640
+construcción de modelos de Machine Learning. Nosotros habíamos visto que para poder generar
+
+3
+00:00:14,640 --> 00:00:20,920
+un modelo confiable teníamos que aplicar los procesos de entrenamiento, validación y prueba.
+
+4
+00:00:20,920 --> 00:00:28,440
+Entonces vamos a hablar un poquito más sobre tareas que se tienen que realizar en estos procesos,
+
+5
+00:00:28,440 --> 00:00:36,000
+relacionándolo específicamente para las redes neuronarias. Bueno, una de las cosas que habíamos
+
+6
+00:00:36,000 --> 00:00:42,320
+hablado es que para poder hacer el entrenamiento, validación y prueba teníamos que dividir todo el
+
+7
+00:00:42,320 --> 00:00:49,120
+conjunto de datos en datos de entrenamiento, validación y prueba. Pero antes de realizar esto,
+
+8
+00:00:49,120 --> 00:00:56,320
+deberíamos llevar los datos al formato que necesita el algoritmo de Machine Learning. En el caso de una
+
+9
+00:00:56,320 --> 00:01:01,840
+red neuronal artificial, necesitamos trabajar con valores numéricos. Entonces de alguna manera,
+
+10
+00:01:01,840 --> 00:01:10,120
+deberíamos transformar datos que no son numéricos a valores numéricos. Una vez que realizamos eso,
+
+11
+00:01:10,120 --> 00:01:18,360
+nos quedaría a ver cómo podríamos mejorar el entrenamiento de la red a través de la
+
+12
+00:01:18,360 --> 00:01:24,200
+normalización de los datos. Entonces vamos a hablar un poquito de cómo preparar los datos a
+
+13
+00:01:24,200 --> 00:01:32,920
+través de esta normalización para poder mejorar el entrenamiento de una red neuronal. La normalización
+
+14
+00:01:32,920 --> 00:01:40,520
+de los datos tiene que ver con llevar todos los datos numéricos a una escala similar. Supongamos
+
+15
+00:01:40,520 --> 00:01:47,880
+que yo quiero hacer algo con el clima donde tengo la temperatura, la humedad y la presión. La
+
+16
+00:01:47,880 --> 00:01:57,560
+temperatura generalmente va a estar en una escala entre, digamos, -40 y +50 grados centígrados. La
+
+17
+00:01:57,560 --> 00:02:03,880
+presión va a tomar un valor mucho más grande porque se mide en hectopascales que está en el
+
+18
+00:02:03,880 --> 00:02:10,320
+orden de los mil. Y por último, la humedad va a ser un porcentaje que generalmente va a estar
+
+19
+00:02:10,320 --> 00:02:16,720
+entre 0 y 100. Entonces fíjense que las escalas de estos tres valores son bastante diferentes,
+
+20
+00:02:16,720 --> 00:02:24,080
+lo cual le puede dificultar a la red neuronal aprender a procesarlos para poder, por ejemplo,
+
+21
+00:02:24,080 --> 00:02:31,520
+predecir cómo va a estar el día. Entonces lo recomendado cuando tenemos situaciones de este
+
+22
+00:02:31,520 --> 00:02:38,520
+estilo es normalizar o estandarizar los datos dentro de una misma escala. La búsqueda de eso,
+
+23
+00:02:38,520 --> 00:02:45,240
+lo que vamos a tratar es que todos los valores de todos los atributos queden en una escala similar.
+
+24
+00:02:45,240 --> 00:02:57,240
+Por ejemplo, entre -1 y 1 o entre 0 y 1. De esa manera, a la red le va a resultar más fácil porque
+
+25
+00:02:57,240 --> 00:03:03,960
+todos los valores van a tener rangos similares. Para realizar esta normalización hay distintas
+
+26
+00:03:03,960 --> 00:03:11,200
+técnicas. Nosotros vamos a ver tres, que son las tres principales, y lo vamos a ver cómo se aplican
+
+27
+00:03:11,200 --> 00:03:20,920
+sobre estos ejemplos. En este ejemplo nosotros tenemos dos atributos x1 y x2 que la mayoría de los
+
+28
+00:03:20,920 --> 00:03:32,760
+datos, como se ve en este gráfico, están entre 15 y 25 para x1 y entre 25 y 35 para x2. Al
+
+29
+00:03:32,760 --> 00:03:40,160
+normalizarlo, vamos a ver que van a quedar más superpuestos entre sí dentro de un rango similar.
+
+30
+00:03:41,280 --> 00:03:49,400
+La primera forma que vamos a ver que se puede aplicar para normalizar los datos es el estándar
+
+31
+00:03:49,400 --> 00:03:56,280
+escalar o escalada estándar que aplica esta formulita. Lo que hace es, por cada atributo,
+
+32
+00:03:56,280 --> 00:04:03,480
+calcula el valor promedio y la varianza, o sea, el desvío estándar al cuadrado. Entonces,
+
+33
+00:04:03,480 --> 00:04:10,120
+por cada ejemplo lo que va a hacer es, al valor de ese atributo le va a restar su promedio y lo va
+
+34
+00:04:10,120 --> 00:04:17,920
+a dividir por la varianza. Como resultado yo voy a tener que todos los atributos van a estar
+
+35
+00:04:17,920 --> 00:04:26,520
+centrados en cero, pudiendo tomar algunos valores negativos y positivos. Fíjense, para el ejemplo
+
+36
+00:04:26,520 --> 00:04:32,160
+que habíamos visto, para x1 y x2 nos quedaría más o menos dentro del rango de menos dos a dos.
+
+37
+00:04:34,760 --> 00:04:41,560
+Por ejemplo, el x2 no queda justo centrado en cero, queda un poquito desplazado por la
+
+38
+00:04:41,560 --> 00:04:48,320
+característica que tienen los datos, que la mayor cantidad quedaría un poquito antes de cero pero
+
+39
+00:04:48,320 --> 00:04:55,480
+todos quedan dentro de la misma escala. Entonces, bueno, este es uno de los métodos. Otra forma
+
+40
+00:04:55,480 --> 00:05:03,080
+de hacerlo es el minmax escalar. Como bien lo dice el nombre, lo que hace el minmax escalar es considerar
+
+41
+00:05:03,080 --> 00:05:10,400
+el valor mínimo y el valor máximo de cada atributo para hacer la normalización. La formulita como
+
+42
+00:05:10,400 --> 00:05:15,480
+parece ahí es, por cada valor le voy a restar el valor mínimo y eso lo voy a dividir por la
+
+43
+00:05:15,480 --> 00:05:23,760
+diferencia entre el valor máximo y el valor mínimo. De esta manera nos van a quedar todos los atributos
+
+44
+00:05:23,760 --> 00:05:31,520
+dentro de un rango bastante similar pero ese rango va a depender en la característica que tienen los
+
+45
+00:05:31,520 --> 00:05:38,600
+datos originales. Si no hay valores negativos, todos los valores me van a quedar entre 0 y 1,
+
+46
+00:05:38,600 --> 00:05:47,360
+que sería el caso de estos dos ejemplos, pero si hay algún valor negativo me va a quedar entre -1 y
+
+47
+00:05:47,360 --> 00:05:55,120
+entonces bueno, voy a tener esa diferencia con respecto al otro que siempre me quedaba centrado
+
+48
+00:05:55,120 --> 00:06:07,000
+con 0 entre -1 y 1. ¿Qué pasa? Estos dos métodos pueden sufrir algún tipo de ruido cuando hay
+
+49
+00:06:07,000 --> 00:06:15,600
+valores online. O sea, hay algunos valores que son demasiado grandes o demasiado pequeños y que no
+
+50
+00:06:15,600 --> 00:06:24,400
+son algo normal que se va a dar en los datos. O sea, por ejemplo de 100 ejemplos tenemos un solo
+
+51
+00:06:24,400 --> 00:06:29,800
+valor que tiene un valor de 1 millón o un valor de -1 millón, a eso se los consideran online
+
+52
+00:06:29,800 --> 00:06:38,680
+because son valores no normales que pueden tener el conjunto de datos. Si yo considero, por ejemplo,
+
+53
+00:06:38,680 --> 00:06:46,920
+un online de 1 millón cuando calculo con el min maxscaler me va a dar un rango que tal vez no
+
+54
+00:06:46,920 --> 00:06:53,680
+representa el comportamiento normal que tiene los datos. Para soportar eso y para mejorar la
+
+55
+00:06:53,680 --> 00:07:01,280
+normalización se suele utilizar el robustscaler. Lo que hace el robustscaler es eliminar los subliners
+
+56
+00:07:01,280 --> 00:07:08,080
+al momento de hacer el cálculo del promedio de la varianza o al momento de calcular el mínimo y el
+
+57
+00:07:08,080 --> 00:07:14,800
+máximo y después aplica alguna de las fórmulas anteriores. Entonces de esa forma se dice que va a
+
+58
+00:07:14,800 --> 00:07:23,640
+generar una normalización más real de los datos que yo necesito para lograr que la red aprenda
+
+59
+00:07:23,640 --> 00:07:32,200
+de forma correcta. Algo que hay que aclarar es que más allá de que si usamos el estándar
+
+60
+00:07:32,200 --> 00:07:41,080
+escalar, el min max o el robust siempre deberíamos aplicar la misma forma de normalización para
+
+61
+00:07:41,080 --> 00:07:47,400
+los datos de entrenamiento, de validación y de prueba. No es que no es que vamos a normalizar
+
+62
+00:07:47,400 --> 00:07:54,680
+solo los datos de entrenamiento y los de validación y prueba no. Tenemos que aplicar siempre las
+
+63
+00:07:54,680 --> 00:08:02,320
+mismas fórmulas en los mismos atributos para los tres conjuntos y en producción cuando vamos a
+
+64
+00:08:02,320 --> 00:08:07,320
+utilizar la red en producción también deberíamos utilizar las mismas fórmulas con los mismos
+
+65
+00:08:07,320 --> 00:08:14,720
+parámetros. En caso contrario la red en producción nos va a dar resultados diferentes a lo que nos
+
+66
+00:08:14,720 --> 00:08:21,160
+daba durante la construcción o el desarrollo de la red neuronal. Entonces es importante que cuando
+
+67
+00:08:21,160 --> 00:08:28,680
+uno aplica algún método de normalización uno guarde y congele los parámetros con la fórmula
+
+68
+00:08:28,680 --> 00:08:34,080
+que aplicó para que en producción se pueda aplicar lo mismo. Muchas veces lo llaman arregla
+
+69
+00:08:34,080 --> 00:08:39,560
+dorada de machine learning porque si uno no lo tiene en cuenta después en producción va a dar
+
+70
+00:08:39,560 --> 00:08:45,240
+cualquier cosa o si yo usé la normalización con los datos de entrenamiento con unos parámetros y
+
+71
+00:08:45,240 --> 00:08:51,400
+para los datos de prueba usó otros parámetros la prueba me va a dar cualquier cosa también porque
+
+72
+00:08:51,400 --> 00:09:00,280
+las escalas de los valores van a ser diferentes y la red no va a saber qué está pasando y nos va a
+
+73
+00:09:00,280 --> 00:09:05,360
+dar un resultado que no era el correcto. Entonces esto es muy importante para tener en cuenta más
+
+74
+00:09:05,360 --> 00:09:10,760
+allá de la fórmula que se aplique o sea la fórmula le va a aplicar alguna librería alguna
+
+75
+00:09:10,760 --> 00:09:20,120
+herramienta pero ahí el ingeniero tiene que tener ahí el conocimiento para darse cuenta de que esa
+
+76
+00:09:20,120 --> 00:09:30,120
+fórmula y esos parámetros los tienen que guardar para poder reutilizarlo luego. En el caso de la
+
+77
+00:09:30,120 --> 00:09:36,840
+validación y la prueba lo más normal es que la normalización se aplique antes de separar los datos
+
+78
+00:09:36,840 --> 00:09:42,880
+en datos de entrenamiento, validación y prueba. Entonces ahí es bastante sencillo pero en producción
+
+79
+00:09:42,880 --> 00:09:50,800
+uno lo tiene que incluir dentro del ejecutable de la red neuronal para que antes de ejecutar la red
+
+80
+00:09:50,800 --> 00:09:59,160
+neuronal los datos que le estamos dando como parámetros se normalizan. Bien, lo que se refiere a
+
+81
+00:09:59,160 --> 00:10:05,440
+separar los datos de entrenamiento de validación y prueba hay algunas técnicas que se pueden aplicar
+
+82
+00:10:05,440 --> 00:10:13,320
+para seleccionar los patrones que se van a usar para cada uno de los procesos. En estos métodos que
+
+83
+00:10:13,320 --> 00:10:19,800
+nos va a decir cómo distribuir los datos uno puede determinar también qué tamaño va a utilizar
+
+84
+00:10:19,800 --> 00:10:26,440
+para cada uno de esos procesos. En general la mayor cantidad de ejemplos se tienen que usar para el
+
+85
+00:10:26,440 --> 00:10:33,720
+entrenamiento. Para la validación pueden ser muy pocos y para la prueba tiene que ser bueno una
+
+86
+00:10:33,720 --> 00:10:41,600
+cantidad no tan pequeña como la validación pero menor que el entrenamiento. Y cuando nosotros
+
+87
+00:10:41,600 --> 00:10:48,800
+estamos usando datos supervisados lo importante es que la clase, el atributo objetivo tenga una
+
+88
+00:10:48,800 --> 00:10:55,040
+representación similar para los tres conjuntos porque si no nos puede pasar que por ejemplo para el
+
+89
+00:10:55,040 --> 00:11:00,360
+entrenamiento nos quedan muchos ejemplos de clase 1 y para la prueba nos quedan muchos ejemplos de
+
+90
+00:11:00,360 --> 00:11:07,200
+clase 2 y ahí el el modelo tal vez no va a funcionar bien, no va a aprender bien porque no tiene una
+
+91
+00:11:07,200 --> 00:11:13,040
+cantidad digamos significativos de ejemplos. Nos quedan los datos desbalanceados como pasaban un
+
+92
+00:11:13,040 --> 00:11:20,400
+ejemplo que habíamos visto antes. Entonces vamos a hablar de algunas técnicas que son técnicas
+
+93
+00:11:20,400 --> 00:11:27,520
+estadísticas de muestreo no hay nada extraño nada especial pero bueno es importante conocerlas
+
+94
+00:11:27,520 --> 00:11:34,800
+para poder aplicarlas correctamente. Bueno para separar los datos de prueba del conjunto que
+
+95
+00:11:34,800 --> 00:11:41,000
+vamos a usar para entrenamiento y validación normalmente se hace un método de muestreo simple
+
+96
+00:11:41,000 --> 00:11:47,200
+o muestreo stratificado. Ante la posibilidad de elegir nosotros recomendamos usar muestreo
+
+97
+00:11:47,200 --> 00:11:54,120
+stratificado porque el muestreo stratificado lo que va a hacer es mantener la proporción de ejemplos
+
+98
+00:11:54,120 --> 00:11:59,400
+por cada clase por cada atributo cada valor del atributo objetivo mientras que el muestreo
+
+99
+00:11:59,400 --> 00:12:06,920
+simple va a tomarlo al azar. Entonces si uno puede utilizar un muestreo stratificado lo va a
+
+100
+00:12:06,920 --> 00:12:13,680
+usar si no usaríamos un muestreo simple y vamos a tratar de confiar tener suerte de que nos quede
+
+101
+00:12:13,680 --> 00:12:21,680
+una proporción bastante similar. En general la proporción que vamos a usar es o 70 a 30 o
+
+102
+00:12:21,680 --> 00:12:28,440
+70 por ciento de los datos para entrenamiento y validación y 30 por ciento para prueba también
+
+103
+00:12:28,440 --> 00:12:35,160
+podríamos usar 80 a 20 y si nosotros tenemos mucha cantidad por ejemplo millones de registro podríamos
+
+104
+00:12:35,160 --> 00:12:46,520
+usar 90 a 10. En general no conviene usar menos de 70 a 30 o 60 a 40 ya le saca bastante los datos
+
+105
+00:12:46,520 --> 00:12:53,360
+de entrenamiento pero bueno depende del caso a veces también se puede aplicar. Bueno una vez
+
+106
+00:12:53,360 --> 00:12:59,040
+que tenemos separado los datos de prueba que esos datos de prueba los vamos a guardar para después
+
+107
+00:12:59,040 --> 00:13:04,720
+realizar la prueba tenemos que separar los datos de entrenamiento de los datos de validación. Acá de
+
+108
+00:13:04,720 --> 00:13:09,880
+vuelta podemos hacer un muestreo stratificado un muestreo simple acá sí podemos hacer 80 a
+
+109
+00:13:09,880 --> 00:13:20,400
+20 o 90 a 10 como les decía los datos de validación no hace falta que sean gran cantidad y en algunas
+
+110
+00:13:20,400 --> 00:13:30,280
+situaciones donde yo puedo yo cuento con muy poca cantidad de ejemplos lo que puedo hacer es aplicar
+
+111
+00:13:30,280 --> 00:13:37,280
+otras técnicas por ejemplo de dejar una afuera donde lo que vamos a hacer es tomar un solo
+
+112
+00:13:37,280 --> 00:13:45,680
+ejemplo de validación que en cada ciclo puede llegar a cambiar entonces ahí uno puede digamos
+
+113
+00:13:45,680 --> 00:13:55,200
+aprovechar esa pequeña cantidad de ejemplos y los ciclos del proceso de entrenamiento para
+
+114
+00:13:55,200 --> 00:14:04,840
+intentar que la red aprenda. Bien, entonces esto se tiene que ver con cómo seleccionar los ejemplos
+
+115
+00:14:04,840 --> 00:14:11,520
+que esto se va a aplicar tanto para datos como para texto como para imágenes. En el caso de imágenes a
+
+116
+00:14:11,520 --> 00:14:18,720
+su vez hay algunas recomendaciones para la preparación de las imágenes de manera que el
+
+117
+00:14:18,720 --> 00:14:26,320
+entrenamiento también de la red sea correcto. Nosotros vamos a necesitar que los datos que
+
+118
+00:14:26,320 --> 00:14:34,560
+le llegan a la red, el formato que tienen las imágenes sea todo similar entonces algo que
+
+119
+00:14:34,560 --> 00:14:42,320
+vamos a tener que hacer previo a utilizar las imágenes en la red es normalizar el tamaño de
+
+120
+00:14:42,320 --> 00:14:49,400
+las imágenes es decir vamos a tener que definir un ancho y un alto estándar puede ser un tamaño
+
+121
+00:14:49,400 --> 00:14:55,180
+grande o pequeño depende del nivel de detalle que necesitamos ahí hay veces que no hace falta
+
+122
+00:14:55,180 --> 00:15:04,240
+tener imágenes hd o 4k para poder ser utilizadas por una red neuronal de hecho tener imágenes muy
+
+123
+00:15:04,240 --> 00:15:11,720
+grandes va a generar que el tiempo de procesamiento sea mayor a veces tener imágenes pequeñitas de
+
+124
+00:15:11,720 --> 00:15:20,400
+100 por 100 o 200 por 200 alcanza y bueno eso lo vamos a tener que decidir depende de cada caso.
+
+125
+00:15:20,400 --> 00:15:27,240
+Lo otro que tendríamos que ver es si trabajamos con imágenes a color que tienen los 3 canales rgb
+
+126
+00:15:27,240 --> 00:15:34,760
+o imágenes en escala de grises bueno eso va a depender también de lo que queremos reconocer si
+
+127
+00:15:34,760 --> 00:15:42,800
+el color es importante o no para determinar qué formato tienen que tener los datos si tenemos
+
+128
+00:15:42,800 --> 00:15:48,280
+algunas imágenes a color y otras imágenes en grises y el color es importante tendríamos que
+
+129
+00:15:48,280 --> 00:15:52,880
+cargar todas las imágenes con los 3 canales a pesar de que las imágenes en blanco y negro
+
+130
+00:15:52,880 --> 00:16:00,320
+van a tener en los 3 canales la misma información. Esto excede como dice acá a que la capa de entrada
+
+131
+00:16:00,320 --> 00:16:06,080
+de tener un tamaño equivalente a todas las imágenes tiene que estar ahí estandarizado el
+
+132
+00:16:06,080 --> 00:16:15,360
+formato de las imágenes. Algo que muchas veces se hace también con imágenes es normalizar los valores
+
+133
+00:16:15,360 --> 00:16:22,280
+de los canales para las imágenes tanto sean color o blanco y negro por cada canal vamos a
+
+134
+00:16:22,280 --> 00:16:30,440
+tener un valor numérico entero entre 0 y 255 generalmente lo que se hace es se lo normaliza
+
+135
+00:16:30,440 --> 00:16:45,680
+dividiéndolo por 255 o se hace una cuentita donde se le resta por 255 dividido 2 para que quede
+
+136
+00:16:46,960 --> 00:16:54,360
+la escala de otra forma y entonces logramos tener valores en cada uno de los píxeles más pequeños
+
+137
+00:16:54,360 --> 00:17:01,600
+y no valores tan grandes como 0 a 255. General se trata de que quede también entre 0 y 1 o entre
+
+138
+00:17:01,600 --> 00:17:11,600
+-1 y 1 para buscar que la rueda pueda aprender mejor. Esto no es obligatorio de hacerlo pero
+
+139
+00:17:11,600 --> 00:17:19,960
+es una buena práctica y ayuda a que la rueda aprenda mejor. Algo que bueno no no mencioné todavía
+
+140
+00:17:19,960 --> 00:17:24,360
+pero es algo obvio es que hay que analizar la calidad de las imágenes las características para
+
+141
+00:17:24,360 --> 00:17:29,080
+definir todos estos parámetros o sea no es que uno lo va a sacar del aire lo va a hacer a partir de
+
+142
+00:17:29,080 --> 00:17:36,400
+los datos que uno tiene. ¿Qué pasa si uno tiene pocos datos? A veces puede pasar que con las imágenes
+
+143
+00:17:36,400 --> 00:17:43,920
+no tengamos una suficiente cantidad representativa para que la red aprenda. De hecho a veces nos
+
+144
+00:17:43,920 --> 00:17:49,920
+puede pasar que por cada clase tenemos un único ejemplo por ejemplo de un gato de este gatito y
+
+145
+00:17:49,920 --> 00:17:57,320
+necesitamos reconocer si en la imagen aparece un gato o no. Entonces hay unas técnicas que se
+
+146
+00:17:57,320 --> 00:18:04,080
+llaman técnicas de data augmentation que lo que busca es a través de transformaciones simples como
+
+147
+00:18:04,080 --> 00:18:09,560
+que le aplicamos Photoshop a las imágenes les generamos mayor diversidad de las imágenes. Entonces
+
+148
+00:18:09,560 --> 00:18:16,400
+ahí lo que podemos hacer es voltear la imagen en forma vertical horizontal bueno ahí es el caso
+
+149
+00:18:16,400 --> 00:18:22,360
+de gato nos quedaría con la cabeza para abajo para arriba no sé si vale la pena hacer volteo vertical
+
+150
+00:18:22,360 --> 00:18:27,440
+eso hay que analizarlo horizontal si lo podremos hacer porque nos queda la cola de un lado de la
+
+151
+00:18:27,440 --> 00:18:35,800
+cola del otro lado girarlo un poquito hacerle zoom acercándonos o haciéndole un zoom hacia atrás
+
+152
+00:18:35,800 --> 00:18:44,600
+alejándonos recortar parte de las imágenes trasladar el gato dentro de distintas posiciones de la
+
+153
+00:18:44,600 --> 00:18:50,440
+imagen es para que quede más a la derecha más a la izquierda más arriba más abajo jugar con el
+
+154
+00:18:50,440 --> 00:18:59,000
+brillo el contraste a veces se le puede agregar un poco de ruido gaussiano como para darle un poco
+
+155
+00:18:59,000 --> 00:19:05,040
+más de robustez a la red y que considere bueno si hay algunos píxeles modificados al azar que
+
+156
+00:19:05,040 --> 00:19:12,640
+no los tenga en cuenta la idea de todo esto es que tengamos más ejemplos al momento de entrenar
+
+157
+00:19:12,640 --> 00:19:18,720
+en la red entonces esto de data augmentation también es una buena práctica que se suele utilizar
+
+158
+00:19:18,720 --> 00:19:29,080
+cuando uno quiere entrenar una red con imágenes y cuesta o sea cuesta un poquito el procesamiento de
+
+159
+00:19:29,080 --> 00:19:33,560
+generar toda esta diversidad de imágenes y uno necesita generar gran cantidad pero uno lo va a
+
+160
+00:19:33,560 --> 00:19:41,280
+hacer una sola vez y después con esos datos puede utilizarlos para entrenar a su roda neuronal
+
+161
+00:19:42,280 --> 00:19:50,560
+en general es una buena práctica hacer todo esto porque a la red en vez de entrenarla siempre con
+
+162
+00:19:50,560 --> 00:19:57,400
+la misma foto del del gato va a tener más ejemplos distintos y después va a tener más posibilidad
+
+163
+00:19:57,400 --> 00:20:06,040
+de poder identificar ahí el gato a pesar de que esté en una posición y con una alguna traslación
+
+164
+00:20:06,040 --> 00:20:16,480
+diferente una vez que tenemos realizado todo este data augmentation para manejar las imágenes muchas
+
+165
+00:20:16,480 --> 00:20:22,920
+veces lo que vamos a hacer es tener un archivo por cada foto por cada imagen y esa imagen va a tener
+
+166
+00:20:22,920 --> 00:20:29,600
+asociado una clase generalmente con un entrenamiento supervisado nosotros tenemos que saber en este
+
+167
+00:20:29,600 --> 00:20:35,280
+este foto corresponde a un gato este foto corresponde a un perro esta foto corresponde a un canario por
+
+168
+00:20:35,280 --> 00:20:40,480
+ejemplo entonces para organizar las imágenes lo que se suele hacer es armar un árbol de
+
+169
+00:20:40,480 --> 00:20:46,680
+directoria donde tenemos una carpeta por cada clase y dentro de esa carpeta tenemos las imágenes
+
+170
+00:20:46,680 --> 00:20:51,840
+que corresponden esa clase esa es una forma de hacerlo otra forma es tener todas las imágenes
+
+171
+00:20:51,840 --> 00:20:59,240
+todas juntas y ponerle o en el nombre del archivo gato 1 gato 2 gato 3 gato 4 perro 1 perro 2 y
+
+172
+00:20:59,240 --> 00:21:05,840
+después nos quedamos con los primeros caracteres del nombre de la imagen para poder identificar la
+
+173
+00:21:05,840 --> 00:21:15,520
+clase o la otra es ponerle un nombre cualquiera a los nombres a los nombres de los archivos y tener
+
+174
+00:21:15,520 --> 00:21:22,800
+un archivo tipo ccb o txt que diga este archivo con este nombre corresponde a esta clase este
+
+175
+00:21:22,800 --> 00:21:30,280
+archnombre corresponde a esta clase y así esas son digamos las tres formas más usadas por la
+
+176
+00:21:30,280 --> 00:21:36,320
+experiencia y por la práctica a nosotros lo que nos resulta más fácil de manejar es esta estructura
+
+177
+00:21:36,320 --> 00:21:42,600
+o sea manejar un árbol de directorio porque uno puede organizarlo más fácil puede buscar las
+
+178
+00:21:42,600 --> 00:21:49,200
+imágenes en forma más sencilla y hacer el mantenimiento es decir podemos agregar o sacar imágenes
+
+179
+00:21:49,200 --> 00:21:56,520
+mucho más fácil que ir editando un archivo de texto cambiando el nombre del archivo que a veces
+
+180
+00:21:56,520 --> 00:22:05,880
+puede ser digamos propenso al error uno se puede equivocar a veces también al tenerlo todo con
+
+181
+00:22:05,880 --> 00:22:13,440
+dentro de un directorio uno puede hacer una vista previa del directorio puede detectar fácilmente
+
+182
+00:22:13,440 --> 00:22:17,800
+si están todas las imágenes correspondientes a la clase que corresponde porque uno se puede
+
+183
+00:22:17,800 --> 00:22:25,320
+equivocar y eso después al arreglar le puede complicar el entrenamiento una vez que armamos
+
+184
+00:22:25,320 --> 00:22:30,240
+ese árbol de directorio lo que teníamos que hacer es dividir las imágenes en imágenes de
+
+185
+00:22:30,240 --> 00:22:37,440
+entrenamiento validación y prueba eso lo podemos hacer cada vez que hacemos la ejecución del
+
+186
+00:22:37,440 --> 00:22:42,360
+entrenamiento o sea antes de hacer el entrenamiento hacemos un muestro de stratificado como vimos
+
+187
+00:22:42,360 --> 00:22:47,920
+antes y dividir los datos de prueba por un lado y después separar los de entrenamiento y validación
+
+188
+00:22:47,920 --> 00:22:56,360
+usando el azar o lo puedo hacer yo previamente y dejarlo fijo entonces que en cada entrenamiento
+
+189
+00:22:56,360 --> 00:23:04,600
+lo vamos a o sea vamos a aplicar los mismos conjuntos de datos de entrenamiento de validación
+
+190
+00:23:04,600 --> 00:23:12,960
+y prueba esto a veces con las imágenes se hace por que uno con las imágenes quiere analizar un poco
+
+191
+00:23:12,960 --> 00:23:17,800
+también la complejidad que tiene cada imagen en cada conjunto y a veces es preferible que
+
+192
+00:23:17,800 --> 00:23:23,360
+quede una complejidad similar para entrenamiento y prueba que no nos queden imágenes capas que
+
+193
+00:23:23,360 --> 00:23:28,800
+muy complicadas muy cargadas de cosas para la prueba y en el entrenamiento usamos imágenes muy
+
+194
+00:23:28,800 --> 00:23:41,120
+puras o a revés entonces conviene hacerlo esta separación antes de ejecutar el entrenamiento
+
+195
+00:23:41,120 --> 00:23:46,320
+revisar que todo tenga una complejidad similar por ejemplo que no nos queden todas de fondo
+
+196
+00:23:46,320 --> 00:23:51,320
+blanco en el entrenamiento y con fondo de distintos colores o con distintas cosas para
+
+197
+00:23:51,320 --> 00:23:55,800
+la prueba porque ahí lo que va a pasar es que cuando nosotros hagamos las pruebas nos va a dar
+
+198
+00:23:55,800 --> 00:24:03,120
+métricas muy malas porque durante la entrenamiento la red no consideró esas situaciones entonces
+
+199
+00:24:03,120 --> 00:24:13,400
+ahí es algún es algo importante para para tenerlo en cuenta bueno de estas cuestiones igual
+
+200
+00:24:13,400 --> 00:24:18,920
+después vamos a hablar más adelante en otro vídeo en otra clase pero bueno estas algunas
+
+201
+00:24:18,920 --> 00:24:25,240
+recomendaciones algunos tips para tener en cuenta al momento de entrenar una red neuronal
+
+202
+00:24:26,040 --> 00:24:30,920
+sobre este proceso nos queda hablar de la definición de los parámetros que se puede
+
+203
+00:24:30,920 --> 00:24:36,320
+usar que se debe usar al momento de entrenar una red neuronal pero eso lo vamos a ver en
+
+204
+00:24:36,320 --> 00:24:38,200
+el siguiente vídeo hasta luego

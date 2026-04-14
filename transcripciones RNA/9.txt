@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:05,360
+Hola, este es el noveno vídeo correspondiente a Redes Neuronales Artificiales.
+
+2
+00:00:05,360 --> 00:00:23,760
+En este vídeo vamos a continuar con el ejemplo del OE exclusivo, que ya vimos nosotros cómo usa las distintas fórmulas y el concepto del gradiente decreciente y la propagación del error hacia atrás, la Red Back Propagation, para ajustar los pesos de las conexiones.
+
+3
+00:00:23,760 --> 00:00:40,000
+Ahora lo que vamos a hacer es usar este programita, que se pueden bajar de este link, para hacer el entrenamiento de todos los patrones del problema correspondiente al OE exclusivo.
+
+4
+00:00:40,000 --> 00:00:51,120
+En este programita van a notar que hay una neurona oculta menos, o sea, tiene solo 5 neuronas, lo cual es suficiente para aprender el OE exclusivo.
+
+5
+00:00:51,120 --> 00:01:06,880
+Y lo que tiene de interesante este programita, que es lo que por eso lo elegimos para mostrárselos, es que nos permite representar de qué manera van a ir ajustando los pesos, las neuronas de ocultas.
+
+6
+00:01:06,880 --> 00:01:15,840
+Fíjense que hay una línea rosa correspondiente a la primer neurona oculta y una línea celeste correspondiente a la segunda neurona oculta.
+
+7
+00:01:15,840 --> 00:01:37,760
+Esto lo que nos va a mostrar es de qué manera se van a ir ajustando los distintos pesos con esta función lineal interna que usa la red, para preparar los datos de forma que la neurona de salida pueda clasificar en forma correcta los patrones de entradas que corresponden a un 1 de los que corresponden a un 0.
+
+8
+00:01:37,760 --> 00:01:53,360
+Acá, para representar eso, vamos a ver cómo estos distintos puntitos que representan a los patrones, donde el puntito verde y el azul van a responder a una salida deseada de 1 y el amarillo y el rojo a una salida deseada de 0.
+
+9
+00:01:53,360 --> 00:02:11,200
+Vamos a ver cómo se empiezan a mover, dado a la preparación que van a hacer las neuronas ocultas, y que a partir de la modificación de los dos pesos de las conexiones de esta neurona de salida, se va cambiando la ubicación de esta función lineal que logra hacer la clasificación.
+
+10
+00:02:11,200 --> 00:02:22,080
+Entonces, vamos a poner Ejecutar, fíjense que ahí se empiezan a desplazar las líneas y en el caso del gráfico de la derecha se empiezan a desplazar los puntos.
+
+11
+00:02:22,080 --> 00:02:34,400
+Por ahora, está clasificando mal, porque tiene por un lado el verde y el azul que corresponden a un 1, pero también está el rojo que corresponde a un 0, entonces lo tiene que separar.
+
+12
+00:02:34,400 --> 00:02:51,680
+Entonces, vamos iterando, acá arriba, fíjense que aparece el número de iteración, fíjense que más o menos para 1600, la iteración 1600, logró ya clasificar en forma correcta, pero como tiene un error, está tratando de minimizarlo cada vez más, por eso sigue iterando.
+
+13
+00:02:51,680 --> 00:03:15,200
+Está tratando de llevar a que la salida obtenida por la última neurona sea exactamente un 1 y sea exactamente un 0. Bueno, dado que esto demoraba mucho tiempo, nosotros lo adelantamos y más o menos en la iteración 30000, en la 29.316, se logra el entrenamiento exitoso de la red.
+
+14
+00:03:15,200 --> 00:03:31,920
+Se logra que la red me devuelva un 1 cuando corresponde un 1 y un 0 cuando corresponde un 0. Entonces, ahí lo que sucedió es que mi red, luego de iterar bastantes ciclos, logra aprender en forma exitosa el problema.

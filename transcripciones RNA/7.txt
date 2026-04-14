@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:06,880
+Hola, este es el séptimo vídeo correspondiente a redes neuronales artificiales. En este vídeo
+
+2
+00:00:06,880 --> 00:00:14,160
+vamos a comenzar a hablar sobre las redes multi perceptron con regla delta generalizada o de
+
+3
+00:00:14,160 --> 00:00:21,600
+aprendizaje por retro propagación del error cuya traducción es "back propagation" y es la forma
+
+4
+00:00:21,600 --> 00:00:29,680
+simplificada que vamos a utilizar para denominarlas. El nombre que tienen estas redes neuronales tiene
+
+5
+00:00:29,680 --> 00:00:37,320
+que ver con su relación con las redes que vimos anteriormente, las redes perceptron. En este caso
+
+6
+00:00:37,320 --> 00:00:43,240
+las redes back propagation se denominan como multi perceptron porque van a estar formados
+
+7
+00:00:43,240 --> 00:00:49,840
+por muchas neuronas de tipo perceptron, entonces una red back propagation lo que hace es combinar
+
+8
+00:00:49,840 --> 00:00:59,040
+neuronas perceptron como las que vimos anteriormente para resolver un problema más complejo que
+
+9
+00:00:59,680 --> 00:01:06,400
+la red perceptron por sí sola no podría. Entonces esta red back propagation tiene como
+
+10
+00:01:06,400 --> 00:01:13,400
+característica que pueden resolver tanto funciones lineales como no lineales. Para lograr esto y
+
+11
+00:01:13,400 --> 00:01:19,160
+lograr aprender se utiliza un aprendizaje especial donde se aplica el concepto del
+
+12
+00:01:19,160 --> 00:01:25,800
+gradiente de creciente y la propagación hacia atrás del error. Más adelante vamos a ver cómo
+
+13
+00:01:25,800 --> 00:01:32,640
+funciona esto. Lo que podemos adelantarles es que este tipo de aprendizaje pertenece al mismo
+
+14
+00:01:32,640 --> 00:01:37,840
+tipo que el que tenían las redes perceptron sigue siendo un aprendizaje por corrección de error
+
+15
+00:01:37,840 --> 00:01:45,880
+supervisado y offline. Estas redes también son heterosociativas y a diferencia de las anteriores
+
+16
+00:01:45,880 --> 00:01:56,320
+son multicapa. Para ver en qué tipo de problemas se puede aplicar una red back propagation podemos
+
+17
+00:01:56,320 --> 00:02:02,360
+decir que sus principales aplicaciones tienen que ver con la clasificación de datos con la
+
+18
+00:02:02,360 --> 00:02:09,480
+estimación o la predicción de resultados o sea que esta red me permite por un lado yo la puedo
+
+19
+00:02:09,480 --> 00:02:18,200
+usar para que aprenda cómo clasificar información de acuerdo a ejemplos que yo les di anteriormente
+
+20
+00:02:18,200 --> 00:02:25,360
+a la red para que cumpla el mismo criterio. Entonces por ejemplo la podría utilizar para que me
+
+21
+00:02:25,360 --> 00:02:32,720
+clasifique productos de acuerdo a un criterio o clientes. Por ejemplo me podría llegar a
+
+22
+00:02:32,720 --> 00:02:41,080
+decir si un cliente es confiable para que yo le pueda dar un crédito o no. Le podría
+
+23
+00:02:41,080 --> 00:02:49,800
+clasificar productos de acuerdo a su calidad teniendo en cuenta las características que tienen.
+
+24
+00:02:49,800 --> 00:02:57,320
+En el caso de la estimación y predicción es algo muy parecido pero dado que estamos hablando de
+
+25
+00:02:57,320 --> 00:03:02,520
+estimar o predecir lo que está pasando estamos hablando a futuro de lo que va a pasar entonces
+
+26
+00:03:02,520 --> 00:03:08,600
+por ejemplo esta red yo la puedo aplicar para predecir el clima a partir de la situación
+
+27
+00:03:08,600 --> 00:03:16,000
+climática actual entonces a partir de la temperatura, humedad y presión actual estimar
+
+28
+00:03:16,000 --> 00:03:22,600
+cómo estará el clima dentro de una hora o al día siguiente. También se podría utilizar para
+
+29
+00:03:22,600 --> 00:03:31,800
+estimar el valor de una acción en la bolsa de acuerdo a la situación actual predecir cuál va a
+
+30
+00:03:31,800 --> 00:03:41,280
+ser la evolución de un paciente de acuerdo a su situación actual. Entonces esta red tiene muchas
+
+31
+00:03:41,280 --> 00:03:49,880
+aplicaciones se puede aplicar en muchos dominios y muchos tipos de organizaciones por eso presenta
+
+32
+00:03:49,880 --> 00:03:57,680
+una gran utilidad. Para mostrarles cómo se puede aplicar esta red para estas aplicaciones vamos
+
+33
+00:03:57,680 --> 00:04:08,160
+a verlo en un ejemplo bastante simple lo que le vamos a solicitar a nuestra red entonces es que nos
+
+34
+00:04:08,160 --> 00:04:14,440
+resuelva este test de inteligencia obviamente no se lo vamos a pedir una red se lo vamos a pedir a la
+
+35
+00:04:14,440 --> 00:04:20,680
+red neuronal que ustedes tienen en sus mentes entonces ahí lo que tendrían que hacer ustedes es tratar
+
+36
+00:04:20,680 --> 00:04:26,600
+de encontrar un patrón o una relación que hay entre los datos de entrada y los datos de salida
+
+37
+00:04:26,600 --> 00:04:34,640
+para luego estimar o predecir cuál debería ser la salida para el último dato de entrada bueno
+
+38
+00:04:34,640 --> 00:04:40,040
+supongo que ya lo sacaron así que les vamos a mostrar la respuesta fíjense lo que se hace es
+
+39
+00:04:40,040 --> 00:04:45,600
+multiplicar el dato de entrada por el valor anterior y eso nos daría un resultado ese sería la
+
+40
+00:04:45,600 --> 00:04:51,080
+relación que podemos encontrar nosotros como seres humanos una red neuronal no encontraría esta
+
+41
+00:04:51,080 --> 00:04:59,080
+relación pero lo que podría hacer es modificar los pesos de las conexiones para lograr que si yo
+
+42
+00:04:59,080 --> 00:05:05,720
+le ingres un 3 me devuelvo un 6 si yo le ingres un 2 me devuelvo un 2 y así con cada uno de los
+
+43
+00:05:05,720 --> 00:05:14,240
+números este este tipo de test de inteligencia que vimos recién tiene un solo dato de entrada pero
+
+44
+00:05:14,240 --> 00:05:19,120
+también podría tener más de uno o sea yo podría tener una red neuronal que tiene más de un dato
+
+45
+00:05:19,120 --> 00:05:25,280
+de entrada para generar una salida entonces en este nuevo test yo tengo los dos datos que están
+
+46
+00:05:25,280 --> 00:05:31,960
+a la izquierda y a la derecha y el resultado debería ser el valor que está en el medio bueno supongo
+
+47
+00:05:31,960 --> 00:05:38,160
+que ya lo sacaron en este caso entonces lo que hay que hacer es sumar los números de afuera más
+
+48
+00:05:38,160 --> 00:05:45,480
+externos y luego los números de más adentro los internos y con eso tenemos el resultado el caso
+
+49
+00:05:45,480 --> 00:05:51,760
+de la red neuronal tampoco se daría cuenta de esta operación matemática lo que pasaría es que
+
+50
+00:05:51,760 --> 00:05:57,840
+nuestra red neuronal también debería encontrar una combinación de pesos para que a partir de los
+
+51
+00:05:57,840 --> 00:06:06,840
+datos de entrada me genere dicha salida obviamente que en una red neuronal artificial con 13 ejemplos
+
+52
+00:06:06,840 --> 00:06:16,680
+para aprender no les no les sería suficiente son muy pocos datos y eso no alcanzaría lo que tendríamos
+
+53
+00:06:16,680 --> 00:06:25,640
+que hacer es darle mucha más cantidad de datos por lo menos 20 o 10 ejemplos para que nuestra red
+
+54
+00:06:25,640 --> 00:06:33,480
+aprenda a mayor simplicidad de la relación que van a tener los datos de salida y los datos de entrada
+
+55
+00:06:33,480 --> 00:06:39,920
+necesito menor cantidad de ejemplos pero cuanto más complejo sea la relación voy a necesitar mayor
+
+56
+00:06:39,920 --> 00:06:45,800
+ejemplos para que la red pueda aprender efectivamente a resolver el problema
+
+57
+00:06:45,800 --> 00:06:55,200
+en nuestro caso vamos a corrernos de nuevo el vamos a ver un ejemplo de cómo se puede utilizar
+
+58
+00:06:55,200 --> 00:07:02,400
+una red propagation para aprender un problema bastante sencillo que es el problema del o exclusivo
+
+59
+00:07:02,400 --> 00:07:08,160
+este problema habíamos dicho que una neurona perceptron no la puede llegar a aprender porque
+
+60
+00:07:08,160 --> 00:07:16,000
+no es lineal es un problema no lineal pero vamos a ver cómo una red propagation que en este ejemplo
+
+61
+00:07:16,000 --> 00:07:21,840
+vamos a tener una bag propagation con tres capas en la primera capa tenemos dos neuronas de entrada
+
+62
+00:07:21,840 --> 00:07:29,280
+porque los datos de entrada van a ser dos en la copo oculta definimos tres neuronas ocultas porque
+
+63
+00:07:29,280 --> 00:07:37,200
+nos pareció aceptable para este problema y como neurona de salida tenemos una única dado que
+
+64
+00:07:37,200 --> 00:07:43,360
+la salida que va a generar para este problema es uno bien entonces acá tendríamos los patrones
+
+65
+00:07:43,360 --> 00:07:48,480
+que queremos resolver con cuatro patrones serían todas las combinaciones posibles así que no hace
+
+66
+00:07:48,480 --> 00:07:56,600
+falta definir ninguno más ya tenemos la topología de nuestra red definida entonces vamos a ver ahora
+
+67
+00:07:56,600 --> 00:08:02,680
+los otros elementos de esta red neuronal por un lado vamos a tener las funciones que se van a aplicar
+
+68
+00:08:02,680 --> 00:08:10,080
+bag propagation la red neuronal nos solicita que la función que se aplica en cada neurona tiene que
+
+69
+00:08:10,080 --> 00:08:17,640
+ser una función derivable por eso mismo la función que nosotros vamos a aplicar como función combinada
+
+70
+00:08:17,640 --> 00:08:24,680
+de la función de activación y función de salida va a ser la entrada neta menos el umbral y a eso
+
+71
+00:08:24,680 --> 00:08:30,000
+lo aplicamos la función sigmoidal dado que la función sigmoidal es derivable la podemos aplicar
+
+72
+00:08:30,000 --> 00:08:37,960
+por otro lado ya que la función sigmoidal me puede dar cualquier valor entre 0 y 1 yo voy a
+
+73
+00:08:37,960 --> 00:08:43,800
+necesitar transformar ese valor continua en un valor discreto entonces vamos a tener una función
+
+74
+00:08:43,800 --> 00:08:51,520
+extra que es la función para la salida final de la red neuronal que me va a indicar que si la salida
+
+75
+00:08:51,520 --> 00:08:59,640
+de la neurona 6 es mayor a 0.5 voy a considerar que el resultado es un 1 si el valor de salida de la
+
+76
+00:08:59,640 --> 00:09:07,360
+neurona 6 es menor igual a 0.5 la salida va a ser un 0 a este valor de 0.5 lo vamos a llamar
+
+77
+00:09:07,360 --> 00:09:14,600
+umbral de clasificación porque va a ser el valor que me va a determinar cómo redondear nuestros
+
+78
+00:09:14,600 --> 00:09:21,720
+resultados para el problema que yo quiero resolver si la salida del problema que yo quiero resolver
+
+79
+00:09:21,720 --> 00:09:27,080
+era un valor continuo no tendría que usar ningún umbral de clasificación pero dado que yo quiero
+
+80
+00:09:27,080 --> 00:09:35,360
+un valor discreto 0 o 1 lo tengo que utilizar bien por otro lado para este ejemplo vamos a usar
+
+81
+00:09:35,360 --> 00:09:43,920
+estos valores de un braal que ya están definidos que en nuestro ejemplo no no van a cambiar los valores
+
+82
+00:09:43,920 --> 00:09:49,680
+del umbral van los vamos a mantener constantes y que fueron definidos en forma literaria el factor
+
+83
+00:09:49,680 --> 00:09:55,200
+de aprendizaje el alfa que vamos a utilizar va a ser un alfa muy grande un valor de 3 porque nosotros
+
+84
+00:09:55,200 --> 00:10:01,960
+en el ejemplo les vamos a mostrar solo cómo se aprende el primer patrón en un caso real el valor
+
+85
+00:10:01,960 --> 00:10:08,920
+del alfa recuerdan tenía que ser un valor más pequeño como máximo debería ser 0.3 entonces
+
+86
+00:10:08,920 --> 00:10:15,040
+tenganlo en cuenta esto al momento de usar una redback or pagation para resolver un problema que el
+
+87
+00:10:15,040 --> 00:10:21,200
+valor del alfa tiene que ser un valor más pequeño y por último tenemos los valores de los pesos
+
+88
+00:10:21,200 --> 00:10:27,640
+iniciales que son los que aparecen en la tabla de abajo estos valores también fueron definidos al
+
+89
+00:10:27,640 --> 00:10:36,520
+azar o pseudozar estos son los valores que durante el entrenamiento se van a modificar para lograr
+
+90
+00:10:36,520 --> 00:10:45,320
+que nuestra red aprenda como ya estamos bastante en un tiempo bastante largo del vídeo vamos a cortar
+
+91
+00:10:45,320 --> 00:10:50,440
+acá y el entrenamiento lo vamos a explicar en el siguiente vídeo tal vez

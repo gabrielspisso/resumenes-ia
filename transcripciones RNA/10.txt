@@ -1,0 +1,511 @@
+1
+00:00:00,000 --> 00:00:11,000
+Hola, mi nombre es Pablo Pitel y en este vídeo vamos a ver algunas recomendaciones para el diseño y el entrenamiento de una red multipersceptron backpropagation.
+
+2
+00:00:11,000 --> 00:00:23,000
+En las cuestiones del diseño, que tienen que ver mucho con encontrar la topología óptima para una red multipersceptron backpropagation,
+
+3
+00:00:23,000 --> 00:00:35,000
+vamos a hablar de qué cantidad de neuronas debería tener cada capa de la red, qué tipo de funciones deberían utilizar las neuronas de cada tipo de capa,
+
+4
+00:00:35,000 --> 00:00:50,000
+qué cantidad de capas ocultas debería tener la red y, por último, qué manera se debería aplicar para definir los pesos iniciales de las conexiones entre las capas de la red.
+
+5
+00:00:50,000 --> 00:01:04,000
+Para poder describir estas recomendaciones, nosotros vamos a hablar primero de la capa de entrada, después de las capas ocultas y, por último, de la capa de salida.
+
+6
+00:01:04,000 --> 00:01:17,000
+Bueno, en lo que se refiere a la capa de entrada, esta capa nos va a determinar qué valores va a recibir la red neuronal para procesar.
+
+7
+00:01:17,000 --> 00:01:28,000
+Entonces, es el medio que va a utilizar la red neuronal para recibir información del exterior, es decir, que es la interfaz de entrada de la red.
+
+8
+00:01:28,000 --> 00:01:36,000
+Como nosotros ya vimos, en una red neuronal necesitamos que todos los valores que reciba la red sean valores numéricos.
+
+9
+00:01:36,000 --> 00:01:57,000
+Lo que puede variar es que yo puedo utilizar valores reales o valores binarios. Entonces, depende de eso, va a determinar qué cantidad y qué tipo de neuronas de entrada voy a tener que aplicar dentro de mi red neuronal.
+
+10
+00:01:57,000 --> 00:02:08,000
+Si yo utilizo valores reales, yo por cada valor o atributo de entrada voy a tener una neurona de entrada y esa neurona de entrada va a utilizar una función identidad.
+
+11
+00:02:08,000 --> 00:02:17,000
+O sea, lo que va a pasar es que el valor de entrada, así como fue definido en el exterior, lo va a recibir esta capa de entrada.
+
+12
+00:02:17,000 --> 00:02:30,000
+En el caso de que sean valores codificados de forma binaria, yo voy a tener tanta cantidad de neuronas de entrada como cantidad de dígitos binarios que va a tener ese atributo de entrada.
+
+13
+00:02:30,000 --> 00:02:41,000
+Entonces, por ejemplo, si yo estoy codificando un valor que necesita tres valores binarios para poder recibir ese atributo, voy a tener que tener tres neuronas de entrada.
+
+14
+00:02:41,000 --> 00:02:50,000
+En este caso también se usa una función identidad. O sea, el valor que entra es recibido tal cual llega.
+
+15
+00:02:50,000 --> 00:02:58,000
+Bien. ¿Qué pasa si yo tengo una red que necesito combinar valores reales y valores binarios? ¿Es posible hacer eso? Sí.
+
+16
+00:02:58,000 --> 00:03:05,000
+Capaz que no es del todo recomendable porque estamos mezclando dos tipos de codificación, pero la red lo soporta. Entonces, ¿qué va a pasar?
+
+17
+00:03:05,000 --> 00:03:18,000
+Por ejemplo, yo tengo un valor de entrada real, entonces ese va a tener su neurona de entrada real con función lineal.
+
+18
+00:03:18,000 --> 00:03:32,000
+Y por otro lado, para otro que tiene, qué sé yo, cinco valores binarios va a recibir, entonces tengo que agregar cinco neuronas de entrada con cada una que va a recibir un dígito del valor binario.
+
+19
+00:03:32,000 --> 00:03:36,000
+Entonces, la capa de entrada en este caso tendría seis neuronas.
+
+20
+00:03:36,000 --> 00:03:47,000
+Bien. Fíjense que esto es bastante sencillo. No hay que hacer ningún tipo de prueba directamente a partir de la definición de los datos de entrada.
+
+21
+00:03:47,000 --> 00:03:59,000
+Yo puedo ya definir cómo va a ser mi capa de entrada. Así que esto se suele definir bastante rápido.
+
+22
+00:03:59,000 --> 00:04:10,000
+La complicación en las redes Multiperceptron está en definir la cantidad de neuronas y capas ocultas que va a tener la red. ¿Por qué?
+
+23
+00:04:10,000 --> 00:04:18,000
+Según el teorema de aproximación universal, en las redes Multiperceptron Backpropagation yo puedo hacer una red suficientemente grande,
+
+24
+00:04:18,000 --> 00:04:33,000
+es decir, con gran cantidad de neuronas ocultas para que puedan aprender cualquier tipo de problema, puedan aprender a aproximar cualquier conjunto de datos con un buen grado de precisión.
+
+25
+00:04:33,000 --> 00:04:49,000
+Pero en este teorema no se define qué cantidad ni cómo se debería calcular esa cantidad de neuronas ocultas que debería tener la red.
+
+26
+00:04:49,000 --> 00:05:04,000
+Hubo intentos y hay todavía intentos de encontrar una regla general que me permita definir a partir del conjunto de datos o las características del problema
+
+27
+00:05:04,000 --> 00:05:19,000
+qué cantidad de neuronas ocultas debería tener la red. Pero ninguna funciona en todos los casos. Ninguna de esas reglas, ni fórmulas, ni cotas es útil para todos los casos.
+
+28
+00:05:19,000 --> 00:05:34,000
+No puede dar una idea inicial, pero después uno la tiene que adaptar al problema. Entonces, no es posible que les podamos decir "bueno, para este problema necesitan tantas neuronas ocultas". No.
+
+29
+00:05:34,000 --> 00:05:45,000
+Es más una cuestión, ahora como vamos a hablar, de experimentación para tratar de encontrar esa cantidad de neuronas.
+
+30
+00:05:45,000 --> 00:06:01,000
+Pero bueno, en general podemos decir estos principios que nos pueden dar una idea de cómo determinar la cantidad inicial de neuronas y capas ocultas.
+
+31
+00:06:01,000 --> 00:06:15,000
+Bueno, el primer principio dice "a mayor cantidad de neuronas y de capas, la red posee mayor capacidad de aprendizaje y también mayor complejidad, por lo que aumenta el tiempo de aprendizaje".
+
+32
+00:06:15,000 --> 00:06:29,000
+Es decir, yo podría hacer una red muy grande para asegurarme que después de aprender la complejidad de los datos, pero dada la complejidad que va a tener la red, el tiempo de aprendizaje también va a ser muy grande.
+
+33
+00:06:29,000 --> 00:06:38,000
+Entonces, posiblemente eso me va a traer inconvenientes porque me va a costar que la red aprenda.
+
+34
+00:06:38,000 --> 00:06:50,000
+Entonces, en general, en gran cantidad de casos, tener una única capa oculta es suficiente para la mayoría de los problemas.
+
+35
+00:06:50,000 --> 00:06:58,000
+Sobre todo problemas sencillos, donde hay pocos atributos de entrada y pocos valores de salida que genera la red.
+
+36
+00:06:58,000 --> 00:07:10,000
+Y esto funciona bastante bien, pero hay veces que hay que poner una cantidad de neuronas ocultas bastante grande en esa capa oculta, en esa única capa oculta.
+
+37
+00:07:10,000 --> 00:07:21,000
+Entonces, para agilizar un poco el aprendizaje y el entrenamiento de la red, se suele recomendar usar dos capas ocultas.
+
+38
+00:07:21,000 --> 00:07:32,000
+O sea, en vez de tener 100 neuronas en una única capa oculta, tal vez lo más recomendado es poner 70 en una y 30 en la segunda capa oculta.
+
+39
+00:07:32,000 --> 00:07:53,000
+Y ahí la red va a tender a aprender más rápido. Esto se da por cómo funciona el ajuste de los pesos y la capacidad de la red, que muchas veces tener este tipo de topología hace que la red aprenda mejor.
+
+40
+00:07:53,000 --> 00:08:08,000
+Pero no hay que, digamos, entusiasmarse con poner muchas capas ocultas, porque si yo tengo 3, 5, 10 capas ocultas va a llegar un momento en que a la red le va a costar más aprender.
+
+41
+00:08:08,000 --> 00:08:33,000
+De hecho, ya con más de tres capas ocultas aparece lo que se llama el Vanishing Gradient Problem, que nos dice que el ajuste por el algoritmo de retro propagación del error, el back propagation del error, va a tener menor influencia en las primeras capas y eso va a generar que la red le cueste aprender.
+
+42
+00:08:33,000 --> 00:08:45,000
+Por ejemplo, si yo tengo una red que tiene cinco capas ocultas, el ajuste de las capas quinta y cuarta va a ser muy bueno por la retro propagación del error.
+
+43
+00:08:45,000 --> 00:09:14,000
+De la capa tres más o menos y ya de la capa dos y de la capa uno va a tener menor influencia, el ajuste no va a ser tan bueno y eso va a llevar a que los datos que se reciben del exterior no puedan, digamos, modificarse de manera correcta y entonces la red le va a costar más generar el resultado que corresponde.
+
+44
+00:09:15,000 --> 00:09:29,000
+Entonces esto suele aparecer con más de tres capas ocultas, entonces ahí es como que hay una cota práctica en la cantidad de capas ocultas que debería tener Larla.
+
+45
+00:09:29,000 --> 00:09:50,000
+De todas formas, en teoría yo podría tener infinita cantidad de capas ocultas. Hay algunos métodos que permiten reducir este problema del gradiente, pero bueno, de todas maneras suele aparecer y entonces hay que tenerlo en cuenta.
+
+46
+00:09:50,000 --> 00:10:02,000
+Bien, entonces teniendo en cuenta todas estas complicaciones, les decía usar fórmulas ocotas nos sirve en todos los casos, entonces nos queda otra que hacer experimentación.
+
+47
+00:10:02,000 --> 00:10:29,000
+Esa experimentación se puede hacer de manera manual o de manera automática. En el caso de una experimentación manual, ahí el ingeniero va a tener que ocuparse de definir una topología inicial de la red neuronal, por ejemplo va a definir, bueno, voy a tener tantas cantidades de neuronas de entrada, esta cantidad de neuronas de salida y una capa oculta con tantas neuronas.
+
+48
+00:10:29,000 --> 00:10:43,000
+Yo hago el entrenamiento, después que tengo el entrenamiento realizado, evalúo a la red utilizando ahí los datos de validación o los de prueba, calculo las métricas y analizo los resultados.
+
+49
+00:10:43,000 --> 00:11:12,000
+Si yo digo, bueno, la red funciona bien, ya está, pero generalmente eso no va a pasar, entonces tengo que definir una nueva topología, entonces digo, bueno, agrego más neuronas ocultas, agrego más capas, voy modificando la topología y vuelvo a hacer el entrenamiento, la evalúo, analizo los resultados y ese proceso lo hago n veces hasta que logro obtener una red que se considera aceptable para resolver el problema.
+
+50
+00:11:12,000 --> 00:11:38,000
+Entonces, este proceso de experimentación manual va a llevar mucho trabajo de prueba, análisis y corrección y, bueno, puede ser bastante tedioso, sobre todo con redes donde el tiempo de entrenamiento puede ser de horas o a veces de días, entonces hay que poner a correr la red, uno se va, después tiene que volver a analizar los resultados,
+
+51
+00:11:38,000 --> 00:12:06,000
+definir qué cambios hacer, probando algo nuevo, también va a haber un ajuste de los parámetros, que eso lo vamos a ver en otro video, entonces es bastante, un trabajo bastante tedioso que, bueno, requiere bastante experiencia también en la definición de la topología de la red para lograr que encontre la topología ideal.
+
+52
+00:12:06,000 --> 00:12:23,000
+Para tratar de, digamos, de automatizar todo este proceso de experimentación, hay varios procedimientos y herramientas que se pueden aplicar, nosotros les vamos a poner como ejemplo dos, pero sepan que hay muchos más.
+
+53
+00:12:23,000 --> 00:12:41,000
+El primero, lo que hace es utilizar un algoritmo de computación evolutiva, similar a los algoritmos genéticos, donde en el cromosoma de este algoritmo vamos a definir la topología de una red neuronal,
+
+54
+00:12:41,000 --> 00:12:54,000
+y la función de aptitud lo que va a hacer es ejecutar el entrenamiento de esa red con esa topología y probar la red, de acuerdo a que tan buenas sean las métricas, va a definir el valor de aptitud.
+
+55
+00:12:54,000 --> 00:13:12,000
+Entonces, el algoritmo va a ir aplicando a los operadores de cruzamiento, mutación, para tratar de generar variaciones de redes neuronales, va a usar el de selección para descartar topologías que no son tan buenas,
+
+56
+00:13:12,000 --> 00:13:25,000
+y la idea es que después de ciclar muchas veces, el algoritmo nos dé una red, no sé si la mejor, pero una red aceptable para aprender un conjunto de datos.
+
+57
+00:13:25,000 --> 00:13:44,000
+Obviamente, y todo este proceso es bastante lento, es automático, lo va a ejecutar todo ahí en la computadora, pero va a ser bastante lento porque por cada uno de los individuos yo voy a tener una red neuronal que tiene que ser entrenada y probada.
+
+58
+00:13:44,000 --> 00:13:56,000
+Si el entrenamiento lleva minutos, la ejecución del algoritmo puede llevar horas. Si el entrenamiento de la red neuronal lleva horas, el algoritmo llevaría días para correr,
+
+59
+00:13:56,000 --> 00:14:07,000
+porque yo tengo que ciclar bastantes veces para tratar de que el algoritmo me encuentre una red candidata.
+
+60
+00:14:07,000 --> 00:14:24,000
+Obviamente que no nos va a garantizar encontrar siempre la mejor red, pero hay veces que nos da una idea de una topología aceptable, que después por un ajuste fino el ingeniero puede tratar de optimizar.
+
+61
+00:14:24,000 --> 00:14:46,000
+Entonces, bueno, me puede dar como una recomendación, bueno, con esta topología me daría bastante bien. Es más, uno puede analizar todo el log y ver varias topologías candidatas y de todo eso de elegir una que a través de un ajuste fino se puede llegar a aplicar en producción.
+
+62
+00:14:46,000 --> 00:15:03,000
+La otra posibilidad de hacer experimentación automática que vamos a ver es la herramienta AutoQueras. AutoQueras busca lo mismo, tratar de automatizar la búsqueda de la topología de la red ideal.
+
+63
+00:15:03,000 --> 00:15:09,000
+La diferencia con la anterior es que en vez de usar algoritmos evolutivos lo que hace es aplicar métodos de búsqueda.
+
+64
+00:15:09,000 --> 00:15:31,000
+Es como que tiene definido un árbol de búsqueda con distintas topologías y parámetros de redes neuronales y entonces va a ir probando, aplicando algunos métodos heurísticos con distintas topologías hasta que encuentra el mejor modelo.
+
+65
+00:15:31,000 --> 00:15:41,000
+De todas formas, no me garantiza que sea siempre el mejor modelo, va a ser el mejor modelo que encuentra AutoQueras, pero bueno, me da también una buena aproximación.
+
+66
+00:15:41,000 --> 00:15:49,000
+Hay veces que nos da una red aceptable, a veces tal vez un poco grande, pero aceptable para resolver el problema.
+
+67
+00:15:49,000 --> 00:16:13,000
+AutoQueras, acá una aclaración, se puede aplicar con redes desarrolladas con la librería Queras, pero hay también otras herramientas que se pueden usar con otras librerías, así que bueno, hay neuroevolución aplicado también a otras tecnologías que también se pueden aplicar.
+
+68
+00:16:13,000 --> 00:16:31,000
+También hay otros métodos, por ejemplo, hay unas redes neuronales que se están desarrollando ahora basados en la teoría de grafos para tratar de encontrar cómo debería ser la topología ideal de una red para que resuelven un problema.
+
+69
+00:16:31,000 --> 00:16:43,000
+Pero bueno, todavía está en proceso de investigación, entonces hay algunas herramientas que aplican eso, pero no son del todo confiables.
+
+70
+00:16:43,000 --> 00:16:58,000
+Pero bueno, sepan que es un campo de investigación de la IA bastante amplio, donde ahí hay mucha gente que está trabajando para tratar de automatizar todo esto.
+
+71
+00:16:58,000 --> 00:17:09,000
+Bien, y por último nos queda hablar de las funciones que debería aplicar estas neuronas ocultas.
+
+72
+00:17:09,000 --> 00:17:27,000
+A pesar de que yo puedo usar la función identidad, escalol y lineal mixta, muchas veces no es aplicable porque para datos no lineales, estas funciones como que no le dan la capacidad de la red para que la red aprenda.
+
+73
+00:17:27,000 --> 00:17:40,000
+Entonces, muchas veces cuando se trabajan con valores binarios se recomienda usar función simoidal, cuando se trabaja con valores reales la función gausiana o tangente hiperbólica.
+
+74
+00:17:40,000 --> 00:17:52,000
+Pero actualmente la más utilizada es la función relu. La función relu es una función que me devuelve el valor más grande entre cero y el valor de entrada.
+
+75
+00:17:52,000 --> 00:18:00,000
+Entonces, si el valor es negativo, me da cero. Si es positivo, me da el valor de entrada. Una función bastante sencilla, ¿no?
+
+76
+00:18:00,000 --> 00:18:18,000
+Esta, digamos, simplicidad que tiene la función relu es muy apreciada para diseñar redes muy grandes porque el consumo de ciclos de entrenamiento que lleva es muy bajo.
+
+77
+00:18:18,000 --> 00:18:30,000
+Es bastante rápido para ejecutar, entonces facilita bastante el aprendizaje porque reduce el tiempo de ejecución del algoritmo de entrenamiento.
+
+78
+00:18:30,000 --> 00:18:38,000
+Y a su vez tiene algunas características, tiene estas características no lineales que lo hacen muy útil para el ajuste de los pesos.
+
+79
+00:18:38,000 --> 00:18:51,000
+Entonces, bueno, van a ver que en muchos papers, muchas publicaciones, recomiendan utilizar esta función relu y usan esta función relu para desarrollar redes neuronales y es por estos motivos.
+
+80
+00:18:51,000 --> 00:19:03,000
+De todas formas, también uno puede usar la gausiana, la tangente hiperbólica, el simoidal, pero bueno, esto es lo que está, digamos, más de moda actualmente.
+
+81
+00:19:03,000 --> 00:19:17,000
+Y ahora sí, llegamos a las capas de salida. En la capa de salida, yo voy a tener que definir los resultados que genera la red hacia el exterior, digamos, la interfaz de salida que va a tener mi red.
+
+82
+00:19:17,000 --> 00:19:37,000
+Ahí entonces vamos a tener que identificar si la salida va a ser discreta o continua. Si la salida es continua, yo voy a devolver un valor real, entonces voy a tener que tener una neurona de salida por cada valor real que necesito que la red genere.
+
+83
+00:19:37,000 --> 00:19:57,000
+En esa neurona de salida, la función aplicar sería la función identidad, bastante sencillo. Si la salida es discreta y me devuelve valores binarios, devuelta por cada uno de los valores binarios que voy a tener, voy a tener una neurona de salida.
+
+84
+00:19:57,000 --> 00:20:14,000
+Y ahí le recomiendo desusar una función sigmoidal. Entonces es parecido a la otra, pero la diferencia es que, por ejemplo, si tengo que devolver un número binario con tres dígitos, voy a tener tres neuronas de salida cada uno con una función sigmoidal.
+
+85
+00:20:14,000 --> 00:20:30,000
+¿Pero qué pasa si yo tengo un valor de salida que es discreto pero no binario? Por ejemplo, tengo que devolver la clase que puede ser clase 1, clase 2, clase 3. Bueno, ahí hay dos posibilidades.
+
+86
+00:20:30,000 --> 00:20:48,000
+Una posibilidad es usar, como en el caso de la salida continua, una neurona de salida con función identidad que me va a devolver un valor continuo y ese valor continuo yo luego lo redondeo usando un umbral de clasificación.
+
+87
+00:20:48,000 --> 00:21:01,000
+El umbral de clasificación lo que me va a decir es cuál es el parámetro para redondear para arriba o para abajo el valor continuo que me devuelve la red.
+
+88
+00:21:01,000 --> 00:21:22,000
+Entonces, por ejemplo, si yo uso un umbral de clasificación de 0,6 y la salida es 1,07, va a corresponder clase 1. Si es 1,37, también va a ser clase 1. Si es 1,67, supero el umbral, paso a 2. Si es 1,87, supero obviamente el umbral, paso a 2.
+
+89
+00:21:22,000 --> 00:21:40,000
+Si es 1,90, paso a 2. Si es 2,07, me quedo en 2. Entonces, ese umbral de clasificación va a ser algo externo a la red que el ingeniero tiene que definir para hacer el ajuste de los valores de salida.
+
+90
+00:21:40,000 --> 00:21:52,000
+Generalmente se usa 0,5 o 0,6, pero hay veces que, bueno, depende del problema se puede usar un valor más grande o más chiquito, depende de lo que uno considere.
+
+91
+00:21:52,000 --> 00:22:13,000
+Bueno, esta es una posibilidad. La otra posibilidad es usar un tipo de salida Softmax, que aplica la función Softmax. Ahí la diferencia que vamos a tener es que en vez de tener una única neurona de salida, voy a tener una neurona de salida por cada clase que yo quiero generar.
+
+92
+00:22:13,000 --> 00:22:33,000
+Entonces, en este ejemplo, yo tengo cuatro clases, entonces tengo cuatro neuronas de salida. Por cada neurona de salida, la función Softmax me va a dar el puntaje o probabilidad de pertenencia que va a tener los valores de entradas para esa clase.
+
+93
+00:22:33,000 --> 00:22:53,000
+Entonces, por ejemplo, en este caso, ¿qué sucede? Yo le ingreso un conjunto de valores de entrada y la red me devuelve. En la neurona 1, 0,02. En la neurona de salida 2, 0,91. En la neurona de salida 3, 0,06. Y la neurona de salida 4, 0,01.
+
+94
+00:22:53,000 --> 00:23:05,000
+Entonces, la que tiene mayor probabilidad, mayor puntaje es la neurona 2. Eso significa que para los datos de entrada corresponde la clase 2.
+
+95
+00:23:05,000 --> 00:23:19,000
+Entonces, esta es otra forma de representar los resultados de la red. En vez de decirme "corresponde clase 2", me dice "para la clase 2 corresponde un 0,91 por ciento".
+
+96
+00:23:19,000 --> 00:23:31,000
+Muchas veces este tipo de salida Softmax se usa para problemas de clasificación, donde es útil conocer cuál es la clase, digamos, que me devuelve la red.
+
+97
+00:23:31,000 --> 00:23:49,000
+Pero también, ¿cuáles son las otras posibilidades? Porque, bueno, en este ejemplo es bastante claro que es clase 2. Pero podría pasar que clase 2 tenga, por ejemplo, 0,7 y clase 3 tenga 0,5.
+
+98
+00:23:49,000 --> 00:24:11,000
+Y ahí lo que va a pasar es que la RAM me puede decir, bueno, perdón, 0,5 no va a poder ser 0,2, por ejemplo. Entonces me va a decir "corresponde a clase 2", pero también podría ser clase 3 o también podría ser clase 4.
+
+99
+00:24:11,000 --> 00:24:26,000
+Entonces me puede dar como una especie de ranking de las clases que corresponden. Esto es muy usado en lo que es clasificación de imágenes, por ejemplo, para que me identifique, bueno, a qué clase corresponde el objeto que aparece en la imagen.
+
+100
+00:24:26,000 --> 00:24:42,000
+Entonces me da este ranking de posibilidades. O mismo en el ámbito médico, por ejemplo, para hacer un diagnóstico que me diga, en vez de decirme "es tal enfermedad", me dice "puede ser tal enfermedad con esta probabilidad, esta otra enfermedad con esta otra probabilidad, esta otra con esta".
+
+101
+00:24:42,000 --> 00:24:52,000
+Entonces el médico puede tener, digamos, más información para decidir qué tratamiento le debería aplicar al paciente.
+
+102
+00:24:52,000 --> 00:25:05,000
+De todas formas, esta decisión de usar Softmax o no usar Softmax va a depender ahí del ingeniero y del problema y después cómo quiero utilizar los resultados de la RAD.
+
+103
+00:25:05,000 --> 00:25:18,000
+En ambos casos, la RAD puede aprender y bueno, lo que va a cambiar es cómo me está codificando los datos de salida.
+
+104
+00:25:18,000 --> 00:25:34,000
+Bueno, y por último nos queda hablar sobre los pesos iniciales. En el caso de los pesos iniciales no vamos a hacer la distinción entre capa de entrada, oculta o salida, porque va a ser todo el mismo, digamos, la misma recomendación.
+
+105
+00:25:34,000 --> 00:25:53,000
+Los pesos iniciales, como dijimos, se van a definir al azar con valores aleatorios. Estos valores aleatorios se recomiendan que estén en un rango pequeño entre 0 y 0,5. No conviene usar valores ni muy grandes ni muy chicos, valores negativos muy chicos.
+
+106
+00:25:53,000 --> 00:26:08,000
+En general se recomienda usar un rango pequeño. Hay veces que lo que sí se puede usar es una semilla para el generador de valores iniciales de manera que uno pueda reproducir el entrenamiento de una RAD.
+
+107
+00:26:08,000 --> 00:26:25,000
+Entonces le define el SID antes de crear la RAD neuronal para que se definan los pesos iniciales y bueno, ahí arrancamos y podemos reproducir el entrenamiento de la RAD si lo necesitamos.
+
+108
+00:26:25,000 --> 00:26:43,000
+Hay veces que no hace falta hacer esto, pero bueno, está ahí esa posibilidad. Y lo otro importante con los pesos iniciales es que lo que sí conviene es que no queden todas las neuronas con los mismos valores aleatorios.
+
+109
+00:26:43,000 --> 00:27:03,000
+Es decir, conviene romper simetrías, hacer que distintas neuronas tomen distintos valores para que la RAD tienda a aprender más rápido. Si nos quedan todos valores similares, a la RAD le va a costar más hacer el ajuste durante el entrenamiento y entonces eso no conviene.
+
+110
+00:27:03,000 --> 00:27:18,000
+Como ya habíamos hablado antes con las redes Multiperceptron, depende ahí de los valores iniciales, a veces puede influir en el tiempo que le lleva a aprender a la RAD neuronal.
+
+111
+00:27:18,000 --> 00:27:33,000
+Entonces hay veces que conviene probar con distintos pesos iniciales y que cada neurona tenga distintos pesos iniciales para que la RAD aprenda más rápido.
+
+112
+00:27:33,000 --> 00:27:51,000
+Entonces bueno, estas son algunas de las recomendaciones de diseño. En cuanto al entrenamiento en sí de una RAD Multiperceptron, nosotros vimos que puede aprender funciones lineales o no lineales, pero también dijimos que no nos garantiza que siempre puede aprender.
+
+113
+00:27:51,000 --> 00:28:10,000
+No siempre encuentra la combinación de pesos para aprender los datos, hay que experimentar, cambiar el diseño. Entonces acá también les vamos a indicar una recomendación de qué pasos se debería hacer cuando vemos que la RAD no aprenda.
+
+114
+00:28:10,000 --> 00:28:23,000
+Bueno, ¿qué se debería probar? Bueno, lo primero que se suele hacer es volver a ejecutar el entrenamiento con otros pesos iniciales, dejamos todo igual y volvemos a probar con otros pesos iniciales.
+
+115
+00:28:23,000 --> 00:28:37,000
+Como decíamos recién, capaz que con la combinación de pesos iniciales que teníamos antes, la RAD le costó mucho aprender, con una nueva combinación de pesos iniciales la RAD aprende. Puede pasar.
+
+116
+00:28:37,000 --> 00:28:50,000
+Esto lo vamos a probar dos o tres veces. Si eso no funciona, pasamos al paso dos, que es normalizar los datos de entrada y salida. Esto tiene que ver con la preparación de los datos que vamos a hablar en otro video.
+
+117
+00:28:50,000 --> 00:28:57,000
+Entonces, si nosotros no normalizamos los datos, lo recomendado sería hacerlo.
+
+118
+00:28:57,000 --> 00:29:12,000
+El paso tres es, bueno, si sigue fallando el entrenamiento, modificar los parámetros. Bueno, eso también vamos a hablarlo en otro video porque hay varios parámetros que uno puede modificar para intentar que la RAD aprenda.
+
+119
+00:29:12,000 --> 00:29:27,000
+El cuarto intento tiene que ver con modificar el orden de los patrones. Ahí, en vez de tener siempre un orden fijo, conviene desordenarlo un poco los datos, tomando los datos de forma aleatoria.
+
+120
+00:29:27,000 --> 00:29:46,000
+Ya hay algoritmos que esto lo automatizan, pero bueno, también a veces hay que hacerlo a mano. Entonces, bueno, esta es otra posibilidad. En el paso quinto, recién aparece esto de modificar la cantidad de neuronas y capas ocultas que tiene la RAD, la topología de la RAD.
+
+121
+00:29:46,000 --> 00:29:54,000
+O sea, fíjense que antes de modificar la topología hay que probar otras cosas para ver si logramos que la RAD aprenda.
+
+122
+00:29:54,000 --> 00:30:15,000
+Y en el paso seis aparece algo que uno lo tiene que hacer ya de entrada para cualquier algoritmo de major learning, que es revisar los datos para confirmar que los datos que estamos utilizando son completos, exhaustivos, válidos, correctos, consistentes con el problema que uno quiere resolver.
+
+123
+00:30:15,000 --> 00:30:27,000
+Pero bueno, muchas veces nos damos cuenta que los datos tienen algún impedimento cuando falla muchas veces el entrenamiento. Entonces, nosotros hacemos un estudio inicial de los datos.
+
+124
+00:30:27,000 --> 00:30:37,000
+Dijimos, bueno, los datos cumplen con todas las condiciones, la podemos usar, pero si no logramos que la RAD aprenda, hay veces que el problema no está en la tecnología, sino que está en los datos.
+
+125
+00:30:37,000 --> 00:30:53,000
+Entonces, ahí tenemos que volver a analizar los datos, estudiarlos y hacer las correcciones que sean necesarias. Por ejemplo, puede ser agregar nuevos datos, muchas veces suele pasar eso.
+
+126
+00:30:53,000 --> 00:31:02,000
+O hay veces eliminar algún dato que puede tener algún tipo de error o algún tipo de sesgo, lo que puede dificultar el entrenamiento.
+
+127
+00:31:02,000 --> 00:31:17,000
+Bueno, de esto, obviamente, está para hablar mucho más. Lo vamos a ver también más adelante en otro video. Pero bueno, esto es para comentarles y darles una pauta general.
+
+128
+00:31:17,000 --> 00:31:22,000
+Bueno, con esto terminamos este video. Hasta luego.

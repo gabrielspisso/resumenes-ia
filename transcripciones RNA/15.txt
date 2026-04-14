@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:12,000
+Bueno, con este vídeo terminamos el tema de redes neuronales artificiales. Obviamente, nosotros hablamos de las redes perceptron, multiperceptron, red de Hopfield y ras convolucionales.
+
+2
+00:00:12,000 --> 00:00:25,000
+Hay muchas redes neuronales más que van a tener diferencias en cuanto a cómo hacen la definición de la topología o la forma en que realizan el entrenamiento.
+
+3
+00:00:25,000 --> 00:00:39,000
+Pero conociendo estas redes que son básicas, pero muy utilizadas, es muy fácil entender cómo funcionan otras redes neuronales.
+
+4
+00:00:39,000 --> 00:00:48,000
+Así que con esto van a tener una buena base para poder entender el funcionamiento de otras redes.
+
+5
+00:00:48,000 --> 00:01:00,000
+En este cuadro comparativo nosotros les pusimos algunas descripciones con semejantas y diferencias que tienen las redes que vimos.
+
+6
+00:01:00,000 --> 00:01:11,000
+Y en cuanto a herramientas, acá hay algunos ejemplos de redes y de implementaciones de redes que se pueden utilizar.
+
+7
+00:01:11,000 --> 00:01:20,000
+Algunas herramientas son herramientas de escritorios, otras son web, algunas se ejecutan local, otras se ejecutan en las nubes.
+
+8
+00:01:20,000 --> 00:01:31,000
+Bueno, ahí va a depender de cada caso. Así que con esto nos despedimos y nos veremos en otro vídeo. Hasta luego.

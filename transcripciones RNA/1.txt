@@ -1,0 +1,215 @@
+1
+00:00:00,000 --> 00:00:04,600
+Hola, mi nombre es Pablo Pitel, docente de la Asignatura de Inteligencia Artificial.
+
+2
+00:00:04,600 --> 00:00:10,500
+En este video vamos a hablar sobre redes neuronales artificiales.
+
+3
+00:00:10,500 --> 00:00:20,400
+Bien, para arrancar vamos a relacionar las redes neuronales artificiales con los tipos de sistemas inteligentes que vimos con anterioridad.
+
+4
+00:00:20,400 --> 00:00:27,600
+Habíamos visto que los sistemas inteligentes incluyen a todos los tipos de tecnologías
+
+5
+00:00:27,600 --> 00:00:35,400
+que permiten construir algún tipo de sistema software que presenta un comportamiento inteligente.
+
+6
+00:00:35,400 --> 00:00:43,600
+En el caso de las redes neuronales artificiales, entonces yo me puedo basar en conocimientos y datos de fontes públicas
+
+7
+00:00:43,600 --> 00:00:49,800
+para construir sistemas inteligentes que resuelven algún tipo de problema.
+
+8
+00:00:49,800 --> 00:01:01,200
+Pero también puedo utilizar conocimientos y datos privados de un experto humano y de esta manera construir una red neuronal artificial
+
+9
+00:01:01,200 --> 00:01:10,200
+que también es un sistema experto, es decir, un sistema inteligente que busca emular parte del comportamiento de un experto humano
+
+10
+00:01:10,200 --> 00:01:14,200
+para resolver alguna tarea.
+
+11
+00:01:14,200 --> 00:01:24,400
+Cabe destacar que una red neuronal artificial no posee base de conocimientos, por eso no tiene ninguna relación con los sistemas basados en conocimiento.
+
+12
+00:01:24,400 --> 00:01:37,900
+Más adelante vamos a ver de qué manera las redes neuronales artificiales almacenan la información que va a ir aprendiendo para resolver el problema.
+
+13
+00:01:37,900 --> 00:01:45,700
+A su vez podemos relacionar a las redes neuronales artificiales con dos disciplinas de la inteligencia artificial.
+
+14
+00:01:45,700 --> 00:01:53,500
+Por un lado con la inteligencia computacional, dado que las redes neuronales artificiales tienen una inspiración biológica
+
+15
+00:01:53,500 --> 00:02:05,000
+y con el aprendizaje automático Machine Learning en las características que tienen las redes neuronales artificiales para aprender de manera automática.
+
+16
+00:02:05,000 --> 00:02:14,800
+Bien, si nosotros buscamos la definición de redes neuronales artificiales nos dice que es la evolución de un sistema de cómputo basado en un modelo biológico.
+
+17
+00:02:14,800 --> 00:02:30,800
+Como mencioné anteriormente, las redes neuronales artificiales tienen una inspiración biológica que tienen que ver con el funcionamiento de las redes neuronales biológicas del cerebro y del sistema nervioso.
+
+18
+00:02:30,800 --> 00:02:42,500
+Este sistema de cómputos va a estar formado por elementos muy simples, las neuronas, que tienen grandes capacidades por su interconexión.
+
+19
+00:02:42,500 --> 00:02:54,000
+Entonces, estos elementos simples, las neuronas, van a estar interconectadas entre sí para trabajar en forma paralela y cumplir algún tipo de objetivo.
+
+20
+00:02:54,000 --> 00:02:58,500
+Este objetivo va a tener que ver con resolver algún problema.
+
+21
+00:02:58,500 --> 00:03:12,500
+Los problemas que se resuelven con las redes neuronales artificiales generalmente son problemas que resolverlos con un paradigma de algoritmo tradicional, un software tradicional, sería muy difícil.
+
+22
+00:03:12,500 --> 00:03:22,800
+Además, en este tipo de sistema vamos a ver que la información imprecisa y la incertidumbre es manejada automáticamente por el sistema,
+
+23
+00:03:22,800 --> 00:03:31,400
+lo cual facilita la resolución de problemas cuando se dan estas circunstancias.
+
+24
+00:03:31,400 --> 00:03:34,500
+Bien, ¿cuáles son las ventajas de una red neuronal?
+
+25
+00:03:34,500 --> 00:03:41,600
+Bueno, por un lado tiene un aprendizaje adaptativo, porque una red neuronal artificial va a aprender.
+
+26
+00:03:41,600 --> 00:03:55,200
+Tiene un periodo de entrenamiento en el cual va a ir recolectando la información que va extrayendo de los ejemplos o datos que nosotros le vamos a suministrar,
+
+27
+00:03:55,200 --> 00:04:01,700
+y a partir de esos ejemplos van a tratar de encontrar un patrón que le permita resolver el problema.
+
+28
+00:04:01,700 --> 00:04:11,700
+Este aprendizaje además cumple la condición de ser adaptativo porque una red neuronal artificial puede aprender casi cualquier tipo de problema.
+
+29
+00:04:11,700 --> 00:04:25,100
+Para aprender una red neuronal artificial se va a autorganizar, eso significa que durante su entrenamiento va a cambiar la forma en que las distintas neuronas se van a interconectar entre sí.
+
+30
+00:04:25,100 --> 00:04:39,100
+Estas características a su vez le otorga cierta tolerancia a fallos, eso significa que una red neuronal tiene cierta flexibilidad para que en producción pueda resolver resultados aceptables,
+
+31
+00:04:39,100 --> 00:04:48,100
+a pesar de que no se le entrenó con esa combinación de datos o no se le entrenó con ciertas situaciones.
+
+32
+00:04:48,100 --> 00:05:01,100
+De todas formas esa tolerancia a fallos tiene un límite, tampoco puede llegar a aprender cosas totalmente distintas a las que aprendió en forma automática o sola.
+
+33
+00:05:01,100 --> 00:05:09,100
+Otra ventaja que tienen las red neuronales artificiales es que operan en forma muy eficiente en tiempo real,
+
+34
+00:05:09,100 --> 00:05:23,100
+o sea que una red neuronal ya entrenada, que se la ponemos en producción, tarda muy poco tiempo en ejecutar, eso significa que lo puedo utilizar para problemas donde el tiempo es muy importante.
+
+35
+00:05:23,100 --> 00:05:38,100
+Por ejemplo, para traducir en tiempo real lo que alguien está hablando, para agregarle los subtítulos a un vídeo en tiempo real, para reducir el ruido o reducir el eco en una comunicación.
+
+36
+00:05:38,100 --> 00:05:48,100
+Entonces, una red neuronal una vez entrenada es muy rápida, pero el entrenamiento de una red neuronal puede demorar mucho tiempo.
+
+37
+00:05:48,100 --> 00:05:57,100
+Por último, tenemos como ventaja que una red neuronal artificial es fácil de utilizar en cualquier tipo de tecnología existente.
+
+38
+00:05:57,100 --> 00:06:08,100
+Así que nosotros podemos tener una red neuronal artificial en un servidor, en una computadora de varieña, en una notebook, en un celular, en una tablet.
+
+39
+00:06:08,100 --> 00:06:19,100
+Esta etnología de las redes neuronales no está atada a ningún tipo de hardware ni tampoco a ningún tipo de software determinado.
+
+40
+00:06:19,100 --> 00:06:25,100
+A nosotros su vez podemos programar redes neuronales artificiales con cualquier lenguaje de programación.
+
+41
+00:06:25,100 --> 00:06:31,100
+Desde Python a C a .NET lo java lo que sea.
+
+42
+00:06:31,100 --> 00:06:41,100
+Obviamente que no vamos a implementar una red neuronal artificial en Assembler porque no llevaría mucho tiempo, pero en teoría se podría hacer.
+
+43
+00:06:41,100 --> 00:06:53,100
+Bien, para mostrarles entonces esas características, esas ventajas que tienen las RNA, le vamos a pedir que lean lo que aparece en este mensaje.
+
+44
+00:06:53,100 --> 00:06:59,100
+Así que tomense, les doy tres segundos.
+
+45
+00:06:59,100 --> 00:07:14,100
+Bien, seguramente cuando empezaban a leer les costaba un poquito más, pero después de leer las primeras palabras se dieron cuenta que nosotros cambiamos las vocales por números,
+
+46
+00:07:14,100 --> 00:07:19,100
+utilizando siempre la misma combinación.
+
+47
+00:07:19,100 --> 00:07:25,100
+Y a su vez en las últimas palabras empezamos a desordenar las letras.
+
+48
+00:07:25,100 --> 00:07:34,100
+De todas formas el cerebro tuvo la capacidad de adaptarse a esta información y poder entender de que estábamos hablando.
+
+49
+00:07:34,100 --> 00:07:43,100
+Porque nuestro cerebro es una gran red neuronal biológica que cumple muchas de las ventajas de las redes neuronales artificiales.
+
+50
+00:07:43,100 --> 00:07:48,100
+Es más, es mucho mejor que una red neuronal artificial.
+
+51
+00:07:48,100 --> 00:07:55,100
+Y por eso muchas veces se trata de emularlo a pesar de que todavía no se ha logrado.
+
+52
+00:07:55,100 --> 00:08:00,100
+Bueno, con esta introducción vamos a terminar el primer vídeo.
+
+53
+00:08:00,100 --> 00:08:12,100
+Ahora vamos a pasar a ver y hablar un poco de cómo funcionan las redes neuronales biológicas para que después se entienda mejor las redes neuronales artificiales.
+
+54
+00:08:12,100 --> 00:08:13,100
+Hasta luego.

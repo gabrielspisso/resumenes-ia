@@ -1,0 +1,707 @@
+1
+00:00:00,000 --> 00:00:04,640
+Hola, este es el onceavo video correspondiente a Redes Neuronales Artificiales.
+
+2
+00:00:04,640 --> 00:00:11,240
+En este video vamos a hablar del último modelo que vamos a ver en esta asignatura, que es el modelo de Hopfield.
+
+3
+00:00:11,240 --> 00:00:17,920
+Esta red se distingue de los modelos anteriores, en que es una red autoassociativa,
+
+4
+00:00:17,920 --> 00:00:23,160
+por lo cual utiliza un aprendizaje no supervisado y offline del tipo giviano,
+
+5
+00:00:23,160 --> 00:00:29,400
+y que todas las neuronas que forman parte de esta red se encuentran dentro de la misma capa,
+
+6
+00:00:29,400 --> 00:00:35,040
+la red es mono capa, o sea que las neuronas son de entrada y salida pero no hay neuronas ocultas,
+
+7
+00:00:35,040 --> 00:00:39,640
+y para comunicarse entre sí, estas neuronas tienen conexiones laterales,
+
+8
+00:00:39,640 --> 00:00:43,000
+pero no conexiones consigo misma, no son recursivas.
+
+9
+00:00:43,000 --> 00:00:49,440
+Esto significa que la salida de la neurona 1 va a ser entrada de la neurona 2, 3 y 4,
+
+10
+00:00:49,440 --> 00:00:56,160
+la salida de la neurona 2 se va a convertir en entrada de la neurona 1, 3 y 4, y así con cada una.
+
+11
+00:00:56,160 --> 00:01:03,960
+La cantidad de neuronas que yo voy a tener en esta mono capa va a depender del problema
+
+12
+00:01:03,960 --> 00:01:09,040
+y de los datos que yo quiero que mi red aprenda, eso ahora más adelante lo vamos a ver.
+
+13
+00:01:09,040 --> 00:01:15,680
+Bien, para aprender, entonces la red de Hopfield usa un postulado
+
+14
+00:01:15,680 --> 00:01:21,880
+que definió Hebb sobre el aprendizaje que tienen las neuronas dentro del cerebro.
+
+15
+00:01:21,880 --> 00:01:26,440
+El postulado lo que indica es que si yo tengo una neurona A y una neurona B
+
+16
+00:01:26,440 --> 00:01:30,760
+que están suficientemente cerca, que están interconectadas entre sí,
+
+17
+00:01:30,760 --> 00:01:35,960
+y el tipo de sinapsis que hay entre la neurona A y la neurona B es excitadora,
+
+18
+00:01:35,960 --> 00:01:42,320
+entonces lo que va a suceder es que si cada vez que la neurona A le manda algo a la neurona B
+
+19
+00:01:42,320 --> 00:01:50,680
+y la neurona B va a tender a activarse, se va a generar que el valor de excitación
+
+20
+00:01:50,680 --> 00:01:57,600
+que va a tener la conexión entre la neurona A y la neurona B cada vez va a ser más grande.
+
+21
+00:01:57,600 --> 00:02:04,760
+O sea, se va a reforzar el tipo de sinapsis y se va a volver cada vez más excitadora.
+
+22
+00:02:04,760 --> 00:02:09,960
+De forma de que cada vez que la neurona A le mande algo a la neurona B,
+
+23
+00:02:09,960 --> 00:02:13,880
+cada vez tienda más a activarse la neurona B.
+
+24
+00:02:13,880 --> 00:02:18,120
+Si hubiera una conexión inhibidora, pasaría lo mismo en sentido contrario.
+
+25
+00:02:18,120 --> 00:02:25,560
+O sea, si cada vez que la neurona A le manda algo a la neurona B y la neurona B no se activa,
+
+26
+00:02:25,560 --> 00:02:29,320
+la conexión que es inhibidora cada vez se va a volver más inhibidora.
+
+27
+00:02:29,320 --> 00:02:36,560
+Entonces se va a incrementar el comportamiento de la sinapsis que tienen esas dos neuronas.
+
+28
+00:02:36,560 --> 00:02:42,520
+Tendiendo en cuenta entonces este postulado, Hopfiel definió un método de aprendizaje
+
+29
+00:02:42,520 --> 00:02:45,320
+que lo definió en su rotneuronal.
+
+30
+00:02:45,320 --> 00:02:52,400
+Esta neuronal entonces comparte el comportamiento que tienen ciertas células del cerebro
+
+31
+00:02:52,400 --> 00:02:54,720
+donde se da el postulado de Hebb.
+
+32
+00:02:54,720 --> 00:02:59,640
+Estas son las neuronas que tienen que ver con la memoria asociativa
+
+33
+00:02:59,640 --> 00:03:06,480
+y que están muchas veces relacionadas con los sentidos del gusto, el olfato y el oído.
+
+34
+00:03:06,480 --> 00:03:14,160
+Como acá lo dice este meme, acá te recomiendan que si vos masticas el chicle de un sabor
+
+35
+00:03:14,160 --> 00:03:19,920
+cuando estás estudiando y masticas el mismo gusto del chicle cuando haces la prueba,
+
+36
+00:03:19,920 --> 00:03:22,400
+te va a ayudar a recordar lo que vos estudiaste.
+
+37
+00:03:22,400 --> 00:03:28,280
+Entonces ahí lo que aprovecha es la memoria asociativa que hay con un gusto que nosotros sentimos
+
+38
+00:03:28,280 --> 00:03:32,960
+y el recuerdo que se dispara dentro de nuestro cerebro.
+
+39
+00:03:32,960 --> 00:03:37,520
+Con el oído pasa algo parecido, a veces por escuchar algunas notas de una melodía
+
+40
+00:03:37,520 --> 00:03:43,680
+uno se puede acordar de un tema o por sentir un olor uno se acuerda de una situación
+
+41
+00:03:43,680 --> 00:03:45,240
+o de una persona.
+
+42
+00:03:45,240 --> 00:03:51,360
+Entonces ese tipo de memoria asociativa es lo que aprovecha Hopfield en su RAD Neuronal
+
+43
+00:03:51,360 --> 00:03:58,840
+para hacer una RAD Neuronal que permite completar información incompleta o clasificar patrones
+
+44
+00:03:58,840 --> 00:04:03,240
+cuando los datos de entrada pueden tener alguna diferencia.
+
+45
+00:04:03,240 --> 00:04:07,160
+De todas maneras, esta RAD Hopfield va a tener algunas limitaciones,
+
+46
+00:04:07,160 --> 00:04:09,600
+como también le pasa a esta recomendación.
+
+47
+00:04:09,600 --> 00:04:14,520
+En esta recomendación te decía "masca un chicle con un sabor cuando estás estudiando
+
+48
+00:04:14,520 --> 00:04:19,400
+y cuando haces la prueba", pero lo que se olviden de aclarar es que el sabor del chicle
+
+49
+00:04:19,400 --> 00:04:24,260
+tiene que ser distinto por cada asignatura o por cada tema que uno está estudiando,
+
+50
+00:04:24,260 --> 00:04:31,120
+sino puede pasar que vos te acuerdes de análisis matemático cuando estás haciendo el examen
+
+51
+00:04:31,120 --> 00:04:32,560
+de Inteligencia Artificial.
+
+52
+00:04:32,560 --> 00:04:38,320
+Entonces ahí tendríamos que usar un chicle de gusto tutti frutti para análisis matemático
+
+53
+00:04:38,320 --> 00:04:43,000
+y uno de menta para Inteligencia Artificial para que los recuerdos no se entrecrucen.
+
+54
+00:04:43,000 --> 00:04:48,280
+Bien, con la RAD Hopfield vamos a ver que pasa algo parecido.
+
+55
+00:04:48,280 --> 00:04:52,840
+En nuestro ejemplo que vamos a ver, vamos a considerar que vamos a tener cuatro neuronas
+
+56
+00:04:52,840 --> 00:04:58,000
+en nuestra RAD y lo que queremos enseñarles son dos tipos de patrones.
+
+57
+00:04:58,000 --> 00:05:05,680
+Patrón 1-1-1-1 que indica que si yo tuviera cuatro píxeles, los dos que están pintados
+
+58
+00:05:05,680 --> 00:05:12,840
+son los dos de arriba y los dos de abajo están sin pintar y el patrón -1-1-1-1 que corresponde
+
+59
+00:05:12,840 --> 00:05:19,160
+al patrón inverso donde tengo los dos de arriba sin pintar y los dos de abajo pintados.
+
+60
+00:05:19,160 --> 00:05:24,480
+En este ejemplo vamos a usar una función de escalón que es la que se indica aquí donde
+
+61
+00:05:24,480 --> 00:05:29,680
+se dice que si el valor es mayor que 0 se considera un 1 y si es menor que 0 o igual
+
+62
+00:05:29,680 --> 00:05:32,840
+a 0 se considera un -1.
+
+63
+00:05:32,840 --> 00:05:38,360
+Vamos a ver que el entrenamiento de la RAD de Hopfield es bastante sencillo, de hecho
+
+64
+00:05:38,360 --> 00:05:45,520
+se va a distinguir de las redes anteriores en que no va a necesitar ciclar para aprender,
+
+65
+00:05:45,520 --> 00:05:51,080
+pero como tiene conexiones laterales durante su funcionamiento sí va a tener que ciclar.
+
+66
+00:05:51,080 --> 00:05:52,080
+¿Por qué?
+
+67
+00:05:52,080 --> 00:05:57,960
+Porque vamos a tener que generar varios resultados hasta que la RAD se estabilice.
+
+68
+00:05:57,960 --> 00:06:03,480
+La condición que vamos a considerar para definir que nuestra RAD de Hopfield se va a estabilizar
+
+69
+00:06:03,480 --> 00:06:07,980
+es que por dos momentos consecutivos la RAD me devuelva el mismo resultado.
+
+70
+00:06:07,980 --> 00:06:11,720
+A esto también lo vamos a ver con este ejemplo.
+
+71
+00:06:11,720 --> 00:06:14,100
+Pero primero vamos a hacer el entrenamiento de la RAD.
+
+72
+00:06:14,100 --> 00:06:15,100
+Entonces ¿qué hacemos?
+
+73
+00:06:15,100 --> 00:06:20,660
+Vamos a tomar el primer patrón que yo quiero enseñarle, 1-1-1-1, a ese vector le voy a
+
+74
+00:06:20,660 --> 00:06:28,220
+calcular el vector traspuesto, o sea esta columna, lo voy a multiplicar por el vector original
+
+75
+00:06:28,220 --> 00:06:34,400
+y de esta manera voy a obtener una matriz, ¿no?
+
+76
+00:06:34,400 --> 00:06:38,160
+De esta matriz lo que voy a hacer es tacherla diagonal, ¿por qué?
+
+77
+00:06:38,160 --> 00:06:42,200
+Porque esta matriz me va a representar los pesos correspondientes a las conexiones entre
+
+78
+00:06:42,200 --> 00:06:45,360
+las neuronas para el primer patrón.
+
+79
+00:06:45,360 --> 00:06:51,660
+Como cada neurona no tiene conexión consigo mismo, la diagonal tiene que ser siempre igual
+
+80
+00:06:51,660 --> 00:06:52,660
+a cero.
+
+81
+00:06:52,660 --> 00:07:00,000
+Entonces de esta manera yo ya logré que mi RAD neuronal haya aprendido el primer patrón.
+
+82
+00:07:00,000 --> 00:07:02,520
+Lo mismo voy a hacer con el segundo patrón.
+
+83
+00:07:02,520 --> 00:07:08,240
+Entonces ahora tomo -1-1-1, 1 y 1, calculo la traspuesta, lo multiplico por sigo mismo,
+
+84
+00:07:08,240 --> 00:07:11,020
+obtengo la matriz y ahí tacho la diagonal.
+
+85
+00:07:11,020 --> 00:07:16,160
+Con esto obtengo los pesos correspondientes para que la RAD neuronal haya aprendido el
+
+86
+00:07:16,160 --> 00:07:17,160
+segundo patrón.
+
+87
+00:07:17,160 --> 00:07:22,760
+Fíjense que cada patrón es independiente del otro y que se hace con una operación
+
+88
+00:07:22,760 --> 00:07:24,620
+matemática bastante sencilla.
+
+89
+00:07:24,620 --> 00:07:31,120
+Bien, como yo quiero que mi RAD neuronal aprenda el patrón 1 y el patrón 2, lo que hago es
+
+90
+00:07:31,120 --> 00:07:36,100
+combinarlos para combinarlos, lo sumo, los valores, y de esa manera obtengo la matriz
+
+91
+00:07:36,100 --> 00:07:42,180
+de pesos correspondiente a una RAD neuronal que aprendió el patrón 1 y el patrón 2.
+
+92
+00:07:42,180 --> 00:07:47,680
+En esta matriz entonces lo que voy a tener son los pesos de las conexiones entre las
+
+93
+00:07:47,680 --> 00:07:48,680
+distintas neuronas.
+
+94
+00:07:48,680 --> 00:07:59,060
+Así, por ejemplo, la conexión que hay entre la neurona 1 y la neurona 2 va a ser de 2,
+
+95
+00:07:59,060 --> 00:08:04,040
+y eso lo podemos ver aquí en este diagrama.
+
+96
+00:08:04,040 --> 00:08:08,920
+Entre la neurona 1 y la neurona 3 va a ser de -2, como aparece aquí.
+
+97
+00:08:08,920 --> 00:08:14,440
+Entre la neurona 3 y la neurona 1 también tiene un -2, así que esto es lo que aparece
+
+98
+00:08:14,440 --> 00:08:17,280
+aquí, y así con cada una.
+
+99
+00:08:17,280 --> 00:08:24,440
+Fíjense que justo en este ejemplo los resultados aparecen simétricos arriba y debajo de la
+
+100
+00:08:24,440 --> 00:08:25,440
+diagonal.
+
+101
+00:08:25,440 --> 00:08:29,480
+Bueno, esto se debe a que los patrones que yo les estoy enseñando son simétricos, pero
+
+102
+00:08:29,480 --> 00:08:30,840
+solo por eso.
+
+103
+00:08:30,840 --> 00:08:36,080
+Bien, entonces ahí ya finalizó el entrenamiento de mi RAD de hopeful, es mucho más sencillo
+
+104
+00:08:36,080 --> 00:08:40,640
+que con backpropagation y mucho más rápido también.
+
+105
+00:08:40,640 --> 00:08:46,020
+Pero qué pasa, vamos a ver cómo es el proceso ese de que la RAD se tiene que estabilizar
+
+106
+00:08:46,020 --> 00:08:52,600
+en producción para asegurarnos de si el resultado que se obtiene es el resultado final.
+
+107
+00:08:52,600 --> 00:08:58,120
+Entonces lo que vamos a hacer, le vamos a probar a esta RAD neuronal con un patrón
+
+108
+00:08:58,120 --> 00:09:06,080
+distinto a los datos que yo le entrené y que va a corresponderse al patrón 1,-1,-1,-1.
+
+109
+00:09:06,080 --> 00:09:11,600
+Esto quiere decir que correspondería a un conjunto de datos que me indica que hay un
+
+110
+00:09:11,600 --> 00:09:15,740
+pixel pintado arriba y el resto está vacío.
+
+111
+00:09:15,740 --> 00:09:23,080
+Como resultado de suministrarle 1,-1,-1,-1, la RAD de hopeful me debería decir a cuál
+
+112
+00:09:23,080 --> 00:09:26,760
+de los dos patrones que yo le enseñé antes se parece más.
+
+113
+00:09:26,760 --> 00:09:31,680
+Entonces, de los dos patrones que yo le enseñé antes, que era 2 pintado arriba y 2 pintado
+
+114
+00:09:31,680 --> 00:09:40,360
+abajo, 1,-1,-1,-1 debería corresponderse al patrón 1, porque se parece más a S, ¿no?
+
+115
+00:09:40,360 --> 00:09:46,120
+Entonces me debería dar como resultado 1,-1,-1,-1.
+
+116
+00:09:46,120 --> 00:09:48,320
+Vamos a ver si eso sucede.
+
+117
+00:09:48,320 --> 00:09:54,980
+Entonces con este vector que yo quiero analizar, teniendo en cuenta la función que había definido
+
+118
+00:09:54,980 --> 00:09:59,440
+antes y la matriz de pesos que obtuve en el entrenamiento, vamos a ver qué resultados
+
+119
+00:09:59,440 --> 00:10:00,440
+me da la RAD.
+
+120
+00:10:00,440 --> 00:10:07,560
+Entonces, al vector 1,-1,-1,-1, lo multiplico por la matriz de pesos, con eso obtengo la
+
+121
+00:10:07,560 --> 00:10:14,360
+entrada neta, a la entrada neta le aplico la función y obtengo como resultado 1,1,-1,-1,
+
+122
+00:10:14,360 --> 00:10:18,280
+que nosotros ya sabemos que está bien, pero como es el primer resultado, tenemos que ver
+
+123
+00:10:18,280 --> 00:10:20,680
+si se estabiliza en el mismo.
+
+124
+00:10:20,680 --> 00:10:22,240
+Entonces, ¿qué hacemos?
+
+125
+00:10:22,240 --> 00:10:29,700
+A 1,1,-1,-1, que fue el resultado que obtuve en el paso anterior, lo multiplico nuevamente
+
+126
+00:10:29,700 --> 00:10:35,000
+por la matriz de pesos, obteniendo la entrada neta, a eso le aplico la función y obtengo
+
+127
+00:10:35,000 --> 00:10:37,960
+nuevamente 1,1,-1,-1.
+
+128
+00:10:37,960 --> 00:10:42,920
+Como la primer salida es igual a la segunda salida, quiere decir que mi RAD se estabilizó
+
+129
+00:10:42,920 --> 00:10:49,320
+y que me dio el resultado correcto, me dio el resultado que corresponde al primer patrón.
+
+130
+00:10:49,320 --> 00:10:54,360
+Ahora vamos a ver qué sucede en esta otra situación, supongamos que ahora yo le ingreso
+
+131
+00:10:54,360 --> 00:11:01,920
+el patrón 1,-1,-1, o sea, eso significa que tengo en la primer columna las dos píxeles
+
+132
+00:11:01,920 --> 00:11:05,600
+pintados y en la segunda columna ningún píxel pintado.
+
+133
+00:11:05,600 --> 00:11:11,220
+De los dos ejemplos que yo tengo, los dos podríamos decir que se parecen o no se parecen
+
+134
+00:11:11,220 --> 00:11:14,520
+a este vector, ¿no?
+
+135
+00:11:14,520 --> 00:11:20,080
+Que comparten las características de ambos, entonces vamos a ver qué nos diría una RAD
+
+136
+00:11:20,080 --> 00:11:24,440
+de Hopfiel para esta situación, para este ejemplo.
+
+137
+00:11:24,440 --> 00:11:25,560
+Entonces, ¿qué hacemos?
+
+138
+00:11:25,560 --> 00:11:32,480
+Lo mismo que hicimos antes, al vector 1,-1,-1 lo multiplicamos por la matriz de pesos, eso
+
+139
+00:11:32,480 --> 00:11:40,440
+nos da la entrada neta, a eso le aplicamos la función y nos da como resultado -1,1,-1,1,
+
+140
+00:11:40,440 --> 00:11:44,880
+lo cual no se corresponde ni con el patrón 1, ni con el patrón 2.
+
+141
+00:11:44,880 --> 00:11:51,440
+Pero, bueno, es el primer resultado, vamos a ver qué pasa si yo ahora proceso ese resultado,
+
+142
+00:11:51,440 --> 00:12:00,960
+entonces vuelvo a procesar, ahora utilizando -1,1,-1,1, lo multiplico por la matriz de pesos,
+
+143
+00:12:00,960 --> 00:12:10,280
+obtengo la entrada neta, a eso le aplico la función y como resultado obtengo 1,-1,1,-1,
+
+144
+00:12:10,280 --> 00:12:15,880
+que no es igual que lo anterior, entonces no podemos decir que se ha estabilizado, pero
+
+145
+00:12:15,880 --> 00:12:18,000
+bueno, ese es el segundo resultado.
+
+146
+00:12:18,000 --> 00:12:25,320
+Ahora volvemos a probar, entonces con ese resultado que obtuvimos 1,-1,-1, hacemos de
+
+147
+00:12:25,320 --> 00:12:32,040
+nuevo toda la misma operatoria y ahora el tercer resultado nos dice -1,1,-1,1, o sea,
+
+148
+00:12:32,040 --> 00:12:33,940
+que tampoco se estabilizó.
+
+149
+00:12:33,940 --> 00:12:40,760
+Y este resultado era igual al resultado que obtuvimos en el primer, en la primera operatoria
+
+150
+00:12:40,760 --> 00:12:43,280
+cuando le dimos los datos de entrada.
+
+151
+00:12:43,280 --> 00:12:50,940
+Entonces, si nosotros volvemos a procesar -1,1,-1,1, seguramente nos vuelve a dar 1,-1,1,-1.
+
+152
+00:12:50,940 --> 00:12:56,960
+Eso quiere decir que esta red nunca se va a estabilizar por alguno de los dos patrones
+
+153
+00:12:56,960 --> 00:13:07,020
+que yo le enseñé, entonces no puede identificar al patrón correspondiente a 1,-1,1,-1.
+
+154
+00:13:07,020 --> 00:13:12,680
+Esto se da por una limitación que tiene la red de Hopfield, que la red de Hopfield nos
+
+155
+00:13:12,680 --> 00:13:20,280
+va a requerir que todos los patrones que nosotros le vamos a memorizar tienen que ser ortogonales,
+
+156
+00:13:20,280 --> 00:13:25,040
+eso quiere decir que tienen que diferir por lo menos uno del otro en más de la mitad
+
+157
+00:13:25,040 --> 00:13:26,800
+de los componentes.
+
+158
+00:13:26,800 --> 00:13:31,680
+Si eso no sucede puede pasar que nuestra red nunca se estabiliza.
+
+159
+00:13:31,680 --> 00:13:37,640
+A su vez, para que funcione de manera correcta, hay que tener en cuenta cuántas neuronas
+
+160
+00:13:37,640 --> 00:13:41,760
+vamos a poner de acuerdo a la cantidad de patrones que yo le quiero enseñar.
+
+161
+00:13:41,760 --> 00:13:46,800
+Entonces, además de ser ortogonales, tenemos que considerar que para que los resultados
+
+162
+00:13:46,800 --> 00:13:54,860
+no tengan ningún error, yo voy a tener que tener n neuronas para aprender n dividido 4
+
+163
+00:13:54,860 --> 00:13:59,240
+por el logaritmo natural de la cantidad de neuronas, patrones.
+
+164
+00:13:59,240 --> 00:14:05,680
+Y con un mínimo error, un 0,15 de la cantidad de neuronas.
+
+165
+00:14:05,680 --> 00:14:09,760
+Entonces, teniendo en cuenta cuántos patrones yo le quiero ingresar, tengo que usar esta
+
+166
+00:14:09,760 --> 00:14:17,160
+formulita para saber cuántas neuronas tiene que tener mi red y así lograr que tenga un
+
+167
+00:14:17,160 --> 00:14:21,600
+mínimo error o no tenga ningún tipo de error.
+
+168
+00:14:21,600 --> 00:14:27,060
+Segundo estas limitaciones, la red de Hopfield entonces se puede usar para completar datos
+
+169
+00:14:27,060 --> 00:14:29,040
+faltantes o clasificar.
+
+170
+00:14:29,040 --> 00:14:35,080
+Un ejemplo de aplicación de esta red de Hopfield se usa para hacer OCR, o sea, identificación
+
+171
+00:14:35,080 --> 00:14:36,080
+de caracteres.
+
+172
+00:14:36,080 --> 00:14:42,960
+A partir de un carácter escaneado, a pesar de que pueden tener algunos errores del escaneado,
+
+173
+00:14:42,960 --> 00:14:49,960
+o sea, píxeles que no están del todo claros, la red de Hopfield puede identificar las letras
+
+174
+00:14:49,960 --> 00:14:56,320
+o números, un uso de esta red bastante sencilla puede ser eso.
+
+175
+00:14:56,320 --> 00:15:00,440
+Bueno, con eso terminamos entonces con la red de Hopfield.
+
+176
+00:15:00,440 --> 00:15:05,760
+Queda un último video donde vamos a cerrar la presentación.
+
+177
+00:15:05,760 --> 00:15:06,260
+Hasta luego.

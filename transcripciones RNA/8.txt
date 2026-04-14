@@ -1,0 +1,575 @@
+1
+00:00:00,000 --> 00:00:05,920
+hola este es el octavo vídeo sobre redes neuronales artificiales en este
+
+2
+00:00:05,920 --> 00:00:10,920
+vídeo vamos a ver cómo funciona el entrenamiento de la una red back
+
+3
+00:00:10,920 --> 00:00:17,760
+propagation utilizando el ejemplo del o exclusivo con las características de una
+
+4
+00:00:17,760 --> 00:00:22,960
+red que vimos en el vídeo anterior bueno entonces en el vídeo anterior habíamos
+
+5
+00:00:22,960 --> 00:00:29,480
+quedado que los pesos iniciales para esta red de 6 neuronas iban a hacer
+
+6
+00:00:29,480 --> 00:00:33,760
+estos entonces vamos a ver cómo durante el entrenamiento se van a modificar
+
+7
+00:00:33,760 --> 00:00:40,760
+estos pesos para lograr aprender el patrón correspondiente a uno o
+
+8
+00:00:40,760 --> 00:00:47,040
+exclusivo uno me tiene que devolver cero lo que vamos a hacer es suministrar
+
+9
+00:00:47,040 --> 00:00:53,160
+la nuestra red neuronal los datos de entrada uno uno y vamos a pedirle con
+
+10
+00:00:53,160 --> 00:00:57,360
+estos pesos iniciales y la función que estamos aplicando recordamos que es la
+
+11
+00:00:57,360 --> 00:01:04,400
+función sigmoidal y ver qué resultado me devuelve esta red entonces al como
+
+12
+00:01:04,400 --> 00:01:10,160
+resultado de ejecutar en cada neurona los estos datos de entrada y teniendo en
+
+13
+00:01:10,160 --> 00:01:14,360
+cuenta los valores de los pesos la salida de la última neurona de la
+
+14
+00:01:14,360 --> 00:01:21,560
+neurona 6 es 0.6 ya que habíamos definido la función que consideraba el
+
+15
+00:01:21,560 --> 00:01:25,560
+umbral de clasificación que es la función escalón que aparece aquí de
+
+16
+00:01:25,560 --> 00:01:32,040
+abajo vemos que la salida entonces se puede interpretar como un 1 pero qué
+
+17
+00:01:32,040 --> 00:01:37,600
+sucede nosotros queremos que para el patrón 1 o 1 la red neuronal nos devuelve
+
+18
+00:01:37,600 --> 00:01:42,320
+un 0 que nuestra salida deseada dado que hay una diferencia entre la salida
+
+19
+00:01:42,320 --> 00:01:48,360
+generada por la red neuronal y la salida deseada tenemos que ajustar los pesos de
+
+20
+00:01:48,360 --> 00:01:54,280
+las conexiones para lograr que nuestra red aprenda esto es igual que como
+
+21
+00:01:54,280 --> 00:02:01,800
+sucedía con una red perceptron porque van propagación según pueden recordar
+
+22
+00:02:01,800 --> 00:02:06,320
+también aplica la estrategia de entrenamiento por corrección de error
+
+23
+00:02:06,320 --> 00:02:12,040
+de todas formas vamos a ver que la manera en que se van a ajustar los pesos de las
+
+24
+00:02:12,040 --> 00:02:18,680
+conexiones va a cambiar un poco con respecto a la red perceptron bien entonces
+
+25
+00:02:18,680 --> 00:02:24,080
+para poder nosotros ajustar los pesos de las conexiones lo que hace la red
+
+26
+00:02:24,080 --> 00:02:29,960
+propagación es propagar el error hacia atrás de ahí viene su nombre entonces a
+
+27
+00:02:29,960 --> 00:02:33,960
+pesar de que todas las conexiones son desde las neuronas de entrada hacia las
+
+28
+00:02:33,960 --> 00:02:39,000
+neuronas de salida al momento del entrenamiento cada vez que necesita
+
+29
+00:02:39,000 --> 00:02:44,120
+ajustar los pesos de las conexiones se va a aplicar el gradiente del error que
+
+30
+00:02:44,120 --> 00:02:51,320
+es representado con esta letra para propagar el error hacia atrás el
+
+31
+00:02:51,320 --> 00:02:57,680
+gradiente del error entonces es la manera en que una red propagation logra
+
+32
+00:02:57,680 --> 00:03:02,360
+calcular el error y ajustar los pesos de ahí viene el nombre este de regla
+
+33
+00:03:02,360 --> 00:03:07,920
+delta generalizada o de aprendizaje por retropropagación del error
+
+34
+00:03:07,920 --> 00:03:14,040
+conceptualmente lo que va a estar haciendo la red es lo que va a suceder en
+
+35
+00:03:14,040 --> 00:03:19,360
+este gráfico supongamos que para para un peso determinado para un doble de
+
+36
+00:03:19,360 --> 00:03:26,800
+determinado yo quiero calcular o definir el valor de dicho w para que el
+
+37
+00:03:26,800 --> 00:03:32,680
+error que genera el menor error posible o sea que se encuentre dentro de esta
+
+38
+00:03:32,680 --> 00:03:38,520
+área donde el error se minimiza pero qué sucede nosotros no sabemos cuál es el
+
+39
+00:03:38,520 --> 00:03:45,520
+valor de ese w el valor de ese peso para que minimice el error nosotros este
+
+40
+00:03:45,520 --> 00:03:51,520
+valor óptimo del w es lo que nos gustaría obtener obviamente de hecho es
+
+41
+00:03:51,520 --> 00:03:55,180
+un poquito más complicado porque nosotros tenemos que hallar la combinación de
+
+42
+00:03:55,180 --> 00:04:00,400
+valores de de pesos de valores de los doble de para cada una de las neuronas
+
+43
+00:04:00,400 --> 00:04:05,840
+de la red de forma que se minimice el valor el error general entonces el
+
+44
+00:04:05,840 --> 00:04:10,120
+problema aún es más complicado que encontrar un único w porque tenemos que
+
+45
+00:04:10,120 --> 00:04:15,600
+hallar todo un conjunto de valores w que en forma combinada minimizen el error pero
+
+46
+00:04:15,600 --> 00:04:20,960
+bueno vamos a seguir hablando con un solo w para ser lo más sencillo bien entonces
+
+47
+00:04:20,960 --> 00:04:25,360
+nosotros nos gustaría obtener ese valor óptimo pero no lo conocemos y lo
+
+48
+00:04:25,360 --> 00:04:29,560
+conociéramos ya estaría ya no tendríamos que entrenar más la red neurona
+
+49
+00:04:29,560 --> 00:04:35,200
+nosotros lo que tenemos que es que para un valor de w inicial o un w que puede
+
+50
+00:04:35,200 --> 00:04:40,280
+estar en un momento dado tenemos un grado de error y lo que queremos hacer es que es
+
+51
+00:04:40,280 --> 00:04:45,800
+ver cómo modificar el valor de ese peso del valor de ese w para que se acerque
+
+52
+00:04:45,800 --> 00:04:52,080
+más al valor óptimo no pero en nosotros durante el entrenamiento no sabemos si el
+
+53
+00:04:52,080 --> 00:04:57,520
+valor de w lo tenemos que hacer crecer o hacer de crecer o sea hacer que el valor
+
+54
+00:04:57,520 --> 00:05:05,840
+de w suba o baje no lo sabemos porque no sabemos en qué dirección se encuentra el
+
+55
+00:05:05,840 --> 00:05:12,280
+valor óptimo fíjense que si yo para este ejemplo el valor de w aquí lo hago
+
+56
+00:05:12,280 --> 00:05:18,520
+bajar el error va a tender a subir pero si yo al valor del w lo hago crecer el
+
+57
+00:05:18,520 --> 00:05:24,560
+error va a tender a bajar hasta cierto punto que si yo lo hago subir demasiado
+
+58
+00:05:24,560 --> 00:05:29,240
+vuelve a subir el error entonces tengo que tener cuidado de qué manera voy a
+
+59
+00:05:29,240 --> 00:05:35,520
+ajustar el valor de ese doble para lograr saber en qué dirección se tiene que
+
+60
+00:05:35,520 --> 00:05:40,840
+ajustar cada doble b se va a usar el concepto del gradiente negativo el
+
+61
+00:05:40,840 --> 00:05:45,160
+gradiente negativo que lo vamos a obtener a partir de la derivada nos va a
+
+62
+00:05:45,160 --> 00:05:53,880
+permitir saber y indicarle a la red de qué manera tenemos que ajustar nuestro
+
+63
+00:05:53,880 --> 00:05:59,160
+valor de doble b para que se acerque más al óptimo entonces lo que vamos a hacer
+
+64
+00:05:59,160 --> 00:06:05,400
+es calcular para la neurona 6 la derivada de la función de salida y eso
+
+65
+00:06:05,400 --> 00:06:10,800
+multiplicarlo por el error obtenido o sea la diferencia entre la salida deseada y
+
+66
+00:06:10,800 --> 00:06:16,400
+la salida obtenida con este valor del gradiente que nosotros obtuvimos para la
+
+67
+00:06:16,400 --> 00:06:22,960
+neurona 6 lo que tenemos que hacer es propagarlo también hacia las neuronas
+
+68
+00:06:22,960 --> 00:06:28,560
+anteriores porque el error no es sólo para la neurona 6 y sus tres pesos sino
+
+69
+00:06:28,560 --> 00:06:35,440
+que el error lo tenemos que considerar como un valor generado por todas las
+
+70
+00:06:35,440 --> 00:06:40,840
+neuronas ocultas y de entrada que teníamos anteriormente para propagar el
+
+71
+00:06:40,840 --> 00:06:44,960
+error hacia atrás entonces desde las neuronas de salida se utiliza esta
+
+72
+00:06:44,960 --> 00:06:49,720
+formulita que fíjense que es parecida al anterior lo que hacemos es calcular la
+
+73
+00:06:49,720 --> 00:06:53,760
+derivada de la función de salida porque nosotros queremos el gradiente
+
+74
+00:06:53,760 --> 00:07:00,360
+negativo y eso lo multiplicamos por el valor del gradiente para la neurona 6
+
+75
+00:07:00,360 --> 00:07:05,080
+multiplicado por el valor del peso que une por ejemplo a la neurona 3 con la
+
+76
+00:07:05,080 --> 00:07:12,120
+neurona 6 en el caso del gradiente de la neurona de entrada 1 entonces la
+
+77
+00:07:12,120 --> 00:07:17,320
+formulita sería la derivada de la función de salida multiplicada por el
+
+78
+00:07:17,320 --> 00:07:22,960
+gradiente de la neurona oculta 3 y el peso de la conexión entre la neurona 1
+
+79
+00:07:22,960 --> 00:07:28,920
+y la neurona 3 a eso le sumamos el gradiente de la neurona 4 multiplicado
+
+80
+00:07:28,920 --> 00:07:35,120
+por la conexión entre la neurona 1 y la neurona 4 y el gradiente de la neurona
+
+81
+00:07:35,120 --> 00:07:40,720
+5 multiplicada por la conexión entre la neurona 1 y la neurona 5 de esta manera
+
+82
+00:07:40,720 --> 00:07:48,800
+nosotros podemos afectar a cada neurona con este gradiente considerando cuánto
+
+83
+00:07:48,800 --> 00:07:53,400
+participaron en la generación del error si los valores de los pesos son más
+
+84
+00:07:53,400 --> 00:07:58,000
+grandes el valor del gradiente va a ser más grande si el valor de los pesos era
+
+85
+00:07:58,000 --> 00:08:02,920
+más chico el valor del gradiente va a ser más pequeño
+
+86
+00:08:02,920 --> 00:08:10,840
+bien entonces teniendo en cuenta este gradiente negativo y el alfa porque con
+
+87
+00:08:10,840 --> 00:08:14,480
+una rapback propagation también vamos a tener el coeficiente o tasa de
+
+88
+00:08:14,480 --> 00:08:19,640
+aprendizaje representado por el tasa definimos el nuevo peso que va a tener
+
+89
+00:08:19,640 --> 00:08:25,280
+cada una de las conexiones de la rap fíjense que la formulita es muy parecida
+
+90
+00:08:25,280 --> 00:08:31,360
+a la que aparecía para perceptron pero en vez de tener ya solamente la salida
+
+91
+00:08:31,360 --> 00:08:36,260
+deseada tenemos este concepto del gradiente que se calcula por cada neurona
+
+92
+00:08:36,260 --> 00:08:41,400
+a partir de entonces de esta modificación que va a tener el peso
+
+93
+00:08:41,400 --> 00:08:47,040
+con el gradiente en teoría nos vamos a estar acercando cada vez más al valor
+
+94
+00:08:47,040 --> 00:08:51,800
+del peso óptimo pero que sucede como yo les comenté anteriormente este proceso
+
+95
+00:08:51,800 --> 00:08:56,760
+se va a realizar por cada uno de los pesos que hay en toda la rab entonces hay
+
+96
+00:08:56,760 --> 00:09:02,880
+veces que por modificar todos los pesos en realidad en vez de acercarnos al
+
+97
+00:09:02,880 --> 00:09:07,480
+óptimo nos alejamos pero como este proceso lo vamos a hacer muchas veces se va a
+
+98
+00:09:07,480 --> 00:09:12,720
+ser en forma iterativa hasta que se logra aprender el patrón lo que va a
+
+99
+00:09:12,720 --> 00:09:20,320
+pasar es que el mismo proceso va a lograr encontrar en un momento dado una
+
+100
+00:09:20,320 --> 00:09:26,140
+combinación de pesos aceptables que tal vez no la óptima pero que genera un
+
+101
+00:09:26,140 --> 00:09:35,080
+error aceptable para el problema que yo quiero resolver bien entonces acá les
+
+102
+00:09:35,080 --> 00:09:41,880
+contamos y les dejamos escrito esto del gradiente porque se utiliza que yo lo
+
+103
+00:09:41,880 --> 00:09:45,800
+comenté anteriormente dice dado que no se conoce la salida deseada para las
+
+104
+00:09:45,800 --> 00:09:50,440
+neuronas ocultas se propaga el error hacia atrás teniendo en cuenta el aporte
+
+105
+00:09:50,440 --> 00:09:55,600
+de error de cada neurono bien entonces utilizando estas fórmulas nosotros
+
+106
+00:09:55,600 --> 00:09:59,800
+calculamos los gradientes y ajustamos los pesos de las conexiones entonces de
+
+107
+00:09:59,800 --> 00:10:04,940
+estos pesos iniciales ahora vamos a tener estos nuevos valores con nuevo con
+
+108
+00:10:04,940 --> 00:10:10,480
+estos nuevos valores lo que vamos a hacer es usar el mismo patrón le vamos a
+
+109
+00:10:10,480 --> 00:10:14,260
+ingresar nuevamente uno uno y vamos a ver cuál es la salida que me genera la
+
+110
+00:10:14,260 --> 00:10:21,100
+error fíjense que ahora la salida está un poquito mejor antes era 0,6 ahora es
+
+111
+00:10:21,100 --> 00:10:26,140
+0,541 que para nosotros cuando lo interpretamos con la función de
+
+112
+00:10:26,140 --> 00:10:31,320
+escalón que tenemos para la neurona de salida lo interpretamos como un 1 pero
+
+113
+00:10:31,320 --> 00:10:36,860
+estamos más cercanos de la salida deseada pero como todavía no es la
+
+114
+00:10:36,860 --> 00:10:40,820
+salida deseada que tenemos que hacer tenemos que volver a ajustar los pesos
+
+115
+00:10:40,820 --> 00:10:45,340
+de las conexiones entonces para eso vamos a tener que hacer primero el cálculo
+
+116
+00:10:45,340 --> 00:10:49,440
+de los distintos gradientes y la propagación del error hacia atrás con
+
+117
+00:10:49,440 --> 00:10:55,740
+estos nuevos gradientes y aplicando las mismas fórmulas calculamos los nuevos
+
+118
+00:10:55,740 --> 00:11:01,100
+pesos con estos nuevos pesos tenemos que de nuevo volver a calcular que
+
+119
+00:11:01,100 --> 00:11:05,700
+error genera entonces de nuevo le vamos a ingresar el patrón uno uno y ahora
+
+120
+00:11:05,700 --> 00:11:13,340
+fíjense que nos devuelve resultado 0,494 que según nuestra función que
+
+121
+00:11:13,340 --> 00:11:18,540
+aplica el umbral de clasificación eso va a ser un 0 entonces está cumpliendo la
+
+122
+00:11:18,540 --> 00:11:23,700
+salida deseada entonces fíjense que iterando dos veces
+
+123
+00:11:23,700 --> 00:11:29,380
+logramos obtener la salida correcta para este patrón como yo les decía
+
+124
+00:11:29,380 --> 00:11:33,180
+anteriormente esto se da porque la valor del alfa que estamos usando es un alfa
+
+125
+00:11:33,180 --> 00:11:38,260
+muy grande si hubiéramos usado un alfa de 0,3 hubiéramos tenido que iterar un
+
+126
+00:11:38,260 --> 00:11:43,140
+montón de veces más para obtener el resultado deseado
+
+127
+00:11:43,140 --> 00:11:47,340
+bueno que tendríamos que hacer ahora ya que aprendió el primer patrón le
+
+128
+00:11:47,340 --> 00:11:53,660
+tendríamos que enseñar el segundo pero qué pasa si se al entrenar el segundo
+
+129
+00:11:53,660 --> 00:11:58,140
+no se obtiene la salida deseada que es un 1 y tenemos que ajustar los pesos
+
+130
+00:11:58,140 --> 00:12:03,540
+tenemos que volver a revisar los resultados del primer patrón o sea
+
+131
+00:12:03,540 --> 00:12:09,340
+nuevamente vamos a tener que ver qué resultado me genera la rad con el dato
+
+132
+00:12:09,340 --> 00:12:14,900
+de entrada uno uno teniendo en cuenta los nuevos pesos si la salida sigue siendo
+
+133
+00:12:14,900 --> 00:12:19,620
+0 no hay que hacer nada pero si da un valor distinto de 0 vamos a tener que
+
+134
+00:12:19,620 --> 00:12:24,300
+volver a ajustar los pesos o sea vamos a tener que iterar por cada patrón que
+
+135
+00:12:24,300 --> 00:12:30,420
+vamos aprendiendo muchas veces hasta que logramos que la red aprenda de
+
+136
+00:12:30,420 --> 00:12:34,700
+volvernos la salida deseada por cada uno de los patrones
+
+137
+00:12:34,700 --> 00:12:41,780
+obviamente que eso va a llevar que el entrenamiento demore bastante pero como
+
+138
+00:12:41,780 --> 00:12:46,540
+lo hace una computadora y todo este proceso es muy automático lo único que
+
+139
+00:12:46,540 --> 00:12:51,860
+tenemos que hacer nosotros como seres humanos es sentarnos y esperar
+
+140
+00:12:51,860 --> 00:12:57,580
+en el caso de ahora vamos a ver de lo exclusivo demora un menos de un minuto
+
+141
+00:12:57,580 --> 00:13:04,660
+pero para problemas más complejos puede ser que demore varios minutos o horas y
+
+142
+00:13:04,660 --> 00:13:10,660
+a veces para datos muy complejos por ejemplo para entrenar imágenes puede
+
+143
+00:13:10,660 --> 00:13:16,700
+llevar días bueno la demostración de eso lo vamos a ver en el siguiente vídeo
+
+144
+00:13:16,700 --> 00:13:20,760
+para que no se haga demasiado largo, así que nos vemos en el siguiente video.

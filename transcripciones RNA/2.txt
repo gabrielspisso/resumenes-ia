@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:00:04,760
+Hola este es el segundo vídeo correspondiente a redes neuronales artificiales.
+
+2
+00:00:04,760 --> 00:00:11,700
+En este vídeo vamos a hablar de el modelo biológico en el cual están basadas que
+
+3
+00:00:11,700 --> 00:00:16,800
+son las redes neuronales biológicas. Las redes neuronales biológicas se
+
+4
+00:00:16,800 --> 00:00:22,880
+encuentran dentro de los animales y el ser humano en el cerebro y en todo el
+
+5
+00:00:22,880 --> 00:00:28,360
+sistema nervioso. Nosotros tenemos neuronas que interconectan todos los músculos
+
+6
+00:00:28,360 --> 00:00:34,320
+y órganos con el cerebro para que el cerebro le pueda mandar acciones que
+
+7
+00:00:34,320 --> 00:00:39,360
+tienen que realizar sean tanto voluntarias como involuntarias. De
+
+8
+00:00:39,360 --> 00:00:45,800
+todas maneras el lugar donde hay mayor densidad de neuronas es la cabeza del
+
+9
+00:00:45,800 --> 00:00:52,760
+cerebro donde podemos tener entre 15 a 33 mil millones de neuronas
+
+10
+00:00:52,760 --> 00:00:57,640
+interconectadas entre sí. Obviamente que todas estas neuronas van a ser muy
+
+11
+00:00:57,640 --> 00:01:04,220
+pequeñas porque son células. De todas maneras estas células tienen algunas
+
+12
+00:01:04,220 --> 00:01:08,200
+diferencias con otras células que aparecen en otros lugares del cuerpo.
+
+13
+00:01:08,200 --> 00:01:16,360
+¿Por qué? Porque en forma distinta que otras células que son circulares como
+
+14
+00:01:16,360 --> 00:01:23,080
+los glóbulos rojos la neurona va a tener en su cuerpo ciertas ramificaciones
+
+15
+00:01:23,080 --> 00:01:30,100
+que se llaman dendritas. Dentro de este cuerpo entonces vamos a tener un
+
+16
+00:01:30,100 --> 00:01:37,800
+núcleo y a su vez va a salir este axon que va a terminar en un conjunto de
+
+17
+00:01:37,800 --> 00:01:43,320
+botón opie. Bueno, esta sería la estructura muy simplificada de una neurona
+
+18
+00:01:43,320 --> 00:01:49,760
+biológica. Entonces una neurona biológica se destaca por sus dendritas, por su axon
+
+19
+00:01:49,760 --> 00:01:57,560
+y por sus botones opie. Las dendritas serían el medio por el cual una
+
+20
+00:01:57,560 --> 00:02:01,840
+neurona biológica puede recibir información del exterior. Entonces
+
+21
+00:02:01,840 --> 00:02:08,520
+podríamos decir que en una neurona biológica las dendritas son la interfaz
+
+22
+00:02:08,520 --> 00:02:14,640
+de entrada para que la neurona recibe información. El axon va a ser la
+
+23
+00:02:14,640 --> 00:02:19,800
+interfaz de salida, va a ser el medio por el cual nuestra neurona va a generar una
+
+24
+00:02:19,800 --> 00:02:25,440
+salida para mandársela a otra neurona o a algún órgano del cuerpo.
+
+25
+00:02:25,440 --> 00:02:30,600
+Sin embargo, como el axon es único y puede ser que una neurona le
+
+26
+00:02:30,600 --> 00:02:37,080
+necesite mandar esa información a más de otra neurona o a más de un órgano,
+
+27
+00:02:37,080 --> 00:02:43,920
+su finalización termina en una multiplexación. Entonces los botones opie
+
+28
+00:02:43,920 --> 00:02:50,040
+lo que hacen es redirigen, multiplexan, la información de salida que viaja por el
+
+29
+00:02:50,040 --> 00:02:56,560
+axon para que pueda llegar a más de una neurona o a más de un órgano. Al
+
+30
+00:02:56,560 --> 00:03:02,360
+interconexión de una dendrita con el botón opie de un axon se lo denomina
+
+31
+00:03:02,360 --> 00:03:09,200
+synapsis. Entonces la synapsis es la conexión que es una conexión más
+
+32
+00:03:09,200 --> 00:03:13,880
+lógica que física porque entre el botón opie de una neurona y la dendrita
+
+33
+00:03:13,880 --> 00:03:20,080
+de otra no es que están tocándose sino que hay una pequeña diferencia de
+
+34
+00:03:20,080 --> 00:03:27,800
+espacio. Están muy juntas pero no se están tocando entre sí. A partir del
+
+35
+00:03:27,800 --> 00:03:34,400
+botón opie de una neurona entonces va a viajar por ese espacio sináptico o
+
+36
+00:03:34,400 --> 00:03:39,360
+endidura sináptica como aparece el nombre en este gráfico, un conjunto de
+
+37
+00:03:39,360 --> 00:03:45,120
+neurotransmisores o descargas bioeléctricas, eso lo va a recibir la
+
+38
+00:03:45,120 --> 00:03:51,040
+dendrita de la otra neurona para mandársela y procesarla. En el cerebro cada
+
+39
+00:03:51,040 --> 00:03:55,840
+neurona posee aproximadamente 10.000 conexiones, eso significa que cada
+
+40
+00:03:55,840 --> 00:04:01,520
+neurona del cerebro se conecta con 10.000 otras neuronas, fíjense que es una
+
+41
+00:04:01,520 --> 00:04:08,400
+cantidad muy grande y eso es lo que nos da la posibilidad de poder razonar porque
+
+42
+00:04:08,400 --> 00:04:14,240
+en el cerebro y en todo nuestro sistema nervioso las neuronas aprenden
+
+43
+00:04:14,240 --> 00:04:20,520
+ajustando la forma de conexión que van a tener esas sinapses. Entonces las
+
+44
+00:04:20,520 --> 00:04:26,800
+sinapses pueden ser de tres tipos, pueden ser una sinapsis excitadora que lo que
+
+45
+00:04:26,800 --> 00:04:32,120
+va a producir que todo lo que se recibe por esa sinapsis excitadora va a
+
+46
+00:04:32,120 --> 00:04:39,680
+tender a que la neurona que lo recibe aumente su estado, se cargue. Puede
+
+47
+00:04:39,680 --> 00:04:44,360
+ser inhibidora que produce el efecto contrario, todo lo que se recibe a
+
+48
+00:04:44,360 --> 00:04:49,840
+través de esa sinapsis va a producir que la neurona que lo recibe se descargue,
+
+49
+00:04:49,840 --> 00:04:55,760
+va a ser un estado más de reposo. Y también podría haber una sinapsis
+
+50
+00:04:55,760 --> 00:05:01,480
+neutra, en una sinapsis neutra lo que va a suceder es que todo lo que se
+
+51
+00:05:01,480 --> 00:05:08,200
+recibe no afecta el estado de la neurona que está conectada a través de su
+
+52
+00:05:08,200 --> 00:05:13,560
+dentrita. No podemos decir que lo recibe porque no estaría recibiendo nada.
+
+53
+00:05:13,560 --> 00:05:21,720
+Bien, nosotros cuando aprendemos, cuando estamos tomando decisiones y tratando de
+
+54
+00:05:21,720 --> 00:05:26,520
+encontrar la solución a un problema, lo que está pasando dentro de nuestro
+
+55
+00:05:26,520 --> 00:05:32,120
+cerebro es que la sinapsis entre las conexiones de las neuronas se va
+
+56
+00:05:32,120 --> 00:05:38,560
+modificando. Puede ser que una sinapsis cada vez se vuelve a más excitadora, cada
+
+57
+00:05:38,560 --> 00:05:42,960
+vez se vuelve a más inhibidora o capaz que se vuelve cada vez más neutro.
+
+58
+00:05:42,960 --> 00:05:48,800
+Entonces en el cerebro, a medida que nosotros vamos aprendiendo, lo que se
+
+59
+00:05:48,800 --> 00:05:54,000
+están modificando son los caminos de razonamientos que se dan entre las
+
+60
+00:05:54,000 --> 00:05:59,400
+distintas neuronas. Para graficar el funcionamiento entonces de las
+
+61
+00:05:59,400 --> 00:06:03,960
+conexiones de las neuronas, lo vamos a ver con este pequeño gráfico. Supongamos
+
+62
+00:06:03,960 --> 00:06:10,880
+que nosotros tenemos nuestras neuronas que está ahí bastante grande y a su vez
+
+63
+00:06:10,880 --> 00:06:16,800
+esta neurona se conecta con otras y que las sinapsis puedan ser excitadoras
+
+64
+00:06:16,800 --> 00:06:22,200
+que están representadas con un más, inhibidoras representadas con un menos o
+
+65
+00:06:22,200 --> 00:06:28,560
+neutras representadas con un 0. Entonces mi neurona va a tener un estado que al
+
+66
+00:06:28,560 --> 00:06:33,400
+inicio va a ser un estado de reposo y que a medida que va recibiendo conexiones
+
+67
+00:06:33,400 --> 00:06:38,840
+excitadoras se va a empezar a cargar. Si recibe conexiones inhibidoras se va a
+
+68
+00:06:38,840 --> 00:06:44,480
+descargar y vamos a ver qué sucede si en algún momento supera un umbral de
+
+69
+00:06:44,480 --> 00:06:50,520
+activación. Entonces vamos a arrancar la animación, ahí se recibe una conexión
+
+70
+00:06:50,520 --> 00:06:55,800
+excitadora se carga, ahora se recibe otra conexión excitadora se vuelve a cargar,
+
+71
+00:06:55,800 --> 00:07:02,000
+ahora recibe una conexión inhibidoras se descarga, otra conexión excitadora se
+
+72
+00:07:02,000 --> 00:07:08,760
+vuelve a cargar, otra conexión excitadora se carga un poquito más, una
+
+73
+00:07:08,760 --> 00:07:16,080
+conexión inhibidora la descarga, otra excitadora hace que se cargue y por
+
+74
+00:07:16,080 --> 00:07:20,160
+último una conexión excitadora que hace que supere el umbral de activación.
+
+75
+00:07:20,160 --> 00:07:27,040
+Como resultado lo que esto produce es que mi neurona se activa, al activarse la
+
+76
+00:07:27,040 --> 00:07:32,680
+neurona necesita hacer algo, entonces lo que ese algo va a ser generar una salida,
+
+77
+00:07:32,680 --> 00:07:37,960
+una corriente bioeléctrica que se va a mandar por el axón y que se va a
+
+78
+00:07:37,960 --> 00:07:44,680
+multiplexar por el botón opio. Esta multiplexación va a producir que la
+
+79
+00:07:44,680 --> 00:07:49,920
+salida de esta neurona le llegue como entrada a otras neuronas, a su vez a las
+
+80
+00:07:49,920 --> 00:07:53,840
+otras neuronas puede pasar que lo tiende a excitar porque va a tener una
+
+81
+00:07:53,840 --> 00:07:58,680
+conexión excitadora, lo puede tender inhibir si es una conexión inhibidora o
+
+82
+00:07:58,680 --> 00:08:04,040
+no lo afecta en nada si es una conexión neutra, entonces la salida de una neurona
+
+83
+00:08:04,040 --> 00:08:11,320
+puede ser excitadora inhibidora o neutra dependiendo de la otra neurona que lo
+
+84
+00:08:11,320 --> 00:08:18,960
+recibe. Bien, en el cerebro continuamente lo que está pasando es lo que se ve en
+
+85
+00:08:18,960 --> 00:08:25,560
+esta animación también, que hay neuronas que se activan y van mandando salidas a
+
+86
+00:08:25,560 --> 00:08:30,640
+las otras neuronas y hay neuronas que tal vez nunca se activan o se activan de
+
+87
+00:08:30,640 --> 00:08:37,040
+vez en cuando. Esto tiene que ver con lo que está sucediendo en la mente de la
+
+88
+00:08:37,040 --> 00:08:42,880
+persona, entonces depende de lo lo que estamos haciendo se van a activar grupos
+
+89
+00:08:42,880 --> 00:08:47,600
+de neuronas, ustedes ya deben saber que hay grupos de neuronas y neuronas
+
+90
+00:08:47,600 --> 00:08:51,400
+asociadas a ciertas funciones, hay neuronas que tienen que ver con el habla,
+
+91
+00:08:51,400 --> 00:08:56,240
+hay neuronas que tienen que ver con recordar, hay neuronas que tienen que ver
+
+92
+00:08:56,240 --> 00:09:03,240
+con el procesamiento de lo que va recolectando la vista, el oído, el gusto
+
+93
+00:09:03,240 --> 00:09:08,840
+o el olfato, entonces de acuerdo a lo que va sucediendo se pueden activar más o
+
+94
+00:09:08,840 --> 00:09:14,000
+menos neuronas. En general en el cerebro en algún momento alguna neurona se va a
+
+95
+00:09:14,000 --> 00:09:19,520
+estar activando, porque a pesar de que nosotros no querramos pensar va a haber
+
+96
+00:09:19,520 --> 00:09:25,760
+procesos involuntarios que se dan como por ejemplo las neuronas que regulan el
+
+97
+00:09:25,760 --> 00:09:31,200
+funcionamiento del corazón y de los pulmones, entonces si nosotros no pensamos
+
+98
+00:09:31,200 --> 00:09:36,680
+en nada de todo modo vamos a tener neuronas activas y si estamos pensando
+
+99
+00:09:36,680 --> 00:09:41,840
+algo muy complejo seguramente vamos a tener muchas conexiones funcionando y
+
+100
+00:09:41,840 --> 00:09:48,440
+muchas neuronas que se están activando. Bien, como les decía antes entonces las
+
+101
+00:09:48,440 --> 00:09:53,360
+neuronas nos permiten razonar, nos permiten pensar y al momento de nosotros
+
+102
+00:09:53,360 --> 00:09:58,000
+aprender lo que se está modificando es la forma que tienen las conexiones entre
+
+103
+00:09:58,000 --> 00:10:03,360
+las neuronas. Este es un modelo que explica el funcionamiento del cerebro que
+
+104
+00:10:03,360 --> 00:10:10,080
+está avalado por científicos cirujanos y neurólogos, o sea personas que estudian
+
+105
+00:10:10,080 --> 00:10:16,020
+el funcionamiento del cerebro, a pesar de que es una simplificación de todo el
+
+106
+00:10:16,020 --> 00:10:21,240
+proceso químico que se da en el cerebro y que uno tendría que también tener en
+
+107
+00:10:21,240 --> 00:10:26,640
+cuenta para poder comprender mejor cómo funciona el cerebro. De todas maneras
+
+108
+00:10:26,640 --> 00:10:32,480
+nosotros no vamos a entrar en todo este aspecto químico y nos vamos a quedar con
+
+109
+00:10:32,480 --> 00:10:37,680
+una descripción del funcionamiento del cerebro que vimos recién y eso es lo
+
+110
+00:10:37,680 --> 00:10:43,200
+que vamos a aplicar para poder construir nuestras neuronas artificiales, la
+
+111
+00:10:43,200 --> 00:10:47,400
+explicación de cómo funciona entonces las neuronas artificiales lo vamos a ver
+
+112
+00:10:47,400 --> 00:10:53,920
+en el siguiente vídeo para que no se haga demasiado largo, hasta luego.

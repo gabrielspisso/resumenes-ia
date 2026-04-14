@@ -1,0 +1,527 @@
+1
+00:00:00,000 --> 00:00:06,160
+hola este es el sexto vídeo correspondiente a la presentación de redes neuronales artificiales
+
+2
+00:00:06,160 --> 00:00:12,680
+correspondiente al modelo perceptron en esta presentación vamos a hablar entonces del modelo
+
+3
+00:00:12,680 --> 00:00:19,320
+perceptron correspondiente al primer tipo de red neuronal artificial que ha sido definido en el año
+
+4
+00:00:19,320 --> 00:00:31,000
+1958 por Rosenblatt esta red aplica un aprendizaje supervisado dado que es una red heterosociativa y
+
+5
+00:00:31,000 --> 00:00:39,520
+ese aprendizaje es offline específicamente se aplica la estrategia por corrección de error y una
+
+6
+00:00:39,520 --> 00:00:46,240
+característica adicional que tiene es que esta red es monocapa porque está formada por una única
+
+7
+00:00:46,240 --> 00:00:54,120
+neurona que aprende a resolver un problema la implementación de la red perceptron dado el año
+
+8
+00:00:54,120 --> 00:01:03,240
+no fue realizado en software sino que fue realizado exclusivamente en hardware por eso mismo su modelo
+
+9
+00:01:03,240 --> 00:01:11,680
+es muy simple y ayuda a comprender de qué manera aprendan las redes utilizando la estrategia por
+
+10
+00:01:11,680 --> 00:01:18,680
+corrección de error y por eso mismo la vamos a ver también vamos a mencionar más adelante algunas
+
+11
+00:01:18,680 --> 00:01:25,240
+desventajas y limitaciones que tiene y cómo esas desventajas fueron luego solucionados por otro
+
+12
+00:01:25,240 --> 00:01:33,200
+tipo de redes que evolucionaron a partir de ellas bien en el aprendizaje por corrección de error
+
+13
+00:01:33,200 --> 00:01:42,440
+lo que se hace es lo siguiente este tipo de aprendizaje está basado en el aprendizaje por
+
+14
+00:01:42,440 --> 00:01:47,600
+repetición que hacemos los seres humanos para aprender cosas así en la escuela por ejemplo
+
+15
+00:01:47,600 --> 00:01:53,840
+para aprender a escribir nos pedían que repitiéramos muchas veces las mismas palabras hasta
+
+16
+00:01:53,840 --> 00:02:01,480
+que el cerebro automáticamente aprendía de qué manera mover las manos para poder escribir
+
+17
+00:02:01,480 --> 00:02:08,520
+ciertas tras una red perceptron va a ser lo mismo pero obviamente no va a manejar una
+
+18
+00:02:08,520 --> 00:02:17,200
+mano ni va a escribir sino que lo que vamos a hacer es mandarle una secuencia de datos y una
+
+19
+00:02:17,200 --> 00:02:24,280
+salida deseada que la red va a comparar para tratar de minimizar el error de esta manera se van
+
+20
+00:02:24,280 --> 00:02:32,920
+a ajustar los pesos de las conexiones y lograr que la red aprenda y a general el resultado
+
+21
+00:02:32,920 --> 00:02:39,840
+correcto para un conjunto de datos de entrada entonces vamos a ver paso a paso cómo funciona
+
+22
+00:02:39,840 --> 00:02:45,840
+este entrenamiento por un lado vamos a tener los patrones de entrenamiento los cuales van
+
+23
+00:02:45,840 --> 00:02:52,840
+a incluir los datos de entrada y la salida deseada por otro lado vamos a tener la combinación de
+
+24
+00:02:52,840 --> 00:02:59,640
+los valores de los pesos de las conexiones correspondientes a perceptron para representar
+
+25
+00:02:59,640 --> 00:03:08,160
+los esos valores de los pesos se puede utilizar una función lineal que está definida por la
+
+26
+00:03:08,160 --> 00:03:17,760
+función de salida que genera la red neuronal bueno o la neurona ya que el perceptron es una
+
+27
+00:03:17,760 --> 00:03:25,120
+red neuronal de una neurona bien supongamos que yo quiero clasificar datos que son del tipo
+
+28
+00:03:25,120 --> 00:03:32,160
+naranja y datos que son del tipo celeste lo que quiero lograr es que la función definida por
+
+29
+00:03:32,160 --> 00:03:39,120
+los pesos me separe o me clasifique por un lado los datos naranja y por otro lado los datos celestes
+
+30
+00:03:39,120 --> 00:03:45,720
+con los pesos iniciales que fueron definidos al arasar podemos ver que esto no sucede bueno
+
+31
+00:03:45,720 --> 00:03:52,000
+vamos a ver qué sucedería luego de aplicar la estrategia por corrección del entonces lo que
+
+32
+00:03:52,000 --> 00:04:00,400
+vamos a hacer es comenzar tomando un ejemplo y de ese ejemplo vamos a tomar los valores de
+
+33
+00:04:00,400 --> 00:04:07,120
+entrada y eso se los vamos a dar a la red neuronal y esta red neuronal perceptron lo que va a hacer
+
+34
+00:04:07,120 --> 00:04:14,280
+es definir una salida que va a ser la ubicación de acuerdo a los datos de entrada en el gráfico
+
+35
+00:04:15,400 --> 00:04:23,260
+luego le vamos a pedir a perceptron que nos diga si corresponde a la clase naranja o a la clase
+
+36
+00:04:23,260 --> 00:04:28,800
+celeste de acuerdo a su ubicación perceptron indica que con los pesos iniciales corresponde
+
+37
+00:04:28,800 --> 00:04:35,560
+una clase naranja a esta salida generada la vamos a comparar con la salida deseada y ahí notamos
+
+38
+00:04:35,560 --> 00:04:42,640
+que hay un error porque porque la salida deseada corresponde a la clase celeste y la red nos genera
+
+39
+00:04:42,640 --> 00:04:52,280
+una salida naranja entonces ya que hay un error se tiene que intentar controlar o reducir para
+
+40
+00:04:52,280 --> 00:04:58,720
+lograr esto se van a ajustar los pesos teniendo en cuenta el error generado entonces eso va a
+
+41
+00:04:58,720 --> 00:05:06,120
+producir que la función que estábamos considerando para representar los valores de los pesos se va a
+
+42
+00:05:06,120 --> 00:05:13,520
+mover si nosotros volviéramos a probar con los mismos datos de entrada con la nuevos pesos fíjense
+
+43
+00:05:13,520 --> 00:05:19,560
+que me volvería a decir que corresponde a la clase naranja y nuevamente tendría un error
+
+44
+00:05:19,560 --> 00:05:29,760
+aunque el error sería un poco menor que se debería corregir o eliminar entonces ahí nuevamente
+
+45
+00:05:29,760 --> 00:05:35,000
+deberíamos modificar los pesos lo que produciría que nuestra función se volvería a mover
+
+46
+00:05:36,240 --> 00:05:45,080
+por cada patrón que tengamos en los datos de entrenamiento entonces se va a producir este
+
+47
+00:05:45,080 --> 00:05:54,320
+proceso el proceso va a ciclar muchas veces hasta que el error generado por cada uno de los ejemplos
+
+48
+00:05:54,320 --> 00:06:03,840
+que nosotros queremos enseñarle a la red sea 0 o tenga un valor que nosotros consideremos aceptable
+
+49
+00:06:03,840 --> 00:06:10,160
+por ejemplo que tenga un error menor al 10 por ciento en ese caso podemos decir que el proceso de
+
+50
+00:06:10,160 --> 00:06:15,400
+entrenamiento ha finalizado y como resultado tendríamos los valores de los pesos que nos
+
+51
+00:06:15,400 --> 00:06:22,640
+permiten que nuestra red aprenda aprendió a resolver el problema propuesto
+
+52
+00:06:22,640 --> 00:06:32,160
+entonces nuestra función ya se encontraría en condiciones para ponerla en producción y
+
+53
+00:06:32,160 --> 00:06:39,720
+utilizarla para clasificar los datos naranjas y los datos celestes y esta explicación que vimos
+
+54
+00:06:39,720 --> 00:06:46,320
+recién que es bastante conceptual nos va a ayudar a entender ahora con más detalle cómo funciona
+
+55
+00:06:46,320 --> 00:06:52,880
+perceptron para eso vamos a ver un ejemplo más concreto supongamos que yo quiero utilizar perceptron
+
+56
+00:06:52,880 --> 00:07:00,280
+para enseñarle la función y binario entonces los patrones que yo le quiero enseñar son 1 y
+
+57
+00:07:00,280 --> 00:07:10,000
+0 igual a 0 0 y 1 igual a 0 0 y 0 igual a 0 y 1 y 1 igual a 1 para eso vamos a usar una neurona
+
+58
+00:07:10,000 --> 00:07:20,120
+que tiene dos conexiones de entrada porque los datos de entrada son 2 y una salida debido a que la
+
+59
+00:07:20,120 --> 00:07:27,160
+salida es única los valores iniciales de los pesos son 0.5 que fueron definidos en forma
+
+60
+00:07:27,160 --> 00:07:34,060
+arbitraria el umbral de activación es 0.2 también definido en forma arbitraria la función de
+
+61
+00:07:34,060 --> 00:07:40,520
+activación es la entrada neta menos el umbral y la función de salida es una función escalón que
+
+62
+00:07:40,520 --> 00:07:47,000
+me indica que si la salida de la función de activación es mayor que 0 va a devolver un 1 y si
+
+63
+00:07:47,000 --> 00:07:54,240
+no va a devolver un 0 finalmente definimos la función consolidada que considera tanto a la función
+
+64
+00:07:54,240 --> 00:08:01,560
+de activación como la función de salida y que se representa de esta manera con esta función y con
+
+65
+00:08:01,560 --> 00:08:07,440
+estos pesos iniciales le vamos a solicitar a perceptron que aprenda el primer patrón o sea
+
+66
+00:08:07,440 --> 00:08:16,800
+que si yo le ingreso 1 y 0 me detiene que devolver un 0 entonces qué hacemos con 1 y 0 que son los
+
+67
+00:08:16,800 --> 00:08:24,200
+datos de entrada y 0.5 0.5 que son los valores de los pesos iniciales se los ingresamos a la
+
+68
+00:08:24,200 --> 00:08:30,760
+entrada neta y la función de activación lo cual me devuelve 0.3 y a eso le aplicamos la función de
+
+69
+00:08:30,760 --> 00:08:37,800
+salida la función escalón por lo que nos devuelve 1 como la salida deseada era 0 y la salida
+
+70
+00:08:37,800 --> 00:08:45,800
+obtenida es un 1 hay un error que tenemos que hacer ajustar los pesos de las conexiones para ajustar
+
+71
+00:08:45,800 --> 00:08:52,480
+los pesos de las conexiones se utiliza la fórmula que aparece aquí fíjense que lo que se hace es para
+
+72
+00:08:52,480 --> 00:08:59,960
+ajustar cada peso se calcula el error o sea la salida generada menos la salida deseada a eso lo
+
+73
+00:08:59,960 --> 00:09:08,760
+multiplica por la entrada correspondiente a ese peso y se lo multiplica por una constante alfa que
+
+74
+00:09:08,760 --> 00:09:14,920
+se denomina tasa o coeficiente de entrenamiento en este caso le vamos a poner un valor de 0.3
+
+75
+00:09:14,920 --> 00:09:23,240
+que luego voy a explicar por qué bien utilizando entonces esta fórmula se ajusta el valor del
+
+76
+00:09:23,240 --> 00:09:32,240
+peso 1 de 0.5 a 0.2 y el valor del peso 2 se mantiene igual entonces solamente modificamos el
+
+77
+00:09:32,240 --> 00:09:39,960
+valor del peso 1 con el nuevo peso volvemos a evaluar los resultados del primer patrón entonces
+
+78
+00:09:39,960 --> 00:09:49,040
+volvemos a ingresar 1 y 0 y vemos qué resultado me genera ahora mi red neuronal entonces la función
+
+79
+00:09:49,040 --> 00:09:54,360
+de activación ahora me va a devolver un 0 por lo cual la función de salida también me devuelve un
+
+80
+00:09:54,360 --> 00:10:00,640
+0 que corresponde con la salida deseada quiere decir que per septron pudo aprender el primer patrón
+
+81
+00:10:00,640 --> 00:10:09,120
+fíjense que son varias fórmulas que se aplica pero el procedimiento es muy sencillo bien como yo ya
+
+82
+00:10:09,120 --> 00:10:16,920
+logré que per septron haya aprendido el primer patrón lo que tendría que hacer ahora es continuar
+
+83
+00:10:16,920 --> 00:10:24,440
+con el segundo entonces ahora le debería ingresar 0 y 1 y evaluar la salida que genera per septron
+
+84
+00:10:24,440 --> 00:10:31,120
+con respecto a 0 si es igual a 0 quiere decir que no tengo que modificar ningún peso pero si me da
+
+85
+00:10:31,120 --> 00:10:38,280
+un valor de 1 quiere decir que tengo que volver a ajustar los pesos al modificar los pesos voy
+
+86
+00:10:38,280 --> 00:10:44,480
+tengo que volver a probar con el segundo patrón hasta que el logre que me devuelva un 0 o sea tengo
+
+87
+00:10:44,480 --> 00:10:50,240
+que repetir este procedimiento hasta que si yo el ingreso como datos de entrada 0 y 1 me devuelvo
+
+88
+00:10:50,240 --> 00:10:57,840
+el 1 pero qué sucede si yo modifique los pesos al menos una vez lo que voy a tener que hacer es volver
+
+89
+00:10:57,840 --> 00:11:03,480
+a evaluar el primer patrón aprendido porque porque al modificar los puestos puede ser que
+
+90
+00:11:03,480 --> 00:11:11,840
+per septron se haya olvidado del resultado correcto para el primer patrón entonces debería
+
+91
+00:11:11,840 --> 00:11:18,560
+haber alguna forma de que me evite que cuando aprenda un patrón nuevo se olvide el patrón
+
+92
+00:11:18,560 --> 00:11:26,380
+anterior y esto lo vamos a lograr a través del alfa del coeficiente de entrenamiento al asignarle
+
+93
+00:11:26,380 --> 00:11:33,440
+a per septron un valor de coeficiente de entrenamiento pequeño generalmente se le pone un valor entre
+
+94
+00:11:33,440 --> 00:11:43,120
+0,1 y 0,3 lo que se logra es que cada vez que se aprende un nuevo patrón per septron modifique
+
+95
+00:11:43,120 --> 00:11:49,840
+muy poco muy poco los pesos de las conexiones al modificar muy poco los pesos de las conexiones me
+
+96
+00:11:49,840 --> 00:11:56,280
+va a tardar más en aprender una cosa nueva pero trato de que no se olvide cosas que ya había
+
+97
+00:11:56,280 --> 00:12:03,360
+aprendido entonces al usar un alfa muy pequeño estoy intentando de que en el proceso de aprendizaje
+
+98
+00:12:03,360 --> 00:12:11,040
+mi red pueda seguir aprendiendo nuevos patrones sin tener que después que reentrenar toda la red
+
+99
+00:12:11,040 --> 00:12:16,440
+si no cuando yo le enseñe el tercer patrón me aumenta la probabilidad de que se haya olvidado
+
+100
+00:12:16,440 --> 00:12:23,000
+el primero y el segundo o cuando aprenda el cuarto se olvide todos los anteriores entonces para tratar
+
+101
+00:12:23,000 --> 00:12:32,400
+de evitar eso se aplica esta operatoria bien entonces en este ejemplo vimos cómo se logra
+
+102
+00:12:32,400 --> 00:12:39,880
+aprender el ibinario si nosotros esto lo ejecutamos con con un programita vamos a correrme ahí estamos
+
+103
+00:12:39,880 --> 00:12:51,640
+donde lo que me va a representar aquí es los datos de entrada del x1 y el x2 y aquí me va a
+
+104
+00:12:51,640 --> 00:12:57,680
+representar la salida que va generando la red neuronal lograr indicar que la red ha aprendido
+
+105
+00:12:57,680 --> 00:13:02,240
+lo que me tendría que hacer es encontrar una función que separa las salidas que corresponden
+
+106
+00:13:02,240 --> 00:13:06,720
+a 0 de la salida correspondiente a 1 entonces lo ponemos a ejecutar
+
+107
+00:13:06,720 --> 00:13:19,520
+podemos ver cómo la función se empieza a mover a medida que van se van modificando los valores
+
+108
+00:13:19,520 --> 00:13:30,640
+de los pesos y ahí ya ha logrado aprender a resolver correctamente el problema del ibinario ha
+
+109
+00:13:30,640 --> 00:13:37,200
+logrado separar las salidas que corresponden a 0 de la salida que corresponde a 1 quiere decir que
+
+110
+00:13:37,200 --> 00:13:45,040
+en poco tiempo la red perceptron logra aprender esta función ibinaria
+
+111
+00:13:45,040 --> 00:13:54,120
+pero qué sucede ahora vamos a ver que a pesar de que tiene esta característica que aprende
+
+112
+00:13:54,120 --> 00:13:59,800
+bastante sencillo y bastante rápido perceptron tiene algunas limitaciones pero antes de ver eso
+
+113
+00:13:59,800 --> 00:14:05,560
+vamos a ver algunas recomendaciones con respecto a la implementación y el uso de perceptron bueno
+
+114
+00:14:05,560 --> 00:14:11,320
+por un lado del valor del umbral que nosotros lo mantuvimos constante también se podría modificar
+
+115
+00:14:11,320 --> 00:14:17,560
+como si fuera un peso más o sea durante el aprendizaje y usando la misma fórmula se
+
+116
+00:14:17,560 --> 00:14:25,520
+podría ajustar el umbral para que la red aprenda más fácil por otro lado generalmente el perceptron
+
+117
+00:14:25,520 --> 00:14:34,000
+trabaja con valores binarios o con un un valor que está entre el rango de 0 a 1 con respecto al
+
+118
+00:14:34,000 --> 00:14:42,520
+alfa puede conviviente tener un valor entre 0,05 y 0,3 y por último los valores iniciales de los
+
+119
+00:14:42,520 --> 00:14:52,400
+pesos conviene utilizar un valor entre 0 y 0,5 bien como vimos recién perceptron puede aprender
+
+120
+00:14:52,400 --> 00:14:58,640
+sin problemas la función ibinaria que es una función lineal lo mismo sucedería con la función
+
+121
+00:14:58,640 --> 00:15:05,720
+obinaria que también es una función lineal pero lamentablemente perceptron es tan simple
+
+122
+00:15:05,720 --> 00:15:12,600
+que no puede aprender funciones más complejas como la función o exclusiva es más funciones que
+
+123
+00:15:12,600 --> 00:15:19,280
+no pueden ser representadas por una función lineal no pueden ser aprendidas por perceptron si esto
+
+124
+00:15:19,280 --> 00:15:28,000
+no lo vemos nosotros en este ejemplo vamos a ver que es lógico que no se pueda ubicar una recta
+
+125
+00:15:28,000 --> 00:15:34,040
+que me separa en los resultados de 0 de los resultados de 1 necesitaría dos rectas para poder
+
+126
+00:15:34,040 --> 00:15:42,600
+separarlo y perceptron al tener una única neurona no lo puede hacer por este motivo perceptron fue
+
+127
+00:15:42,600 --> 00:15:50,200
+dejado de lado en la década de los 60 y por mucho tiempo las redes neuronales artificiales se
+
+128
+00:15:50,200 --> 00:15:56,960
+consideraron una tecnología que parecía muy interesante pero que tenía muchas limitaciones
+
+129
+00:15:56,960 --> 00:16:03,280
+esto sucedió hasta más o menos la década de los 80 cuando finalizó el primer invierno de la
+
+130
+00:16:03,280 --> 00:16:10,480
+inteligencia artificial y ahí apareció una evolución de perceptron denominada red neuronal
+
+131
+00:16:10,480 --> 00:16:17,680
+artificial multi perceptron con reglas delta generalizada o de aprendizaje por retro propagación
+
+132
+00:16:17,680 --> 00:16:23,520
+del arco en el siguiente vídeo vamos a hablar de este tipo de rango hasta luego

@@ -1,0 +1,391 @@
+1
+00:00:00,000 --> 00:00:06,320
+hola este es el cuarto vídeo correspondiente a redes neuronales artificiales en este vídeo
+
+2
+00:00:06,320 --> 00:00:12,400
+vamos a hablar de tres grupos de características que son definidos de acuerdo al modelo de RNA
+
+3
+00:00:12,400 --> 00:00:17,880
+que uno quiere aplicar el primer grupo de características tiene que ver con el tipo
+
+4
+00:00:17,880 --> 00:00:22,960
+de información de entrada a salida que va a manejar mi red neuronal yo puedo tener redes
+
+5
+00:00:22,960 --> 00:00:29,840
+neuronales que manejan valores binarios o sea valores discretos de 0 o 1 para representar la
+
+6
+00:00:29,840 --> 00:00:37,920
+información de entrada la información internamente procesada y la información de salida que genera
+
+7
+00:00:37,920 --> 00:00:45,260
+mi red o puede utilizar redes neuronales que manejan directamente cualquier valor continuo
+
+8
+00:00:45,260 --> 00:00:54,000
+valor reales entre algún rango que puede ser menos infinito más infinito menos 1 o 1 o 0 o
+
+9
+00:00:54,000 --> 00:01:00,520
+1 este tipo de representación de la información de entrada a salida obviamente que va a afectar
+
+10
+00:01:00,520 --> 00:01:09,760
+de qué manera yo voy a procesar la información que ingresa a la red neuronal por lo que también
+
+11
+00:01:09,760 --> 00:01:15,960
+va a cambiar el tipo de función de activación y función de salida que va a utilizar mi red
+
+12
+00:01:15,960 --> 00:01:23,640
+neuronal artificial generalmente para la función a regla de activación se usan funciones muy simples
+
+13
+00:01:23,640 --> 00:01:29,200
+como la función escalón o directamente la función identidad en una función identidad lo
+
+14
+00:01:29,200 --> 00:01:35,280
+que va a pasar es que el resultado va a ser igual al valor que ingresó también puede usar funciones
+
+15
+00:01:35,280 --> 00:01:42,640
+un poco más complejas como la función lineal mixta o la función relu en cambio para la función de
+
+16
+00:01:42,640 --> 00:01:48,560
+salida se suelen utilizar funciones un poquito más complejas también puede usar la función escalón
+
+17
+00:01:48,560 --> 00:01:54,800
+la lineal mixta pero también pueden aparecer la función sincmoidal la función gaussiana la
+
+18
+00:01:54,800 --> 00:02:03,560
+funciones trigonométricas como la tangente hiperbólica entonces si yo manejo valores discritos y
+
+19
+00:02:03,560 --> 00:02:09,040
+binarios por ejemplo tal vez usó una función escalón una función sincmoidal pero si yo
+
+20
+00:02:09,040 --> 00:02:17,060
+quiero usar valores reales me convendría utilizar tal vez la función tangente hiperbólica en la
+
+21
+00:02:17,060 --> 00:02:23,120
+práctica muchas veces la función o regla de activación y la función de salida son combinadas
+
+22
+00:02:23,120 --> 00:02:29,840
+en una única función entonces en vez de estar trabajando con dos funciones separadas que se
+
+23
+00:02:29,840 --> 00:02:38,560
+aplican una tras de la otra generalmente se aplica una única función con una única definición para
+
+24
+00:02:38,560 --> 00:02:46,400
+que sea más fácil de implementar y analizar los resultados que genera en la mayoría de los
+
+25
+00:02:46,400 --> 00:02:53,320
+casos el tipo de función que yo voy a aplicar va a estar muy definido por el tipo de modelo de
+
+26
+00:02:53,320 --> 00:02:58,600
+red neuronal que voy a aplicar entonces ya no puede ser que algún modelo nos diga tenés que
+
+27
+00:02:58,600 --> 00:03:04,840
+aplicar esta función o puedes elegir entre esta y esta entonces no conviene perder mucho tiempo
+
+28
+00:03:04,840 --> 00:03:11,920
+a andar analizando el tipo de función en cambio es más importante pensar en otras cuestiones como
+
+29
+00:03:11,920 --> 00:03:18,480
+el tipo de asociación que va a tener la información de entrada a salida esto tipo de
+
+30
+00:03:18,480 --> 00:03:25,760
+asociación puede ser que me determine una red neuronal hetero asociativa o una RNA auto asociativa
+
+31
+00:03:25,760 --> 00:03:35,520
+si yo tengo una RNA que es del tipo hetero asociativa lo yo lo que necesito aplicar luego
+
+32
+00:03:35,520 --> 00:03:43,440
+es un tipo de aprendizaje supervisado porque en una RNA hetero asociativa lo que va a pasar
+
+33
+00:03:43,440 --> 00:03:50,720
+es que yo le voy a administrar a la red un conjunto de patrones de entrada y una salida desciada y lo
+
+34
+00:03:50,720 --> 00:03:57,320
+que voy a esperar es que mi red aprenda a asociar los datos de entrada el patrón de entrada con la
+
+35
+00:03:57,320 --> 00:04:04,920
+salida o patrón de salida entonces sí o sí voy a tener que aplicar un aprendizaje supervisado para
+
+36
+00:04:04,920 --> 00:04:12,040
+que considere esa salida desciada y que logre aprender el resultado correcto esperado para
+
+37
+00:04:12,040 --> 00:04:18,880
+los datos de entrada en cambio en una red auto asociativa el aprendizaje que se va a aplicar
+
+38
+00:04:18,880 --> 00:04:24,800
+va a ser un aprendizaje no supervisado porque yo solamente le voy a administrar los datos de entrada
+
+39
+00:04:24,800 --> 00:04:33,600
+y la red sola va a poder aprender a identificar la salida correcta más adelante vamos a hablar
+
+40
+00:04:33,600 --> 00:04:40,680
+sobre los dos tipos de aprendizaje supervisado y no supervisado pero como ya se deben imaginar
+
+41
+00:04:40,680 --> 00:04:48,120
+hay problemas donde yo voy a aplicar un aprendizaje supervisado porque yo quiero que la red me devuelva
+
+42
+00:04:48,120 --> 00:04:56,560
+una respuesta predefinida y hay problemas donde yo no sé cuál es la salida correcta y espero que
+
+43
+00:04:56,560 --> 00:05:03,800
+la red me devuelva esa salida por ejemplo un aprendizaje no supervisado con una RNA auto
+
+44
+00:05:03,800 --> 00:05:11,480
+asociativa la podría aplicar para hacer clustering de datos donde yo quiero definir grupos de datos
+
+45
+00:05:11,480 --> 00:05:21,080
+que tengan características similares entonces otra cuestión importante para definir una RNA
+
+46
+00:05:21,080 --> 00:05:29,080
+es su topología la topología muchas veces está restringida por de acuerdo al modelo de red que
+
+47
+00:05:29,080 --> 00:05:38,440
+yo quiero aplicar entonces vamos a ver qué cosas puede llegar a cambiar entre una RNA y otra de acuerdo
+
+48
+00:05:38,440 --> 00:05:46,480
+a su topología la primer cuestión es la cantidad de capas yo puedo tener una red multicapa que puede
+
+49
+00:05:46,480 --> 00:05:53,800
+incluir por ejemplo cuatro capas como sucede aquí otra que multicapa con tres capas eso quiere decir
+
+50
+00:05:53,800 --> 00:06:01,760
+que tiene una única capa oculta también puedo tener una capa una red multicapa con dos capas
+
+51
+00:06:01,760 --> 00:06:10,400
+bicapa que sólo tiene una capa de entrada y una capa de salida y la última situación aparece una
+
+52
+00:06:10,400 --> 00:06:17,720
+red monocapa eso quiere decir que tenemos sólo dos neuronas que funcionan de entrada a salida podrían
+
+53
+00:06:17,720 --> 00:06:25,880
+ser dos o más neuronas no porque otro aspecto de la topología de una red que puede cambiar es la
+
+54
+00:06:25,880 --> 00:06:32,940
+cantidad de neuronas que aparecen cada capa como les había comentado antes puede ser que yo tenga
+
+55
+00:06:32,940 --> 00:06:39,880
+dos neuronas de entrada si yo necesito recibir sólo dos datos de entrada y tres neuronas de salida
+
+56
+00:06:39,880 --> 00:06:46,520
+porque necesito generar tres posibles valores de salida en las capas intermedias va a depender
+
+57
+00:06:46,520 --> 00:06:51,960
+del problema y de la complejidad de los datos para determinar las cantidades neuronas ocultas
+
+58
+00:06:51,960 --> 00:06:58,960
+que voy a tener puede ser que en la primera capa oculta tenga como parece aquí cinco neuronas pero
+
+59
+00:06:58,960 --> 00:07:08,400
+podría también tener tres o dos o una dependiendo de lo que yo quiero resolver eso vamos a verlo más
+
+60
+00:07:08,400 --> 00:07:15,840
+adelante cuando empecemos a ver los modelos correspondientes a multi perceptron donde
+
+61
+00:07:15,840 --> 00:07:22,840
+vamos a ver que se pueden aplicar redes neuronales con varias capas ocultas para resolver problemas
+
+62
+00:07:22,840 --> 00:07:30,680
+otro aspecto que puede cambiar de una red neuronal a otra es el tipo y grado de conectividad que van
+
+63
+00:07:30,680 --> 00:07:37,960
+a tener las neuronas en este gráfico se puede ver que entre todas las neuronas de una capa y
+
+64
+00:07:37,960 --> 00:07:43,840
+de la capa siguiente la conectividad es total esto significa que cada neurona se conecta con
+
+65
+00:07:43,840 --> 00:07:51,080
+todas las otras neuronas de la siguiente capa pero podría pasar que entre la capa oculta 1 y la
+
+66
+00:07:51,080 --> 00:07:58,440
+capa oculta 2 no todas las neuronas de la capa 1 se conecten con todas las neuronas de la capa 2
+
+67
+00:07:58,440 --> 00:08:05,200
+por ejemplo la primer neurona se podría conectar sólo con las dos primeras la segunda con las
+
+68
+00:08:05,200 --> 00:08:13,720
+dos segundas y así por qué se querría hacer eso bueno hay veces que la cantidad de neuronas
+
+69
+00:08:13,720 --> 00:08:20,520
+ocultas que pueden tener en las distintas capas una renda neuronal puede ser tan grande que la
+
+70
+00:08:20,520 --> 00:08:29,560
+cantidad de memoria ram que se tiene que aplicar excede a las disponibles en la computadora como
+
+71
+00:08:29,560 --> 00:08:34,440
+cada conexión entre las neuronas va a tener un peso es decir que yo tengo que guardar una
+
+72
+00:08:34,440 --> 00:08:42,840
+variable numérica por cada conexión en la memoria puede ser que mi computadora no no
+
+73
+00:08:42,840 --> 00:08:50,360
+pueda soportar esa gran cantidad de variables en tales casos el diseñador puede elegir por hacer
+
+74
+00:08:50,360 --> 00:08:56,840
+conectividad parcial entre las capas de las neuronas todo a producir que mi renda neuronal
+
+75
+00:08:56,840 --> 00:09:05,400
+sea más limitada pero que de todas maneras pueda funcionar y y ser entrenada en el hardware
+
+76
+00:09:05,400 --> 00:09:13,480
+disponible entonces muchas veces se aplica una conectividad total cuando el hardware es suficiente
+
+77
+00:09:13,480 --> 00:09:21,120
+para entrenar a la red neuronal pero en algunos casos puede ser que se aplique una conectividad
+
+78
+00:09:21,120 --> 00:09:28,320
+parcial también hay algunos modelos especiales que requieren que entre dos capas de neurona
+
+79
+00:09:28,320 --> 00:09:35,120
+siempre haya conectividad parcial aplicando alguna regla entonces ahí no podemos nunca utilizar
+
+80
+00:09:35,120 --> 00:09:43,960
+una conectividad total bien por último tenemos con respecto a la topología la forma de conexión
+
+81
+00:09:43,960 --> 00:09:51,040
+la forma de conexión puede ser hacia adelante como es la que aparece en las distintas topologías
+
+82
+00:09:51,040 --> 00:09:58,880
+que aparecen estos tres primeros ejemplos donde siempre la información fluye desde la capa
+
+83
+00:09:58,880 --> 00:10:06,560
+de entrada hacia la capa de salida pero también podría tener conexiones hacia atrás las conexiones
+
+84
+00:10:06,560 --> 00:10:14,000
+hacia atrás se pueden dar entre las neuronas de la misma capa que es el lo que aparece en el cuarto
+
+85
+00:10:14,000 --> 00:10:22,320
+ejemplo donde las neuronas que forman una red monocapa se conectan con las mismas neuronas que
+
+86
+00:10:22,320 --> 00:10:29,680
+están en la misma capa así la salida de la neurona 1 también es entrada de la neurona 2
+
+87
+00:10:29,680 --> 00:10:37,840
+y la salida de la neurona 2 se convierte en entrada de la neurona 1 a su vez yo podría
+
+88
+00:10:37,840 --> 00:10:43,960
+tener conexiones recursivas eso significa que la salida de una neurona puede ser entrada de
+
+89
+00:10:43,960 --> 00:10:51,720
+sigo misma entonces por ejemplo yo podría tener una neurona donde la salida una vez generada
+
+90
+00:10:51,720 --> 00:10:58,360
+se va a convertir en una nueva entrada que la neurona tiene que procesar por último también
+
+91
+00:10:58,360 --> 00:11:05,560
+puede obtener conexiones hacia atrás donde una neurona de una capa le manda su salida como
+
+92
+00:11:05,560 --> 00:11:14,360
+entrada a una neurona de una capa anterior en tales situaciones lo que va a pasar es que cada
+
+93
+00:11:14,360 --> 00:11:20,680
+vez que se genera la salida de una neurona que tiene esa conexión hacia atrás la capa anterior
+
+94
+00:11:20,680 --> 00:11:27,240
+tiene que volver a procesar entonces el durante el funcionamiento de la red se va a producir un
+
+95
+00:11:27,240 --> 00:11:35,000
+ciclo que va a finalizar cuando se cumpla algún criterio de estabilización que va a definir la
+
+96
+00:11:35,000 --> 00:11:43,680
+red neuronal después vamos a ver un ejemplo de ese tipo de conexión y cómo se aplica ese criterio
+
+97
+00:11:43,680 --> 00:11:50,720
+bueno nos queda por ver las reglas de aprendizaje o estrategias de entrenamiento pero eso lo vamos
+
+98
+00:11:50,720 --> 00:11:53,160
+a ver en el vídeo siguiente hasta luego

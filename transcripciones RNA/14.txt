@@ -1,0 +1,443 @@
+1
+00:00:00,000 --> 00:00:10,000
+Hola, mi nombre es Pablo Pitel y en este vídeo vamos a seguir hablando del proceso de construcción de los modelos específicamente de una red neuronal
+
+2
+00:00:10,000 --> 00:00:19,000
+y vamos a hablar un poquito de los principales parámetros que se pueden aplicar en una red neuronal para lograr que aprenda correctamente.
+
+3
+00:00:19,000 --> 00:00:33,000
+Lo primero que tendremos que ver es de qué manera conviene gestionar los datos de entrenamiento y también los de validación para realizar el aprendizaje.
+
+4
+00:00:33,000 --> 00:00:44,000
+Hay cuatro alternativas distintas, entonces vamos a ver cuál es la diferencia que tiene y un poquito qué problemas y qué ventajas tiene cada uno.
+
+5
+00:00:44,000 --> 00:00:55,000
+Bueno, la primera forma de llevar este procesamiento de los datos es hacer un procesamiento ejemplo por ejemplo.
+
+6
+00:00:55,000 --> 00:01:06,000
+Esto que va a significar por cada ejemplo, la red neuronal va a recibir los datos de entrada, va a generar la salida, va a calcular el error utilizando la fórmula correspondiente,
+
+7
+00:01:06,000 --> 00:01:18,000
+va ajustar los pesos, ahí aplica el algoritmo de retroperapagación del error y pasas a ejecutar el siguiente ejemplo y por cada uno hace todos estos pasos.
+
+8
+00:01:18,000 --> 00:01:31,000
+Esta fue la explicación que hicimos inicialmente para una red multiperseptron que aplicaba y para el error perceptron también que aplicaba ahí el algoritmo de corrección del error.
+
+9
+00:01:31,000 --> 00:01:39,000
+Entonces bueno, qué va a pasar por cada ejemplo, va a tener que hacer todos estos pasos cuando termina de procesar todos los datos de entrenamiento,
+
+10
+00:01:39,000 --> 00:01:47,000
+ahí vamos a tener los valores de los pesos que deberían definir que la red aprendió.
+
+11
+00:01:47,000 --> 00:02:00,000
+Pero qué pasa, esto obviamente que va a consumir mucho tiempo de procesamiento y va a consumir mucha memoria porque la red va a tener que ir procesando
+
+12
+00:02:00,000 --> 00:02:09,000
+cada ejemplo y ir haciendo todos los ajustes con todos los cálculos correspondientes hasta que termine.
+
+13
+00:02:09,000 --> 00:02:16,000
+Si yo tengo gran cantidad de ejemplos, esto va a llevar bastante tiempo.
+
+14
+00:02:16,000 --> 00:02:31,000
+Acá vamos a hacer una definición porque después las vamos a usar, todo esto es paso de ingresar los datos de entrada, generar la salida, calcular el error y el justo de los pesos,
+
+15
+00:02:31,000 --> 00:02:36,000
+lo vamos a llamar paso o step y época lo vamos a llamar a todo el proceso de todos los datos.
+
+16
+00:02:36,000 --> 00:02:46,000
+Esto va a ser importante porque después vamos a ver que la definición de paso y época va a incluir distintas cosas.
+
+17
+00:02:46,000 --> 00:02:58,000
+Y bueno, lo que pasa con este procesamiento, como les decía, si yo tengo mucha cantidad de datos, puedo requerir muchos cálculos y se va a volver un poco ineficiente.
+
+18
+00:02:58,000 --> 00:03:14,000
+Para intentar mejorar esto, alguien propuso hacerlo un poco distinto, entonces lo que hizo es sacó del paso del step el calculo del ajuste de los pesos.
+
+19
+00:03:14,000 --> 00:03:25,000
+Fíjense, yo lo que voy a hacer es recibir los datos de entrada, generar la salida, calcular el error, ese error lo guardo y después paso a procesar el siguiente ejemplo.
+
+20
+00:03:25,000 --> 00:03:42,000
+Una vez que se procesan todos, a ir, calcula un error promedio, a eso es lo que vamos a llamar los del entrenamiento o pérdido del entrenamiento,
+
+21
+00:03:42,000 --> 00:03:47,000
+y a partir de este los se hace recién el ajuste de los pesos.
+
+22
+00:03:47,000 --> 00:03:54,000
+Entonces, por cada época se hace un único ajuste de los pesos teniendo en cuenta el error promedio de todos los datos.
+
+23
+00:03:54,000 --> 00:04:12,000
+Acá de vuelta, a pesar de que tiene que hacer menos cálculos en el paso, suele ser también un poco ineficiente porque ese error promedio va a ser medio complicado de calcular
+
+24
+00:04:12,000 --> 00:04:28,000
+para que le sea utilidad del error porque va a ser un ajuste considerando todos los errores de todos los ejemplos y eso a veces puede ser que no alcance para que los pesos se puedan ajustar de forma eficaz.
+
+25
+00:04:28,000 --> 00:04:37,000
+Y a su vez va a tener que ir guardando todos los errores, lo cual lo va a llevar, que va a consumir mucha memoria.
+
+26
+00:04:37,000 --> 00:04:52,000
+Uno puede ir calculando el error promedio de forma auxiliar, pero bueno, de alguna forma va a tener que al menos ir acumulando todo ese error, lo cual se vuelve un poco ineficiente.
+
+27
+00:04:52,000 --> 00:05:00,000
+Este tipo de procesamientos lo llaman full batch porque procesa todos los datos juntos para luego hacer el ajuste de los pesos.
+
+28
+00:05:00,000 --> 00:05:22,000
+Entonces, tendiendo en cuenta estos dos extremas, uno es procesando ejemplo por ejemplo y otro procesar todo para hacer el ajuste de los pesos, surge otro método que es el método estocástico que busca hacer un poco más eficiente para grandes volúmenes de datos.
+
+29
+00:05:22,000 --> 00:05:41,000
+Lo que hace el método estocástico es por cada época va a elegir un único ejemplo al azar, de todo el conjunto de datos elige un ejemplo y ese ejemplo lo procesa considerando los datos de entrada, generando la salida del error neuronal, calculando el error y ajustando los pesos.
+
+30
+00:05:41,000 --> 00:05:57,000
+O sea, en el método estocástico por cada época, por cada ciclo del proceso de entrenamiento, solamente se procesa un ejemplo. Eso obviamente es suficiente porque de todo, si yo tengo un millón de ejemplos, siempre proceso en cada época un ejemplo.
+
+31
+00:05:57,000 --> 00:06:12,000
+Pero lo que está haciendo es retrasando la dificultad porque vamos a tener que procesar más épocas para que la red aprenda, entonces puede generar que tarda mucho más tiempo en converger, en generarme buenos resultados.
+
+32
+00:06:12,000 --> 00:06:32,000
+Entonces, tomando esta idea del método estocástico, que nosotros lo presentamos para entender cómo es el procedimiento, pero muchas veces no es usado, lo que aparece es un método que se llama un proceso minibatch.
+
+33
+00:06:32,000 --> 00:06:56,000
+En el proceso minibatch lo que va a hacer es tomar del conjunto de datos un pequeño batch, un pequeño lote de datos al azar. Ese conjunto de datos lo va a procesar como si fuera un full batch, es decir, por cada uno de los ejemplos de este pequeño batch va a ingresárselo al error neuronal, generar la salida, calcular el error.
+
+34
+00:06:56,000 --> 00:07:13,000
+Una vez que procesa todos los ejemplos del batch, que podrían ser 5, 10, 20, 40 o 50 ejemplos, o sea, va a depender de ahí de un parámetro que va a definir el tamaño del batch, calcula el error promedio en los del entrenamiento y hace el ajuste de los pesos.
+
+35
+00:07:13,000 --> 00:07:29,000
+Entonces, tiene lo bueno que el cálculo del ajuste de los pesos no lo está haciendo continuamente por cada ejemplo, lo va a tomar para varios, pero tampoco es que considera todo el conjunto de datos, va a ir tomando de poquititos.
+
+36
+00:07:29,000 --> 00:07:44,000
+Una vez que procesó este mini lote o mini batch de datos, pasa a procesar otro batch y otro y otro y otro hasta que procesa todos los datos.
+
+37
+00:07:44,000 --> 00:07:57,000
+Entonces, en este procesamiento mini batch se terminan procesando dentro de cada época todo el conjunto de datos, pero el conjunto de datos se va tomando por partes de batch.
+
+38
+00:07:57,000 --> 00:08:04,000
+Entonces, se dice que la época finaliza cuando quedan todos los ejemplos procesados por todos los batch.
+
+39
+00:08:04,000 --> 00:08:12,000
+Entonces, este método es el más efectivo para grandes volúmenes de datos y suele converger rápidamente.
+
+40
+00:08:12,000 --> 00:08:21,000
+Entonces, como que tienen las ventajas de los métodos anteriores con esta variación.
+
+41
+00:08:21,000 --> 00:08:32,000
+Entonces, ahí ustedes van a ver que en la mayoría de las herramientas y librerías se aplica este método por estos motivos.
+
+42
+00:08:32,000 --> 00:08:39,000
+Otra de las cuestiones que uno tiene que definir durante el entrenamiento es la cantidad de épocas.
+
+43
+00:08:39,000 --> 00:08:47,000
+La cantidad de épocas que tiene que ver con cuántas veces vamos a procesar todo el conjunto de datos cuando usamos un mini batch.
+
+44
+00:08:47,000 --> 00:09:01,000
+Entonces, acá hay que tener en cuenta que si nosotros usamos muy pocas épocas, puede pasar que el algoritmo no termine de aprender, no termine de generarme una randa neuronal que haya aprendido todos los ejemplos.
+
+45
+00:09:01,000 --> 00:09:08,000
+Puede ser que finalice con un error del entrenamiento alto, a eso lo llaman en inglés "underfitting".
+
+46
+00:09:08,000 --> 00:09:18,000
+Pero también nos puede pasar a revés, que nosotros sitlemos demasiado, realizamos demasiados épocas y el algoritmo se sobreaprenda.
+
+47
+00:09:18,000 --> 00:09:30,000
+Cuando tenemos un sobreentrenamiento, un sobreaprendizaje, un overfitting, lo que va a pasar es que el error de entrenamiento va a ser bajo porque va a aprender muy bien los ejemplos de entrenamiento.
+
+48
+00:09:30,000 --> 00:09:35,000
+Pero los errores de prueba y también de validación pueden ser altos.
+
+49
+00:09:35,000 --> 00:09:48,000
+Entonces, ahí lo que nos pasaba, se acuerdan, que habíamos visto en otro vídeo, es que nuestra randa neuronal está sobreentrenada y quiere decir que aprendió muy bien los ejemplos, pero no generaliza.
+
+50
+00:09:48,000 --> 00:09:56,000
+Entonces, hay que tratar de buscar un término intermedio en la cantidad de épocas, que no sean demasiado pocas ni demasiadas grandes.
+
+51
+00:09:56,000 --> 00:10:14,000
+A veces esta decisión la puede tomar un ser humano, pero a veces también se pueden aplicar métodos adaptativos automáticos que van analizando el error de validación para hacer un early stopping, una finalización temprana.
+
+52
+00:10:14,000 --> 00:10:31,000
+Entonces uno le puede decir, bueno, hace 100 épocas, pero activa el early stopping. Entonces puede ser que a las 10 épocas el algoritmo diga, no, ya haciendo más de 10 épocas el error de validación está tendiendo a subir mientras que el error de entrenamiento tiende a bajar, vamos a finalizar.
+
+53
+00:10:31,000 --> 00:10:50,000
+Entonces, muchas veces este early stopping puede ser útil, pero hay que tener cuidado porque depende de cómo está configurado el early stopping, a veces puede finalizar muy rápido y la rata puede ser que todavía estaba en un underfitting, todavía le faltaba aprender.
+
+54
+00:10:50,000 --> 00:11:09,000
+Entonces, el early stopping hay que usarlo, pero también con cuidado, no es perfecto. Entonces hay que también analizar qué pasa con los resultados de la prueba para ver que la red haya aprendido correctamente.
+
+55
+00:11:09,000 --> 00:11:21,000
+Bueno, en lo que tiene que ver con el cálculo de error, las dos fórmulas más usadas son la del error cuadrático médico y la de entropía cruzada.
+
+56
+00:11:21,000 --> 00:11:33,000
+Para definir qué tipo de fórmula usar, muchas veces, en el caso de una red neuronal, lo que vamos a analizar es qué tipo de función aplicamos dentro de la capa de salida.
+
+57
+00:11:33,000 --> 00:11:46,000
+Si la capa de salida tiene una función de identidad, calculamos el error cuadrático medio, que es esta fórmula, digamos podremos decir que es el promedio del error para cada uno de los datos.
+
+58
+00:11:46,000 --> 00:11:57,000
+Esto lo van a ver que muchas veces está abreviado como mc, entonces ahí en la mayoría de las librerías lo van a ver con ese nombre.
+
+59
+00:11:57,000 --> 00:12:09,000
+Si se usa una función sigmoidal o softmax en la neuronal de salida, se podría usar un error cuadrático medio, pero a veces no va a aprender del todo bien.
+
+60
+00:12:09,000 --> 00:12:17,000
+Nos va a dar un error que puede ser engañoso, entonces ahí conviene usar lo que se llama la entropía cruzada o crossentropil.
+
+61
+00:12:17,000 --> 00:12:27,000
+Que ahí, fíjense, utiliza la fórmula similar a la entropía que habíamos visto que aplicaba el algoritmo de inducción, utiliza la teoría de información de Shannon,
+
+62
+00:12:27,000 --> 00:12:38,000
+de entropía negativa para ver la ganancia de información y en base a eso va siendo el cálculo del error para después hacer el ajuste de los pesos.
+
+63
+00:12:38,000 --> 00:12:50,000
+Si nosotros definimos la capa de salida softmax tendríamos que usar entonces crossentropi, para sigmoidal también, pero para las otras funciones directamente la mc.
+
+64
+00:12:50,000 --> 00:12:54,000
+Entonces esto ahí para tenerlo en cuenta.
+
+65
+00:12:54,000 --> 00:13:00,000
+Si uno no lo define así, puede ser que cuando uno hace el entrenamiento el error hace cualquier cosa.
+
+66
+00:13:00,000 --> 00:13:10,000
+A veces hasta se mantiene constante y no baja ni sube y uno no entiende cuando con los parámetros la topología y no pasa nada.
+
+67
+00:13:10,000 --> 00:13:23,000
+Y bueno, el problema puede estar en qué fórmula uno eligió y no tuvo en cuenta la capa de salida y bueno, ahí el entrenamiento va allá.
+
+68
+00:13:23,000 --> 00:13:36,000
+Bueno y otro parámetro muy importante a tener en cuenta es el alfa, la tasa de aprendizaje o la tasa de entrenamiento o el learning right como lo llaman inglés.
+
+69
+00:13:36,000 --> 00:13:46,000
+Este alfa se acuerdan que habíamos visto que ha aplicado para las redes multi perceptron, pero también para las perceptron y también para las convolucionales.
+
+70
+00:13:46,000 --> 00:13:50,000
+O sea, es un parámetro que va a aparecer en la mayoría de las redes.
+
+71
+00:13:50,000 --> 00:14:08,000
+¿Por qué va a decir cuánto tiene que ajustar los valores de los pesos teniendo en cuenta el valor que nos devuelve el gradiente negativo de la dirección de si tenemos que aumentar o disminuir el valor de cada peso?
+
+72
+00:14:08,000 --> 00:14:20,000
+Este valor de alfa hay una regla que nos dice que hay para cada problema hay un alfa ideal, pero es muy difícil de definir.
+
+73
+00:14:20,000 --> 00:14:34,000
+Siempre conviene que sea un valor pequeño entre 0,01 y 0,40 o menos porque si usamos un valor muy grande lo que va a pasar es que al momento de ajustar los pesos
+
+74
+00:14:34,000 --> 00:14:52,000
+se va a modificar demasiado y eso va a ser que nuestra red se vuelva bastante inestable, tienda a esquivar el óptimo y bueno, eso va a generar unas variaciones muy grandes que va a generar la análisis del entrenamiento.
+
+75
+00:14:52,000 --> 00:15:11,000
+Si usamos un valor más chiquito que esto, lo que va a hacer es va a retrasar mucho el proceso de aprendizaje porque cada ajuste va a ser demasiado pequeño y capaz que se vuelve casi imperceptible y uno va a considerar que la RAN no está aprendiendo.
+
+76
+00:15:11,000 --> 00:15:32,000
+Entonces en general conviene dentro del 0,01 y 0,40 tienda a andar bien, a veces es 0,05 o 0,1, va a depender un poco de qué cantidad de datos tenemos, las características de esos datos, de la topología de la red para uno determinar cuál aplicara.
+
+77
+00:15:32,000 --> 00:15:53,000
+Acá pasa igual algo parecido a las capas ocultas que no hay una fórmula que nos diga en forma perfecta cuál tenemos que aplicar pero hay una aproximación que es hacer uno dividido en la derivada doble de la función para tratar de calcular una idea del alfa.
+
+78
+00:15:53,000 --> 00:16:16,000
+Pero bueno, no siempre funciona y si no está la posibilidad de usar una tasa adaptativa teniendo en cuenta algunos parámetros, entonces ahí va a haber algoritmos que van a ajustar el alfa de manera que se vaya cambiando durante la ejecución del algoritmo.
+
+79
+00:16:16,000 --> 00:16:34,000
+En este sentido, hay distintos algoritmos para el ajuste de los pesos, fíjense, muchas librerías lo llaman algoritmos de optimización porque buscan minimizar el error al calcular el gradiente y el ajuste de los pesos.
+
+80
+00:16:34,000 --> 00:16:49,000
+Nosotros el que habíamos visto hasta ahora es el gradiente de creciente que lo van a ver que aparece como stochastic gradient descendant, pero fíjense que aparecen muchos más, de hecho acá es una lista incompleta.
+
+81
+00:16:49,000 --> 00:17:05,000
+Y dentro de esta lista de algoritmos hay algoritmos que usan un alfa constante, sería el caso del gradiente de creciente SGD, momentum y el lag y otros que usan un valor adaptativo, o sea que van cambiando el valor del algoritmo.
+
+82
+00:17:05,000 --> 00:17:26,000
+Para aplicar la relación que tienen estos algoritmos, vamos a ver un pequeño árbol que preparamos, como van a notar todos los algoritmos son variaciones del gradiente de creciente con alguna modificación y entonces vamos a ver cómo funcionan estos algoritmos que usan un alfa constante y los que tienen un alfa adaptativo.
+
+83
+00:17:26,000 --> 00:17:55,000
+Bueno, el primer algoritmo que vamos a hablar es el algoritmo de momentum, que lo que hace es agregarle al algoritmo SGD la consideración de los gradientes anteriores para tratar de ajustar los pesos suavizando las posibles osilaciones que pueden servir.
+
+84
+00:17:55,000 --> 00:18:04,000
+Que pueden ser irrelevantes y que pueden llevar a que el algoritmo se trabe en un mínimo local.
+
+85
+00:18:04,000 --> 00:18:30,000
+Esto es lo que va a lograr, es la ampliación de la velocidad de la dirección correcta y su avisa la osilación en direcciones incorrectas. El problema que puede tener momentum es que cuando está muy cerca de la meta que es lograr el mínimo del error,
+
+86
+00:18:30,000 --> 00:18:51,000
+en la mayoría de los casos puede quedarse con un momento muy alto y eso puede generar que disminuye la velocidad que tienda a seguir yendo en la dirección que iba y que no tenga en cuenta que el error está bajando de forma representativa.
+
+87
+00:18:51,000 --> 00:19:16,000
+Esto puede hacer que se pierda y oscila alrededor de unos mínimos, entonces para solucionar esto aparece el método de Nesterov que se llama generalmente Nag, que lo que hace es superar el problema que tiene momentum a el comenzar a diminuir la velocidad en forma temprana.
+
+88
+00:19:16,000 --> 00:19:32,000
+Entonces trabaja de forma similar a momentum, pero primero da un gran salto en base a la información almacenada y luego hace el cálculo de gradiente con una pequeña corrección.
+
+89
+00:19:32,000 --> 00:19:47,000
+Y esto hace que los valores oscilatorios y relevantes no generen futuros incrementos en el error.
+
+90
+00:19:47,000 --> 00:20:03,000
+Por otro lado tenemos el algoritmo adagrado o de gradiente adaptativo, que es uno de los primeros que permite que la tasa de aprendizaje alfa se adapte en base a los parámetros, es decir a los errores.
+
+91
+00:20:03,000 --> 00:20:13,000
+Entonces actualiza actualizaciones más grandes para parámetros poco frecuentes y actualizaciones más pequeñas para las menos frecuentes.
+
+92
+00:20:13,000 --> 00:20:28,000
+Cada parámetro va a tener su tasa de aprendizaje y teniendo en cuenta las características del algoritmo, esta tasa va a tender a disminuir de forma monótoma.
+
+93
+00:20:28,000 --> 00:20:46,000
+Pero ¿qué pasa? En algunos casos puede pasar que el alfa se vuelva tan pequeña que el algoritmo puede dejar de aprender, entonces se vuelve demasiado lento y parece que no tiene ningún tipo de progreso.
+
+94
+00:20:46,000 --> 00:20:58,000
+Para solucionar esto aparecen dos variaciones sobre adagrado que son el algoritmo adadelta y el rmspro.
+
+95
+00:20:58,000 --> 00:21:09,000
+En el caso de adadelta se resuelve el problema de la lentitud considerando el promedio de cayento de los gradientes con una fórmula del cuadrado.
+
+96
+00:21:09,000 --> 00:21:18,000
+Entonces teniendo en cuenta que cuanto más antiguo sea el gradiente menor influencia tendrá en el ajuste del valor del alfa.
+
+97
+00:21:18,000 --> 00:21:45,000
+Por otro lado el rmspro trata de resolver el mismo problema usando un promedio, una media móvil de los gradientes, entonces eso le permite que funciona mejor para situaciones no convexas donde no queda la disminución del error no es tan fácil de apreciar,
+
+98
+00:21:45,000 --> 00:21:57,000
+que no sea tan pronunciada y tenga situaciones más planas donde el error tiende a disminuir de forma más lenta.
+
+99
+00:21:57,000 --> 00:22:18,000
+Sobre todas estas ideas aparece el algoritmo adam, el algoritmo adam considera algunas particularidades del algoritmo de momentum que habíamos visto antes, el adadelta y el rmspro y los combina para mejorar los resultados.
+
+100
+00:22:18,000 --> 00:22:43,000
+Y todo lo que va a hacer adam es dividir al alfa en subparámetros que se van a ir ajustando de acuerdo a las fórmulas de adadelta y rmspro, pero a su vez considera el concepto de momentum para tener en cuenta los gradientes anteriores al momento de ajustar los pesos.
+
+101
+00:22:43,000 --> 00:22:59,000
+A su vez hay una variación de adam que es el nadam que al cual le agregan también la fórmula de nestero, entonces sería la versión nestero de adam.
+
+102
+00:22:59,000 --> 00:23:26,000
+Bueno, digamos que entonces que cada algoritmo de optimización va a utilizar fórmulas diferentes, algunas adaptadas de las otras, en general el algoritmo adam funciona muy bien en la mayoría de los casos, pero a veces por ejemplo para entrenar una red para clasificación de imágenes funciona bien el sgd puro.
+
+103
+00:23:26,000 --> 00:23:36,000
+Aunque aparecen todas estas variaciones, a veces uno termina usando el algoritmo sgd con un alfa definido manualmente.
+
+104
+00:23:36,000 --> 00:24:05,000
+Así que el hecho de que exista adam o nadam no significa que los otros algoritmos no se pueden aplicar. Bueno, en este gráfico nos muestra ahí la animación, lo voy a poner de nuevo, cómo va modificándose el valor de los gradientes teniendo en cuenta el algoritmo que vamos a aplicar.
+
+105
+00:24:05,000 --> 00:24:13,000
+Fíjense que el rojo es el sgd, fíjense que tiende a ir bien, pero es mucho más lento que todos los anteriores.
+
+106
+00:24:13,000 --> 00:24:39,000
+El algoritmo de Momentum, fíjense que es el verde, que se fue muy abajo, fue un ajuste muy grande y después tuvo que retroceder para encontrar la combinación idónea. Con el nag pasa algo parecido pero vuelve antes, se da cuenta antes, entonces es como que se da cuenta de esta diferencia.
+
+107
+00:24:39,000 --> 00:25:00,000
+Y los ada grad, ada delta y RMC prop, fíjense que tiende a ir más rápido al actualizar el alfa, tienden a converger más rápido al lugar donde hace que los valores de los pesos sea el óptimo.
+
+108
+00:25:00,000 --> 00:25:21,000
+Esto también lo podemos ver con estos grafos, donde muestra el error de entrenamiento y el error de validación con cada algoritmo, fíjense que el n Adam tiende a converger más rápido, después el Adam, el RMC prop, el nag, momentum y por último el sgd.
+
+109
+00:25:21,000 --> 00:25:48,000
+Entonces digamos que el algoritmo que uno va a estar aplicando va a afectar la velocidad, entonces muchas veces el algoritmo Adam funciona muy bien, pero hay casos donde por la característica que tienen los datos puede ser que termine en un mínimo local también y no converja.
+
+110
+00:25:48,000 --> 00:25:54,000
+Y a veces entonces conviene usar el algoritmo sgd que a pesar de que es más lento, converge mejor.
+
+111
+00:25:54,000 --> 00:26:04,000
+Bueno, con esto terminamos este video hablando de la definición de parámetros, hasta luego.

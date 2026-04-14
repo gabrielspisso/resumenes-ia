@@ -1,0 +1,371 @@
+1
+00:00:00,000 --> 00:00:07,060
+Hola, este es el tercer vídeo correspondiente al tema redes neuronales artificiales.
+
+2
+00:00:07,060 --> 00:00:12,860
+En el primer vídeo hablamos de la introducción sobre el concepto de redes neuronales artificiales.
+
+3
+00:00:12,860 --> 00:00:18,520
+En el segundo vídeo hablamos del modelo biológico en el cual está basado.
+
+4
+00:00:18,520 --> 00:00:26,360
+En este vídeo vamos a ver cómo funciona una neurona artificial y qué forma parte de ella.
+
+5
+00:00:26,360 --> 00:00:34,640
+Entonces así como en el modelo biológico nuestra neurona biológica posee un cuerpo que va a tener
+
+6
+00:00:34,640 --> 00:00:41,280
+un conjunto de dendritas y un axón. En una neurona artificial también vamos a tener un cuerpo que
+
+7
+00:00:41,280 --> 00:00:47,800
+va a estar representado por este círculo. Va a tener conceptualmente un conjunto de dendritas o
+
+8
+00:00:47,800 --> 00:00:54,960
+conexiones de entradas que van a estar representadas por estas flechas que van hacia el cuerpo y va a
+
+9
+00:00:54,960 --> 00:01:00,040
+tener un axón que va a ser esta flecha que va a salir del cuerpo hacia el exterior.
+
+10
+00:01:00,040 --> 00:01:08,000
+Por cada una de las dendritas o conexiones de entrada mi neurona artificial va a recibir
+
+11
+00:01:08,000 --> 00:01:13,800
+un conjunto de valores de entradas que se representan con estos valores X. Cada uno de
+
+12
+00:01:13,800 --> 00:01:19,840
+estos valores de entrada va a ser un valor numérico. Eso quiere decir que pueden ser un número que
+
+13
+00:01:19,840 --> 00:01:28,920
+pueden ser dentro de un rango delimitado o desde menos infinitos a más infinito. Por cada uno
+
+14
+00:01:28,920 --> 00:01:35,560
+de estos valores de entrada lo va a afectar los pesos de las conexiones. Los pesos de las conexiones
+
+15
+00:01:35,560 --> 00:01:42,600
+representadas con las variables W y que también son valores numéricos representan el tipo de
+
+16
+00:01:42,600 --> 00:01:50,440
+sinapsis que va a tener cada conexión de mi neurona. A partir de los valores de entradas y los pesos de
+
+17
+00:01:50,440 --> 00:01:56,280
+las conexiones se calcula la entrada neta de mi neurona. La entrada neta entonces se calcula
+
+18
+00:01:56,280 --> 00:02:04,040
+como la sumatoria de la multiplicación de los pesos por los valores de entrada. En este ejemplo
+
+19
+00:02:04,040 --> 00:02:15,600
+entonces la entrada neta sería igual a X0 por W0 más X1 por W1 más Xn por Wn. El resultado de
+
+20
+00:02:15,600 --> 00:02:23,600
+esta entrada neta lo va a afectar una función o regla de activación. La función o regla de
+
+21
+00:02:23,600 --> 00:02:29,200
+activación va a ser una función matemática que utiliza la entrada neta y el umbral de activación
+
+22
+00:02:29,200 --> 00:02:35,920
+para determinar si mi neurona se activa o no se activa. El umbral de activación también va a ser
+
+23
+00:02:35,920 --> 00:02:42,800
+un valor numérico que puede ser un valor fijo o una variable que puede ir modificándose también
+
+24
+00:02:42,800 --> 00:02:51,200
+durante el funcionamiento de mi neurona artificial. Por último vamos a tener una función de salida
+
+25
+00:02:51,200 --> 00:02:57,720
+o transferencia que va a ser la que va a determinar cuál es el valor de salida y que también va a
+
+26
+00:02:57,720 --> 00:03:05,000
+ser un valor numérico a partir del resultado de la función o regla de activación. Entonces nuestra
+
+27
+00:03:05,000 --> 00:03:15,040
+neurona artificial, nosotros la podemos representar como una combinación de funciones matemáticas.
+
+28
+00:03:15,040 --> 00:03:21,080
+Primero tenemos la función de la entrada neta, luego tenemos la función de activación y por
+
+29
+00:03:21,080 --> 00:03:26,360
+último se aplica la función de salida para determinar el valor de salida que devuelve nuestra
+
+30
+00:03:26,360 --> 00:03:32,800
+neurona artificial. Al igual que con la neurona biológica la salida de la neurona es única,
+
+31
+00:03:32,800 --> 00:03:40,920
+pero ese valor puede ser que se multiplexe en muchas conexiones con otras neuronas que pueden venir
+
+32
+00:03:40,920 --> 00:03:50,040
+después. Una red neuronal artificial o RNA, entonces va a ser una red que va a interconectar
+
+33
+00:03:50,040 --> 00:03:56,800
+neuronas artificiales con la estructura que vimos anteriormente. En esta materia vamos a hablar de
+
+34
+00:03:56,800 --> 00:04:05,400
+redes neuronales artificiales que todas sus neuronas poseen los mismos tipos de funciones para
+
+35
+00:04:05,400 --> 00:04:13,200
+calcular la entrada neta, la función de activación y la función de salida. Hay otros modelos o
+
+36
+00:04:13,200 --> 00:04:20,880
+tipos de redes neuronales que tal vez para algunas neuronas utilizan otro tipo de función distintas
+
+37
+00:04:20,880 --> 00:04:27,920
+al del resto, pero como les decía anteriormente en las redes artificiales que vamos a ver en
+
+38
+00:04:27,920 --> 00:04:35,280
+esta materia todas las neuronas van a ser iguales. Lo que puede llegar a cambiar entre una neurona y
+
+39
+00:04:35,280 --> 00:04:42,120
+la otra es dónde se encuentran dentro de la red neuronal, con qué otras neuronas se conectan
+
+40
+00:04:42,120 --> 00:04:49,920
+y los pesos de las conexiones que van a tener esas neuronas. ¿Por qué pueden tener distintos
+
+41
+00:04:49,920 --> 00:04:56,800
+pesos? Porque durante el entrenamiento de una red neuronal artificial se va a ir modificando los
+
+42
+00:04:56,800 --> 00:05:03,600
+pesos de las conexiones para ajustarse al problema que se quiere resolver. Bueno, entonces vamos a
+
+43
+00:05:03,600 --> 00:05:10,720
+comenzar a ver los componentes de una RNA. La unidad de proceso de una RNA obviamente son las
+
+44
+00:05:10,720 --> 00:05:17,520
+neuronas artificiales que se pueden ubicar en distintas capas o niveles. La primer capa se
+
+45
+00:05:17,520 --> 00:05:23,120
+considera capa de entrada porque es la que recibe información del exterior, la última capa se
+
+46
+00:05:23,120 --> 00:05:29,240
+considera capa de salida porque es la que envía información hacia el exterior y todas las capas
+
+47
+00:05:29,240 --> 00:05:34,880
+de neuronas que aparecen entre la capa de entrada de la capa de salida se denominan capas de
+
+48
+00:05:34,880 --> 00:05:43,120
+procesamiento ocultas. Dependiendo del tipo o modelo de red neuronal artificial yo puedo tener
+
+49
+00:05:43,120 --> 00:05:50,880
+varias capas ocultas, una capa oculta o ninguna. Entonces las capas ocultas de una RNA pueden ser
+
+50
+00:05:50,880 --> 00:05:59,800
+opcionales o obligatorias dependiendo del modelo de RNA que yo esté aplicando. Es importante aquí
+
+51
+00:05:59,800 --> 00:06:07,720
+aclarar que como nuestra RNA va a recibir como datos de entrada valores numéricos y como salida
+
+52
+00:06:07,720 --> 00:06:12,680
+va a devolver valores numéricos la cantidad de neuronas que yo voy a tener en la capa de entrada
+
+53
+00:06:12,680 --> 00:06:18,280
+y en la capa de salida va a depender de cuántos datos yo necesito recibir y cuántas salidas yo
+
+54
+00:06:18,280 --> 00:06:25,800
+necesito generar. Entonces ahí no hay ninguna duda pero la cantidad de neuronas ocultas muchas
+
+55
+00:06:25,800 --> 00:06:32,000
+veces va a depender de la complejidad de esos datos y de la complejidad del problema que yo
+
+56
+00:06:32,000 --> 00:06:38,280
+quiero resolver. Entonces puede ser que para datos más simples necesiten menos capas ocultas y para
+
+57
+00:06:38,280 --> 00:06:45,120
+datos más complejos pueda necesitar más cantidad de capas ocultas. Todas formas eso lo después lo
+
+58
+00:06:45,120 --> 00:06:53,080
+vamos a ver dependiendo del modelo de RNA que nosotros queremos aplicar. Por otro lado como mi
+
+59
+00:06:53,080 --> 00:07:01,560
+RNA va a recibir como datos de entrada números y como salidas números muchas veces esta RNA no
+
+60
+00:07:01,560 --> 00:07:07,800
+se la podemos dar directamente a un usuario para que lo utilice. Entonces generalmente nuestra RNA
+
+61
+00:07:07,800 --> 00:07:13,880
+va a estar encapsulada en otro software que le va a servir de interfaz. Muchas veces una RNA se
+
+62
+00:07:13,880 --> 00:07:21,240
+implementa como un servicio, un web service o una librería que es accedida por otro programa que
+
+63
+00:07:21,240 --> 00:07:29,280
+se comunica con el usuario. Entonces el usuario ingresa los datos de una forma amigable, el programa
+
+64
+00:07:29,280 --> 00:07:36,000
+los transforma en números que la RNA sabe manejar y después interpreta el resultado que devuelve la
+
+65
+00:07:36,000 --> 00:07:44,160
+RNA para mostrársela al usuario. Entonces muchas veces las RNA pueden estar ocultas en algún
+
+66
+00:07:44,160 --> 00:07:50,880
+programa que nosotros utilizamos y que no sepamos. Por ejemplo en la aplicación de los celulares
+
+67
+00:07:50,880 --> 00:07:59,440
+que sirven para escribir el teclado adaptativo de Google hay internamente una RNA que es la que se
+
+68
+00:07:59,440 --> 00:08:06,640
+ocupa de sugerir nuevas palabras a partir de las letras y números que nosotros ingresamos. También
+
+69
+00:08:06,640 --> 00:08:15,120
+hay otra RNA oculta en el programa de la cámara de fotos para tratar de mejorar la calidad de las
+
+70
+00:08:15,120 --> 00:08:22,760
+imágenes que nosotros sacamos. Entonces puede ser que un programa puede utilizar una o varias RNA
+
+71
+00:08:22,760 --> 00:08:31,360
+para resolver problemas complejos que el software tradicional no podría ser. Bien, entonces ahí
+
+72
+00:08:31,360 --> 00:08:38,040
+hablamos de las neuronas que van a estar organizadas por capas o nivel. Esta organización por capas o
+
+73
+00:08:38,040 --> 00:08:43,840
+nivel va a aparecer en las redes neuronales artificiales, en las redes neuronales biológicas,
+
+74
+00:08:43,840 --> 00:08:50,840
+hay grupos de neuronas que se podrían ver como que están formando una capa o nivel,
+
+75
+00:08:50,840 --> 00:08:57,960
+pero ahí la diferenciación entre una capa y la otra es más sutil, es más borrosa por estar todas
+
+76
+00:08:57,960 --> 00:09:06,160
+las neuronas más concentradas entre sí. De todas formas en la red neuronal artificial es más fácil
+
+77
+00:09:06,160 --> 00:09:15,200
+trabajar con capas de neuronas porque va a simplificar mucho las tareas de entrenamiento y de operación
+
+78
+00:09:15,200 --> 00:09:25,920
+de esa RNA. Bien, además de las neuronas, dentro de una RNA vamos a tener las conexiones entre las
+
+79
+00:09:25,920 --> 00:09:34,760
+neuronas. El tipo de conexión o tipo de sinapsis que van a tener las neuronas lo vamos a representar
+
+80
+00:09:34,760 --> 00:09:43,880
+con las variables W, los pesos de las conexiones. Esas pesos pueden ser excitadores si son mayor que
+
+81
+00:09:43,880 --> 00:09:51,560
+cero, inhibidores si toman valores menores que cero o neutros si son igual que cero, porque como
+
+82
+00:09:51,560 --> 00:09:57,120
+habíamos visto en la función de la entrada neta, el W va a modificar el valor de entrada que va a
+
+83
+00:09:57,120 --> 00:10:04,920
+recibir cada neurona de la red. Durante el aprendizaje o entrenamiento de una RNA se van
+
+84
+00:10:04,920 --> 00:10:11,640
+a modificar los valores de estos pesos de las conexiones para que mi red aprenda. Entonces durante
+
+85
+00:10:11,640 --> 00:10:17,600
+el entrenamiento no es que se va a modificar el tipo de función de activación o el tipo de
+
+86
+00:10:17,600 --> 00:10:23,560
+función de salida o la ubicación de una neurona dentro de la red, lo que se va a modificar es la
+
+87
+00:10:23,560 --> 00:10:29,720
+manera en que una neurona se conecta con otra, entonces puede ser que una conexión se vuelva
+
+88
+00:10:29,720 --> 00:10:39,280
+cada vez más excitadora, más inhibidora o más neutra. Bien, entonces dependiendo del problema
+
+89
+00:10:39,280 --> 00:10:45,560
+que yo quiero resolver tengo que buscar cuál es el modelo de red neuronal más conveniente a ser
+
+90
+00:10:45,560 --> 00:10:54,960
+aplicado. Ese modelo de RNA me va a determinar ciertas características que va a tener, estos son
+
+91
+00:10:54,960 --> 00:11:01,320
+el tipo de información de entrada a salida que va a utilizar, el tipo de topología de red que se
+
+92
+00:11:01,320 --> 00:11:08,640
+va a aplicar y la estrategia de entrenamiento que se va a utilizar. Estas tres cosas vamos a verlas
+
+93
+00:11:08,640 --> 00:11:12,160
+con más detalle en el siguiente vídeo. Hasta luego.

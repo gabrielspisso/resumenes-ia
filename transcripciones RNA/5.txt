@@ -1,0 +1,295 @@
+1
+00:00:00,000 --> 00:00:06,700
+hola este es el quinto vídeo correspondiente a redes neuronales artificiales en este vídeo
+
+2
+00:00:06,700 --> 00:00:11,820
+vamos a hablar de un tema muy importante que son las reglas de aprendizaje o estrategias de
+
+3
+00:00:11,820 --> 00:00:19,840
+entrenamiento estas estrategias de entrenamiento o reglas de aprendizaje se pueden clasificar de
+
+4
+00:00:19,840 --> 00:00:25,080
+la misma manera que se clasifican las estrategias de entrenamiento para los algoritmos de machine
+
+5
+00:00:25,080 --> 00:00:31,160
+learning que vimos en un vídeo anterior entonces podemos tener estrategias de entrenamiento
+
+6
+00:00:31,160 --> 00:00:37,360
+supervisado o no supervisado y también podemos tener estrategias de entrenamiento offline o online
+
+7
+00:00:37,360 --> 00:00:45,840
+bueno recordamos las estrategias de entrenamiento supervisado necesitan contar con un supervisor
+
+8
+00:00:45,840 --> 00:00:53,060
+o un ente externo que va a suministrarle información extra al algoritmo o red neuronal
+
+9
+00:00:53,060 --> 00:01:01,600
+para que pueda aprender este tipo de aprendizaje se utiliza entonces para redes que son del tipo
+
+10
+00:01:01,600 --> 00:01:07,640
+heterosociativo porque yo quiero que a partir de un conjunto de datos de entrada me devuelva una
+
+11
+00:01:07,640 --> 00:01:15,560
+salida determinada en cambio para redes autossociativas yo utilizaría un entrenamiento no
+
+12
+00:01:15,560 --> 00:01:22,880
+supervisado porque en esos casos yo le voy a suministrar a la red solo los datos de entrada y
+
+13
+00:01:22,880 --> 00:01:30,080
+la red sola aprende a generar la salida correcta para el problema que yo quiera resolver obviamente
+
+14
+00:01:30,080 --> 00:01:37,920
+que los problemas que yo voy a usar un entrenamiento supervisado no va a ser lo mismo que los problemas
+
+15
+00:01:37,920 --> 00:01:43,880
+para los cuales yo aplicaría un aprendizaje no supervisado así por ejemplo si yo quiero
+
+16
+00:01:43,880 --> 00:01:52,840
+clasificar datos o predecir tendría que usar redes heterosociativas con entrenamiento supervisado
+
+17
+00:01:53,320 --> 00:02:02,720
+en cambio para problemas de clustering de clasificación automática o segmentación o para
+
+18
+00:02:02,720 --> 00:02:08,160
+problemas donde yo quiero completar patrones incompletos también podría ser otro caso usaría
+
+19
+00:02:08,160 --> 00:02:16,120
+redes autosociativas con un entrenamiento no supervisado en ambos casos sean un entrenamiento
+
+20
+00:02:16,120 --> 00:02:21,640
+supervisado como no supervisado en una red neuronal solamente se van a modificar los
+
+21
+00:02:21,640 --> 00:02:26,840
+pesos de las conexiones entre las neuronas entonces muy importante de aclarar creo que
+
+22
+00:02:26,840 --> 00:02:34,920
+ya lo mencionamos pero vale la pena tenerlo en cuenta en una red neuronal artificial entonces
+
+23
+00:02:34,920 --> 00:02:39,960
+todo el conocimiento del problema va a estar en los valores que van a tomar los pesos entre
+
+24
+00:02:39,960 --> 00:02:46,000
+las neuronas por eso mismo habíamos dicho que en este tipo de sistema inteligente no hay base de
+
+25
+00:02:46,000 --> 00:02:54,000
+conocimiento y todos los conocimientos se definen en forma implícita si un un ser humano trata
+
+26
+00:02:54,000 --> 00:02:58,680
+de interpretar los conocimientos que aprendió la red neuronal a partir de los pesos que tienen
+
+27
+00:02:58,680 --> 00:03:06,360
+las conexiones seguramente no va a entender nada porque los pesos codifican el conocimiento de
+
+28
+00:03:06,360 --> 00:03:13,040
+una manera que la red neuronal lo sabe aprovechar pero que para un ser humano esto seguramente
+
+29
+00:03:14,240 --> 00:03:22,880
+va a representar solo números con valores distintos entre sí bueno retomando la clasificación las
+
+30
+00:03:22,880 --> 00:03:30,080
+estrategias de entrenamiento también pueden ser offline o online en un entrenamiento offline yo voy
+
+31
+00:03:30,080 --> 00:03:36,440
+a tener que una fase de entrenamiento antes de poner en producción a mi red neuronal y una vez
+
+32
+00:03:36,440 --> 00:03:42,080
+que está en producción mi red neuronal deja de aprender obviamente no se olvida lo que ya aprendió
+
+33
+00:03:42,080 --> 00:03:50,040
+pero tampoco aprende cosas nuevas en cambio con un entrenamiento online mi red neuronal va a prender
+
+34
+00:03:50,040 --> 00:03:55,200
+durante esa fase de entrenamiento antes de ponerla en producción porque si no me va a devolver
+
+35
+00:03:55,200 --> 00:04:02,120
+resultados inválidos resultados al azar pero una vez que lo pongo en producción mi red puede seguir
+
+36
+00:04:02,120 --> 00:04:09,520
+aprendiendo puede seguir entrenando se para ciertas situaciones y de esa manera resultó ir
+
+37
+00:04:09,520 --> 00:04:17,800
+adaptándose para problemas nuevos bien de acuerdo a esta clasificación entonces yo puedo tener
+
+38
+00:04:17,800 --> 00:04:23,280
+estrategias de entrenamientos que pueden ser supervisado offline o online y estrategias de
+
+39
+00:04:23,280 --> 00:04:32,080
+entrenamiento no supervisado que también pueden ser offline y también online bueno para esta
+
+40
+00:04:32,080 --> 00:04:39,200
+presentación en esta materia nosotros nos vamos a concentrar en las estrategias de entrenamiento
+
+41
+00:04:39,200 --> 00:04:45,440
+por corrección de error y por el entrenamiento jeviano que más adelante vamos a ver con mayor
+
+42
+00:04:45,440 --> 00:04:51,440
+detalle todas formas ahora podemos mencionar que el entrenamiento supervisado offline por
+
+43
+00:04:51,440 --> 00:04:57,600
+corrección de error se basa en el ajuste de los pesos de las conexiones entre las neuronas de la red
+
+44
+00:04:57,600 --> 00:05:05,160
+para que se minimice el error que genera la red neuronal de forma que el resultado se parezca
+
+45
+00:05:05,160 --> 00:05:14,480
+lo más posible a una salida deseada que ya se conoce de antemano en el entrenamiento supervisado
+
+46
+00:05:14,480 --> 00:05:23,480
+offline esto cástico se busca lo mismo pero los pesos se modifican cambiándolos al azar vamos
+
+47
+00:05:23,480 --> 00:05:28,120
+a ver que en el entrenamiento por corrección de error se usa una fórmula para minimizar el error
+
+48
+00:05:28,120 --> 00:05:34,640
+en el esto cástico se tira un valor al azar y se trata de probar si con ese valor al azar el
+
+49
+00:05:35,160 --> 00:05:41,760
+resultado que genera la red es mejor obviamente es más confiable usar una fórmula que usar el
+
+50
+00:05:41,760 --> 00:05:49,600
+azar por eso mismo el entrenamiento esto cástico actualmente no se utiliza mucho otra forma de
+
+51
+00:05:49,600 --> 00:05:57,000
+hacer un entrenamiento supervisado que también puede ser online es el entrenamiento por refuerzo
+
+52
+00:05:57,000 --> 00:06:03,800
+en el entrenamiento por refuerzo se busca lo mismo que por entrenamiento por corrección de error
+
+53
+00:06:03,800 --> 00:06:11,680
+o sea se busca que genere el menor error posible pero en lugar de darle la salida deseada le vamos
+
+54
+00:06:11,680 --> 00:06:18,520
+a dar una valoración de la salida generada por la red entonces la red me va a devolver un resultado
+
+55
+00:06:18,520 --> 00:06:25,640
+y el usuario o el ingeniero le va a decir qué opinión tiene para él ese resultado si es bueno
+
+56
+00:06:25,640 --> 00:06:35,360
+malo o regular es algo parecido al juego de frío tibio caliente que nosotros jugábamos de chicos
+
+57
+00:06:35,360 --> 00:06:41,520
+donde alguien elegí un objeto y nosotros de acuerdo a la cercanía de ese objeto el otro no
+
+58
+00:06:41,520 --> 00:06:51,280
+iba tirando tips de acuerdo a que si estábamos cerca o lejos bueno en el entrenamiento por refuerzo
+
+59
+00:06:51,280 --> 00:06:57,600
+va a pasar lo mismo el usuario al ingeniero le va a decir a la red que le parece ese resultado
+
+60
+00:06:57,600 --> 00:07:05,440
+si le parece aceptable o no aceptable o medio aceptable y de acuerdo a esa valoración la red
+
+61
+00:07:05,440 --> 00:07:10,600
+va a ir ajustando sus pesos para tratar de generar cada vez resultados más aceptables
+
+62
+00:07:10,600 --> 00:07:18,360
+bien esas son entonces los tres principales estrategias de entrenamiento supervisada en
+
+63
+00:07:18,360 --> 00:07:26,240
+las no supervisada tenemos el entrenamiento jeviano que se basa en el comportamiento de
+
+64
+00:07:26,240 --> 00:07:33,720
+un conjunto de neuronas que tienen que ver con el gusto el olfato y el oído que después
+
+65
+00:07:33,720 --> 00:07:40,480
+vamos a verlo con más detalle y el otro entrenamiento es el competitivo cooperativo que tiene que ver
+
+66
+00:07:40,480 --> 00:07:48,240
+con un trabajo que van a ser las neuronas donde al principio van a cooperar entre sí para tratar
+
+67
+00:07:48,240 --> 00:07:56,760
+de generar una ordenación global de los resultados que se van a generar y luego van a competir entre
+
+68
+00:07:56,760 --> 00:08:05,480
+sí para lograr un ajuste fino este tipo de entrenamiento no supervisado se puede utilizar
+
+69
+00:08:05,480 --> 00:08:14,640
+para problemas de clustering de datos bueno con esto finalizamos una descripción general de las
+
+70
+00:08:14,640 --> 00:08:22,000
+estrategias de entrenamiento en el entonces con eso también finalizamos las tres grupos de
+
+71
+00:08:22,000 --> 00:08:29,840
+características que determinan un modelo de red neuronal artificial nosotros a continuación en
+
+72
+00:08:29,840 --> 00:08:35,400
+los próximos vídeos vamos a empezar a hablar de modelos específicos de redes neuronales vamos
+
+73
+00:08:35,400 --> 00:08:42,320
+a comenzar por el modelo perceptron después vamos a ver el múltiple receptron back propagation y
+
+74
+00:08:42,320 --> 00:08:47,600
+por último vamos a hablar del modelo de jordial hasta luego
