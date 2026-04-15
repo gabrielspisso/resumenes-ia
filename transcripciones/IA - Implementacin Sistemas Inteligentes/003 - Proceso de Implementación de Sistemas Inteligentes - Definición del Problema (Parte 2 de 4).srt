@@ -1,0 +1,368 @@
+1
+00:00:00,000 --> 00:00:07,960
+ Buenas, mi nombre es María Florencia Pollo y vamos a continuar con la segunda actividad
+
+2
+00:00:07,960 --> 00:00:13,080
+ que continúa a lo que es la ilicitación de requerimientos. Bien, habíamos visto que
+
+3
+00:00:13,080 --> 00:00:16,800
+ íbamos a comenzar a hablar de la comprensión, cuando habla de la comprete comprender
+
+4
+00:00:16,800 --> 00:00:22,280
+ estos requerimientos, habla de poder construir, de poder entenderlo y a partir de ahí
+
+5
+00:00:22,280 --> 00:00:27,200
+ desarrollar modelos conceptuales que me permitan formalizar todos estos requerimientos
+
+6
+00:00:27,200 --> 00:00:32,240
+ que enletapa previa yo yo lo pudi identificar, se cuerdan a través de las distintas
+
+7
+00:00:32,240 --> 00:00:40,600
+ técnicas y que significa comprenderlo requerimiento. Significa poder entenderlo a través
+
+8
+00:00:40,600 --> 00:00:46,840
+ de un proceso y el proceso que uno transita para poder comprender en los requerimientos
+
+9
+00:00:46,840 --> 00:00:52,480
+ implican, pasar por un proceso de abstracción, de descomposición, de proyección y después
+
+10
+00:00:52,480 --> 00:00:58,180
+ del poder modernizado. Fíjense, bueno, la sabidoria consiste en saber qué se sabe, lo
+
+11
+00:00:58,180 --> 00:01:04,680
+ que se sabe y saber qué no se sabe, lo que no se sabe, poder identificar verdaderamente
+
+12
+00:01:04,680 --> 00:01:09,840
+ que es lo que uno tiene ya hasta donde alcanza y el que nada dudan a las sabe, pero bueno,
+
+13
+00:01:09,840 --> 00:01:15,960
+ la idea es pasar por todo este tipo de actividades y a través de ellas, poder
+
+14
+00:01:15,960 --> 00:01:23,360
+ que construir finalmente los los poderos el concepto. En la primera instancia es la extracción,
+
+15
+00:01:23,360 --> 00:01:29,200
+ entonces lo que uno trata de buscar es ignorar las diferencias entre conceptos similares
+
+16
+00:01:29,200 --> 00:01:36,360
+ y así podero agruparnos. Esto nos va a permitir tener una mirada bastante más simple
+
+17
+00:01:36,360 --> 00:01:44,640
+ de la realidad, no dejarnos llevar muchas veces por hechos anecdóticos o visualizaciones
+
+18
+00:01:44,640 --> 00:01:49,600
+ anecdóticas que el único que hacen es sacarnos la atención de lo que es verdadera
+
+19
+00:01:49,600 --> 00:01:53,880
+ mente importante, entonces es verdadera mente pasar por un proceso de abstracción en muy
+
+20
+00:01:53,880 --> 00:01:58,440
+ útil y simplificar la realidad. Y además nos permite identificar características
+
+21
+00:01:58,440 --> 00:02:07,080
+ verdadera mente importante dentro del problema, y es un proceso bastante complejo, lo que
+
+22
+00:02:07,080 --> 00:02:11,000
+ se pasa por la descomposición, la descomposición es dividir el lo que hacemos nosotros
+
+23
+00:02:11,000 --> 00:02:15,800
+ muchísimas veces que dividir un problema en partes simples, partes más simples de resolver
+
+24
+00:02:15,800 --> 00:02:21,080
+ y la resolución de todas estas partes simples nos van a permitir tener una resolución más
+
+25
+00:02:21,080 --> 00:02:28,720
+ compleja. Pasar por este tipo de actividad nos permite llegar a un nivel de profundidad
+
+26
+00:02:28,720 --> 00:02:38,120
+ y granularidad mucho más específico, mucho más salto, verdaderamente llegar a definir pequeñas
+
+27
+00:02:38,120 --> 00:02:44,840
+ cosas que son importantes para el proceso y verdaderamente también por otro lado lo que hay
+
+28
+00:02:44,840 --> 00:02:50,320
+ que tener cuenta es que estos componentes que nos ven contrando muchas veces no son independientes
+
+29
+00:02:50,320 --> 00:02:57,920
+ entre sí y están realmente relacionados. Esto nos va a permitir después pasar por la actividad
+
+30
+00:02:57,920 --> 00:03:03,160
+ de la proyección que es identificar y describir las diferentes visiones que se pueden tener
+
+31
+00:03:03,160 --> 00:03:10,960
+ de los mismos elementos para poder identificar distintos puntos de vista en una misma realidad
+
+32
+00:03:10,960 --> 00:03:18,860
+ y identificar también inconsistencia o conflictos entre los distintos interesados. Y esto es
+
+33
+00:03:18,860 --> 00:03:26,040
+ bastante interesante porque muchas veces estas distintas miradas pueden ser inconsistentes y
+
+34
+00:03:26,040 --> 00:03:29,200
+ va a haber que resolverlas y no tiene que ver con problemas técnicos, sino que bueno,
+
+35
+00:03:29,200 --> 00:03:34,600
+ y ya entramos con otro tipo de conflictos. Pero la proyección es otra de las actividades
+
+36
+00:03:34,600 --> 00:03:39,960
+ super importantes. Una vez que ya pasamos por todas estas, por las actividades anteriores
+
+37
+00:03:39,960 --> 00:03:46,000
+ podemos entrar en lo que es la actividad de modularizar. Y esto lo que nos va a permitir es
+
+38
+00:03:46,000 --> 00:03:52,800
+ como un disco bueno placerizar, como ir agrupando y entender la realidad más dividida en
+
+39
+00:03:52,800 --> 00:03:58,440
+ porciones tiene que ver también con la simplificación. Una vez que uno ya identificó a todos
+
+40
+00:03:58,440 --> 00:04:04,840
+ los elementos de manera bastante más detallada también es poder encontrar que comparten estos
+
+41
+00:04:04,840 --> 00:04:11,280
+ elementos y poder llegar a marmoglos, entender cómo generar modelos, entendemos que muchos
+
+42
+00:04:11,280 --> 00:04:18,600
+ módulos, o sea que los módulos no tienen que tener el mismo nivel de complejidad, está el poder
+
+43
+00:04:18,600 --> 00:04:26,800
+ modularizar, nos proveen el principio fundamental para nosotros que es la realización y también nos
+
+44
+00:04:26,800 --> 00:04:34,760
+ va nos habilita a organizar las tareas y los grupos de trabajo. Entonces bueno, como uno va
+
+45
+00:04:34,760 --> 00:04:39,040
+ transitando por todas estas actividades, fíjense bueno, no pasa por un pat, yo le enseñé
+
+46
+00:04:39,040 --> 00:04:44,240
+ lo con las manos. Por un proceso de abstracción después los descompones, los proyecta
+
+47
+00:04:44,240 --> 00:04:51,760
+ para nuevamente ir evolucionantes como un etapa que va, es proceso ebolutivo, finalmente
+
+48
+00:04:51,760 --> 00:04:58,520
+ de los, una vez que llega a una descripción consistente, pasa por la etapa de modularización
+
+49
+00:04:58,520 --> 00:05:06,480
+ y ahí puede generar los famosos módulos conceptuales. Y bueno, es un módelo acá hay una
+
+50
+00:05:06,480 --> 00:05:12,320
+ definición bastante extensa, pero muy interesante sobre lo que es un módelo que es una
+
+51
+00:05:12,320 --> 00:05:20,360
+ simplificación simplificada de la realidad que da sentido a la realidad y permite comprenderla.
+
+52
+00:05:20,360 --> 00:05:26,200
+ Sin embargo, se puede notar que para construir un modelo pertinente, en necesario haber comprendido
+
+53
+00:05:26,200 --> 00:05:31,760
+ ya lo esencial de la realidad del objeto de estudio. Y ahí se encuentra un exponable circularidad
+
+54
+00:05:31,760 --> 00:05:36,680
+ de la construcción del conocimiento. La definición a rivenución es suficiente para ser
+
+55
+00:05:36,680 --> 00:05:41,720
+ aplicado en modelo dinánico, ya hay que completarla, un módelo es en ese caso, en este
+
+56
+00:05:41,720 --> 00:05:47,040
+ caso, la reconstitución simplificada de un proceso que pretende representar un proceso
+
+57
+00:05:47,040 --> 00:05:52,600
+ del mundo sensible. Y un modelo dinámico implica, por lo tanto, un desarrollo desde los datos
+
+58
+00:05:52,600 --> 00:05:57,680
+ de entrada hasta los resultados del funcionamiento del propio modelo. Este modelo tiene
+
+59
+00:05:57,680 --> 00:06:04,880
+ que ser necesariamente simplificado, sino no cumple con la, el, el, el, el, el ser de
+
+60
+00:06:04,880 --> 00:06:09,640
+ del modelo, no sería la realidad, sino sería la realidad misma y no contribuiría nada
+
+61
+00:06:09,640 --> 00:06:14,840
+ a la construcción del conocimiento. Es de este modo una representación abstracta lo cual
+
+62
+00:06:14,840 --> 00:06:19,840
+ significa que la aproximación, incluso el error, es sinerente al modelo. Lo que no,
+
+63
+00:06:19,840 --> 00:06:24,640
+ elantea y, de ejemplaros que el modelo no es equivalente a la realidad, que cuando más
+
+64
+00:06:24,640 --> 00:06:32,200
+ uno sea próxima la realidad menos simplificado está también. Y cuando uno generamos de
+
+65
+00:06:32,200 --> 00:06:36,800
+ los conceptuales, bueno, estas son representaciones gráficas de la definición que le veníamos
+
+66
+00:06:36,800 --> 00:06:41,680
+ diciendo, el modelo no tiene que ser tan completo ni tan complejo como para no poder
+
+67
+00:06:41,680 --> 00:06:49,320
+ entenderlo, ni tan poco tan simple como para que no digan nada. Para que no sirve un modelo,
+
+68
+00:06:49,320 --> 00:06:54,920
+ para poder entender los requerimientos que es particularmente, uno de los objetivos más
+
+69
+00:06:54,920 --> 00:06:59,720
+ importantes que tenemos sobre estos modelos conceptuales, y también nos va a permitir
+
+70
+00:06:59,720 --> 00:07:04,920
+ todo este proceso detectar problemas en los requerimientos, qué tipo de problemas, requerimientos
+
+71
+00:07:04,920 --> 00:07:09,360
+ no definidos, requerimientos que está bueno juntos, requerimientos que están mal definidos
+
+72
+00:07:09,360 --> 00:07:14,440
+ y inconsistencias, con funciones en la terminología, cuando muchas veces dos personas
+
+73
+00:07:14,440 --> 00:07:23,800
+ conceven o, o cree que dos objetos llamados de los delir, la entidad alumno para dos personas
+
+74
+00:07:23,800 --> 00:07:28,760
+ puedes significar cosas diferentes, para uno puede ser una alumno que está inscrito, solamente
+
+75
+00:07:28,760 --> 00:07:32,520
+ con que está inscrito en el curso de ingreso y para otro, y se no, para mí alumno es alguien
+
+76
+00:07:32,520 --> 00:07:37,440
+ que ya, pero el curso de ingreso y es alumno de la facultad. Son dos concepciones distintas
+
+77
+00:07:37,440 --> 00:07:42,600
+ y lo que hay que dejarla central. Bueno, también para poder identificar cuáles son los
+
+78
+00:07:42,600 --> 00:07:48,120
+ requerimientos que no son, están fuera de la alcance del proyecto o no son viable, y también
+
+79
+00:07:48,120 --> 00:07:53,600
+ para poder identificar tutos de conflictos no resultos. Y otra de las tareas también para
+
+80
+00:07:53,600 --> 00:07:58,480
+ la cual existen estos modelos, es para poder comunicar los requerimientos, ya que vimos
+
+81
+00:07:58,480 --> 00:08:05,600
+ que sabemos nosotros por excelencia que los modelos, las representaciones gráficas simplificadas,
+
+82
+00:08:05,600 --> 00:08:12,240
+ son mucho más simples pares con más herramientas de transmisión. Y en existen distintos
+
+83
+00:08:12,240 --> 00:08:17,880
+ modelos concepciones nosotros conocemos varios, por ejemplo, los de Venezuela, están dentro
+
+84
+00:08:17,880 --> 00:08:22,760
+ de lo que se la incotan bien, los árboles de composición funcional, donde uno tiene una
+
+85
+00:08:22,760 --> 00:08:27,600
+ meta general, esa meta se subdividen sus metas y cada una de esas metas se logran ir
+
+86
+00:08:27,600 --> 00:08:34,200
+ descomponiendo en un montón de actividades que cumplidas no permitirían llegar con éxito
+
+87
+00:08:34,200 --> 00:08:40,320
+ por la meta establecida, también las tablas de decisión, los árboles de decisión, las
+
+88
+00:08:40,320 --> 00:08:46,840
+ fórmulas y las seudo reglas, y gente que todas estas herramientas miren las, las seudo
+
+89
+00:08:46,840 --> 00:08:53,280
+ reglas que parecidas también son han resultado de un análisis de protocolo, y ahí.
+
+90
+00:08:53,280 --> 00:08:58,760
+ Una vez que terminamos con la idea de comprensión vamos a pasar a la actividad de articulación,
+
+91
+00:08:58,760 --> 00:09:03,800
+ que la vamos a dejar para el próximo vídeo, así les va quedando un nuevo por cada
+
+92
+00:09:03,800 --> 00:09:06,080
+ día, desde ya muchísimas gracias también.
+

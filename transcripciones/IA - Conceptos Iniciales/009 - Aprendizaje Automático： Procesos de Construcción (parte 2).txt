@@ -1,0 +1,158 @@
+ Cuando la salida es discreta, es decir que el modelo nos está generando una lista de
+ valores que se pueden diferenciar, fácilmente, uno de otros, como por ejemplo, valores
+ alfanumericos, es decir, las clases si no o la clase alto medio bajo o una, nos devuelve una
+ serie de valores numéricos enteros. Entonces, hay como metrica, conviene utilizar la
+ matrices de confusión. En esta tabla podemos ver que tanto está convergiendo el modelo para
+ generar los valores correctos de acuerdo a los datos que nosotros tenemos disponibles.
+ Por ejemplo, si nosotros tenemos otro modelo que tiene que aprender a indicarnos si algo
+ se da o no se da en ese reclases sino, yo voy a tener una matrices de confusión con las
+ columnas, sino y las filas sino. Luego, lo que voy a hacer es completar las intersecciones
+ de acuerdo a los resultados generados por el modelo. Si la clase de vuelta por el modelo es
+ sí, y la clase que me indicaban los datos del problema era sí, lo voy a indicar el
+ intersección de sí y sí. Si el modelo me devuelve sí, pero en realidad debería devolverlo,
+ lo voy a indicar en la intersección entre sí y no. Lo mismo sería cuando no y sí y no y no.
+ Idealmente, en la matrices de confusión, todas las cantidades deberían indicarse dentro de la
+ diagonal, porque eso quiere decir que el modelo me está devolviendo siempre, la clase correcta
+ de acuerdo a lo indicado por datos del problema. Pero esta vez puede ser que no se dé
+ así. El show, mirando, entonces, esta matrices de confusión, y viendo don como están distribuidas
+ las cantidades, puedo determinar si el modelo aprendió correctamente o no. El problema de esta
+ matrices se da cuando yo tengo muchas clases. Por ejemplo, estoy tratando de indicar en el modelo
+ que me devuelva el nombre de una provincia. Entonces, voy a tener 24 valores diferentes. Entonces,
+ manejar una matrices de esa cantidad con 24 columnos, una si 24 filas, va a ser bastante
+ complicado de evaluar. Para poder hacerlo en forma más sencilla, lo que conviene usar son unas
+ formas las complementarias a esta matrices de confusión, que se calculan de la siguiente manera.
+ Por un lado, tenemos la exactitud. La exactitud, lo que va a ser, es evaluar. Todos los
+ verdaderos, que van a encontrarse en la diagonal de la matrices, correspecto el total de los datos
+ disponibles. En este caso, estamos evaluando arriba de la diagonal, los casos de donde el modelo
+ ha cierta, porque me está indicando la clase correcta como verdadero positivo o verdadero
+ negativo, y ahí sólo divido por la cantidad total. Entonces, esto lo que me dice es la
+ proporción de identificación es que el modelo realizó correctamente. Otra forma la que se
+ puede utilizar es la precisión. La precisión lo que nos interesa evaluar es los por cada
+ clase que yo tengo, qué tanto está certando el modelo. O sea, de todas las clases que son identificadas
+ por el modelo, las cuantas son correctas, qué por son páginas. Entonces, yo lo que voy a hacer por cada
+ clase es considerar los casos donde el modelo ha certo, en este caso los verdadero positivos,
+ y los dividos por la cantidad total de casos donde el modelo indicó esa clase, en este caso
+ los verdadero positivos y los falsos posibles. Por otro lado, también yo puedo calcular la recuperación
+ o exhaustividad. Esta fórmula es muy parecida a la precisión, pero en vez de hacerlo a por
+ columna, la hacemos por fina. Porque acá lo que queremos ver es de cada clase real,
+ cuantos casos el modelo indicó esa clase. Entonces, en este caso, para la clase sí,
+ vamos a evaluar los verdadero positivos y los vamos a comparar contra los verdadero positivos
+ y los falsos negativos. Yo por cada una de las clases que tengo, voy a calcular entonces,
+ la exactitud de la presición y recuperación, donde cuanto mayor valor tengan, el ideal sería
+ un 100%, mejor va a funcionar el modelo. Cuando menor valor tenga, pero va a ser el modelo.
+ Pero ahí eso no significa que yo debería decir que el modelo falla solamente cuando
+ tengo, por ejemplo, una presición del 0%, porque si yo tengo una presición de 50%, quiere decir
+ que el modelo está dividando la mitad de los casos, lo cual tampoco es muy confio. Eso
+ lo vamos a ver en el ejemplo que está a continuación. En este ejemplo, vamos a considerar que
+ nosotros tenemos 100 ejemplos de personas que compararon y no compraron un producto. En este caso,
+ nos dice que de los 100 ejemplos que tenemos disponible en 9 del cliente compro y en 91
+ el cliente no compro. Nosotros entrenamos un modelo, por ejemplo, identificamos reglas con
+ depónimos de inducción y obtenemos nuestra matriz de confusión que nos indica la siguiente. Hay un
+ sol ejemplo donde el modelo dijo que el cliente va a comprar y de verdad compro. Hay
+ el hecho de ejemplos donde el modelo dijo que no iba a comprar, pero realidad diferente sí
+ compro, tenemos un ejemplo donde el modelo dijo que sí iba a comprar, pero el modelo
+ los datos el cliente no compro y 90 ejemplos donde el modelo no dice que no va a comprar
+ y de verdad el cliente no compro. Entonces, ya viviendo esta matriz de confusión podemos
+ notar que no está funcionando bien porque hay varios casos donde estos ochos casos donde
+ los dimos de los están diciendo que no va a comprar cuando el cliente sí compro. No de todas formas
+ vamos a ver qué nos dicen estas metricas de exactitud, precisión y recuperación y como
+ lo podemos interpretar. Hay que circular la exactitud, nos da que la exactitud es de
+ 91 por ciento, lo que podemos decir, bueno, están bastante cerca del 100 por ciento, no
+ cuáal parecería que el modelo es bueno, ¿no? Hay cálculo la precisión para la clase sí,
+ fijan sé que nos da un 50 por ciento, ¿por qué? Porque tiene un caso que sí es que correcto
+ un caso que en realidad era uno es incorrecto, entonces no da una de videos dos, 50 por ciento.
+ Entonces, ahí el modelo está saltando también como tirar una moneda, ¿no? Las dos
+ caras de la moneda, 50, 50. Ahí ya podemos dudar de quitan buenas del modelo. Y por
+ el último vemos la recuperación y acá podemos notar que para la clase sí, hay de los 9 casos donde
+ el cliente compró el modelo acerto uno solo, entonces la recuperación es del 11 por ciento.
+ Entonces, por eso, podríamos decir que el modelo no está certando, no es bueno y deberíamos
+ trabajar más con este modelo para tratar de mejorar. De todas formas, lo que está sucediendo
+ en este ejemplo es un caso que se suele dar en la realidad es que los datos no están del
+ todo balance, si no fíjense yo tengo muchos casos de ejemplo, a donde el cliente no compró
+ y muy pocos casos de situaciones donde el cliente sí compró. Entonces, al sucederisto en la mayoría
+ de los algoritmos de Machine Learning, el modelo va a atender a decirme el que resultado va
+ a ir por el lado de que no va a comprar porque es el que tiene mayor cantidad de ejemplos.
+ Fíjense que si nosotros miramos las columnas, la mayor de las resultados están en el
+ no, porque el modelo está tendiendo a ir por los casos donde está la mayor cantidad de
+ ejemplos. Esta situación se dice que los datos no están balanceados por cada uno de las
+ clases, y bueno, entonces ahí más allá de la tecnología que nosotros apliquemos, siempre
+ vamos a tener alguna metrica que no nos va a dar de todo bien. Durante la preparación
+ de los datos, nosotros vamos a tener que dar alguna forma balance de los datos para que
+ el modelo operando a bien y ahí las resultados nos van a dar un poco más balanceados.
+ Por otro lado, podemos ver que tener un exactitud buena, no significa que el modelo es
+ confío en este caso, me olvides de decirlo que el modelo tenía un exactitud en la
+ venta y un por ciento, pero la precisión de recuperación era mala. Entonces, no hay que
+ darse con esto de solamente de evaluar una de las metricas siempre con bien evaluar
+ los tres. En el caso de la precisión y la recuperación, ahí lo se nos puede pasar que
+ mejorar una, puede perjudicar a la otra. Entonces, para poder evaluar, vas en conjunto,
+ se suele utilizar una formula adicional que es la de F1 escor que se calcula en base
+ de la presisión y en la recuperación. También está la versión de FB3COR, donde
+ le agrega un parámetro veta que determina la importancia de la recuperación sobre la
+ precisión. Pero bueno, estas son formulas adicionales y complementarias a las
+ anteriores que se pueden utilizar para evaluar el modelo. En todos los casos, lo ideales
+ que todo esté por arriba por lo menos del 90%. En algunos casos, se puede aceptar un modelo
+ que tenga un 75-80% de presuciones recuperación. Ahí va de lo que va a impactar en esa
+ decisión, es para que se utilizar el modelo y qué tan crítico es que el modelo hacía
+ lo que es. Si yo estoy tratando de predecirse el cliente va a comprar o no, le ha
+ apas que con 80% estoy bien, pero si estoy diagnosticando a un paciente tener una
+ precisión del 80% o una recuperación del 75% no puede ser del todo confiable para
+ que el médico considere ese diagnóstico como vale. Depende del dominio, no va a tener
+ que evaluar los valores de estas metricas para ver si son confiable o no, y si lo puede utilizar
+ ese resultado o no. Bueno, entonces todas estas metricas tienen que ver con salidas discretas.
+ ¿Qué pasa si yo tengo una salida continua? Es decir que el modelo me está generando un
+ valor real entre menos infinito o dentro de un rango determinado, pero que puede ser un número
+ con valores decimales donde el suceder eso no lo puedo representar con una matriz de compusión
+ y entonces no puedo calcular ni el exactito ni la precisión ni la recuperación. En estos casos
+ directamente utiliza como ométricas a la rora absoluto y a la rora relativo.
+ La rora absoluto es la diferencia absoluta entre el valor real y el valor estimado
+ por el modelo o sea la resta sin signo y el valor relativo es el valor absoluto dividido
+ por el valor real. El valor relativo nos va a dar la proporción o por sentaje que representa
+ el error con respecto el error real y uno que liestima.
+ Con estas dos errores uno puede calcular las metricas del modelo y determinar que también
+ funciona.
+ Acá sucede a graves de que lo que sucede con las metricas anteriores.
+ ¿Cuánto menores el error absoluto y menores el error relativo mejor es el modelo?
+ Dos mayores el error absoluto y mayores el error relativo, peores el modelo.
+ Entonces, funciona la interpretación a errores.
+ Para verlo podemos ver acá algunos ejemplos, fíjense.
+ Yo tengo el valor que yo quería estimar ir a 10, el modelo de la medida 10,01 eso significa
+ que el error absoluto es de 0,01, entonces el error relativo es de 0,09%.
+ En el segundo caso, la diferencia es del 0,57, lo cual representa un error relativo del
+ ocho por ciento. Fíjense que el primer caso es la casi perfecto acá hay un poquito de
+ error, genere el tercer ejemplo. Fíjense que hay un error más importante porque tenía que
+ dar un 38 me dios un 10,35, entonces el error absoluto es de 27, el error relativo es de
+ el 72% y es más importante. En el cuarto caso pasa algo parecido, tengo un error relativo
+ de casi 16, con un error relativo del 61%, bastante importante y en los dos últimos casos
+ pasan situaciones que digamos que hay que tenerla en cuenta, donde un error da muy poquito
+ y el error da muy grande. En el primero, en el final caso, Fíjense el error relativo es muy grande
+ de 5 millones por ciento, un valor muy grande porque porque de un valor 0 me dio un 0,55, entonces
+ ahí la diferencia relativo es muy grande de lo que tenía que dar el modelo, cuando el error absoluto
+ es muy pequeña, 0,55%, entonces en este caso hay que analizar lo que yo estoy tratando de
+ estimar y ver con cuál de estos errores me quedó para tomar la decisión si el modelo es bueno o no,
+ si tal vez el hecho de tener un 0,55, como error absoluto, lo considero como valido, listo,
+ el error relativo, no lo tengo en cuenta, pero si yo me interesa a medir algo que es muy pequeño,
+ ahí el error relativo va a tener más impacto. Y en el último ejemplo pasa a través, Fíjense
+ que los valores son muy grandes, entonces el error absoluto es bastante grande, está en el
+ orden de los 3.200 puntos, pero el error relativo es del 2%, entonces Fíjese, estoy estimando
+ algo tan grande que el error absoluto que me da es importante, pero el error relativo que tengo
+ este pequeño, entonces cada devuelta, al manejar estos valores tan grandes, tal vez le de más
+ importancia en el error relativo que el error absoluto, o no, va a depender allí del contexto del
+ dominio, donde uno la está blica. ¿Cómo analizar tanto el error relativo como el absoluto
+ cortado, uno de los ejemplos, puede ser algo bastante tedesos, sobre todo cuando hay muchos
+ ejemplos, lo que se suele hacer es samarizar uno, hacer un resumen estadístico de estos dos
+ errores para evaluar en general que también está funcionando en el modelo, entonces para
+ el error absoluto y el error relativo, calculamos cuál es el error mínimo, el error máximo,
+ el promedio y el desvillo. Entonces teniendo en cuenta, todo esto es para metrospamos a poder
+ definir si el modelo es aceptable o no, de hecho muchas veces se hace una primer mirada
+ con esto y ante la duda se va y se evaluan los ejemplos donde el error presenta una medida
+ mayor al promedio o los casos donde el error es muy pequeño o donde un es muy grande y el
+ otro muy pequeño, entonces de esa manera hay uno puede considerar si el modelo es aceptable o no.
+ Lo importante es que todas estas métricas cuando nosotros hacemos la prueba del modelo,
+ la tenemos que hacer con datos diferentes a los datos que yo tenía y que fui utilizando
+ durante el entrenamiento. Si esto no lo hago voy a tener dificultades porque posiblemente
+ el modelo me de muy bien con métricas muy correctas, pero cuando lo pongamos en producción
+ y empieza a funcionar con datos diferentes, el modelo va a tender a fallar y nos vamos a
+ dar cuenta que no era del todo, confiable porque no está generaliza. Bueno os dicho esto terminamos
+ con este vídeo obviamente que queda mucho por hablar de lo que son las procesos de entrenamiento
+ validación y prueba, pero eso lo vamos a ver más adelante durante la curso. Bueno, por ahora
+ los dejamos hasta luego.

@@ -1,0 +1,324 @@
+1
+00:00:00,000 --> 00:00:04,640
+ Hola, este es el segundo video correspondiente a la presentación de razónamiento
+
+2
+00:00:04,640 --> 00:00:10,860
+ aproximado y lógica difusa. En este video vamos a hacer la introducción a la lógica difusa.
+
+3
+00:00:10,860 --> 00:00:14,800
+ Entonces vamos a comenzar viendo la definición de lógica difusa.
+
+4
+00:00:14,800 --> 00:00:20,300
+ La cual nos dice que es un mecanismo de razónamiento aproximado, cosa que ya habíamos dicho,
+
+5
+00:00:20,300 --> 00:00:25,800
+ que proporciona una manera simple y elegante. Hayme gusta ahí lo de simple y elegante
+
+6
+00:00:25,800 --> 00:00:30,580
+ porque es muy importante. La lógica difusa vamos a ver que es bastante sencillo
+
+7
+00:00:30,580 --> 00:00:35,360
+ de entenderlo, no tiene grandes complicaciones como tiene otros modelos.
+
+8
+00:00:35,360 --> 00:00:43,560
+ Y, a su vez, la solución que debían es fácil de mostrar y es más se pueden incluir en un
+
+9
+00:00:43,560 --> 00:00:49,300
+ informe, donde se aplica para hacer la toma de decisiones. Entonces tiene una cualidad
+
+10
+00:00:49,300 --> 00:00:55,280
+ de elegancia. Esta lógica difusa, entonces nos va a permitir obtener una conclusión
+
+11
+00:00:55,280 --> 00:01:03,000
+ a partir de datos de entrada. Vagos, ambigos, impresicios, con ruido o incompletos.
+
+12
+00:01:03,000 --> 00:01:09,400
+ Para ver cómo funciona esta lógica difusa, primero vamos a recordar cómo trabaja la lógica
+
+13
+00:01:09,400 --> 00:01:15,320
+ tradicional. Entonces, trojimos que la lógica proposicional y la lógica de primera orden
+
+14
+00:01:15,320 --> 00:01:21,760
+ tiene dos posibles valores de verdad. Algo puede ser verdadero, quiere decir que
+
+15
+00:01:21,760 --> 00:01:28,220
+ tiene un grado de verdad del 100%, o sea que no hay duda que eso se cumpla o puede ser falso.
+
+16
+00:01:28,220 --> 00:01:35,000
+ Entonces eso quiere decir que no tiene ningún grado de sartas. Algo de sartas es del 0%.
+
+17
+00:01:35,000 --> 00:01:41,760
+ Con estos dos valores de verdad, entonces yo puede ser calgo se cumple o algo no se cumple.
+
+18
+00:01:41,760 --> 00:01:47,000
+ Lo que no puede decir es que si algo se cumple por la mitad. Entonces, si, por ejemplo,
+
+19
+00:01:47,000 --> 00:01:53,520
+ yo estoy hablando de la lluvia y quiere decir está lluviendo, le puede ser verdadero.
+
+20
+00:01:53,520 --> 00:01:58,960
+ Si quiere decir está lluviendo igual falso, estaría diciendo que no llueve, pero si yo
+
+21
+00:01:58,960 --> 00:02:03,160
+ quiere decir que llueve más o menos, no puedo decir lo porque voy a tener que decir que
+
+22
+00:02:03,160 --> 00:02:08,040
+ es verdadero, que sería el mismo valor que va a tomar si llueve mucho y que si llueve
+
+23
+00:02:08,040 --> 00:02:14,360
+ poco. Entonces, para tratar de solucionar este problema que tiene la lógica tradicional
+
+24
+00:02:14,360 --> 00:02:19,540
+ para representar estas situaciones, aparecen la lógica polivalente.
+
+25
+00:02:19,540 --> 00:02:23,920
+ La lógica polivalente lo que va a pasar es que en lugar de tener siempre, dos valores
+
+26
+00:02:23,920 --> 00:02:30,080
+ de verdad, puedo tener tres o más. Entonces, en una lógica trivialmente, yo podría
+
+27
+00:02:30,080 --> 00:02:35,160
+ tener algo que es verdadero, algo que es falso, o algo que es medio verdadero, o medio
+
+28
+00:02:35,160 --> 00:02:41,440
+ falso, ¿no? Está intermedia entre verdadero y falso. Entonces, eso lo podría representar
+
+29
+00:02:41,440 --> 00:02:53,240
+ con 1,1 o 100% para verdadero, un 0% de grado de verdad para falso y un 50% un 0,5 para medio
+
+30
+00:02:53,240 --> 00:03:02,600
+ verdadero. Entonces, ahí sí podría decir está lluviendo 100%, no está lluviendo 0% o falso
+
+31
+00:03:02,600 --> 00:03:11,520
+ y está lluviendo más o menos, o sea, está medio lluviendo con 1,0,5, ¿no? Con un valor de medio
+
+32
+00:03:11,520 --> 00:03:18,560
+ verdadero. Entonces, si llego llueve, verdadero, considero que está lluviendo un montón,
+
+33
+00:03:18,560 --> 00:03:23,560
+ si llego llueve, igual falso, estoy diciendo que no llueve, si llego llueve, medio
+
+34
+00:03:23,560 --> 00:03:29,200
+ verdadero, es digo que llueve más o menos, llueve por la mitad. Si yo quisiera darles
+
+35
+00:03:29,200 --> 00:03:36,960
+ a su vez más variedad, yo quisiera decir que yo vizna, llueve bastante, llueve mucho,
+
+36
+00:03:36,960 --> 00:03:43,600
+ ahí tendría que empezar a agregarle más valores verdadero. Lo cual haría que la aplicación
+
+37
+00:03:43,600 --> 00:03:49,120
+ de esos valores de verdad, en los distintos operadores de la lógica, porque en esta lógica
+
+38
+00:03:49,120 --> 00:03:55,120
+ polivalente también vamos a tener el Lí, el O, la negación y la implicación, se mueve
+
+39
+00:03:55,120 --> 00:04:02,000
+ algo un poquito más difícil. Entonces, para tratar de simplificar todo este problema,
+
+40
+00:04:02,000 --> 00:04:09,440
+ en el año 1971, un señor llamado Sadden, propone la lógica difusa. La lógica difusa
+
+41
+00:04:09,440 --> 00:04:15,920
+ que en castellano también se conoce como lógica borrosa y en inglés como fusiloxic,
+
+42
+00:04:15,920 --> 00:04:21,200
+ es un tipo de lógica donde no se utilizan valores discretos de verdad. O sea,
+
+43
+00:04:21,200 --> 00:04:26,880
+ no vamos a tener valores de verdad, verdadero, medio verdadero, poco verdadero, falso.
+
+44
+00:04:26,880 --> 00:04:33,920
+ Si no, que vamos a manejar valores contiguos. Entonces, asociado una función de verdad,
+
+45
+00:04:33,920 --> 00:04:39,520
+ vamos a tener una función de pertenencia que va a ser una función que nos va a devolver
+
+46
+00:04:39,520 --> 00:04:47,280
+ un valor entre 0 y 1. Pero también nos puede devolver cualquier valor continuo entre
+
+47
+00:04:47,280 --> 00:04:53,600
+ esos dos extremos del rango. Entonces, yo puedo tener una función de verdad que me devuelve
+
+48
+00:04:53,600 --> 00:05:01,360
+ un 0,1, otra que me devuelve un 0,35, otra que me devuelve un 0,8,
+
+49
+00:05:01,360 --> 00:05:07,920
+ detendiendo de lo que yo quiero representar. Y lo que si tengo que respetar es que siempre el
+
+50
+00:05:07,920 --> 00:05:15,680
+ 0,0 es la falsidad absoluta y el 1,0 es la verdad absoluta. Entonces, la lógica difusa
+
+51
+00:05:15,680 --> 00:05:22,800
+ de borrosa o fusilogic, lo que hace es utilizar esta función de pertenencia. Continúa
+
+52
+00:05:22,800 --> 00:05:29,280
+ para representar la información que yo necesito manejar con cierto grado de imprescición.
+
+53
+00:05:29,280 --> 00:05:36,720
+ Entonces, yo quiero decir que llueve un montón, podría decir que el valor de pertenencia es de 1.
+
+54
+00:05:36,720 --> 00:05:43,840
+ Si yo digo que llueve más o menos, podría darle un valor de 0,5. Si yo de poco,
+
+55
+00:05:43,840 --> 00:05:53,440
+ darle un valor de 0,2, si apenas yo vina podría ser un valor de 0,0,5. Si yo de bastante,
+
+56
+00:05:53,440 --> 00:05:59,120
+ podría ser un 0,7. Entonces, fíjense de acuerdo a lo que yo quiero representar, le voy a
+
+57
+00:05:59,120 --> 00:06:07,040
+ signar un valor diferente a esta función de verdad. Entonces, esta lógica difusa para trabajar,
+
+58
+00:06:07,040 --> 00:06:14,640
+ sabe, la basó en otro teoría que él tenía anterior de 1965, que es el concepto de el conjunto
+
+59
+00:06:14,640 --> 00:06:21,440
+ difuso o fusilogicerts. Que lo que hace con junto a difuso es indicar que un grupo de cosas
+
+60
+00:06:21,440 --> 00:06:29,920
+ que puede ser definido, pero no de manera precisa si pertenece o no pertenece a un grupo. Entonces,
+
+61
+00:06:29,920 --> 00:06:36,000
+ permite manejar conocimiento de naturaleza vada o imprescisa sobre ese concepto.
+
+62
+00:06:37,200 --> 00:06:42,560
+ Para realizar estas evaluaciones borrosas, entonces, definen esta función de pertenencia,
+
+63
+00:06:42,560 --> 00:06:48,960
+ que es lo llamado a grado de pertenencia de un elemento y que se representa con la letra a un
+
+64
+00:06:48,960 --> 00:06:56,480
+ y una letra o palabra que representa a la función de verdad que queremos manejar. Entonces,
+
+65
+00:06:56,480 --> 00:07:02,720
+ para el ejemplo que yo estaba referiendo sobre la lluvia, tendríamos un mú de lluvia,
+
+66
+00:07:02,720 --> 00:07:09,200
+ donde le quisiería el día o la hora, donde yo estoy evaluando la cantidad de lluvia que está cayendo.
+
+67
+00:07:09,200 --> 00:07:17,120
+ Esta función, como dijimos antes, tiene el valor extremo de cero que es no pertenencia o falsidad absoluta,
+
+68
+00:07:17,120 --> 00:07:24,720
+ uno que es la pertenencia total o verdad absoluta y entre cero y uno teníamos todos los grados
+
+69
+00:07:24,720 --> 00:07:33,200
+ intermedios con una función continua, no discreta. Entonces, no va a existir una transición abrupta
+
+70
+00:07:33,200 --> 00:07:42,480
+ entre pertenencia y no pertenencia, por un lado, pero esta función es importante aclararlo,
+
+71
+00:07:42,480 --> 00:07:48,640
+ no tiene sentido probabilistico. O sea, si yo estoy diciendo que la lluvia cae en un cero
+
+72
+00:07:48,640 --> 00:07:54,720
+ como 6, no estoy diciendo que va a llover con una probabilidad del 60% porque ahí estaría diciendo
+
+73
+00:07:54,720 --> 00:08:00,800
+ que no se exista lluviendo, no está lluviendo. Estoy dando una probabilidad al hecho de que pueda llover.
+
+74
+00:08:00,800 --> 00:08:08,480
+ Yo lo que estoy representando con lluvia, cero como 6, estoy diciendo que lluvia un poquito más que el
+
+75
+00:08:08,480 --> 00:08:17,520
+ por medio, o sea, yo veo más o menos tirando más, que a menos. Esta es importante porque,
+
+76
+00:08:17,520 --> 00:08:23,760
+ si yo le doy un sentido probabilístico, las conclusiones que puedo tomar a través de los resultados
+
+77
+00:08:23,760 --> 00:08:30,160
+ que me va a dar un sistema que aplique la lógica difusa pueden llevar a malas interpretaciones
+
+78
+00:08:30,160 --> 00:08:37,200
+ y a una decisión erronio. Entonces, hay que tener cuidado y recordar que la lógica difusa
+
+79
+00:08:37,200 --> 00:08:43,040
+ no tiene un sentido probabilístico sino que lo que me representa es el grado de permanencia
+
+80
+00:08:43,040 --> 00:08:49,120
+ de un elemento a un conjunto. Bueno, para ver cómo funciona esta lógica difusa ahora en el próximo
+
+81
+00:08:49,120 --> 00:08:56,000
+ vídeo, lo vamos a dar en un ejemplo donde la aplicamos para indicar si una persona es alta o no.
+

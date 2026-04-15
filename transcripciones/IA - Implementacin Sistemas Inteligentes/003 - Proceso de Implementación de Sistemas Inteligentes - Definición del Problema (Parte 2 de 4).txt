@@ -1,0 +1,92 @@
+ Buenas, mi nombre es María Florencia Pollo y vamos a continuar con la segunda actividad
+ que continúa a lo que es la ilicitación de requerimientos. Bien, habíamos visto que
+ íbamos a comenzar a hablar de la comprensión, cuando habla de la comprete comprender
+ estos requerimientos, habla de poder construir, de poder entenderlo y a partir de ahí
+ desarrollar modelos conceptuales que me permitan formalizar todos estos requerimientos
+ que enletapa previa yo yo lo pudi identificar, se cuerdan a través de las distintas
+ técnicas y que significa comprenderlo requerimiento. Significa poder entenderlo a través
+ de un proceso y el proceso que uno transita para poder comprender en los requerimientos
+ implican, pasar por un proceso de abstracción, de descomposición, de proyección y después
+ del poder modernizado. Fíjense, bueno, la sabidoria consiste en saber qué se sabe, lo
+ que se sabe y saber qué no se sabe, lo que no se sabe, poder identificar verdaderamente
+ que es lo que uno tiene ya hasta donde alcanza y el que nada dudan a las sabe, pero bueno,
+ la idea es pasar por todo este tipo de actividades y a través de ellas, poder
+ que construir finalmente los los poderos el concepto. En la primera instancia es la extracción,
+ entonces lo que uno trata de buscar es ignorar las diferencias entre conceptos similares
+ y así podero agruparnos. Esto nos va a permitir tener una mirada bastante más simple
+ de la realidad, no dejarnos llevar muchas veces por hechos anecdóticos o visualizaciones
+ anecdóticas que el único que hacen es sacarnos la atención de lo que es verdadera
+ mente importante, entonces es verdadera mente pasar por un proceso de abstracción en muy
+ útil y simplificar la realidad. Y además nos permite identificar características
+ verdadera mente importante dentro del problema, y es un proceso bastante complejo, lo que
+ se pasa por la descomposición, la descomposición es dividir el lo que hacemos nosotros
+ muchísimas veces que dividir un problema en partes simples, partes más simples de resolver
+ y la resolución de todas estas partes simples nos van a permitir tener una resolución más
+ compleja. Pasar por este tipo de actividad nos permite llegar a un nivel de profundidad
+ y granularidad mucho más específico, mucho más salto, verdaderamente llegar a definir pequeñas
+ cosas que son importantes para el proceso y verdaderamente también por otro lado lo que hay
+ que tener cuenta es que estos componentes que nos ven contrando muchas veces no son independientes
+ entre sí y están realmente relacionados. Esto nos va a permitir después pasar por la actividad
+ de la proyección que es identificar y describir las diferentes visiones que se pueden tener
+ de los mismos elementos para poder identificar distintos puntos de vista en una misma realidad
+ y identificar también inconsistencia o conflictos entre los distintos interesados. Y esto es
+ bastante interesante porque muchas veces estas distintas miradas pueden ser inconsistentes y
+ va a haber que resolverlas y no tiene que ver con problemas técnicos, sino que bueno,
+ y ya entramos con otro tipo de conflictos. Pero la proyección es otra de las actividades
+ super importantes. Una vez que ya pasamos por todas estas, por las actividades anteriores
+ podemos entrar en lo que es la actividad de modularizar. Y esto lo que nos va a permitir es
+ como un disco bueno placerizar, como ir agrupando y entender la realidad más dividida en
+ porciones tiene que ver también con la simplificación. Una vez que uno ya identificó a todos
+ los elementos de manera bastante más detallada también es poder encontrar que comparten estos
+ elementos y poder llegar a marmoglos, entender cómo generar modelos, entendemos que muchos
+ módulos, o sea que los módulos no tienen que tener el mismo nivel de complejidad, está el poder
+ modularizar, nos proveen el principio fundamental para nosotros que es la realización y también nos
+ va nos habilita a organizar las tareas y los grupos de trabajo. Entonces bueno, como uno va
+ transitando por todas estas actividades, fíjense bueno, no pasa por un pat, yo le enseñé
+ lo con las manos. Por un proceso de abstracción después los descompones, los proyecta
+ para nuevamente ir evolucionantes como un etapa que va, es proceso ebolutivo, finalmente
+ de los, una vez que llega a una descripción consistente, pasa por la etapa de modularización
+ y ahí puede generar los famosos módulos conceptuales. Y bueno, es un módelo acá hay una
+ definición bastante extensa, pero muy interesante sobre lo que es un módelo que es una
+ simplificación simplificada de la realidad que da sentido a la realidad y permite comprenderla.
+ Sin embargo, se puede notar que para construir un modelo pertinente, en necesario haber comprendido
+ ya lo esencial de la realidad del objeto de estudio. Y ahí se encuentra un exponable circularidad
+ de la construcción del conocimiento. La definición a rivenución es suficiente para ser
+ aplicado en modelo dinánico, ya hay que completarla, un módelo es en ese caso, en este
+ caso, la reconstitución simplificada de un proceso que pretende representar un proceso
+ del mundo sensible. Y un modelo dinámico implica, por lo tanto, un desarrollo desde los datos
+ de entrada hasta los resultados del funcionamiento del propio modelo. Este modelo tiene
+ que ser necesariamente simplificado, sino no cumple con la, el, el, el, el, el ser de
+ del modelo, no sería la realidad, sino sería la realidad misma y no contribuiría nada
+ a la construcción del conocimiento. Es de este modo una representación abstracta lo cual
+ significa que la aproximación, incluso el error, es sinerente al modelo. Lo que no,
+ elantea y, de ejemplaros que el modelo no es equivalente a la realidad, que cuando más
+ uno sea próxima la realidad menos simplificado está también. Y cuando uno generamos de
+ los conceptuales, bueno, estas son representaciones gráficas de la definición que le veníamos
+ diciendo, el modelo no tiene que ser tan completo ni tan complejo como para no poder
+ entenderlo, ni tan poco tan simple como para que no digan nada. Para que no sirve un modelo,
+ para poder entender los requerimientos que es particularmente, uno de los objetivos más
+ importantes que tenemos sobre estos modelos conceptuales, y también nos va a permitir
+ todo este proceso detectar problemas en los requerimientos, qué tipo de problemas, requerimientos
+ no definidos, requerimientos que está bueno juntos, requerimientos que están mal definidos
+ y inconsistencias, con funciones en la terminología, cuando muchas veces dos personas
+ conceven o, o cree que dos objetos llamados de los delir, la entidad alumno para dos personas
+ puedes significar cosas diferentes, para uno puede ser una alumno que está inscrito, solamente
+ con que está inscrito en el curso de ingreso y para otro, y se no, para mí alumno es alguien
+ que ya, pero el curso de ingreso y es alumno de la facultad. Son dos concepciones distintas
+ y lo que hay que dejarla central. Bueno, también para poder identificar cuáles son los
+ requerimientos que no son, están fuera de la alcance del proyecto o no son viable, y también
+ para poder identificar tutos de conflictos no resultos. Y otra de las tareas también para
+ la cual existen estos modelos, es para poder comunicar los requerimientos, ya que vimos
+ que sabemos nosotros por excelencia que los modelos, las representaciones gráficas simplificadas,
+ son mucho más simples pares con más herramientas de transmisión. Y en existen distintos
+ modelos concepciones nosotros conocemos varios, por ejemplo, los de Venezuela, están dentro
+ de lo que se la incotan bien, los árboles de composición funcional, donde uno tiene una
+ meta general, esa meta se subdividen sus metas y cada una de esas metas se logran ir
+ descomponiendo en un montón de actividades que cumplidas no permitirían llegar con éxito
+ por la meta establecida, también las tablas de decisión, los árboles de decisión, las
+ fórmulas y las seudo reglas, y gente que todas estas herramientas miren las, las seudo
+ reglas que parecidas también son han resultado de un análisis de protocolo, y ahí.
+ Una vez que terminamos con la idea de comprensión vamos a pasar a la actividad de articulación,
+ que la vamos a dejar para el próximo vídeo, así les va quedando un nuevo por cada
+ día, desde ya muchísimas gracias también.

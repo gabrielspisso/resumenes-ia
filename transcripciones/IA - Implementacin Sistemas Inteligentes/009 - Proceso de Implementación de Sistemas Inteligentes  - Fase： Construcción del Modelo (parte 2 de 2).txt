@@ -1,0 +1,175 @@
+ Hola, este es el segundo vídeo correspondiente a la fase de construcción del modelo,
+ la cual pertenece el proceso de implementación de sistemas interligentes.
+ En el vídeo anterior, habíamos visto grandes rasgos como es la construcción de modelo,
+ usando aprendizaje automático o machine lab.
+ En este vídeo vamos a hablar primero de cómo se realiza la construcción del modelo,
+ cuando yo estoy aplicando o quiero aplicar inteligencia artificial tradicional.
+ En este tipo de sistemas, lo que yo tengo que hacer es identificar todas las reglas y conceptos
+ que se van a volcar dentro de la base de conocimiento, el cual va a ser nuestro modelo para resolver el problema.
+ Entonces yo por otro lado voy a tener el motor de inferencias que va a ser el módulo que se va a ocupar
+ de manejar todos esos hechos y reglas que van a estar en la base de conocimiento.
+ Pero el motor de inferencia generalmente es generico, o sea que no yo no lo voy a hacer forma específica
+ para un problema a un proyecto puntual.
+ Si no que ahí voy a aplicar algoritmos de búsqueda, bastante genericos,
+ por ejemplo, puedo usar asterisco primero el mejor para tratar de seleccionar las reglas y hechos
+ que se necesitan para resolver el problema.
+ Entonces lo que sí voy a tener que hacer es tratar de codificar de alguna manera todas
+ las reglas y conceptos para que queden registrados dentro de mi base de conocimiento.
+ Obviamente que eso va a depender mucho del tipo de tecnología, en general se usa algún tipo
+ de formalismo similar a la lógica de primer orden, por eso también vemos en otros clases
+ hablamos de cómo se puede usar la lógica de primer orden para representarlos conocimientos.
+ Otras veces se puede utilizar un formalismo particular, que es muy parecido a como muchos
+ lenguajes de programación de Finen IF, o como hace prologuees que es más parecido a funciones.
+ Bueno, en nuestro caso, acá lo que vamos a ver es un ejemplo con un herramienta de
+ llama K-P-C, que es una herramienta que permite construir sistemas basados en conocimientos
+ o sistemas expertos tradicionales, y que está asociado al uso de clases.
+ Entonces yo lo que puedo hacer es definir un conjunto de clases, en este caso lo vemos por
+ un ejemplo donde se trata de identificar un tipo de flor, un tipo de amapola de acuerdos
+ y artas características que tiene, entonces por cada una de estas clases tengo definido a tributos,
+ tengo definidos metos y tengo definidos reglas. En estas reglas lo que voy a tener es cómo
+ se combina los valores de ciertos atributos para determinar ciertas conclusiones.
+ El framework K-P-C, lo que nos va a permitir hacer es propagar la información de las distintas
+ reglas de terminar que reglas con bien usar o no de acuerdo a los datos que tenemos definidos
+ y así encontrar la solución al problema. Entonces, como les decía yo anteriormente,
+ con inteligencia artificial tradicional, la construcción del modelo es más manual, porque
+ uno tiene que codificar, en este caso, todas las clases, todas las reglas usando la termo
+ términología y la codificación correspondiente a la herramienta.
+ Con la inteligencia computacional, los algoritmos genéticos va a pasar algo parecido. En
+ caso de los algoritmos genéticos, que es el algoritmos que vimos correspondiente inteligencia
+ computacional, también hablamos de errores neuronales artificiales, pero como en las
+ redes neuronales artificiales son de Machine Learning, ahí se hace la construcción del modelo
+ de manera automática. En cambio, en una algoritmos genético no tiene la capacidad de aprender,
+ y todo el conocimiento del problema va a estar dado por estructura del cromosoma y la
+ función de aptitud. Entonces, yo tengo que definir esas dos cosas que van a tratar de representar
+ un modelo simplificado del problema que yo quiero resolver. Digo, simplificado porque,
+ a veces, es muy difícil volcar todo la conocimiento que tengamos sobre el problema dentro
+ de un estructura de encuramosoma y de una función de aptitud.
+ Esta definición se tiene que hacer con mucho cuidado porque el cromosoma y la función de aptitud
+ va a ser la principal fuente de conocimiento sobre el problema que le queríamos resolver.
+ Los operadores de generar la población inicial, seleccion, cruzamiento, mutación,
+ criterio de paro y análisis de la evaluación o evaluación de la población final, son genericos.
+ Solo en el cromosoma y la función de aptitud es donde yo voy a poner el conocimiento
+ del problema que quiero resolver. Entonces, y ni estás dos cosas yo tengo que volcar
+ el conocimiento, pero no tiene que ser perfecto, por eso antes hables de modelo simplificado
+ del problema. Si yo quiero lograr algo perfecto, sería el ideal, pero es preferible que se
+ corresponda en el problema que no haya ningún error, ningún bug al momento de definir el cromosoma
+ en la función de aptitud, más que sea perfecto. Si nosotros tenemos alguna error al momento
+ de definir estas cuestiones, lo que nos puede llegar a pasar es que la algoritmo va a encontrar
+ una solución correcta, pero para el problema equivocado. Es muy parecido a lo que hablamos
+ antes de Machine Learning donde habíamos mencionado que si yo utilizó los datos incorrectos
+ para construir mi modelo con aprendizaje automático, yo voy a tener modelo, pero no se va
+ a corresponder con el problema que yo quiero resolver. En este caso, el problema puede ser
+ que yo vuelquen reglas, heurísticas o algún tipo de definición incorrecta dentro de mi función
+ de aptitud y eso genera que al momento de evaluar, las posibles soluciones, los individuos
+ o cromosomas, se le de más valor a una solución que no es la mejor y eso puede ser que el
+ algoritmo termina diciendo "mira, para mí la mejor solución es esta con una realidad
+ no lo es". Dentro del cromosoma en sí, hay una serie de características deseables que
+ se quiere que tenga. Estas características no son obligatorias y hay veces que pueden ser
+ contradictorias o conflictivas entre sí. Entonces hay que ver a que uno le gustaría darle
+ mayor incapia de acuerdo al problema o proyecto donde uno va a trabajar.
+ La primera característica deseable habla de que el cromosoma tiene que tener un tamaño
+ fijo, esto para los algoritmos genéticos que vimos en clases ya lo habíamos visto como
+ obligatorio, pero hay dentro de la familia de computación evaluativa, hay otros algoritmos
+ similares a los algoritmos genéticos que pueden tener un tamaño variable. De todas formas
+ se recomienda que tengan un tamaño fijo y que se tamaño sea el mínimo posible o sea que
+ tenga poca redundancia, que sea consisto, que quiere decir esto que dentro de la estructura
+ de cromosoma solo pongamos atributos o características que sean relevantes para resolver
+ el problema. No tiene sentido analizar un atributo que no me va a permitir el resolver
+ el problema dentro del estructura de cromosoma porque eso le único que me va a generar
+ de ruido y que mi algoritmo tarde más en el encontrar una solución.
+ La segunda característica deseable es que todas las posibles soluciones deben ser representadas,
+ debe ser completa. O sea, antes vimos que tiene que ser lo más pequeño posible tiene
+ que haber poca una de redundancia, pero dentro de ese tamaño fijo y tamaño mínimo
+ deberíamos poder representar todas las posibles soluciones. Si hay características o valores
+ que no estamos representando van a ser valores o características que la algoritmo genético
+ nunca va a probar y entonces puede ser que por eso no encontramos la solución optima
+ para nuestro problema. Tercero como característica deseable tenemos evitar representar
+ soluciones invalidas o se va a tener coherencia. Este es una característica deseable
+ que muchas veces no se puede evitar pero bueno es una recomendación. Lo que hay que tratar
+ de hacer es que en los valores que van a tomar los genes la probabilidad de que aparece
+ con una solución invalida, o sea una combinación de valores binarios que me generé un
+ nivido invalido sea muy baja. Hay veces que para eso se puede utilizar un poco de redundancia,
+ es decir, por ejemplo, yo tengo que representar tres valores posibles, entonces voy a necesitar
+ dos bits, pero en esos bits me pueden generar cuatro valores posibles. Entonces hay una combinación
+ de bits que no estarí usando. Lo que puedo hacer es que si yo tengo los tres valores que
+ son verde rojo y amarillo, lo que puedo hacer es que asignarle una combinación para verde, una
+ combinación para rojo, una combinación para medio amarillo y una nueva combinación para
+ verde. Entonces verde tiene el doble de chances de que aparezca. Esta manera, yo evito generar
+ soluciones invalidas y le doy más posibles de que la solución que se genera sea verde.
+ Si yo ya sé que verde es una característica que puedes ayudarme a encontrar la mejor solución,
+ capaz que eso de hecho me sirve para que se encuentra más rápido una solución con verde. Pero,
+ si la solución ideal no es verde, no voy a tener problema porque también estoy representando
+ al rojo y al amarillo, con menos probabilidad de que aparezca, pero lo estoy así. Bueno,
+ la cuarta característica dice, todas las soluciones deben tener la misma posibilidad de
+ ser generadas uniformidad. Ahí tenemos el conflicto con la, como yo trate de solucionar, representar
+ soluciones invalidas. Si yo quiero que no se genera en soluciones invalidas y algo que el
+ verde tenga el doble de chance, pero por otro lado me dice que quiero uniformidad, todos tengan
+ la misma probabilidad. Bueno, ahí estoy chocando. Ahí le tengo que ver a que le tengo que dar
+ más importancia. Si no es lo que puedo hacer es dejar que se generen soluciones invalidas y después
+ tener cuidado de la manera como vamos a penalizar las soluciones que tienen combinaciones que
+ no se corresponden con la realidad, que eso era lo vamos a ver con la función de aptitud. Por
+ último, como característica deseable para el cromo soma, tenemos que sea fácil de interpretar,
+ o sea que sea sencillo. Ahí, a veces, conviene evitar hacer codificaciones muy complicadas y tratar
+ de usar una representación que sea lo más directo o intuitiva y se pueda aplicar.
+ Bueno, con respecto a la función de aptitud, también vamos a tener una serie de características
+ deseables para considerar. La primera dice, utilizar de la mejor manera posible y conocimiento
+ del problema. O sea, la aplicación de la oblitud. Como yo les decía antes, en un algoritmo
+ genético, la función de aptitud y la estructura de cromos somas son la principal fuente sobre
+ el problema. Entonces hay que tratar de ver cómo codificar esas función de aptitud, usando
+ la manera más intuitiva, más en silla. Si no es traerística hasta definido en funciones
+ matemáticas, la función de aptitud, pues voy a implementar usando una o más funciones
+ matemáticas. Si mi aurística está definido por un procedimiento, la función de aptitud la
+ voy a definir como un procedimiento. Si son reglas, voy a aplicar reglas. Entonces, usar
+ lo más directo y no tratar de reconvertir algo que ya tengo lo cual después me puede llevar
+ a que cometas errores. Obviamente, que es una característica es obligatoria que dice que la
+ función de aptitud tiene que ser consistente con el cromos somas. O sea, la función de aptitud
+ se deberían evaluar las características que están representadas en el cromos somas. Si no hago
+ esto, después puedo tener problemas, porque en momento de calcular el valor de aptitud,
+ no voy a estar obteniendo los valores correctos. La tercera característica dice reducir
+ la influencia de ruido, se arrobe usted. Ahí lo que quiere decir es que hay que tratar que
+ la función de aptitud no tenga errores al momento de la implementación y que se esté
+ evaluando bien cada uno de los individuos y las combinaciones de valores que tenga.
+ Para eso, a veces no viene mal a hacer una prueba de la función de aptitud, tirarle
+ individuos generados al azar y analizar si lo que está generando es correcto o no. Entonces,
+ esa manera vemos que tantas robustes tiene. En un último dice pequeños cambios en las
+ características deven generar pequeños cambios en la valoración. Es decir, tiene una causalidad
+ fuerte o atchacencia. ¿Qué quiere decir esto? Y bastante sencillo, y a veces uno se lo
+ olvida. Lo que dice es que si yo tengo dos cromos somas, donde lo que cambia es un valor de
+ un solo bit, o sea, en uno tiene una característica de que tiene un cero y en el otro tiene
+ uno no. El valor de aptitud que tiene cada uno de estos individuos tiene que ser bastante parecido,
+ porque un pequeño cambio, el coramos somas, me genera un pequeño cambio en la aptitud. En cambio,
+ si yo tengo un individuo que tiene todos valores en uno y el otro tiene todos valores en cero,
+ el valor de aptitud que debería antenar debería ser muy distinto, entonces.
+ De esta manera, a la ser esta causalidad fuerte o atchacencia, lo que va a pasar que,
+ al igual es nojético elevar, resultar más sencillo encontrar las mejores soluciones, porque va a
+ saber que si cambia un poquito el bit de uno, puede ser que cambia un poquito para que suba o para
+ que baja. Pero si yo no aplico esta de la causalidad fuerte y cambiarlo un bit, el valor de aptitud
+ cambia de golpe, eso puede llegar a pasar con la penalización, o sea, por cambio un bit, lo penalizamos,
+ y si le ponemos un valor de menos 100, cuando antes de cambiarlo, tenía un valor de 20,
+ puede ser que a la genético pierda, y ahora no se por donde conviene probar. Entonces,
+ siempre conviene hacer esto de la causalidad fuerte, donde pequeños cambios en el cramos
+ abrima genera pequeños cambios en la aptitud. Bueno, y por último, la penalización que yo también
+ les mencionaba reciam, hay que hacerlo de manera correcta. Muchas veces la penalización se aplica
+ la pena de muerte. ¿Qué quiere decir eso? Que si yo veo que hay un individuo que tiene un valor
+ invalido o sea dentro de un gen hay una combinación invalida, le pon un valor muy bajo y malo.
+ Entonces, le pongo a todos menos 100. Si hago eso, al algoritmo genético no sabe distinguir cuáles
+ un individuo malo de uno peor, porque yo puedo tener otro que tiene dos combinaciones invalidas
+ y eso también va a leer menocían. Entonces, lo que combina hacer ahí es usar niveles de penas,
+ o sea, aplicar distintas penas de muerte o distintas grados de penas, de acuerdo que tan mal están los
+ individulos. Entonces, si tienen una combinación invalida, le pongo menos 20. Si tiene dos, le pongo
+ menos 40, si tiene 3, le pongo menos 60 y así. Y esas valores que yo le voy a asignando las
+ penas pueden ser valores constantes que durante toda la correguida van a ser iguales o pueden ser
+ adaptativos. Si son adaptativos pueden ser que el valor de la pena cambia a medida que yo voy
+ ciclando más. Entonces, al principio puedo ponerlo una mina más suave, pero a medida que voy
+ ciclando más le pongo una pena más fuerte porque a medida que yo voy avanzando en la correguida no
+ quiero que aparezcan individuos validos o que se adaptativos consideran que tan buena toda la población.
+ Si toda la población es media mala, le pongo menos un poco más bajas. Si toda la población es buena
+ y tengo un individuo invalido, ahí le pongo una pena peor, porque ese no me sirve y entonces lo quiero
+ descantar. De esta manera, manejando distintos niveles de penas constantes o adaptativas, lo que
+ le logro dar al agorismo genético es un conocimiento sobre los grises y de esa manera el agorismo
+ puede elegir con mayor cuidado, cuáles son los individuos, o cremosonas que debería tomar para
+ ser la mutación y el cruzamiento, que en cambio si yo lo hago con una pena y todas iguales no logros
+ que genere. Bueno, entonces, esto es para que lo tengan en cuenta el momento de implementar una
+ agorismo genético. Con esto finalizamos la explicación sobre la construcción del modelo
+ bastante reducido, lo que hicimos, pero bueno, no queremos tampoco llenar los de información
+ sobre el entranarlo. Vamos a ver el próximo vídeo, la última fase del proceso. Hasta luego.

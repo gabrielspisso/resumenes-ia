@@ -1,0 +1,456 @@
+1
+00:00:00,000 --> 00:00:05,840
+ Hola, como están, mi nombre es Sinte Avejera, nosotros en los videos anteriores,
+
+2
+00:00:05,840 --> 00:00:10,240
+ ya habíamos estado echarlando sobre las etapas de la análisis de protocolos,
+
+3
+00:00:10,240 --> 00:00:13,840
+ por un lado habíamos visto la grabación del protocolo,
+
+4
+00:00:13,840 --> 00:00:19,280
+ luego vimos la transcripción, y vimos una parte de la codificación.
+
+5
+00:00:19,280 --> 00:00:22,080
+ En lo que tenía que ver con la primera subetapa,
+
+6
+00:00:22,080 --> 00:00:28,160
+ de identificación de conceptos características, valores, relaciones y operadores.
+
+7
+00:00:28,160 --> 00:00:31,920
+ Entonces, lo que vamos a hacer ahora es ir a la segunda subetapa,
+
+8
+00:00:31,920 --> 00:00:34,720
+ que es la identificación de la búsqueda.
+
+9
+00:00:34,720 --> 00:00:37,360
+ ¿Qué vamos a hacer en esta subetapa?
+
+10
+00:00:37,360 --> 00:00:41,680
+ A pesar de que la palabra diga que es una identificación de la búsqueda,
+
+11
+00:00:41,680 --> 00:00:44,880
+ en realidad, no vamos a ser un árbol de búsqueda.
+
+12
+00:00:44,880 --> 00:00:51,280
+ Si no lo que vamos a hacer es identificar los estados por los cuales el experto pasó,
+
+13
+00:00:51,280 --> 00:00:54,000
+ dentro de su proceso de razonamiento,
+
+14
+00:00:54,000 --> 00:00:57,360
+ ¿Cuál es son los operadores que utilizó?
+
+15
+00:00:57,360 --> 00:01:01,360
+ Y además, ¿Cuáles son las condiciones que tuvo en cuenta
+
+16
+00:01:01,360 --> 00:01:03,840
+ para llegar a esos estados?
+
+17
+00:01:03,840 --> 00:01:09,120
+ Lo podemos hacer a través de un pequeño gráfico como este que vemos,
+
+18
+00:01:09,120 --> 00:01:12,880
+ donde porulado tenemos el objetivo del protocolo,
+
+19
+00:01:12,880 --> 00:01:18,960
+ que era identificar el diagnóstico de un paciente, según los síntomas que tenía,
+
+20
+00:01:18,960 --> 00:01:24,400
+ y a partir de eso podemos identificar que el experto pasa por dos estados.
+
+21
+00:01:24,400 --> 00:01:30,720
+ Por un lado, lo que el experto nos dice es que podría ser un coronavirus COVID-19,
+
+22
+00:01:30,720 --> 00:01:34,720
+ y por el otro lado, que puede ser una gripe clasea.
+
+23
+00:01:34,720 --> 00:01:37,440
+ Luego identificamos el operador.
+
+24
+00:01:37,440 --> 00:01:42,000
+ El operador para llegar a el coronavirus era que estamos ante un,
+
+25
+00:01:42,000 --> 00:01:45,200
+ mientras que para llegar a gripe clasea,
+
+26
+00:01:45,200 --> 00:01:48,320
+ era concluimos que se trata de una.
+
+27
+00:01:48,320 --> 00:01:50,480
+ Una vez identificado esto,
+
+28
+00:01:50,480 --> 00:01:53,840
+ entonces ahora releemos la transcripción
+
+29
+00:01:53,840 --> 00:01:58,800
+ para ver las condiciones que tu encuentra para llegar a estos estados.
+
+30
+00:01:58,800 --> 00:02:01,280
+ Por un lado, no sabía dicho el experto,
+
+31
+00:02:01,280 --> 00:02:05,120
+ que el paciente tenía una fiebre superior a 38 grados,
+
+32
+00:02:05,120 --> 00:02:08,000
+ teniendo el orden de garganta muy fuerte,
+
+33
+00:02:08,000 --> 00:02:12,240
+ una toseca, una frecuencia respiratoria muy elevada,
+
+34
+00:02:12,240 --> 00:02:14,800
+ y dolores musculares intensos.
+
+35
+00:02:14,800 --> 00:02:18,080
+ Teniendo en cuenta todos esos síntomas,
+
+36
+00:02:18,080 --> 00:02:22,160
+ llegó a que podía ser un coronavirus COVID-19.
+
+37
+00:02:22,160 --> 00:02:25,760
+ Ahora que es lo que pasa en una segunda observación,
+
+38
+00:02:25,760 --> 00:02:30,560
+ el experto analista que el paciente tiene dolor de cabeza persistente,
+
+39
+00:02:30,560 --> 00:02:34,240
+ tiene un malio que es repentino y de larga duración,
+
+40
+00:02:34,240 --> 00:02:36,560
+ y que además el análisis de laboratorio
+
+41
+00:02:36,560 --> 00:02:39,760
+ da positivo al virus hache uno en el mundo.
+
+42
+00:02:39,760 --> 00:02:42,400
+ A partir de su que se abreda,
+
+43
+00:02:42,400 --> 00:02:46,160
+ lo que él coincide es que es una gripe clasea.
+
+44
+00:02:46,160 --> 00:02:50,000
+ De esta manera, tenemos la identificación de la advocada,
+
+45
+00:02:50,000 --> 00:02:52,720
+ donde identificamos los estados,
+
+46
+00:02:52,720 --> 00:02:58,320
+ los operadores y las condiciones para llegar a cada uno.
+
+47
+00:02:58,320 --> 00:03:00,320
+ Una vez liste esta etapa,
+
+48
+00:03:00,320 --> 00:03:04,400
+ pasamos a la identificación de sinónimos, meta comentarios,
+
+49
+00:03:04,400 --> 00:03:06,320
+ e insertido un mes.
+
+50
+00:03:06,320 --> 00:03:09,280
+ Por un lado, tenemos los sinónimos.
+
+51
+00:03:09,280 --> 00:03:13,040
+ Dentro de lo que son, los sinónimos, no sólo ya lo habíamos visto,
+
+52
+00:03:13,040 --> 00:03:16,400
+ son estas palabras o frases que significan lo mismo,
+
+53
+00:03:16,400 --> 00:03:20,000
+ y habíamos dicho que paciente y personas son sinónimos.
+
+54
+00:03:20,000 --> 00:03:21,840
+ Este en este momento,
+
+55
+00:03:21,840 --> 00:03:26,320
+ donde en realidad yo formalizo los sinónimos que encuentro.
+
+56
+00:03:26,320 --> 00:03:27,600
+ Por lo tanto,
+
+57
+00:03:27,600 --> 00:03:30,160
+ si en las relaciones me había quedado,
+
+58
+00:03:30,160 --> 00:03:32,720
+ alguna relación impliste entre sinónimos,
+
+59
+00:03:32,720 --> 00:03:34,000
+ voy y la saco,
+
+60
+00:03:34,000 --> 00:03:39,120
+ porque ahora es donde hemos de cuenta los sinónimos que tienen el protocolo.
+
+61
+00:03:39,120 --> 00:03:42,000
+ Una vez identificados estos sinónimos,
+
+62
+00:03:42,000 --> 00:03:45,280
+ vas a identificar los metacomentarios.
+
+63
+00:03:45,280 --> 00:03:47,280
+ Que son los metacomentarios,
+
+64
+00:03:47,280 --> 00:03:50,880
+ son todas aquellos comentarios que le experto hacen,
+
+65
+00:03:50,880 --> 00:03:55,760
+ que no aportan una información directa a su resonamiento.
+
+66
+00:03:55,760 --> 00:03:57,600
+ Como lo si identifica,
+
+67
+00:03:57,600 --> 00:04:01,200
+ siempre lo voy a identificar por las líneas en las que están,
+
+68
+00:04:01,200 --> 00:04:06,640
+ voy a escribir el metacomentario y su significado.
+
+69
+00:04:06,640 --> 00:04:07,840
+ Por un lado,
+
+70
+00:04:07,840 --> 00:04:09,360
+ lo que nosotros encontramos,
+
+71
+00:04:09,360 --> 00:04:13,360
+ nos vieron que había varias líneas que no habíamos identificado.
+
+72
+00:04:13,360 --> 00:04:16,640
+ Uno es de las líneas de la 10 a la 12,
+
+73
+00:04:16,640 --> 00:04:19,200
+ donde dice que el paciente tiene que ser asignado,
+
+74
+00:04:19,200 --> 00:04:22,560
+ porque es un virus muy cuenta, muy contagioso.
+
+75
+00:04:22,560 --> 00:04:25,680
+ Y eso lo que podríamos decir como significado,
+
+76
+00:04:25,680 --> 00:04:29,120
+ es que se referencia a lo contagioso que se estedirus,
+
+77
+00:04:29,120 --> 00:04:32,080
+ este coronavirus COVID-19.
+
+78
+00:04:32,080 --> 00:04:35,120
+ Este significado me tiene que servir a mí,
+
+79
+00:04:35,120 --> 00:04:41,040
+ como ingeniero en conocimiento, para después en un próximo protocolo,
+
+80
+00:04:41,040 --> 00:04:44,800
+ capaz hay puedo utilizar estos metacomentarios.
+
+81
+00:04:44,800 --> 00:04:47,920
+ Bueno, ante un COVID-19,
+
+82
+00:04:47,920 --> 00:04:50,000
+ que pueda agarrar, digo, bueno,
+
+83
+00:04:50,000 --> 00:04:53,040
+ tiene que el paciente permanecer asilado.
+
+84
+00:04:53,040 --> 00:04:56,400
+ Otro tipo de metacomentario que puedan encontrar,
+
+85
+00:04:56,400 --> 00:05:01,600
+ son aquellos metacomentarios que se denomina en que son de su vetapas.
+
+86
+00:05:01,600 --> 00:05:04,400
+ Por ejemplo, en este caso teníamos en la línea 13,
+
+87
+00:05:04,400 --> 00:05:06,800
+ en una segunda observación.
+
+88
+00:05:06,800 --> 00:05:09,840
+ Este es un metacomentario que lo que me dice es, bueno,
+
+89
+00:05:09,840 --> 00:05:14,960
+ en el protocolo hubo una primera búsqueda y luego una segunda.
+
+90
+00:05:14,960 --> 00:05:17,680
+ En este momento no importa información directa,
+
+91
+00:05:17,680 --> 00:05:20,720
+ pero más adelante sí me va a servir.
+
+92
+00:05:20,720 --> 00:05:23,200
+ Para saber qué es lo que realizó primero,
+
+93
+00:05:23,200 --> 00:05:26,800
+ y qué es lo que realizó en una segunda instancia.
+
+94
+00:05:26,800 --> 00:05:30,800
+ Una vez que yo identifico estos metacomentarios,
+
+95
+00:05:30,800 --> 00:05:34,800
+ por último identificamos a las insertidumres.
+
+96
+00:05:34,800 --> 00:05:37,040
+ En este caso había una sola,
+
+97
+00:05:37,040 --> 00:05:41,040
+ era podríamos pensar en la línea 7.
+
+98
+00:05:41,040 --> 00:05:43,760
+ Las insertidumres son aquellos nociones
+
+99
+00:05:43,760 --> 00:05:46,720
+ donde le experto la assigna una duda.
+
+100
+00:05:46,720 --> 00:05:50,160
+ Una duda en cuanto a lo que es, el cambio de estado.
+
+101
+00:05:50,160 --> 00:05:54,240
+ No se habéis sido estado se da en el 100% de los casos,
+
+102
+00:05:54,240 --> 00:05:57,760
+ o tal vez se da en una menor proporción.
+
+103
+00:05:57,760 --> 00:06:00,400
+ Puede ser que llegar a que es un coronavirus,
+
+104
+00:06:00,400 --> 00:06:04,080
+ se puede dar, no sé, en un 80%.
+
+105
+00:06:04,080 --> 00:06:07,040
+ Entonces, ese es un insertidumbre
+
+106
+00:06:07,040 --> 00:06:09,760
+ que en el protocolo se identifica.
+
+107
+00:06:09,760 --> 00:06:14,880
+ No todo insertidumbre que está en una transcripción se identifica.
+
+108
+00:06:14,880 --> 00:06:18,880
+ Solamente se identifica a aquellas que tengan que ver
+
+109
+00:06:18,880 --> 00:06:21,840
+ con un cambio de estado.
+
+110
+00:06:21,840 --> 00:06:25,760
+ Una vez que nosotros identificamos las insertidumres,
+
+111
+00:06:25,760 --> 00:06:28,880
+ terminamos esta subetada a 3.
+
+112
+00:06:28,880 --> 00:06:33,680
+ Y también terminamos la etapa de codificación.
+
+113
+00:06:33,680 --> 00:06:36,240
+ Ahora en el último vídeo que vemos,
+
+114
+00:06:36,240 --> 00:06:40,400
+ vamos a ver la etapa de interpretación.
+

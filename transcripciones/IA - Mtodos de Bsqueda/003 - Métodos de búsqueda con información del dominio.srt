@@ -1,0 +1,1184 @@
+1
+00:00:00,000 --> 00:00:06,360
+ bienvenidas, soy el ingeniero exequiel vanga, formo parte de la cátera de interginsartificial,
+
+2
+00:00:06,360 --> 00:00:11,040
+ de la UTN, facultad original de Buenos Aires y hoy vamos a ver metodos de búsquedas con
+
+3
+00:00:11,040 --> 00:00:18,360
+ información de domino. En videos anteriores hemos visto detalles y tipos de algoritmos sin
+
+4
+00:00:18,360 --> 00:00:24,040
+ información del domino o lo que también se denomina de búsquedas ciedas y ahora vamos a
+
+5
+00:00:24,040 --> 00:00:29,720
+ ver un poco la comparativa con algoritmos que incluso sin información del domino o que
+
+6
+00:00:29,720 --> 00:00:34,800
+ también se denomina de búsquedas grísticas. Con es la principal diferencia entre estos tipos
+
+7
+00:00:34,800 --> 00:00:40,160
+ algoritmos, lo ajustamente que estos segundos, incluso información, es decir, de alguna forma
+
+8
+00:00:40,160 --> 00:00:45,440
+ cuento con algoritmos que me va a permitir quitar el proceso. Este algoritmos es información
+
+9
+00:00:45,440 --> 00:00:51,440
+ se denomina a búsquedas. La palabra proviene de griego eurekaín que significa descubrir y lo
+
+10
+00:00:51,440 --> 00:00:56,800
+ que me permite hacer es aumentar la fisiensa de un proceso de búsquedas posiblemente sacrificando
+
+11
+00:00:56,800 --> 00:01:03,760
+ exhaustividad. ¿Qué significa esto? ¿Por cómo es la estructura agolada o la estructura
+
+12
+00:01:03,760 --> 00:01:10,400
+ de los grafos? Muchas veces el crecimiento es exponencial, no es genial. ¿Qué significa?
+
+13
+00:01:10,400 --> 00:01:18,200
+ Sua medida que me voy metiendo en profundidad en los hijos, la capacidad de memoria que
+
+14
+00:01:18,200 --> 00:01:24,000
+ requiero se va incrementando de una forma exponencial. Es decir, yo aquí se la cuenta.
+
+15
+00:01:24,000 --> 00:01:32,760
+ Imagínense que un nodo ocupa 100 bytes en memoria y que cada nodo tiene 4 hijos. Es un ejemplo,
+
+16
+00:01:32,760 --> 00:01:43,220
+ ¿OK? En el nivel 9 de profundidad ocupa 20 melas. En el nivel 14 ocupa 25 sigas. En el
+
+17
+00:01:43,220 --> 00:01:49,840
+ nivel 15 ocupas 100 sigas y así sucesivamente. Evidentemente, llegó un punto en el cual
+
+18
+00:01:49,840 --> 00:01:55,080
+ esto no me va a entrar en una página al menos hoy en día y ni hablar del tiempo que
+
+19
+00:01:55,080 --> 00:02:01,680
+ me llevaría, el estar evaluando todos los nodos o el estar generándolos. Entonces,
+
+20
+00:02:01,680 --> 00:02:08,520
+ yo de alguna forma necesito justamente sacrificar esta actividad y aumentar la eficiencia
+
+21
+00:02:08,520 --> 00:02:16,000
+ del proceso de búsquedas. Ahora, esto tiene un costo, tiene una desventaja justamente
+
+22
+00:02:16,000 --> 00:02:21,320
+ que dependiendo el tipo de problema que yo tengo y la solución que necesito, ahí
+
+23
+00:02:21,320 --> 00:02:26,120
+ me va a convenir o no utilizar este tipo de métodos. La principal desventaja es que uno
+
+24
+00:02:26,120 --> 00:02:32,600
+ puede esperar buenas soluciones aunque no siempre óptimas. Es decir, yo al no estar evaluando
+
+25
+00:02:32,600 --> 00:02:37,200
+ exhaustivamente el árbol o el grajo, no puedo asegurar que la solución que encuentra es
+
+26
+00:02:37,200 --> 00:02:44,440
+ la mejor. Pero muchas veces con una solución lo suficientemente buena es más que suficiente
+
+27
+00:02:44,440 --> 00:02:50,680
+ para resolver el problema, para que a mí me sirva, me sirva la solución que me está
+
+28
+00:02:50,680 --> 00:02:56,600
+ aprendiendo. Ni hablar que es un tiempo mucho menor, un tiempo lógico o utilizando una
+
+29
+00:02:56,600 --> 00:03:03,040
+ máquina con cierta cantidad de memoria. Esas son básicamente las principales diferencias.
+
+30
+00:03:03,040 --> 00:03:09,200
+ Algunos tipos de aplicaciones o motivos comunes serían, por ejemplo, búsqueda de rutas
+
+31
+00:03:09,200 --> 00:03:16,200
+ de viaje, ni hablar que cuanto más alejados están los puntos que yo quiero unir la cantidad
+
+32
+00:03:16,200 --> 00:03:22,640
+ de de viaje esposibles, va a creciendo de forma exponencial y había requerido justamente
+
+33
+00:03:22,640 --> 00:03:30,040
+ encontrar alguna forma que me permita no estar generando todos los nodos de este árbol o ni
+
+34
+00:03:30,040 --> 00:03:38,280
+ hablar de cálculo o a nivel tiempo o a nivel memoria. Otro ejemplo que me gustó bastante
+
+35
+00:03:38,280 --> 00:03:43,920
+ es el esaje, es una herramienta de maecrasas que te permite hacer testeos y encontrar
+
+36
+00:03:43,920 --> 00:03:49,120
+ bugs con un método de caja blanca es decir, inspeccionando el código. Lo que va haciendo
+
+37
+00:03:49,120 --> 00:03:57,240
+ es evaluando, evaluando resultados de estos testes y generando nuevos testes en nuevas partes
+
+38
+00:03:57,240 --> 00:04:04,880
+ del código. Esto más allá de tener una necesidad a nivel tiempo o memoria es porque
+
+39
+00:04:04,880 --> 00:04:09,880
+ dentro yo no tengo generado el árbol y lo va generando en una forma dramica. Y acá también
+
+40
+00:04:09,880 --> 00:04:18,880
+ es requerido justamente no estar generando nodos que no corresponden para este camino.
+
+41
+00:04:18,880 --> 00:04:23,680
+ Luego, bueno, hay varios motores diferencias, ya sea del sistema hasta los enconocimientos
+
+42
+00:04:23,680 --> 00:04:29,840
+ o sistemas expertos tradicionales que utilizan métodos de métodos de búsqueda con información
+
+43
+00:04:29,840 --> 00:04:36,800
+ del domino y bueno, en compro un par de resolución de problemas de optimización de que
+
+44
+00:04:36,800 --> 00:04:40,560
+ ser uso de baterías en celulares, siguen muchos utilizan algoritmos genéticos que lo
+
+45
+00:04:40,560 --> 00:04:47,440
+ va a saber más adelante, encontrar algunas que resolen con métodos de búsqueda con información
+
+46
+00:04:47,440 --> 00:04:52,080
+ del domino. Bueno, ahora vamos a ver cómo representar esta información o
+
+47
+00:04:52,080 --> 00:04:58,120
+ esta urística dentro del grafo o del árbol que nosotros con un momento utilizamos para estos
+
+48
+00:04:58,120 --> 00:05:04,080
+ métodos de búsqueda. Los componentes de de estas estructuras, cuáles son básicamente
+
+49
+00:05:04,080 --> 00:05:08,360
+ nodos o aristas. Está bien. Entonces, yo ni por la cena puedo incluir en cualquiera de estas
+
+50
+00:05:08,360 --> 00:05:13,300
+ de subestruturas. Básicamente, la pongo incluir dentro de los nodos con las funciones
+
+51
+00:05:13,300 --> 00:05:19,320
+ urísticas asociadas al estado. ¿Qué significa esto? Yo puedo definir una función que
+
+52
+00:05:19,320 --> 00:05:26,440
+ evalué estos estados, es decir, que reciba un nodo y que devuelva un número, por ejemplo.
+
+53
+00:05:26,440 --> 00:05:33,520
+ Y este número te puede representar el grado de seabilidad de un estado un particular.
+
+54
+00:05:33,520 --> 00:05:38,220
+ Está bien lo que puede significar que cuanto más grandes, más deseable o cuando más
+
+55
+00:05:38,220 --> 00:05:44,040
+ chico, más deseable. Eso va a depender de cómo yo represento el problema. Puede ser distancia
+
+56
+00:05:44,040 --> 00:05:49,920
+ recorrida o puede ser distancia para llegar a la meta. Por ejemplo, la única sol caminó. Entonces,
+
+57
+00:05:49,920 --> 00:05:56,520
+ de acuerdo a cómo yo representé mi problema es en un número cuanto más grande mejor o cuanto
+
+58
+00:05:56,520 --> 00:06:01,960
+ más chico mejor. Está bien. Ahora, por el otro lado, yo también puedo representar esa
+
+59
+00:06:01,960 --> 00:06:08,400
+ urística dentro de las transiciones. Es decir, cuánto me cuesta pasar un estado a otro.
+
+60
+00:06:08,400 --> 00:06:14,140
+ Está bien. En este caso lo que nosotros hacemos es que siempre representa el costo de los
+
+61
+00:06:14,140 --> 00:06:22,640
+ caminos aplicables. ¿Qué significa esto? Que siempre va a penalizar esta urística.
+
+62
+00:06:22,640 --> 00:06:28,900
+ Es decir, si, por ejemplo, yo estoy representando que cuanto más grande es el número, más
+
+63
+00:06:28,900 --> 00:06:35,320
+ deseal es el nodo. Entonces, la la función, cuando evalué el costo de los caminos
+
+64
+00:06:35,320 --> 00:06:40,120
+ aplicables, va a restar el número que yo tengo en la transición. ¿Por qué? Porque
+
+65
+00:06:40,120 --> 00:06:46,720
+ está penalizando al número final. Por el otro lado, si cuanto más chico es el número,
+
+66
+00:06:46,720 --> 00:06:53,120
+ más deseable es el nodo. En ese caso, la transición va a sumar a ese número. ¿Por qué?
+
+67
+00:06:53,120 --> 00:06:58,620
+ Porque está penalizando nuevamente. Sentiendo. Entonces, lo que se hace siempre es
+
+68
+00:06:58,620 --> 00:07:04,400
+ se representa las transiciones. El costo es decir, se penaliza el costo de los caminos aplicables.
+
+69
+00:07:04,400 --> 00:07:11,320
+ Vamos a arrancar viendo algunos ejemplos algoritmos. Los cuales necesitas
+
+70
+00:07:11,320 --> 00:07:17,640
+ representar la información solamente en los nodos. Es decir, el valorístico está en los
+
+71
+00:07:17,640 --> 00:07:23,200
+ Estados, no las transiciones. Y luego vamos a ver algunos que se incluyen información
+
+72
+00:07:23,200 --> 00:07:28,560
+ en las transiciones también. De los primeros que quiero hablar, son de los métodos
+
+73
+00:07:28,560 --> 00:07:34,440
+ de escalada, también. Hay varios. El primer que vamos a ver es de escalada simple,
+
+74
+00:07:34,440 --> 00:07:41,120
+ es cuál primero necesito definir cómo va a hacer el sentido de recorridos. En este
+
+75
+00:07:41,120 --> 00:07:47,360
+ caso, puede ser de izquierda derecha. Está bien. Y el valor eurístico me va a indicar
+
+76
+00:07:47,360 --> 00:07:52,520
+ que cuanto más grandes, más deseables el nodo. Está bien, cuanto más chico menos
+
+77
+00:07:52,520 --> 00:08:01,800
+ deseable. Lo que se hace en este anorismo de escalada simple es dado un nodo determinado
+
+78
+00:08:01,800 --> 00:08:06,280
+ como un nodo actual. Se va generando los hijos en el orden indicado. Es decir, el primer
+
+79
+00:08:06,280 --> 00:08:11,760
+ hijo que se genera en este ejemplo es el nodo B. Y lo que se hace es preguntarse si el
+
+80
+00:08:11,760 --> 00:08:20,100
+ estado B tiene un valorubristico mayor. Si es así, ese nodo pasaría ser el actual. Está
+
+81
+00:08:20,100 --> 00:08:25,800
+ bien. En el caso contrario, se continúa con los siguientes hijos, siempre siendo el orden
+
+82
+00:08:25,800 --> 00:08:31,340
+ de izquierda derecha, hasta encontrar algún hijo que tenga un valorubrístico mayor al
+
+83
+00:08:31,340 --> 00:08:38,260
+ estado actual, en el estado del nodo actual. Y en ese caso lo vuelvo el nodo actual,
+
+84
+00:08:38,260 --> 00:08:44,060
+ o en el caso no encontrar ningún hijo, detengo el valorismo y termina ahí el recorrido.
+
+85
+00:08:44,060 --> 00:08:47,860
+ Entonces en este caso, de izquierda derecha, lo que se hace genera el nodo B y al
+
+86
+00:08:47,860 --> 00:08:54,820
+ pasero B, un valorubristico mayor, pasa ser nodo actual. Luego se genera el nodo B y al
+
+87
+00:08:54,820 --> 00:09:01,780
+ evaluar el valorubrístico y entender que es mayor, es casasar el nodo actual. Luego se genera
+
+88
+00:09:01,780 --> 00:09:09,060
+ el nodo B y dado que lo valorubrístico es menor, el valorubrístico D se continua con el
+
+89
+00:09:09,060 --> 00:09:16,180
+ siguiente hijo, se genera jota y jota al ser al pasero un valorubrístico mayor, pasa ser el
+
+90
+00:09:16,180 --> 00:09:23,300
+ nodo actual y luego jota el ser solucion, termino laborismo, básicamente contra una solucion
+
+91
+00:09:23,300 --> 00:09:29,380
+ y este es el camino o los nodos visitados. Está bien. Ahora, analizando un poco
+
+92
+00:09:29,380 --> 00:09:34,420
+ a las características de escaladas simples, podemos entender que los momentos de escalada por
+
+93
+00:09:34,420 --> 00:09:37,980
+ un lado no requieren encontrar con mucha memoria al almacenamiento, no estoy generando todo el
+
+94
+00:09:37,980 --> 00:09:45,980
+ lado como pueden ver. Solamente los nodos que generen son estos y por el otro lado, bueno, visité
+
+95
+00:09:45,980 --> 00:09:52,700
+ los que y van creciendo en valorubrístico y ahí voy a lo un poquito de no diría las
+
+96
+00:09:52,700 --> 00:09:58,940
+ eventajas, sino de entender en qué tipo de problemas me sirve o no utilizar este método.
+
+97
+00:09:58,940 --> 00:10:04,740
+ B básicamente ha caído cosas que podemos sacar al uso. La primera es que se existen su
+
+98
+00:10:04,740 --> 00:10:10,900
+ sucesor mejor que por el que yo estoy escalando y que aún no lo generé se pierde. Es decir,
+
+99
+00:10:10,900 --> 00:10:16,500
+ yo acá podría haber meído el lugar de por ver por ser que tiene mayor valorubrístico, pero
+
+100
+00:10:16,500 --> 00:10:23,380
+ no estarlo generando no lo encontré por así decirlo y fui directamente por ver. Y después
+
+101
+00:10:23,380 --> 00:10:27,940
+ los segundos que no contemplan retrocesos en la búsqueda es decir, me puedo quedar atrapado
+
+102
+00:10:27,940 --> 00:10:33,340
+ en un máximo local o en un mínimo local dependiendo como yo haya definido mi problema,
+
+103
+00:10:33,340 --> 00:10:39,900
+ se entiende, es decir, la función de audística tendría que ser monotonamente creciente y a
+
+104
+00:10:39,900 --> 00:10:47,900
+ medida que yo voy pasando por los distintos hijos de mis nodos, deberé creciendo el valorubrístico.
+
+105
+00:10:47,900 --> 00:10:52,540
+ Esto no siempre es suceder, entonces lo que uno tiene encacer es asegurarse que la función
+
+106
+00:10:52,540 --> 00:10:59,060
+ se va a comportar esta forma y son o en ese caso utilizar escalada cible, sino pueden
+
+107
+00:10:59,060 --> 00:11:05,220
+ encontrar una solución a menos que yo, en el también dentro de mi problema, puede contemplarlo
+
+108
+00:11:05,220 --> 00:11:09,620
+ encontrar una solución sería medio raro, pero bueno, básicamente tengo que tener en cuenta cómo
+
+109
+00:11:09,620 --> 00:11:15,300
+ sea comportar las funcioneurísticas. En el caso de dereche izquierda, vamos a ver que sucede si
+
+110
+00:11:15,300 --> 00:11:22,980
+ yo arranco generando desde mi primer hijo de dereche izquierda es el nod de y al pasar un valor
+
+111
+00:11:22,980 --> 00:11:29,580
+ jurístico mayor, lo vuelvo el noddo actual, lo genero el nodo hache y al tener un valorubrístico
+
+112
+00:11:29,580 --> 00:11:36,180
+ menor, no puedo seguir siendo por ese nodo, por ese camino, así que genero mi próximo
+
+113
+00:11:36,180 --> 00:11:42,180
+ hijo, el próximo hijo sale, él no tiene un valor jurístico mayor, entonces al quedarme ya
+
+114
+00:11:42,180 --> 00:11:47,700
+ sin hijos directamente termina de recorra de algoritmos, no encuentro una solución, los
+
+115
+00:11:47,700 --> 00:11:53,780
+ no visitados hayan a y de, pero más allá que yo generé a hache y él no los visité porque
+
+116
+00:11:53,780 --> 00:12:02,100
+ no tenien un valorubrístico mayor y el valorismo no encuentro una solución, la trasera variante
+
+117
+00:12:02,100 --> 00:12:07,500
+ de los métodos escaladas es la escalada de máxima pendiente, lo que hace escalada máxima pendiente
+
+118
+00:12:07,500 --> 00:12:13,380
+ básicamente es unas que yo tengo un nodo actual genera todos los hijos, en este caso
+
+119
+00:12:13,380 --> 00:12:18,740
+ estos tres hijos, y lo que hace es que ya con el mejor, en este caso al, al, al, yo haber
+
+120
+00:12:18,740 --> 00:12:24,080
+ definido que cuanto mayor, el valorurístico, más decíbales el nodo, se queda con C, luego
+
+121
+00:12:24,080 --> 00:12:31,060
+ de quedarse con C, que hace genera todos los hijos de C, que básicamente son uno solo que G y
+
+122
+00:12:31,060 --> 00:12:38,300
+ bueno, al pasar un valorubrístico mayor pasa a G y se pasa a ser el nodo actual, pero fíjense
+
+123
+00:12:38,300 --> 00:12:43,220
+ de la misma forma que el caso anterior no encuentro a solución, porque al generar los dos
+
+124
+00:12:43,220 --> 00:12:50,460
+ nodos hijos de G, que son C, y que poseen 5 y 10, de valorubrístico, ni uno superaje
+
+125
+00:12:50,460 --> 00:12:55,940
+ en valorubrístico, por lo que termina el valorubrismo, entonces básicamente para resumir los
+
+126
+00:12:55,940 --> 00:13:01,300
+ métodos de escalada, si bien no requieren encontrar con mucha memoria al almacenamiento
+
+127
+00:13:01,300 --> 00:13:08,780
+ por un lado, al tener mejor razón de dominio y al sacrificar esa actividad, no te pueden
+
+128
+00:13:08,780 --> 00:13:16,780
+ asegurar en encontrar el mejor, digamos o el más optimo de los nodos solución, pero
+
+129
+00:13:16,780 --> 00:13:21,340
+ por el otro lado, eso no es que sería un problema, eso es como todos los algoritmos con
+
+130
+00:13:21,340 --> 00:13:26,460
+ información de dominio, pero lo que sí es que no contemplan retraciosos en la búsqueda,
+
+131
+00:13:26,460 --> 00:13:31,420
+ y que pueden quedar atrapados en un máximo o mínimo local. Ahora vamos a ver el regorismo
+
+132
+00:13:31,420 --> 00:13:36,020
+ el primero mejor que se puede considerar una mejora de los mentos de escalada, dado que
+
+133
+00:13:36,020 --> 00:13:41,580
+ incorpora la capacidad de cambiar de camino cuando parece otro mejor, otro más prometedor,
+
+134
+00:13:41,580 --> 00:13:46,500
+ utilizados listas de nodos, la lista de nodos abiertos, que es la lista de nodos que
+
+135
+00:13:46,500 --> 00:13:50,860
+ yo voy generando, pero que todavía no recorrí que no elegí como nodos actores en ningún
+
+136
+00:13:50,860 --> 00:13:56,900
+ momento, y la lista de nodos cerrados, que es la lista de nodos que yo generé y que por
+
+137
+00:13:56,900 --> 00:14:05,660
+ lo cual yo fui recorriendo el árbol. Ahora, en cuanto a las principales características,
+
+138
+00:14:05,660 --> 00:14:11,860
+ fíjese en cuanto a la comparación con escalada de máxima pendiente, es bastante similar
+
+139
+00:14:11,860 --> 00:14:17,580
+ pero existen dos diferencias importantes, las primeras que en escalada al elegir un nodo
+
+140
+00:14:17,580 --> 00:14:23,700
+ todos los demás abandonan y el primero mejor agrega en la lista de nodos abiertos, entonces
+
+141
+00:14:23,700 --> 00:14:29,100
+ lo que permite implementar que es el retroceso, no necesita que la función orística
+
+142
+00:14:29,100 --> 00:14:36,900
+ sea monotodamente creciente, entonces no puede ser estancado en un máximo o un mínimo local
+
+143
+00:14:36,900 --> 00:14:42,740
+ y por el betrólado, primero mejor puede seleccionar el mejor estado disponible a un
+
+144
+00:14:42,740 --> 00:14:48,300
+ cuándo su valor eurístico es menor al de nodo actual, recuerden que en un momento
+
+145
+00:14:48,300 --> 00:14:54,660
+ determinado, en el ejemplo anterior, cuando iba de derecha izquierda, en nodo de no
+
+146
+00:14:54,660 --> 00:14:59,900
+ podía elegir nodo a ele, por más de que sea igual, en valor eurístico porque no era
+
+147
+00:14:59,900 --> 00:15:05,780
+ mayor, el momento de escalada siempre tiene que elegir un hijo con un valor eurístico
+
+148
+00:15:05,780 --> 00:15:10,780
+ mayor, bueno, primero el mejor no tiene en cuenta el valor eurístico del nodo actual para
+
+149
+00:15:10,780 --> 00:15:18,500
+ evaluar el valor de sus hijos, simplemente dice cuál es el mejor y lo elige, entonces básicamente
+
+150
+00:15:18,500 --> 00:15:23,260
+ nunca va a quedar adrapado en un máximo o un mínimo local y pueden encontrar siempre
+
+151
+00:15:23,260 --> 00:15:28,660
+ un nodo solución si es que existe, eso es algo que lo diferencia socialmente de los
+
+152
+00:15:28,660 --> 00:15:35,780
+ métodos anteriores, bueno vamos a pasar a realizar el recorrido con el agurismo justamente,
+
+153
+00:15:35,780 --> 00:15:43,020
+ el primero paso es arrancando el nodo a preguntar si ese nodo el senudo actual es solucion,
+
+154
+00:15:43,020 --> 00:15:51,820
+ al no ser solucion lo que hago es "genero los hijos", "genero los hijos" y ordeno la lista en
+
+155
+00:15:51,820 --> 00:15:57,660
+ dos abiertos que en este caso contiene solamente los hijos de "a" de mayor a menor valor
+
+156
+00:15:57,660 --> 00:16:01,780
+ eurístico porque yo en este caso dije que era más deseable, básicamente cuando mayor
+
+157
+00:16:01,780 --> 00:16:11,260
+ valorístico los ordeno de más deseable a menos deseable y cierro el nodo, todo el primero
+
+158
+00:16:11,260 --> 00:16:17,260
+ de la lista de "no sabiertos", es decir, el "no más deseable" y lo hago un nodo actual y lo
+
+159
+00:16:17,260 --> 00:16:24,140
+ que hago es lo mismo, digo "es solucion" no es solucion, o que hay entonces "genero" el
+
+160
+00:16:24,140 --> 00:16:29,460
+ hijo de "se" que en este caso tiene uno solo que es "g" y lo que hago es ordeno de nuevo
+
+161
+00:16:29,460 --> 00:16:35,020
+ en el lista de "no sabiertos", me queda de esta forma, esta bien, y si era un nodo se luego
+
+162
+00:16:35,020 --> 00:16:42,500
+ cuánto vamos, "g" que es el nodo más deseable, "g" es solucion no, entonces "genero los hijos
+
+163
+00:16:42,500 --> 00:16:46,820
+ de "g" que son "k" y "ele" y ordeno en el lista de "no" de "no sabiertos" me queda de esta
+
+164
+00:16:46,820 --> 00:16:54,620
+ forma, en este caso yo lo que define es que en el caso de encontrar dos nodos con el mismo
+
+165
+00:16:54,620 --> 00:17:01,160
+ valor de "urístico" vaya a tener mayor prioridad el que estaba desde antes, no pero
+
+166
+00:17:01,160 --> 00:17:08,980
+ justamente porque yo define así mi problema, entonces "luego", bueno, si era "no" de "g"
+
+167
+00:17:08,980 --> 00:17:14,780
+ y digo "tomo" el más deseable que es de "es solucion" no "genero" sus hijos que en este
+
+168
+00:17:14,780 --> 00:17:21,540
+ caso son "h" y "ele" que ya lo genera, así que no lo genera nuevamente y "lordeno"
+
+169
+00:17:21,540 --> 00:17:26,740
+ la lista de "no" de "sabiertos" de mayor menor de "seabilidad" en este caso de mayor
+
+170
+00:17:26,740 --> 00:17:33,480
+ menor valor "urístico" si era "o" de "iserección a "ele" como el nodo actual "ele"
+
+171
+00:17:33,480 --> 00:17:41,340
+ no es solucion, genera "su hijo" que es "m" y "o" de "no" de "no" de "sabiertos" y "lo si"
+
+172
+00:17:41,340 --> 00:17:48,540
+ era, y luego "m" que es "no" actual "es solucion" sí, entonces simplemente "lo si"
+
+173
+00:17:48,540 --> 00:17:53,540
+ de "ro" lo pongo dentro de "resianados" cerrados y concluye el algoritmo.
+
+174
+00:17:53,540 --> 00:17:59,060
+ Como habíamos visto, esto siempre va a encontrar una solución si es que existe la solución
+
+175
+00:17:59,060 --> 00:18:07,740
+ al permitir el retoceso, ahora vamos a ver una variante, un realidad, es justamente el
+
+176
+00:18:07,740 --> 00:18:13,620
+ algoritmo aplicado de primero en mejor con una limitación de memoria, "bim search" es una
+
+177
+00:18:13,620 --> 00:18:19,780
+ variante, que lo que hace es con ese número "n" o ese representado como "m" te dice
+
+178
+00:18:19,780 --> 00:18:25,000
+ cuál es el tamaño máximo o la cantidad máxima de "no" que se van a alberra en la lista de
+
+179
+00:18:25,000 --> 00:18:30,900
+ "no" de "sabiertos". En este caso, para esa lo bastante evidente, dijimos que "n" se
+
+180
+00:18:30,900 --> 00:18:36,780
+ igual a "un" entonces solamente va a permitir un nodo en la lista de "no" de "sabiertos" a
+
+181
+00:18:36,780 --> 00:18:44,460
+ la vez. Vamos a ver cómo se arrasó el vesto y si permite o no en todos los casos o en algunos
+
+182
+00:18:44,460 --> 00:18:51,880
+ en otras soluciones. Bueno, en este caso genera los tres hijos de "a" para
+
+183
+00:18:51,880 --> 00:18:56,900
+ volvemos a arrancar de la misma forma, no actualizar a los soluciones genera las tres
+
+184
+00:18:56,900 --> 00:19:01,220
+ hijos de "a" orden la lista de "no" de "sabiertos", pero luego de eso se queda solamente
+
+185
+00:19:01,220 --> 00:19:11,260
+ con uno, se queda con el mayor y si arra luego pasa por "se" genera su hijo y bueno la lista
+
+186
+00:19:11,260 --> 00:19:17,560
+ de "no" "sabiertos" termina de "no" solamente "g" porque es el el que tiene mayor
+
+187
+00:19:17,560 --> 00:19:24,440
+ van a lo jurístico. Luego que hace esto genera "sundos hijos" y dice bueno el "in" de
+
+188
+00:19:24,440 --> 00:19:30,000
+ mayor van a lo jurístico es "e" entonces me quedo con "e" "le" en la nuestra solución genera
+
+189
+00:19:30,000 --> 00:19:37,040
+ su hijo que "se" "me" y "me" de "sabiertos" bueno, "le" lo incomoda dentro de la lista de "no"
+
+190
+00:19:37,040 --> 00:19:47,160
+ serados y conclusión. Ahora, esto se comporta si se dan cuenta de una forma similar al método
+
+191
+00:19:47,160 --> 00:19:54,120
+ escalada de máxima pendiente, pero con una gran diferencia que no necesita evaluar
+
+192
+00:19:54,120 --> 00:20:01,840
+ el estado de lijo, el estado jurístico del hijo comparado con el estado actual, es decir,
+
+193
+00:20:01,840 --> 00:20:08,640
+ el valor de jurístico, por ejemplo, de "ele" era menor al valor jurístico de "g" y sin embargo
+
+194
+00:20:08,640 --> 00:20:18,680
+ recorrió este camino, es decir, no se detuvo porque la función agurística era generada una
+
+195
+00:20:18,680 --> 00:20:24,760
+ forma monotonamente creciente, es decir, permitio no estar estancado en un máximo local
+
+196
+00:20:24,760 --> 00:20:31,280
+ en este caso. Esa es una de las principales diferencias cuando digamos entrevimos con el
+
+197
+00:20:31,280 --> 00:20:42,000
+ igual a uno y escalada de máxima pendiente. Ahora vamos a pasar el agurismo de "astrisco" que es
+
+198
+00:20:42,000 --> 00:20:48,520
+ un agurismo que también está incluyendo como pueden ver valores o información jurística en las
+
+199
+00:20:48,520 --> 00:20:57,640
+ transiciones. Recuerden que siempre esta información nosotros la utilizamos para que para
+
+200
+00:20:57,640 --> 00:21:04,880
+ penalizar esta bien, para calcular o de una forma entender o representar el costo de los caminos
+
+201
+00:21:04,880 --> 00:21:11,880
+ asociados. En este caso, si yo estoy diciendo que cuando mayor vale el jurístico más
+
+202
+00:21:11,880 --> 00:21:19,040
+ diceable, es el nodo, este número, estas transiciones que van a ser van a reestar, va a ser
+
+203
+00:21:19,040 --> 00:21:24,960
+ valor jurístico. En este caso, al poseer todas las transiciones, el mismo valor, yo
+
+204
+00:21:24,960 --> 00:21:30,680
+ puedo entender que lo que estoy penalizando es el tamaño del recorrido, es decir, que tan
+
+205
+00:21:30,680 --> 00:21:37,380
+ largo se ha recorrido, cuanto mayor es el número de nodos porque hoy pasando digamos menos
+
+206
+00:21:37,380 --> 00:21:43,060
+ decíables este camino, no necesariamente siempre tienen en el mismo valor, porque tan les
+
+207
+00:21:43,060 --> 00:21:48,980
+ puede estar que llegar de un nodo a uno de sus hijos cueste más o menos que llegar a otro
+
+208
+00:21:48,980 --> 00:21:53,540
+ de los nodos. En este caso, en particular, yo simplemente estoy considerando que tienen el mismo
+
+209
+00:21:53,540 --> 00:22:01,660
+ valor jurístico. Entonces, se hace una lógica muy similar al primero mejor, pero lo que también
+
+210
+00:22:01,660 --> 00:22:09,740
+ se hace es penalizar en el caso de las transiciones. Fíjense, arranco por el nodo actual, digo,
+
+211
+00:22:09,740 --> 00:22:15,740
+ es solución, no, no es solución, ok, entonces, género los hijos de a y cálculo, la
+
+212
+00:22:15,740 --> 00:22:22,620
+ función de jurística, que como se cálculo con el estado, el valor jurístico del Estado,
+
+213
+00:22:22,620 --> 00:22:29,020
+ que en este caso sería 11, por ejemplo, en C, menos el costo de la transición, en este
+
+214
+00:22:29,020 --> 00:22:36,380
+ caso me quedaría en 10, está bien, en este caso, C quedan 10 de queda 9 y ve que han
+
+215
+00:22:36,380 --> 00:22:44,300
+ ocho, cierro a y que hago el hijo, el nodo más deseable, que en este caso al ser el mismo
+
+216
+00:22:44,300 --> 00:22:49,460
+ valor jurístico las transiciones, voy a también elegirse, está bien, como en el caso del
+
+217
+00:22:49,460 --> 00:22:56,020
+ primero mejor. Ahora, se solución, no, no es solución, entonces género el hijo que
+
+218
+00:22:56,020 --> 00:23:06,980
+ quedaría como 12, menos 1, menos el costo de llegar desde mi nodo inicial hasta el nodo G.
+
+219
+00:23:06,980 --> 00:23:12,060
+ Entonces, me quedaría con un valor de 10, está bien, igualmente, aunque el estudio restándolos
+
+220
+00:23:12,060 --> 00:23:16,100
+ por haber tenido un valor jurístico de 12 sigue siendo el nodo más deseable, entonces lo
+
+221
+00:23:16,100 --> 00:23:22,540
+ el hijo como, no, no, actual, al no es solución, género sus hijos, también, y ya con los cálculos,
+
+222
+00:23:22,540 --> 00:23:31,540
+ básicamente acá, fíjense, por más de que él tenía 10 inicialmente de valor jurístico y de
+
+223
+00:23:31,540 --> 00:23:36,820
+ también voy a elegir de porque me cuesta mucho menos llegar a de, entonces el hijo de como un
+
+224
+00:23:36,820 --> 00:23:43,660
+ nodo actual, al no ser nodo solución, género sus hijos, y ordeno en la lista de, no, los aviótos
+
+225
+00:23:43,660 --> 00:23:52,660
+ luego de hacer el cálculo de la función de, de la función de jurística, luego de eso, continuó
+
+226
+00:23:52,660 --> 00:24:00,900
+ conmé, conmé larga y género al no ser solución género sus dos hijos y ya o los cálculos
+
+227
+00:24:00,900 --> 00:24:11,940
+ de sus valores jurísticos, e con 13, porque sería 15, -1, -1 y f, con 1, porque sea 3, -1, -1, ordeno en el lista de
+
+228
+00:24:11,940 --> 00:24:20,340
+ los aviótos, si oronó a ver y el hijo, el nodo más deseable que en este caso sería "E", "E", "Generapt",
+
+229
+00:24:20,340 --> 00:24:27,700
+ sus hijos que son jota y son "E", que me quedaré con un valor, el jurístico final, no es
+
+230
+00:24:27,700 --> 00:24:35,220
+ en 96 y de 5, si oron, y luego el hijo jota y eso no de solución, lo sierra y terminó el algoritmo,
+
+231
+00:24:35,220 --> 00:24:40,340
+ termino el recorrido. Entonces, en este caso, además de tener en cuenta, los valores
+
+232
+00:24:40,340 --> 00:24:45,500
+ jurísticos de cada nodo también se considera el costo asociado de las reglas aplicadas para
+
+233
+00:24:45,500 --> 00:24:52,180
+ llegar al mismo, es una variante más, también se podría llegar a decirte el primero
+
+234
+00:24:52,180 --> 00:25:02,700
+ mejor. Vamos con otro ejemplo en el cual los valores de las transiciones son diferentes en cada
+
+235
+00:25:02,700 --> 00:25:07,300
+ una de las mismas, es decir, no necesariamente como lo habíamos dicho, tiene que tener el mismo
+
+236
+00:25:07,300 --> 00:25:13,660
+ valor, en este caso que significa, significa que si yo quiero hacer una transición entre el
+
+237
+00:25:13,660 --> 00:25:19,540
+ nodo y pasar el nodo, me va a costar 9, pero así quiero pasar el nodo, se me ha gastado
+
+238
+00:25:19,540 --> 00:25:26,500
+ 11. Entonces, se realiza de la misma forma el cálculo. Lo que se hace es primero, se
+
+239
+00:25:26,500 --> 00:25:32,480
+ se reacciona el nodo actual, al no ser solucion, se generan sus hijos y se realiza el
+
+240
+00:25:32,480 --> 00:25:38,700
+ cálculo. De me quedo con 7, porque sería un valor jurístico inicial de 10, menos el costo
+
+241
+00:25:38,700 --> 00:25:46,320
+ de la transición que estrés, me quedo 7, c queda con valor jurístico final de 5, porque sería 11
+
+242
+00:25:46,320 --> 00:25:53,320
+ menos 6, y me queda con un valor de 0, porque sería 9 menos 9, y puede que han negativo,
+
+243
+00:25:53,320 --> 00:25:58,360
+ incluso, sí, sí, de hecho, ahora en el paso siempre va a quedar negativo, es simplemente hacer
+
+244
+00:25:58,360 --> 00:26:06,920
+ una cuenta de sumas y restas. Entonces, el valor mayor, el nuevo con mayor valorístico sería
+
+245
+00:26:06,920 --> 00:26:13,800
+ de, está bien, lo dijo como un nodo actual, al no ser solucion, genero sus hijos, h con 5,
+
+246
+00:26:13,800 --> 00:26:19,120
+ pero 5 menos 4 menos 3, me da menos 2, h queda con un valor jurístico final de menos 2,
+
+247
+00:26:19,120 --> 00:26:31,680
+ y el con un valor jurístico final de 6, sí, arrando de y paso a, bueno, esta está mal,
+
+248
+00:26:31,680 --> 00:26:38,840
+ es justamente a cada día así, el, está bien, disculpen, paso a seleccionar el, el,
+
+249
+00:26:38,840 --> 00:26:46,480
+ al no ser un nodo solucion, lo que hago es generar sus hijos, esta es el genero m con un
+
+250
+00:26:46,480 --> 00:26:55,560
+ valorístico de 90, y bueno, sí, arro, el, y luego de seleccionar m, a ser nodo solucion, a ser
+
+251
+00:26:55,560 --> 00:27:02,920
+ nodo solucion, termino agolimos, arrando cerrando el nodo y compluyendo, contando la solucion.
+
+252
+00:27:02,920 --> 00:27:10,120
+ Entonces, acá puedo en ver cómo, en el caso de asteriscos, estamos utilizando la información
+
+253
+00:27:10,120 --> 00:27:15,360
+ del dominio para indicar distintos valores de costos ofucidos a las transiciones.
+
+254
+00:27:16,480 --> 00:27:25,240
+ Vamos a hacer una comparación de los métodos ya a nivel general, primero ha sido información
+
+255
+00:27:25,240 --> 00:27:31,680
+ de dominio, en cuanto a cómo se recorren y cuando finalizan, más que nada para tener un
+
+256
+00:27:31,680 --> 00:27:38,640
+ valor general y todos los métodos, entonces lo que es primero en amplitud, básicamente
+
+257
+00:27:38,640 --> 00:27:44,720
+ genera todos los estados y cómo recorren, recorren por nivel ya vemos visto, en cambio genera
+
+258
+00:27:44,720 --> 00:27:50,880
+ así ni prueba y primero profundidad lo que hacen es recorrar por ramas y encontrar el primer
+
+259
+00:27:50,880 --> 00:27:56,280
+ estado final, una vez que lo encuentran finalizan. Por el otro lado, viene de exceral,
+
+260
+00:27:56,280 --> 00:28:03,840
+ acuerdense que tiene dos punteros y lo que hace es que al menos uno de ellos recorra por niveles,
+
+261
+00:28:03,840 --> 00:28:11,760
+ lo que hace es encontrarlo de estado intermedio común entre ambos estados, el inicial y el final.
+
+262
+00:28:11,760 --> 00:28:19,480
+ Realizando la misma comparativa en cuanto a métodos con información de dominio, todos
+
+263
+00:28:19,480 --> 00:28:25,360
+ recorren por ramas por lado y todos encuentran en el primer estado final, que significa
+
+264
+00:28:25,360 --> 00:28:30,960
+ que una vez que encuentran en la solución se detienen. Ahora vamos a comparar a los métodos
+
+265
+00:28:30,960 --> 00:28:35,760
+ con información de dominio entre sí con las siguientes características, vamos a ver si tiene
+
+266
+00:28:35,760 --> 00:28:41,960
+ un nuevo retroceso, si garantizan en contra del estado final, si tienen como es el criterio
+
+267
+00:28:41,960 --> 00:28:47,480
+ de selección de el siguiente estado y algunas características especiales. Bueno, los métodos
+
+268
+00:28:47,480 --> 00:28:52,720
+ descaladas ya se da simple, o máximo evidente, como dijimos, no tienen el retroceso y esa
+
+269
+00:28:52,720 --> 00:28:57,320
+ se que puedan quedar atrapados a estancados en un estado intermedio, en un máximo local,
+
+270
+00:28:57,320 --> 00:29:03,480
+ está bien en una mezceta. Entonces, no garantizan en contra del estado final, el sus criterios
+
+271
+00:29:03,480 --> 00:29:09,000
+ de selecciones cuáles son el primer mejor hijo generado por el nuevo doctoral en el caso
+
+272
+00:29:09,000 --> 00:29:14,000
+ de la escala de Asimble, ya sea de izquierda derecho, o de dicha izquierda, o en el caso
+
+273
+00:29:14,000 --> 00:29:19,840
+ al máximo pendiente, el mejor de los hijos. Pero en ambos casos como dije pueden quedar atrapados
+
+274
+00:29:19,840 --> 00:29:27,120
+ en si la función eurística, no es monotonamente creciente. Ahora, en cuanto a algunas características
+
+275
+00:29:27,120 --> 00:29:31,840
+ especiales, fíjese que sólo se decisen a dijo que tengan eurística mayor a la que
+
+276
+00:29:31,840 --> 00:29:38,840
+ su padre, es lo que estaba diciendo recién. En cuanto a primero el mejor, tiene el retroceso
+
+277
+00:29:38,840 --> 00:29:44,200
+ sí, tiene el retroceso, y eso también provas que dado que no tengo ninguna limitación
+
+278
+00:29:44,200 --> 00:29:50,640
+ en los tamaños de las listas que siempre puedan encontrar un estado final, básicamente,
+
+279
+00:29:50,640 --> 00:29:54,920
+ el criterio de seleccion es el mejor no de abierto, al igual que los siguientes que son
+
+280
+00:29:54,920 --> 00:30:01,720
+ casos especiales, se podría decir de primero el mejor tanto bien search como hasta risco,
+
+281
+00:30:01,720 --> 00:30:08,120
+ y la carratriz especial de primero el mejor es que el no doce seleccionado puede no ser mejor
+
+282
+00:30:08,120 --> 00:30:14,280
+ que el actual, acuerdanse esas la diferencia con escalada de máxima pendiente cuando
+
+283
+00:30:14,280 --> 00:30:21,640
+ beam search es igual a uno, por ejemplo, no necesariamente estaba evaluando comparando contra
+
+284
+00:30:21,640 --> 00:30:29,040
+ el estado actual. Luego, beam search, fíjense que primero mejor más una lista de no saber
+
+285
+00:30:29,040 --> 00:30:33,320
+ que os limitada esta es la principal diferencia entre beam search y primero mejor, es decir,
+
+286
+00:30:33,320 --> 00:30:39,440
+ tengo un número máximo y no dos permitidos en la lista de no dos aviertos, y hasta risco
+
+287
+00:30:39,440 --> 00:30:45,200
+ es también una variante primero el mejor, pero que tiene un costo de las transiciones
+
+288
+00:30:45,200 --> 00:30:49,400
+ asociadas, es decir, le estoy agregando información en las transiciones, es hacer una
+
+289
+00:30:49,400 --> 00:30:58,000
+ comparativa de todos los métodos con información de dominio, acá tiene un poco de bibliografía
+
+290
+00:30:58,000 --> 00:31:06,040
+ por un lado es la punte, tiene que resolver de ejercicio 5, que para la clase que viene lo vamos a
+
+291
+00:31:06,040 --> 00:31:12,400
+ saber, lo vamos a ver, si tiene una duda, ya no se escriben en el campo virtual o en la misma clase
+
+292
+00:31:12,400 --> 00:31:19,800
+ podemos resolverla y tenemos algunos links que después cuando les comparda la presentación les recomienda
+
+293
+00:31:19,800 --> 00:31:25,240
+ que visiten en especie de segundo es bastante gráfico, es una idea interactiva que te permite
+
+294
+00:31:25,240 --> 00:31:30,520
+ seleccionar en un camino, en un mapa determinado, un punto de inicio y un punto de fin,
+
+295
+00:31:30,520 --> 00:31:37,320
+ y los recorridos distintos con las diferentes métodos para ver cómo van convergiendo a soluciones
+
+296
+00:31:37,320 --> 00:31:41,200
+ eso fue todo y espero que les haya gustado, muchísimas gracias.
+

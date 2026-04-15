@@ -1,0 +1,147 @@
+ Hola, mi nombre es María Florencia Pollo, soy la Jéfa de Cátedra de la Signatura Inteligencia
+ Artificial de la Facultar Regional, Buenos Aires y de la Facultar Regional la Plata. En el
+ día de hoy, le voy a hablar sobre una técnica de educción de conocimiento que se
+ le emparra. Esta técnica es una técnica que me permite obtener conocimiento de un
+ experto, se da dentro del marco de lo que son las herramientas de adquisición de
+ conocimiento y dentro de las de adquisiciones una técnica de educción. Recuerden que
+ porque me permitió obtener conocimiento privado del experto. Se basa en la construcción
+ de un modelo mental, se es la técnica del constructo personal, el cómo ve un
+ individuo, un dominio determinado, inicialmente, se utilizó para gente con trastornos
+ mentales y lo que buscaba yo es que la presenta esta técnica del año 1955 era obtener
+ un mapa del domínio que el su paciente podía ver y a partir de ahí tratar de
+ entender qué es lo que estaba viendo. Y esto lo hace a partir de la identificación
+ de elementos sus características y cómo se relacionaban estas características. Se
+ trabajó bajo la presunción que cada persona tiene su propia visión del mundo que
+ lo rodea, que vea el mundo de una manera diferente y lo que se busca es obtener
+ una imagen. Especificamente trabaja sobre una área de índeres. Acá hay una definición sobre
+ que se le han parrayado, fíjense que es un test de clasificación, se busca vincular una
+ lista de elementos homogéneos, por de pertenecen a un mismo dominio, comparten estas
+ características en particular y son representativos, tienen que hacer los elementos que
+ a mí como experto. Me parece más significativos del domínio y las características se tienen
+ que manejar de manera bipónar. Esta bipolaridad va a estar dada por un conjunto de
+ valores que van a tomar las distintas características en los elementos y a partir de
+ aplicar la técnica se va a poder obtener una similitud entre estos elementos que
+ comparten el domínio y también las diferencias entre ellos. Historicamente en sus
+ comientos se utilizó para pacientes con problemas mentales y hoy por hoy tiene
+ también distintos ámbitos de aplicación. Es una técnica más potente porque se
+ va a ser en un modelo del pensamiento humano y va identificando prioridades y
+ factores importantes que lo observador tiene, lo que era el paciente o el observador.
+ Bien, en el caso no es en el marco de dirigir el conocimiento y el espuse acá el
+ experto que es como que abriras humende indirectamente por lo cual a muchas veces
+ también se la considera una técnica un poco intrusiva con lo cual los resultados de
+ esta técnica hay que manejarlos con cuidado el momento de compartirlos con el
+ experto y el ingeniero conocimiento a partir de estos datos, cursando el
+ emparrillado, puede obtener conclusiones que después las tendrá que validar con
+ el experto en cuestión. Las etapas por las que se transita son de un diálogo
+ inicial en donde se identifica el domínio y se establecen una primera
+ aproximación sobre estos elementos y se lo deje a reflexionar sobre los
+ elementos y las características para que en la sesión de valoración justamente
+ me permita a no obtener estos valores y construir la parilla. Luego de hacer la
+ parillo un conjunto de etapas que vamos a ver que son las que hacen el
+ el ingeniero de conocimiento se hace una validación buena alicina los
+ resultados obtenidos a partir de los árboles de los árboles resultantes.
+ Cabe de esta carfigencia en lo que acá les puse que el emparrillado
+ describe a los elementos de un domínio en particular los ubican su imaginario
+ esto es por lo cual a veces es como que el experto podría sentir
+ si un poco invadido y tiene en cuenta los aspectos más importantes o
+ representativos con lo cual también muchas veces se la considera una
+ técnica incompleta porque solo lo estoy habla sobre lo más lo que el
+ experto considera como más importante y representativa. Metajas que
+ tiene el emparrillado se le permite al experto tener una
+ reflexión sobre el tema en cuestión a partir de los diálogos que tiene
+ con el ingeniero en conocimiento y el feedback con el tema de el
+ final y si se resultados es también si obtiene una representación gráfica
+ y esto es una ventaja vimos que siempre que podemos obtener una
+ representación gráfica del cualquiera situación real específico más todavía
+ para la la incoligeniría en conocimiento es verdaderamente interesante
+ permite simplificar el marco de la realidad que uno tiene después por
+ otro lado permite asociar elementos con sus características a través de
+ la matriz y al experto le permite refinar el problema poder ayudarlo a
+ adentificar los de mejor manera y formalizar el conocimiento que el tiene
+ de manera más clara. Si le importa también algunos inconvenientes que
+ podríamos citar con el emparrillado es que trabaja sobre
+ valores subjetivos porque los valores que se obtienen en la matriz
+ los valores que asignan el experto en la matriz dependente del
+ experto que se estén realizando con lo cual la técnica es objetiva porque
+ van a ver que es un proceso proceso de pasos números y no tiene más
+ cuenta o sea que uno el proceso lo va a formalizar siempre de la misma manera
+ lo que va a ir variando son las percepciones los valores que este
+ experto le puede ir dando a las distintas características y a los
+ valores con lo cual un mismo emparrillado hecho a dos expertos distintos a
+ partir de darnos valores distintos en la matriz van a dar pueden dar
+ valores diferentes eso también es rico porque muchas veces uno puede
+ tener más de un experto hacer el emparrillado a los dos y ver que
+ miradas semejantes o diferentes tienen los dos del mismo dominio obviamente
+ si tuvieramos analizando los mismos elementos y las mismas
+ características bien lo que se captura es un conocimiento superficial justamente
+ por esto que yo les había dicho de hablar de elementos y características
+ más representativas resulta complejo cuando hay una gran cantidad de
+ elementos o características ya que los árboles se vuelven gráficos muy
+ complejos y con información probablemente muy superficial y sólo
+ este herramienta no es útil para la construcción de una base de conocimiento
+ con lo cual hablamos siempre cuando hablamos de incódio un conjunto de
+ característica bien esta son las etapas no voy de tiempo perfecto esta son
+ las etapas que no pasa cuando construyó la parilla y hace todos estos
+ cálculos que yo les comentaba hace un rato por un lado vamos a identificar
+ los elementos las características también y vamos a diseñar la parilla a
+ partir de ahí vamos a comenzar con todos los cálculos propios del método
+ para finalmente obtener los árboles interpretarnos y hacer una análisis de
+ los resultados vamos a comenzar entonces con la primera etapa y la
+ identificación de los elementos para ello vamos a tomar un ejemplo y el
+ ejemplo que vamos a tomar es con información relativa a lo que ustedes
+ vieron en la otra lista de videos donde apretieron la técnica de la análisis
+ de protocolos que hizo síntia y si recuerdan por las dudas vuelvo para
+ atrás el objetivo del protocolo que habíamos hecho nosotros y identificar un
+ diagnóstico según los síntobas que presentaba un paciente que se
+ analizaba vamos a tomar esta misma esta misma este mismo dominio hablamos
+ con el experto y identificamos el área de interés y los elementos que
+ nos identifica el experto son estos cuatro el elemento 1 el coronavirus
+ en un COVID 19 el elemento 2 el mers COVID el el 3 el SARS COVID y el 4 coronavirus
+ 22 9 fíjense que lo que tenemos que identificar es que los elementos sean
+ representativos y homogéneos pertene son distintos tipos de coronavirus y los
+ elementos tienen que ser separables y no solo apados o sea que el elemento 1 no
+ comparte no no se puede tener el elemento 1 y el elemento 2 al mismo tiempo
+ está a veces uno en los gráficos dice que tiene que ser ordenales bien
+ cuando hablamos de las características hablamos de la cualidad que se le
+ puede atribuir a un elemento 1 concepto dentro del pensamiento humano en este
+ contexto le vamos a asignar características a estos distintos elementos a los
+ distintos tipos de coronavirus entonces decimos un son las características que
+ puede tener la característica de uno en la frecuencia respiratoria alta baja
+ recuerden que eran valores bipolares está lo científica generalmente les digo
+ para los ejercicios entre parentes y con una barra la característica dos
+ la fiebre la 3 la intensidad del dolor de garganta y las cuatro la intensidad
+ del dolor de cabeza fíjense que estas intensidades del dolor funcionan con
+ los límites de intenso y lea partir de ahí vamos a la etapa número 3
+ acá ya se empieza todo a complicar un poquito más el diseño de la
+ parrilla no pero las formalizaciones lo más complejos las la parrilla lo
+ que va a identificar es la relación entre estos elementos y estas características
+ o sea cuánto un elemento posee o no ahora veremos o como se lo evalua en
+ relación a determinada característica la matriz vamos a hacer una
+ matriz bidimensional puede ser de tres tipos puede ser una matriz icotómica
+ donde los valores pueden ser ser robinarios 0 y 1 el elemento posee o no
+ determinada característica la clasificatoria vamos a trabajar con una serie
+ de una escala de 1 a n no tenes el número de elementos en nuestro caso de
+ ejemplo rancuatro de casualidad coinciden con las características pero no
+ necesariamente tiene que hacer los mismos y el valor m indica qué
+ posición o culpa como un orden como si hicieron ranking de esos
+ elementos en relación a cómo posee en esta carácterística entonces
+ yo tendría que ver cuál es el que más tiene de esto el que un poquito
+ menos y no pueden empatar si está o sea van a estar los cuatro
+ valores puestos en determinada orden en esa carácterística finalmente
+ la parrilla puede ser parrilla evaluativa en este caso nosotros vamos a
+ usar una parrilla evaluativa para el ejemplo con una escala de una
+ línea donde ene no necesariamente va a hacer la cantidad de elementos sino
+ una escala que nos va a identificar el experto y cada relación el
+ elemento carácterística va a tener un valor y va a dar el grado de
+ satisfacción con el que es el elemento cubre esa carácterística entonces
+ para nuestro ejemplo que teníamos se acuerdan las distintas
+ tipos de COVID y teníamos síntomas y tenía fiebre se nos vuelve a mostrar
+ la frecuencia respiratoria la fiebre la intensidad del dolor construimos una
+ parrilla evaluativa y que se por ejemplo que acá el elemento un oben por ejemplo
+ la característica uno tiene dos veces el elemento dos si fuera una matriz
+ clasificatoria esto no podría haber pasado en un evaluativo así porque
+ lo que te dice que el elemento uno tiene un grado dos de satisfacción de
+ la carácterística segunda está y así se le sucesivamente bien a partir
+ de ahí vamos a pasar la etapa de formalización que es una etapa bastante
+ completa tiene varios cálculos así que los voy a dejar con el video
+ acá espero no nos vemos en el próximo vídeo muchísimas gracias

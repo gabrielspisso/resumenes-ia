@@ -1,0 +1,107 @@
+ Hola, soy María Florencia Pochocatáneo, soy la jefa de Catedra de la Signatura Interigencia
+ Artificial de la Universidad Tecnológica Nacional, Facultar Regional Buenos Aires y Facultar
+ Regional de la Plata. En el día de hoy, estamos comienzo con este primer vídeo al curso
+ al ciclo lectivo 2020, no de la manera que queríamos todos, pero bueno, da la situación,
+ vamos a tratar de comenzar a trabajar de la mejor manera posible.
+ Les quiero aclarar que este material no está preparado para una clase de estas características.
+ Está preparado para darlo en la aula con ustedes e interactuando.
+ Pero no podemos, entonces, este es una de las alternativas, es la primer propuesta.
+ Ya irán recibiendo distintos mensajes o indicaciones para que podamos trabajar,
+ sepan que estamos poniendole la mejor buena voluntad de parte nuestra, de parte de la facultad
+ también, de ambas facultades y bueno, sé que del lado de ustedes también.
+ Bueno, hoy vamos a hacer una pequeña introducción para ver que la presentación es muy larga,
+ pero yo voy a ir recordando la porque no es recomendable que los vídeos sean muy extensos.
+ Entonces, vamos a dar comienzo a la primera parte de esta introducción al inteligencia artificial.
+ Antesquenada me presento trabajamos el equipo de trabajo, están también en Dr. Pablo Pital,
+ sintia bejega, hernana matria y nugo Ramón, exequie el vanga y esequiel Kironga. Todos nosotros somos el equipo
+ que trabajamos en amas regionales, algunos van a estar transbambalinas, nos van a ver,
+ y otros van a estar en el curso, siempre van a tener con quién, con quién, resolver las inquietudes que tengan
+ y tienen después también herramientas disponibles en la web etcétera para poder ubicarnos.
+ De las normas de cada teleto eso vamos a hablar por separado porque las regionales viajan, viajan distinto.
+ Bueno, vamos a comenzar hablando de la inteligencia artificial, y para mí es fundamental
+ cuando trabajo cuando dito algún seminario de estas características en una carrera de grado,
+ esta materia está dentro de un plan de estudios y cumplió un objetivo.
+ En particular, primero, para mí es muy importante aclarar qué pasa cuando hablamos
+ de inteligencia artificial, porque hay mucho escrito sobre el tema, es un tema que está en bastante
+ emboga, a pesar que ahora tenemos otros, pero se hablaba bastante de inteligencia artificial,
+ a veces se magnifica, a veces no queda claro, entonces es fundamental para nosotros,
+ que somos profesionales de la informática, esto para mí es fundamental y evidentemente necesario
+ aclarar en que nos toca o en que nos sentimos comprometidos o vinculados,
+ cuando hablamos de inteligencia artificial.
+ En particular tenemos que ir a los origenes de la informática, del hardware y del software,
+ en sus comienzos cuando estaban las máquinas con las válgulas al vacío, después cuando hablamos
+ para el año 1979, con la primera propuesta, miren lo que es esta foto y el tamaño,
+ de lo que eres el escorrígido, miren contra posición en el 2003, la capacidad y el tamaño,
+ lo que lo que ha crecido, la capacidad de procesamiento y la capacidad de almacenamiento
+ en los últimos años es increíble, esto ha potenciado un montón de modelos teóricos,
+ de modelos formalizados y conceptualizados, el poder implementarse y llevarse a cabo,
+ por eso es que la inteligencia artificial hoy por hoy está tan de moda. Yo siempre les cuento
+ a ustedes que yo cursé inteligencia artificial, así que miren desde cuanto la inteligencia
+ artificial está y sin embargo, eran muchas propuestas teóricas sin poder ser implementadas,
+ entonces eran muchos docos más de fe, esto va a servir, esto va a servir para que
+ ellos y sin embargo no quedaban más que en un décalo de buenas intensiones y de cosas posibles
+ por hacer de sueños. Hoy, muchos de estos modelos formalizados pueden ser llevados
+ a cabo en un celular, en cualquiera tipo de artefacto tecnológico. Eso es lo que respecto
+ al hardware y en lo que respecto al software, tuvimos una transición muy interesante desde
+ lo que fueron las tarjetas perforadas, que ninguno va a recordar que son porque casi ni yo
+ las vi, así que son como de la prehistoria, parecía en como unas tarjetas de próde que tampoco
+ las deben haber visto son tarjetas que se perforan en determinados lugares y eso
+ puesto en un aparato permitía leer y con eso estructurar datos de entrada. Después vinieron
+ los monitores, esos monitores verdes, espantosos, que casi nos dejaban ciegos, unos
+ de ponían triogitos negros al poco tiempo de usar verdaderamente era muy dañinos para
+ la vista, después pasamos para los monitores aambar que era un poquito menos no sigos para
+ la vista y después llegaron estas hermosas ventanitas, que a los queramos programadores
+ en aquella época nos cambió mucho la manera de programar y de pensar y de estructurar
+ todo lo que eran desarrollos, para que finalmente hoy en día pensemos en estructuras de desarrollo
+ totalmente disruptivas, interconectadas, vinculadas con una flexibilidad que hace años era imposible
+ de imaginar. En este contexto uno se pregunta a dónde vamos a llegar, qué es lo que va a venir.
+ Para eso un primero tendríamos que ubicar un poquito los comienzos de la inteligencia
+ artificial, pero si les muevo a cala camarita, puedo desaparecer yo que no hago alista.
+ La primera máquina analítica fue la máquina de Babache, fue una primera computadora
+ de propósito generales, servía para realizar varios tipos de actividad y también hay que destacar
+ en sus comienzos a la lovelas que fue la primera programadora reconocida con una educación
+ muy especial, una educación de la por su madre, de manera rigurosa y aillada, ella
+ pudo proponer estos primeros alboritmos para ser implementados en la máquina de Babache.
+ Babache no pudo ver su máquina implementada, sin embargo años después pudo ser resuelto
+ y pudo trabajar si ustedes ven, pueden leer a mí no me gusta leer, pero en esta situación
+ que no puede ir actuar con ustedes a veces se más necesario, la máquina podía sobre otras
+ cosas, además de numeros, así como todo objeto cuya relación muto afundamental, pudiera
+ ser expresada por operaciones de la ciencia abstracta y el motor se podía pensar como para
+ que trabajar a sobre piezas musicales, de cualquier grado, de complejidad o de extensión.
+ El concepto de inteligencia artificial surge por primera vez en la conferencia de Darmont en
+ Estados Unidos en el año 1956, cuando estas tres personas figence que algunos son bastante
+ conocidos, yo Macarty, Marvin Minsky y Claude Chanon presentan por primera vez el término
+ inteligencia artificial de manera formal, acá hay unito muy importante a partir de acá
+ se empieza a analizar lo que es la evolución de la inteligencia artificial, a Lanthuring
+ para el año 1950, si un tiempo antes figence que hay de apropones, dice que creo que al final
+ del siglo el uso de las palabras y de los opiniones educadas general, se habrá alterado tanto
+ que se podrá hablar de máquinas pensando sin esperar a hacer contra dicha, estamos hablando
+ del año 1950. Bien, ya que es donde analizamos, empezamos a analizar la evolución de la
+ inteligencia artificial en dos ejes donde vemos el paso del tiempo y las expectativas.
+ En un primer momento en las expectativas vinculadas con la inteligencia artificial tienen que
+ ver con este, esta frase que yo les pongo, mía más sin manos, hay un cuento que dice que
+ pasa un ene que había comprado una visible, había regalado una bicicleta y decía, pasa
+ la primera vuelta de la mansa ni la isemira más sin manos, pasa otra vuelta más al esemira
+ más más sin un pie, miraba más sin el otro y a la otra miraba más sitientes. Bueno,
+ verdaderamente las expectativas en sus estados iniciales de la inteligencia artificial eran
+ altísimas, se pensaba que la inteligencia artificial iba a resolver todo, él iba a poder
+ realizar de todo. Fíjense estas, estas tres, estas tres reflexiones y acabamos a terminar
+ esta, esta, esta primera parte, fíjense que proponía John Macartín, se tan pronto como
+ funciona, ya nadie lo llamaría, porque hay surge, el verdadero concepto de qué sería
+ inteligente, no, empecemos a reflexionar sobre este ser inteligente. Si yo les digo a ustedes
+ que yo sé leer, que escribir ustedes no me van a considerar por eso inteligente, ustedes
+ le consideran inteligente, si yo pudiera hacer cosas que el común denominador no puede resolver,
+ o si la si siera de mejor manera, esa y cuando uno reconoce el comportamiento inteligente
+ del individuo, y que esa solución, esa actividad que yo realizo tenga que ver con el uso
+ de la razón, el pensamiento, las síntesis, el análisis y la extracción. Bueno, entonces
+ tenemos esta primera propuesta de John Macartín y se también se por otro lado se esperaba
+ que la inteligencia artificial generara algoritmos basados en lógicas y hurísticas cosa que
+ sí puede realizar en su primera etapa, después también se esperaba que pudiera construir
+ artefactos, capaces de pensar ebulando copiando el comportamiento de los seres humanos,
+ porque es ahí donde reside lo que se conoce como comportamiento inteligente, y lo que
+ se pensaba, lo que se tenía totalmente en claro era que las máquinas y van a poder
+ pensar que las máquinas serán pensantes. Bueno, en un próximo capítulo vamos a ver
+ como continua. Desde ya muchísimas gracias, espero no haber sido terribles en primer vídeo
+ que les grabo. Cuidense estamos haciendo entre todos para que esto salga de lo mejor posible.
+ Estamos por 11 minutos, dicen que más de 10 minutos los alumnos se aburran, así que bueno,
+ les mando un beso, hasta luego.

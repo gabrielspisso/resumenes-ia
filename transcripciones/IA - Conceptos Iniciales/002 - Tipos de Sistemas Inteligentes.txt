@@ -1,0 +1,200 @@
+ Hola, mi nombre es Pablo Pital y en este vídeo vamos a hablar de distintas tipos de sistemas
+ inteligentes, describiendo los de acuerdo a su tecnología y arquitectura. Como ustedes ya saben,
+ en una organización que tiene su sistema de información, cuando tiene algún problema o
+ alguna oportunidad de mejor, va a llamar al ingeniero del sistema de información. Este se va
+ a ocupar de encontrar una solución a través de la construcción de un producto que puede
+ incluir procesos manuales o sof. Este software puede ser software tradicional o sistemas inteligentes.
+ Este sistema inteligentes van a tener características que los diferencian de un software tradicional,
+ van a ser entre comillas inteligentes, por lo cual van a ser más parecidos a lo que puede
+ realizar un ser humano. De todas formas, estos sistemas inteligentes todavía no logran emular
+ complementamente la mente humana. Entonces para poder identificar un sistema inteligente, podemos definir
+ que son artefactos que presentan algún tipo de comportamiento inteligente. Este comportamiento inteligente
+ tiene que dar con una racionalidad que le permite tomar decisiones consistentes con el objetivo
+ para el cual fue desarrollado, pero esto no significa que sean omniscientes ni infalibles, es decir,
+ no van a poder conocer todos los conocimientos ni todos los datos relacionados a el problema,
+ van a tener limitaciones, correspectos a esos conocimientos y esos datos que ahora vamos a
+ hablar un poquito más. Lo cual va a necesitar que la tecnología tenga cierta flexibilidad y
+ robustez para soportar cambios y poder contemplar situaciones que no fueron consideradas durante
+ su desarrollo y todo eso va a llevar a también aquí no siempre sean exitosos, es decir, no
+ van a ser siempre infalibles. De todas maneras, si un sistema inteligente puede desarrollado de manera
+ adecuada y correcta, contemplando todos los pasos, vamos a buscar que sea exitoso en la mayoría
+ de los casos. Al momento de hablar de un sistema inteligente entonces podemos considerar dos cuestiones
+ importantes. Por un lado, cuáles son las fuentes de conocimientos que se van a utilizar para
+ su desarrollo y por otro lado cuáles la tecnología que se va a aplicar para implementar este sistema
+ inteligente. En cuanto a los conocimientos vamos a hablar de dos tipos de fuentes, fuentes públicas
+ que se refieren a todas las fuentes de información que están explicitadas, el hecho de que
+ sea pública no significa que sean gratuitas porque yo puedo utilizar como una fuente pública
+ una base de datos propietaria de una organización, o una base de datos que está disponible
+ en la web, puedo utilizar documentos, manuales, vídeos de YouTube, poros, cualquier tipo de
+ información que puede hacer accesible a de manera digital, podríamos hacer. En el caso de libros
+ impresos, esos libros obviamente vamos a tener que digitalizar vos antes, pero también vamos
+ a conocer a los como fuentes públicas. Por otro lado, también se pueden utilizar fuentes
+ privadas. Al hablar de fuentes privadas nos referemos a todo el conocimiento y todos los datos
+ que están interiorizados dentro de la mente de una persona. Dentro de las personas disponibles
+ para llevar a cabo la implementación de un sistema inteligente, obviamente que nosotros vamos a buscar
+ a la persona que sabe más sobre el problema, que sabe resolver el problema o en éxito. Entonces,
+ ahí vamos a buscar un experto en el dominio del problema. En el caso de utilizar un
+ experto como fuente privada de conocimientos, al cual le vamos a el licitar los conocimientos,
+ estaríamos desarrollando un sistema experto. La definición del sistema experto nos dice que es un
+ sistema cuya prestación es intentan emular parte del como portamiento de un experto humano para
+ resolver ciertas tareas en un dominio de determinado. No tem esto de emular y lo de ciertas tareas,
+ qué quiere decir esto. Nosotros vamos a tratar de imitar de copiar la manera en que el experto
+ resuelve el problema, pero en lo vamos a poder realizar en forma completa. Todavía no es posible
+ hacer una copia del aumento del experto en un formato digital para poder ser utilizado. Entonces,
+ lo que vamos a hacer es focalizarnos en ciertas tareas del experto que se consideran importantes
+ para hacer utilizadas a través del sistema inteligente o sistema experto y vamos a tratar de imitar
+ qué cosas hace el experto utilizando tecnologías del inteligencia artificial. En ese caso,
+ contaríamos con un sistema experto. Asobes no tentan bien que estos sistemas expertos utilizan
+ también fuentes públicas o es decir, el hecho de ser un sistema experto nos significa que
+ vamos a utilizar sólo conocimiento educido del experto. Si no que también vamos a poder utilizar
+ conocimientos y datos extraídos del fuente. En el caso de un sistema inteligente en general,
+ vamos a utilizar solamente conocimiento extraído del fuente. No estaríamos utilizando ningún tipo
+ de fuente privada. Entonces, acá para mostrar la relación entre sistema experto y sistema
+ inteligente podemos ver que los sistemas expertos forman un sub conjunto dentro de los sistemas
+ inteligentes. No todos los sistemas inteligentes son sistemas expertos, pero todos los sistemas expertos
+ son sistemas inteligentes. Bueno, con respecto a la tecnología que se puede utilizar para implementar
+ estos sistemas inteligentes expertos o no, podemos hablar de dos grandes grupos. Por un lado,
+ la inteligencia artificial tradicional y por otro lado, la inteligencia computacional y la
+ aprendizaje automático o machine learning. La inteligencia artificial tradicional es la inteligencia
+ artificial clásica, la que surgió a principio de la década de los 50 y la cual está basado en reglas
+ metodoseurísticas y la lógica. En estas tipos de sistemas inteligentes, vamos a ver que aparece algo
+ un componente que se llama base de conocimiento y se le que va a almacenar todo el cuerpo de
+ conocimientos obtenido para que el sistema inteligente funciona. Este, esta base de conocimiento
+ generalmente va a contar con esos conocimientos descriptos en un lenguaje lógico con reglas
+ del estilo siguiente. Puedes pasar que estas reglas no, no estén escritas en un, no terminología
+ tan glará como si entonces pueden aplicar algunos principios de lógica o algunas sintaxis especial,
+ pero de todas maneras, una persona que conoce esa sintaxis va a poder entender y leer y en
+ el caso necesario modificar y todas estas reglas y hechos que aparecen esta base de conocimiento.
+ Por eso se habla de una presencia explicita del cuerpo de conocimiento. Para poder aplicar estas
+ reglas aparecen un componente que es el motor de inferencia. Este motor de inferencia es un elemento
+ enérico que puede ser utilizado para cualquier tipo de problemas y lo que hace es aplicar
+ algunos métodos generales como métodos de búsqueda para tratar de decidir que reglas se deberían
+ aplicar para resolver un problema en un contexto determinado. Entonces ahora después vamos a hablar de
+ los arquitecturas específicas pero hay una vez que aparecen tanto la base de conocimientos como
+ el motor de inferencia como los elementos principales de esta y a tradicional. En el caso de los sistemas
+ basados en conocimientos, entonces tenemos la base de conocimientos que va a tener reglas y hechos que van
+ a venir solo de fuentes públicas. Voy a tener mi motor de inferencias que va a aplicar, por ejemplo,
+ los métodos de búsqueda y por último vamos a tener un interfaz de entrada salida que le va a permitir
+ al usuario relacionarse con el sistema basado en conocimiento. Fíjense que esta arquitectura es bastante
+ sencilla. En el caso de que yo lo quiero utilizar para resolver un problema lo único que tengo que definir
+ es la base de conocimientos, el motor de inferencia y el interfaz dentro de la salida es generica que
+ haga para que el interfaz le ha podido adaptar un poquito, pero el motor de inferencias salvo para
+ metrizar a alguna cosa no voy a tener que hacerlo. Por otro lado, tenemos los sistemas expertos
+ tradicionales. Fíjense que estos sistemas expertos son sistemas que van a emular parte del conocimiento
+ de un experto para realizar cierta tarea. Si los llamas tradicionales, porque van a contar con una base
+ de conocimientos. Entonces, esta base de conocimientos que va a estar también formando por reglas y hechos,
+ va a incluir además de fuentes públicas fuentes privadas de conocimientos. También tenemos nuestro motor
+ de inferencia, la interfaz de entrada salida acá, la vamos a llamar manejadores de comunicaciones,
+ pero buena aparecer a algunos componentes adicionales. Va a aparecer algo que se llama base de datos,
+ está base de datos, lo que va a almacenar son la información del problema que yo quiero
+ resolver en este momento dado. Entonces, por un lado tengo los conocimientos que tengo que utilizar
+ para resolver el problema que van en la base de conocimientos y por otro lado tengo los datos
+ específicos del caso que quiero resolver. A partir de estos datos, el motor de inferencia va a poder
+ determinar que reglas aplicar en la base de conocimientos. Por otro lado, aparece la memoria de trabajo,
+ la memoria de trabajo, lo que va a permitir es registrarco toda la traza de reglas y de
+ pasos que usó el motor de inferencias para resolver el problema. Es como una especie de log donde
+ se va registrando paso a paso, que fue haciendo el motor de inferencias para resolver el problema.
+ Esta memoria de trabajo es útil porque hay un componente también en los set que son los trazadores
+ de explicaciones. El trazador de explicaciones lo que permite es justificar el resultado que genera el
+ sistema experto tradicional. De esa manera se dice que este sistema puede explicar o justificar
+ qué paso realizó para resolver el problema de manera similar a lo que hace un esperto. Para poder
+ explicar esto, necesitas saber qué paso se usaron. Entonces, va a tener que acceder a la memoria de
+ trabajo. Y por último, tenemos el trazador de consultas. El trazador de consultas lo que nos va a permitir
+ es poder solicitarle al usuario información adicional sobre el problema que se quiere resolver.
+ A veces que el motor de inferencia necesita, hay un dato adicional para saber si tiene que ir
+ por la regla a o la regla a. Bueno, entonces en ese caso el trazador de consultas se lo puede solicitar al usuario
+ y le va a explicar por qué necesite ese dato. Por eso es un componente separado del manejador de comunicación.
+ No es que solamente va a aparecer una ventanita y se ingrese la temperatura, sino que le va a decir
+ el inglés en la temperatura porque necesitamos determinar si la temperatura es alta o baja para saber si va
+ a llover o no va a llorar. Entonces, el trazador de explicaciones es muy un poquito el trazador de explicaciones,
+ porque de alguna manera justifica la necesidad de ese información. En el caso del usuario tiene ese
+ información, la va a poder ingresar. Si el usuario no la cuenta, bueno, puede poner no la sé y ahí el
+ trazador de consultas va a haber y otro dato complementario puede llegar a solicitar para que el motor de
+ inferencia pueda decidir cuál es la regla que se tiene que aplicar. Entonces, no tem que este sistema
+ perto tradicional tiene más componentes que el sistema basado en conocimiento, porque como nosotros necesitamos
+ emular al experto humano, necesitamos que pueda hacer algunas cosas adicionales que en un sistema basado en conocimiento,
+ nos vamos a necesitar. Bueno, con respecto al otro grupo de tecnologías, tenemos la inteligencia
+ computacional en esta familia de algoritmos y de arquitecturas, vamos a incluir todas las tecnologías
+ de la inteligencia artificial que tienen una inspiración biológica, ayer los científicos del inteligencia
+ artificial se basaron en hecho de la naturaleza que presentaban algún tipo de inteligencia. Un ejemplo clásico
+ son las redes neuronales artificiales que forman parte del cerebro de todo el sistema nervioso en los
+ animales y el el cerebro. Pero también aparece en algoritmos que copian el funcionamiento de la tidida
+ de la evolución del sistema immunológico del comportamiento de animales en grupo, ayer presa los algoritmos
+ de inteligencia en diciembre y otros algoritmos más. Dentro de inteligencia computacional vamos a tener
+ cientos de algoritmos que se pueden aplicar. Entonces esta inspiración biológica le va a permitir a los
+ sistemas resolver distintos tipos de programas. Después vamos a ver algunos ejemplos de estos tipos de
+ algoritmos. Por otro lado, tenemos Machine Learning o aprendizaje automático como se lo suele decir en
+ castellano, que son los algoritmos que pueden aprender a partir de ejemplos. Entonces, yo voy a tener un conjunto
+ de datos que pueden estar estructurados o no. Los voy a ejecutar esos datos con un algoritmo determinado,
+ ese algoritmo ya va a estar definido por algún científico del inteligencia artificial, así que no lo tengo
+ que definir yo, lo que sí voy a tener que hacer es para metrizarlo, después de eso vamos a hablar en otros
+ vídeos y como resultado voy a obtener un modelo y ese modelo me va a permitir entender y emular
+ el comportamiento de esos datos. Entonces yo el ejecutar ese modelo voy a poder realizar acciones
+ y tratan de emular el comportamiento de alguien o de algo del cual yo tengo un conjunto de datos
+ históricos. Machine Learning es una también una familia de algoritmos muy grande sigue creciendo
+ todo el tiempo y se puede hablar mucho de Machine Learning. Por lo cual lo vamos a dejar una descripción
+ un poco más detallada en otros vídeos. Acá es solamente la la presentación de que es Machine Learning
+ como para hablar de los distintos tipos de tecnología. Bien, teniendo en cuenta estos tipos de tecnologías
+ vamos a ver durante la cursada, algunas distintas arquitecturas de sistemas inteligentes.
+ Nosotros recién ya hablamos de sistemas de todos en conocimientos y sistemas expertos tradicionales.
+ También vamos a hablar en otro vídeo de algoritmos de inducción y de algoritmos de regresión,
+ que son algoritmos clásicos de Machine Learning que se pueden utilizar para resolver problemas sencillos.
+ Para problemas más complejos podemos aplicar algoritmos genéticos o redes neuronales artificiales
+ y por último tenemos la lógica difusa con sus sistemas difusos que nos va a permitir también
+ implementar sistemas inteligentes y lo que tiene de especial la lógica difusa es que se puede
+ combinar con las otras tecnologías para soportar cierta impresición en los datos que el sistema va a
+ tener que manejar. Entonces la lógica difusa va a tener una flexibilidad en la cual uno va a poder
+ combinarla con otras tecnologías para resolver problemas. Estas seis arquitecturas que nosotros
+ mencionamos acá las podemos clasificar de esta manera en lo que es y a tradicional obviamente tenemos
+ los sistemas casados en conocimientos y los sistemas expertos tradicionales. Hay sistemas difusos que
+ van a aplicar base de desconocimiento. Entonces dentro de la y tradicional podemos aplicar estos tipos de
+ sistemas. Pero esta lógica difusa también se puede combinar con Machine Learning. Entonces la lógica difusa
+ podemos decir que forma parte de las dos tipos de familias de tecnologías. En cuanto a Machine Learning
+ también podemos incluir los alcorrimos de inducción y los alcorrimos de regresión. Esto es alcorrimos de inducción
+ muchas veces son utilizados para identificar reglas. Entonces estas reglas identificadas por el
+ alcorrimos de inducción luego las puedo utilizar dentro de la base de conocimiento de un sistema
+ conía tradicional. Por eso acá aparecen estas flechitas que relacionan a los alcorrimos de inducción
+ con las terest tecnologías que hablamos recién deía tradicional. Dentro de Machine Learning, por último tenemos
+ las redes neuronales artificiales que van a aprender a partir de ejemplos entonces pueden considerar
+ dentro de estas familias de elevarinos. Pero las redes neuronales artificiales tienen una inspiración biológica
+ por lo que también son de inteligencia computacional. Dentro de inteligencia computacional
+ para cómo. Por último podemos incluir a los alcorrimos genetes y todos los alcorrimos de computación
+ evolved. Entonces fíjense que la relación entre el tipo de tecnología y la arquitectura
+ no es blanco negro sino que hay solapamiento y hay relaciones entre las distintas tecnologías que
+ se pueden aplicar. Entonces esto es importante tenerla en cuenta porque muchas veces en algunos videos
+ no materiales te hablan de inteligencia artificial versos Machine Learning. Por ejemplo, no, no es un
+ versos es un subconjunto de inteligencia artificial. Entonces están muy relacionados entre sí
+ y de hecho muchas veces yo puedo combinar Machine Learning conía tradicional y algo de inteligencia
+ computacional y todo va a funcionar. Entonces no hay que que acá considerar que algo es o no es,
+ sino que puede ser que pertenece a los dos o pertenece un poquito más a uno que pertenece más a lo
+ otra. Esto es importante para tenerla en cuenta porque va a ayudarnos luego a entender cómo funciona
+ cada una de estas tecnologías. Otra forma de clasificar estas arquitecturas puede ser por el tipo de
+ conocimiento que se puede aplicar en su desarrollo. En todas yo puedo utilizar fuentes de conocimientos
+ públicos como dijimos, puedo usar videos, bases datos, audios, textos, lo que lo que sea. Pero en
+ algunos casos yo a su vez puedo utilizar conocimientos que fueron educidos de una fuente privada.
+ Entonces yo ahí voy a tener sistemas expertos. Fíjense que salvo a los sistemas pasados en conocimientos
+ todo resto se pueden utilizar conocimientos privadas. En el caso de Machine Learning,
+ lo que voy a tener que hacer es de alguna forma es usir ese conocimiento del experto, explicitarlo
+ en algún formato. Por ejemplo, yo puedo pedir el experto que me describa paso a paso lo que está realizando.
+ Luego eso yo lo voy a transformar en algún documento digital y con eso puedo entrenar una
+ algorithma de Machine Learning para identificar reglas o para implementar una ranneuronal o para lo que sea.
+ Entonces, fíjense que acá también a veces que en muchos materiales que disponibles en
+ la web te hablan no Machine Learning solamente, puede usar datos que tienen una base de datos. No,
+ mentira. Yo puedo utilizar datos de cualquier origen lo que sí, lo voy a tener que preparar a esos datos,
+ a lo que el algoritmo necesita. Algunas algoritmos sí van a necesitar tener un formato de
+ estable estructurada. Pero otros algoritmos no. Entonces ahí, uno va a tener que considerar las necesidades
+ del algoritmo para preparar los datos o a través a partir de las características que tienen los datos que
+ yo tengo, elegir el algoritmo más adecuado para ser aplicado. De todo esto lo vamos a hablar
+ después en otros videos, pero bueno, les queríamos, ahí ya presentar esa dificultad. Bueno,
+ teniendo en cuenta estas dos clasificaciones, como para tratar de resumir todo lo que vimos,
+ podemos decir, bueno, los sistemas inteligentes, los podemos diferenciar entre los sistemas que utilizan
+ una base de conocimientos, explícita de decir, una base de conocimientos, como se suele llamar, que son
+ propias de laía tradicional, ahí tenemos los sistemas basados conocimientos y los sistemas
+ expertos tradicionales. Y a su puedes, los podemos diferenciar en cuanto a cueliz la fuenda de conocimientos
+ que tienen, los que utilizan solo conocimientos públicos que van a hacer todos los sistemas inteligentes,
+ los que no usan nada de conocimiento privado que serían los sistemas basados en conocimientos y los
+ que sí pueden utilizar conocimientos públicos privados que sería bueno, los sistemas expertos tradicionales,
+ las padres neuronales, algoritmos de inducción y de regresión, los algoritmos genéticos y la lógica
+ tenemos, bueno, con esto terminamos este vídeo, en otros vídeos, a continuación van a
+ hago, vamos a hablar más de Machine Learning, del proceso de Machine Learning, y a contarles cómo
+ funciona los algoritmos de inducción y los algoritmos. Bueno, pero que les haya sido útil, hasta

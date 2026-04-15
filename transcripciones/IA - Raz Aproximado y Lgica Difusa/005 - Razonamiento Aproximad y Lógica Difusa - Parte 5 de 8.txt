@@ -1,0 +1,69 @@
+ Hola, este es el quinto video correspondiente a la presentación de razonamiento aproximado y lógica difusa.
+ En este video vamos a ver cómo se aplican los distintos operadores lógicos de negación, disunción, con función e implicación,
+ en un ejemplo donde vamos a tener reclas.
+ Entonces supongamos que la persona que nosotros ya habíamos analizado que me dio metros 78,
+ le agregamos como datos que la longitud de la circunferencia de la muñeca es de 14 centímetros.
+ Entonces con estos dos datos vamos a aplicar estas reglas que utilizan tanto el tipo de altura
+ como el tipo de muñeca que tiene la persona para determinar el tipo de contactura que le corresponde.
+ Entonces tenemos una regla que nos indica que si la persona tiene una muñeca fina
+ entonces es de contactura pequeña.
+ Otra regla nos dice si la persona tiene una altura alta o mediana y la muñeca es gruesa
+ entonces la contactura es mediana.
+ Si la persona tiene una altura baja y no tiene una muñeca pequeña
+ entonces les corresponde una contactura grande.
+ Subes podríamos tener otras combinaciones con otros valores pero vamos a acordar el ejemplo a sólo otras reglas.
+ Con estas tres reglas vamos a ver cómo yo puedo aplicar.
+ La lógica difusa para determinar el valor difuso que corresponde a contactura pequeña,
+ con textura mediana y con textura grande.
+ Bueno, lo primero que tengo que hacer entonces es definir los valores difusos para altura
+ y para circunferencia de la muñeca.
+ Para altura ya lo teníamos.
+ Habíamos dicho que una persona de metro 78 tiene altura alta en 0,8.
+ Tiene altura mediana en 0,2 y altura baja en 0.
+ Es decir que es casi alta poco mediana y nada baja.
+ ¿Qué pasa con 14 centímetros de circunferencia de la muñeca?
+ Bueno, ahí podríamos decir que tiene una circunferencia muy gruesa en 0
+ o sea, nada grueso tiene una circunferencia gruesa en 0,3.
+ Entonces es poco grueso también.
+ Y fina en 0,9.
+ O sea que es casi casi fina.
+ Es un poquito más que el 0,8.
+ Entonces le ponemos casi casi.
+ No, también.
+ Bueno, con todos estos valores vamos a ver cómo se aplican.
+ Los operadores lógicos en cada regla para generar entonces el valor
+ que corresponde a la contextura.
+ Entonces vamos a definir que valor tiene contextura pequeña, mediana y graf.
+ Aplicamos las reglas y ahí la primera regla nos dice.
+ Si la persona tiene muñeca fina entonces la contextura es pequeña.
+ Bueno, ahí lo que tengo que hacer es probar el valor que tiene.
+ Muñeca fina para esta persona para contextura pequeña. Entonces, contextura pequeña le voy a signar un valor de 0,9.
+ Porque para contextura fina habíamos visto que el valor que corresponde a era 0,9.
+ Como se ve aquí.
+ Bueno, ¿qué pasa con la segunda regla?
+ La regla nos dice si tiene altura alta o altura mediana.
+ Y muñeca gruesa entonces corresponde una contextura mediana.
+ Entonces, ¿qué tenemos que hacer aquí?
+ Para calcular el valor de pertenencia de contextura mediana tenemos que hacer el mínimo porque hay uní entre
+ la muñeca gruesa o sea el valor que de pertenencia que le corresponde a muñeca gruesa con el máximo porque hay uno entre
+ altura alta y altura mediana.
+ Entonces, en este caso, para este ejemplo con los valores que teníamos sería que tendríamos que calcular el mínimo entre el máximo de 0,9.
+ Y con eso al mínimo con 0,3.
+ Entonces, el mínimo va a ser 0,3, obviamente.
+ Entonces, para esta persona podríamos decir que tiene un valor de pertenencia para contextura mediana de 0,3.
+ ¿Qué pasa para la última regla? La última regla nos dice que la persona va a tener
+ contextura grande si la altura es baja y no tiene muñeca pequeño.
+ Entonces, en este caso tenemos que hacer el mínimo entre altura baja y uno menos el valor que
+ pertenece a muñeca final.
+ Entonces, va a ser el mínimo entre 0 y 0,1.
+ En este caso, entonces, para corresponder un valor para contextura grande de 0,
+ no es nada de contextura grande.
+ Por consiguiente, podríamos decir que la respuesta a esta cuestión es que una persona de un metro
+ 78 y una muñeca de 14 centímetros tiene 0 de contextura grande, o sea, no es nada de contextura grande.
+ Tiene un 0,3 de contextura mediana. Entonces, es algo de contextura mediana.
+ Y un 0,9 en contextura pequeña. Entonces, es casi o una aproximadamente de contextura pequeña.
+ También, bueno, entonces, de esta manera, vimos cómo podemos aplicar todos los operadores.
+ Logicos en la lógica difusa, y vimos con este ejemplo cómo se propagan las valores correspondientes para los resultados del consecuto.
+ Con esto, vamos a terminar este vídeo.
+ Y en el próximo vídeo, vamos a empezar a hablar sobre los sistemas inteligentes difusos.
+ Hasta luego.

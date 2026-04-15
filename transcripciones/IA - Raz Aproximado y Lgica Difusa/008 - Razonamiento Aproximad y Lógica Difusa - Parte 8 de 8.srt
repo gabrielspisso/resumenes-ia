@@ -1,0 +1,280 @@
+1
+00:00:00,000 --> 00:00:07,720
+ Hola, este es el octado video correspondiente a la presentación de razonamiento aproximado y logica difusa.
+
+2
+00:00:07,720 --> 00:00:14,520
+ En este octado video vamos a ver otro ejemplo de cómo se puede construir un sistema difusa,
+
+3
+00:00:14,520 --> 00:00:21,660
+ pero en este caso vamos a ver cómo construir un sistema difusa directamente a partir de ejemplos de datos.
+
+4
+00:00:21,660 --> 00:00:27,400
+ Es decir, vamos a considerar la situación donde yo quiero hacer un sistema difusa
+
+5
+00:00:27,400 --> 00:00:34,120
+ para predecir si va a llover o no va a llover de acuerdo a la situación climática de hoy.
+
+6
+00:00:34,120 --> 00:00:45,040
+ Bueno, para hacer ese sistema difusa yo no voy a contar con ningún experto que me define las reglas que yo tengo que poner en mi base de conocimientos.
+
+7
+00:00:45,040 --> 00:00:57,720
+ Niu, tampoco voy a tener algún libro, algún manual las reglas que tengo que aplicar. Lo que yo voy a tener son ejemplos que voy a haber accedido en algún sitio de Internet,
+
+8
+00:00:57,720 --> 00:01:02,600
+ donde se me indica cuál era la situación climática día por día.
+
+9
+00:01:02,600 --> 00:01:11,880
+ Con esos datos, entonces yo lo que puedo hacer es tomar los parámetros de un día para predecir si al día siguiente, llover o no llover.
+
+10
+00:01:11,880 --> 00:01:24,640
+ Entonces, lo que estaría aplicando son algoritmos de inducción. Recuerdan que al principio de la acursada habíamos visto que los algoritmos de inducción es un tipo de algoritmos de Machine Learning
+
+11
+00:01:24,640 --> 00:01:33,440
+ que permite encontrar reglas para un conjunto de datos. Estas reglas van a representar el comportamiento que tienen dichos datos.
+
+12
+00:01:33,440 --> 00:01:43,120
+ Entonces, esto es algoritmos de inducción también los podemos utilizar para tratar de encontrar reglas con valores difusos.
+
+13
+00:01:43,120 --> 00:01:52,840
+ Bien, para hacer esto, entonces, primero lo que tenemos que definir es cuál es van a ser nuestros parámetros de entrada y cuál va a ser mi parámetro de salida.
+
+14
+00:01:52,840 --> 00:02:08,200
+ En nuestro caso va a ser la presión humedad de velocidad del viento y temperatura actual, como parámetros de entrada, y como parámetro de salida va a ser un parámetro que me indica si va a llover o no al día siguiente.
+
+15
+00:02:08,200 --> 00:02:17,160
+ Entonces, para construir este sistema difuso con algoritmos de inducción, vamos a utilizar un conjunto de ejemplos.
+
+16
+00:02:17,160 --> 00:02:24,880
+ Nosotros vamos a tener una tabla con un mil ejemplos. Esta tabla está disponible en el campo virtual, por si la quieren ver.
+
+17
+00:02:24,880 --> 00:02:38,760
+ Entonces, ahí van a ver que hay varias columnas donde está la presión actual, lo me da actual, la velocidad del viento actual, la temperatura actual y el campo si que me dice 0, si no va a llover y uno si va a llover.
+
+18
+00:02:38,760 --> 00:02:47,880
+ Con todos estos valores, entonces en fíjpro, lo que tenemos que hacer es definir las distintas funciones de partenencia en lógica difusa.
+
+19
+00:02:47,880 --> 00:02:55,400
+ Fíjpro nos permite definir las funciones de partenencia de manera manual, de manera automática o de una manera híbrida.
+
+20
+00:02:55,400 --> 00:03:01,320
+ O es decir, yo las puedo generar de manera automática y después ajustarla manualmente.
+
+21
+00:03:01,320 --> 00:03:07,640
+ En nuestro caso, para este ejemplo, supongamos que yo definí toda las funciones de manera manual.
+
+22
+00:03:07,640 --> 00:03:15,800
+ Entonces voy a tener definidas todas estas funciones de partenencia para cada uno de los parámetros de entrada y de salida.
+
+23
+00:03:15,800 --> 00:03:35,520
+ La vía, entonces fíjese para presión tengo tres, para humedad, tengo cinco, valores distintos, funciones distintas, para velocidad del viento, tengo también cinco, para temperatura también.
+
+24
+00:03:35,520 --> 00:03:44,880
+ No, para temperatura tengo cuatro funciones solamente y para llover, tengo dos funciones distintas.
+
+25
+00:03:44,880 --> 00:03:49,040
+ Una que me indica si llueve o no llueve, vía.
+
+26
+00:03:49,040 --> 00:04:00,320
+ Entonces, con todas estas funciones ya definidas de manera manual, las podría haber hecha de manera automática, pero prefería hacerlo yo en este ejemplo de manera manual.
+
+27
+00:04:00,320 --> 00:04:08,480
+ Lo que hacemos es utilizamos también el fíjpro para que aplique un algoritmo de inducción y de esa manera genera las reglas.
+
+28
+00:04:08,480 --> 00:04:16,920
+ Entonces, utilizar estos dos mil ejemplos con las funciones que teníamos, fíjpro no genera 165 reglas.
+
+29
+00:04:16,920 --> 00:04:27,960
+ Podríamos haber generado más o menos de acuerdo a los parámetros que les poníamos, pero de acuerdo al grado de confianza y grado de hasta cuánto crezar,
+
+30
+00:04:27,960 --> 00:04:48,040
+ no genero 165 reglas. Estas reglas, las podemos ver a continuación acá de unos ejemplos, no de 165, fíjense que aparecen los distintos valores que tienen las funciones de pertenencia para cada uno de los parámetros de entrada y para el parámetro de salida.
+
+31
+00:04:48,040 --> 00:05:06,920
+ Este ejemplo, hecho en fíjpro, donde van a encontrar las funciones definidas y las reglas también definidas en forma automática, también más estar disponible en el mismo archivo comprimido dentro del campo virtual por si lo quieren ver, por eso no entramos en mucho detalle.
+
+32
+00:05:06,920 --> 00:05:15,040
+ Entonces, con el ejemplo, una vez que tenemos las reglas y las funciones definidas, podemos ver cómo responde en un caso particular.
+
+33
+00:05:15,040 --> 00:05:32,320
+ Entonces, supongamos que le indicamos que un día dado hay una versión de 1.23 hectopascales, una humedad del 96%, una velocidad al viento de 18 kilómetros por hora y una temperatura de 17,6 grados centígrados.
+
+34
+00:05:32,320 --> 00:05:42,320
+ Nosotros queremos que nuestro sistema difuso que aplica reglas definidas por el algoritmo de inducción, no es indique si yo verá o no yo vera.
+
+35
+00:05:42,320 --> 00:05:49,760
+ O sea, que aplique la 165 reglas, las conviene en los resultados y con eso me diga si yo veré no yo.
+
+36
+00:05:49,760 --> 00:06:12,280
+ Para hacer eso, fíjpro, lo que va a ser es transformar primero a todos estos valores numéricos, a valores difuso, a través del fusifica y llan, después se va a ver cuál regla aplica va a obtener la resultado de cada regla, los va a combinar y de esa combinación me va de volver a través del modulo de fusifica y llan, el valor que corresponde a lloverla.
+
+37
+00:06:12,280 --> 00:06:32,240
+ Entonces, para hacer eso, fíjpro lo hace de manera gráfica, entonces fíjense que, que yo ingreso a los distintos valores que corresponden, esto hace que se asigne el valor de pertenencia correspondiente a cada función, después de que reglas aplica y todo eso las convina en un único resultado.
+
+38
+00:06:32,240 --> 00:06:47,880
+ Entonces, como resultado aquí, me indica que para esa condición el valor para llovera es de 0,8. Eso significaría que da la esta situación va a ayudar casi seguro.
+
+39
+00:06:47,880 --> 00:07:01,160
+ Lo cual es valido con el resultado real que nosotros teníamos de un ejemplo que nosamos obviamente para crear la regla, pero un ejemplo que teníamos separado para probar nuestro sistema difuso.
+
+40
+00:07:01,160 --> 00:07:23,880
+ Bueno, ¿qué pasa si yo le cambio a ese ejemplo ciertos parámetros, ahora le pongo una presión de 1.3, 76 hectopascales, le doy una humedad del 24,75%, le doy una velocidad del 20,25 km/h y una altera de 35 grados centígrados.
+
+41
+00:07:23,880 --> 00:07:40,600
+ En este caso, el resultado valido que me debería dar es, no llovera, pero nuestro sistema difuso me da llovera 0,4, o sea, va a tener al no llovera, pero están la duda, no queda claro si va a llover o no va a llovera.
+
+42
+00:07:40,600 --> 00:08:06,200
+ Este problema que se presenta aquí se puede dar también para otras situaciones, dónde nos puede dar un valor intermedio para llovera, lo cual a mí no me podría desfirirme si va llovero, no va llovero, o sea, es como si me da 0,5 justo me está diciendo, no estoy seguro si llovero, no llover, entonces para que quiera un sistema difuso que me diga, no estoy seguro del resultado que corraspo.
+
+43
+00:08:06,200 --> 00:08:29,800
+ Y esto se da por algunos problemas que tienen los sistemas difusos, que su capacidad aprendizaje suele estar limitada por el uso de reglas, entonces al estar basado en reglas, va a llegar un punto donde generar nuevas reglas, no va a ser que mejor en los resultados, es más poder ser que empiores porque se empiezan a encontrar decir.
+
+44
+00:08:29,800 --> 00:08:46,800
+ A su vez está demostrado que muchas veces la lógica difusa tiene a funcionar peor que un modelo matemático, o sea, si vos ya tenés un modelo matemático para predecir el clima, seguramente el modelo matemático va a ser mejor que aplicar un sistema difuso.
+
+45
+00:08:46,800 --> 00:08:59,800
+ Y, como les decía antes, muchas veces cuando nosotros queremos combinar las reglas, no se refuerzan del todo bien, entonces a la aplicar más reglas, la credibilidad de los resultados no se veer reforzada.
+
+46
+00:08:59,800 --> 00:09:13,800
+ Entonces, todos estos problemas que tienen los sistemas difusos por aplicar lógica difusa con reglas, puede ser solucionada si no utilizamos reglas, entonces hay que podríamos asar.
+
+47
+00:09:13,800 --> 00:09:22,800
+ Yo podría construir un sistema difuso sin reglas aplicando dentro de nuestro sistema una regnauronal.
+
+48
+00:09:22,800 --> 00:09:30,800
+ Ahí, en vez de hacer un sistema difuso tradicional, estaría construyendo un sistema negro difuso.
+
+49
+00:09:30,800 --> 00:09:45,800
+ La arquitectura podría ser la que aparece aquí, entonces lo que yo voy a tener es un modelo defusificación que se va a encargar de transformar los datos de entrada a valores difusos, con los valores de pertenencia que corresponde.
+
+50
+00:09:45,800 --> 00:10:07,800
+ Interlamente, eso se va a procesar con una ranneuronal que fue entrenada con patrones difusos, entonces en lugar de a partir de ejemplos, definir reglas usando un algoritmo de inducción, que se van a aplicar dentro de la base de conocimientos, con un motor de inferencias, yo directamente, los ejemplos que tengo se los doy a mi ranneuronal para que apre.
+
+51
+00:10:07,800 --> 00:10:19,800
+ Es resultado difuso que me va a generar esta ranneuronal, yo después la paso por el modelo defusificación, y así obtengo un resultado para resolver el problema.
+
+52
+00:10:19,800 --> 00:10:43,800
+ Entonces, vamos a ver cómo se puede aplicar esta arquitectura de sistema neurodiffusos para resolver el problema del cálculo de clima. Entonces, nuestro sistema neurodiffusos, vamos a tener un sistema donde los parámetros de entrada van a hacer los mismos, yo voy a tener presión humedad, velocidad del viento y temperatura, como resultado me va a indicar si va a llover o no va a llover.
+
+53
+00:10:43,800 --> 00:10:51,800
+ Y yo la voy a enseñar a esta ranneuronal con los datos preparados de formas de que tengan valores difuso.
+
+54
+00:10:51,800 --> 00:11:00,800
+ Y esos datos preparados nosotros se los dejamos en ese excel que figura acá en esta dia positiva para que los vean si ustedes quieran.
+
+55
+00:11:00,800 --> 00:11:11,800
+ Hay lo que hicimos es implementamos en el excel, los distintos funciones de partenencia de lógica difusa que habíamos implementado en el fíjpro.
+
+56
+00:11:11,800 --> 00:11:19,800
+ Y lo que hicimos es con esas funciones definidas, la signamos el valor que corresponde a cada valor de cada ejemplo.
+
+57
+00:11:19,800 --> 00:11:34,800
+ Entonces, vamos a tener por cada ejemplo para presión que antes era un solo valor, va a tener tres valores, porque nosotros tenemos tres funciones de partenencia.
+
+58
+00:11:34,800 --> 00:11:50,800
+ Para un medal, de un valor ahora tenemos cinco valores que van a corresponder cada una o a la función de pertenencia correspondiente. Lo mismo para el viento, lo mismo para la temperatura y para yo veras es más sencillo porque yo tengo llueve o no llueve.
+
+59
+00:11:50,800 --> 00:12:01,800
+ Y son, lo vamos a hacer con los dos mil ejemplos, con estos dos mil ejemplos, usamos en la herramienta rapid miner para construir un arrandeuronale.
+
+60
+00:12:01,800 --> 00:12:24,800
+ Con esa arrandeuronale, implementada luego la aplicamos sobre distintos ejemplos para ver que resultados no genera. Entonces, nuestra arrandeuronale que va a tener esta arquitectura, fíjense que tiene muchas neuronas de entrada, porque ahora los datos de entrada son más, ya que tenemos un valor por cada función de pertenencia que pertenece a cada tributo.
+
+61
+00:12:24,800 --> 00:12:34,800
+ Nos voy a indicar en las neuronas de salida si, es que llueve o sea, de volvuno o no, o no llueve de volvuncer.
+
+62
+00:12:34,800 --> 00:12:45,800
+ Despludo, de entrada de esta arrandeuronale, nos genera una efectividad del 68,85% ahí podemos ver la matriz de confusión que corresponde.
+
+63
+00:12:45,800 --> 00:12:58,800
+ Y, si nosotros lo usamos en el ejemplo, el primero que vemos visto, nos va a devolver que para llover hace devuelve un 0,89% y para no lluever a un 0,01%.
+
+64
+00:12:58,800 --> 00:13:13,800
+ Bueno, si están indicando que va a llover, lo cual se corresponde con el resultado real. Para el segundo ejemplo que el sistema difuso tradicional con reglas no podía saberlo, fíjense que ahora nos dice que corresponde.
+
+65
+00:13:13,800 --> 00:13:27,800
+ No llueverá con un 0,636, contra un llueverá del 0,364, entonces podemos decir que bueno, corresponde que no va a lluever lo cual es valido, se corresponde con la real.
+
+66
+00:13:27,800 --> 00:13:38,800
+ Entonces, usando la lógica difusa, no siempre tengo que aplicar reglas, también pueden implementar la lógica difusa usando otras tecnologías por ejemplo una arrandeuronale.
+
+67
+00:13:38,800 --> 00:13:58,800
+ Dentro de un algoritmo genético, yo podría hacerlo mismo para calcular la aptitud de los cromosomas aplicando entonces la lógica difusa para evaluar cada uno de los valores que toman los genes y de esa forma también poder conseguirar situaciones de donde los datos son impresosos.
+
+68
+00:13:58,800 --> 00:14:20,800
+ Con esto que queremos decir la lógica difusa, no es una tecnología que es totalmente independiente de las otras tecnologías que vimos, sino que es una tecnología que se puede combinar fácilmente con otras para darle más capacidad a nuestro sistema inteligente a la hora de manejar la información como la haría un ser humano.
+
+69
+00:14:20,800 --> 00:14:31,800
+ Para finalizar con este tema les dejamos este apunte que es el obligatorio de estos apuntes complementarios y les agradecemos por su atención.
+
+70
+00:14:31,800 --> 00:14:52,800
+ Pero hemos que les haya sido útil cualquier duda las veremos en el próximo portal. Hasta luego.
+

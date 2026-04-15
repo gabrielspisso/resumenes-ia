@@ -1,0 +1,396 @@
+1
+00:00:00,000 --> 00:00:07,800
+ Hola, mi nombre es María Florencia Pollo y vamos a terminar ya con el último videoito que
+
+2
+00:00:07,800 --> 00:00:13,800
+ trabaja sobre describir la actividad de formalización, que es la que continúa la actividad
+
+3
+00:00:13,800 --> 00:00:19,600
+ de articulación y lo que busca es la formalización de todos los componentes ya definidos
+
+4
+00:00:19,600 --> 00:00:24,600
+ en las actividades anteriores para la construcción del modelo del sistema inteligen. En
+
+5
+00:00:24,600 --> 00:00:30,320
+ este contexto lo que se plantea es que en función de lo definido en la actividad
+
+6
+00:00:30,320 --> 00:00:34,760
+ anterior donde ya habíamos identificado la alcance del proyecto a través de la enunciación
+
+7
+00:00:34,760 --> 00:00:42,960
+ de los objetivos, los criterios de éxito y los riesgos. Y vamos a generar una formalización
+
+8
+00:00:42,960 --> 00:00:48,040
+ a través de este tipo de gráfico donde vamos a identificar el objetivo, las preclascos
+
+9
+00:00:48,040 --> 00:00:53,960
+ condiciones y por cada una de las tareas que componen que se deben realizar para cumplir con
+
+10
+00:00:53,960 --> 00:00:58,080
+ los objetivos, vamos a identificar los propósitos las centradas las acciones y las
+
+11
+00:00:58,080 --> 00:01:02,720
+ alidas, que estas serán las que se van a haber reflejadas posteriormente en los distintos
+
+12
+00:01:02,720 --> 00:01:08,880
+ modelos del sistema inteligen. En relación a las acciones porque ustedes vieron que bueno tenemos
+
+13
+00:01:08,880 --> 00:01:13,240
+ que ver las precondiciones y las pos condiciones las vamos a poder identificar, el propósito
+
+14
+00:01:13,240 --> 00:01:17,520
+ también las centradas y las alidas también lo que vamos a tener que identificar más que
+
+15
+00:01:17,520 --> 00:01:23,920
+ nada son las distintas acciones. Dentro de la baníaco de acciones que me permitiría
+
+16
+00:01:23,920 --> 00:01:28,640
+ utilizar actividades propias de la implementación de modelos bajo la tecnología de la inteligencia
+
+17
+00:01:28,640 --> 00:01:34,200
+ difícil, podríamos encontrar acciones de estas características. Por ejemplo, las acciones de
+
+18
+00:01:34,200 --> 00:01:39,360
+ optimización lo que tratan de encontrar es una combinación que pueda maximizar o minimizar
+
+19
+00:01:39,360 --> 00:01:43,920
+ alguna función matemática. El bipico ejemplo es el derado de una mochila con una capacidad
+
+20
+00:01:43,920 --> 00:01:50,280
+ de tantos kilogramos, la puedo llenar con caja si lo que quiero tratar de maximizar las ganancias
+
+21
+00:01:50,280 --> 00:01:57,780
+ y no exceder tanto pesaje, como vieron también uno podía pensar en una optimización a
+
+22
+00:01:57,780 --> 00:02:03,440
+ lo mejor también del viajero, en cuanto a la distancia, eso son los típicos problemas de
+
+23
+00:02:03,440 --> 00:02:08,680
+ optimización. Después están los problemas de clasificación, ahí lo que no busca es determinar
+
+24
+00:02:08,680 --> 00:02:14,640
+ la clase que corresponde un elemento entre dos o más opciones. Entonces yo podría encontrar
+
+25
+00:02:14,640 --> 00:02:19,560
+ este legun elemento en particular a qué clases de las que tengo definidas, que pueden ser
+
+26
+00:02:19,560 --> 00:02:24,520
+ dos o más va pertenece. Después están los problemas de predicción, que estos son los típicos
+
+27
+00:02:24,520 --> 00:02:31,120
+ problemas del pronoco, que es cuando uno busca determinar un comportamiento futuro y que suele
+
+28
+00:02:31,120 --> 00:02:36,560
+ tener asocioso cierto grado de insertidumbre, uno tiene una probabilidad de ocurrencia. Por
+
+29
+00:02:36,560 --> 00:02:40,640
+ otro lado están los problemas de regresión, en donde uno es lo que trata de encontrar, es
+
+30
+00:02:40,640 --> 00:02:46,000
+ una función matemática que pueda representar el comportamiento de ciertos valores numéricos
+
+31
+00:02:46,000 --> 00:02:49,880
+ que uno poseen, entonces yo tengo los valores numéricos y quiero ver que comportamiento tiene,
+
+32
+00:02:49,880 --> 00:02:55,000
+ en eso lo hago a través de una regresión. Después está el clastering, el clastering tiene que
+
+33
+00:02:55,000 --> 00:03:00,280
+ ver con dos posibilidades. Por un lado, el ver como conviene agrupar un determinado conjunto
+
+34
+00:03:00,280 --> 00:03:04,920
+ de datos que uno tiene de elementos que uno tiene y se bueno, como convendría agruparlos.
+
+35
+00:03:04,920 --> 00:03:09,760
+ Pero también uno lo que tiene que hacer en el clastering, también puede hacer es identificar
+
+36
+00:03:09,760 --> 00:03:16,000
+ los grupos de elementos con características civilales, o sea, una puede decir clasteriza
+
+37
+00:03:16,000 --> 00:03:22,400
+ pero agruparlos en tres grupos o identificar a los que sean parecidos y generarme vos los
+
+38
+00:03:22,400 --> 00:03:27,280
+ grupos. Bien, después por otro lado están las reglas de asociación. Y acá hay un ejemplo
+
+39
+00:03:27,280 --> 00:03:32,840
+ típico el que comentaban que habiendo estudiado el comportamiento de compradores dentro
+
+40
+00:03:32,840 --> 00:03:38,240
+ de los supermercados, testaciones de servicio, habian identificado que aquellas copras que realizaban
+
+41
+00:03:38,240 --> 00:03:44,680
+ personas del sexo masculino pasada, pasada una hora de la noche y que vinculaban la compra
+
+42
+00:03:44,680 --> 00:03:50,620
+ de pañales descartables, se veían también la compra de la tas de cerveza, con lo cual,
+
+43
+00:03:50,620 --> 00:03:54,560
+ dentro de la exposición de esos locales, lo que habían hecho era poner los pañales
+
+44
+00:03:54,560 --> 00:03:58,880
+ y pegado en la tas de cerveza. Uno hace imple vista, no le encuentre relaciona
+
+45
+00:03:58,880 --> 00:04:04,480
+ alguna y sin embargo, a través de determinadas técnicas, propias de laía, logran encontrar
+
+46
+00:04:04,480 --> 00:04:10,040
+ estas asociaciones que no estaban definidas previamente. Otro tipo de actividades
+
+47
+00:04:10,040 --> 00:04:15,400
+ son las detecciones de anomalías. Y esto es cuando uno tiene identificado un comportamiento,
+
+48
+00:04:15,400 --> 00:04:20,880
+ un conjunto de comportamientos comunes y se sucede frente a alguna acción, un comportamiento
+
+49
+00:04:20,880 --> 00:04:26,480
+ fuera de este conjunto de lo que se determina normalidades, ahí poder identificar que
+
+50
+00:04:26,480 --> 00:04:33,720
+ capas esa es alguna situación que no está funcionando de manera correcta. El típico ejemplo
+
+51
+00:04:33,720 --> 00:04:38,720
+ es el de las compras con la identificación de fraudes con la tarjeta. Yo tengo un conjunto
+
+52
+00:04:38,720 --> 00:04:44,280
+ determinado de consumo comunes, a veces aplicados a distintos clientes, según el
+
+53
+00:04:44,280 --> 00:04:48,840
+ comportamiento que vos tengas, va a veces en general. Hay algunas regas, algunas anomalías,
+
+54
+00:04:48,840 --> 00:04:55,080
+ por ejemplo, que detectan que consumos muchicos de estaciones de servicio, dos consumos
+
+55
+00:04:55,080 --> 00:05:01,880
+ chicos que se dan, a veces son los predecesores de actividades de fraudes.
+
+56
+00:05:01,880 --> 00:05:08,120
+ Entonces, tenemos estos tipos y hay otros tipos más de acciones. Entonces, bueno, los de optimización
+
+57
+00:05:08,120 --> 00:05:12,520
+ encontrando la función de que va a definición minimice, la clasificación deberá que
+
+58
+00:05:12,520 --> 00:05:18,280
+ clase corresponde a todos o más, clases corresponde a un elemento, la predicción, el tratar
+
+59
+00:05:18,280 --> 00:05:23,240
+ de determinar un comportamiento a futuro, con un grado de incertidumbre, la reacción de encontrar
+
+60
+00:05:23,240 --> 00:05:28,240
+ la función matemática, el cláctering y el desficando grupo de elementos con características
+
+61
+00:05:28,240 --> 00:05:34,760
+ similares, las reglas de asociación que va a ser una inferencia de condiciones que van a poder
+
+62
+00:05:34,760 --> 00:05:39,560
+ representar o manifestar una relación existente entre algunas características, que a veces no
+
+63
+00:05:39,560 --> 00:05:43,760
+ se descubren a simblerita. Y la detección de anomalías, como habíamos visto con este tema
+
+64
+00:05:43,760 --> 00:05:48,200
+ del conjunto y el elemento que tiene comportamientos diferente al resto.
+
+65
+00:05:48,200 --> 00:05:54,640
+ Todo esto es lo que uno podría hacer es construir este modelo. Yo les vamos a mostrar con el ejemplo
+
+66
+00:05:54,640 --> 00:06:00,920
+ que habíamos visto antes. Entonces, por ejemplo, cuando habíamos visto que era uno de los objetivos
+
+67
+00:06:00,920 --> 00:06:06,360
+ era recomendar a los clientes existentes productos similares a los comprados. Y otra,
+
+68
+00:06:06,360 --> 00:06:10,520
+ recomendar a los clientes nuevos productos de guarda sus características. Entonces, bueno,
+
+69
+00:06:10,520 --> 00:06:15,240
+ vamos a pensar con el objetivo número 1. Entonces, bueno, la pre-condición es que el cliente
+
+70
+00:06:15,240 --> 00:06:19,880
+ está registrado, ya tiene compras realizadas en la web, y la poscondición es que
+
+71
+00:06:19,880 --> 00:06:25,400
+ identifican productos recomendados. Entonces, bueno, acá tenemos una tarea, fíjense que la
+
+72
+00:06:25,400 --> 00:06:30,600
+ tarea tiene un propósito y identificar los grupos de clientes considerando el historial
+
+73
+00:06:30,600 --> 00:06:36,840
+ de compras que habíamos visto que lo teníamos, la entrada es el histórico de compras, la actividad,
+
+74
+00:06:36,840 --> 00:06:42,440
+ la acción que vamos a hacer es un clácterín y la salida van a ser los grupos clácterizados
+
+75
+00:06:42,440 --> 00:06:49,960
+ por un por producto. Entonces, bueno, así que vamos a ir haciendo con las otras tareas, fíjense
+
+76
+00:06:49,960 --> 00:06:54,360
+ y identificar a los clientes y identificar los grupos de productos similares y determinar
+
+77
+00:06:54,360 --> 00:06:58,920
+ los productos que el cliente podría comprar. Cada uno de estos con sus centradas fíjense
+
+78
+00:06:58,920 --> 00:07:06,480
+ con las distintas acciones y las salidas. Lo vamos a ver también con el objetivo número 2,
+
+79
+00:07:06,480 --> 00:07:12,600
+ y de recomendar a los clientes nuevos productos de acuerdo a sus características, con lo cual,
+
+80
+00:07:12,600 --> 00:07:17,880
+ en ese contexto, fíjense que la precondición es que el cliente registrado todavía no tiene
+
+81
+00:07:17,880 --> 00:07:22,880
+ compras realizadas en el sitio web. Y bueno, como pocos condiciones, identificar los productos
+
+82
+00:07:22,880 --> 00:07:30,720
+ recomendados. A partir de ahí, fíjense las, los distintos propósitos y identificar los
+
+83
+00:07:30,720 --> 00:07:36,160
+ grupos de clientes con características similares y identificar los grupos de productos similares
+
+84
+00:07:36,160 --> 00:07:41,080
+ y determinar los productos que el cliente podría que en el comprar. Entonces, mediante
+
+85
+00:07:41,080 --> 00:07:48,800
+ esta formalización, lo que no puede es ya tener identificados y formalizadas a partir
+
+86
+00:07:48,800 --> 00:07:55,360
+ de lo objetivo, las distintas tareas. Cerrando todo esta primera fase de identificación
+
+87
+00:07:55,360 --> 00:08:00,720
+ del problema, vimos que el proceso propuesto lo que busca es el visitar los requerimientos,
+
+88
+00:08:00,720 --> 00:08:07,480
+ comprenderlos, articularlos y formalizarlos. Una gráfica posible de este proceso para que
+
+89
+00:08:07,480 --> 00:08:12,080
+ ustedes vieran, para que ustedes vean, todas las interconocciones que tienen, acá tienen
+
+90
+00:08:12,080 --> 00:08:17,160
+ las distintas actividades que fomos viendo en los distintos vídeos, cuando necesitamos
+
+91
+00:08:17,160 --> 00:08:22,080
+ los requerimientos venían los requerimientos iniciales, para que no los pueda comprender y generar
+
+92
+00:08:22,080 --> 00:08:26,520
+ los modelos conceptuales en la articulación y identificada, nos viene el problema y si
+
+93
+00:08:26,520 --> 00:08:33,240
+ era viable y la alcance y después en la formalización y ya identificamos los componentes.
+
+94
+00:08:33,240 --> 00:08:37,960
+ Fíjense que uno habla de los modelos del sistema inteligente, a partir de los cambios
+
+95
+00:08:37,960 --> 00:08:43,760
+ también uno puede recibir modificaciones. Pero bueno, es un proceso iterativo porque uno
+
+96
+00:08:43,760 --> 00:08:49,040
+ ya empieza a tener conocimiento requerimientos más detallados, etcétera, hasta que finaliza
+
+97
+00:08:49,040 --> 00:08:56,480
+ con esta fase y vamos a comenzar en el próximo vídeo que va a hablar sin tiá respecto de la
+
+98
+00:08:56,480 --> 00:09:02,200
+ próxima fase. Así que bueno, se haya muchísimas gracias y nos vemos en el próximo vídeo.
+
+99
+00:09:02,200 --> 00:09:02,760
+ Hasta luego.
+

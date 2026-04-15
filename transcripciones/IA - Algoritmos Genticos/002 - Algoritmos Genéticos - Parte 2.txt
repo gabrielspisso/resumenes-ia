@@ -1,0 +1,158 @@
+ Hola, soy María Florencia Pollo y vamos a continuar con el video explicativo de
+ algoritmos genéticos. Bien, habíamos planteado la usted terminados conceptos,
+ hay hemos hablado de determinados conceptos de la teoría de la evolución,
+ y ahora vamos a ver cómo se paran con él con los algoritmos genéticos. Bien,
+ cuando hablamos del ecosistema, cuando estamos hablando del ecosistema en este
+ ambiente donde estos individuos, creo que encontrar un individuo que cumple con
+ los requisitos para poder sobrevivir y estar adaptado, estamos hablando
+ cuando hablamos del ecosistema de la ambiente estamos hablando del problema que
+ queremos resolver. Yo quiero encontrar ningún grupo de personas, una excelente
+ persona para correr una carrera, quiero encontrar pero capaz de este capaces la
+ persona de quiz, sin embargo, capaz de lo que quiero buscar es el que mejor se desempeño
+ matemática va a ser otro, depende del problema, se conjunto de individuos, si van a ser
+ buenos o malos. Después tengo cada individuo que es una posible solución son todos estos
+ candidatos a hacer solución, después por otro lado tengo lo que se conoce como
+ genotipo o cromosoma, que es la descripción de la solución, un individuo, por ejemplo,
+ Florencia va a tener una información, entonces, pasar con una cadena donde
+ vamos a poder ir ubicando los datos, los attributes que describen a esa solución.
+ Después vamos a hablar de un gen, un gen es una característica o a tributo que va a estar formado
+ por más de una posición, a la no vamos a ver con un con un ejemplo y después vamos a hablar
+ del fenotipo que se apuera en que yo decía era lo que instantiaba, es lo que se conoce
+ como la función de aptitud, esa que ya funciona, aplicada a los individuos que lo que
+ me va a dar es cuán bueno es para, cómo califica para, cómo califica Florencia para una
+ competencia de gimnasia, cómo califica Florencia para un examen de inglés, va a tener que
+ ver con el problema y va a tener que ver también con cómo define la solución.
+ Bien. Ahora les presento que te jolan, bueno, les diría que no está mucho mejor
+ que yo, pero es lo que hay, jolan para el año 75, propone es la, la primer persona que
+ propone la estructura de una algoritmo gen, digo que si ustedes no es muy simple la estructura
+ de una algoritmo genético, miremoslo una una función que genera la población inicial,
+ se hace ahora vamos a ir viendo la selección, el cruzamiento, la mutación, el criterio
+ de paro que existí sigo ciclando, no? Si no paro vuelvo a caer un bucle y después si el criterio
+ de paro se cumple salvo y tengo la población fin, cosa es importante esperar a dejar
+ en clara. Cuando yo paso por todo esto, por cada vez que ciclo lo llamo que doy una vuelta.
+ Y cada vez que el criterio de paro se cumple y salvo, se dice que hice una corrida.
+ Esto se los marco porque la bibliografía a veces consiste en el espaterial, algunos
+ lo topan de una manera a otros de otra y a veces hasta la misma literatura no es muy clara.
+ A nosotros que estamos viendo una cosa simple que queremos que ustedes puedan empezar
+ a entender este tipo de diarquitecturas para que queden claro de más cuando hablamos
+ en los sexamenes, hablamos acá de vuelta o de ciclos y cuando salimos por acá hablamos
+ de una corrida. Entonces una corrida va a tener muchas vueltas o muchos ciclos pero uno va
+ a ser varias corridas de una algoritmo genético. Está bien acá les presentes a la algoritmo
+ genético. Bien, vamos a pagar. Perfecto. Bien, vamos a mostrarles que deberíamos
+ definir nosotros acá y me corroquen. Que deberíamos nosotros definir cuando hablamos que
+ deberíamos identificar cuando empezamos a trabajar con una algoritmo genético.
+ Pero tenemos que identificar el centro del cromo soma, vamos a tener que identificar el
+ cromo soma va a ser una cadena de bits donde vamos a tener que identificar qué porción
+ de esta cadena de bits va a identificar algún gen. Dentro de cada gen o sea en cada
+ cada gen le vamos a atrimuir una carácterística. Fíjense para que queden claro que no todos
+ los genes tienen que tener la misma algitud. Y esto tiene que ver, nosotros generalmente
+ vamos a trabajar con cromosomas dinarios y esto va a tener que ver con la cantidad de
+ valores que puede tomar esa carácterística. Su ponganse que fue lo vamos a ver con un ejemplo
+ que fuera es y está en sentido o apagado. Entonces que va a ser, suponganse el 0, 0, 0,
+ 1 o podemos hacer 0, 1 y 1, 0, pero entonces con dos posiciones no salcancos. A mí te
+ es que sea el mejor tomamos los colores del semáfono, a tener que tener más posiciones.
+ Pues por otro lado vamos a tener que definir la función de ápito de lo que conociamos
+ como fenotipo. Es esto que me va a permitir instanciar y a partir de ahí decir cuán
+ apto es este individuo para este determinado tipo de problema. La función de ápito es una
+ función que se le aplica al cromosoma y lo que me da es un número real. Esta función generalmente
+ es una función compleja, muchas veces uno utiliza funciones que hay en la literatura y muchas
+ otras veces cuando está definiendo un problema muy complejo, puede recurrir a una persona
+ de la área de matemática para que lo ayude a representar la función real. Bien, hablando
+ de esto pero hay que decorar un cachito. ¿Qué pasa con los algoritmos genéticos? ¿Cuánto
+ no habladó un algoritmo genético general? Una frase que a mí me encantó una vez que me lo
+ precorna hace mucho tiempo decía que la algoritmo genético navega en una sabana de soluciones
+ y es esto justamente. Ustedes lo que van a hacer es ustedes tienen todo el universo que son
+ todas estas posibles soluciones por eso las combinaciones de genes, ¿no? Que acá son como
+ si fueran dos genes y uno es como si fuera una política que va pasando, va pasando y van
+ analizando estas distintas soluciones y puede que si uno viene analizando, por ejemplo, supongo
+ que viene por acá, llega un valor y después este valor empieza a década, entonces uno dice
+ "Esta es la mejor solución". Sin embargo eso no sería cierto porque miren soluciones
+ mucho mejor es por acá. Uno se podría quedar clavado de lo que se conoce como un máximo
+ local. Lo que hace el algoritmo genético es ir saltando de un lugar a otro y esto. Lo permite
+ que gracias a los operadores que tienen que ya los vamos a ir viendo y esto lo que
+ me permite en distintas corridas es ir teniendo distintos valores y yo después con muchas
+ corridas podrán encontrar el mejor valor que yo haya encontrado de esta corrida que nuevamente
+ vale aclarar no significa que sea el mejor valor del universo. Porque es más, muchas veces
+ los algoritmos genéticos se utilizan para universos y fin. Bien, le mostramos acá ahora
+ a dónde me volvio para el nuevo electrónica. Me voy por acá. Les mostramos para que vean
+ una deemos, como se va a dándola las distintas cordias, probamos primero con un random
+ search, para que vean miren casi más cable la pantalla. Acá tienen secada vuelta por
+ ese simple todo esto es una corrida, de cada vuelta el valor máximo y el valor mínimo y miren
+ como va cubriendo todo el espectro. Esto es prácticamente como si fue una búsqueda exáutica.
+ Y en particular lo vamos a correr con un algoritmos genético, si ustedes se fijan terminamente.
+ Si lo corremos con un algoritmos genético, ven como no va a reportar y miren acá nuevamente
+ en las distintas vuelta, valores máximos mite, valores máximos y valores mínimos, miren
+ como se estabiliza los valores máximos, los valores mínimos en pieza en bajos después se mantienen
+ y no correr, no recorre, no buscere exactamente en todo el algoritmos.
+ Saber para poder hablar para que vuelvo a correr la chica, solo para María Rios.
+ Vamos a ver un ejemplo. El famoso es un problema que se puede resolver por otra manera
+ que no sea con un algoritmos genético, pero es más que nada para que puedan ver como
+ definir este tema del genotipo, el fenotipo y todo. Se los leo, se la certijo
+ de insten, tenemos 5 casas de 5 colores diferentes en cada una de ellas vivió una persona
+ de una nacionalidad diferente. Cada uno de los dueños ve una bebida diferente, fumo una
+ marca de cigarrillas diferentes y tiene una mascota diferente. Se tienen las siguientes
+ pitas. Fíjense que acá, el británico vive en la casa roja, el suico tiene un perro,
+ el danesto mate, la casa verde está la izquierda de la casa blanca, el dueño de la casa
+ verde toma café, le sabran de marcas de cigarrillas y les han un conjunto de pistas,
+ el que fumabrens tiene un vecino que toma agua y lo que les pregunta después es
+ y en ese dueño del pesecito, o sea deberíamos encontrar que combinación se da de todas estas
+ opciones que cumpla con todas estas pistas y en ese contexto ver aquí en la pertenece el
+ pesecito. Para eso, primero, para poder implementar esto con un resolver esto con un algoritmo
+ genético, vamos a definir el promoso. Para eso, primero, nuevamente me corran nada más que
+ para variarlos. Primero, lo que vamos a hacer es definir todos los conceptos que hay, que para
+ nosotros esto es una tarea muy simple y gente que hablamos de un dueño que el dueño tiene una
+ casa que fuma una marca de cigarrillas, que tiene una mascota y que bebe una bebida.
+ A partir de ahí, vamos a ver qué variables identifican a estos conceptos. Entonces, respecto
+ del dueño, vamos a identificarlo en relación a la adacionaridad, la casa en donde
+ siubica, primero, se gobernar, tercera cuánto quinta, el color de la casa, el tipo de
+ vivir del nombre del cigarrillo y el tipo de mascota, esto es donde salió del enunciado
+ que yo tengo. A partir de ahí, le vamos a poner todos los valores que encontramos, los
+ valores donde están en las pistas. Entonces, en algún momento de haberlo un británico,
+ su escundanez, un alemán y completamos todos estos valores. Está? A partir de ahí, nuevamente
+ me muevo para variarlos, otro rato, si se quedaban tranquilos. Nuevamente, en este caso,
+ hablamos de un cromosoma compuesto. Porque la solución va a ser aquella combinación
+ de distintos dueños, el británico, el sueco, el danés de la alemán y el Noruego. Y ahí
+ vamos a tener que ver, en donde está la casa de que colorés, que tipo de bebida, que
+ nombre de cigarrillo y que tipo de mascota, ven que lo que tenemos primero es como si fuera
+ con je principal, que va identificando después la combinación, y después hay dentro de cada uno,
+ vamos a tener combinado todo esto. Lesamos este ejemplo justamente porque es un poquito más
+ complejo para que vean cómo se trabajaría con un cromosoma compuesto. Está, cómo sería
+ un valor posible. Entonces, son los genes auxiliares. Entonces, lo que acá les muestras,
+ a donde podrá parar yo para un destaca, para otro lado. Fíjense que entonces, una solución
+ posible tendría el británico, el sueco, el danés a la alemán y al Noruego y por cada uno
+ de estos, todos los valores, a dónde se ubica la casa, qué color tiene la casa, la bebida,
+ el tipo, la marca de cigarrillo y la mascota, de dónde sale en todos esos valores y de
+ ver la cantidad de instanciaciones que tengo posibles para tener, cada una de estas variables,
+ y a partir de ahí asignarlo un valor en binario.
+ Acá necesitamos asignando los valores que hicimos los distintos, los distintos valores que
+ pueden tomar cada baña. Un ejemplo, acá tendríamos un cromosoma, los posimos asignos
+ y son tal para que lo puedan ver, y después tenemos por el británico, recuerda, cada una
+ de todas estas estructuras. Entonces, vamos a pensar en un ejemplo una solución posible.
+ Acá tendríamos una solución posible que sería un individuo de la población decir que
+ británico está en la quinta casa, la casa de color blanco, toma cerveza, fumada ángil y tiene
+ un caballo. El sueco lo mismo pela obra. Yo diría, si esta la solución que, el dan es,
+ el dan es, viene al pecesito. Entonces, como podríamos ver, si esta solución es viable.
+ Tenemos que ver si cumple con las británicos, no figura que vive en la casa roja, no
+ se vuelve, porque en el británico donde está, el británico, la casa es de color blanco,
+ pero en que esa pista no se da, y así sucesivamente, el cual podríamos decir esa solución
+ no es viable. Para eso, luego, vamos a tener que definir, ahí le mostramos un ejemplo del
+ profesor más, además, teníamos que definir para el algoritmo genético en la función de
+ aptitud. Para eso, tenemos que analizar la aptitud. Para analizar las pistas, con un lado tenemos
+ que determinar las condiciones que debe cumplir esa solución. Esa condiciones que vendría
+ a hacer las pistas, van ir aumentando el valor de la función de aptitud. Por otro lado,
+ las restricciones no pueden cumplir la solución de la van a ir disminuyendo. Por otro lado,
+ bien lo que hay que hacer es analizar la estructura del promosoma definido, que soba determinar
+ combinaciones simbálidas en los genes, y deberían penalizar el valor de aptitud. Por ejemplo,
+ a ver si les podemos traer. Por ejemplo, un promosoma que tenga un o uno o uno o uno
+ o uno o cero en ubicación de la casa no es ninguna casa posible. Entonces, eso debería
+ debería penalizarlo. Está porque no son valores de, como son los valores posibles que
+ pueden tomar las gallanas. A eso se refería con, ¿cuánto en mente?
+ Bien, y además, cuando uno define la función de aptitud, lo que tiene que hacer es determinar
+ la operatoria para poder interpretar la estructura del promosoma, se sabe el uno uno
+ o cero o uno, en la que significa. Y después, el poder calcular el valor de aptitud,
+ sea poder aplicar la función. Y a partir de ahí empezaremos con la ejecución del algoritmo
+ técnico. Acá me pase, le traté a apurar un poquito para no aborrer los tanto, llegados
+ 15 minutos. Así que bueno, ahora vamos a arrancar con el algoritmo genético y los distintos
+ los operadores. Así que bueno, nos queda nuestro ejercicio del pesecito y a partir de
+ explicarles cómo avanza en los algoritmos genéticos vamos haciendo. Espero que les aburrino,
+ muchísimas gracias y nos vemos en un alito. Hasta luego.

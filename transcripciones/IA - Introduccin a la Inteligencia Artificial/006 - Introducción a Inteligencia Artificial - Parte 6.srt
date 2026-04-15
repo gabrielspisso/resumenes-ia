@@ -1,0 +1,716 @@
+1
+00:00:00,000 --> 00:00:04,600
+ Hola, soy María Florencia Pollo, este es el sexto video,
+
+2
+00:00:04,600 --> 00:00:09,280
+ ya creo que se lultimos de esta tirada de presentaciones,
+
+3
+00:00:09,280 --> 00:00:12,920
+ vinculado con lo que es la introducción de la inteligencia artificial.
+
+4
+00:00:12,920 --> 00:00:16,800
+ Habíamos estado viendo que pasaba en los distintos países,
+
+5
+00:00:16,800 --> 00:00:23,040
+ como fueron encarando esta tecnología,
+
+6
+00:00:23,040 --> 00:00:27,480
+ como la fueron implementando, como las tan manejando estrategicas
+
+7
+00:00:27,480 --> 00:00:35,480
+ y que políticamente desde el gobierno, la industria y la tecnología en sí misma.
+
+8
+00:00:35,480 --> 00:00:39,480
+ Por otro lado, otro tema que es muy interesante resaltar
+
+9
+00:00:39,480 --> 00:00:45,480
+ que se puede ver acá claramente, son la cantidad de publicaciones
+
+10
+00:00:45,480 --> 00:00:50,480
+ que si se fijan en los distintos continentes en los distintos países,
+
+11
+00:00:50,480 --> 00:00:54,680
+ y en los continentes han ido siempre entregiendo esto para que vean,
+
+12
+00:00:54,680 --> 00:01:00,280
+ perdaderamente la UG, y como la inteligencia artificial,
+
+13
+00:01:00,280 --> 00:01:05,680
+ va teniendo mayor presencia en todos los ámbitos, en el ámbito científico también.
+
+14
+00:01:05,680 --> 00:01:11,480
+ En el caso particular de scopo bueno que es un repositorio de información
+
+15
+00:01:11,480 --> 00:01:15,080
+ muy interesante, muy importante y de muy buena calidad,
+
+16
+00:01:15,080 --> 00:01:18,080
+ en lo que respecto a la información científica,
+
+17
+00:01:18,080 --> 00:01:21,680
+ mi circulado a la distinta subcategoria distintos temas
+
+18
+00:01:21,680 --> 00:01:23,880
+ que tratan de inteligencia artificial,
+
+19
+00:01:23,880 --> 00:01:27,880
+ si se fijan, tiene en la línea gris que manija los totales,
+
+20
+00:01:27,880 --> 00:01:29,880
+ los distintos temas, Machine Learning,
+
+21
+00:01:29,880 --> 00:01:35,880
+ Figence, Razonamiento Proarítico, como es uno de los que se encuentran más altos,
+
+22
+00:01:35,880 --> 00:01:39,880
+ miren cómo venían a partir del año 2000,
+
+23
+00:01:39,880 --> 00:01:42,880
+ como todos los temas juntos, y después se empieza a dispararse
+
+24
+00:01:42,880 --> 00:01:48,880
+ en función de las distintas tecnologías que capacidad de implementación
+
+25
+00:01:48,880 --> 00:01:52,880
+ y de solución de problemas concretos, esto le va dando mayor presencia,
+
+26
+00:01:52,880 --> 00:01:55,880
+ en todo lo que son publicaciones.
+
+27
+00:01:55,880 --> 00:01:59,880
+ Para ir finalizando hay un conjunto de consideraciones
+
+28
+00:01:59,880 --> 00:02:05,880
+ para pensar relacionados con la inteligencia artificial.
+
+29
+00:02:05,880 --> 00:02:11,880
+ Primero tenemos que ir con cuidado saber que la inteligencia artificial
+
+30
+00:02:11,880 --> 00:02:16,880
+ implica una revolución desde un aspecto tecnológico
+
+31
+00:02:16,880 --> 00:02:22,880
+ que hay cambios que estos cambios son evidentes, estos cambios sociales,
+
+32
+00:02:22,880 --> 00:02:26,880
+ son imposibles de negarlos, eso generalmente nos asusta
+
+33
+00:02:26,880 --> 00:02:31,880
+ cualquier lugar que nos quita de nuestro espacio,
+
+34
+00:02:31,880 --> 00:02:36,880
+ de nuestra ubicación de confort, genera angustia, insertidumbre
+
+35
+00:02:36,880 --> 00:02:39,880
+ y, bueno, la ya no queda excenta de esto.
+
+36
+00:02:39,880 --> 00:02:45,880
+ Obviamente que la inteligencia artificial está tecnología implica cambios
+
+37
+00:02:45,880 --> 00:02:51,880
+ en la vida de los individuos, hay que aprender a convivir con ellos
+
+38
+00:02:51,880 --> 00:02:57,880
+ tampoco hay que fantasiar o imaginar que las cosas van a ser
+
+39
+00:02:57,880 --> 00:03:00,880
+ ni tremendamente malas, ni tremendamente buenas,
+
+40
+00:03:00,880 --> 00:03:04,880
+ hay que frenar un poco con la fantasía,
+
+41
+00:03:04,880 --> 00:03:09,880
+ y hay que ser muy claro, muy concreto tener normas,
+
+42
+00:03:09,880 --> 00:03:16,880
+ regulamentaciones y reflexionar claramente sobre la errupción
+
+43
+00:03:16,880 --> 00:03:19,880
+ de esta tecnología, los cambios que puede traer,
+
+44
+00:03:19,880 --> 00:03:22,880
+ más que nada para que esto no se vaya a descontrol
+
+45
+00:03:22,880 --> 00:03:26,880
+ y el día de mañana después lloremos por cosas
+
+46
+00:03:26,880 --> 00:03:30,880
+ que nosotros mismos hemos ocupado el provocado.
+
+47
+00:03:30,880 --> 00:03:33,880
+ Por otro lado, bueno, si se fijan ahí, la raza humana no se va
+
+48
+00:03:33,880 --> 00:03:37,880
+ extindir con la integración de la inteligencia artificial,
+
+49
+00:03:37,880 --> 00:03:46,880
+ los robots no sienten por el momento ni dentro de los planes cercanos,
+
+50
+00:03:46,880 --> 00:03:50,880
+ no van a provocar la extinción de la raza humana,
+
+51
+00:03:50,880 --> 00:03:53,880
+ que eso nos encargamos nosotros solitos,
+
+52
+00:03:53,880 --> 00:03:56,880
+ la emoción por el momento es algo que queda
+
+53
+00:03:56,880 --> 00:03:59,880
+ bastante reservado para los seres vivos,
+
+54
+00:03:59,880 --> 00:04:03,880
+ y esto que les decía en realidad siempre estuvimos en peligro
+
+55
+00:04:03,880 --> 00:04:07,880
+ de extinción, no es que ahora es mucho más complicado,
+
+56
+00:04:07,880 --> 00:04:11,880
+ bueno, en estos momentos la verdad el comentario
+
+57
+00:04:11,880 --> 00:04:13,880
+ es bastante complejo, bueno,
+
+58
+00:04:13,880 --> 00:04:17,880
+ por otro lado, tenemos que aprender a trabajar en equipo,
+
+59
+00:04:17,880 --> 00:04:22,880
+ tenemos que encontrar en la inteligencia artificial,
+
+60
+00:04:22,880 --> 00:04:26,880
+ una ayuda y una competencia, nos va a permitir,
+
+61
+00:04:26,880 --> 00:04:29,880
+ nos va a facilitar la resolución de problemas complejos,
+
+62
+00:04:29,880 --> 00:04:32,880
+ permite reducir tiempo el costo,
+
+63
+00:04:32,880 --> 00:04:35,880
+ todo lo que esto más de decisión es producción,
+
+64
+00:04:35,880 --> 00:04:37,880
+ tareas que se pueden automatizar,
+
+65
+00:04:37,880 --> 00:04:42,880
+ tareas que necesitan a lo mejor de cierta inteligencia
+
+66
+00:04:42,880 --> 00:04:45,880
+ o cierta hurística en el funcionamiento,
+
+67
+00:04:45,880 --> 00:04:49,880
+ se pueden resolver muy fácilmente con inteligencia artificial,
+
+68
+00:04:49,880 --> 00:04:51,880
+ dejando a leer cuando se expertos,
+
+69
+00:04:51,880 --> 00:04:55,880
+ la posibilidad de hacer el trabajo
+
+70
+00:04:55,880 --> 00:04:59,880
+ hoy por hoy es exclusivo del humano,
+
+71
+00:04:59,880 --> 00:05:01,880
+ y bueno, para poder tomar,
+
+72
+00:05:01,880 --> 00:05:06,880
+ buenas decisiones es importante tener buenos datos,
+
+73
+00:05:06,880 --> 00:05:10,880
+ sobre esas cosas hay que prestar bastante atención
+
+74
+00:05:10,880 --> 00:05:13,880
+ y bueno, para actividades estandarizadas o rutinarias,
+
+75
+00:05:13,880 --> 00:05:16,880
+ laía funciona más que vía.
+
+76
+00:05:16,880 --> 00:05:20,880
+ En verdad, la inteligencia artificial,
+
+77
+00:05:20,880 --> 00:05:24,880
+ va a modificar y modificar el trabajo de los individuos,
+
+78
+00:05:24,880 --> 00:05:26,880
+ hay muchas tareas,
+
+79
+00:05:26,880 --> 00:05:28,880
+ hoy por hoy te pueden ser resuelta,
+
+80
+00:05:28,880 --> 00:05:32,880
+ mediante el uso y la implementación de tecnología,
+
+81
+00:05:32,880 --> 00:05:38,880
+ no creo que esto sea muy distinto
+
+82
+00:05:38,880 --> 00:05:42,880
+ a lo que se sufrió en su momento cambiando la comparación,
+
+83
+00:05:42,880 --> 00:05:44,880
+ en lo que fue la primera revolución industrial,
+
+84
+00:05:44,880 --> 00:05:47,880
+ en las distintas revoluciones que hemos tenido,
+
+85
+00:05:47,880 --> 00:05:49,880
+ la capacidad de adaptación,
+
+86
+00:05:49,880 --> 00:05:51,880
+ va a ser lo que nos va a marcar,
+
+87
+00:05:51,880 --> 00:05:54,880
+ el llevar mejor o no,
+
+88
+00:05:54,880 --> 00:05:57,880
+ este tipo de cambios que son inminentes,
+
+89
+00:05:57,880 --> 00:06:00,880
+ que no son imposibles de negar,
+
+90
+00:06:00,880 --> 00:06:03,880
+ la sociedad no sufre,
+
+91
+00:06:03,880 --> 00:06:04,880
+ los distintos países,
+
+92
+00:06:04,880 --> 00:06:08,880
+ según como establecant distintas políticas,
+
+93
+00:06:08,880 --> 00:06:12,880
+ el costo de adaptación va a ser un poquito más complicado.
+
+94
+00:06:12,880 --> 00:06:15,880
+ distintos tipos de mano de obra va a ser reemplazada por robot,
+
+95
+00:06:15,880 --> 00:06:17,880
+ yo estoy buscando uno que el planche,
+
+96
+00:06:17,880 --> 00:06:20,880
+ que detestó blanchar, que se llama ya algunos,
+
+97
+00:06:20,880 --> 00:06:22,880
+ pero no yo quiero uno que descuelga,
+
+98
+00:06:22,880 --> 00:06:24,880
+ es planche doble y guarde,
+
+99
+00:06:24,880 --> 00:06:27,880
+ pero bueno, ese tipo de actividades deberían
+
+100
+00:06:27,880 --> 00:06:30,880
+ poder ser reemplazadas por robots,
+
+101
+00:06:30,880 --> 00:06:35,880
+ pero a su vez que la inteligencia artificial
+
+102
+00:06:35,880 --> 00:06:38,880
+ y rumbe en este tipo de trabajo general,
+
+103
+00:06:38,880 --> 00:06:41,880
+ por otro lado también de manera proportional,
+
+104
+00:06:41,880 --> 00:06:43,880
+ nuevos puestos de trabajo.
+
+105
+00:06:43,880 --> 00:06:48,880
+ Hay trabajos que han aparecido estos últimos años,
+
+106
+00:06:48,880 --> 00:06:50,880
+ vinculados con la tecnología general,
+
+107
+00:06:50,880 --> 00:06:53,880
+ yo siempre le digo a los alumnos de primero,
+
+108
+00:06:53,880 --> 00:06:55,880
+ no ustedes que ya están más grandes,
+
+109
+00:06:55,880 --> 00:06:58,880
+ pero yo estoy formando profesionales
+
+110
+00:06:58,880 --> 00:07:01,880
+ para puestos de trabajo que hoy no existen,
+
+111
+00:07:01,880 --> 00:07:04,880
+ porque estos chicos van a ir a trabajar en unos años,
+
+112
+00:07:04,880 --> 00:07:08,880
+ entonces verdaderamente sabemos de este cambio
+
+113
+00:07:08,880 --> 00:07:12,880
+ y hay que tratar de manejarlo de la mejor manera posible.
+
+114
+00:07:14,880 --> 00:07:15,880
+ Y por otro lado,
+
+115
+00:07:15,880 --> 00:07:18,880
+ como último tópico para reflexionar,
+
+116
+00:07:18,880 --> 00:07:22,880
+ primero habría que pensar si es una ética o varias éticas,
+
+117
+00:07:22,880 --> 00:07:25,880
+ fueron que la ética habla de lo que está bien y de lo que está mal,
+
+118
+00:07:25,880 --> 00:07:29,880
+ y esto se percibe desde las distintas sociedades
+
+119
+00:07:29,880 --> 00:07:32,880
+ de los distintos individuos de manera diferente,
+
+120
+00:07:32,880 --> 00:07:35,880
+ si todos compartimos los mismos principios,
+
+121
+00:07:35,880 --> 00:07:37,880
+ las mismas reglas,
+
+122
+00:07:37,880 --> 00:07:42,880
+ y yo ahí les traje esta propuesta esta guía,
+
+123
+00:07:42,880 --> 00:07:44,880
+ el Parlamento de Europeo,
+
+124
+00:07:44,880 --> 00:07:48,880
+ propuso una guía ética para el uso responsable de la inteligencia artificial,
+
+125
+00:07:48,880 --> 00:07:53,880
+ y ahí les marco los principios que proponen esta guía.
+
+126
+00:07:53,880 --> 00:07:55,880
+ Fíjense que la guía,
+
+127
+00:07:55,880 --> 00:07:58,880
+ como punto número uno debe estar central en el ser humano,
+
+128
+00:07:58,880 --> 00:08:02,880
+ sea al servicio de el ser humano y su bienestar,
+
+129
+00:08:02,880 --> 00:08:05,880
+ se debe prestar atención con estos cambios
+
+130
+00:08:05,880 --> 00:08:08,880
+ a los grupos vulnerables, hablamos del trabajo,
+
+131
+00:08:08,880 --> 00:08:12,880
+ de todas estas cosas que a lo mejor nos posicionen en un lugar
+
+132
+00:08:12,880 --> 00:08:14,880
+ y dejan en desventaja,
+
+133
+00:08:14,880 --> 00:08:16,880
+ al que no tiene acceso a la tecnología,
+
+134
+00:08:16,880 --> 00:08:20,880
+ respetar los derechos fundamentales y la normativa aplicable,
+
+135
+00:08:20,880 --> 00:08:22,880
+ eso va a depender de cada país,
+
+136
+00:08:22,880 --> 00:08:27,880
+ depende de un montón de principios y pautas existentes,
+
+137
+00:08:27,880 --> 00:08:33,880
+ hay que tratar, hay que intentar que el desarrollo sea robusto y fiable
+
+138
+00:08:33,880 --> 00:08:37,880
+ y se debe trabajar con transparencia esto es fundamental,
+
+139
+00:08:37,880 --> 00:08:42,880
+ primero para poder colaborar y segundo para que esto
+
+140
+00:08:42,880 --> 00:08:45,880
+ verdad si verdaderamente percie el bienestar,
+
+141
+00:08:45,880 --> 00:08:49,880
+ no habría problema de trabajarlo de manera transparente
+
+142
+00:08:49,880 --> 00:08:54,880
+ y no debe restrijar obviamente la libertad mar.
+
+143
+00:08:54,880 --> 00:08:59,880
+ Y para terminar les dejó dos reflexiones
+
+144
+00:08:59,880 --> 00:09:03,880
+ que son como para que podamos pensar
+
+145
+00:09:03,880 --> 00:09:08,880
+ después de toda esta propuesta y de todos estos vídeos cortitos,
+
+146
+00:09:08,880 --> 00:09:12,880
+ habría que identificar cuál es son los componentes
+
+147
+00:09:12,880 --> 00:09:14,880
+ tanto éticos como sociales,
+
+148
+00:09:14,880 --> 00:09:18,880
+ que deberían identificar las grandes empresas
+
+149
+00:09:18,880 --> 00:09:21,880
+ que son las que logran generalmente estos grandes desarrollos
+
+150
+00:09:21,880 --> 00:09:25,880
+ y estas grandes propuestas para lograr un equilibrio y un desarrollo
+
+151
+00:09:25,880 --> 00:09:30,880
+ que pueda ser sostenible, sustentable, en lo que respecto a la inteligencia artificial.
+
+152
+00:09:30,880 --> 00:09:35,880
+ Teniendo en cuenta, bueno, y les poníamos el tema de la sustentabilidad,
+
+153
+00:09:35,880 --> 00:09:40,880
+ todavía existen muchas, muchas incognitas para resolver
+
+154
+00:09:40,880 --> 00:09:43,880
+ vinculadas con la inteligencia artificial,
+
+155
+00:09:43,880 --> 00:09:47,880
+ pero si está totalmente en claro que tanto los individuos
+
+156
+00:09:47,880 --> 00:09:52,880
+ como los robots podemos convivir sin ningún tipo de problemas
+
+157
+00:09:52,880 --> 00:09:57,880
+ y bueno, el paso del tiempo nos irá acompañando
+
+158
+00:09:57,880 --> 00:09:59,880
+ con la evolución de la tecnología,
+
+159
+00:09:59,880 --> 00:10:04,880
+ las propuestas de mejora de soluciones a problemas complejos
+
+160
+00:10:04,880 --> 00:10:07,880
+ y esto va a ir marcando la evolución, tanto de la tecnología
+
+161
+00:10:07,880 --> 00:10:11,880
+ y el impacto que esa tecnología va a tener en la sociedad.
+
+162
+00:10:11,880 --> 00:10:15,880
+ Así que, bueno, con esto terminamos esta primer parte,
+
+163
+00:10:15,880 --> 00:10:19,880
+ después le vamos a ir recomendando la bibliografía
+
+164
+00:10:19,880 --> 00:10:22,880
+ que antes le mandábamos a puntes de cártera,
+
+165
+00:10:22,880 --> 00:10:26,880
+ pero bueno, de esta situación, ahí les vamos a indicar.
+
+166
+00:10:26,880 --> 00:10:29,880
+ Bueno, espero que no se haya no burrido demasiado,
+
+167
+00:10:29,880 --> 00:10:31,880
+ fue nuestro primer vídeo,
+
+168
+00:10:31,880 --> 00:10:35,880
+ en nuestra primera tira serie de vídeos cortos,
+
+169
+00:10:35,880 --> 00:10:38,880
+ vamos a continuar de esta manera,
+
+170
+00:10:38,880 --> 00:10:41,880
+ si Dios quiere, ya nos vamos a ver
+
+171
+00:10:41,880 --> 00:10:46,880
+ la semana que viene en orario de clase para algún encuentro presencial,
+
+172
+00:10:46,880 --> 00:10:50,880
+ virtual, pero presencial en vivo, en realidad,
+
+173
+00:10:50,880 --> 00:10:53,880
+ les pido por favor que se cuidan mucho
+
+174
+00:10:53,880 --> 00:10:55,880
+ porque la situación está complicada,
+
+175
+00:10:55,880 --> 00:10:58,880
+ que cuidan a la familia y sobre toda la gente en elante.
+
+176
+00:10:58,880 --> 00:11:01,880
+ Les mando beso a todos y espero que por lo menos
+
+177
+00:11:01,880 --> 00:11:03,880
+ ya la próxima nos podamos ver las caras
+
+178
+00:11:03,880 --> 00:11:05,880
+ aunque sea a través de la conto.
+
+179
+00:11:05,880 --> 00:11:07,880
+ Un beso para todos y hasta luego.
+

@@ -1,0 +1,592 @@
+1
+00:00:00,000 --> 00:00:05,240
+ Hola, mi nombre es Pablo Pitel y en este vídeo vamos a hablar de los algoritmos de
+
+2
+00:00:05,240 --> 00:00:11,520
+ inducción. Esto es algoritmos, es un ejemplo clásico de los algoritmos superovisados
+
+3
+00:00:11,520 --> 00:00:18,960
+ de Machine Darwin, que tienen como función y identificar un conjunto de reglas que
+
+4
+00:00:18,960 --> 00:00:25,240
+ permiten clasificar de manera similar a los ejemplos que uno le va a dar el algoritmo.
+
+5
+00:00:25,240 --> 00:00:31,160
+ Para funcionar, estos algoritmos inducción van a necesitar que los datos
+
+6
+00:00:31,160 --> 00:00:36,880
+ están estructurados en forma de tabla. Es decir, yo voy a tener un conjunto de
+
+7
+00:00:36,880 --> 00:00:45,800
+ filas o ejemplos y un conjunto de columnas o atributos que se van a aplicar dentro
+
+8
+00:00:45,800 --> 00:00:52,640
+ de la algoritmos para identificar las reglas. En estas reglas las condiciones del
+
+9
+00:00:52,640 --> 00:00:59,080
+ antecedente, van a estar formado por los atributos de entrada, no todos algunos,
+
+10
+00:00:59,080 --> 00:01:06,840
+ eso lo va a determinar solo el algoritmo y en el consecuante vamos a tener los
+
+11
+00:01:06,840 --> 00:01:12,680
+ distintos valores de la atributo que. Siempre el atributo objetivo es uno solo,
+
+12
+00:01:12,680 --> 00:01:18,920
+ entonces siempre el consecuante va a hacer ese atributo.
+
+13
+00:01:18,920 --> 00:01:26,400
+ Esto, la identificación de las atributos de entrada y los atributos objetivos es importante
+
+14
+00:01:26,400 --> 00:01:31,880
+ de hacerlo con cuidado de acuerdo el problema que no quiere resolver, porque si uno
+
+15
+00:01:31,880 --> 00:01:37,440
+ elige más los atributos, puede ser que las reglas después no presenten utilidad
+
+16
+00:01:37,440 --> 00:01:45,520
+ para resolver. Una vez elegido todo esto, nosotros podemos aplicar el algoritmo
+
+17
+00:01:45,520 --> 00:01:50,800
+ que automáticamente nos va a definir las reglas corresponsas.
+
+18
+00:01:50,800 --> 00:01:55,520
+ Dentro de las algoritmos de inducción hay muchas formas de implementarlo, nosotros vamos
+
+19
+00:01:55,520 --> 00:02:01,760
+ a ver los algoritmos que se llaman "top down induction decision tree" o "t" de "t".
+
+20
+00:02:01,760 --> 00:02:07,600
+ Esto es algoritmo, nos van a permitir generar árboles de decisión a través de una
+
+21
+00:02:07,600 --> 00:02:15,080
+ inducción de arriba hacia abajo, para eso, el algoritmo va a utilizar con la filosofía
+
+22
+00:02:15,080 --> 00:02:23,760
+ de dividir un faraz, va a partir de un conjunto de ejemplos filas, completa.
+
+23
+00:02:23,760 --> 00:02:30,300
+ Esos ejemplos los va a ir dividiendo en sus conjuntos y a partir de esa subdivision
+
+24
+00:02:30,300 --> 00:02:35,880
+ va a ir generando las reglas que corresponden, entonces por eso se dice que va a triunfar.
+
+25
+00:02:35,880 --> 00:02:42,800
+ Y funcionamiento del procedimiento que van a aplicar estos algoritmos es bastante sencillo.
+
+26
+00:02:42,800 --> 00:02:48,680
+ Inicialmente, va a partir de un conjunto de datos "t" que va a ser el conjunto completo de ejemplos
+
+27
+00:02:48,680 --> 00:02:55,760
+ que yo voy a tener. Si ese conjunto estaba así, que no va a ser lo que va a suceder
+
+28
+00:02:55,760 --> 00:03:02,320
+ la primera vez, pero puede pasar luego, el algoritmo va a finalizar.
+
+29
+00:03:02,320 --> 00:03:08,380
+ Sin cambio, dentro de la tributo objetivo, todos los ejemplos toman el mismo valor, el
+
+30
+00:03:08,380 --> 00:03:14,200
+ algoritmo va a finalizar, pero va a generar un nodo oja, es decir, va a generar una
+
+31
+00:03:14,200 --> 00:03:22,840
+ consecuencia con el único valor que toma la tributo que va a cerrar una regla, podríamos
+
+32
+00:03:22,840 --> 00:03:31,960
+ decir. Si estas condiciones no se da va a ir por la tercera alternativa, que es empezar a ser
+
+33
+00:03:31,960 --> 00:03:38,160
+ estas subdivisiones. Para eso, lo que tiene que hacer es elegir cuál es el atributo
+
+34
+00:03:38,160 --> 00:03:43,600
+ de entrada que presenta mayor ganancia de información. Ahora, como vamos a ver la ganancia de
+
+35
+00:03:43,600 --> 00:03:50,080
+ información, se calcula utilizando diversas fórmulas. Entonces, el atributo de entrada que
+
+36
+00:03:50,080 --> 00:03:57,880
+ presenta mayor valor va a ser el atributo seleccionado a hacerla subdivicio. Entonces, por cada
+
+37
+00:03:57,880 --> 00:04:05,520
+ valor que toma, que puede tomar, es el atributo de entrada, se va a armar un subconjunto de
+
+38
+00:04:05,520 --> 00:04:11,480
+ detén. Con cada uno de esos subconjunto se vuelve a aplicar todo el procedimiento. Entonces,
+
+39
+00:04:11,480 --> 00:04:17,720
+ analizar. Si te estaba así o finalizar, si tiene un único valor en la tributo objetivo genera
+
+40
+00:04:17,720 --> 00:04:24,080
+ lado. Si no, vuelve a hacer la subdivision tomando el atributo de entrada que ahora presenta
+
+41
+00:04:24,080 --> 00:04:31,080
+ mayor ganancia. Y así va a ir ejecutando de forma recusiva hasta que el algoritmo logrará
+
+42
+00:04:31,080 --> 00:04:39,400
+ generar todas las regas. Fíjense que el procedimiento es bastante sencillo. Al momento de implementar
+
+43
+00:04:39,400 --> 00:04:48,360
+ este algoritmo, se puede llegar a para metrizar algunos situaciones, pero el formatorio rica
+
+44
+00:04:48,360 --> 00:04:54,200
+ funcionó de esta manera. Una de las cosas que se pueden para metrizar es como el calcular la
+
+45
+00:04:54,200 --> 00:05:00,800
+ ganancia de la información. Nosotros, a modo de ejemplo, les vamos a mostrar la fórmula que utiliza
+
+46
+00:05:00,800 --> 00:05:09,240
+ el algoritmo y de tres que es la silla. La ganancia de la información de la tributo objetivo para
+
+47
+00:05:09,240 --> 00:05:16,840
+ una tributo de entrada determinado se calcula como la diferencia entre la entropía y va a tener
+
+48
+00:05:16,840 --> 00:05:23,520
+ el atributo objetivo menos la entropía de la tributo de entrada contra el atributo objetivo.
+
+49
+00:05:23,520 --> 00:05:32,200
+ La entropía es lo que se considera en la tributo de la información como podríamos decir
+
+50
+00:05:32,200 --> 00:05:43,120
+ la sorpresa o la importancia que va a tener un dato para tomar una decisión. En el caso
+
+51
+00:05:43,120 --> 00:05:51,000
+ de la entropía, fíjense que se calcula usando la sumatoria por cada uno de los valores que
+
+52
+00:05:51,000 --> 00:05:58,920
+ tiene ese atributo de la aprobabilidad del valor, multiplicado por el lugar en bambá sedos de
+
+53
+00:05:58,920 --> 00:06:07,760
+ esa aprobabilidad. Esta fórmula fue definida por llanón en la teoría de la información como
+
+54
+00:06:07,760 --> 00:06:17,360
+ la fórmula de la entropía negativa para ver la importancia o la relevancia que toma un atributo para
+
+55
+00:06:17,360 --> 00:06:25,800
+ tomar una decisión. Y para agalcular la entropía de la tributo con respecto al atributo
+
+56
+00:06:25,800 --> 00:06:32,720
+ entre la correspecta de la tributo objetivo, si usa la misma fórmula pero considerando en este
+
+57
+00:06:32,720 --> 00:06:46,200
+ caso la digamos los ejemplos que van a tener el atributo objetivo con respecto al valor de
+
+58
+00:06:46,200 --> 00:06:51,720
+ la tributo entre. Ahora después lo vamos a ver con un ejemplo va a crear más claro pero
+
+59
+00:06:51,720 --> 00:06:59,360
+ de todas formas estas fórmulas uno no la tiene que modificar las va a utilizar directamente
+
+60
+00:06:59,360 --> 00:07:04,840
+ en el algoritmo que yo lo voy a tener implementación. En algunos casos, en algunas implementaciones
+
+61
+00:07:04,840 --> 00:07:12,120
+ uno puede llegar a cambiar qué tipo de fórmula utilizar, que en algunos tipos de problemas
+
+62
+00:07:12,120 --> 00:07:18,080
+ puedes llegar más a hacer más utilizar otra fórmula pero esta es la fórmula más utilizada.
+
+63
+00:07:18,080 --> 00:07:25,400
+ Bueno, como le decía vamos a ver un ejemplo de cómo se pueda aplicar eso. Para eso vamos a
+
+64
+00:07:25,400 --> 00:07:30,840
+ considerar que tengo estos tres atributos de entrada que me identifican el tipo de problema,
+
+65
+00:07:30,840 --> 00:07:38,160
+ el tipo de datos y la complejidad del problema y el atributo objetivo me va a determinar si
+
+66
+00:07:38,160 --> 00:07:45,680
+ conviene a usar o no Machine Lab. Entonces a partir de estos ejemplos de problemas con distintas
+
+67
+00:07:45,680 --> 00:07:51,480
+ tipos de datos y complejidades vamos a tratar de identificar las reglas que me van a permitir
+
+68
+00:07:51,480 --> 00:08:00,680
+ definir si conviene utilizar Machine Lab en or. Bueno, supongamos que el conjunto de datos es pequeña,
+
+69
+00:08:00,680 --> 00:08:07,880
+ son solamente estos ejemplos que aparecen aquí para poner un ejemplo más sencillo y entonces
+
+70
+00:08:07,880 --> 00:08:15,400
+ vamos a aplicar el algoritmo y detrás para ver cómo se genialar. Bueno, lo primero que tenemos que
+
+71
+00:08:15,400 --> 00:08:21,480
+ identificar es las tres condiciones que aplica el proceso. Bueno, vamos ahora. El conjunto T,
+
+72
+00:08:21,480 --> 00:08:28,480
+ ¿es serían todos estos ejemplos? ¿Está vacío? No. Tienen un único valor en el atributo objetivo, no.
+
+73
+00:08:28,480 --> 00:08:35,080
+ Entonces tengo que calcular la ganancia de la información. Yo acá en esta la presentación
+
+74
+00:08:35,080 --> 00:08:40,200
+ ya tengo el calculador de los valores de la ganancia para el atributo de entrada tipo de
+
+75
+00:08:40,200 --> 00:08:47,000
+ problema tipo de datos y complejidad del problema. Los cálculos que nosotros utilizamos para obtener
+
+76
+00:08:47,000 --> 00:08:56,720
+ estos valores están definidos en esta planilla de cálculos que la podemos tener en esta planilla
+
+77
+00:08:56,720 --> 00:09:05,960
+ de cálculos. Fíjense lo que hacemos es calcular la entropía, hubo un lado de la atributo objetivo
+
+78
+00:09:05,960 --> 00:09:14,640
+ que nos da 0,985 y después calculamos la entropía de la atributo objetivo con respecto
+
+79
+00:09:14,640 --> 00:09:23,440
+ al cada uno de los atributos de entrada tipo de problema tipo de datos y complejidad del
+
+80
+00:09:23,440 --> 00:09:30,580
+ problema. Fíjense que acá lo que ponemos es la cantidad de ejemplos que tiene por cada valor
+
+81
+00:09:30,580 --> 00:09:37,560
+ de la atributo objetivo con respecto a cada valor de la atributo de entrada y son los permite
+
+82
+00:09:37,560 --> 00:09:51,840
+ obtener la entropía por cada uno de los valores y la entropía general de cada uno de los atributos.
+
+83
+00:09:51,840 --> 00:09:59,280
+ Por eso, utilizamos para calcular la ganancia de información en este caso. Fíjense que el que tiene
+
+84
+00:09:59,280 --> 00:10:06,220
+ mayor ganancia es el tipo de problema. Entonces me conviene lo que nos está diciendo esta
+
+85
+00:10:06,220 --> 00:10:12,120
+ formula es hacer la primera división del conjunto de datos 10 de acuerdo del tipo de problema
+
+86
+00:10:12,120 --> 00:10:18,960
+ y eso es lo que voy a hacer. Entonces que voy a hacer. Voy a armarchar mi árbol de decisión,
+
+87
+00:10:18,960 --> 00:10:24,600
+ mi nodo, raíz, va a hacer el tipo de problema, pues fue el primer atributo de entrada seleccionado
+
+88
+00:10:24,600 --> 00:10:30,840
+ y voy a armar tras ramas de acuerdo los valores de la atributo tipo de problema, clasificación
+
+89
+00:10:30,840 --> 00:10:37,200
+ optimización o predicción. Entonces primero analizó que pasa con los ejemplos que tienen
+
+90
+00:10:37,200 --> 00:10:48,760
+ el valor clasificación que son estos seis atributos. Entonces digo, el conjunto nuevo T de clasificación
+
+91
+00:10:48,760 --> 00:10:55,360
+ está vacío, no. Tiene un único valor en el atributo objetivo, no. Entonces tengo que volver a
+
+92
+00:10:55,360 --> 00:11:02,400
+ hacer una sub división. Entonces nuevamente tengo que calcular la ganancia, pero ahora calcular
+
+93
+00:11:02,400 --> 00:11:07,560
+ la ganancia solamente con el tipo de datos y la complejidad del problema. Porque el tipo
+
+94
+00:11:07,560 --> 00:11:14,640
+ de problema tiene todos los valores en clasificación, no tiene sentido, tampoco es posible hacer
+
+95
+00:11:14,640 --> 00:11:23,520
+ una nueva sub división por el tipo de problema. Los cálculos aparecen en esta nueva sola
+
+96
+00:11:23,520 --> 00:11:30,660
+ la planilla de cálculo. Y bueno, nos dice que el atributo como ayer ganancia es el tipo de
+
+97
+00:11:30,660 --> 00:11:42,220
+ lado del lado. Entonces lo que vamos a hacer es subdividir al conjunto T en dos conjuntos, por un lado
+
+98
+00:11:42,220 --> 00:11:48,300
+ voy a entrees perdón, entrees datos, entrees conjuntos, de acuerdo al valor ejemplos, regular
+
+99
+00:11:48,300 --> 00:11:56,100
+ o irregularity. Entonces analizó. Para los que son de clasificación con ejemplos, con tipo de
+
+100
+00:11:56,100 --> 00:12:02,840
+ datos ejemplos. Está vacío, no. Tiene un único valor en el atributo que tivo sí. Fíjense todos
+
+101
+00:12:02,840 --> 00:12:08,860
+ disen sí. De hecho. Entonces ahí puedo jelerar mi nodoje. Ahí tengo ya mi primer regla.
+
+102
+00:12:08,860 --> 00:12:13,500
+ ¿Qué es? Si el problema es clasificación y su uso de ejemplos, puedo usar machine
+
+103
+00:12:13,500 --> 00:12:21,900
+ aquí. Ahora voy a analizar que pasa con la, la ejemplos que son de clasificación y reglas.
+
+104
+00:12:21,900 --> 00:12:29,100
+ Y digo, está vacío, no. Tiene un único valor en el atributo objetivo, no, porque este
+
+105
+00:12:29,100 --> 00:12:36,260
+ tiene sí y este tiene no. Entonces tengo que hacer una nueva subdivisiono. Que bueno, en este
+
+106
+00:12:36,260 --> 00:12:40,940
+ caso lo que único que me queda como atributo dentro es la complejidad del problema. Entonces
+
+107
+00:12:40,940 --> 00:12:46,700
+ lo he dividido de acuerdo al valor del complejidad del problema y me queda que complejidad
+
+108
+00:12:46,700 --> 00:12:56,820
+ alta, genero un sí y complejidad baja, me genero un no. Entonces ahí ya puedo armar dos
+
+109
+00:12:56,820 --> 00:13:05,780
+ nuevos nodoje que se va a responder a dos nuevas redes. Bueno, un segundo atrás. ¿Qué
+
+110
+00:13:05,780 --> 00:13:10,860
+ voy a pasado sí en complejidad del problema? Los dos decían alta o los dos decían baja pero
+
+111
+00:13:10,860 --> 00:13:15,360
+ el atributo objetivo uno de donde decía sí y el atruman decía no. Bueno, ahí de todas
+
+112
+00:13:15,360 --> 00:13:21,120
+ maneras voy a tener que generar un nodoje, que no puedo subdividir más. Y lo que va a
+
+113
+00:13:21,120 --> 00:13:29,560
+ pasar es que voy a tener una regla y no va a ser totalmente precisa. Va a tener en este caso
+
+114
+00:13:29,560 --> 00:13:39,160
+ un 50, 50 chances de que sea sí o que sea no. Esto no puede llegar a pasar y bueno, en
+
+115
+00:13:39,160 --> 00:13:47,320
+ esos casos y a reglar no va a ser tan confiable para poder ser aplicada. Eso va a depender
+
+116
+00:13:47,320 --> 00:13:54,160
+ de los datos que yo tengo disponible y bueno puedo llegar a modificar el algoritmo, puedo
+
+117
+00:13:54,160 --> 00:14:01,920
+ llegar a modificar los parámetros pero posiblemente y a reglar la voy a tener así. Lo
+
+118
+00:14:01,920 --> 00:14:09,040
+ que tendría que ver es tratar de conseguir más casos, más ejemplos para este problema,
+
+119
+00:14:09,040 --> 00:14:15,760
+ para ver si al menos podemos conseguir que haya dos consiguios dos con no y digamos poder
+
+120
+00:14:15,760 --> 00:14:22,080
+ dar más un chance que no sea 50, 50 es resultado de la regla.
+
+121
+00:14:22,080 --> 00:14:32,120
+ Bien, eso hay una acledación porque bueno puede llegar a pasar y bueno ahí es trabajo del
+
+122
+00:14:32,120 --> 00:14:39,840
+ ingeniero, aplica el algoritmo de terminar como considerar la resolución para esas
+
+123
+00:14:39,840 --> 00:14:46,520
+ situaciones. Bueno, volviendo al ejemplo, nos quedamos ahí con clasificación y nos faltaba
+
+124
+00:14:46,520 --> 00:14:52,040
+ orgúrísticas. Bueno, con el jurística tengo un único ejemplo que tiene el atributo objetivo
+
+125
+00:14:52,040 --> 00:14:57,440
+ con el valor no, entonces el ingeniero vino a dos y ya está. Entonces ya tengo mis primeras
+
+126
+00:14:57,440 --> 00:15:03,520
+ cuatro. Ahora tengo que ver que pasa con el tipo de problema cuando es optimización.
+
+127
+00:15:03,520 --> 00:15:11,720
+ Entonces acá de nuevo voy a analizar, digo, está vacío no. Tiene un único valor en el
+
+128
+00:15:11,720 --> 00:15:18,320
+ atributo objetivo, sí el valor es no, pero tengo un único valor. Entonces ahí generó mi no
+
+129
+00:15:18,320 --> 00:15:24,160
+ dojo y ahí fíjese que es mucho más fácil, ¿no? Ahí veces que esto nos puede llegar a
+
+130
+00:15:24,160 --> 00:15:31,760
+ pasar donde directamente a partir de una único o valor de un único atributo de nada se
+
+131
+00:15:31,760 --> 00:15:38,960
+ obtiene la regla y a veces que nos puede pasar que se tiene que ramificar mucho más para generar
+
+132
+00:15:38,960 --> 00:15:47,840
+ las distintas reglas que se puedan dar. Eso va a depender de lo obviamente de los datos y
+
+133
+00:15:47,840 --> 00:15:53,760
+ igual son situaciones que se puedan pagar. Y por último, bueno, con respecto a predicción
+
+134
+00:15:53,760 --> 00:16:00,920
+ pasa lo mismo, se generan ahí el nodo oja con el valor sí y entonces el algoritmo,
+
+135
+00:16:00,920 --> 00:16:07,200
+ como ya clasificamos todos los ejemplos, podemos decir que el árbol de decisión está
+
+136
+00:16:07,200 --> 00:16:16,200
+ terminado para identificar las reglas lo que tengo que hacer es recorrer este árbol desde el nodo
+
+137
+00:16:16,200 --> 00:16:22,520
+ raíz por cada uno de las hojas y por cada uno de las ramas, las que voy a pasar me va
+
+138
+00:16:22,520 --> 00:16:27,640
+ a identificar las distintas condiciones que yo voy a tener. Entonces a partir de este árbol
+
+139
+00:16:27,640 --> 00:16:35,120
+ de decisión, puede identificar todas estas. Con estas reglas, luego, luego, luego, yo
+
+140
+00:16:35,120 --> 00:16:43,920
+ esto les puedo utilizar dentro de la base de conocimiento de un sistema inteligente basado
+
+141
+00:16:43,920 --> 00:16:54,320
+ en inteligencia artificial tradicional o también lo puedo utilizar dentro de las condiciones
+
+142
+00:16:54,320 --> 00:17:01,400
+ de un software tradicional, las pueden implementar como ish, anidados para decidir algo sin
+
+143
+00:17:01,400 --> 00:17:06,280
+ necesidad de utilizar ningún motor de inferencia, el código va a ejecutar directamente
+
+144
+00:17:06,280 --> 00:17:17,120
+ a lo sí, también se puede hacer, otra posible aplicabilidad de estas reglas es analizar
+
+145
+00:17:17,120 --> 00:17:22,040
+ un conjunto de datos, es decir, aplicar minería de datos sobre un conjunto de datos para
+
+146
+00:17:22,040 --> 00:17:29,200
+ ver qué condiciones se damos, cada vez que una tributo objetivo tomamos para, entonces también
+
+147
+00:17:29,200 --> 00:17:36,800
+ estas reglas se pueden aplicar para esto. Bueno, con esto terminamos la explicación de algoritmos
+
+148
+00:17:36,800 --> 00:17:41,680
+ de inducción, espero que les haya sido. Hasta luego.
+

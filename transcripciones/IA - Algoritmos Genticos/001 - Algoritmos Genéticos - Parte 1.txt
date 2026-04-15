@@ -1,0 +1,318 @@
+ Y no me disparía Florencia Pollo y hoy vamos a hablar de una propuesta de una tecnología
+ particular de la inteligencia artificial que son los algoritmos genéticos.
+ Bien, estuvimos hablando de la inteligencia artificial y acá me muevo yo.
+ Habíamos visto que la inteligencia artificial no me daba conocimiento y herramientas
+ para poder construir sistemas inteligentes.
+ Dentro de los sistemas inteligentes habíamos hablado específicamente de los sistemas basados
+ en conocimiento aquellos sistemas que tenían una base de conocimientos explícita.
+ Una base de conocimiento en donde yo podían encontrar hechos y reglas donde alojar el conocimiento.
+ A partir de ahí también habíamos hablado de los sistemas inteligentes aquellos sistemas
+ que mulaban parte del comportamiento de un experto en el cual el dominio en este experto
+ en el dominio y dentro de estos habíamos hablado específicamente de los sistemas expertos
+ tradicionales aquellos sistemas expertos que tenían una base de conocimientos explícitas
+ tienen una memoria de trabajo, tienen una base de datos, un explicador de consumo
+ en trazador de consultas, bien y otro conjunto de componentes que también aplica
+ a la idea de un sistema basado en conocimiento.
+ Sin embargo, también existen otras tecnologías que proveen la inteligencia artificial y que permiten
+ la construcción de sistemas expertos dentro de las cuales bueno, les pusimos rares neuronales
+ si no vino del video si lo van a ver también lo tienen y en particular vamos a hablar
+ de los algoritmos genicos.
+ Vamos a cuando hablamos de los algoritmos genicos.
+ No es algoritmos genital, no quiero que me vean tanto.
+ ¿Qué son los algoritmos genéticos?
+ Los algoritmos genéticos son algoritmos matemáticos, esperen que ahora sí, ahora mismo.
+ Algoritmos matemáticos de optimización son de propósito general
+ quiere decir que se pueden aplicar para cualquier tipo de problemas.
+ Están basados en mecanismos naturales de selección y de genética ahí.
+ Vamos a ver algunos pequeños conceptos de la teoría de la evolución y de las premisas
+ y los conceptos que maneja para después ver su paralelo en los algoritmos genéticos
+ y proporcionan fíjense excelentes soluciones, uno puede garantizar que las
+ las soluciones que obtienen son excelentes no necesariamente son las mejores
+ y sirven para problemas complejos con un gran número de parámetros porque
+ ¿por qué para problemas donde uno puede manejar la cantidad de parámetros?
+ Ahí existen un montón de mecanismos, de métodos matemáticos
+ que ustedes han visto y que verdaderamente ofrecen y garantizan las mejores
+ soluciones sin embargo en problemas donde los otros métodos nos sirven,
+ los algoritmos genéticos son una muy buena puesta.
+ El algoritmo genético en realidad no es complejo en cuanto a su arquitectura
+ ustedes van a ver que para nosotros que estamos acostumbrados a manejar estructuras
+ algoriticas tienen realidad un ciclo, distintas funciones y nada más,
+ los operadores que los vamos a ir hablando,
+ pero lo que tiene de maravilloso es que con toda esa información
+ moviendo para metros haciendo corridas,
+ puedo analizar estos problemas y ahí puedo obtener
+ unas comparativas de soluciones muy buenas,
+ depende de cuán rica ricos, sea la análisis que hagan ustedes
+ de los resultados de las corridas de los algoritmos genéticos
+ cuán beneficiosos puedan puedan ser. Y muchas veces también se utilizan
+ combinados con otras tecnologías.
+ Antes de hablar del algoritmo genético en particular,
+ vamos a hablar un poquito de la teoría de la evolución
+ y de todos los conceptos que esta teoría nos brinda
+ para poder nosotros a partir de ahí desarrollar los algoritmos genéticos.
+ Lejos está en pensar en explicarles es solamente una idea
+ para que vean de dónde sale y no traerse los de traidos
+ de los pelos y contárselos directamente.
+ Bien, hay una teoría que es la teoría de la evolución
+ por selección natural, estas dos investigadores
+ comparten sus descubrimientos,
+ los presentos 16 años en el año 1850,
+ de hecho, juró que no había nacido otros papías,
+ y un año más tarde darbo en publica una obra
+ que la tiene acá, que se lo dijeron de las especies
+ por selección natural,
+ este material lo escribe a través de un montón de excursiones
+ que te hace él y domanotas de cómo las distintas especies
+ según el hábitat en el que se encontraba en tieren distintas características.
+ Y esto empieza a hablar de cómo se van adaptando a partir de la hábitat
+ para resolver su capacidad de superpocera poder sobrevivir.
+ Está bien, a partir de ahí,
+ la teoría de Darwin nos prenda un conjunto de postulados.
+ En primer postulado,
+ a la que las formas de vida no son estáticas
+ sino que evolucionan.
+ Quiere decir que un servivo, un servivo
+ con el paso de los años y la evolución de la especie,
+ va a cambiar en su fusión a mí, en su funcionalidad,
+ este cambio gradual es lento y es como vivo.
+ Uno no va a haber un cambio de una generación a otra,
+ un cambio abrupto,
+ sino que estos cambios se van dando muy lentamente con el paso y el paso de las generaciones.
+ Esto habla,
+ entonces de pensar en un ciclo de vida,
+ te vida natural,
+ donde un servivo nace,
+ se reproduce de esa rolla,
+ se reproduce y muere,
+ y a partir de ahí su descendencia,
+ se va haciendo lo mismo,
+ esto hace que se vaya pasando las distintas generaciones.
+ Otro lado,
+ esto,
+ esto de la reproducción de los individuos y la misma evolución,
+ habla de cierto,
+ en parentamiento,
+ cierta relación a partir de la decendencia,
+ la decendencia de estos individuos,
+ y quiere decir que todos los individuos
+ nos encontramos en parentados en algún punto,
+ tenemos alguna antifasado como.
+ Aquí en ejemplo,
+ muy interesante,
+ siempre quedó y casi se los jueves,
+ y gente está mirante que estamos hablando,
+ este señor fue un protagonista,
+ muy importante,
+ y ha dejado mucha decendencia,
+ tal es así,
+ que si ustedes se fijan que en gran parte de hace
+ el este de Europa,
+ uno de cada dos hombres,
+ el 8% comparten un marcador en su adénita.
+ Fíjense uno de cada 200 hombres en todo el mundo,
+ aproximadamente 16 millones de personas.
+ Esto del marcador de la adénita,
+ en esta persona,
+ el adénita viene a ser como matemáticamente
+ hablando como un identificador único,
+ que nombre a todas nuestras carácterísticas.
+ Y bueno,
+ estas carácterísticas tienen que ver también
+ con lo que nosotros heredamos,
+ y bueno,
+ pareciera que dosillistan,
+ a medida que han dudo conquistando el mundo,
+ fue dejando de ascendencia,
+ y esto hizo,
+ acabado delante pasado como un,
+ realmente,
+ a muchas partes de estas cadenas de adénita,
+ de que vienen desde nochesistas.
+ Bien,
+ a partir de ahí surge este concepto nuevo,
+ que es la selección natural,
+ la selección natural,
+ habla de esta elección de dos individuos
+ en pos de ir generando decendencias,
+ y yo pudiera,
+ uno pensar a manipular genéticamente,
+ quién se tiene que reunir con quién,
+ para que está decende,
+ garantizar una decendencia,
+ óptima, garantizaría,
+ que la evolución de los seres vivos
+ va a ser maravillosa.
+ Eso no pasa,
+ pero bueno,
+ nos vamos a poner,
+ y vamos a poner con la selección natural,
+ dentro de la selección natural,
+ hay varios conceptos a tener en cuenta,
+ uno es la producción de la variabilidad,
+ generación de modificaciones de escontanias en individuos,
+ que quiere decir,
+ que dos individuos que se reproducen,
+ van a generar decendencia,
+ y no necesariamente,
+ en su próxima reproducción,
+ la decendencia va a ser igual,
+ ni a veces en la misma,
+ fíjense que, por ejemplo,
+ este el caso de los mesisos,
+ este el caso de los gemelos,
+ y los que comparten su cadena de adenio igual,
+ pero después,
+ hay matrimonios que tenemos varios hijos,
+ y no salen totalmente distintos los hijos,
+ y sin embargo,
+ veremos los dos con la misma carga genética siempre,
+ esto habla de la producción de la variabilidad,
+ y hay otro concept muy interesante
+ que nosotros sí lo vamos a utilizar
+ que es la supervivencia del más fuerte,
+ o el hápto,
+ en la lucha por la vida,
+ quienes tienen más probabilidades
+ de sobrevivir,
+ son quienes encuentren
+ en mejores condiciones,
+ nada,
+ ejemplo,
+ más interesante,
+ que ahora con la situación que
+ estamos viviendo,
+ y aquí otros conceptos
+ aparecen en la tieria de la evolución,
+ por un lado,
+ el ecosistema,
+ el ecosistema habla
+ de si ambiente,
+ donde nosotros queremos sobrevivir,
+ no es lo mismo,
+ vivir en una pandemia,
+ sobrevivir en una pandemia,
+ los requisitos que tienen un organismo
+ para sobrevivir un individuo,
+ no ser humano,
+ para sobrevivir en una pandemia,
+ como la deora que a lo mejor el año pasado,
+ en verano,
+ está,
+ la exigencia al organismo va a ser distinta,
+ y obviamente quienes tienen más
+ pero probabilidades de sobrevivir,
+ son quienes encuentren en mejores condiciones,
+ y esas personas que se encuentren en mejores condiciones,
+ van a ser las que probabilisticamente también
+ tengan más posibilidades de reproducirse,
+ y a su generar de sentencia que tenga
+ los mejores racos,
+ quienes vayan quedados en los encuentren aptos,
+ en las posibilidades van a ir
+ bajando y tienen menos posibilidades
+ sobrevivir también.
+ Entonces,
+ por un lado tenemos el ecosistema,
+ el ambiente,
+ este lugar donde uno se debe adaptar
+ los requisitos,
+ que aún no le va a exigir
+ para poder adaptar si sobrevivir,
+ por otro lado está la población
+ el conjunto de individuos,
+ donde todos que ríamos ranciar
+ y poder sobrevivir y poder
+ reproducirnos y generar de sentencia,
+ y por otro lado está cada individuo,
+ en particular,
+ con sus características
+ y con su capacidad de adaptación.
+ Hay otros conceptos también
+ de los cuales habla la taría de la evolución,
+ es que es cuando se habla de la herencia.
+ La herencia tiene que ver con
+ qué le damos a nuestros hijos
+ a quienes son el resultado
+ de nuestra reproducción.
+ Por un lado,
+ dentro de lo que es la taría de la evolución,
+ se redan rajo físicos,
+ pero también rajo psicológicos
+ y men delimorgad son los primeros que estudian
+ la ciencia de la herencia que habla de genética.
+ Los estudianillos a partir de unos insectos
+ pero empiezan a descubrir
+ cómo empieza a funcionar
+ todo este tema de la herencia.
+ Y lo que destaca es que
+ los genes que hablan de estas caractes
+ de esta porción de caractérísticas
+ están dentro de los promosomas
+ en donde se describen todas las caractérísticas
+ que identifican uníbo,
+ en mi caso florez,
+ en el caso de sus octeles,
+ sería como una cadena
+ en donde están todas mis caractérísticas.
+ En mi odirá
+ mi dotanto, peso, tanto,
+ color de ojos, tanto,
+ todas mis caractérísticas,
+ no sólo en las físicas,
+ sino también las fisiológicas,
+ se va a ir la psicológica,
+ también se encuentran
+ de filioso,
+ y si uno quiere ubicar la floreencia,
+ la ubica desde el mundo.
+ Para presentar algunos conceptos,
+ se iron cachito más,
+ aunque sea largo un poquito
+ el vídeo,
+ ni que me gustan que no sean
+ no más de 10,
+ pasamos extendemos un poquito
+ más para terminar con esto.
+ Hablamos también
+ del promosoma,
+ como esta cadena,
+ donde encontramos los genes,
+ los genes se identifican
+ una caractérística,
+ esto viaja por nuestra DNA,
+ el genotipo habla
+ de la composición genética,
+ y el fenotipo habla de cómo se manifiesta,
+ físicamente,
+ en un rasgo distintivo,
+ se al valor que tienen mi,
+ el genotipo hablaría
+ de cómo de la plantilla,
+ en matemáticamente hablando,
+ y el fenotipo sería instanciarlo
+ en cada una de las
+ de las opciones
+ que pueden tomar,
+ funciona de cada y vivido
+ que fue teniendo.
+ ¿Qué para un gón podríamos
+ hacer,
+ entonces ahora,
+ ahora lo vamos a dejar
+ entre
+ la teoría de la evolución
+ que vimos y lo salgó ritmo generalmente.
+ Así que bueno,
+ yo lo voy a dejar acá,
+ son dos minutos,
+ fue solamente un panetito
+ para que vean la teoría de evolución
+ que principios tomamos
+ para que vean después
+ porque se usan algunos,
+ algunas ideas
+ para definir algunos operadores
+ y bueno,
+ ya son tres minutitos.
+ Nos vemos en el próximo video.
+ Muchas gracias y hasta luego.

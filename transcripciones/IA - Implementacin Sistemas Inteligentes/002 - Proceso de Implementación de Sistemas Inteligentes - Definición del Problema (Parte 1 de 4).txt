@@ -1,0 +1,134 @@
+ Hola, mi nombre es María Florencia Pollo y vamos a continuar con la serie de videos explicando
+ el proceso de implementación de sistemas inteligentes.
+ Bien, habíamos llegado a identificar a resumir en el primer video que atento a los problemas
+ que encontramos en una organización vinculado con su sistema de información, a bien lo identificado
+ de los objetivos mesatos y los requerimientos para determinados tipos de problemas podíamos
+ suvilizar distintas técnicas que nos viban a la inteligencia artificial y a partir de estas
+ construir un modelo que nos permitiera implementar un sistema inteligente como un modelo probablemente
+ a un sistema software tradicional y a partir de esto resolver alguna problemática dentro
+ de la organización.
+ Esa sí que la inteligencia artificial tiene dos dos perspectivas distintas, dos miradas distintas,
+ como si se estudiando al comportamiento de los sistemas inteligentes y como ingeniería
+ proveyendo las herramientas y los procesos y los métodos y las tecnologías que nos permitan
+ construir este sistema inteligente, la ciencia apoyando desde el desarrollo de nuevos conocimientos
+ bajo, un método científico y la ingeniería dando los suéste conjunto de herramientas
+ y de buenas prácticas que nos permitan llevar adelante proyectos, la mirada que tenemos
+ dos ingenieros siempre dentro de estos hábitos.
+ Entonces lo que uno plantea dentro de esta problemática en la construcción del sistema
+ inteligente es decir, bueno necesitamos una construcción a nivel conceptual pero utilizando
+ principios ingenieriles y con un fin práctico que es resolver un problema.
+ En este contexto, acá les presentamos el proceso para la construcción y el desarrollo y la
+ implementación de sistemas inteligentes. Tenemos identificadas todas estas grandes
+ fases, la identificación del problema de los datos, la tecnología, la identificación del
+ modelo y el desarrollo propio del sistema inteligente, como ven es un proceso que básica.
+ Lo bien, vamos a comenzar hablando de la primera fase, tiene que ver con definir el problema.
+ Y hablamos cuando queremos decir que queremos definir un problema, queremos identificar
+ el que hay que resolver y determinar el cómo lo vamos a resolver y esto se vería plasmado
+ en el sistema inteligente. Desde otro lado, lo organización va a ser la fuente de información
+ en relación a los datos que es organización maneja y las tecnologías posibles para
+ aplicar en el desarrollo de este sistema inteligente. Al momento de querer definir el que,
+ vamos a tener que poder identificar las metas las expectativas que es lo que se espera,
+ el contexto en que ambiente las necesidades que tienen que organización, cuáles son los deseos,
+ las restricciones y todo este conjunto de elementos que sabemos definir propios de la ingeniería
+ bien software también. Y bueno, donde vamos a encontrar conflictos y tearias van a generar
+ problemas que queremos atender. En relación a la información vinculada con la estructura
+ informal de la organización que no va a estar documentada, la funcionaridad es implícita
+ sino establecidas muchas veces este tipo de actividades que logramos de descubrir al momento
+ de hacer una observación de tareas habituales, pero que no se encuentran formalizadas en
+ un tipo de documento. Y que sí aplican mucho, hay impactan mucho en el proceso que quiero
+ modelar esto en las tareas de los expertos, en las tareas complejas, las tareas miculadas
+ condiciones no programadas es moneda corriente. También las suposiciones no fundamentadas son
+ comunidades, tienen que ver muchas veces con estos procesos complejos que utilizan los expertos
+ o aquellos directivos que toman decisiones muy complejas y presuponen un conjunto de
+ condiciones que no las tienen formalizadas y declaradas de manera explicita en ningún lado.
+ Y bueno, la falta de documentación viene acá tenemos cuando hablamos no de todas
+ cuales son las las expectativas y las suposiciones que tenemos los distintos
+ actores en todos estos proyectos bien. Una de todas estas salvidades se ve a través de
+ él la disculpenme a acelerar. La definición del problema del negocio,
+ a través de entender la situación de la organización y por otro lado poder traducir esto
+ al dominio de la solución o la implementación a través de lo que se conoce como uno podría
+ si bueno a través de la definición y la gestión de los requerimientos se va a poder administrar
+ gestionar este pasaje de la manera más natural. El proceso de gestión de requerimientos
+ me permite identificar todas estas cuestiones documentarlas y formalizarlas para poder traducir
+ lo que es claramente un problema del negocio que no puede tener en el habla directamente
+ con mujerente, con un este hijo, de muchas veces y eso después poderlo llevar a un problema
+ a un dominio de solución donde tendré implementado parte de esta mis solución mediante
+ tecnología de IA y probablemente también desde desarrollo del sistema sofrero pelicional.
+ Una de las primeras actividades dentro de esta gran fase es lo que se conoce como la licitación
+ de requerimientos, los requerimientos, las características o condiciones que tiene que tener
+ algo para hacer considerado como tal, juegan un rol fundamental al momento, sin embargo
+ ustedes también leyeron en cierta documentación que los requerimientos dentro de un sistema
+ inteligente son distintos tienen tienen noto identificación, los requerimientos hay un conjunto
+ requerimientos propios del proyecto pero después en la actividad los requerimientos se van
+ reformulando bien. Para poder licitarlos y identificarlos a estos requerimientos, yo tengo
+ distintas fuentes de información por un lado lo que son las las fuentes formales documentarlas
+ y muchas veces también el y sobre todo estamos trabajando con sistemas inteligentes, los mismos
+ usuarios, los mismos expertos van a ser el gran fuente de información. Fíjense, bueno esta frase
+ es súper interesante cuando existe un buen proceso de licitación de requerimientos, se ayuda
+ a los usuarios, a que puedan entender que quieren que es lo que necesitan las restricciones
+ y las alternativas y su ventajas y de ventajas. Muchas veces en usuarios creen tender que
+ necesita pero a través de un proceso de gestión de requerimientos de edificación de requerimientos
+ llega a una definición mucho más solida, ¿no? Bien, para poder licitarlos requerimientos
+ uno va a tener que identificar por un lado las distintas fuentes de información y después
+ va a tener que poder recolecernos en relación a la distintas fuentes de información, uno
+ va a poder encontrarse con los recursos que pueden ser propios de organización o externos,
+ y en prefíjense que tenían que ver con los documentos que habíamos hablado del servujito
+ que tenían en unas PTT anteriores y en relación a los individuos, a los stakeholders, a
+ los interesados, a los actores que pueden ser de, de, de, de adentro o de afuera de
+ organización y que van a impactar claramente en lo que son las rutinas de trabajo que yo
+ quiero, quiero modelar, eh, van a ser obviamente, eh, estos, la principal fuente humana, eh, los
+ principales clientes que no van a tener en el sistema que va a conflictar, y como puede
+ identificar a los distintos stakeholders, por un lado analizando todo lo que son las, eh,
+ los, las premisas, formalmente establecidas, ¿no? Todo lo que son las normas y las reglas,
+ lo que se conocemos con un mente como a la estructura formal, sin embargo, bien sabemos que
+ todos los establecidos, la estructura formal, se encuentra atravesada por la estructura informal
+ que deforma todo el establecido, y da como, como comunión de, de la convivencia de estas
+ dos estructuras, la realidad de la organización. Esa hija donde yo tengo que poner pie, eh,
+ y ser un correcto un correcto observado. En relación a recolectar los hechos y las necesidades
+ que eran otras de las actividades que habíamos visto, tenemos distintas técnicas, eh, según
+ la, la, la fuente de, de información. Cuando las técnicas tienen que ver con la extracción
+ de documentos de fuente de documentos públicos, entonces voy a hablar de extracción de conocimientos.
+ Ahí voy a hacer un análisis de documentación o analicidad. Y en la extracción yo busco,
+ o puedo recolectar todo lo que son conocimientos públicos. Por otro lado, cuando hablamos
+ de elucción de, de, de requerimientos, de lo que estamos hablando es de obtener información
+ privativa en el experto privativa del individuo información que no está documentada, que no está
+ formalizada, y las distintas técnicas fíjense que van apareciendo entre vistas y cuestionarios
+ que un bastante conocemos, el uso de protototipos, observación de analiciciatarías,
+ la tormenta de analiciciatarías, la, el prenafamos sobre en Storming, el manejo de las reuniones,
+ el enparallado y la naricic de prototocólogos como dos técnicas diferentes que han aprendido
+ este, este cuadro del menstrure, el enparallado recuerda no teniendo un modelo mental del
+ individuo conocimiento declarativo y la naricic de protocólog, teniendo esta famosa reglas procedimentales
+ este conocimiento procedimental a través de estas reglas que me permiten es ver cómo
+ se van relacionando los distintos estados de estos conocimientos declarativos.
+ Bien, para poder recolectar estos hechos en necesidades tenemos que ver toda la información
+ que sea suficiente para poder identificar, que es lo que tenemos que identificar.
+ Los elementos del problema a través de respondernos la pregunta, qué incluso este problema
+ está, después vamos a tener que poder identificar el contexto porque todo el problema va
+ estar inmerso en un contexto y la alteración a las modificaciones de esto, de este entorno
+ van a afectar notablemente al problema, para eso hay que ver dónde se produce el problema
+ para poder identificar también cómo se relaciona el contexto que en contexto con el sistema
+ modular.
+ Después hay que identificar estos nuevos estáis conders identificando, respondiendo la
+ pregunta de aquí en esa afecta más, este problema, ahí vamos a ver quiénes se encuentran
+ vinculados directamente con con el problema a solucionar y después por qué necesario
+ resolverlo a través de las metas, donde quiero llegar y las expectativas que es lo que
+ se espera. Los distintos escenarios me van a permitir definir estas precondiciones como se
+ manifiesta el problema en que ha estado me voy a encontrar al momento de querer solucionar
+ un problema y las famosas y conocidas restricciones que lo que van a marcar es que puede
+ impedir presolver este problema con claridad.
+ No es suficientemente exacto decir que los requerimientos están en la mente de los clientes
+ sería más exacto decir que están en el sistema social de la organización, no son privativos
+ del individuo, tienen que ser inventados, no capturados o felicitaros y esa intención tiene
+ que ser un trabajo cooperativo, esto es fundamentante, el cliente y usuario si es desarrollador.
+ Las dificultades son principalmente sociales, políticas y culturales y notélicas, ahí es cuando
+ muchas veces más allá de la disposición de herramientas y técnicas cuando no hay apoyo
+ de la altajerezia, cuando no hay disposición del equipo, en pintar la solución es imposible
+ la respuesta a todo este tipo de requerimientos.
+ Sin embargo no es tan sencillo como parece, ya que el conocimiento propio del dominio no se
+ les dar disponible en forma explicita en su totalidad, se encuentra muchas veces distribuido
+ en muchas fuentes de manera incompleta y no documentada, hay situaciones en donde distintas
+ fuentes pueden ser hasta contradictorias y en muchísimos casos gran parte de toda esta
+ descripción se encuentra en lenguaje natural, la presencia del licitador puede cambiar
+ el problema su contexto, el momento de participar en el mismo, obviamente los está en Jolders
+ también vamos a dejar acá este video explicando la primera actividad y vamos a pasar
+ en el segundo hablar de la comprensión, desde ella muchísimas gracias y hasta el juego.

@@ -1,0 +1,472 @@
+1
+00:00:00,000 --> 00:00:05,000
+ Hola, soy María Florezia Pollo y voy a continuar explicando las distintas etapas de
+
+2
+00:00:05,000 --> 00:00:09,400
+ las técnicas en Parilla. Habíamos llegado a la etapa número 4 donde hablábamos de
+
+3
+00:00:09,400 --> 00:00:14,800
+ las formalizaciones de la Parilla, se vamos a empezar a ser cálculos sobre esta matriz que definimos
+
+4
+00:00:14,800 --> 00:00:20,200
+ en la etapa previa, se acuerdan que en la matriz lo que relacionábamos eran los elementos
+
+5
+00:00:20,200 --> 00:00:25,000
+ con las características, el experto en las signababalores en el caso nuestro habíamos hecho
+
+6
+00:00:25,000 --> 00:00:29,800
+ una matriz de Manuel. Vamos a comenzar con la primera subeta, que es la etapa de que la
+
+7
+00:00:29,800 --> 00:00:35,280
+ pacificación de los elementos. Entonces, esta es la misma matriz de antes, lo que vamos a
+
+8
+00:00:35,280 --> 00:00:40,960
+ hacer es construir otra matriz, que se la conoce como la matriz de distancia entre elementos.
+
+9
+00:00:40,960 --> 00:00:45,720
+ Nosotros, en particular, más adelante, el encuentro vamos a tomar para el análisis, el principio
+
+10
+00:00:45,720 --> 00:00:51,840
+ de la mínima distancia, se puede tomar de la mínima o de la máxima, pero como construimos
+
+11
+00:00:51,840 --> 00:00:58,320
+ esta matriz, esta matriz se construye a través del cálculo de las distancia entre elementos. Y las
+
+12
+00:00:58,320 --> 00:01:06,440
+ distancia entre elementos se calculan de la siguiente manera. La distancia entre 1 y 2 está,
+
+13
+00:01:06,440 --> 00:01:16,240
+ es la sumatura de las diferencias absolutas entre 1 y 2 a través de las características. Entonces,
+
+14
+00:01:16,240 --> 00:01:22,560
+ lo que yo tendría que construir, el cálculo armejor dicho es, la diferencia entre 1 y 2,
+
+15
+00:01:22,560 --> 00:01:25,920
+ fíjense hecho a las posas sumatores, esto es ninguna fórmula ni ladera para que ustedes
+
+16
+00:01:25,920 --> 00:01:37,640
+ entendieran el cálculo de donde salir. Es, 2 menos 4, más 3 menos 2 está acá, más 1 menos 3,
+
+17
+00:01:37,640 --> 00:01:47,000
+ que se esto pesta acá, más 4 menos 1, vuelvo a repetirles en la sumatoria de las diferencias
+
+18
+00:01:47,000 --> 00:01:51,780
+ absolutas de todos los elementos a través del paso de sus características, los valores que
+
+19
+00:01:51,780 --> 00:01:57,240
+ tienen con las distintas características, con lo cual bueno, 2 menos 4, 2, la verdad, todo esto
+
+20
+00:01:57,240 --> 00:02:05,800
+ les da 8, 8 es el tuvalor que se pone acá, está, vamos a calcular otro valor más, por ejemplo,
+
+21
+00:02:05,800 --> 00:02:15,860
+ la razón no, en un lado, bien, entre 2 y 3, entonces vamos a calcular las diferencias entre 2 y
+
+22
+00:02:15,860 --> 00:02:22,160
+ 3, en la sumatoria de las diferencias absolutas, ustedes sigan en el recuadro y yo les voy
+
+23
+00:02:22,160 --> 00:02:33,900
+ armarcando la matriz, es 4 menos 3, más 2 menos 2, más 3 menos 4, más 1 menos 2, yo les
+
+24
+00:02:33,900 --> 00:02:39,780
+ pongo la sumatoria para que sepan de que veríamos hablar, bueno, con esto los valores me da 3 y esto
+
+25
+00:02:39,780 --> 00:02:46,800
+ cubro con 3, con esto ustedes irían generando los distintos valores de la matriz, una
+
+26
+00:02:46,800 --> 00:02:52,240
+ cosita para aclarar, porque no se copia la parte de abajo, porque obviamente hacer la sumatoria
+
+27
+00:02:52,240 --> 00:02:57,060
+ de las diferencias absolutas, el valor la diferencia entre 1 y 2, pasar la misma que entre
+
+28
+00:02:57,060 --> 00:03:03,780
+ 2 y 1, no sé qué nos quedaría una matriz, es pejo, está con lo cual sinéntica, con lo
+
+29
+00:03:03,780 --> 00:03:10,040
+ cual no lo vamos a calcular, y vamos a hacer los cálculos sobre la matriz triángular supello,
+
+30
+00:03:10,040 --> 00:03:14,320
+ bien, entonces estos valores que si obtienen cálculando, yo los invito después a que
+
+31
+00:03:14,320 --> 00:03:20,460
+ calculen la matriz, la diagonal principal no se calcula porque porque la diferencia entre
+
+32
+00:03:20,460 --> 00:03:26,780
+ un valor y sí mismo, es 0, está, se toma el mínimo valor, porque nosotros estamos para tomar
+
+33
+00:03:26,780 --> 00:03:31,460
+ el análisis haciendo, teniendo en cuenta la mínima lista, entonces tomamos el mínimo
+
+34
+00:03:31,460 --> 00:03:36,200
+ valor, si fuera la máxima tomaría más el mayor, bien entonces a partir de ahí lo que
+
+35
+00:03:36,200 --> 00:03:45,480
+ hacemos es fusionar esos dos elementos que nuestro caso quién es son, el 4 con 1, y qué
+
+36
+00:03:45,480 --> 00:03:52,920
+ nos va a generar, una matriz nueva, donde una fila, donde una fila va a estar formada por ese
+
+37
+00:03:52,920 --> 00:03:59,720
+ grupo, entonces para armar yo la matriz nueva lo que hago es tener, un elemento que se va a
+
+38
+00:03:59,720 --> 00:04:08,160
+ llamar 1 y 4, proveniente de acá y después de 2 y 3, como completo estos valores,
+
+39
+00:04:08,160 --> 00:04:16,960
+ yo acalemos a tener un ejemplo, la diferencia entre 1 y 4 y 2 entre el grupo formado por
+
+40
+00:04:16,960 --> 00:04:28,140
+ los elementos 1 y 4, y 2 se calcula como el mínimo valor entre las distancias, 1 y 2 que
+
+41
+00:04:28,140 --> 00:04:42,720
+ quién es la distancia entre 1 y 2, 8 y el 4 y 2, el 4 y 2, fíjense quién es 6, el mínimo entre 8 y 6,
+
+42
+00:04:42,720 --> 00:04:52,080
+ quién es 6 y este es el valor de acá, se entiende vuelvo a repetirles para calcular obviamente
+
+43
+00:04:52,080 --> 00:05:00,640
+ que 2 y 3 fíjense que va a quedar con el mismo valor porque entre 2 y 3, entre 3, entre 2 y 3,
+
+44
+00:05:00,640 --> 00:05:08,400
+ sigue siendo 3, pero el valor que se calcula con este nuevo elemento que es un elemento
+
+45
+00:05:08,400 --> 00:05:18,200
+ compuesto es el valor mínimo de este de 1 con 2 y de 4 con 2, se busca en la tabla anterior,
+
+46
+00:05:18,200 --> 00:05:27,640
+ se toma el mínimo valor y se completa, estamos a partir de ahí se completa toda la tabla y se busca
+
+47
+00:05:27,640 --> 00:05:34,320
+ cuál es el mínimo valor, quién es el mínimo valor, el que relaciona, estrés que relaciona
+
+48
+00:05:34,320 --> 00:05:42,600
+ al elemento 3 con el elemento 2, entonces nuevamente vamos a unir esos dos, esos dos filas y
+
+49
+00:05:42,600 --> 00:05:50,880
+ vamos a armar un nuevo grupo que es el grupo 2 y 3, entonces si yo tuviera que calcular este valor de
+
+50
+00:05:50,880 --> 00:06:01,720
+ acá sería el mínimo entre 1 y el 4, el mínimo de 1, el 4 con 2 y el mínimo de 1, el 4 con
+
+51
+00:06:01,720 --> 00:06:14,320
+ el 3, el mínimo de 1, el 1, el 4 con el 2, el 6 y el 1, el 4 con el 3, es 5, entonces ahí va el 5 y ahí
+
+52
+00:06:14,320 --> 00:06:20,800
+ también haría el gráfico, con lo cual vuelve a mostrar a partir de estos cálculos si ustedes
+
+53
+00:06:20,800 --> 00:06:35,120
+ efican yo le voy a mostrar, miren, 1, el 4 en 2, recuerden esto, 2 con 3 en 3, 1 con el 4 en 2, 2 con
+
+54
+00:06:35,120 --> 00:06:47,160
+ 3 en 3, y finalmente los 2 grupos, 1 a 4 y el 2 y el 3 se reúnen en 5, así se construye
+
+55
+00:06:47,160 --> 00:06:51,760
+ la árbol y le decir que el árbol yo no voy a ir construyendo en la medida de ver,
+
+56
+00:06:51,760 --> 00:06:56,520
+ pues muestro con el delo, me encanta, como se va a ir armando en función de la mínima
+
+57
+00:06:56,520 --> 00:07:04,440
+ distancia, si fuera máxima distancia, invertiríamos los niveles, los distintos grupos que
+
+58
+00:07:04,440 --> 00:07:14,560
+ se van uniendo y el nivel donde se se agrupan, y ya se que de esta manera se obtiene, de estos
+
+59
+00:07:14,560 --> 00:07:21,000
+ los elementos, el siguiente árbol ordenado, que después lo vamos a analizar, a partir
+
+60
+00:07:21,000 --> 00:07:26,360
+ de ahí terminamos la clasificación de elementos y pasamos a la clasificación de las
+
+61
+00:07:26,360 --> 00:07:32,280
+ carácterísticas, terminamos con la primer subetapa y empezamos con la segunda, entonces
+
+62
+00:07:32,280 --> 00:07:39,160
+ lo que tenemos acá es la matriz original que yo se las volvía a dibujar y la matriz
+
+63
+00:07:39,160 --> 00:07:46,160
+ o puesta, la matriz o puesta se arma invirtiendo la escala de balones, yo puse a calas
+
+64
+00:07:46,160 --> 00:07:50,360
+ de balones que quiere decir que cuando veo un 1 para un 4, donde veo un 2 para un 3,
+
+65
+00:07:50,360 --> 00:07:54,860
+ donde veo un 3, un 2 y donde pongo 4, un 1, entonces ustedes se fijan acá, por ejemplo
+
+66
+00:07:54,860 --> 00:08:01,440
+ ven 1 2, que acá tienen un 2, que hay que poner cuando veo 2, un 3, entonces que apareció,
+
+67
+00:08:01,440 --> 00:08:07,800
+ un 3, acá aquí había un 4, que había que poner cuando se veía un 4, un 1, entonces
+
+68
+00:08:07,800 --> 00:08:14,040
+ el 4 apareció, entonces yo había trabajar con estas 2 matrices, con la matriz original y la
+
+69
+00:08:14,040 --> 00:08:23,040
+ matriz o puesta, en relación a la original, lo que van a hacer es construir una matriz
+
+70
+00:08:23,040 --> 00:08:28,520
+ ahora que va a relacionar las carácterísticas, se acuerdan que en el paso anterior, habíamos
+
+71
+00:08:28,520 --> 00:08:33,720
+ construido una matriz que relacionaba los elementos, para construir la matriz que relaciona
+
+72
+00:08:33,720 --> 00:08:39,080
+ la carácterística vamos a hacer 2 pasos, el primer paso es generar la matriz triagular
+
+73
+00:08:39,080 --> 00:08:45,880
+ superior, y la matriz triagular superior se calcula en como lo que conocemos como la distancia
+
+74
+00:08:45,880 --> 00:08:52,460
+ uno que fue la que calculamos hace un ratito y va a ser perdone, exactamente igual, entonces
+
+75
+00:08:52,460 --> 00:08:57,360
+ lo que van a hacer es, por ejemplo, entre 1 y c2, figence la sumatoria, ustedes
+
+76
+00:08:57,360 --> 00:09:05,920
+ vaya mirando acá la cuenta y yo le voy mostrando acá, 2 menos 3, 4 menos 2, 3 menos 2, 2 menos 3.
+
+77
+00:09:05,920 --> 00:09:10,480
+ Es exactamente igual, ahora va a rimos la característica a través de todos los elementos,
+
+78
+00:09:10,480 --> 00:09:19,400
+ entonces bueno, tenemos 1, 2, 1, 1, da 1, 3, 4 y 5, este 5 es la distancia entre 1 y c2.
+
+79
+00:09:19,400 --> 00:09:26,200
+ Y ahí van llenando la matriz de distancias de 1, que esto se hace exactamente igual a como
+
+80
+00:09:26,200 --> 00:09:29,840
+ hicimos con los elementos, pero ahora el lugar de barrio no se le eventó, barrio más por
+
+81
+00:09:29,840 --> 00:09:36,760
+ una carácterística, sin embargo no continúe igual que con los elementos, ¿ok? ¿Qué?
+
+82
+00:09:36,760 --> 00:09:44,080
+ Porque para calcular la triagular inferior, calculamos lo que se conoce como la distancia de 2,
+
+83
+00:09:44,080 --> 00:09:51,400
+ y la distancia de 2 se calcula tomando un elemento de cada parrilla, uno de lo original
+
+84
+00:09:51,400 --> 00:09:56,160
+ y el otro de la opuesta, entonces por ejemplo, vamos a calcular
+
+85
+00:09:56,160 --> 00:10:04,200
+ el valor de c2, la distancia de 2, entre c2 y c1 y vamos a tomar uno de cada parrilla.
+
+86
+00:10:04,200 --> 00:10:11,080
+ Entonces fíjense que, yo calé esto, me 2, 4, 3, 2, tomé esta de acá, de la parrilla de
+
+87
+00:10:11,080 --> 00:10:20,240
+ acá y c2 la tomé de acá, ve los números 2, 3, 3, 2. Entonces, es la sumatoria de
+
+88
+00:10:20,240 --> 00:10:33,620
+ c2, carácterística, de c1 que es 2 y pás, perdón, es me, y la de c2 es 2, verdad, más. Ahora
+
+89
+00:10:33,620 --> 00:10:42,400
+ vamos al segundo elemento, 4 tomada de la primera parrilla y 3. Yo se lo muestro
+
+90
+00:10:42,400 --> 00:10:53,320
+ esto, capaz de que yo lo teniera, después 3 menos 3 y después 2 menos 2. Fíjense que entonces
+
+91
+00:10:53,320 --> 00:11:00,320
+ te la dará, me queda 1, listo, y así que se calculan todos los valores de la distancia 2.
+
+92
+00:11:00,320 --> 00:11:05,840
+ A partir de ahí que tenemos esta hermosa matriz recuerdan que en la diagonal principal
+
+93
+00:11:05,840 --> 00:11:12,360
+ poníamos todos 0 porque la distancia entre un número y sinismo es 0, o sea una vez que tenemos
+
+94
+00:11:12,360 --> 00:11:18,240
+ esta matriz, lo que hacemos es construir la matriz diagonal superior. Y como lo vamos a construir,
+
+95
+00:11:18,240 --> 00:11:23,540
+ a partir de la matriz esta matriz que teníamos antes, de que nos valorizan los mismos, lo que
+
+96
+00:11:23,540 --> 00:11:30,600
+ hacemos es tomar los opuestos y tomar el menor valor y el menor valor es el que ponemos
+
+97
+00:11:30,600 --> 00:11:38,040
+ acá en la tabla. Entonces, por ejemplo, fíjense que entre c1 y c2 toman el mínimo entre estos 2
+
+98
+00:11:38,040 --> 00:11:48,840
+ que quienes 1, entre c1 y c3 toman el mínimo que quienes entre 8 y 4 va a ser 4 y así
+
+99
+00:11:48,840 --> 00:11:55,960
+ sucesivamente. Con esta matriz es con la que van a trabajar, como estábamos siguiendo la mínima
+
+100
+00:11:55,960 --> 00:12:06,000
+ distancia, tomamos 1 que aquí en vinculan a c2 con c1. Entonces lo que vamos a hacer es
+
+101
+00:12:06,000 --> 00:12:14,200
+ unir la filera columna de c1 y c2 después de c3 y c4 y completamos. ¿Quién cómo se calculaba
+
+102
+00:12:14,200 --> 00:12:20,440
+ c1 y c2 con c3? Se acuerda que en el mínimo entre c1 y c3 y c2 y c3. Lo vamos a buscar.
+
+103
+00:12:20,440 --> 00:12:32,720
+ El mínimo entre c1 y c3, c1 con c3, quién es? 4 y el mínimo entre c2 y c3, quién es?
+
+104
+00:12:32,720 --> 00:12:42,400
+ Entonces el mínimo entre c3 y c3 y c4. Y así sucesivamente calculan el resto. Recuerden
+
+105
+00:12:42,400 --> 00:12:50,360
+ que entre c3 y c4 es este valor que tiene acá que es el bien. Y acá toman el mínimo valor
+
+106
+00:12:50,360 --> 00:12:55,400
+ que quienes 2, por si les había quedado la duda como se hacía cuando se agregaba un elemento
+
+107
+00:12:55,400 --> 00:13:00,480
+ más con una característica, aun un elemento que ya estaba conformado, miren, el próximo
+
+108
+00:13:00,480 --> 00:13:06,500
+ paso, bien iltera lo que nosotros teníamos ahora que era un nuevo conjunto formado por
+
+109
+00:13:06,500 --> 00:13:12,440
+ c1 y c2 en primera instancia. Fíjense que se respeta. Y después todo eso se junta con c4.
+
+110
+00:13:12,440 --> 00:13:19,160
+ Y a partir de ahí construimos la nueva matriz que recuerda más ser el mínimo entre c1
+
+111
+00:13:19,160 --> 00:13:31,600
+ y c2 con c4 está y c3 y a partir de ahí queda el 3. Entonces si se fijan, vamos a tener
+
+112
+00:13:31,600 --> 00:13:40,200
+ un árbol donde c1 y c2 se van a reunir en uno, después c2 se van a reunir con c4 en 2 y
+
+113
+00:13:40,200 --> 00:13:49,840
+ después todo c2 se van a reunir con c3 en c3, miren como c4. Acá se puede ver. C1 y c2, 1, después
+
+114
+00:13:49,840 --> 00:14:00,640
+ se sube c4 en 2 y finalmente se sube c3 en 3. Y ahí tenemos el árbol de las características.
+
+115
+00:14:00,640 --> 00:14:08,980
+ Está bien. A partir de ahora, pasamos a la última capa que es la interpretación o analisis de las
+
+116
+00:14:08,980 --> 00:14:14,460
+ resultados. Vamos con c4, c1 y c2, vamos a cortar acá y vamos a continuar ya con lo
+
+117
+00:14:14,460 --> 00:14:19,420
+ último que queda que es bastante más fácil lo más embrencado de este tema de los que.
+
+118
+00:14:19,420 --> 00:14:22,860
+ Bueno, espero que no se llena un río y nos vemos en el próximo vídeo. Hasta luego.
+

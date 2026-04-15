@@ -1,0 +1,428 @@
+1
+00:00:00,000 --> 00:00:07,080
+ Hola, soy María Florencia Pochocatáneo, soy la jefa de Catedra de la Signatura Interigencia
+
+2
+00:00:07,080 --> 00:00:12,720
+ Artificial de la Universidad Tecnológica Nacional, Facultar Regional Buenos Aires y Facultar
+
+3
+00:00:12,720 --> 00:00:20,040
+ Regional de la Plata. En el día de hoy, estamos comienzo con este primer vídeo al curso
+
+4
+00:00:20,040 --> 00:00:27,800
+ al ciclo lectivo 2020, no de la manera que queríamos todos, pero bueno, da la situación,
+
+5
+00:00:27,800 --> 00:00:34,080
+ vamos a tratar de comenzar a trabajar de la mejor manera posible.
+
+6
+00:00:34,080 --> 00:00:41,160
+ Les quiero aclarar que este material no está preparado para una clase de estas características.
+
+7
+00:00:41,160 --> 00:00:46,560
+ Está preparado para darlo en la aula con ustedes e interactuando.
+
+8
+00:00:46,560 --> 00:00:52,600
+ Pero no podemos, entonces, este es una de las alternativas, es la primer propuesta.
+
+9
+00:00:52,600 --> 00:01:01,000
+ Ya irán recibiendo distintos mensajes o indicaciones para que podamos trabajar,
+
+10
+00:01:01,000 --> 00:01:06,680
+ sepan que estamos poniendole la mejor buena voluntad de parte nuestra, de parte de la facultad
+
+11
+00:01:06,680 --> 00:01:12,680
+ también, de ambas facultades y bueno, sé que del lado de ustedes también.
+
+12
+00:01:12,680 --> 00:01:19,000
+ Bueno, hoy vamos a hacer una pequeña introducción para ver que la presentación es muy larga,
+
+13
+00:01:19,000 --> 00:01:25,280
+ pero yo voy a ir recordando la porque no es recomendable que los vídeos sean muy extensos.
+
+14
+00:01:25,280 --> 00:01:33,560
+ Entonces, vamos a dar comienzo a la primera parte de esta introducción al inteligencia artificial.
+
+15
+00:01:33,560 --> 00:01:41,600
+ Antesquenada me presento trabajamos el equipo de trabajo, están también en Dr. Pablo Pital,
+
+16
+00:01:41,600 --> 00:01:49,160
+ sintia bejega, hernana matria y nugo Ramón, exequie el vanga y esequiel Kironga. Todos nosotros somos el equipo
+
+17
+00:01:49,160 --> 00:01:54,640
+ que trabajamos en amas regionales, algunos van a estar transbambalinas, nos van a ver,
+
+18
+00:01:54,640 --> 00:02:03,520
+ y otros van a estar en el curso, siempre van a tener con quién, con quién, resolver las inquietudes que tengan
+
+19
+00:02:03,520 --> 00:02:12,120
+ y tienen después también herramientas disponibles en la web etcétera para poder ubicarnos.
+
+20
+00:02:12,120 --> 00:02:17,840
+ De las normas de cada teleto eso vamos a hablar por separado porque las regionales viajan, viajan distinto.
+
+21
+00:02:17,840 --> 00:02:25,120
+ Bueno, vamos a comenzar hablando de la inteligencia artificial, y para mí es fundamental
+
+22
+00:02:25,120 --> 00:02:35,520
+ cuando trabajo cuando dito algún seminario de estas características en una carrera de grado,
+
+23
+00:02:35,520 --> 00:02:41,280
+ esta materia está dentro de un plan de estudios y cumplió un objetivo.
+
+24
+00:02:41,280 --> 00:02:48,560
+ En particular, primero, para mí es muy importante aclarar qué pasa cuando hablamos
+
+25
+00:02:48,560 --> 00:02:56,080
+ de inteligencia artificial, porque hay mucho escrito sobre el tema, es un tema que está en bastante
+
+26
+00:02:56,080 --> 00:03:03,600
+ emboga, a pesar que ahora tenemos otros, pero se hablaba bastante de inteligencia artificial,
+
+27
+00:03:03,600 --> 00:03:08,760
+ a veces se magnifica, a veces no queda claro, entonces es fundamental para nosotros,
+
+28
+00:03:08,760 --> 00:03:15,000
+ que somos profesionales de la informática, esto para mí es fundamental y evidentemente necesario
+
+29
+00:03:15,000 --> 00:03:20,600
+ aclarar en que nos toca o en que nos sentimos comprometidos o vinculados,
+
+30
+00:03:20,600 --> 00:03:23,640
+ cuando hablamos de inteligencia artificial.
+
+31
+00:03:23,640 --> 00:03:30,200
+ En particular tenemos que ir a los origenes de la informática, del hardware y del software,
+
+32
+00:03:30,200 --> 00:03:37,800
+ en sus comienzos cuando estaban las máquinas con las válgulas al vacío, después cuando hablamos
+
+33
+00:03:37,800 --> 00:03:42,440
+ para el año 1979, con la primera propuesta, miren lo que es esta foto y el tamaño,
+
+34
+00:03:42,440 --> 00:03:48,880
+ de lo que eres el escorrígido, miren contra posición en el 2003, la capacidad y el tamaño,
+
+35
+00:03:48,880 --> 00:03:54,360
+ lo que lo que ha crecido, la capacidad de procesamiento y la capacidad de almacenamiento
+
+36
+00:03:54,360 --> 00:04:01,640
+ en los últimos años es increíble, esto ha potenciado un montón de modelos teóricos,
+
+37
+00:04:01,640 --> 00:04:07,000
+ de modelos formalizados y conceptualizados, el poder implementarse y llevarse a cabo,
+
+38
+00:04:07,000 --> 00:04:13,040
+ por eso es que la inteligencia artificial hoy por hoy está tan de moda. Yo siempre les cuento
+
+39
+00:04:13,040 --> 00:04:18,800
+ a ustedes que yo cursé inteligencia artificial, así que miren desde cuanto la inteligencia
+
+40
+00:04:18,800 --> 00:04:26,480
+ artificial está y sin embargo, eran muchas propuestas teóricas sin poder ser implementadas,
+
+41
+00:04:26,480 --> 00:04:30,440
+ entonces eran muchos docos más de fe, esto va a servir, esto va a servir para que
+
+42
+00:04:30,440 --> 00:04:36,720
+ ellos y sin embargo no quedaban más que en un décalo de buenas intensiones y de cosas posibles
+
+43
+00:04:36,720 --> 00:04:42,760
+ por hacer de sueños. Hoy, muchos de estos modelos formalizados pueden ser llevados
+
+44
+00:04:42,760 --> 00:04:50,520
+ a cabo en un celular, en cualquiera tipo de artefacto tecnológico. Eso es lo que respecto
+
+45
+00:04:50,520 --> 00:04:56,520
+ al hardware y en lo que respecto al software, tuvimos una transición muy interesante desde
+
+46
+00:04:56,520 --> 00:05:01,240
+ lo que fueron las tarjetas perforadas, que ninguno va a recordar que son porque casi ni yo
+
+47
+00:05:01,240 --> 00:05:07,640
+ las vi, así que son como de la prehistoria, parecía en como unas tarjetas de próde que tampoco
+
+48
+00:05:07,640 --> 00:05:11,840
+ las deben haber visto son tarjetas que se perforan en determinados lugares y eso
+
+49
+00:05:11,840 --> 00:05:18,160
+ puesto en un aparato permitía leer y con eso estructurar datos de entrada. Después vinieron
+
+50
+00:05:18,160 --> 00:05:24,760
+ los monitores, esos monitores verdes, espantosos, que casi nos dejaban ciegos, unos
+
+51
+00:05:24,760 --> 00:05:29,480
+ de ponían triogitos negros al poco tiempo de usar verdaderamente era muy dañinos para
+
+52
+00:05:29,480 --> 00:05:35,480
+ la vista, después pasamos para los monitores aambar que era un poquito menos no sigos para
+
+53
+00:05:35,480 --> 00:05:42,880
+ la vista y después llegaron estas hermosas ventanitas, que a los queramos programadores
+
+54
+00:05:42,880 --> 00:05:51,520
+ en aquella época nos cambió mucho la manera de programar y de pensar y de estructurar
+
+55
+00:05:51,520 --> 00:05:58,640
+ todo lo que eran desarrollos, para que finalmente hoy en día pensemos en estructuras de desarrollo
+
+56
+00:05:58,640 --> 00:06:07,400
+ totalmente disruptivas, interconectadas, vinculadas con una flexibilidad que hace años era imposible
+
+57
+00:06:07,400 --> 00:06:14,880
+ de imaginar. En este contexto uno se pregunta a dónde vamos a llegar, qué es lo que va a venir.
+
+58
+00:06:14,880 --> 00:06:20,680
+ Para eso un primero tendríamos que ubicar un poquito los comienzos de la inteligencia
+
+59
+00:06:20,680 --> 00:06:26,360
+ artificial, pero si les muevo a cala camarita, puedo desaparecer yo que no hago alista.
+
+60
+00:06:26,360 --> 00:06:31,040
+ La primera máquina analítica fue la máquina de Babache, fue una primera computadora
+
+61
+00:06:31,040 --> 00:06:39,360
+ de propósito generales, servía para realizar varios tipos de actividad y también hay que destacar
+
+62
+00:06:39,360 --> 00:06:48,640
+ en sus comienzos a la lovelas que fue la primera programadora reconocida con una educación
+
+63
+00:06:48,640 --> 00:06:57,000
+ muy especial, una educación de la por su madre, de manera rigurosa y aillada, ella
+
+64
+00:06:57,000 --> 00:07:03,960
+ pudo proponer estos primeros alboritmos para ser implementados en la máquina de Babache.
+
+65
+00:07:03,960 --> 00:07:10,600
+ Babache no pudo ver su máquina implementada, sin embargo años después pudo ser resuelto
+
+66
+00:07:10,600 --> 00:07:17,080
+ y pudo trabajar si ustedes ven, pueden leer a mí no me gusta leer, pero en esta situación
+
+67
+00:07:17,080 --> 00:07:22,120
+ que no puede ir actuar con ustedes a veces se más necesario, la máquina podía sobre otras
+
+68
+00:07:22,120 --> 00:07:27,120
+ cosas, además de numeros, así como todo objeto cuya relación muto afundamental, pudiera
+
+69
+00:07:27,120 --> 00:07:33,560
+ ser expresada por operaciones de la ciencia abstracta y el motor se podía pensar como para
+
+70
+00:07:33,560 --> 00:07:43,600
+ que trabajar a sobre piezas musicales, de cualquier grado, de complejidad o de extensión.
+
+71
+00:07:43,600 --> 00:07:51,160
+ El concepto de inteligencia artificial surge por primera vez en la conferencia de Darmont en
+
+72
+00:07:51,160 --> 00:07:57,800
+ Estados Unidos en el año 1956, cuando estas tres personas figence que algunos son bastante
+
+73
+00:07:57,800 --> 00:08:04,040
+ conocidos, yo Macarty, Marvin Minsky y Claude Chanon presentan por primera vez el término
+
+74
+00:08:04,040 --> 00:08:12,200
+ inteligencia artificial de manera formal, acá hay unito muy importante a partir de acá
+
+75
+00:08:12,200 --> 00:08:18,600
+ se empieza a analizar lo que es la evolución de la inteligencia artificial, a Lanthuring
+
+76
+00:08:18,600 --> 00:08:27,160
+ para el año 1950, si un tiempo antes figence que hay de apropones, dice que creo que al final
+
+77
+00:08:27,160 --> 00:08:30,840
+ del siglo el uso de las palabras y de los opiniones educadas general, se habrá alterado tanto
+
+78
+00:08:30,840 --> 00:08:35,800
+ que se podrá hablar de máquinas pensando sin esperar a hacer contra dicha, estamos hablando
+
+79
+00:08:35,800 --> 00:08:43,760
+ del año 1950. Bien, ya que es donde analizamos, empezamos a analizar la evolución de la
+
+80
+00:08:43,760 --> 00:08:51,280
+ inteligencia artificial en dos ejes donde vemos el paso del tiempo y las expectativas.
+
+81
+00:08:51,280 --> 00:08:56,080
+ En un primer momento en las expectativas vinculadas con la inteligencia artificial tienen que
+
+82
+00:08:56,080 --> 00:09:01,880
+ ver con este, esta frase que yo les pongo, mía más sin manos, hay un cuento que dice que
+
+83
+00:09:01,880 --> 00:09:06,000
+ pasa un ene que había comprado una visible, había regalado una bicicleta y decía, pasa
+
+84
+00:09:06,000 --> 00:09:10,720
+ la primera vuelta de la mansa ni la isemira más sin manos, pasa otra vuelta más al esemira
+
+85
+00:09:10,720 --> 00:09:15,440
+ más más sin un pie, miraba más sin el otro y a la otra miraba más sitientes. Bueno,
+
+86
+00:09:15,440 --> 00:09:20,600
+ verdaderamente las expectativas en sus estados iniciales de la inteligencia artificial eran
+
+87
+00:09:20,600 --> 00:09:26,960
+ altísimas, se pensaba que la inteligencia artificial iba a resolver todo, él iba a poder
+
+88
+00:09:26,960 --> 00:09:33,960
+ realizar de todo. Fíjense estas, estas tres, estas tres reflexiones y acabamos a terminar
+
+89
+00:09:33,960 --> 00:09:41,040
+ esta, esta, esta primera parte, fíjense que proponía John Macartín, se tan pronto como
+
+90
+00:09:41,040 --> 00:09:45,680
+ funciona, ya nadie lo llamaría, porque hay surge, el verdadero concepto de qué sería
+
+91
+00:09:45,680 --> 00:09:51,280
+ inteligente, no, empecemos a reflexionar sobre este ser inteligente. Si yo les digo a ustedes
+
+92
+00:09:51,280 --> 00:09:55,120
+ que yo sé leer, que escribir ustedes no me van a considerar por eso inteligente, ustedes
+
+93
+00:09:55,120 --> 00:10:01,160
+ le consideran inteligente, si yo pudiera hacer cosas que el común denominador no puede resolver,
+
+94
+00:10:01,160 --> 00:10:06,400
+ o si la si siera de mejor manera, esa y cuando uno reconoce el comportamiento inteligente
+
+95
+00:10:06,400 --> 00:10:14,320
+ del individuo, y que esa solución, esa actividad que yo realizo tenga que ver con el uso
+
+96
+00:10:14,320 --> 00:10:22,040
+ de la razón, el pensamiento, las síntesis, el análisis y la extracción. Bueno, entonces
+
+97
+00:10:22,040 --> 00:10:29,400
+ tenemos esta primera propuesta de John Macartín y se también se por otro lado se esperaba
+
+98
+00:10:29,400 --> 00:10:34,400
+ que la inteligencia artificial generara algoritmos basados en lógicas y hurísticas cosa que
+
+99
+00:10:34,400 --> 00:10:38,840
+ sí puede realizar en su primera etapa, después también se esperaba que pudiera construir
+
+100
+00:10:38,840 --> 00:10:43,920
+ artefactos, capaces de pensar ebulando copiando el comportamiento de los seres humanos,
+
+101
+00:10:43,920 --> 00:10:48,240
+ porque es ahí donde reside lo que se conoce como comportamiento inteligente, y lo que
+
+102
+00:10:48,240 --> 00:10:52,000
+ se pensaba, lo que se tenía totalmente en claro era que las máquinas y van a poder
+
+103
+00:10:52,000 --> 00:10:57,520
+ pensar que las máquinas serán pensantes. Bueno, en un próximo capítulo vamos a ver
+
+104
+00:10:57,520 --> 00:11:01,720
+ como continua. Desde ya muchísimas gracias, espero no haber sido terribles en primer vídeo
+
+105
+00:11:01,720 --> 00:11:07,840
+ que les grabo. Cuidense estamos haciendo entre todos para que esto salga de lo mejor posible.
+
+106
+00:11:07,840 --> 00:11:12,400
+ Estamos por 11 minutos, dicen que más de 10 minutos los alumnos se aburran, así que bueno,
+
+107
+00:11:12,400 --> 00:11:13,680
+ les mando un beso, hasta luego.
+

@@ -1,0 +1,800 @@
+1
+00:00:00,000 --> 00:00:06,220
+ Hola, mi nombre es Pablo Pital y en este vídeo vamos a hablar de distintas tipos de sistemas
+
+2
+00:00:06,220 --> 00:00:16,720
+ inteligentes, describiendo los de acuerdo a su tecnología y arquitectura. Como ustedes ya saben,
+
+3
+00:00:16,720 --> 00:00:23,040
+ en una organización que tiene su sistema de información, cuando tiene algún problema o
+
+4
+00:00:23,040 --> 00:00:30,000
+ alguna oportunidad de mejor, va a llamar al ingeniero del sistema de información. Este se va
+
+5
+00:00:30,000 --> 00:00:36,360
+ a ocupar de encontrar una solución a través de la construcción de un producto que puede
+
+6
+00:00:36,360 --> 00:00:44,040
+ incluir procesos manuales o sof. Este software puede ser software tradicional o sistemas inteligentes.
+
+7
+00:00:44,040 --> 00:00:51,080
+ Este sistema inteligentes van a tener características que los diferencian de un software tradicional,
+
+8
+00:00:51,080 --> 00:00:58,280
+ van a ser entre comillas inteligentes, por lo cual van a ser más parecidos a lo que puede
+
+9
+00:00:58,280 --> 00:01:06,080
+ realizar un ser humano. De todas formas, estos sistemas inteligentes todavía no logran emular
+
+10
+00:01:06,080 --> 00:01:15,160
+ complementamente la mente humana. Entonces para poder identificar un sistema inteligente, podemos definir
+
+11
+00:01:15,160 --> 00:01:23,440
+ que son artefactos que presentan algún tipo de comportamiento inteligente. Este comportamiento inteligente
+
+12
+00:01:23,440 --> 00:01:31,240
+ tiene que dar con una racionalidad que le permite tomar decisiones consistentes con el objetivo
+
+13
+00:01:31,240 --> 00:01:40,160
+ para el cual fue desarrollado, pero esto no significa que sean omniscientes ni infalibles, es decir,
+
+14
+00:01:40,160 --> 00:01:46,600
+ no van a poder conocer todos los conocimientos ni todos los datos relacionados a el problema,
+
+15
+00:01:46,600 --> 00:01:53,880
+ van a tener limitaciones, correspectos a esos conocimientos y esos datos que ahora vamos a
+
+16
+00:01:53,880 --> 00:02:01,080
+ hablar un poquito más. Lo cual va a necesitar que la tecnología tenga cierta flexibilidad y
+
+17
+00:02:01,080 --> 00:02:11,120
+ robustez para soportar cambios y poder contemplar situaciones que no fueron consideradas durante
+
+18
+00:02:11,120 --> 00:02:17,760
+ su desarrollo y todo eso va a llevar a también aquí no siempre sean exitosos, es decir, no
+
+19
+00:02:17,760 --> 00:02:25,640
+ van a ser siempre infalibles. De todas maneras, si un sistema inteligente puede desarrollado de manera
+
+20
+00:02:25,640 --> 00:02:34,440
+ adecuada y correcta, contemplando todos los pasos, vamos a buscar que sea exitoso en la mayoría
+
+21
+00:02:34,440 --> 00:02:42,560
+ de los casos. Al momento de hablar de un sistema inteligente entonces podemos considerar dos cuestiones
+
+22
+00:02:42,560 --> 00:02:47,440
+ importantes. Por un lado, cuáles son las fuentes de conocimientos que se van a utilizar para
+
+23
+00:02:47,440 --> 00:02:55,280
+ su desarrollo y por otro lado cuáles la tecnología que se va a aplicar para implementar este sistema
+
+24
+00:02:55,280 --> 00:03:02,840
+ inteligente. En cuanto a los conocimientos vamos a hablar de dos tipos de fuentes, fuentes públicas
+
+25
+00:03:02,840 --> 00:03:11,800
+ que se refieren a todas las fuentes de información que están explicitadas, el hecho de que
+
+26
+00:03:11,800 --> 00:03:19,720
+ sea pública no significa que sean gratuitas porque yo puedo utilizar como una fuente pública
+
+27
+00:03:19,720 --> 00:03:27,160
+ una base de datos propietaria de una organización, o una base de datos que está disponible
+
+28
+00:03:27,160 --> 00:03:37,360
+ en la web, puedo utilizar documentos, manuales, vídeos de YouTube, poros, cualquier tipo de
+
+29
+00:03:37,360 --> 00:03:48,440
+ información que puede hacer accesible a de manera digital, podríamos hacer. En el caso de libros
+
+30
+00:03:48,440 --> 00:03:53,520
+ impresos, esos libros obviamente vamos a tener que digitalizar vos antes, pero también vamos
+
+31
+00:03:53,520 --> 00:04:00,240
+ a conocer a los como fuentes públicas. Por otro lado, también se pueden utilizar fuentes
+
+32
+00:04:00,240 --> 00:04:07,200
+ privadas. Al hablar de fuentes privadas nos referemos a todo el conocimiento y todos los datos
+
+33
+00:04:07,200 --> 00:04:15,000
+ que están interiorizados dentro de la mente de una persona. Dentro de las personas disponibles
+
+34
+00:04:15,000 --> 00:04:21,000
+ para llevar a cabo la implementación de un sistema inteligente, obviamente que nosotros vamos a buscar
+
+35
+00:04:21,000 --> 00:04:29,520
+ a la persona que sabe más sobre el problema, que sabe resolver el problema o en éxito. Entonces,
+
+36
+00:04:29,520 --> 00:04:36,940
+ ahí vamos a buscar un experto en el dominio del problema. En el caso de utilizar un
+
+37
+00:04:36,940 --> 00:04:44,620
+ experto como fuente privada de conocimientos, al cual le vamos a el licitar los conocimientos,
+
+38
+00:04:44,620 --> 00:04:51,020
+ estaríamos desarrollando un sistema experto. La definición del sistema experto nos dice que es un
+
+39
+00:04:51,020 --> 00:04:58,580
+ sistema cuya prestación es intentan emular parte del como portamiento de un experto humano para
+
+40
+00:04:58,580 --> 00:05:06,220
+ resolver ciertas tareas en un dominio de determinado. No tem esto de emular y lo de ciertas tareas,
+
+41
+00:05:06,220 --> 00:05:12,100
+ qué quiere decir esto. Nosotros vamos a tratar de imitar de copiar la manera en que el experto
+
+42
+00:05:12,100 --> 00:05:19,100
+ resuelve el problema, pero en lo vamos a poder realizar en forma completa. Todavía no es posible
+
+43
+00:05:19,100 --> 00:05:26,500
+ hacer una copia del aumento del experto en un formato digital para poder ser utilizado. Entonces,
+
+44
+00:05:26,500 --> 00:05:34,340
+ lo que vamos a hacer es focalizarnos en ciertas tareas del experto que se consideran importantes
+
+45
+00:05:34,340 --> 00:05:41,780
+ para hacer utilizadas a través del sistema inteligente o sistema experto y vamos a tratar de imitar
+
+46
+00:05:41,780 --> 00:05:47,780
+ qué cosas hace el experto utilizando tecnologías del inteligencia artificial. En ese caso,
+
+47
+00:05:47,780 --> 00:05:55,380
+ contaríamos con un sistema experto. Asobes no tentan bien que estos sistemas expertos utilizan
+
+48
+00:05:55,380 --> 00:06:01,340
+ también fuentes públicas o es decir, el hecho de ser un sistema experto nos significa que
+
+49
+00:06:01,340 --> 00:06:09,740
+ vamos a utilizar sólo conocimiento educido del experto. Si no que también vamos a poder utilizar
+
+50
+00:06:09,740 --> 00:06:17,300
+ conocimientos y datos extraídos del fuente. En el caso de un sistema inteligente en general,
+
+51
+00:06:17,300 --> 00:06:26,140
+ vamos a utilizar solamente conocimiento extraído del fuente. No estaríamos utilizando ningún tipo
+
+52
+00:06:26,140 --> 00:06:35,740
+ de fuente privada. Entonces, acá para mostrar la relación entre sistema experto y sistema
+
+53
+00:06:35,740 --> 00:06:42,540
+ inteligente podemos ver que los sistemas expertos forman un sub conjunto dentro de los sistemas
+
+54
+00:06:42,540 --> 00:06:49,220
+ inteligentes. No todos los sistemas inteligentes son sistemas expertos, pero todos los sistemas expertos
+
+55
+00:06:49,220 --> 00:06:57,300
+ son sistemas inteligentes. Bueno, con respecto a la tecnología que se puede utilizar para implementar
+
+56
+00:06:57,300 --> 00:07:03,780
+ estos sistemas inteligentes expertos o no, podemos hablar de dos grandes grupos. Por un lado,
+
+57
+00:07:03,780 --> 00:07:09,580
+ la inteligencia artificial tradicional y por otro lado, la inteligencia computacional y la
+
+58
+00:07:09,580 --> 00:07:16,860
+ aprendizaje automático o machine learning. La inteligencia artificial tradicional es la inteligencia
+
+59
+00:07:16,860 --> 00:07:26,980
+ artificial clásica, la que surgió a principio de la década de los 50 y la cual está basado en reglas
+
+60
+00:07:26,980 --> 00:07:36,180
+ metodoseurísticas y la lógica. En estas tipos de sistemas inteligentes, vamos a ver que aparece algo
+
+61
+00:07:36,180 --> 00:07:43,100
+ un componente que se llama base de conocimiento y se le que va a almacenar todo el cuerpo de
+
+62
+00:07:43,100 --> 00:07:51,660
+ conocimientos obtenido para que el sistema inteligente funciona. Este, esta base de conocimiento
+
+63
+00:07:51,660 --> 00:08:00,860
+ generalmente va a contar con esos conocimientos descriptos en un lenguaje lógico con reglas
+
+64
+00:08:00,860 --> 00:08:10,900
+ del estilo siguiente. Puedes pasar que estas reglas no, no estén escritas en un, no terminología
+
+65
+00:08:10,900 --> 00:08:20,620
+ tan glará como si entonces pueden aplicar algunos principios de lógica o algunas sintaxis especial,
+
+66
+00:08:20,620 --> 00:08:29,900
+ pero de todas maneras, una persona que conoce esa sintaxis va a poder entender y leer y en
+
+67
+00:08:29,900 --> 00:08:36,100
+ el caso necesario modificar y todas estas reglas y hechos que aparecen esta base de conocimiento.
+
+68
+00:08:36,100 --> 00:08:43,340
+ Por eso se habla de una presencia explicita del cuerpo de conocimiento. Para poder aplicar estas
+
+69
+00:08:43,340 --> 00:08:49,500
+ reglas aparecen un componente que es el motor de inferencia. Este motor de inferencia es un elemento
+
+70
+00:08:49,500 --> 00:08:59,380
+ enérico que puede ser utilizado para cualquier tipo de problemas y lo que hace es aplicar
+
+71
+00:08:59,380 --> 00:09:05,540
+ algunos métodos generales como métodos de búsqueda para tratar de decidir que reglas se deberían
+
+72
+00:09:05,540 --> 00:09:14,980
+ aplicar para resolver un problema en un contexto determinado. Entonces ahora después vamos a hablar de
+
+73
+00:09:14,980 --> 00:09:19,860
+ los arquitecturas específicas pero hay una vez que aparecen tanto la base de conocimientos como
+
+74
+00:09:19,860 --> 00:09:29,620
+ el motor de inferencia como los elementos principales de esta y a tradicional. En el caso de los sistemas
+
+75
+00:09:29,620 --> 00:09:37,300
+ basados en conocimientos, entonces tenemos la base de conocimientos que va a tener reglas y hechos que van
+
+76
+00:09:37,300 --> 00:09:44,260
+ a venir solo de fuentes públicas. Voy a tener mi motor de inferencias que va a aplicar, por ejemplo,
+
+77
+00:09:44,260 --> 00:09:50,620
+ los métodos de búsqueda y por último vamos a tener un interfaz de entrada salida que le va a permitir
+
+78
+00:09:50,620 --> 00:09:56,620
+ al usuario relacionarse con el sistema basado en conocimiento. Fíjense que esta arquitectura es bastante
+
+79
+00:09:56,620 --> 00:10:02,380
+ sencilla. En el caso de que yo lo quiero utilizar para resolver un problema lo único que tengo que definir
+
+80
+00:10:02,380 --> 00:10:07,980
+ es la base de conocimientos, el motor de inferencia y el interfaz dentro de la salida es generica que
+
+81
+00:10:07,980 --> 00:10:14,220
+ haga para que el interfaz le ha podido adaptar un poquito, pero el motor de inferencias salvo para
+
+82
+00:10:14,220 --> 00:10:22,220
+ metrizar a alguna cosa no voy a tener que hacerlo. Por otro lado, tenemos los sistemas expertos
+
+83
+00:10:22,220 --> 00:10:29,820
+ tradicionales. Fíjense que estos sistemas expertos son sistemas que van a emular parte del conocimiento
+
+84
+00:10:29,820 --> 00:10:38,140
+ de un experto para realizar cierta tarea. Si los llamas tradicionales, porque van a contar con una base
+
+85
+00:10:38,140 --> 00:10:43,020
+ de conocimientos. Entonces, esta base de conocimientos que va a estar también formando por reglas y hechos,
+
+86
+00:10:43,020 --> 00:10:49,420
+ va a incluir además de fuentes públicas fuentes privadas de conocimientos. También tenemos nuestro motor
+
+87
+00:10:49,420 --> 00:10:54,460
+ de inferencia, la interfaz de entrada salida acá, la vamos a llamar manejadores de comunicaciones,
+
+88
+00:10:54,460 --> 00:11:01,260
+ pero buena aparecer a algunos componentes adicionales. Va a aparecer algo que se llama base de datos,
+
+89
+00:11:01,260 --> 00:11:07,580
+ está base de datos, lo que va a almacenar son la información del problema que yo quiero
+
+90
+00:11:07,580 --> 00:11:13,340
+ resolver en este momento dado. Entonces, por un lado tengo los conocimientos que tengo que utilizar
+
+91
+00:11:13,340 --> 00:11:18,620
+ para resolver el problema que van en la base de conocimientos y por otro lado tengo los datos
+
+92
+00:11:18,620 --> 00:11:27,260
+ específicos del caso que quiero resolver. A partir de estos datos, el motor de inferencia va a poder
+
+93
+00:11:27,260 --> 00:11:35,660
+ determinar que reglas aplicar en la base de conocimientos. Por otro lado, aparece la memoria de trabajo,
+
+94
+00:11:35,660 --> 00:11:43,500
+ la memoria de trabajo, lo que va a permitir es registrarco toda la traza de reglas y de
+
+95
+00:11:43,500 --> 00:11:49,420
+ pasos que usó el motor de inferencias para resolver el problema. Es como una especie de log donde
+
+96
+00:11:49,420 --> 00:11:54,220
+ se va registrando paso a paso, que fue haciendo el motor de inferencias para resolver el problema.
+
+97
+00:11:54,220 --> 00:12:02,620
+ Esta memoria de trabajo es útil porque hay un componente también en los set que son los trazadores
+
+98
+00:12:02,620 --> 00:12:09,020
+ de explicaciones. El trazador de explicaciones lo que permite es justificar el resultado que genera el
+
+99
+00:12:09,020 --> 00:12:18,620
+ sistema experto tradicional. De esa manera se dice que este sistema puede explicar o justificar
+
+100
+00:12:18,620 --> 00:12:27,740
+ qué paso realizó para resolver el problema de manera similar a lo que hace un esperto. Para poder
+
+101
+00:12:27,740 --> 00:12:33,580
+ explicar esto, necesitas saber qué paso se usaron. Entonces, va a tener que acceder a la memoria de
+
+102
+00:12:33,580 --> 00:12:41,980
+ trabajo. Y por último, tenemos el trazador de consultas. El trazador de consultas lo que nos va a permitir
+
+103
+00:12:41,980 --> 00:12:49,580
+ es poder solicitarle al usuario información adicional sobre el problema que se quiere resolver.
+
+104
+00:12:49,580 --> 00:12:55,580
+ A veces que el motor de inferencia necesita, hay un dato adicional para saber si tiene que ir
+
+105
+00:12:55,580 --> 00:13:04,140
+ por la regla a o la regla a. Bueno, entonces en ese caso el trazador de consultas se lo puede solicitar al usuario
+
+106
+00:13:04,140 --> 00:13:11,900
+ y le va a explicar por qué necesite ese dato. Por eso es un componente separado del manejador de comunicación.
+
+107
+00:13:11,900 --> 00:13:18,220
+ No es que solamente va a aparecer una ventanita y se ingrese la temperatura, sino que le va a decir
+
+108
+00:13:18,220 --> 00:13:27,180
+ el inglés en la temperatura porque necesitamos determinar si la temperatura es alta o baja para saber si va
+
+109
+00:13:27,180 --> 00:13:33,740
+ a llover o no va a llorar. Entonces, el trazador de explicaciones es muy un poquito el trazador de explicaciones,
+
+110
+00:13:33,740 --> 00:13:40,700
+ porque de alguna manera justifica la necesidad de ese información. En el caso del usuario tiene ese
+
+111
+00:13:40,700 --> 00:13:46,940
+ información, la va a poder ingresar. Si el usuario no la cuenta, bueno, puede poner no la sé y ahí el
+
+112
+00:13:46,940 --> 00:13:54,940
+ trazador de consultas va a haber y otro dato complementario puede llegar a solicitar para que el motor de
+
+113
+00:13:54,940 --> 00:14:02,940
+ inferencia pueda decidir cuál es la regla que se tiene que aplicar. Entonces, no tem que este sistema
+
+114
+00:14:02,940 --> 00:14:09,660
+ perto tradicional tiene más componentes que el sistema basado en conocimiento, porque como nosotros necesitamos
+
+115
+00:14:09,660 --> 00:14:17,100
+ emular al experto humano, necesitamos que pueda hacer algunas cosas adicionales que en un sistema basado en conocimiento,
+
+116
+00:14:17,100 --> 00:14:23,980
+ nos vamos a necesitar. Bueno, con respecto al otro grupo de tecnologías, tenemos la inteligencia
+
+117
+00:14:23,980 --> 00:14:33,820
+ computacional en esta familia de algoritmos y de arquitecturas, vamos a incluir todas las tecnologías
+
+118
+00:14:33,820 --> 00:14:41,900
+ de la inteligencia artificial que tienen una inspiración biológica, ayer los científicos del inteligencia
+
+119
+00:14:41,900 --> 00:14:50,940
+ artificial se basaron en hecho de la naturaleza que presentaban algún tipo de inteligencia. Un ejemplo clásico
+
+120
+00:14:50,940 --> 00:14:57,580
+ son las redes neuronales artificiales que forman parte del cerebro de todo el sistema nervioso en los
+
+121
+00:14:57,580 --> 00:15:05,340
+ animales y el el cerebro. Pero también aparece en algoritmos que copian el funcionamiento de la tidida
+
+122
+00:15:05,340 --> 00:15:13,020
+ de la evolución del sistema immunológico del comportamiento de animales en grupo, ayer presa los algoritmos
+
+123
+00:15:13,020 --> 00:15:19,580
+ de inteligencia en diciembre y otros algoritmos más. Dentro de inteligencia computacional vamos a tener
+
+124
+00:15:19,580 --> 00:15:29,740
+ cientos de algoritmos que se pueden aplicar. Entonces esta inspiración biológica le va a permitir a los
+
+125
+00:15:29,740 --> 00:15:35,420
+ sistemas resolver distintos tipos de programas. Después vamos a ver algunos ejemplos de estos tipos de
+
+126
+00:15:35,420 --> 00:15:43,100
+ algoritmos. Por otro lado, tenemos Machine Learning o aprendizaje automático como se lo suele decir en
+
+127
+00:15:43,100 --> 00:15:51,340
+ castellano, que son los algoritmos que pueden aprender a partir de ejemplos. Entonces, yo voy a tener un conjunto
+
+128
+00:15:51,340 --> 00:16:00,620
+ de datos que pueden estar estructurados o no. Los voy a ejecutar esos datos con un algoritmo determinado,
+
+129
+00:16:00,620 --> 00:16:06,860
+ ese algoritmo ya va a estar definido por algún científico del inteligencia artificial, así que no lo tengo
+
+130
+00:16:06,860 --> 00:16:14,700
+ que definir yo, lo que sí voy a tener que hacer es para metrizarlo, después de eso vamos a hablar en otros
+
+131
+00:16:14,700 --> 00:16:26,460
+ vídeos y como resultado voy a obtener un modelo y ese modelo me va a permitir entender y emular
+
+132
+00:16:26,460 --> 00:16:33,180
+ el comportamiento de esos datos. Entonces yo el ejecutar ese modelo voy a poder realizar acciones
+
+133
+00:16:35,020 --> 00:16:43,660
+ y tratan de emular el comportamiento de alguien o de algo del cual yo tengo un conjunto de datos
+
+134
+00:16:43,660 --> 00:16:54,620
+ históricos. Machine Learning es una también una familia de algoritmos muy grande sigue creciendo
+
+135
+00:16:54,620 --> 00:17:03,660
+ todo el tiempo y se puede hablar mucho de Machine Learning. Por lo cual lo vamos a dejar una descripción
+
+136
+00:17:03,660 --> 00:17:11,660
+ un poco más detallada en otros vídeos. Acá es solamente la la presentación de que es Machine Learning
+
+137
+00:17:11,660 --> 00:17:21,420
+ como para hablar de los distintos tipos de tecnología. Bien, teniendo en cuenta estos tipos de tecnologías
+
+138
+00:17:21,420 --> 00:17:30,300
+ vamos a ver durante la cursada, algunas distintas arquitecturas de sistemas inteligentes.
+
+139
+00:17:30,300 --> 00:17:35,500
+ Nosotros recién ya hablamos de sistemas de todos en conocimientos y sistemas expertos tradicionales.
+
+140
+00:17:35,500 --> 00:17:43,260
+ También vamos a hablar en otro vídeo de algoritmos de inducción y de algoritmos de regresión,
+
+141
+00:17:43,260 --> 00:17:51,580
+ que son algoritmos clásicos de Machine Learning que se pueden utilizar para resolver problemas sencillos.
+
+142
+00:17:51,580 --> 00:17:58,540
+ Para problemas más complejos podemos aplicar algoritmos genéticos o redes neuronales artificiales
+
+143
+00:17:59,820 --> 00:18:07,820
+ y por último tenemos la lógica difusa con sus sistemas difusos que nos va a permitir también
+
+144
+00:18:07,820 --> 00:18:14,700
+ implementar sistemas inteligentes y lo que tiene de especial la lógica difusa es que se puede
+
+145
+00:18:14,700 --> 00:18:23,100
+ combinar con las otras tecnologías para soportar cierta impresición en los datos que el sistema va a
+
+146
+00:18:23,100 --> 00:18:29,740
+ tener que manejar. Entonces la lógica difusa va a tener una flexibilidad en la cual uno va a poder
+
+147
+00:18:29,740 --> 00:18:36,940
+ combinarla con otras tecnologías para resolver problemas. Estas seis arquitecturas que nosotros
+
+148
+00:18:36,940 --> 00:18:43,980
+ mencionamos acá las podemos clasificar de esta manera en lo que es y a tradicional obviamente tenemos
+
+149
+00:18:43,980 --> 00:18:51,420
+ los sistemas casados en conocimientos y los sistemas expertos tradicionales. Hay sistemas difusos que
+
+150
+00:18:51,420 --> 00:18:59,420
+ van a aplicar base de desconocimiento. Entonces dentro de la y tradicional podemos aplicar estos tipos de
+
+151
+00:18:59,420 --> 00:19:08,860
+ sistemas. Pero esta lógica difusa también se puede combinar con Machine Learning. Entonces la lógica difusa
+
+152
+00:19:08,860 --> 00:19:17,340
+ podemos decir que forma parte de las dos tipos de familias de tecnologías. En cuanto a Machine Learning
+
+153
+00:19:17,340 --> 00:19:23,820
+ también podemos incluir los alcorrimos de inducción y los alcorrimos de regresión. Esto es alcorrimos de inducción
+
+154
+00:19:23,820 --> 00:19:30,460
+ muchas veces son utilizados para identificar reglas. Entonces estas reglas identificadas por el
+
+155
+00:19:30,460 --> 00:19:37,420
+ alcorrimos de inducción luego las puedo utilizar dentro de la base de conocimiento de un sistema
+
+156
+00:19:37,420 --> 00:19:44,540
+ conía tradicional. Por eso acá aparecen estas flechitas que relacionan a los alcorrimos de inducción
+
+157
+00:19:44,540 --> 00:19:51,980
+ con las terest tecnologías que hablamos recién deía tradicional. Dentro de Machine Learning, por último tenemos
+
+158
+00:19:51,980 --> 00:19:57,740
+ las redes neuronales artificiales que van a aprender a partir de ejemplos entonces pueden considerar
+
+159
+00:19:57,740 --> 00:20:04,940
+ dentro de estas familias de elevarinos. Pero las redes neuronales artificiales tienen una inspiración biológica
+
+160
+00:20:04,940 --> 00:20:11,900
+ por lo que también son de inteligencia computacional. Dentro de inteligencia computacional
+
+161
+00:20:11,900 --> 00:20:17,980
+ para cómo. Por último podemos incluir a los alcorrimos genetes y todos los alcorrimos de computación
+
+162
+00:20:17,980 --> 00:20:26,460
+ evolved. Entonces fíjense que la relación entre el tipo de tecnología y la arquitectura
+
+163
+00:20:26,460 --> 00:20:35,740
+ no es blanco negro sino que hay solapamiento y hay relaciones entre las distintas tecnologías que
+
+164
+00:20:35,740 --> 00:20:44,940
+ se pueden aplicar. Entonces esto es importante tenerla en cuenta porque muchas veces en algunos videos
+
+165
+00:20:44,940 --> 00:20:51,900
+ no materiales te hablan de inteligencia artificial versos Machine Learning. Por ejemplo, no, no es un
+
+166
+00:20:51,900 --> 00:20:58,940
+ versos es un subconjunto de inteligencia artificial. Entonces están muy relacionados entre sí
+
+167
+00:20:58,940 --> 00:21:04,700
+ y de hecho muchas veces yo puedo combinar Machine Learning conía tradicional y algo de inteligencia
+
+168
+00:21:04,700 --> 00:21:14,300
+ computacional y todo va a funcionar. Entonces no hay que que acá considerar que algo es o no es,
+
+169
+00:21:14,300 --> 00:21:19,500
+ sino que puede ser que pertenece a los dos o pertenece un poquito más a uno que pertenece más a lo
+
+170
+00:21:19,500 --> 00:21:25,740
+ otra. Esto es importante para tenerla en cuenta porque va a ayudarnos luego a entender cómo funciona
+
+171
+00:21:25,740 --> 00:21:34,540
+ cada una de estas tecnologías. Otra forma de clasificar estas arquitecturas puede ser por el tipo de
+
+172
+00:21:34,540 --> 00:21:42,060
+ conocimiento que se puede aplicar en su desarrollo. En todas yo puedo utilizar fuentes de conocimientos
+
+173
+00:21:42,060 --> 00:21:53,100
+ públicos como dijimos, puedo usar videos, bases datos, audios, textos, lo que lo que sea. Pero en
+
+174
+00:21:53,100 --> 00:21:59,580
+ algunos casos yo a su vez puedo utilizar conocimientos que fueron educidos de una fuente privada.
+
+175
+00:21:59,580 --> 00:22:07,820
+ Entonces yo ahí voy a tener sistemas expertos. Fíjense que salvo a los sistemas pasados en conocimientos
+
+176
+00:22:07,820 --> 00:22:14,540
+ todo resto se pueden utilizar conocimientos privadas. En el caso de Machine Learning,
+
+177
+00:22:14,540 --> 00:22:21,820
+ lo que voy a tener que hacer es de alguna forma es usir ese conocimiento del experto, explicitarlo
+
+178
+00:22:21,820 --> 00:22:31,980
+ en algún formato. Por ejemplo, yo puedo pedir el experto que me describa paso a paso lo que está realizando.
+
+179
+00:22:31,980 --> 00:22:38,860
+ Luego eso yo lo voy a transformar en algún documento digital y con eso puedo entrenar una
+
+180
+00:22:38,860 --> 00:22:46,060
+ algorithma de Machine Learning para identificar reglas o para implementar una ranneuronal o para lo que sea.
+
+181
+00:22:46,060 --> 00:22:54,540
+ Entonces, fíjense que acá también a veces que en muchos materiales que disponibles en
+
+182
+00:22:54,540 --> 00:23:00,860
+ la web te hablan no Machine Learning solamente, puede usar datos que tienen una base de datos. No,
+
+183
+00:23:00,860 --> 00:23:10,060
+ mentira. Yo puedo utilizar datos de cualquier origen lo que sí, lo voy a tener que preparar a esos datos,
+
+184
+00:23:10,060 --> 00:23:15,100
+ a lo que el algoritmo necesita. Algunas algoritmos sí van a necesitar tener un formato de
+
+185
+00:23:15,100 --> 00:23:24,140
+ estable estructurada. Pero otros algoritmos no. Entonces ahí, uno va a tener que considerar las necesidades
+
+186
+00:23:24,140 --> 00:23:31,820
+ del algoritmo para preparar los datos o a través a partir de las características que tienen los datos que
+
+187
+00:23:31,820 --> 00:23:37,980
+ yo tengo, elegir el algoritmo más adecuado para ser aplicado. De todo esto lo vamos a hablar
+
+188
+00:23:37,980 --> 00:23:46,940
+ después en otros videos, pero bueno, les queríamos, ahí ya presentar esa dificultad. Bueno,
+
+189
+00:23:46,940 --> 00:23:53,700
+ teniendo en cuenta estas dos clasificaciones, como para tratar de resumir todo lo que vimos,
+
+190
+00:23:53,700 --> 00:24:02,700
+ podemos decir, bueno, los sistemas inteligentes, los podemos diferenciar entre los sistemas que utilizan
+
+191
+00:24:02,700 --> 00:24:11,900
+ una base de conocimientos, explícita de decir, una base de conocimientos, como se suele llamar, que son
+
+192
+00:24:11,900 --> 00:24:17,100
+ propias de laía tradicional, ahí tenemos los sistemas basados conocimientos y los sistemas
+
+193
+00:24:17,100 --> 00:24:25,660
+ expertos tradicionales. Y a su puedes, los podemos diferenciar en cuanto a cueliz la fuenda de conocimientos
+
+194
+00:24:25,660 --> 00:24:34,700
+ que tienen, los que utilizan solo conocimientos públicos que van a hacer todos los sistemas inteligentes,
+
+195
+00:24:34,700 --> 00:24:42,460
+ los que no usan nada de conocimiento privado que serían los sistemas basados en conocimientos y los
+
+196
+00:24:42,460 --> 00:24:47,980
+ que sí pueden utilizar conocimientos públicos privados que sería bueno, los sistemas expertos tradicionales,
+
+197
+00:24:47,980 --> 00:24:54,060
+ las padres neuronales, algoritmos de inducción y de regresión, los algoritmos genéticos y la lógica
+
+198
+00:24:54,060 --> 00:25:02,220
+ tenemos, bueno, con esto terminamos este vídeo, en otros vídeos, a continuación van a
+
+199
+00:25:02,220 --> 00:25:07,820
+ hago, vamos a hablar más de Machine Learning, del proceso de Machine Learning, y a contarles cómo
+
+200
+00:25:07,820 --> 00:25:14,300
+ funciona los algoritmos de inducción y los algoritmos. Bueno, pero que les haya sido útil, hasta
+

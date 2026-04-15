@@ -1,0 +1,141 @@
+ Hola como están, soy Sintia Bejera, aseguran que nuestro primer vídeo, nosotros estuvimos
+ viendo acerca de lo que era una análisis de protocólogos y vimos la primera etapa de
+ grabación del protocólogo y la segunda etapa de trácripción.
+ Entonces ahora en este video vamos a comenzar viendo la etapa de codificación, que la etapa
+ más importante del protocólogo, porque van a ver que cuando yo termine este etapa, todo
+ el protocólogo va a ser analizado.
+ Para esto tiene tres suetapas que cumplir, la primera sedenomina y identificación de conceptos
+ características, valores, relaciones y operadores.
+ Luego tengo una segunda suetapa que es la identificación de la búsqueda y por último una
+ tercera, que la identificación de sinónimos, meta comentarios e incertidumbres.
+ Entonces comencemos con la identificación de cada uno de estos elementos del protocólogo
+ que se denomilla.
+ Porulado tenemos los conceptos, las características y los valores.
+ Para poder saber que son estos conceptos características y valores, podemos hacer una analogía
+ con un diagrama de entidad relación.
+ Un entidad, la podemos tomar como un concepto.
+ Luego se concepto, tendrá características o sea atributos propias y por último, esos atributos
+ tendrán valores, puede ser un valor, puede ser más de un valor o un rango de valores.
+ Por otro lado, tenemos las relaciones, estas relaciones que yo puedes establecer en un diagrama
+ de entidad relación en entidad, pero que los analisis de protocolos también puede ser relaciones.
+ Entre conceptos, pero también entre conceptos y características o características y valores,
+ es decir que se amplió un poquito más el concepto de relación, y por último tenemos
+ los operadores.
+ Los operadores son aquellos medios que les perta usan para pasar de un estado del problema
+ a otro estado más próximo a la solución.
+ Es decir, que el operador es lo que me va a ir llevando a cada uno de los estados del protocolo.
+ Como yo les dije, tanto los conceptos como las características, los valores, las relaciones
+ y los operadores son los denominados elementos del protocolo.
+ ¿Qué vamos a hacer entonces a continuación y identificando estos elementos del protocolo?
+ Para eso, vamos a tener que ir analizando línea por línea de la transcripción y viendo
+ que podemos encontrar.
+ Si nosotros vemos acá, por un lado vemos el paciente, vemos presente, fiebre, superior
+ a 38 grados, manifiesta, un fuerte dolor de garganta y 2 seca.
+ ¿Qué podemos obtener de eso?
+ Al paciente lo podemos considerar con un concepto.
+ ¿Qué pasa con ese paciente?
+ Tentas ciertos síntobas, entonces presentas puede ser una relación entre el paciente
+ y lo que ahora vamos a identificar.
+ Luego tenemos fiebre que la podemos considerar con una característica que tiene un valor
+ superior a 38 grados.
+ Manifiesta como otra relación fuerte y dolor de garganta con una característica con
+ su valor asociado y lo mismo ocurre, digamos, con dos y seca, entonces una característica
+ y seca el valor.
+ De esta manera, vamos a seguir analizando la transcripción.
+ Vamos a las líneas siguientes.
+ Lo que nos dice es, su frecuencia respiratoria es muy elevada y tiene dolores musculares
+ e intensos, entonces ven que tenemos frecuencia respiratoria muy elevada, tiene dolores musculares
+ e intensos.
+ Dice, podríamos pensar que es una línea que la vamos a dejar para después, que estamos
+ ante un coronavirus COVID-19, que es lo que pasó ahí, yo llegué a un estado porque
+ es bueno, podría hacer coronavirus, entonces que es lo que pasa, necesitamos un operador,
+ porque por eso que les había dicho que el operador era el medio que les perteneaba para
+ pasar de un estado a otro, entonces que lo que encontramos en estas frases, por un lado
+ la frecuencia respiratoria como una característica con su valor que es muy elevada, dolores
+ musculares como una característica que es otro de los síntomas con intensos que su valor,
+ que estamos ante un es el operador, es el medio que me permite pasar, de no saber cuál
+ era el diagnóstico a decir, puede ser este diagnóstico y tenemos el estado, si nosotros
+ al estado lo tenemos que ubicar, teniendo un buen estos elementos del protocolo, lo podemos
+ ubicar tanto como concepto como valor, ahora vamos a ver, después a continuación, que
+ pasó si lo elijo como concepto y que pasó si lo elijo como valor, sigamos analizando,
+ si se el paciente debe permanecer aislado por precaución, dado lo contagioso del virus,
+ todo eso lo vamos a dejar también para después, en una segunda observación también lo
+ vamos a dejar para después, dice vemos que esta persona presenta dolor de cabeza persistente
+ y su freumareo repentino de larga duración, entonces hay también tenemos varias cosas,
+ por un lado tenemos vemos que con una relación tenemos que hay una persona que sería el
+ concepto que presenta como ta relación y que es lo que presenta, dolor de cabeza que lo
+ podemos considerar como una carácterística persistente como su valor, su freum como otra
+ relación, aunque ta relacionando a todos estos síntomas que el paciente presenta y acá
+ que es lo que pasa, dice que presenta un maleo repentino de larga duración, entonces que hay
+ ahí en mario, si lo puedo poner a mario como una carácterística, porque en realidad que es
+ lo que pasa, el mario por un lado es repentino, o sea tiene un tipo no es un maleo común y por
+ el otro lado tiene una duración, que son, que lo que dice es que es una duración larga,
+ entonces que es lo que pasa ahí, llamarío no puede ser tomado como una carácterística,
+ sino que tiene que ser tomado común concepto, porque a su vez tiene carácterísticas
+ propias, por un lado el tipo de mario y por el otro lado la duración, y analizamos
+ las últimas líneas, lo que nos dice es que hay una análisis de laboratorio que dio un resultado
+ que es positivo este virus y por el otro lado dice que dado esto se concluye que se trata
+ de una gripe clasea, o sea que se vuelve a llegar un estado, entonces este concluimos
+ que se trata de una es otro operador, pues por un lado tengo, análisis de laboratorio como
+ un concepto porque porque tiene un resultado, es una carácterística que les perto esplicitamente
+ la dice, ese resultado positivo al virus hacha uno en uno, y por el otro tenemos que el concluimos
+ que se trata de uno es el operador que me permite llegar a otro estado, este estado también
+ puede ser considerado como concepto o como valor, ahora que es lo que pasa yo, lo que siempre
+ digo es, si yo tengo todos esos textos, tengo todos esos elementos repartidos, parece que
+ tuviera todo en una bolsa, y en realidad no tengo un orden mental, entonces lo necesito ordenar,
+ para esto para poder ordenarlos, realizo lo que se llama una tabla de conceptos características
+ y valores, donde lo que voy a hacer es ir ordenando, los conceptos con sus respectivas
+ características y sus respectivos valores, si yo consideraba a los estados como conceptos la tabla
+ queda de esta manera de, tengo el paciente, con sus características que son los síntomas y los
+ valores de esos síntomas, por el otro lado tengo como conceptos, a los estados o sea el coronavirus
+ y a la dereclacia, tengo como concepto a la persona que también apareció dentro de la
+ transcripción, el análisis de laboratorio, con sus resultados y el mario, ¿qué pasa
+ con el mario? por un lado el experto me dice que tiene una duración larga y eso esplicitamente
+ lo dijo, pero por el otro lado dijo tiene un mario repentino, ahora repentimos nosotros lo
+ consideramos como un valor, cuando esto pasa yo no puedo tener mario como concepto y repentino
+ como un valor que no tiene relación entre sí, entonces es lo que tengo que hacer, tengo
+ 5 corporal lo que se llama una característica implícita, por ejemplo el tipo, es una característica
+ de relación al concepto con su valor, ahora no sabemos si tipo está bien, capaz que es otra
+ palabra la que les perta usa para indicar que el mario repentino, por eso se la pone de algún
+ modo que yo me de cuenta que eso lo agregue yo, por ejemplo, entre paréntesis entre corchetes
+ con color, de esa manera lo que yo me de cuenta es que después voy a tener que ir al esporto
+ a preguntar bueno esta característica implícita, ¿está bien? lo importante de esto es que
+ en esta tabla de conceptos características y valores, no es lo que nosotros denominamos habitualmente
+ huecos, que quiere decir esto, que tenga características sueltas que no corresponda en ningún
+ concepto, que tenga valores sueltos que no tengan su característica social, en decir que cada
+ vez que yo tengo una característica de esa característica de detener un concepto que va relacionado
+ y su valor relacionado, los únicos que no pueden tener características son los conceptos considerados
+ como estados o también otros considerados como sinónimos, si nosotros vamos a la transcripción
+ del protocolo y empezamos a analizar que es para el esporto un paciente o una persona, nos
+ vamos a dar cuenta que para el esporto paciente y persona es lo mismo en ese protocolo,
+ por lo tanto los considera como sinónimos, cuando esto ocurre, el sinónimo, se establece
+ en esta tabla de concepto característica valor pero sin ninguna característica social,
+ ya ver un momento en la tapa de codificación donde vamos a identificar qué se paciente
+ es una persona como un sinón, ve que acá entonces quedó todos los conceptos características
+ y valores ordenados, a la que hubiera pasado si yo hubiera considerado a los estados como
+ valores, no hubiera quedado una tabla de este modo, veen que lo único que cambió es que quedan
+ como valores, el coronavirus y la dipeclasean, con que con una característica implícita
+ que es el diagnóstico relacionada al paciente, esto es lo que ocurre si yo los considero
+ como valores, a los estados y los puede considerar o como valores o como conceptos, en
+ eso no hay ningún problema, el protocolo no cambia, pero los considero o como uno o como
+ el otro, una vez que yo ya tengo esta tabla de conceptos características y valores donde
+ yo ya me ordeno un poco más conceptualmente porque yo ya puedo identificar estos conceptos
+ que relaciones hay, que características que valores tienen, entonces para terminar esta identificación
+ con su haber y analizar las relaciones implícitas, que son aquellas relaciones que se dan
+ entre conceptos, entonces yo analizo los conceptos que me quedaron en la tabla y lo se empiezo
+ relacionar, si yo hubiera considerado a los estados como conceptos, ahora surge esta relación
+ que el paciente puede tener coronavirus COVID-19 o gripe clasean, sino si lo subiera considero
+ como valores esa relación ya estaba en la tabla anterior, luego que puedo poner que el paciente
+ sufre de mario y que el paciente se realizó una análisis de laboratorio, que son los conceptos
+ que me quedaron, si yo como les decía hubiera considerado a los estados como valores ya esa
+ relación entre los estados de coronavirus y gripe no estaría relacionados con el paciente
+ porque ya esta relación se establece en la otra tabla de concepto característica y valor,
+ que lo que tengo en cuenta cuando realizo estas relaciones implícitas, esto que yo les
+ decían anteriormente sobre los sinónimos, porque yo podría poner estas relaciones,
+ yo podría decir paciente es una persona o la persona es un paciente, pero qué pasa con esto,
+ no existen relaciones entre sinónimos, porque por que para el experto el paciente y la persona
+ es considerada como lo mismo, entonces siempre tengo que tener en cuenta que no pueden existir
+ relaciones implícitas que se han entre sinónimos, una vez que yo tengo ya las relaciones
+ implícitas, termina esta primera subetapa donde ya identifice los conceptos, las características,
+ los valores, las relaciones y los operadores. En los próximos videos vamos a seguir profundizando
+ sobre la codificación.

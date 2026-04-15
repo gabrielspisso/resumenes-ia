@@ -1,0 +1,99 @@
+ Hola, mi nombre es María Florencia Pollo y vamos a terminar ya con el último videoito que
+ trabaja sobre describir la actividad de formalización, que es la que continúa la actividad
+ de articulación y lo que busca es la formalización de todos los componentes ya definidos
+ en las actividades anteriores para la construcción del modelo del sistema inteligen. En
+ este contexto lo que se plantea es que en función de lo definido en la actividad
+ anterior donde ya habíamos identificado la alcance del proyecto a través de la enunciación
+ de los objetivos, los criterios de éxito y los riesgos. Y vamos a generar una formalización
+ a través de este tipo de gráfico donde vamos a identificar el objetivo, las preclascos
+ condiciones y por cada una de las tareas que componen que se deben realizar para cumplir con
+ los objetivos, vamos a identificar los propósitos las centradas las acciones y las
+ alidas, que estas serán las que se van a haber reflejadas posteriormente en los distintos
+ modelos del sistema inteligen. En relación a las acciones porque ustedes vieron que bueno tenemos
+ que ver las precondiciones y las pos condiciones las vamos a poder identificar, el propósito
+ también las centradas y las alidas también lo que vamos a tener que identificar más que
+ nada son las distintas acciones. Dentro de la baníaco de acciones que me permitiría
+ utilizar actividades propias de la implementación de modelos bajo la tecnología de la inteligencia
+ difícil, podríamos encontrar acciones de estas características. Por ejemplo, las acciones de
+ optimización lo que tratan de encontrar es una combinación que pueda maximizar o minimizar
+ alguna función matemática. El bipico ejemplo es el derado de una mochila con una capacidad
+ de tantos kilogramos, la puedo llenar con caja si lo que quiero tratar de maximizar las ganancias
+ y no exceder tanto pesaje, como vieron también uno podía pensar en una optimización a
+ lo mejor también del viajero, en cuanto a la distancia, eso son los típicos problemas de
+ optimización. Después están los problemas de clasificación, ahí lo que no busca es determinar
+ la clase que corresponde un elemento entre dos o más opciones. Entonces yo podría encontrar
+ este legun elemento en particular a qué clases de las que tengo definidas, que pueden ser
+ dos o más va pertenece. Después están los problemas de predicción, que estos son los típicos
+ problemas del pronoco, que es cuando uno busca determinar un comportamiento futuro y que suele
+ tener asocioso cierto grado de insertidumbre, uno tiene una probabilidad de ocurrencia. Por
+ otro lado están los problemas de regresión, en donde uno es lo que trata de encontrar, es
+ una función matemática que pueda representar el comportamiento de ciertos valores numéricos
+ que uno poseen, entonces yo tengo los valores numéricos y quiero ver que comportamiento tiene,
+ en eso lo hago a través de una regresión. Después está el clastering, el clastering tiene que
+ ver con dos posibilidades. Por un lado, el ver como conviene agrupar un determinado conjunto
+ de datos que uno tiene de elementos que uno tiene y se bueno, como convendría agruparlos.
+ Pero también uno lo que tiene que hacer en el clastering, también puede hacer es identificar
+ los grupos de elementos con características civilales, o sea, una puede decir clasteriza
+ pero agruparlos en tres grupos o identificar a los que sean parecidos y generarme vos los
+ grupos. Bien, después por otro lado están las reglas de asociación. Y acá hay un ejemplo
+ típico el que comentaban que habiendo estudiado el comportamiento de compradores dentro
+ de los supermercados, testaciones de servicio, habian identificado que aquellas copras que realizaban
+ personas del sexo masculino pasada, pasada una hora de la noche y que vinculaban la compra
+ de pañales descartables, se veían también la compra de la tas de cerveza, con lo cual,
+ dentro de la exposición de esos locales, lo que habían hecho era poner los pañales
+ y pegado en la tas de cerveza. Uno hace imple vista, no le encuentre relaciona
+ alguna y sin embargo, a través de determinadas técnicas, propias de laía, logran encontrar
+ estas asociaciones que no estaban definidas previamente. Otro tipo de actividades
+ son las detecciones de anomalías. Y esto es cuando uno tiene identificado un comportamiento,
+ un conjunto de comportamientos comunes y se sucede frente a alguna acción, un comportamiento
+ fuera de este conjunto de lo que se determina normalidades, ahí poder identificar que
+ capas esa es alguna situación que no está funcionando de manera correcta. El típico ejemplo
+ es el de las compras con la identificación de fraudes con la tarjeta. Yo tengo un conjunto
+ determinado de consumo comunes, a veces aplicados a distintos clientes, según el
+ comportamiento que vos tengas, va a veces en general. Hay algunas regas, algunas anomalías,
+ por ejemplo, que detectan que consumos muchicos de estaciones de servicio, dos consumos
+ chicos que se dan, a veces son los predecesores de actividades de fraudes.
+ Entonces, tenemos estos tipos y hay otros tipos más de acciones. Entonces, bueno, los de optimización
+ encontrando la función de que va a definición minimice, la clasificación deberá que
+ clase corresponde a todos o más, clases corresponde a un elemento, la predicción, el tratar
+ de determinar un comportamiento a futuro, con un grado de incertidumbre, la reacción de encontrar
+ la función matemática, el cláctering y el desficando grupo de elementos con características
+ similares, las reglas de asociación que va a ser una inferencia de condiciones que van a poder
+ representar o manifestar una relación existente entre algunas características, que a veces no
+ se descubren a simblerita. Y la detección de anomalías, como habíamos visto con este tema
+ del conjunto y el elemento que tiene comportamientos diferente al resto.
+ Todo esto es lo que uno podría hacer es construir este modelo. Yo les vamos a mostrar con el ejemplo
+ que habíamos visto antes. Entonces, por ejemplo, cuando habíamos visto que era uno de los objetivos
+ era recomendar a los clientes existentes productos similares a los comprados. Y otra,
+ recomendar a los clientes nuevos productos de guarda sus características. Entonces, bueno,
+ vamos a pensar con el objetivo número 1. Entonces, bueno, la pre-condición es que el cliente
+ está registrado, ya tiene compras realizadas en la web, y la poscondición es que
+ identifican productos recomendados. Entonces, bueno, acá tenemos una tarea, fíjense que la
+ tarea tiene un propósito y identificar los grupos de clientes considerando el historial
+ de compras que habíamos visto que lo teníamos, la entrada es el histórico de compras, la actividad,
+ la acción que vamos a hacer es un clácterín y la salida van a ser los grupos clácterizados
+ por un por producto. Entonces, bueno, así que vamos a ir haciendo con las otras tareas, fíjense
+ y identificar a los clientes y identificar los grupos de productos similares y determinar
+ los productos que el cliente podría comprar. Cada uno de estos con sus centradas fíjense
+ con las distintas acciones y las salidas. Lo vamos a ver también con el objetivo número 2,
+ y de recomendar a los clientes nuevos productos de acuerdo a sus características, con lo cual,
+ en ese contexto, fíjense que la precondición es que el cliente registrado todavía no tiene
+ compras realizadas en el sitio web. Y bueno, como pocos condiciones, identificar los productos
+ recomendados. A partir de ahí, fíjense las, los distintos propósitos y identificar los
+ grupos de clientes con características similares y identificar los grupos de productos similares
+ y determinar los productos que el cliente podría que en el comprar. Entonces, mediante
+ esta formalización, lo que no puede es ya tener identificados y formalizadas a partir
+ de lo objetivo, las distintas tareas. Cerrando todo esta primera fase de identificación
+ del problema, vimos que el proceso propuesto lo que busca es el visitar los requerimientos,
+ comprenderlos, articularlos y formalizarlos. Una gráfica posible de este proceso para que
+ ustedes vieran, para que ustedes vean, todas las interconocciones que tienen, acá tienen
+ las distintas actividades que fomos viendo en los distintos vídeos, cuando necesitamos
+ los requerimientos venían los requerimientos iniciales, para que no los pueda comprender y generar
+ los modelos conceptuales en la articulación y identificada, nos viene el problema y si
+ era viable y la alcance y después en la formalización y ya identificamos los componentes.
+ Fíjense que uno habla de los modelos del sistema inteligente, a partir de los cambios
+ también uno puede recibir modificaciones. Pero bueno, es un proceso iterativo porque uno
+ ya empieza a tener conocimiento requerimientos más detallados, etcétera, hasta que finaliza
+ con esta fase y vamos a comenzar en el próximo vídeo que va a hablar sin tiá respecto de la
+ próxima fase. Así que bueno, se haya muchísimas gracias y nos vemos en el próximo vídeo.
+ Hasta luego.

@@ -1,0 +1,66 @@
+ Hola, mi nombre es Pablo Pital y en este vídeo vamos a hablar un poco de los algoritmos de
+ regresión. Estos algoritmos son también algoritmos clásicos de Machine Learning con datos
+ supervisados. En la cual es yo a partir de una tabla voy a poder identificar una
+ fórmula que describa la relación entre los valores que toman los ejemplos de dicha tabla.
+ Entonces en estos algoritmos de regresión, yo a partir de un conjunto de datos estructurados
+ con distintos columnas o atributos y varias filas o ejemplos voy a poder generar una
+ fórmula que describa la relación entre los atributos de entrada y el atributo
+ objetivo. Obviamente que para poder realizar esto tanto a los atributos de entrada, como
+ el atributo objetivo, va a tener que tomar valores numericos. En el caso de que yo
+ tenga datos que no sean numericos como un paso previo aplicar el algoritmo en los
+ algoritmos voy a tener que transformar a valores numericos contiguos para poder
+ trabajar. El algoritmo lo que va a hacer es a partir de estos ejemplos es tratar de
+ encontrar una fórmula de algún tipo que puede ser una fórmula alineal, polinomial,
+ logística, exponencial, etcétera, para describir cuál es la relación que hay entre los
+ atributos de entrada y el atributo. De esta manera, esa fórmula luego le puedo implementar
+ dentro de un software tradicional para poder hacer una estimación, una predicción o la
+ puede utilizar de manera manual para hacer algo. También le puedo implementar después
+ una planilla de cálculo y con eso poder hacer un cálculo de algo, ejemplo considerar
+ que cantidad de stock voy a necesitar dentro del próximo tres veces.
+ El funcionamiento del algoritmo de regresión es bastante similar al funcionamiento del procedimiento
+ de Taylor que se suele utilizar y que se debe en análisis matemático para encontrar
+ polinomios. La diferencia es que ella está automatizado lo que va a hacer el algoritmo
+ es tratar de encontrar los valores de los coeficientes de manera que minimiza el error
+ de la fórmula generada a partir de los ejemplos. Y obviamente es mucho más rápido
+ porque lo hace todo la computadora sin necesidad que el ser humano agana.
+ Para mostrar la utilidad de estos algoritmos nosotros elegimos un ejemplo basado en las
+ fórmulas de cinemáticas de física que propuso a cada don exact minuto.
+ La fórmula que vamos a considerar es la fórmula que nos permite determinar cuál es la distancia
+ que va a tomar un objeto que se mueve una velocidad determinada por cierto con tiempo
+ con una aceleración varia. Entonces a partir de la fórmula que nosotros ya conocemos
+ de Newton le cinemática armamos estos datos donde tenemos la velocidad inicial, el valor
+ de la aceleración, la cantidad de tiempo y utilizando esta fórmula nos permite determinar
+ cuál es la distancia recorrida. Para generar estos datos nosotros utilizamos esta
+ la niilla de cálculo donde fíjense para distintos valores de la cidad inicial de aceleración
+ y tiempo calculamos la distancia que corresponde utilizando la fórmula de Newton.
+ Lo que vamos a buscar es que con el de Gorino de la Regresión ver si no genera este
+ polina o mío a partir de los dos. Entonces nosotros vamos a tener los datos lo podríamos
+ ver de esta manera acá eligiendo dos atributos de entrada podemos ver como se
+ relaciona, aplicamos la de Gorino de la Regresión como nosotros queremos generar un
+ polina o mío vamos a elegir un algoritmo que nos permite hacer una regresión polinomial
+ le vamos a poner que un grado máximo 3 desponentes porque la fórmula llega hasta un
+ exponente 2 pero bueno vamos a poner más grande para ver generas y he resultado que me da
+ el algoritmo de regresión es esta fórmula. Fíjense que esta fórmula es mucho más grande que
+ esta aparece en un montón de elementos más pero cuando le empezamos a analizar podemos descartar
+ verá un parto de la fórmula. Por qué? Aparecen muchos coeficientes con un valor muy pequeño por
+ ejemplo. Aparece un menos 2 multiplicado por e a la menos 13 es decir que tiene 13 seros antes de
+ 2. Entonces sería 0, 0, 0, 0, 0, 0, 2 negativo. Entonces ese valor digamos que no va a influir
+ desde demasiado de lo podemos descartar. Lo mismo pasa con este primer término donde aparece la
+ velocidad con un 6 a la menos 16, un 1 a la menos 13, un 6 a la menos 15. Entonces estos tres términos
+ también los podemos descartar. Al realizar bueno ahí aparece en el gráfico las predicciones que
+ va generando esta fórmula y bueno fíjense que al descartar todo eso nos queda una fórmula que nos
+ dice que la distancia es igual a 1 multiplicado por la velocidad por el tiempo que sería el primer
+ término de la fórmula de Newton sumado por a 0,5 o sea lo mismo que dividir por 2 a la
+ aceleración por el tiempo de cuadrada. Entonces fíjense la algoritmo de regresión nos permiten
+ encontrar la misma fórmula que el algoritmo de Newton. Y esta fórmula que yo obtengo después
+ la puedo implementar dentro de un software tradicional. Hay veces la mayoría de los casos yo no sé
+ cuál es la fórmula a la cual yo quiero obtener obviamente porque yo te voy a aplicando de
+ grimer regresiones lo que decías es encontrar la fórmula para un conjunto de datos pero yo
+ no sé cuál es la la fórmula en que la cual yo me voy a basar. Entonces esta comparación que
+ estamos haciendo acá de la fórmula obtenida con la fórmula original va a ser un caso muy
+ puntual. En el caso de que yo no con los con la fórmula quiero confirmar si los resultados
+ están bien calculados o no voy a tener que usar unas métricas que me van a permitir calcular
+ el error de la fórmula obtenida por el algoritmo de regresión. Y esas métricas vamos a ver que
+ hay distintos tilos pero son formas las bastantes sencillas que nos permiten corroborar la precisión
+ del algoritmo y de la fórmula obten. Pero de todas formas de eso vamos a hablar en otro
+ vídeo. Bueno, con esto terminamos los algoritmos regresiones nos vemos en el próximo vídeo.

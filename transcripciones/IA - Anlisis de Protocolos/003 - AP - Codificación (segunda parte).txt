@@ -1,0 +1,114 @@
+ Hola, como están, mi nombre es Sinte Avejera, nosotros en los videos anteriores,
+ ya habíamos estado echarlando sobre las etapas de la análisis de protocolos,
+ por un lado habíamos visto la grabación del protocolo,
+ luego vimos la transcripción, y vimos una parte de la codificación.
+ En lo que tenía que ver con la primera subetapa,
+ de identificación de conceptos características, valores, relaciones y operadores.
+ Entonces, lo que vamos a hacer ahora es ir a la segunda subetapa,
+ que es la identificación de la búsqueda.
+ ¿Qué vamos a hacer en esta subetapa?
+ A pesar de que la palabra diga que es una identificación de la búsqueda,
+ en realidad, no vamos a ser un árbol de búsqueda.
+ Si no lo que vamos a hacer es identificar los estados por los cuales el experto pasó,
+ dentro de su proceso de razonamiento,
+ ¿Cuál es son los operadores que utilizó?
+ Y además, ¿Cuáles son las condiciones que tuvo en cuenta
+ para llegar a esos estados?
+ Lo podemos hacer a través de un pequeño gráfico como este que vemos,
+ donde porulado tenemos el objetivo del protocolo,
+ que era identificar el diagnóstico de un paciente, según los síntomas que tenía,
+ y a partir de eso podemos identificar que el experto pasa por dos estados.
+ Por un lado, lo que el experto nos dice es que podría ser un coronavirus COVID-19,
+ y por el otro lado, que puede ser una gripe clasea.
+ Luego identificamos el operador.
+ El operador para llegar a el coronavirus era que estamos ante un,
+ mientras que para llegar a gripe clasea,
+ era concluimos que se trata de una.
+ Una vez identificado esto,
+ entonces ahora releemos la transcripción
+ para ver las condiciones que tu encuentra para llegar a estos estados.
+ Por un lado, no sabía dicho el experto,
+ que el paciente tenía una fiebre superior a 38 grados,
+ teniendo el orden de garganta muy fuerte,
+ una toseca, una frecuencia respiratoria muy elevada,
+ y dolores musculares intensos.
+ Teniendo en cuenta todos esos síntomas,
+ llegó a que podía ser un coronavirus COVID-19.
+ Ahora que es lo que pasa en una segunda observación,
+ el experto analista que el paciente tiene dolor de cabeza persistente,
+ tiene un malio que es repentino y de larga duración,
+ y que además el análisis de laboratorio
+ da positivo al virus hache uno en el mundo.
+ A partir de su que se abreda,
+ lo que él coincide es que es una gripe clasea.
+ De esta manera, tenemos la identificación de la advocada,
+ donde identificamos los estados,
+ los operadores y las condiciones para llegar a cada uno.
+ Una vez liste esta etapa,
+ pasamos a la identificación de sinónimos, meta comentarios,
+ e insertido un mes.
+ Por un lado, tenemos los sinónimos.
+ Dentro de lo que son, los sinónimos, no sólo ya lo habíamos visto,
+ son estas palabras o frases que significan lo mismo,
+ y habíamos dicho que paciente y personas son sinónimos.
+ Este en este momento,
+ donde en realidad yo formalizo los sinónimos que encuentro.
+ Por lo tanto,
+ si en las relaciones me había quedado,
+ alguna relación impliste entre sinónimos,
+ voy y la saco,
+ porque ahora es donde hemos de cuenta los sinónimos que tienen el protocolo.
+ Una vez identificados estos sinónimos,
+ vas a identificar los metacomentarios.
+ Que son los metacomentarios,
+ son todas aquellos comentarios que le experto hacen,
+ que no aportan una información directa a su resonamiento.
+ Como lo si identifica,
+ siempre lo voy a identificar por las líneas en las que están,
+ voy a escribir el metacomentario y su significado.
+ Por un lado,
+ lo que nosotros encontramos,
+ nos vieron que había varias líneas que no habíamos identificado.
+ Uno es de las líneas de la 10 a la 12,
+ donde dice que el paciente tiene que ser asignado,
+ porque es un virus muy cuenta, muy contagioso.
+ Y eso lo que podríamos decir como significado,
+ es que se referencia a lo contagioso que se estedirus,
+ este coronavirus COVID-19.
+ Este significado me tiene que servir a mí,
+ como ingeniero en conocimiento, para después en un próximo protocolo,
+ capaz hay puedo utilizar estos metacomentarios.
+ Bueno, ante un COVID-19,
+ que pueda agarrar, digo, bueno,
+ tiene que el paciente permanecer asilado.
+ Otro tipo de metacomentario que puedan encontrar,
+ son aquellos metacomentarios que se denomina en que son de su vetapas.
+ Por ejemplo, en este caso teníamos en la línea 13,
+ en una segunda observación.
+ Este es un metacomentario que lo que me dice es, bueno,
+ en el protocolo hubo una primera búsqueda y luego una segunda.
+ En este momento no importa información directa,
+ pero más adelante sí me va a servir.
+ Para saber qué es lo que realizó primero,
+ y qué es lo que realizó en una segunda instancia.
+ Una vez que yo identifico estos metacomentarios,
+ por último identificamos a las insertidumres.
+ En este caso había una sola,
+ era podríamos pensar en la línea 7.
+ Las insertidumres son aquellos nociones
+ donde le experto la assigna una duda.
+ Una duda en cuanto a lo que es, el cambio de estado.
+ No se habéis sido estado se da en el 100% de los casos,
+ o tal vez se da en una menor proporción.
+ Puede ser que llegar a que es un coronavirus,
+ se puede dar, no sé, en un 80%.
+ Entonces, ese es un insertidumbre
+ que en el protocolo se identifica.
+ No todo insertidumbre que está en una transcripción se identifica.
+ Solamente se identifica a aquellas que tengan que ver
+ con un cambio de estado.
+ Una vez que nosotros identificamos las insertidumres,
+ terminamos esta subetada a 3.
+ Y también terminamos la etapa de codificación.
+ Ahora en el último vídeo que vemos,
+ vamos a ver la etapa de interpretación.

@@ -1,0 +1,70 @@
+ Hola, este es el octado video correspondiente a la presentación de razonamiento aproximado y logica difusa.
+ En este octado video vamos a ver otro ejemplo de cómo se puede construir un sistema difusa,
+ pero en este caso vamos a ver cómo construir un sistema difusa directamente a partir de ejemplos de datos.
+ Es decir, vamos a considerar la situación donde yo quiero hacer un sistema difusa
+ para predecir si va a llover o no va a llover de acuerdo a la situación climática de hoy.
+ Bueno, para hacer ese sistema difusa yo no voy a contar con ningún experto que me define las reglas que yo tengo que poner en mi base de conocimientos.
+ Niu, tampoco voy a tener algún libro, algún manual las reglas que tengo que aplicar. Lo que yo voy a tener son ejemplos que voy a haber accedido en algún sitio de Internet,
+ donde se me indica cuál era la situación climática día por día.
+ Con esos datos, entonces yo lo que puedo hacer es tomar los parámetros de un día para predecir si al día siguiente, llover o no llover.
+ Entonces, lo que estaría aplicando son algoritmos de inducción. Recuerdan que al principio de la acursada habíamos visto que los algoritmos de inducción es un tipo de algoritmos de Machine Learning
+ que permite encontrar reglas para un conjunto de datos. Estas reglas van a representar el comportamiento que tienen dichos datos.
+ Entonces, esto es algoritmos de inducción también los podemos utilizar para tratar de encontrar reglas con valores difusos.
+ Bien, para hacer esto, entonces, primero lo que tenemos que definir es cuál es van a ser nuestros parámetros de entrada y cuál va a ser mi parámetro de salida.
+ En nuestro caso va a ser la presión humedad de velocidad del viento y temperatura actual, como parámetros de entrada, y como parámetro de salida va a ser un parámetro que me indica si va a llover o no al día siguiente.
+ Entonces, para construir este sistema difuso con algoritmos de inducción, vamos a utilizar un conjunto de ejemplos.
+ Nosotros vamos a tener una tabla con un mil ejemplos. Esta tabla está disponible en el campo virtual, por si la quieren ver.
+ Entonces, ahí van a ver que hay varias columnas donde está la presión actual, lo me da actual, la velocidad del viento actual, la temperatura actual y el campo si que me dice 0, si no va a llover y uno si va a llover.
+ Con todos estos valores, entonces en fíjpro, lo que tenemos que hacer es definir las distintas funciones de partenencia en lógica difusa.
+ Fíjpro nos permite definir las funciones de partenencia de manera manual, de manera automática o de una manera híbrida.
+ O es decir, yo las puedo generar de manera automática y después ajustarla manualmente.
+ En nuestro caso, para este ejemplo, supongamos que yo definí toda las funciones de manera manual.
+ Entonces voy a tener definidas todas estas funciones de partenencia para cada uno de los parámetros de entrada y de salida.
+ La vía, entonces fíjese para presión tengo tres, para humedad, tengo cinco, valores distintos, funciones distintas, para velocidad del viento, tengo también cinco, para temperatura también.
+ No, para temperatura tengo cuatro funciones solamente y para llover, tengo dos funciones distintas.
+ Una que me indica si llueve o no llueve, vía.
+ Entonces, con todas estas funciones ya definidas de manera manual, las podría haber hecha de manera automática, pero prefería hacerlo yo en este ejemplo de manera manual.
+ Lo que hacemos es utilizamos también el fíjpro para que aplique un algoritmo de inducción y de esa manera genera las reglas.
+ Entonces, utilizar estos dos mil ejemplos con las funciones que teníamos, fíjpro no genera 165 reglas.
+ Podríamos haber generado más o menos de acuerdo a los parámetros que les poníamos, pero de acuerdo al grado de confianza y grado de hasta cuánto crezar,
+ no genero 165 reglas. Estas reglas, las podemos ver a continuación acá de unos ejemplos, no de 165, fíjense que aparecen los distintos valores que tienen las funciones de pertenencia para cada uno de los parámetros de entrada y para el parámetro de salida.
+ Este ejemplo, hecho en fíjpro, donde van a encontrar las funciones definidas y las reglas también definidas en forma automática, también más estar disponible en el mismo archivo comprimido dentro del campo virtual por si lo quieren ver, por eso no entramos en mucho detalle.
+ Entonces, con el ejemplo, una vez que tenemos las reglas y las funciones definidas, podemos ver cómo responde en un caso particular.
+ Entonces, supongamos que le indicamos que un día dado hay una versión de 1.23 hectopascales, una humedad del 96%, una velocidad al viento de 18 kilómetros por hora y una temperatura de 17,6 grados centígrados.
+ Nosotros queremos que nuestro sistema difuso que aplica reglas definidas por el algoritmo de inducción, no es indique si yo verá o no yo vera.
+ O sea, que aplique la 165 reglas, las conviene en los resultados y con eso me diga si yo veré no yo.
+ Para hacer eso, fíjpro, lo que va a ser es transformar primero a todos estos valores numéricos, a valores difuso, a través del fusifica y llan, después se va a ver cuál regla aplica va a obtener la resultado de cada regla, los va a combinar y de esa combinación me va de volver a través del modulo de fusifica y llan, el valor que corresponde a lloverla.
+ Entonces, para hacer eso, fíjpro lo hace de manera gráfica, entonces fíjense que, que yo ingreso a los distintos valores que corresponden, esto hace que se asigne el valor de pertenencia correspondiente a cada función, después de que reglas aplica y todo eso las convina en un único resultado.
+ Entonces, como resultado aquí, me indica que para esa condición el valor para llovera es de 0,8. Eso significaría que da la esta situación va a ayudar casi seguro.
+ Lo cual es valido con el resultado real que nosotros teníamos de un ejemplo que nosamos obviamente para crear la regla, pero un ejemplo que teníamos separado para probar nuestro sistema difuso.
+ Bueno, ¿qué pasa si yo le cambio a ese ejemplo ciertos parámetros, ahora le pongo una presión de 1.3, 76 hectopascales, le doy una humedad del 24,75%, le doy una velocidad del 20,25 km/h y una altera de 35 grados centígrados.
+ En este caso, el resultado valido que me debería dar es, no llovera, pero nuestro sistema difuso me da llovera 0,4, o sea, va a tener al no llovera, pero están la duda, no queda claro si va a llover o no va a llovera.
+ Este problema que se presenta aquí se puede dar también para otras situaciones, dónde nos puede dar un valor intermedio para llovera, lo cual a mí no me podría desfirirme si va llovero, no va llovero, o sea, es como si me da 0,5 justo me está diciendo, no estoy seguro si llovero, no llover, entonces para que quiera un sistema difuso que me diga, no estoy seguro del resultado que corraspo.
+ Y esto se da por algunos problemas que tienen los sistemas difusos, que su capacidad aprendizaje suele estar limitada por el uso de reglas, entonces al estar basado en reglas, va a llegar un punto donde generar nuevas reglas, no va a ser que mejor en los resultados, es más poder ser que empiores porque se empiezan a encontrar decir.
+ A su vez está demostrado que muchas veces la lógica difusa tiene a funcionar peor que un modelo matemático, o sea, si vos ya tenés un modelo matemático para predecir el clima, seguramente el modelo matemático va a ser mejor que aplicar un sistema difuso.
+ Y, como les decía antes, muchas veces cuando nosotros queremos combinar las reglas, no se refuerzan del todo bien, entonces a la aplicar más reglas, la credibilidad de los resultados no se veer reforzada.
+ Entonces, todos estos problemas que tienen los sistemas difusos por aplicar lógica difusa con reglas, puede ser solucionada si no utilizamos reglas, entonces hay que podríamos asar.
+ Yo podría construir un sistema difuso sin reglas aplicando dentro de nuestro sistema una regnauronal.
+ Ahí, en vez de hacer un sistema difuso tradicional, estaría construyendo un sistema negro difuso.
+ La arquitectura podría ser la que aparece aquí, entonces lo que yo voy a tener es un modelo defusificación que se va a encargar de transformar los datos de entrada a valores difusos, con los valores de pertenencia que corresponde.
+ Interlamente, eso se va a procesar con una ranneuronal que fue entrenada con patrones difusos, entonces en lugar de a partir de ejemplos, definir reglas usando un algoritmo de inducción, que se van a aplicar dentro de la base de conocimientos, con un motor de inferencias, yo directamente, los ejemplos que tengo se los doy a mi ranneuronal para que apre.
+ Es resultado difuso que me va a generar esta ranneuronal, yo después la paso por el modelo defusificación, y así obtengo un resultado para resolver el problema.
+ Entonces, vamos a ver cómo se puede aplicar esta arquitectura de sistema neurodiffusos para resolver el problema del cálculo de clima. Entonces, nuestro sistema neurodiffusos, vamos a tener un sistema donde los parámetros de entrada van a hacer los mismos, yo voy a tener presión humedad, velocidad del viento y temperatura, como resultado me va a indicar si va a llover o no va a llover.
+ Y yo la voy a enseñar a esta ranneuronal con los datos preparados de formas de que tengan valores difuso.
+ Y esos datos preparados nosotros se los dejamos en ese excel que figura acá en esta dia positiva para que los vean si ustedes quieran.
+ Hay lo que hicimos es implementamos en el excel, los distintos funciones de partenencia de lógica difusa que habíamos implementado en el fíjpro.
+ Y lo que hicimos es con esas funciones definidas, la signamos el valor que corresponde a cada valor de cada ejemplo.
+ Entonces, vamos a tener por cada ejemplo para presión que antes era un solo valor, va a tener tres valores, porque nosotros tenemos tres funciones de partenencia.
+ Para un medal, de un valor ahora tenemos cinco valores que van a corresponder cada una o a la función de pertenencia correspondiente. Lo mismo para el viento, lo mismo para la temperatura y para yo veras es más sencillo porque yo tengo llueve o no llueve.
+ Y son, lo vamos a hacer con los dos mil ejemplos, con estos dos mil ejemplos, usamos en la herramienta rapid miner para construir un arrandeuronale.
+ Con esa arrandeuronale, implementada luego la aplicamos sobre distintos ejemplos para ver que resultados no genera. Entonces, nuestra arrandeuronale que va a tener esta arquitectura, fíjense que tiene muchas neuronas de entrada, porque ahora los datos de entrada son más, ya que tenemos un valor por cada función de pertenencia que pertenece a cada tributo.
+ Nos voy a indicar en las neuronas de salida si, es que llueve o sea, de volvuno o no, o no llueve de volvuncer.
+ Despludo, de entrada de esta arrandeuronale, nos genera una efectividad del 68,85% ahí podemos ver la matriz de confusión que corresponde.
+ Y, si nosotros lo usamos en el ejemplo, el primero que vemos visto, nos va a devolver que para llover hace devuelve un 0,89% y para no lluever a un 0,01%.
+ Bueno, si están indicando que va a llover, lo cual se corresponde con el resultado real. Para el segundo ejemplo que el sistema difuso tradicional con reglas no podía saberlo, fíjense que ahora nos dice que corresponde.
+ No llueverá con un 0,636, contra un llueverá del 0,364, entonces podemos decir que bueno, corresponde que no va a lluever lo cual es valido, se corresponde con la real.
+ Entonces, usando la lógica difusa, no siempre tengo que aplicar reglas, también pueden implementar la lógica difusa usando otras tecnologías por ejemplo una arrandeuronale.
+ Dentro de un algoritmo genético, yo podría hacerlo mismo para calcular la aptitud de los cromosomas aplicando entonces la lógica difusa para evaluar cada uno de los valores que toman los genes y de esa forma también poder conseguirar situaciones de donde los datos son impresosos.
+ Con esto que queremos decir la lógica difusa, no es una tecnología que es totalmente independiente de las otras tecnologías que vimos, sino que es una tecnología que se puede combinar fácilmente con otras para darle más capacidad a nuestro sistema inteligente a la hora de manejar la información como la haría un ser humano.
+ Para finalizar con este tema les dejamos este apunte que es el obligatorio de estos apuntes complementarios y les agradecemos por su atención.
+ Pero hemos que les haya sido útil cualquier duda las veremos en el próximo portal. Hasta luego.

@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:08,820
+ Hola, mi nombre es Maria Floriancio Apollo y vamos a continuar viendo la presentación de algoritmos genéticos.
+
+2
+00:00:08,820 --> 00:00:16,800
+ Bueno, también hemos llegado abierto el ejercicio, el expresente de la estructura general de un algoritmos genético también.
+
+3
+00:00:16,800 --> 00:00:23,540
+ Y ahora vamos a empezar a navegar en todos los pasos y los operadores dentro de un algoritmos genético.
+
+4
+00:00:23,540 --> 00:00:38,020
+ Y comentario a tener en cuenta. Según distintas bibliografías, cuando se ha hablado de operadores de un algoritmos genético, algunos autores nombran la selección el cruzamiento y la montación.
+
+5
+00:00:38,020 --> 00:00:44,980
+ Sin embargo, y otra bibliografía que incluye la generación del apo es de la población inicial y el criterio del pago.
+
+6
+00:00:44,980 --> 00:00:51,940
+ Nosotros para este curso vamos a tomar en cuenta que cuando les hablemos de operadores de un algoritmos genético,
+
+7
+00:00:51,940 --> 00:00:56,340
+ como mínimos no tienen que comentar estos tres.
+
+8
+00:00:56,340 --> 00:01:02,180
+ Si además quieren agregar estos dos bienvenidos a sea, pero como mínimos si os tienen que estar estos tres.
+
+9
+00:01:02,180 --> 00:01:10,140
+ Está bien. Recordemos, además, que una corrida que era cuando salió por la población final,
+
+10
+00:01:10,140 --> 00:01:17,180
+ de un algoritmos genético implica una o muchas goeldas o ciclos. Está bien.
+
+11
+00:01:17,180 --> 00:01:21,900
+ Vamos a comenzar entonces hablando de la población inicial.
+
+12
+00:01:21,900 --> 00:01:26,620
+ Como definimos esta población inicial de individuos, como la forma.
+
+13
+00:01:26,620 --> 00:01:29,620
+ Tenemos distintos metos distintas posibilidades.
+
+14
+00:01:29,620 --> 00:01:36,700
+ Una opción es usar el método a la sara. O sea, definir un rano, uno ya tiene la estructura de finida y tira diversos números.
+
+15
+00:01:36,700 --> 00:01:43,820
+ Fluevo qué pasa así, justo me da un valor inválido, qué pasaba si la función fitnes lo recuerda si la función fitnes.
+
+16
+00:01:43,820 --> 00:01:49,900
+ Está bien hecha, debería penalizar ese individuo, entonces rápidamente va a desaparecer.
+
+17
+00:01:49,900 --> 00:01:55,820
+ Y la otra opción es hacerlo ad hoc, o sea, generar una cantidad de individuos validos y yo digo,
+
+18
+00:01:55,820 --> 00:02:00,900
+ no había tomado individuos de tales valores, tratos de tal valor, tanto de otro.
+
+19
+00:02:00,900 --> 00:02:05,740
+ Generalmente nosotros trabajamos con algoritmos genéticos, sobre todo porque estamos comenzando estables,
+
+20
+00:02:05,740 --> 00:02:10,940
+ que quiero decir que la cantidad de individuos se va a mantener a lo largo de todo el ciclo,
+
+21
+00:02:10,940 --> 00:02:16,940
+ de toda la corrida del algoritmos genético, la cantidad de individuos de la población está.
+
+22
+00:02:16,940 --> 00:02:21,420
+ Y debito el método a la sara bastante simple y no van a tener problema.
+
+23
+00:02:21,420 --> 00:02:25,180
+ El relación de la población van a tener que definir la cantidad de individuos
+
+24
+00:02:25,180 --> 00:02:29,900
+ y la varianza si va a ser constante o variable. Normalmente lo que les había dicho hace un ratito,
+
+25
+00:02:29,900 --> 00:02:33,180
+ nosotros trabajamos con una población constante.
+
+26
+00:02:33,180 --> 00:02:37,500
+ A partir de ahí y teniendo ya la población inicial a que están todos los individuos,
+
+27
+00:02:37,500 --> 00:02:43,580
+ este es toda la población, de subsero, pasamos al operador de selección,
+
+28
+00:02:43,580 --> 00:02:48,460
+ que es el operador de selección. El operador de selección, lo que va a ser, es este conjunto,
+
+29
+00:02:48,460 --> 00:02:57,340
+ individuos, parmar un subconjunto para poder permitirle a ese subconjunto entrar en la siguiente
+
+30
+00:02:57,340 --> 00:03:03,660
+ tapa, es lo que conociamos como la selección natural. Esto de uno podría pensar a priori
+
+31
+00:03:03,660 --> 00:03:07,020
+ elegir los mejores los más lindos para que se cruzan y me generan más lindos.
+
+32
+00:03:07,020 --> 00:03:13,660
+ Sin embargo, vimos que esto en la naturaleza no siempre funciona así, muchas veces dedos individuos
+
+33
+00:03:13,660 --> 00:03:19,900
+ con una determinada característica sale un hijo de sentiente totalmente distita. Hay características
+
+34
+00:03:19,900 --> 00:03:24,540
+ que se mantienen dentro de la biología, dos ojos recessivos generan un hijo resesivo,
+
+35
+00:03:24,540 --> 00:03:29,420
+ hay características que se mantienen, pero no puedo garantizar que siempre va a ser mejor.
+
+36
+00:03:29,420 --> 00:03:36,620
+ Entonces muchas veces conviene mantener lo que se conoce como cierta heterogeneria.
+
+37
+00:03:36,620 --> 00:03:39,900
+ Ahora y sólo vamos a ir viendo. Por ahora concentratemonos,
+
+38
+00:03:39,900 --> 00:03:45,580
+ entonces el operador de selección, que lo que va a ser es de la población que sale
+
+39
+00:03:45,580 --> 00:03:51,020
+ de la población inicial o de esta vuelta del ciclo, lo que va a tomar existe sus conjuntos
+
+40
+00:03:51,020 --> 00:03:55,900
+ para después de este subconjunto a hacerlo entrar al operador de cruzamiento.
+
+41
+00:03:55,900 --> 00:04:02,140
+ Hay distintos metodos de selección. El torneo ranking ruleta y control sobre el número
+
+42
+00:04:02,140 --> 00:04:07,740
+ esperado. Esto son los típicos. Nuevamente acá lo mismo que hablábamos la clase
+
+43
+00:04:07,740 --> 00:04:15,580
+ pasada en ayer miel, de ayer lunes, que pasaba con los métodos de búsqueda,
+
+44
+00:04:15,580 --> 00:04:24,940
+ si uno tenía un método que podía ser distinto combinado, nosotros acá les contamos los
+
+45
+00:04:24,940 --> 00:04:33,340
+ métodos ideales, los teoricos fundamentales. Después existen muchos alternativas y muchas
+
+46
+00:04:33,340 --> 00:04:38,620
+ variantes que tienen que ver a veces con características de problemas y ahí es donde generamos
+
+47
+00:04:38,620 --> 00:04:43,420
+ mucho material los que hacemos investigación. Yo podría aplicar un método de torneo combinado
+
+48
+00:04:43,420 --> 00:04:47,820
+ con talos y demostrar si es mejor, si espero peor, hacer una comparativa.
+
+49
+00:04:47,820 --> 00:04:51,980
+ Eso es lo rico de todo en maneras. Acá nosotros proponemos métodos básicos bien.
+
+50
+00:04:51,980 --> 00:04:59,020
+ Y vamos a comenzar con el método de selección el torneo. Fíjense que está basado en justa
+
+51
+00:04:59,020 --> 00:05:05,260
+ y torneo de la media donde había dos caballeros, que rompía sus lanzas, uno venía contra el otro,
+
+52
+00:05:05,260 --> 00:05:12,380
+ chocaban y aquí en ganaba ganaba el más fuerte, el más apto. Este es de la famosa
+
+53
+00:05:12,380 --> 00:05:17,900
+ justa media y banes. Entonces lo que nosotros vamos a hacer, justamente es esto,
+
+54
+00:05:17,900 --> 00:05:23,740
+ juntar los diapales y hacer los pelear. El lugar de hacer los pelear físicamente,
+
+55
+00:05:23,740 --> 00:05:27,820
+ los vamos a hacer pelear con la función fíjense, es lo que ellos tienen, que va a decir
+
+56
+00:05:27,820 --> 00:05:35,740
+ cuán buenos son para este problema. Entonces ejemplo, tenemos una población de, en este caso,
+
+57
+00:05:35,740 --> 00:05:43,340
+ siete individuos y tienen la siguiente función fíjense. Se senta y uno se acá estamos pensando siempre
+
+58
+00:05:43,340 --> 00:05:49,820
+ que a mayor función de aptitud el alú del alumno, el individuo es más apto. Entonces lo que dijimos,
+
+59
+00:05:49,820 --> 00:05:53,820
+ lo vamos a ir tomando de aparez, es las parejas que se van tomando, pueden ser,
+
+60
+00:05:53,820 --> 00:05:59,900
+ siempre, es precificar un patrón o ir tomando aleatoriamente las parejas, se puede repetir más
+
+61
+00:05:59,900 --> 00:06:04,780
+ una vez un mismo individuo en ningún problema. Se los hace competir y con quién se queda, uno se queda
+
+62
+00:06:04,780 --> 00:06:11,340
+ con el mejor. Entonces fíjense por ejemplo, entre el uno y el 3, uno se estaría quedando con el 61,
+
+63
+00:06:11,340 --> 00:06:20,780
+ que es el mejor. Después podríamos maro otra pareja y se entre el 2 y el 4 y con quien se queda,
+
+64
+00:06:20,780 --> 00:06:28,940
+ quien tiene mayor con 4, fíjense acá entre 4 y 6, entre 25 y 15, con quien se quedan con el
+
+65
+00:06:28,940 --> 00:06:38,380
+ de 25, que si 4 y 5 hay 7 están tomando, con cual si quedan se van a quedar con y 5 que es 44 y después
+
+66
+00:06:38,380 --> 00:06:44,380
+ también para que vean pueden mezclar también y uno con y 7 y generan y uno. Hay ustedes
+
+67
+00:06:44,380 --> 00:06:51,340
+ van a tomar la cantidad de individuos que consideren y esta nueva población es la que para
+
+68
+00:06:51,340 --> 00:06:57,620
+ saria al operador de cruzamiento. Florencia me quedó muchas veces el 1 y si puede ser,
+
+69
+00:06:57,620 --> 00:07:04,060
+ ¿qué pasa con este método? Este método tiene ventajas y de ventajas. La ventaja que tiene
+
+70
+00:07:04,060 --> 00:07:12,380
+ es que si yo gopelear al mejor en algún momento el mejor va a quedar, lo que pasa que si
+
+71
+00:07:12,380 --> 00:07:20,060
+ yo gopelear al mejor, contra el segundo mejor, supongan si uno es 5, me va a quedar y uno,
+
+72
+00:07:20,060 --> 00:07:26,780
+ pero si 5 no participan y uno trapelear, me voy a quedar solo con uno, el 5 lo perdí y a lo
+
+73
+00:07:26,780 --> 00:07:33,060
+ mejor después yo hice pelear ahí 2 con y 7, con los 4 me va a quedar y 7 pero miren, perdí
+
+74
+00:07:33,060 --> 00:07:38,700
+ y hay 5 y me ganea y 7. Entonces este método lo que plantea veces es que se pierde en algunos
+
+75
+00:07:38,700 --> 00:07:46,140
+ buenos y a veces ya parecen algunos malos. Entonces para salvar esta diferencia aparece el método
+
+76
+00:07:46,140 --> 00:07:52,340
+ de rancos y el método de rancos lo que haces, tomar la población inicial con los valores que
+
+77
+00:07:52,340 --> 00:07:58,740
+ teníamos y armar una población ordenada, a partir de esa población ordenada uno decide, por
+
+78
+00:07:58,740 --> 00:08:04,580
+ ejemplo, tomo. Entonces es el primero, una vez el segundo, una vez el tercero y el cuarto y ya está,
+
+79
+00:08:04,580 --> 00:08:09,020
+ ahí garantizo quedarme con los mejores, la única de ventajas que también podría tener el
+
+80
+00:08:09,020 --> 00:08:15,580
+ que nuevo participar nunca los malos y a veces eso también me sectoriza mucho la búsqueda y uno
+
+81
+00:08:15,580 --> 00:08:22,700
+ lo que hace es perder seguir en esto del máximo local, una vez es lo que pierde, es que se queda
+
+82
+00:08:22,700 --> 00:08:28,340
+ un clado en el máximo local, ya ya lo que se llama que es la convergencia prenatura, uno se queda
+
+83
+00:08:28,340 --> 00:08:32,100
+ practicando sobre esos individuos y yo tuviera una familia y solo los hago reproducirse
+
+84
+00:08:32,100 --> 00:08:36,300
+ entre ellos, no es algo nunca, a veces también entonces a lo mejor me quedo con una familia
+
+85
+00:08:36,300 --> 00:08:40,740
+ que no os joclaro, todos tienen los joclaros joclaros joclaros joclaros, entonces la solución
+
+86
+00:08:40,740 --> 00:08:45,860
+ siempre va a tener y me estoy perdiendo a lo mejor una solución por alguno otra columna,
+
+87
+00:08:45,860 --> 00:08:52,660
+ a eso se lo conoce como convergencia prenatura, en mantener cierta heterogeneidad, en la población
+
+88
+00:08:52,660 --> 00:09:02,180
+ es bastante interesada, esto es lo que decíamos en máximo local, para que lo viera en una corrida
+
+89
+00:09:02,180 --> 00:09:11,620
+ acá yo me corto un poquito, ventla, convergencia prenatura, esperen, uno podría pensar
+
+90
+00:09:11,620 --> 00:09:17,380
+ si yo me quedo, me tento que se lo marco con el dedo, perdón, que me quedo acá, me estoy
+
+91
+00:09:17,380 --> 00:09:22,740
+ perdiendo de ir a dónde, a este lugar y a lo mejor si yo me quedo por acá y después sugo
+
+92
+00:09:22,740 --> 00:09:27,420
+ y no quiero empezar a bajar, me olvidé que también podía venir por acá, entonces quedarse
+
+93
+00:09:27,420 --> 00:09:32,080
+ en una convergencia prenatura, es pensar en esto y no poder verla totalidad, por no poder
+
+94
+00:09:32,080 --> 00:09:36,940
+ verla totalidad el gráfico, el algoritmo genético, sino mantiene un poco de heterogeneidad
+
+95
+00:09:36,940 --> 00:09:45,980
+ va a salvar esta problemática, y el otro método es el método de Rule, como el método de Ruleta,
+
+96
+00:09:45,980 --> 00:09:51,140
+ es largo, yo sé que son 10 minutitos nada más, voy a cortar acá y el método de Ruleta
+
+97
+00:09:51,140 --> 00:09:56,000
+ se lo se explico en la próxima, así que acá viene el momento del casino, nos vemos en un
+
+98
+00:09:56,000 --> 00:09:58,540
+ ratito cuínense y quedense en casa, hasta luego.
+

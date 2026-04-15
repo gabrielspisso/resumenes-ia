@@ -1,0 +1,248 @@
+1
+00:00:00,000 --> 00:00:10,160
+ Hola, mi nombre es Maria Florencia Pollo y vamos ahora a pasarla la última parte de la técnica
+
+2
+00:00:10,160 --> 00:00:15,080
+ de embarillado. Bien, estamos por la última fase que es la interpretación guanalicígena
+
+3
+00:00:15,080 --> 00:00:23,600
+ resultados. Esta última etapa tiene dos subetapas. La primera etapa es el analicicinincusión
+
+4
+00:00:23,600 --> 00:00:28,040
+ de los árboles ordenados, recuerden que habíamos armado un árbol de elementos y un árbol
+
+5
+00:00:28,040 --> 00:00:33,440
+ de carácterística. Bueno, los gráficamos sin nada más, ahora vamos a hacer un análisis de esos
+
+6
+00:00:33,440 --> 00:00:38,520
+ elementos. Y después por otro lado, en la siguiente subetapa vamos a hablar de posibles relaciones
+
+7
+00:00:38,520 --> 00:00:44,720
+ entre las características a partir de un texto que me darían en el enunciado. Bien. Entonces,
+
+8
+00:00:44,720 --> 00:00:52,080
+ dentro de la análisis discusión de los árboles, hemos dos actividades que por un lado es el análisis de el árbol de los elementos,
+
+9
+00:00:52,080 --> 00:00:58,760
+ atento a las mínimas distancias y otro relacionado con las características dos árboles. Yo les traje a
+
+10
+00:00:58,760 --> 00:01:06,560
+ hablar porque habíamos generado a partir del trabajo sobre las matrices y lo que podemos decir es lo siguiente.
+
+11
+00:01:06,560 --> 00:01:12,560
+ ¿Qué en el árbol se observan dos grupos? Esto se observa sin plebista. El primer grupo formado por los
+
+12
+00:01:12,560 --> 00:01:21,200
+ elementos E1 y E4 y el segundo formado por los elementos E2 y E3. Los elementos E1 y E4 son
+
+13
+00:01:21,200 --> 00:01:27,640
+ similares de hecho se vinculan en una distancia de 2, ya que tienen una distancia de 2 para el punto de vista del
+
+14
+00:01:27,640 --> 00:01:37,760
+ experto y los elementos E2 y E3 son similares en un nivel de 3 para la visión del experto,
+
+15
+00:01:37,760 --> 00:01:46,000
+ también. Esto es lo que podríamos decir en relación a este árbol de elementos. 2 grupos E1 y E4 y E3 y
+
+16
+00:01:46,000 --> 00:01:52,960
+ la similitud y el nivel de conexión de cada uno de los elementos entre sí de los grupos. En relación al
+
+17
+00:01:52,960 --> 00:02:00,680
+ otro árbol, yo terminamos con el análisis del árbol de elementos, vamos a pasar a analizar el árbol de
+
+18
+00:02:00,680 --> 00:02:06,880
+ características. Acá observamos tres grupos. El primer grupo está formado por C1 y C2.
+
+19
+00:02:07,760 --> 00:02:17,320
+ El segundo grupo está formado por el elemento E4 y el otro grupo por el elemento E3. Las características
+
+20
+00:02:17,320 --> 00:02:23,960
+ que son similares son las E1 y C2, desde el punto de vista del experto, ya que tienen una distancia
+
+21
+00:02:23,960 --> 00:02:31,640
+ de 1. Esto es lo que podríamos decir en relación a árbol de características. Bien, una vez que
+
+22
+00:02:31,640 --> 00:02:39,040
+ terminamos con los análisis de los árboles, vamos a pasar a la subetapados que es la red de relaciones
+
+23
+00:02:39,040 --> 00:02:44,920
+ entre características. Para ello, lo que tenemos que ver es a partir de un texto que nos darían en el
+
+24
+00:02:44,920 --> 00:02:52,760
+ enunciado, ver si las características que se relacionan se encuentran dentro de algunas de las relaciones
+
+25
+00:02:52,760 --> 00:02:58,560
+ típificadas. Nosotros, como relaciones típificadas, tenemos para la Ley, resiproca,
+
+26
+00:02:58,560 --> 00:03:03,760
+ hortigona, hortagonal y ambiguante. Quiere decir que es posible que, que se pueda plantear
+
+27
+00:03:03,760 --> 00:03:08,720
+ otros tipos de relaciones que generen otros gráficos, pero si esos gráficos que generan
+
+28
+00:03:08,720 --> 00:03:13,400
+ no están dentro de las relaciones que nosotros tenemos para estudiar, decimos relación
+
+29
+00:03:13,400 --> 00:03:19,000
+ notificadas. Y otra cosa importante, solamente se pueden relacionar características que
+
+30
+00:03:19,000 --> 00:03:25,400
+ armen un grupo. Está en nuestra ejemplo, serían según y sedos. Sin el texto, le dan una relación
+
+31
+00:03:25,400 --> 00:03:31,440
+ entre 3 y 4, dicen que esa relación no es valida porque no se están relacionando características
+
+32
+00:03:31,440 --> 00:03:37,580
+ que pertenecan a un grupo. Estamos. Así que bueno, ahora vamos a salir del ejemplo, ver
+
+33
+00:03:37,580 --> 00:03:42,640
+ las distintas relaciones que hay, se los vamos a mostrar graficamente, después con el ejemplo
+
+34
+00:03:42,640 --> 00:03:50,740
+ van a ver ustedes que es muy fácil de hacer el match entre el texto y las características.
+
+35
+00:03:50,740 --> 00:03:58,940
+ Las relaciones de las características las van a tener en el webcampos en una pp a parte,
+
+36
+00:03:58,940 --> 00:04:04,340
+ pero yo sé las traduje también acá. Encas son las relaciones posibles que podemos tener,
+
+37
+00:04:04,340 --> 00:04:08,980
+ fíjense la relación para la Ley, se relacionan características de a pares. Entonces,
+
+38
+00:04:08,980 --> 00:04:15,540
+ por ejemplo, se uno con sedos o séquicos, se irinporta, pero que teníamos los polos, uno
+
+39
+00:04:15,540 --> 00:04:21,540
+ toma los polos tal cual como nos los diero y deberían relacionarse en el texto un polo con el
+
+40
+00:04:21,540 --> 00:04:26,540
+ otro de hida o de vuelta, a fíjense que es un lado, la resípro que atendría que tener
+
+41
+00:04:26,540 --> 00:04:34,100
+ la hida y la vuelta, ni en la autogonal, no, a esta diferencia, estos son gráficos para que
+
+42
+00:04:34,100 --> 00:04:38,340
+ bien, ahora lo vamos a ver en el texto como se ve, es bastante simple. Después está la relación
+
+43
+00:04:38,340 --> 00:04:45,340
+ a mi igual que es bastante cuarenta el gráfico que da para con el texto que debería representar.
+
+44
+00:04:45,340 --> 00:04:56,740
+ Después ahí tendríamos todas las opciones, bien. Vamos a ver en el texto como sería
+
+45
+00:04:56,740 --> 00:05:01,340
+ el ejemplo. Nosotros le decimos, en las observaciones realizadas a diferentes pacientes
+
+46
+00:05:01,340 --> 00:05:06,340
+ se puede apreciar que aquellos coronavirus que se manifestan, con frecuencia respiratorialta,
+
+47
+00:05:06,340 --> 00:05:10,180
+ que caracterizan por presentarse con fíbrer alta también, mientras que en aquellos casos que se
+
+48
+00:05:10,180 --> 00:05:16,500
+ manifiesta, con frecuencia respiratoria baja, poseen fiebre baja también. Entonces, lo que podemos
+
+49
+00:05:16,500 --> 00:05:22,900
+ ver en el texto rápidamente es que habla de una frecuencia respiratoria alta y baja, a que
+
+50
+00:05:22,900 --> 00:05:26,700
+ están los polos, los nosotros se los ponemos bien claro para que lo vean y de una fiebre
+
+51
+00:05:26,700 --> 00:05:31,860
+ alta y de una fiebre baja. Entonces, acá está relacionando la característica uno con la
+
+52
+00:05:31,860 --> 00:05:40,020
+ característica dos que si nosotros vamos, la característica una y la característica dos armaba
+
+53
+00:05:40,020 --> 00:05:44,460
+ en un grupo. Entonces, es valida esta relación. Entonces, vamos a ver si se encuentra dentro
+
+54
+00:05:44,460 --> 00:05:49,900
+ de alguna de las típicas. Entonces, lo que hacemos es el sé que es lo que decía el texto,
+
+55
+00:05:49,900 --> 00:05:55,060
+ y la frecuencia respiratoria alta, la fiebre alta. Si la frecuencia respiratoria baja,
+
+56
+00:05:55,060 --> 00:06:00,580
+ la fiebre baja. Entonces, estoy poniendo, ve que está exactamente igual como viene puesto,
+
+57
+00:06:00,580 --> 00:06:06,460
+ este gráfico a que responde a una relación paralelo. Entonces, yo voy a decir que hay una relación
+
+58
+00:06:06,460 --> 00:06:13,340
+ paralela entre c1 y c2. Esta, los otros gráficos deberían dar alguna de las otras posibilidades,
+
+59
+00:06:13,340 --> 00:06:20,500
+ y si no da ninguna de las típicas se pone relación notipificada. Esta, a partir de esto,
+
+60
+00:06:20,500 --> 00:06:26,800
+ terminamos ya con la explicación de la técnica de emparrillado, espero que no se haya
+
+61
+00:06:26,800 --> 00:06:32,080
+ ocurrido. Y bueno, nos vemos pronto en alguna otra vida explicada alguna, alguna otra técnica,
+
+62
+00:06:32,080 --> 00:06:37,200
+ alguna otra, alguna, alguna otra proceso. Les mando un beso y cuidense. ¡Hasta luego!
+

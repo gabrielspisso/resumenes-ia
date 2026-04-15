@@ -1,0 +1,264 @@
+1
+00:00:00,000 --> 00:00:05,760
+ Hola, mi nombre es Pablo Pital y en este vídeo vamos a hablar un poco de los algoritmos de
+
+2
+00:00:05,760 --> 00:00:14,080
+ regresión. Estos algoritmos son también algoritmos clásicos de Machine Learning con datos
+
+3
+00:00:14,080 --> 00:00:21,660
+ supervisados. En la cual es yo a partir de una tabla voy a poder identificar una
+
+4
+00:00:21,660 --> 00:00:30,180
+ fórmula que describa la relación entre los valores que toman los ejemplos de dicha tabla.
+
+5
+00:00:30,180 --> 00:00:36,860
+ Entonces en estos algoritmos de regresión, yo a partir de un conjunto de datos estructurados
+
+6
+00:00:36,860 --> 00:00:47,860
+ con distintos columnas o atributos y varias filas o ejemplos voy a poder generar una
+
+7
+00:00:47,860 --> 00:00:54,360
+ fórmula que describa la relación entre los atributos de entrada y el atributo
+
+8
+00:00:54,360 --> 00:01:01,820
+ objetivo. Obviamente que para poder realizar esto tanto a los atributos de entrada, como
+
+9
+00:01:01,820 --> 00:01:08,980
+ el atributo objetivo, va a tener que tomar valores numericos. En el caso de que yo
+
+10
+00:01:08,980 --> 00:01:15,340
+ tenga datos que no sean numericos como un paso previo aplicar el algoritmo en los
+
+11
+00:01:15,340 --> 00:01:22,300
+ algoritmos voy a tener que transformar a valores numericos contiguos para poder
+
+12
+00:01:22,300 --> 00:01:31,620
+ trabajar. El algoritmo lo que va a hacer es a partir de estos ejemplos es tratar de
+
+13
+00:01:31,620 --> 00:01:38,460
+ encontrar una fórmula de algún tipo que puede ser una fórmula alineal, polinomial,
+
+14
+00:01:38,460 --> 00:01:47,340
+ logística, exponencial, etcétera, para describir cuál es la relación que hay entre los
+
+15
+00:01:47,340 --> 00:01:54,020
+ atributos de entrada y el atributo. De esta manera, esa fórmula luego le puedo implementar
+
+16
+00:01:54,020 --> 00:02:01,460
+ dentro de un software tradicional para poder hacer una estimación, una predicción o la
+
+17
+00:02:01,460 --> 00:02:10,220
+ puede utilizar de manera manual para hacer algo. También le puedo implementar después
+
+18
+00:02:10,220 --> 00:02:19,660
+ una planilla de cálculo y con eso poder hacer un cálculo de algo, ejemplo considerar
+
+19
+00:02:19,660 --> 00:02:27,340
+ que cantidad de stock voy a necesitar dentro del próximo tres veces.
+
+20
+00:02:27,340 --> 00:02:38,060
+ El funcionamiento del algoritmo de regresión es bastante similar al funcionamiento del procedimiento
+
+21
+00:02:38,060 --> 00:02:44,740
+ de Taylor que se suele utilizar y que se debe en análisis matemático para encontrar
+
+22
+00:02:44,740 --> 00:02:52,540
+ polinomios. La diferencia es que ella está automatizado lo que va a hacer el algoritmo
+
+23
+00:02:52,540 --> 00:03:01,260
+ es tratar de encontrar los valores de los coeficientes de manera que minimiza el error
+
+24
+00:03:01,260 --> 00:03:07,460
+ de la fórmula generada a partir de los ejemplos. Y obviamente es mucho más rápido
+
+25
+00:03:07,460 --> 00:03:13,860
+ porque lo hace todo la computadora sin necesidad que el ser humano agana.
+
+26
+00:03:13,860 --> 00:03:22,500
+ Para mostrar la utilidad de estos algoritmos nosotros elegimos un ejemplo basado en las
+
+27
+00:03:22,500 --> 00:03:28,780
+ fórmulas de cinemáticas de física que propuso a cada don exact minuto.
+
+28
+00:03:28,780 --> 00:03:34,700
+ La fórmula que vamos a considerar es la fórmula que nos permite determinar cuál es la distancia
+
+29
+00:03:34,700 --> 00:03:40,460
+ que va a tomar un objeto que se mueve una velocidad determinada por cierto con tiempo
+
+30
+00:03:40,460 --> 00:03:51,700
+ con una aceleración varia. Entonces a partir de la fórmula que nosotros ya conocemos
+
+31
+00:03:51,700 --> 00:03:59,260
+ de Newton le cinemática armamos estos datos donde tenemos la velocidad inicial, el valor
+
+32
+00:03:59,260 --> 00:04:06,220
+ de la aceleración, la cantidad de tiempo y utilizando esta fórmula nos permite determinar
+
+33
+00:04:06,220 --> 00:04:14,260
+ cuál es la distancia recorrida. Para generar estos datos nosotros utilizamos esta
+
+34
+00:04:14,260 --> 00:04:20,420
+ la niilla de cálculo donde fíjense para distintos valores de la cidad inicial de aceleración
+
+35
+00:04:20,420 --> 00:04:26,580
+ y tiempo calculamos la distancia que corresponde utilizando la fórmula de Newton.
+
+36
+00:04:26,580 --> 00:04:31,980
+ Lo que vamos a buscar es que con el de Gorino de la Regresión ver si no genera este
+
+37
+00:04:31,980 --> 00:04:42,980
+ polina o mío a partir de los dos. Entonces nosotros vamos a tener los datos lo podríamos
+
+38
+00:04:42,980 --> 00:04:51,860
+ ver de esta manera acá eligiendo dos atributos de entrada podemos ver como se
+
+39
+00:04:51,860 --> 00:04:56,860
+ relaciona, aplicamos la de Gorino de la Regresión como nosotros queremos generar un
+
+40
+00:04:56,860 --> 00:05:01,940
+ polina o mío vamos a elegir un algoritmo que nos permite hacer una regresión polinomial
+
+41
+00:05:01,940 --> 00:05:08,660
+ le vamos a poner que un grado máximo 3 desponentes porque la fórmula llega hasta un
+
+42
+00:05:08,660 --> 00:05:15,100
+ exponente 2 pero bueno vamos a poner más grande para ver generas y he resultado que me da
+
+43
+00:05:15,100 --> 00:05:20,980
+ el algoritmo de regresión es esta fórmula. Fíjense que esta fórmula es mucho más grande que
+
+44
+00:05:20,980 --> 00:05:28,660
+ esta aparece en un montón de elementos más pero cuando le empezamos a analizar podemos descartar
+
+45
+00:05:28,660 --> 00:05:34,900
+ verá un parto de la fórmula. Por qué? Aparecen muchos coeficientes con un valor muy pequeño por
+
+46
+00:05:34,900 --> 00:05:47,940
+ ejemplo. Aparece un menos 2 multiplicado por e a la menos 13 es decir que tiene 13 seros antes de
+
+47
+00:05:47,940 --> 00:05:56,700
+ 2. Entonces sería 0, 0, 0, 0, 0, 0, 2 negativo. Entonces ese valor digamos que no va a influir
+
+48
+00:05:56,700 --> 00:06:03,500
+ desde demasiado de lo podemos descartar. Lo mismo pasa con este primer término donde aparece la
+
+49
+00:06:03,500 --> 00:06:12,260
+ velocidad con un 6 a la menos 16, un 1 a la menos 13, un 6 a la menos 15. Entonces estos tres términos
+
+50
+00:06:12,260 --> 00:06:21,140
+ también los podemos descartar. Al realizar bueno ahí aparece en el gráfico las predicciones que
+
+51
+00:06:21,140 --> 00:06:29,660
+ va generando esta fórmula y bueno fíjense que al descartar todo eso nos queda una fórmula que nos
+
+52
+00:06:29,660 --> 00:06:36,860
+ dice que la distancia es igual a 1 multiplicado por la velocidad por el tiempo que sería el primer
+
+53
+00:06:36,860 --> 00:06:45,700
+ término de la fórmula de Newton sumado por a 0,5 o sea lo mismo que dividir por 2 a la
+
+54
+00:06:45,700 --> 00:06:52,020
+ aceleración por el tiempo de cuadrada. Entonces fíjense la algoritmo de regresión nos permiten
+
+55
+00:06:52,020 --> 00:06:58,300
+ encontrar la misma fórmula que el algoritmo de Newton. Y esta fórmula que yo obtengo después
+
+56
+00:06:58,300 --> 00:07:07,240
+ la puedo implementar dentro de un software tradicional. Hay veces la mayoría de los casos yo no sé
+
+57
+00:07:07,240 --> 00:07:12,820
+ cuál es la fórmula a la cual yo quiero obtener obviamente porque yo te voy a aplicando de
+
+58
+00:07:12,820 --> 00:07:17,380
+ grimer regresiones lo que decías es encontrar la fórmula para un conjunto de datos pero yo
+
+59
+00:07:17,380 --> 00:07:24,220
+ no sé cuál es la la fórmula en que la cual yo me voy a basar. Entonces esta comparación que
+
+60
+00:07:24,220 --> 00:07:32,180
+ estamos haciendo acá de la fórmula obtenida con la fórmula original va a ser un caso muy
+
+61
+00:07:32,180 --> 00:07:39,540
+ puntual. En el caso de que yo no con los con la fórmula quiero confirmar si los resultados
+
+62
+00:07:39,540 --> 00:07:47,100
+ están bien calculados o no voy a tener que usar unas métricas que me van a permitir calcular
+
+63
+00:07:47,100 --> 00:07:56,060
+ el error de la fórmula obtenida por el algoritmo de regresión. Y esas métricas vamos a ver que
+
+64
+00:07:56,060 --> 00:08:04,300
+ hay distintos tilos pero son formas las bastantes sencillas que nos permiten corroborar la precisión
+
+65
+00:08:04,300 --> 00:08:12,320
+ del algoritmo y de la fórmula obten. Pero de todas formas de eso vamos a hablar en otro
+
+66
+00:08:12,320 --> 00:08:19,100
+ vídeo. Bueno, con esto terminamos los algoritmos regresiones nos vemos en el próximo vídeo.
+

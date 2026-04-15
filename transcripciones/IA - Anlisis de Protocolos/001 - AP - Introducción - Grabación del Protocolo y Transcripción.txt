@@ -1,0 +1,182 @@
+ Hola como están, mi nombre es Sintia Bejeda, yo soy docente de la Universidad Technológica Nacional
+ de la Faculta Regional Buenos Aires y la Plata
+ y hoy lo que vamos a ver es la técnica de análisis de protocolos
+ la técnica de análisis de protocolos surge a partir del procedimiento definido
+ por el exónísimo en 1993 sobre el protocolos verbales
+ donde se intentaba analizar el proceso cognitivo de una persona
+ a través de un relato verbal que realizaba mientras estaba ejecutando una tarea
+ por lo tanto lo que se le pedía esa persona es que verbalicen
+ o piensen voz alta todo lo que le pasa por su cabeza
+ obteniéndose de esta manera un protocolo verbal
+ que es grabado y luego analizado
+ es una técnica entonces que surge en el ámbito de la psicología
+ y luego se traslada la inteligencia artificial
+ como una técnica para relevar lo que sabe los esfuerzos en un determinado dominio
+ todo se le pede el experto que piensen voz alta mientras efectúa una tarea
+ de esta manera es que tenemos una gran ventaja de la análisis de protocolos
+ que es obtener información
+ acerca de los procedimientos que el experto utiliza en la resolución de un problema
+ pero que no puede verbalizar en forma consciente
+ de esta manera vamos a obtener los conocimientos acerca del razonamiento de ese experto
+ al momento de la resolución de un problema en su dominio
+ el análisis de protocolos consta de diferentes etapas
+ por un lado tenemos la grabación del protocolo
+ en donde justamente vamos a realizar el protocolo junto con el experto
+ luego tenemos una etapa de transcripción
+ donde lo que vamos a hacer es escuchar esta grabación y transcribirla
+ una etapa de codificación donde vamos a analizar esa transcripción
+ y por último una etapa de interpretación
+ donde vamos a ver cuál es el razonamiento de ese experto
+ entonces comenzemos con la etapa de grabación del protocolo
+ en la primera subetapa se denomina el ingeniero en conocimientos
+ explica lo que espera del experto
+ luego tenemos una segunda subetapa que es la puesta en situación
+ y por último una tercera subetapa que es el registro del protocolo
+ en la primera subetapa lo que hacemos es por un lado decirla el experto
+ cuál es el objetivo de la técnica
+ el objetivo es obtener conocimiento
+ de cómo el experto razona al momento de efectuar una tarea
+ por otro lado lo que se le va a decir el experto es cuál es el comportamiento
+ que tiene que tener es decir que debe informar todo lo que piensa
+ en el momento de la resolución de un problema
+ y que además si este experto se queda cachado
+ la idea va a estar interrumpirlo
+ porque lo que nosotros queremos es que este experto
+ pueda grabar el protocolo
+ por lo tanto el experto se le da las instrucciones
+ sobre qué es lo que debe hacer en el momento de la grabación del protocolo
+ una vez se dicha esta subetapa
+ pasamos a la puesta en situación
+ en donde lo que hacemos es proponer en el experto
+ pequeño ejercicios como anagramos
+ multiplicaciones divisiones
+ que el experto pueda practicar resolviéndolo en voz alta
+ y de esta manera práctica la técnica que luego va realizar
+ el objetivo justamente este poder darle confianza al experto
+ una vez que yo cumplí con estas dos subetapas
+ o si es un experto que ya está habituado
+ en los análisis de protocolos no necesario volver a hacerlas
+ pasamos a la última subetapa que es el registro del protocolo
+ justamente en la grabación propia mente
+ dicha yo me reúno con el experto y realizo la grabación
+ siempre es muy importante el registro del protocolo
+ saber cuál es el objetivo que yo voy a tener
+ en este caso mi experto es un experto médico
+ que lo que va a hacer es diagnosticar un diagnóstico
+ según los síntomas que presenta el paciente que va analizar
+ entonces supongamos que nosotros nos juntamos con el experto
+ en su consultorio y mientras revisa el paciente nos relata
+ este protocolo lo que nos dice es
+ el paciente presenta fiebre superior 38 grados
+ manifesto un fuerte dolor de garganta y toseca
+ su frecuencia respiratoria es muy elevada
+ y tiene dolores musculares intensas
+ podríamos pensar que estamos ante un coronavirus COVID-19
+ el paciente debe permanecer aislado
+ por precausión dado lo contagioso del virus
+ en una segunda observación
+ vemos que esta persona presenta dolor de cabeza persistente
+ y sufre un mareo repentino de larga duración
+ el análisis de laboratorio de un resultado positivo
+ al virus hache uno en el uno
+ concluimos que se trata de una dripe que la sea
+ por lo tanto si nosotros analizamos en forma general este protocolo
+ vemos que ante los síntomas de este paciente
+ por un lado el experto dice bueno
+ podría ser un coronavirus
+ en este caso el COVID-19
+ pero después ha sido una segunda observación
+ lo que se acuenta que en realidad no es el coronavirus
+ sino que es la dripe clasea
+ o sea que lo que podríamos decir
+ es que este experto pasa por dos estados
+ pensando el principio que puede ser un coronavirus
+ y luego pasar una dripe clasea
+ que vamos a hacer entonces supongamos que esto lo tenemos grabado
+ entonces en esta segunda etapa
+ lo que vamos a hacer es transcribirlo
+ vamos a escuchar la grabación y transcribir el protocolo
+ pero no lo vamos a copiar todo en una hoja
+ donde no se puede entender nada
+ sino que lo que vamos a hacer es segmentarlo
+ segmentarlo en frases
+ el línea línea que le vamos a dar un número
+ y por cada una de esas líneas voy a tener un cierto texto
+ ahora como en la forma de segmentar
+ no hay una manera que sea mejor que la otra
+ la idea es poder capaz de aumentar una frase
+ y que no quede una frase muy larga en una línea
+ o que tampoco quede una palabra
+ en cada una de las líneas
+ porque después es muy complejo
+ poder transcribirlo
+ entonces la idea veces es separarlo
+ por ejemplo entre
+ sujeto y predicado
+ o si las frases muy grandes se inventaron entre frases
+ lo importante de esto
+ es que después me sirva para el análisis posterior que voy a hacer
+ por eso muchas veces lo que se hace es
+ este mismo protocolo
+ que lo transcriban diferentes ingenieros en conocimientos
+ entonces tengo una visión distinta
+ de cada una de esas segmentaciones
+ entonces supongamos que nosotros lo segmentamos de esta manera
+ como ven nuestro protocolo que lo se ha inventado
+ en 20 líneas diferentes
+ una vez que nosotros lo tenemos segmentado
+ lo que vamos a hacer
+ es anotar en esta transcripción
+ todo aquello que nos llodamos visto
+ al momento de la grabación del protocolo
+ porque nosotros estuvimos al lado del esperto
+ si bien no tuvimos participación
+ porque la idea fue que este esperto lograba
+ por sí mismo nosotros estuvimos viendo lo que
+ hacía
+ entonces qué puede haber pasado
+ por el lado pudo haber pasado que el esperto
+ hiciera algo distinto en el momento de la resolución
+ y por el otro lado pudo haberse quedado cayado
+ estas son dos situaciones que nosotros vamos a tener
+ que volcar en la transcripción
+ supongamos
+ el experto nos dice "manifiesto un fuerte dolor de garganta
+ y toseca"
+ y supongo que el esperto va a un libro
+ a un blog
+ va a un perpe realizado por él
+ entonces qué voy a hacer con eso
+ voy a escribir lo que el esperto hizo
+ por ejemplo
+ le show
+ e quis libro
+ de esta manera yo de ahí también puedo tener conocimiento
+ capaz conocimiento que el esperto
+ da porcentado y no lo dijo
+ pero si lo le show
+ de eso que estaba averiguando
+ por otro lado como yo les decía
+ puede pasar que el esperto
+ se quede cayado
+ y eso también lo tengo que volcar
+ no por la cantidad de segundos que se quedó cayado
+ sino en realidad porque capas que hay
+ falta información
+ que después a la hora de analizar
+ este protocolo
+ me de cuenta
+ digo bueno aunque hace información
+ porque y porque se quedó cayado
+ y no dijo todo lo que estaba pensando
+ por esa razón
+ es que tenemos que alotar en la transcripción
+ todo lo que el esperto haga
+ en el momento de la resolución
+ del problema
+ una vez que tengo esto
+ le tapa de transcripción
+ que la terminada
+ y pasamos a la codificación
+ por lo tanto en los siguientes vídeos
+ vamos a charlar sobre la codificación

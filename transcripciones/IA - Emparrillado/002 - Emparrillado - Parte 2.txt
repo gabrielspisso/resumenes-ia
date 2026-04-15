@@ -1,0 +1,118 @@
+ Hola, soy María Florezia Pollo y voy a continuar explicando las distintas etapas de
+ las técnicas en Parilla. Habíamos llegado a la etapa número 4 donde hablábamos de
+ las formalizaciones de la Parilla, se vamos a empezar a ser cálculos sobre esta matriz que definimos
+ en la etapa previa, se acuerdan que en la matriz lo que relacionábamos eran los elementos
+ con las características, el experto en las signababalores en el caso nuestro habíamos hecho
+ una matriz de Manuel. Vamos a comenzar con la primera subeta, que es la etapa de que la
+ pacificación de los elementos. Entonces, esta es la misma matriz de antes, lo que vamos a
+ hacer es construir otra matriz, que se la conoce como la matriz de distancia entre elementos.
+ Nosotros, en particular, más adelante, el encuentro vamos a tomar para el análisis, el principio
+ de la mínima distancia, se puede tomar de la mínima o de la máxima, pero como construimos
+ esta matriz, esta matriz se construye a través del cálculo de las distancia entre elementos. Y las
+ distancia entre elementos se calculan de la siguiente manera. La distancia entre 1 y 2 está,
+ es la sumatura de las diferencias absolutas entre 1 y 2 a través de las características. Entonces,
+ lo que yo tendría que construir, el cálculo armejor dicho es, la diferencia entre 1 y 2,
+ fíjense hecho a las posas sumatores, esto es ninguna fórmula ni ladera para que ustedes
+ entendieran el cálculo de donde salir. Es, 2 menos 4, más 3 menos 2 está acá, más 1 menos 3,
+ que se esto pesta acá, más 4 menos 1, vuelvo a repetirles en la sumatoria de las diferencias
+ absolutas de todos los elementos a través del paso de sus características, los valores que
+ tienen con las distintas características, con lo cual bueno, 2 menos 4, 2, la verdad, todo esto
+ les da 8, 8 es el tuvalor que se pone acá, está, vamos a calcular otro valor más, por ejemplo,
+ la razón no, en un lado, bien, entre 2 y 3, entonces vamos a calcular las diferencias entre 2 y
+ 3, en la sumatoria de las diferencias absolutas, ustedes sigan en el recuadro y yo les voy
+ armarcando la matriz, es 4 menos 3, más 2 menos 2, más 3 menos 4, más 1 menos 2, yo les
+ pongo la sumatoria para que sepan de que veríamos hablar, bueno, con esto los valores me da 3 y esto
+ cubro con 3, con esto ustedes irían generando los distintos valores de la matriz, una
+ cosita para aclarar, porque no se copia la parte de abajo, porque obviamente hacer la sumatoria
+ de las diferencias absolutas, el valor la diferencia entre 1 y 2, pasar la misma que entre
+ 2 y 1, no sé qué nos quedaría una matriz, es pejo, está con lo cual sinéntica, con lo
+ cual no lo vamos a calcular, y vamos a hacer los cálculos sobre la matriz triángular supello,
+ bien, entonces estos valores que si obtienen cálculando, yo los invito después a que
+ calculen la matriz, la diagonal principal no se calcula porque porque la diferencia entre
+ un valor y sí mismo, es 0, está, se toma el mínimo valor, porque nosotros estamos para tomar
+ el análisis haciendo, teniendo en cuenta la mínima lista, entonces tomamos el mínimo
+ valor, si fuera la máxima tomaría más el mayor, bien entonces a partir de ahí lo que
+ hacemos es fusionar esos dos elementos que nuestro caso quién es son, el 4 con 1, y qué
+ nos va a generar, una matriz nueva, donde una fila, donde una fila va a estar formada por ese
+ grupo, entonces para armar yo la matriz nueva lo que hago es tener, un elemento que se va a
+ llamar 1 y 4, proveniente de acá y después de 2 y 3, como completo estos valores,
+ yo acalemos a tener un ejemplo, la diferencia entre 1 y 4 y 2 entre el grupo formado por
+ los elementos 1 y 4, y 2 se calcula como el mínimo valor entre las distancias, 1 y 2 que
+ quién es la distancia entre 1 y 2, 8 y el 4 y 2, el 4 y 2, fíjense quién es 6, el mínimo entre 8 y 6,
+ quién es 6 y este es el valor de acá, se entiende vuelvo a repetirles para calcular obviamente
+ que 2 y 3 fíjense que va a quedar con el mismo valor porque entre 2 y 3, entre 3, entre 2 y 3,
+ sigue siendo 3, pero el valor que se calcula con este nuevo elemento que es un elemento
+ compuesto es el valor mínimo de este de 1 con 2 y de 4 con 2, se busca en la tabla anterior,
+ se toma el mínimo valor y se completa, estamos a partir de ahí se completa toda la tabla y se busca
+ cuál es el mínimo valor, quién es el mínimo valor, el que relaciona, estrés que relaciona
+ al elemento 3 con el elemento 2, entonces nuevamente vamos a unir esos dos, esos dos filas y
+ vamos a armar un nuevo grupo que es el grupo 2 y 3, entonces si yo tuviera que calcular este valor de
+ acá sería el mínimo entre 1 y el 4, el mínimo de 1, el 4 con 2 y el mínimo de 1, el 4 con
+ el 3, el mínimo de 1, el 1, el 4 con el 2, el 6 y el 1, el 4 con el 3, es 5, entonces ahí va el 5 y ahí
+ también haría el gráfico, con lo cual vuelve a mostrar a partir de estos cálculos si ustedes
+ efican yo le voy a mostrar, miren, 1, el 4 en 2, recuerden esto, 2 con 3 en 3, 1 con el 4 en 2, 2 con
+ 3 en 3, y finalmente los 2 grupos, 1 a 4 y el 2 y el 3 se reúnen en 5, así se construye
+ la árbol y le decir que el árbol yo no voy a ir construyendo en la medida de ver,
+ pues muestro con el delo, me encanta, como se va a ir armando en función de la mínima
+ distancia, si fuera máxima distancia, invertiríamos los niveles, los distintos grupos que
+ se van uniendo y el nivel donde se se agrupan, y ya se que de esta manera se obtiene, de estos
+ los elementos, el siguiente árbol ordenado, que después lo vamos a analizar, a partir
+ de ahí terminamos la clasificación de elementos y pasamos a la clasificación de las
+ carácterísticas, terminamos con la primer subetapa y empezamos con la segunda, entonces
+ lo que tenemos acá es la matriz original que yo se las volvía a dibujar y la matriz
+ o puesta, la matriz o puesta se arma invirtiendo la escala de balones, yo puse a calas
+ de balones que quiere decir que cuando veo un 1 para un 4, donde veo un 2 para un 3,
+ donde veo un 3, un 2 y donde pongo 4, un 1, entonces ustedes se fijan acá, por ejemplo
+ ven 1 2, que acá tienen un 2, que hay que poner cuando veo 2, un 3, entonces que apareció,
+ un 3, acá aquí había un 4, que había que poner cuando se veía un 4, un 1, entonces
+ el 4 apareció, entonces yo había trabajar con estas 2 matrices, con la matriz original y la
+ matriz o puesta, en relación a la original, lo que van a hacer es construir una matriz
+ ahora que va a relacionar las carácterísticas, se acuerdan que en el paso anterior, habíamos
+ construido una matriz que relacionaba los elementos, para construir la matriz que relaciona
+ la carácterística vamos a hacer 2 pasos, el primer paso es generar la matriz triagular
+ superior, y la matriz triagular superior se calcula en como lo que conocemos como la distancia
+ uno que fue la que calculamos hace un ratito y va a ser perdone, exactamente igual, entonces
+ lo que van a hacer es, por ejemplo, entre 1 y c2, figence la sumatoria, ustedes
+ vaya mirando acá la cuenta y yo le voy mostrando acá, 2 menos 3, 4 menos 2, 3 menos 2, 2 menos 3.
+ Es exactamente igual, ahora va a rimos la característica a través de todos los elementos,
+ entonces bueno, tenemos 1, 2, 1, 1, da 1, 3, 4 y 5, este 5 es la distancia entre 1 y c2.
+ Y ahí van llenando la matriz de distancias de 1, que esto se hace exactamente igual a como
+ hicimos con los elementos, pero ahora el lugar de barrio no se le eventó, barrio más por
+ una carácterística, sin embargo no continúe igual que con los elementos, ¿ok? ¿Qué?
+ Porque para calcular la triagular inferior, calculamos lo que se conoce como la distancia de 2,
+ y la distancia de 2 se calcula tomando un elemento de cada parrilla, uno de lo original
+ y el otro de la opuesta, entonces por ejemplo, vamos a calcular
+ el valor de c2, la distancia de 2, entre c2 y c1 y vamos a tomar uno de cada parrilla.
+ Entonces fíjense que, yo calé esto, me 2, 4, 3, 2, tomé esta de acá, de la parrilla de
+ acá y c2 la tomé de acá, ve los números 2, 3, 3, 2. Entonces, es la sumatoria de
+ c2, carácterística, de c1 que es 2 y pás, perdón, es me, y la de c2 es 2, verdad, más. Ahora
+ vamos al segundo elemento, 4 tomada de la primera parrilla y 3. Yo se lo muestro
+ esto, capaz de que yo lo teniera, después 3 menos 3 y después 2 menos 2. Fíjense que entonces
+ te la dará, me queda 1, listo, y así que se calculan todos los valores de la distancia 2.
+ A partir de ahí que tenemos esta hermosa matriz recuerdan que en la diagonal principal
+ poníamos todos 0 porque la distancia entre un número y sinismo es 0, o sea una vez que tenemos
+ esta matriz, lo que hacemos es construir la matriz diagonal superior. Y como lo vamos a construir,
+ a partir de la matriz esta matriz que teníamos antes, de que nos valorizan los mismos, lo que
+ hacemos es tomar los opuestos y tomar el menor valor y el menor valor es el que ponemos
+ acá en la tabla. Entonces, por ejemplo, fíjense que entre c1 y c2 toman el mínimo entre estos 2
+ que quienes 1, entre c1 y c3 toman el mínimo que quienes entre 8 y 4 va a ser 4 y así
+ sucesivamente. Con esta matriz es con la que van a trabajar, como estábamos siguiendo la mínima
+ distancia, tomamos 1 que aquí en vinculan a c2 con c1. Entonces lo que vamos a hacer es
+ unir la filera columna de c1 y c2 después de c3 y c4 y completamos. ¿Quién cómo se calculaba
+ c1 y c2 con c3? Se acuerda que en el mínimo entre c1 y c3 y c2 y c3. Lo vamos a buscar.
+ El mínimo entre c1 y c3, c1 con c3, quién es? 4 y el mínimo entre c2 y c3, quién es?
+ Entonces el mínimo entre c3 y c3 y c4. Y así sucesivamente calculan el resto. Recuerden
+ que entre c3 y c4 es este valor que tiene acá que es el bien. Y acá toman el mínimo valor
+ que quienes 2, por si les había quedado la duda como se hacía cuando se agregaba un elemento
+ más con una característica, aun un elemento que ya estaba conformado, miren, el próximo
+ paso, bien iltera lo que nosotros teníamos ahora que era un nuevo conjunto formado por
+ c1 y c2 en primera instancia. Fíjense que se respeta. Y después todo eso se junta con c4.
+ Y a partir de ahí construimos la nueva matriz que recuerda más ser el mínimo entre c1
+ y c2 con c4 está y c3 y a partir de ahí queda el 3. Entonces si se fijan, vamos a tener
+ un árbol donde c1 y c2 se van a reunir en uno, después c2 se van a reunir con c4 en 2 y
+ después todo c2 se van a reunir con c3 en c3, miren como c4. Acá se puede ver. C1 y c2, 1, después
+ se sube c4 en 2 y finalmente se sube c3 en 3. Y ahí tenemos el árbol de las características.
+ Está bien. A partir de ahora, pasamos a la última capa que es la interpretación o analisis de las
+ resultados. Vamos con c4, c1 y c2, vamos a cortar acá y vamos a continuar ya con lo
+ último que queda que es bastante más fácil lo más embrencado de este tema de los que.
+ Bueno, espero que no se llena un río y nos vemos en el próximo vídeo. Hasta luego.

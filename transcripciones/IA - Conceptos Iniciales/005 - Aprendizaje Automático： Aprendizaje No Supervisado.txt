@@ -1,0 +1,50 @@
+ Ni Jama, mi nombre es Pablo Pital, aquí estamos con la segunda video de
+ machine learning, estrategia de aprendizaje y el idioma Chino Han Yu, en este video
+ hablaremos de la estrategia de aprendizaje, no supervisado y duremos cómo
+ pueden ser capaces de aprendor, los distintos carácteres de los numeros Chinos, solos sin
+ ningún ayuda, como habíamos visto anteriormente, machine learning, tiene dos tipos de aprendizaje
+ y supervisado que habíamos en el video anterior donde hay un supervisor, un agente externo
+ que aciste el aprendizaje del algoritmo, y hay otro tipo de aprendizaje que
+ es el no supervisado donde no hay este agente, entonces el algoritmo puede aprender
+ solo a partir de ejemplos, lo que hace en este caso el algoritmo es tratar de encontrar
+ patrones para armar, de esa forma un conjunto de reglas y conocimientos que le permitan
+ resolver el problema, en nuestro caso supongamos que nosotros queremos identificar,
+ vamos a chicar esto un poquito para que se vea mejor, estamos y identificar cuáles son
+ los carácteres que corresponden a estos numeros, lo cual muy bastante complicados si no
+ conocemos al idioma China, pero que pasa, para aprender los distintos numeros les vamos a
+ dar estos ejemplos, en estos ejemplos aparece en operaciones de suma, con el carácter de
+ suma tradicional, el igual, igual que nosotros utilizamos y la multiplicación, entonces
+ tenemos todas estas operaciones de suma y todas estas operaciones de multiplicación entre numeros
+ que van del 0 al nuevo, entonces a partir de esto nosotros esperamos que logren y identificar
+ qué caracter corresponde a cada uno, ahora les voy a dar unos segundos para que pueda
+ mirar, si alguno quiere poder poner pausa, analizar y tratar de encontrar algún patron y
+ después corrotorar a ver si lo que ustedes identificaron es correcto.
+ Bueno, creo que han tenido tiempo suficiente para hacer su razonamiento, si quedamos a corrotorar
+ si los resultados que obtuvieron son los validos los correctos y vamos a ver si no
+ lo grado sacar de qué manera se podría haber hecho, bueno, vamos a empezar analizando
+ esta columna y esta columna. ¿Qué pasa aquí? Fíjense que en el caso de la suma, yo siempre
+ tengo en la izquierda el mismo carácter y luego tengo segundo carácter y como resulta
+ obtengo el segundo carácter, o sea, en esta columna a lazar la suma entre este carácter
+ y este carácter, obtengo siempre el mismo resultado. En esta otra columna con la multiplicación,
+ fíjense que pasa lo contrario, si yo multiplico este carácter por cualquiera siempre me
+ da el primero. Bueno, con que número del 0 al 9 sabemos que esta es este comportamiento,
+ o sea, que con la suma no afecta nada al segundo valor y con la multiplicación lo cancelo.
+ Sí, obviamente es el 0, entonces este carácter que es el link lo podemos remplazar por el número
+ 0. Bien, con esto ya tenemos un número. Ahora nos quedan, los otros no, los otros no.
+ ¿Qué podemos hacer ahora? Bueno, lo que podemos hacer es analizar la tarzar columna. Fíjense
+ que con la multiplicación, si yo multiplico el carácter y por cada uno de los números, siempre
+ me da el mismo resultado, o sea, me da el segundo carácter. Con que número del 1 al 9 nos
+ otros sabemos que esta es este comportamiento. Sí, con el 1, que lo cual tiene sentido con el
+ carácter y que está formado por un solo palito. Entonces cada vez que aparece el carácter
+ y podemos poner 1 número. Bien, con esto ya tenemos 2 números. Ahora, ¿qué tenemos que
+ hacer? Bueno, tenemos que empezar a sacar los otros carácteras. ¿Cómo podemos hacer eso
+ mirando en la primer columna? Fíjense que en la segunda fila aparece 1 más 1 y aparece
+ 1 2 palitos, que corresponden al carácter R. Ese R, entonces de resultado de sumar 1 más 1,
+ o sea que R es igual a 2. Entonces cada vez que aparece R podemos poner 2. Lo mismo podemos
+ hacer acá. Tenemos 1 más 2, es igual a 3 palitos, lo cual tiene sentido que corresponde
+ con el número 3. Entonces cada vez que aparece Sán, lo vamos a ramblasar por el número
+ 3. Y así hacemos con cada 1 de los números. De esta forma, podemos obtener la resultado
+ que es 2, 9, 0, 8, 9, 97, 2, 14. Entonces, fíjense que sin ninguna ayuda externa han
+ podido reconocer los distintos caráctelas de los números chinos. Muy bien. Bueno, espero que les haya
+ gustado la presentación. Con esto, terminamos la el aprendizaje. No supervisado. Nos vemos luego.
+ Saíche.

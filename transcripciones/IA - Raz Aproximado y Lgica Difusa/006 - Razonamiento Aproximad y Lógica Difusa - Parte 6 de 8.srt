@@ -1,0 +1,344 @@
+1
+00:00:00,000 --> 00:00:07,520
+ Hola, este es el sexto video correspondiente a la presentación de relacionamiento aproximado y lógica difusa.
+
+2
+00:00:07,520 --> 00:00:15,960
+ En este video vamos a hablar de los sistemas inteligentes difusos, que de ahora en más para llamarlo con un nombre más corto,
+
+3
+00:00:15,960 --> 00:00:20,440
+ lo vamos a denominar sistemas difusos.
+
+4
+00:00:20,440 --> 00:00:25,800
+ Bueno, los sistemas difusos, normalmente, obviamente van a aplicar la lógica difusa.
+
+5
+00:00:25,800 --> 00:00:32,040
+ Para que, por un lado, para representar a los datos impresicios que ingrese al usuario.
+
+6
+00:00:32,040 --> 00:00:42,200
+ Por otro lado, para aplicar reglas que pueden considerar esa impresición al momento de realizar la toma de decisionas.
+
+7
+00:00:42,200 --> 00:00:50,240
+ Luego, también, la vamos a utilizar para mostrarle en los resultados en un lenguaje que el usuario pueda comprar más.
+
+8
+00:00:50,240 --> 00:00:58,360
+ Por eso mismo, la arquitectura de un sistema difuso va a ser muy parecida a la arquitectura de un sistema basado en conocimientos.
+
+9
+00:00:58,360 --> 00:01:03,960
+ Entonces, vemos que tiene una base de conocimientos y un motor de inferencias.
+
+10
+00:01:03,960 --> 00:01:13,320
+ De manera que el motor de inferencias sabe cómo aplicar las distintas reglas difusas que tienen en su base de conocimiento.
+
+11
+00:01:13,320 --> 00:01:23,880
+ Pero a esos dos módulos les agregamos dentro de lo que sería la interfaz de entrada salida, un módulo de codificación o fusification,
+
+12
+00:01:23,880 --> 00:01:31,720
+ que va a ser el encargado de transformar los datos que ingrese al usuario a valores difusos o fusis.
+
+13
+00:01:31,720 --> 00:01:41,960
+ Y un módulo de codificación o de fusification que se ocupa de hacer la tarea inversa, es decir, transformar los resultados difusos
+
+14
+00:01:41,960 --> 00:01:45,920
+ a resultados que el usuario pueda entender.
+
+15
+00:01:45,920 --> 00:01:55,160
+ Las reglas que van a estar en la base de conocimiento de un sistema difuso pueden ser reglas que vienen de fontes públicas.
+
+16
+00:01:55,160 --> 00:02:00,520
+ Entonces, ahí el sistema difuso sería igual que un sistema basado en conocimientos,
+
+17
+00:02:00,520 --> 00:02:09,600
+ o también puede incluir reglas que provienen de la mente de un experto, o sea, conocimiento interiorizado en la mente de un experto.
+
+18
+00:02:09,600 --> 00:02:13,840
+ En este caso, sería un sistema difuso experto.
+
+19
+00:02:13,840 --> 00:02:22,240
+ Los módulos de memoria de trabajo, trastador de consultas, trastador de explicaciones también podrían aparecer en ese caso.
+
+20
+00:02:22,240 --> 00:02:29,240
+ Pero para simplificar la arquitectura del sistema difuso y imponer una arquitectura más general, no en la simplemente.
+
+21
+00:02:29,240 --> 00:02:36,080
+ Bueno, entonces, como le decíamos antes, a partir del problema que tenga el usuario va a carrer los datos,
+
+22
+00:02:36,080 --> 00:02:46,120
+ el módulo de fusificar y yo la va a transformar a valores difusos, que el motor de inferencias va a considerar al momento de aplicar las distintas reglas.
+
+23
+00:02:46,120 --> 00:02:58,120
+ Cuando se obtiene resultado, se hace una diffusificación y ese resultado interpretado, se le mostra el usuario para que pueda resolver su problema.
+
+24
+00:02:58,120 --> 00:03:08,280
+ Entonces, la arquitectura es poquito similar a la de un sistema basado en conocimiento, pero aparecen estos dos nuevos módulos
+
+25
+00:03:08,280 --> 00:03:16,680
+ y la capacidad que va a tener el motor de inferencia para aplicar los conocimientos y datos difusos que se trata.
+
+26
+00:03:16,680 --> 00:03:27,200
+ Bueno, como ventajas, entonces de un sistema difuso, podemos decir que si utilizan para modelar un comportamiento de un sistema real,
+
+27
+00:03:27,200 --> 00:03:36,200
+ porque como habíamos visto antes, la lógica difusa nos permiten emular de mejor manera la forma en que una persona piensa,
+
+28
+00:03:36,200 --> 00:03:44,240
+ pero al momento de implementar esta arquitectura, hay distintos tipos de módulos que se pueden usar para combinar las reglas,
+
+29
+00:03:44,240 --> 00:03:51,120
+ o sea, dentro del motor de inferencias y dentro del módulo de fusificar y yo, se pueden implementar de distintas maneras.
+
+30
+00:03:51,120 --> 00:04:02,600
+ Entonces, vamos a ver que hay varios módulos de los cuales nosotros vamos a mencionar solo dos, el módulo difuso mandani y el módulo difuso tacaje su geno,
+
+31
+00:04:02,600 --> 00:04:06,240
+ que ahora vamos a ver cómo funciona cada uno.
+
+32
+00:04:06,240 --> 00:04:12,960
+ Lo importante que sepan es que el primero del módulo mandani es más simple para implementar,
+
+33
+00:04:12,960 --> 00:04:26,680
+ pero para funcionar, va a requerir de mucha más cantidad de reglas, ser más simple, van a necesitar contar con más reglas para generar resultados más precisos.
+
+34
+00:04:26,680 --> 00:04:33,120
+ Mientras que el segundo puede resolver problemas complejos, o no alineales con menos reglas.
+
+35
+00:04:33,120 --> 00:04:38,320
+ Por eso mismo, también es un módulo mucho más complejo.
+
+36
+00:04:38,320 --> 00:04:45,440
+ En todas formas, no se preocupen que para nosotros, para la cursada, todo esto entre paréntesis,
+
+37
+00:04:45,440 --> 00:04:51,040
+ no vamos a entrar en mucho detalle, en las formas que aplica cada uno de estos dos módulos.
+
+38
+00:04:51,040 --> 00:04:57,440
+ Lo importante es que sepan que hay distintos módulos, y que hay algunos que son más simples, pero menos precisos,
+
+39
+00:04:57,440 --> 00:05:01,400
+ y hay otro módulo que es más preciso, pero más complejo.
+
+40
+00:05:01,400 --> 00:05:07,400
+ Bien, el primer módulo que entonces que mencionamos es el módulo difuso mandani.
+
+41
+00:05:07,400 --> 00:05:10,480
+ En su funcionamiento, lo que va a ser es lo siguiente.
+
+42
+00:05:10,480 --> 00:05:15,040
+ Primero, identificar todas las reglas que pueden ser aplicadas.
+
+43
+00:05:15,040 --> 00:05:24,440
+ Segundo, calcular el valor de partenense correspondiente al consecuente de cada reglas mediante la aplicación de los operadores de lógica difuso.
+
+44
+00:05:24,440 --> 00:05:29,800
+ Es el que en el módulo mandani, cuando yo quiero calcular el valor del consecuente,
+
+45
+00:05:29,800 --> 00:05:39,600
+ lo que hace es directamente propagar el valor del antecedente, como nos decía, antes el operador de implicación de la lógica difusa.
+
+46
+00:05:39,600 --> 00:05:45,960
+ Pero eso le agrega un tercer paso, porque, porque a partir de los resultados de todas las reglas, los tratas de combinar.
+
+47
+00:05:45,960 --> 00:05:51,400
+ Entonces, en el tercer paso, lo que hace es combinar los valores obtenidos en cada reglas,
+
+48
+00:05:51,400 --> 00:05:55,640
+ para obtener el valor final usando el criterio, que puede ser.
+
+49
+00:05:55,640 --> 00:06:04,800
+ De centro de masa, donde se trata de encontrar un tomedio de los valores de partenencias que tienen cada uno de los consecuentes,
+
+50
+00:06:04,800 --> 00:06:11,320
+ para eso utiliza esta fórmula, o usar el criterio del promedio del máximo.
+
+51
+00:06:11,320 --> 00:06:20,800
+ O sea, busca cuál es el valor más grande que tiene y calcula el promedio de esos valores altos.
+
+52
+00:06:20,800 --> 00:06:31,760
+ Bien, entonces el modelo mandani funciona de esta manera. En cambio, en el modelo tracajizujeno, vamos a ver que tiene una diferencia en el segundo y tercer paso.
+
+53
+00:06:31,760 --> 00:06:37,800
+ Bueno, el primero entonces es igual, lo que hace es identificar todas las reglas que pueden ser aplicadas.
+
+54
+00:06:37,800 --> 00:06:42,920
+ Luego, calcula el valor de partenencia correspondiente al consecuente de cada reglas,
+
+55
+00:06:42,920 --> 00:06:54,840
+ aplicando una función línial de este estilo, o sea, en vez de propagar directamente el valor del antecedente hacia el consecuente, uso una función de este estilo.
+
+56
+00:06:54,840 --> 00:07:05,480
+ Lo que hace esta función es decir que el valor que va a tener el consecuente, se va a calcular en base a los valores de cada una de las funciones que aparece en el antecedente,
+
+57
+00:07:05,480 --> 00:07:17,120
+ pero ponderadas por una constante que va a ser predefinida. Y, a su vez, se le puede sumar una constante para también generarle más valor.
+
+58
+00:07:17,120 --> 00:07:24,800
+ Y en el tercer paso lo que hacemos es combinarmos cada una de los valores obtenidos en cada reglas, usando una media ponderada. Entonces,
+
+59
+00:07:24,800 --> 00:07:35,440
+ cada regla va a tener un peso, un importancia, que va a afectar el resultado general que devuelve nuestro sistema con este modelo.
+
+60
+00:07:35,920 --> 00:07:54,000
+ Entonces, se puede ver que la diferencia principal entre el modelo y el modelo, tacas y sugeno, es que el segundo le puede dar distintos pesos de importancia o de gravedad o criticidad a distintas valores de verdad y a distintas reglas.
+
+61
+00:07:54,000 --> 00:08:02,040
+ Bueno, una vez entonces conocemos cómo funciona cada una de estas arquitecturas, vamos a ver algunos ejemplos.
+
+62
+00:08:02,040 --> 00:08:09,000
+ Primero ejemplo, es un sistema experto basado en lógica difuso para el diagnóstico de enfermedades cardiacas.
+
+63
+00:08:09,000 --> 00:08:16,600
+ Lo que va a ser entonces este sistema difuso es determinar de acuerdo a un conjunto de factores que ingresa al médico del sistema,
+
+64
+00:08:16,600 --> 00:08:28,640
+ si la persona que el paciente que se está tratando está saludable, medio saludable, con una salud moderada, severa o muy severa.
+
+65
+00:08:28,640 --> 00:08:37,640
+ Entonces, le hace un diagnóstico, no ha sido no asignando en un valor de esta bien o está mal, sino ha asignandole un grado de valores posibles.
+
+66
+00:08:37,640 --> 00:08:41,640
+ Eso lo logra a través de la lógica difuso.
+
+67
+00:08:41,640 --> 00:08:56,240
+ El segundo ejemplo es el ejemplo de la barropa con fusilose. En este en la barropa se dice que tiene implementada lógica difusa para determinar en base a ciertos parámetros como son.
+
+68
+00:08:56,240 --> 00:09:06,240
+ La temperatura del programa ladureza y calidad del agua y que tan lleno está en la barropa, le coleges son las condiciones óptimas para el lavado.
+
+69
+00:09:06,240 --> 00:09:18,240
+ Obviamente que no cambian en si el programa, pero si pueden determinar cuánta detergente se tiene que utilizar para determinar cuánta espuma se tiene que hacer.
+
+70
+00:09:18,240 --> 00:09:30,240
+ Cuántos minutos tiene que trabajar cada uno de los pasos del programa, cuánta agua tiene que agregar, cuánta agua tiene que liberar en un momento.
+
+71
+00:09:30,240 --> 00:09:37,240
+ Entonces, utilizando la lógica difusa, toma decisiones que un la barropa normal no podría ser.
+
+72
+00:09:37,240 --> 00:09:48,240
+ De toda forma, es bastante estático en cuanto a las decisiones que pueda ser y su clasificación como sistema inteligente hay que tomarlos con pinzas.
+
+73
+00:09:48,240 --> 00:10:03,240
+ El tercer ejemplo es un sistema de control para automóveles y motos que se ocupa de a través de la lógica difusa de definir cómo van a trabajar los frenos, la tracción y la ira condicionado y el consumo de combustible.
+
+74
+00:10:03,240 --> 00:10:11,240
+ Esa manera trata de mejorar la seguridad de los pasajeros y aumentar la eficiencia del vehículo.
+
+75
+00:10:11,240 --> 00:10:17,240
+ Por ejemplo, si alguien está acelerando, hacer que la ira condicionado trabaje menos.
+
+76
+00:10:17,240 --> 00:10:25,240
+ Así bueno, vamos a sentir más calor, pero el auto va a avanzar a la velocidad que es requerida.
+
+77
+00:10:25,240 --> 00:10:31,240
+ No le estamos sacando potencia al motor por el funcionamiento de la ira condicionada.
+
+78
+00:10:31,240 --> 00:10:37,240
+ Si este sistema de control no existiera, esa decisión la tendría que hacer el conductor o sea.
+
+79
+00:10:37,240 --> 00:10:42,240
+ Apagar el aire a condicionado, por ejemplo, rebasará otro vehículo.
+
+80
+00:10:42,240 --> 00:10:52,240
+ Bueno, y el último ejemplo es un sistema de estimación de costos de proyectos software, que hay lo que hace es aplicar el método a cocómodos,
+
+81
+00:10:52,240 --> 00:10:58,240
+ que es muy conocido para hacer estimaciones de esfuerzo, costo y duración de un proyecto.
+
+82
+00:10:58,240 --> 00:11:09,240
+ Pero, ahora lo que se le agrega es la aplicación de la lógica difusa para manejar y evaluar cada una de las características del proyecto,
+
+83
+00:11:09,240 --> 00:11:14,240
+ de manera que el esfuerzo que se está generando es más preciso.
+
+84
+00:11:14,240 --> 00:11:22,240
+ Bueno, con esto entonces terminamos la descripción de los sistemas difusos y ejemplos de aplicaciones.
+
+85
+00:11:22,240 --> 00:11:33,240
+ En el siguiente vídeo vamos a dar un ejemplo nuestro donde vamos a construir un sistema difuso para tratar de determinar cuál es la emoción de una persona.
+
+86
+00:11:33,240 --> 00:11:35,240
+ Nos vemos en el próximo vídeo.
+

@@ -1,0 +1,488 @@
+1
+00:00:00,000 --> 00:00:05,800
+ Hola, soy María Florencia Pollo y vamos a continuar hablando sobre los distintas operadores
+
+2
+00:00:05,800 --> 00:00:10,840
+ de los salvo al mismo genéticos. El último de ese acuerdo en el Grupo mínimo que siempre
+
+3
+00:00:10,840 --> 00:00:15,200
+ pedimos que pedimos que como mínimo hablente selección cruzamiento y mutación nos queda
+
+4
+00:00:15,200 --> 00:00:21,680
+ hablar de mutación. La mutación es el operador que se da después del cruzamiento donde
+
+5
+00:00:21,680 --> 00:00:27,160
+ se genera la población cruzada y lo que hace la mutación en general, conceptualmente
+
+6
+00:00:27,160 --> 00:00:34,120
+ hablando es cuando unable de mutación oblente alterar a alguna alteración cromosómica en
+
+7
+00:00:34,120 --> 00:00:39,320
+ los individuos a partir de agentes exógenos o sea gente que vienen de afuera a lo que no
+
+8
+00:00:39,320 --> 00:00:43,920
+ tiene que ver con el ambiente o sea con el problema que se está tratando ni con el individuo
+
+9
+00:00:43,920 --> 00:00:49,520
+ en particular. En el caso de la algo desde el punto de vista de los algoritmos uno habla de
+
+10
+00:00:49,520 --> 00:00:57,680
+ mutación cuando cambia una posición del cromosómica del gente un individuo a veces no siempre.
+
+11
+00:00:57,680 --> 00:01:05,280
+ ¿Qué quiere decir? Que siempre que ustedes pasen en un ciclo, la mutación, la mutación
+
+12
+00:01:05,280 --> 00:01:14,800
+ se va a activar. El operador se activa, está pero no necesariamente se ejecuta. Entonces
+
+13
+00:01:14,800 --> 00:01:21,440
+ la activación de lo operador de mutación imprita. A partir de la población cruzada
+
+14
+00:01:21,440 --> 00:01:27,440
+ preguntarse si uno la va a ejecutar, que es distinto de activarlo, si no la va a ejecutar,
+
+15
+00:01:27,440 --> 00:01:32,800
+ la población mutada es exactamente igual a la población cruzada, no se ejecuta la
+
+16
+00:01:32,800 --> 00:01:39,600
+ mutación y sale la población mutada, caso contrario, si se decide ejecutar la mutación,
+
+17
+00:01:39,600 --> 00:01:46,320
+ lo que se hace es aplicar una función de de mutar, que va a ser alterar un gen de un
+
+18
+00:01:46,320 --> 00:01:50,920
+ individuo, después vemos cómo me va a quedar una población nueva, que va a ser distinta
+
+19
+00:01:50,920 --> 00:01:59,400
+ la población cruzada y a partir de ahí obtengo la población mutada. Está entonces para dejar
+
+20
+00:01:59,400 --> 00:02:08,720
+ en claro, cada vez que ustedes pasan por un ciclo el operador se activa, pero no necesariamente
+
+21
+00:02:08,720 --> 00:02:16,800
+ se ejecuta, se ejecuta en algunos casos. Vamos a ver un ejemplo, como se hace y como sería
+
+22
+00:02:16,800 --> 00:02:23,640
+ esta modificación, o no, bien tenemos acá una población compuesta por siete individuos desde
+
+23
+00:02:23,640 --> 00:02:31,320
+ uno, desde un hasta y siete, cada uno de los individuos tiene 10 posiciones. Entonces ustedes lo
+
+24
+00:02:31,320 --> 00:02:37,600
+ que teníamos que hacer una vez lo que teníamos a hacer al momento de activar la mutación,
+
+25
+00:02:37,600 --> 00:02:42,480
+ es ver si la vamos a ejecutar, entonces acuerda que estaba el ronbo, el ronbo para preguntar si
+
+26
+00:02:42,480 --> 00:02:50,960
+ se va ejecutando, como simplemente eso, definiendo una probabilidad de mutación y proponiendo
+
+27
+00:02:50,960 --> 00:02:57,160
+ que, si el randon que van a tirar cada vez que pasa por el ciclo para que que activa digamos
+
+28
+00:02:57,160 --> 00:03:02,840
+ la mutación, si el randon que tira, es mayor que la probabilidad no la va a ejecutar,
+
+29
+00:03:02,840 --> 00:03:08,640
+ mientras que sí es menor igual si lo va a ejecutar. Entonces vamos a pensar, vamos a ver
+
+30
+00:03:08,640 --> 00:03:14,000
+ estas dos alternativas. La primera alternativa que sería que el randon, es mayor que
+
+31
+00:03:14,000 --> 00:03:19,680
+ la probabilidad de mutación significada que no mutaba, con lo cual la población mutada
+
+32
+00:03:19,680 --> 00:03:24,880
+ que daba igual que la población cruzada, les muestro como habíamos visto, se acuerdan,
+
+33
+00:03:24,880 --> 00:03:30,200
+ si decía que no, la población cruzada era igual a la población mutada, en el otro caso,
+
+34
+00:03:30,200 --> 00:03:38,040
+ pero en este sí, entonces lo que va a quedar, fíjense la población mutada, va a quedar nuevamente
+
+35
+00:03:38,040 --> 00:03:43,920
+ se los pusimos de distintos colores para que los puedan ver el randon, los siete individuos
+
+36
+00:03:43,920 --> 00:03:49,800
+ exactamente iguales, la población mutada igual que la población cruzada, caso número 2,
+
+37
+00:03:49,800 --> 00:03:57,000
+ cuando el randon que se genera es menor igual que la probabilidad de mutación, en ese caso
+
+38
+00:03:57,000 --> 00:04:03,520
+ sí se va a mutar. Entonces, lo que uno va a tener que generar es otro randon que se llaman
+
+39
+00:04:03,520 --> 00:04:08,920
+ nosotros los llamamos un randon de posición en este caso fue 27 y uno va a empezar a contar
+
+40
+00:04:08,920 --> 00:04:16,000
+ todas las posiciones y en la posición 27 va a marcar ese elemento y lo va a cambiar,
+
+41
+00:04:16,000 --> 00:04:22,600
+ como trabajamos con algoritmos con cromas o más binarios, entonces si es un cero que va a pasar
+
+42
+00:04:22,600 --> 00:04:29,160
+ a hacer un uno, fíjense que entonces lo que cambia es este individuo que antes será y tres
+
+43
+00:04:29,160 --> 00:04:34,040
+ y ahora es y tres primas en que es exactamente igual, pero con uno en la cambiado por lo cual
+
+44
+00:04:34,040 --> 00:04:40,120
+ es otro individuo y queda esta nueva población que sí es distinta la población cruzada y esto
+
+45
+00:04:40,120 --> 00:04:48,800
+ es lo que se conoce como la población mutada, una claración podría suceder que fuera un número
+
+46
+00:04:48,800 --> 00:04:57,080
+ mayor que 70, supongan se es 72, una contaría 10 de manera de 70, 71, 72, está se hace una lista
+
+47
+00:04:57,080 --> 00:05:11,640
+ cíclica con todas las posiciones. Y ahora que sirve la mutación, vamos a ver un ejemplo,
+
+48
+00:05:11,640 --> 00:05:17,320
+ vamos a ver con distintas probabilidades de mutación, bien con una proyea de mutación cero
+
+49
+00:05:17,320 --> 00:05:27,600
+ como va recorriendo, bien queda y clavado, con una mutación un poquito más elevada,
+
+50
+00:05:27,600 --> 00:05:32,880
+ bien como los puntitos rojos ya se empiezan a dispersar un poquito más, mira en la medida que
+
+51
+00:05:32,880 --> 00:05:39,200
+ no va aumentando la probabilidad de mutación, como ya empieza a saltar el algoritmo genético
+
+52
+00:05:39,200 --> 00:05:45,680
+ y eso está muy bueno para obtener valores y mira en cuando uno ya le va mucho, la probabilidad
+
+53
+00:05:45,680 --> 00:05:53,880
+ de mutación que es lo que sucede se recorre prácticamente todo el gráfico. Existen distintas
+
+54
+00:05:53,880 --> 00:05:59,880
+ formas de establecer esta probabilidad de la probabilidad de mutación y esto tiene que ver
+
+55
+00:05:59,880 --> 00:06:05,680
+ con los distintos netodos. La el método de mutación simple tiene una probabilidad de
+
+56
+00:06:05,680 --> 00:06:10,280
+ mutación constante, que quiere decir que en esa corrida recuerda que la corrida era donde
+
+57
+00:06:10,280 --> 00:06:15,480
+ salía por la población inicial y tiene muchos ciclos, entonces esos ciclos la probabilidad
+
+58
+00:06:15,480 --> 00:06:21,040
+ constante, entonces hay ustedes ponen la probabilidad y corren el algoritmo genético, después
+
+59
+00:06:21,040 --> 00:06:27,160
+ esta la probabilidad de mutación adaptativa por convergencias con la probabilidad de mutación
+
+60
+00:06:27,160 --> 00:06:32,840
+ es una función que tiene que ver con el promedio de la función fíjense. Finalmente tienen
+
+61
+00:06:32,840 --> 00:06:39,200
+ el otro mismo de mutación que es la adaptativa por temperatura, a sentente y de ascendente
+
+62
+00:06:39,200 --> 00:06:43,160
+ donde la probabilidad de mutación tiene que ver con la cantidad de vuelta, en la sentente
+
+63
+00:06:43,160 --> 00:06:47,440
+ empieza con una probabilidad de bajar y empieza a aumentar y en la descendente exactamente
+
+64
+00:06:47,440 --> 00:06:59,000
+ al res. Una vez tenemos la mutación obtenemos la población mutada acá nosotros
+
+65
+00:06:59,000 --> 00:07:07,040
+ vamos a hacer como que se se activó y se aplico, no se ejecutó la mutación y quedó
+
+66
+00:07:07,040 --> 00:07:11,080
+ por eso. Tiene otro color hablamos del criterio del paro, el criterio del paro lo que
+
+67
+00:07:11,080 --> 00:07:15,800
+ va a indicar es si vuelvo y tengo otro ciclo o, si se cumple el criterio de paro, salgo
+
+68
+00:07:15,800 --> 00:07:20,360
+ y genero la población fíjense. Bien, cuáles son los distintos criterios de paro que
+
+69
+00:07:20,360 --> 00:07:25,280
+ no puede tener. Un lado de la cantidad de vuelta, que son los ciclos, recuerdan, los
+
+70
+00:07:25,280 --> 00:07:31,080
+ ciclos serán todas las vueltas que daba el algoritmo genético, las, las corridas, tenían
+
+71
+00:07:31,080 --> 00:07:35,720
+ que ver con salir con la población final. Bien, entonces no puede tener la cantidad
+
+72
+00:07:35,720 --> 00:07:39,360
+ de vuelta, a veces también puede tener los dejo corriendo tanto tiempo y a partir
+
+73
+00:07:39,360 --> 00:07:46,120
+ de ahí corta, a veces también pueden plantear que se ejecute la algoritmo genético hasta
+
+74
+00:07:46,120 --> 00:07:51,000
+ que la función fíjense de algún individuo, sea mayor que un determinado valor si lo que
+
+75
+00:07:51,000 --> 00:07:56,960
+ quieren es maximizar y después también si no lo que se pueda hacer es cuando el promedio
+
+76
+00:07:56,960 --> 00:08:02,520
+ de la función fíjense de una población da un valor aproximado a partir de ahí cumplen
+
+77
+00:08:02,520 --> 00:08:06,360
+ el criterio del paro. Lo que hay que tener en cuenta con el criterio del paro es que
+
+78
+00:08:06,360 --> 00:08:12,800
+ ahí veces fíjense las dos últimas podría quedarse iterando eternamente. Entonces muchas
+
+79
+00:08:12,800 --> 00:08:17,480
+ veces se se va combinando, veces lo hacen correr un tiempo con una cosa y si sostiene
+
+80
+00:08:17,480 --> 00:08:24,560
+ lo cortan directamente a ustedes. Bien, vamos a suponer el criterio de paro no se cumpleo
+
+81
+00:08:24,560 --> 00:08:30,560
+ porque decía que tenía que haber una vuelta, entonces volvemos y la población que ingresa
+
+82
+00:08:30,560 --> 00:08:34,920
+ es igual a la población mutada de acá y ventrar nuevamente fíjense que antes estos
+
+83
+00:08:34,920 --> 00:08:39,600
+ estaban asules ahora van a cambiar de color cuando lo sacamos pasar nuevamente un nuevo
+
+84
+00:08:39,600 --> 00:08:45,160
+ ciclo por los operadores que vimos. Lo operador excepción para generar la población
+
+85
+00:08:45,160 --> 00:08:51,120
+ seleccionada con la cruza su su población respectiva con la mutación también y nuevamente
+
+86
+00:08:51,120 --> 00:08:56,440
+ que haymos criterio de paro. En este caso como el criterio de paro y va a decir que sí
+
+87
+00:08:56,440 --> 00:09:01,880
+ que ya tenemos una vuelta, entonces ahí si obtenemos que la población final es la población
+
+88
+00:09:01,880 --> 00:09:07,360
+ mutada que obtuvimos de este operador y que hacemos con la población final, en teoría
+
+89
+00:09:07,360 --> 00:09:15,120
+ cárice teoría, en teoría a partir de obtener lo que dice la literatura, a partir de obtener
+
+90
+00:09:15,120 --> 00:09:19,800
+ la población final lo que no hace es correrles la función fitness y buscar el individuo
+
+91
+00:09:19,800 --> 00:09:25,400
+ que mejor rancera para esta función. A partir de ahí elige lo que se conoce como el candidato
+
+92
+00:09:25,400 --> 00:09:30,200
+ solución e interpreta. Recuerdan que cuando habíamos dicho que teníamos que decidir en
+
+93
+00:09:30,200 --> 00:09:34,800
+ un algoritmo genético para que habíamos hablado de ejercicio, si acuerdan del pesecito,
+
+94
+00:09:34,800 --> 00:09:38,920
+ decimos que tenemos que poder interpretar estos crocosos. Entonces ahora lo que haríamos
+
+95
+00:09:38,920 --> 00:09:45,800
+ es de codificarlo también. Y se hace en la práctica, a que les voy a establecer
+
+96
+00:09:45,800 --> 00:09:52,440
+ estamos tratando una corrida, ver la cantidad de vueltas, la aptitud, esto es de una corrida
+
+97
+00:09:52,440 --> 00:09:58,360
+ de una algoritmo fíjense como termina. Si yo me quedara con esta población final me quedaría
+
+98
+00:09:58,360 --> 00:10:02,920
+ con este valor, mientras que yo vi que a lo largo de distintas vueltas hubo individuos
+
+99
+00:10:02,920 --> 00:10:11,240
+ mucho mejores. ¿Qué pasa? Con los mismos parámetros vuelvo a correr, fíjense como en
+
+100
+00:10:11,240 --> 00:10:18,560
+ la corrida anterior, miren, miren hasta donde llegó 7,5 miren ahora, cuando te fui llegando.
+
+101
+00:10:18,560 --> 00:10:22,640
+ Sin embargo, lo mejor es la corrida final podía mantener si cuando este es el valor que
+
+102
+00:10:22,640 --> 00:10:30,200
+ he dividido el mejor rachado, este es un promedio y este es el más bajo. Fíjense que si yo
+
+103
+00:10:30,200 --> 00:10:35,660
+ lo mejor, acá corte acá, pero si yo vese cortado acá, en valor de 8,5 miren acá,
+
+104
+00:10:35,660 --> 00:10:42,420
+ fíjense con los mismos parámetros, nuevamente otra corrida como se va, como se va modificando,
+
+105
+00:10:42,420 --> 00:10:47,000
+ miren ahora lo que va pasando, quinteresante, cuando uno va ajustando los parámetros, como
+
+106
+00:10:47,000 --> 00:10:54,280
+ ya la franja superior, como empieza a alinear si un poco ahí se va para arriba, ¿no?
+
+107
+00:10:54,280 --> 00:10:58,520
+ Miren con los parámetros optimizados como está en la algoritmo genético a día por día,
+
+108
+00:10:58,520 --> 00:11:04,160
+ con lo cual en la práctica calice práctica les corro para que vean, en la práctica lo que
+
+109
+00:11:04,160 --> 00:11:10,760
+ no hace es tener los logs de diferentes corridas y de todos los logs, buscar cuál fue el
+
+110
+00:11:10,760 --> 00:11:15,600
+ individuo mejor, como y por hoy gracias a Dios, se pueden hacer con herramientas automatizadas,
+
+111
+00:11:15,600 --> 00:11:23,120
+ o mismo lo pueden codificar ustedes, con distintas librerías lo interesante no es que
+
+112
+00:11:23,120 --> 00:11:28,800
+ darse con la población final, sino verdaderamente a partir de los logs poder identificar en
+
+113
+00:11:28,800 --> 00:11:33,320
+ cuálquiera de todas esas corridas, en cuál dentro de todos los ciclos de esas corridas,
+
+114
+00:11:33,320 --> 00:11:39,800
+ ver cuál fue el individuo mejor, y a partir de ahí sí encontrar aquel individuo candidato
+
+115
+00:11:39,800 --> 00:11:46,480
+ e interpretar esa solución, con lo cual fíjense que más que el correr el algoritmo genético
+
+116
+00:11:46,480 --> 00:11:53,080
+ es como establecer los parámetros y que hacen después de él, con lo cual para finalizar
+
+117
+00:11:53,080 --> 00:11:58,900
+ les podemos contar si ustedes resuelven en el ejercicio del pecesito, que el dueño del
+
+118
+00:11:58,900 --> 00:12:05,000
+ pecesito era el ánima, así que bueno, espero que se haya entendido esto recuerden que es
+
+119
+00:12:05,000 --> 00:12:12,000
+ como un primer paso y fundamentos, de lo que son los algoritmos genéticos, a partir
+
+120
+00:12:12,000 --> 00:12:20,000
+ de acá y ya nos queden pesar a trabajar, hay muchas bibliotecas disponibles y herramientas
+
+121
+00:12:20,000 --> 00:12:24,500
+ para que puedan implementar algoritmos genéticos de manera bastante simple, así que bueno
+
+122
+00:12:24,500 --> 00:12:28,000
+ desde ella, muchísimas gracias, secuidad y nos vemos pronto, hasta luego.
+

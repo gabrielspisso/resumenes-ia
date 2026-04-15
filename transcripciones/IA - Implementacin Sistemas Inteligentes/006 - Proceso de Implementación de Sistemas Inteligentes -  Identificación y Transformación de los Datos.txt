@@ -1,0 +1,128 @@
+ Hola, como están, mi nombre es Cynthia Avejera y lo que vamos a ver en este video
+ tiene que ver con la segunda fase del proceso de implementación de sistemas inteligentes
+ esta fase tiene que ver con lo que es la identificación y transformación de los datos
+ que es entonces un dato, esto de que es información que se asucia el problema que yo ya identificé en la fase anterior
+ que se encuentra generalmente en forma de una tabla, su su una estructura muy general que nosotros podemos encontrar
+ una tabla que está formada por columnas o los llamados atributos y que también está formada por filas y ejemplos
+ una columna es una propiedad o una característica de una instancia que se utiliza para resolver el problema
+ puedo tener atributos de entrada, un atributo objetivo de clase y por el troblado las filas que son instancias de esos atributos
+ y valores por lo tanto lo que yo ahora entonces voy a hacer es a partir de la alcance del proyecto
+ en el cuayo de identificar los objetivos del proyecto y identificar el problema, los criterios de éxito y riesgo que tengo que tener en cuenta
+ lo que voy a hacer es una recolección de los datos, una análisis de los mismos y una preparación
+ para que me estirbo en para luego la implementación del sistema inteligente
+ por lo tanto lo primero que voy a hacer es recolectar los datos disponibles
+ a través como yo les decía de la alcance del proyecto, teniendo en cuenta el contexto de organización
+ comenzaré con la recolección de los datos
+ ¿Cuáles son las principales fuentes de datos? Bueno, los pueden encontrar estos datos en bases de datos transaccionales
+ en planillas de cálculo, en los que se utilicen en diferentes procesos, en informes estadísticos
+ puede ser que lo organización también utilice datos de acceso público, puede ser que los datos se han generado por otros sistemas inteligentes
+ o por propias teorísticas del experto, y a través de esto voy recolectando todos los datos, ahora el momento de hacer esta recolección
+ y del acceso a las fuentes de datos, lo que nosotros nos tenemos que preguntar es bueno, esos datos son confiables
+ ¿Quiénes son los creadores de esos datos? Son datos que se modifican, quienes los modifican, quienes los usan
+ tal vez son datos muy viejos, o son datos que se actualiza cada tanto y no son muy confiables
+ es muy costoso acceder estos datos, os acueles, la utilidad de esos datos frente a mi proyecto
+ por eso el recolectarlo yo tengo que considerar si tienen en cuenta lo que es la privacidad, lo que son cuestiones más operativas y técnicas
+ siempre recomendable ir gestionando las versiones de los datos que yo voy recolectando, porque puede ser que una vez que yo analicipre para los datos
+ me de cuenta que necesito más datos, por lo tanto tengo una nueva versión
+ entonces siempre recomendable la gestión de los mismos
+ una vez que yo recolecto estos datos, lo que voy a hacer es estudiarlos o sea analizar esos datos
+ buscando que, buscando determinar, bueno, cuántos datos voy a necesitar para la implementación
+ si tengo que usar todos los atributos o capaz utilizo solamente los atributos relevantes
+ si los datos tienen ruido capaz, tienen muchos errores, tienen valores duplicados
+ puede ser que tengan nulos que tenga valores sin definir
+ y algo muy importante, si estos datos son, suficientemente representativos para cumplir el objetivo que me plante
+ si, o si capaz los datos tienen algún cejo, un cejo que lo que luego me va a pasar es que
+ estos datos después no sean representativos para mi problema, para esto conviene ir preparándolos
+ y como conviene prepararlos, para poder estudiar estos datos se pueden usar técnicas estadísticas tradicionales
+ algunos algoritmos propios de la minería de datos o también métodos a dos, uno de estos métodos
+ es un método que nosotros propusimos que es un método que se base la técnica del emparrillado
+ para poder evaluar estos datos que se aplican en el entrenamiento de algoritmo de Machine Learning
+ este método que nosotros propusimos tiene dos etapas, un etapo donde se hace una confección de las parillas
+ y una segunda etapa donde se hace la formalización y el análisis de las parillas
+ ahí nosotros les dejamos si la URL por si quieren acceder al paper completo para poder leerlo
+ dentro de lo que es la confección de las parillas
+ nosotros tenemos algunas fases que realizar, por un lado vamos a preparar a los datos
+ nos vamos a comentar, vamos a diseñar la parilla de elementos, vamos a diseñar la parilla de características
+ ponderando los atributos que va a tener esa parilla y una vez que tenemos las parillas
+ lo que vamos a hacer es justamente la segunda etapa de formalización
+ bueno, hacer la clasificación de los elementos tal como uno en el parillado
+ hacer la clasificación de las características, interpretar los resultados de los árboles y también discutir con el experto los resultados
+ en este paper lo que nosotros hicimos fue utilizar ejemplo de las flores series que sonorían uniendas de Canadá
+ este set de datos es muy utilizado en muchas publicaciones de los utilizó para generar diferentes modelos
+ por eso nosotros lo veíamos como un repositorio que es muy bueno importante para poder tener un ejemplo de eso
+ si para poder aplicar este método que habíamos propuesto
+ para eso nosotros confeccionamos las parillas, la parilla de elementos lo que tenía eran las tres flores
+ que este repositorio tenía y clasificaba que eran las iris que tenían que ver con centosa, versicolor y virigenia
+ y también lo que vimos es las características que se han realizado que tenían que ver con el largo y el ancho del cepalo y el largo y el ancho del petalo
+ para esto lo que nosotros fuimos haciendo para realizar la parilla de los elementos es utilizar estos mismos datos
+ para poder armar una segmentación de los mismos a través de la RNA de cozon en som
+ y también lo que hicimos es para hacer la parilla de características hacer una pondiración de los atributos
+ a través de la algoritmo donde hay bayes, una vez que nosotros creamos estas parillas de elementos y de características
+ luego lo que hicimos justamente es hacer la formalización
+ o sea, sacamos las distancias y obtuvimos el arbol de elementos y de características
+ si nosotros nos fijamos en el arbol de elementos tenemos dos grupos, uno formado por la siris versicolor y la siris virgenia
+ y en el otro las iris se tosa
+ respecto del arbol de características tenemos dos grupos el ancho del cepalo por un lado y el largo del cepalo junto con el largo y el ancho del petalo por otro
+ que es entonces lo que hicimos esto se contrasta con lo que sería lo que piense el experto
+ como en este momento no tenemos el experto que el experto es fíjara quien hizo este este de datos original
+ lo que hicimos es ir viendo las el análisis de las diferentes publicaciones que hicieron a través de los datos
+ a ver si nos habían dado seguir los grupos correctos de elementos y características
+ nos dimos cuenta que respecto de los grupos de los elementos estaba correcto pero respecto de los grupos de características no
+ porque mientras el largo y el ancho del petalo estaban relacionados el largo del cepalo no era así
+ que hicimos entonces una vez que comprobamos que nuestro método era valido
+ o sea que no teníamos un error de cuentas ni nada por el estilo lo que hicimos es utilizar el repositorioli original de fíjaro
+ sí que lo estableció en 1936 que tenía algunas diferencias en valores en las diferentes tuplas que hayamos analizado
+ y realizamos el mismo procedimiento en este caso una vez que contrastamos con lo que los diferentes investigadores en sus publicaciones
+ fueron analizando nos dimos cuenta que ahora sí los elementos estaban bien si ustedes ven es el mismo árbol de elementos
+ pero en cuanto a las características ahora sí estaban relacionados el largo del petalo y el ancho
+ y no hacía el largo del cepalo y el ancho del cepalo
+ por lo tanto nos dimos cuenta que se primerce de datos no era representativo
+ y con los datos originales de fíjaro nos dio que el set sí era representativo
+ por lo tanto este sumeto que se puede utilizar parir obteniendo eso para poder saber si los datos que yo voy a utilizar después en el sistema inteligente
+ no tienen algún sejo que después se llama lo para mí porque el sistema no va a dar el resultado que yo quiero
+ ni el resultado correcto deamente
+ una vez que nosotros estudiamos los datos los analizamos vemos que son representativos lo que vamos a hacer es preparar estos datos
+ lo vamos a integrar, formatiar y limpiar
+ el cuidado que tenemos que tener con esto es que es una etapa que nos puede consumir mucho esfuerzo
+ por lo tanto es una etapa que lo que conviene es poder planificarla
+ por ejemplo como recomendación podemos proponer el diseñar estas acciones que se van a realizar
+ el desarrollo de una forma lo más automático posible y el probarlo para asegurarse que cumplan lo que yo estoy decían
+ en cuanto a la integración es poder unificar los datos en una sola tabla
+ de tal manera de que me facilite el uso de estos datos siguen sí mismos y no tener los todos repartidos
+ luego tengo la limpieza que mucho de estos te ya usaron para el trabajo práctico cuando hicieron redes neuronales
+ o algoritmos genéticos tuvieron que trabajar mucho con los datos la limpieza lleva a ver si estos datos
+ no tienen nulos o están en completos o capas que tienen muchos errores o ruido tanto en las colunes como en las filas
+ por lo tanto como posibles acciones puede ser bueno asignar un nuevo valor teniendo en cuenta un promedio
+ o mínimo o máximo o capas comiene directamente eliminar el ejemplo o el atributo si es que no
+ influye después si en todo lo que va a hacer el análisis que voy a hacer en cuanto a lo que es el formativo
+ lo que me puede pasar es que yo tenga atributos continúas si que sean atributos numericos o
+ valores vinarias números enteros números condecimales puedo tener atributos discretos no en un
+ médico como valores logicos al fenúmericos la fechiladora en este caso lo que podemos crear son nuevos atributos
+ podemos cambiar el tipo de valor podemos normalizar los o capas representar alguna combinación
+ entre otros atributos en cuanto a lo que es el formativo por ejemplo si yo quiero hacer el cambio entre
+ los tipos de valores a mí lo que me puede pasar es que tenga un atributo continúas que lo quiero
+ convertir en un atributo discreto entonces lo que puedo hacer es discretizar en rangos definidos
+ manualmente o en rangos que tienen igual longitud o cantidad de ejemplos o teniendo un puente una
+ atributo objetivo o sea son diferentes formas si de convertir un atributo continúan un atributo discreto
+ si yo tengo un atributo discreto por ejemplo al fenúmerico lo puedo también convertir si necesito en
+ un atributo continúo entonces puedo asignarle un código en un médico único a cada valor o alguna
+ atributo vinario para cada uno de esos valores si yo tengo un atributo discreto que tiene que
+ ver con la fecha y la hora también capaz lo necesito tener en un atributo continúo entonces lo
+ puedo separar en elementos más simples o sea tener el día el mes el año la hora los minutos
+ los segundos o hacer un cálculo de la cantidad de años de meses de día si desde un momento
+ definido o simplemente representar la fecha y asignarle diferentes códigos numericos por ejemplo el
+ día de la semana si su fin es semana un feriado o la estación del año
+ también puedo hacer una normalización que esto segura lo utilizar en un montón sin para poder
+ normalizar estos atributos numericos por lo tanto son cosas que yo puedo ir teniendo en cuenta en lo que
+ tiene que ver con la preparación de los datos entonces en este proceso propuesto en esta segunda fase
+ lo que vimos es como recolectar los datos disponibles como analizar los datos disponibles
+ y como prepararlos
+ por lo tanto teniendo en cuenta el alcance del proyecto con los objetivos que se plantearon el problema
+ definido en la primera fase los criterios de éxito y los riesgos lo que yo yo voy a hacer entonces
+ es una recolección de los datos una análisis y una preparación
+ obviamente lo que me puede pasar es que una despreparados me de cuenta que la analizar los me faltaron algunos
+ datos y debo volver a hacer una recolección por lo tanto su neta pa que va enterando hasta que yo
+ ya me sienta conforme con los datos que tengos para poder pasar a la etapa siguiente
+ obviamente que también es opcional porque solo esto ocurre si yo tengo datos disponibles en mi organización
+ así que bueno con esto vimos la segunda fase acerca de la implementación de sistemas inteligentes
+ en los próximos vídeos veremos las próximas etapas bueno espero que estén bien muchas gracias y nos vemos

@@ -1,0 +1,888 @@
+1
+00:00:00,000 --> 00:00:06,000
+ Hola, mi nombre es Maria Florencia Pollo y continuamos con el vídeo con la parte número
+
+2
+00:00:06,000 --> 00:00:12,000
+ cuesta. Hasta cada día hemos llegado a hablar del primer invierno de la inteligencia artificial,
+
+3
+00:00:12,000 --> 00:00:19,000
+ después de su resurgimiento, ahí ven más o menos las décadas, después se ve de
+
+4
+00:00:19,000 --> 00:00:24,000
+ la aparición de las redes neuronales artificiales en particular las arquitecturas de
+
+5
+00:00:24,000 --> 00:00:31,000
+ el pacto padetion que son arquitecturas de redes neuronales que permiten resolver problemas de cierta complejidad.
+
+6
+00:00:31,000 --> 00:00:37,000
+ Luego viene el segundo invierno que es bastante más corto del primero con todas estas enseñanzas
+
+7
+00:00:37,000 --> 00:00:42,000
+ que ya habíamos visto en la presentación anterior.
+
+8
+00:00:42,000 --> 00:00:47,000
+ Acá escorró un segundo de la foto paso a la parte más arriba.
+
+9
+00:00:47,000 --> 00:00:56,000
+ Bien, fíjense entre el año 80 y el 2000 para que vean respecto entre el 80 y el 2000
+
+10
+00:00:56,000 --> 00:01:07,000
+ compare en lo con la línea de tiempo, fíjense es una comparativa de cuanto aparecen estas palabras.
+
+11
+00:01:07,000 --> 00:01:14,000
+ Si se fijan computación lógica, algoritmo genéticos, Machine Learning,
+
+12
+00:01:14,000 --> 00:01:20,000
+ redes decisiones, inteligencia computacional, miren las redes neuronales artificiales
+
+13
+00:01:20,000 --> 00:01:29,000
+ como están en Auge y este término es muchísimo más citado en toda la literatura.
+
+14
+00:01:29,000 --> 00:01:34,000
+ Y esto es verdaderamente notable, esto deja de manifiestir de claro,
+
+15
+00:01:34,000 --> 00:01:38,000
+ lo que fue la Auge de las redes neuronales artificiales para esta época.
+
+16
+00:01:38,000 --> 00:01:45,000
+ Entonces, esta instancia también suger concepto de Machine Learning, un concepto muy conocido en el día de la fecha,
+
+17
+00:01:45,000 --> 00:01:49,000
+ fíjensea que se apunta cuando habla de uno de Machine Learning,
+
+18
+00:01:49,000 --> 00:01:54,000
+ es identificar patrones complejos en millones de datos con lo cual acá,
+
+19
+00:01:54,000 --> 00:02:01,000
+ ya se toma de punto de partida que se necesita tener una gran capacidad de procesamiento
+
+20
+00:02:01,000 --> 00:02:07,000
+ que años hace varios años el imposible de pensar, de predecir comportamiento,
+
+21
+00:02:07,000 --> 00:02:14,000
+ o sea de tratar de poder inferir cosas que van a suceder en el futuro,
+
+22
+00:02:14,000 --> 00:02:21,000
+ esto hacerlo a través de un algoritmo y otra de las características que tienen este tipo de tecnología,
+
+23
+00:02:21,000 --> 00:02:24,000
+ es que mejora de forma independiente a lo largo del tiempo.
+
+24
+00:02:24,000 --> 00:02:29,000
+ Y esto es una característica muy interesante de la inteligencia artificial,
+
+25
+00:02:29,000 --> 00:02:35,000
+ ya que comparativamente con un sistema software tradicional,
+
+26
+00:02:35,000 --> 00:02:40,000
+ el que tiene un excelente funcionamiento en sus etapas iniciales,
+
+27
+00:02:40,000 --> 00:02:44,000
+ y después concepto de un miostasis y entroquía empieza a degradarse
+
+28
+00:02:44,000 --> 00:02:49,000
+ y a perder calidad de funcionamiento por dificultades en la adaptación,
+
+29
+00:02:49,000 --> 00:02:54,000
+ costos de la adaptación hasta llegar al momento donde el costo del mantenimiento
+
+30
+00:02:54,000 --> 00:02:59,000
+ es mayor del cambio de una nueva tecnología, esto hay miles de ejemplos
+
+31
+00:02:59,000 --> 00:03:05,000
+ que podemos tener en la vida cotidiana, tener una computadora un celular
+
+32
+00:03:05,000 --> 00:03:10,000
+ donde tal aplicación, ya no funciona muy lento cuando lo levantamos,
+
+33
+00:03:10,000 --> 00:03:15,000
+ nuevas versiones de sistemas de uso tradicional,
+
+34
+00:03:15,000 --> 00:03:19,000
+ uno ofis son imposibles de implementar en un ordenador viejo o en un celular,
+
+35
+00:03:19,000 --> 00:03:25,000
+ también pasa con determinadas apps a partir de ahí, es mucho más sano,
+
+36
+00:03:25,000 --> 00:03:30,000
+ digamos, hacer un cambio de tecnología que sostenerla
+
+37
+00:03:30,000 --> 00:03:35,000
+ la que uno ven para implementando. En el caso de la inteligencia artificial
+
+38
+00:03:35,000 --> 00:03:39,000
+ de los sistemas software inteligentes, esta característica es inversa,
+
+39
+00:03:39,000 --> 00:03:43,000
+ un sistema inteligente funciona bien en un comienzo,
+
+40
+00:03:43,000 --> 00:03:47,000
+ pero va a ir mejorando superformas con el paso del tiempo,
+
+41
+00:03:47,000 --> 00:03:54,000
+ porque debería poder aprender debería poder mejorar debería poder
+
+42
+00:03:54,000 --> 00:04:00,000
+ retroalimentarse con todo lo que le pasó y poder incorporar nuevas
+
+43
+00:04:00,000 --> 00:04:04,000
+ reglas pensando en un sistema basado en conocimiento,
+
+44
+00:04:04,000 --> 00:04:09,000
+ podría mejorar su función debería mejorar su funcionamiento
+
+45
+00:04:09,000 --> 00:04:13,000
+ con el paso del tiempo, este es una característica que tienen
+
+46
+00:04:13,000 --> 00:04:18,000
+ los sistemas inteligentes. Bueno, Machine Learning surge este concepto
+
+47
+00:04:18,000 --> 00:04:22,000
+ fíjense en que años yo era joven así que ustedes no habían nacido
+
+48
+00:04:22,000 --> 00:04:25,000
+ probablemente y esto ya estaba dando vueltas.
+
+49
+00:04:25,000 --> 00:04:31,000
+ Una de las primeras apariciones dentro de estas nuevas tecnologías
+
+50
+00:04:31,000 --> 00:04:38,000
+ es Diplo, Diplo es un... se lo voy a dejar acá. Diplo es una aplicación
+
+51
+00:04:38,000 --> 00:04:44,000
+ que juega a las gerdres, un ordenador que fue el primero que le gana
+
+52
+00:04:44,000 --> 00:04:52,000
+ casparó en el año 96 en una partida histórica
+
+53
+00:04:52,000 --> 00:04:59,000
+ que hubo miren la foto, miren las características de la pantalla,
+
+54
+00:04:59,000 --> 00:05:03,000
+ una de las características importantes es que Diplo utilizaba
+
+55
+00:05:03,000 --> 00:05:06,000
+ como método de búsqueda, métodos de búsqueda por fuerza brutal.
+
+56
+00:05:06,000 --> 00:05:10,000
+ O sea que barría todas las opciones,
+
+57
+00:05:10,000 --> 00:05:14,000
+ que para el juego de agerres uno tiene un movimiento y ese movimiento tiene
+
+58
+00:05:14,000 --> 00:05:16,000
+ una baníco de posibilidades que se abren bueno.
+
+59
+00:05:16,000 --> 00:05:20,000
+ Analizaba todas esas posibilidades y a partir de ahí
+
+60
+00:05:20,000 --> 00:05:22,000
+ empezaba a construir su propio camino,
+
+61
+00:05:22,000 --> 00:05:25,000
+ pero utilizaba un mezclodo de fuerza brutal,
+
+62
+00:05:25,000 --> 00:05:28,000
+ se tenía que buscar en todo el abánico,
+
+63
+00:05:28,000 --> 00:05:30,000
+ en todo el abánico de posibilidades.
+
+64
+00:05:30,000 --> 00:05:33,000
+ Nosotros llevamos a hablar un poquito más adelante,
+
+65
+00:05:33,000 --> 00:05:36,000
+ y no sé como nos morenejaríamos.
+
+66
+00:05:36,000 --> 00:05:38,000
+ Ahora con el orden o sea,
+
+67
+00:05:38,000 --> 00:05:39,000
+ ustedes todavía no saben,
+
+68
+00:05:39,000 --> 00:05:41,000
+ pero el orden de los temas,
+
+69
+00:05:41,000 --> 00:05:45,000
+ los estamos adaptando a esta modalidad tan particular,
+
+70
+00:05:45,000 --> 00:05:47,000
+ cuando habíamos metodos de búsqueda,
+
+71
+00:05:47,000 --> 00:05:51,000
+ recuerden cuando habremos de los métodos de búsqueda por fuerza brutal.
+
+72
+00:05:51,000 --> 00:05:55,000
+ No cuando uno busca todo el espacio de soluciones que se genera.
+
+73
+00:05:55,000 --> 00:05:58,000
+ Pero bueno, la capacidad de procesamiento
+
+74
+00:05:58,000 --> 00:06:04,000
+ permitía poder tener este tipo de tecnología.
+
+75
+00:06:04,000 --> 00:06:07,000
+ Bien.
+
+76
+00:06:07,000 --> 00:06:13,000
+ Hay un aparado jamú interesante que se sintetiza todo esto,
+
+77
+00:06:13,000 --> 00:06:15,000
+ que fíjense que plantea,
+
+78
+00:06:15,000 --> 00:06:18,000
+ que es fácil comparativamente conseguir que las computadoras
+
+79
+00:06:18,000 --> 00:06:20,000
+ muestren capacidad de similares
+
+80
+00:06:20,000 --> 00:06:23,000
+ a las de un humano adulto ante esta inteligencia,
+
+81
+00:06:23,000 --> 00:06:27,000
+ y difícil e imposible lograr que posiar las habilidades perceptivas y motrices
+
+82
+00:06:27,000 --> 00:06:29,000
+ de un bebé de un año.
+
+83
+00:06:29,000 --> 00:06:35,000
+ Yo siempre cuando propongo esta reflexión,
+
+84
+00:06:35,000 --> 00:06:42,000
+ les digo, es muy fácil lograr hacer grandes combinaciones
+
+85
+00:06:42,000 --> 00:06:45,000
+ de cálculos numericos para un ordenador,
+
+86
+00:06:45,000 --> 00:06:49,000
+ y, sin embargo, reconocer un color, reconocer una forma,
+
+87
+00:06:49,000 --> 00:06:53,000
+ se necesita una tecnología y una capacidad de procesamiento muy alta,
+
+88
+00:06:53,000 --> 00:06:58,000
+ que una cálculadora científica tranquilamente puede dibujar una función,
+
+89
+00:06:58,000 --> 00:07:01,000
+ hacer un montón de cosas matemáticamente complejas,
+
+90
+00:07:01,000 --> 00:07:05,000
+ sin embargo, las que están vinculadas a lo mejor con los sentidos
+
+91
+00:07:05,000 --> 00:07:09,000
+ para seguir un color y identificar si este color es rojo negro o azul
+
+92
+00:07:09,000 --> 00:07:13,000
+ encontrar una forma y identificar una figura
+
+93
+00:07:13,000 --> 00:07:17,000
+ para esos necesitan tecnologías mucho más complejas.
+
+94
+00:07:17,000 --> 00:07:18,000
+ Bien.
+
+95
+00:07:18,000 --> 00:07:25,000
+ Es ahí que a partir del surgimiento de Diplo surgen una vanico de necesidades complejas,
+
+96
+00:07:25,000 --> 00:07:29,000
+ esto es muy parecido cuando explicamos en ingeniería en software
+
+97
+00:07:29,000 --> 00:07:33,000
+ que a partir de la resolución de problemas operativos
+
+98
+00:07:33,000 --> 00:07:35,000
+ simples de automatización de problemas,
+
+99
+00:07:35,000 --> 00:07:39,000
+ el resto de las unidades dentro del negocio
+
+100
+00:07:39,000 --> 00:07:44,000
+ comienza a encontrar necesidades que puede ser resultas a través del software,
+
+101
+00:07:44,000 --> 00:07:52,000
+ comparativamente acá es lo mismo, a partir del tercer conocido
+
+102
+00:07:52,000 --> 00:07:56,000
+ este tipo de soluciones, el ejemplo ahora de adaptamos hablando
+
+103
+00:07:56,000 --> 00:08:00,000
+ del plup, a presentes necesidades complejas que derivan
+
+104
+00:08:00,000 --> 00:08:03,000
+ en posibles aplicaciones y aplicaciones,
+
+105
+00:08:03,000 --> 00:08:07,000
+ que vemos hoy día ahí, hoy ya, voy subiendo bajando.
+
+106
+00:08:07,000 --> 00:08:09,000
+ A aplicaciones que podemos ver hoy día,
+
+107
+00:08:09,000 --> 00:08:12,000
+ cuando hablamos de inteligencia artificial.
+
+108
+00:08:12,000 --> 00:08:15,000
+ Interligencia artificial en un montón de cosas.
+
+109
+00:08:15,000 --> 00:08:18,000
+ Acá nosotros le pusimos ejemplofigence,
+
+110
+00:08:18,000 --> 00:08:23,000
+ filtros de email, GPS, ahí hay una foto de GPS bastante antiguo
+
+111
+00:08:23,000 --> 00:08:26,000
+ y ya utilizaba un poquito de tecnología
+
+112
+00:08:26,000 --> 00:08:29,000
+ de inteligencia artificial, videojuegos,
+
+113
+00:08:29,000 --> 00:08:35,000
+ traductores, las famosas, aspiradoras de hogar,
+
+114
+00:08:35,000 --> 00:08:41,000
+ las va a cumplir en relación a los traductores automáticos
+
+115
+00:08:41,000 --> 00:08:45,000
+ hay algo para clarar bastante interesante.
+
+116
+00:08:45,000 --> 00:08:48,000
+ Si ustedes se fijan Google,
+
+117
+00:08:48,000 --> 00:08:51,000
+ tiene un traductor muy conocido para el año 2006,
+
+118
+00:08:51,000 --> 00:08:54,000
+ mira de cuando estoy hablando,
+
+119
+00:08:54,000 --> 00:08:58,000
+ se utiliza en celulares, NPCs,
+
+120
+00:08:58,000 --> 00:09:04,000
+ tienen fíjense 100, 3 idiomas y utiliza este tipo de tecnología
+
+121
+00:09:04,000 --> 00:09:06,000
+ fíjense redes neuronales recurrentes,
+
+122
+00:09:06,000 --> 00:09:08,000
+ cuando veamos redes neuronales,
+
+123
+00:09:08,000 --> 00:09:11,000
+ vamos a ver algunos tipos de redes neuronales básicas,
+
+124
+00:09:11,000 --> 00:09:14,000
+ son distintas arquitecturas de redes neuronales,
+
+125
+00:09:14,000 --> 00:09:19,000
+ y utilizan Google neural Machine Translation
+
+126
+00:09:19,000 --> 00:09:21,000
+ es el motor que yo utiliza
+
+127
+00:09:21,000 --> 00:09:24,000
+ para poder resolver toda esta problemática.
+
+128
+00:09:24,000 --> 00:09:26,000
+ Hay otros traductores,
+
+129
+00:09:26,000 --> 00:09:27,000
+ como por ejemplo,
+
+130
+00:09:27,000 --> 00:09:31,000
+ el editor es uno que yo uso,
+
+131
+00:09:31,000 --> 00:09:33,000
+ la verdad es bastante interesante,
+
+132
+00:09:33,000 --> 00:09:36,000
+ los dos son gratuitos
+
+133
+00:09:36,000 --> 00:09:39,000
+ y permiten la traducción entre diferentes idiomas.
+
+134
+00:09:39,000 --> 00:09:45,000
+ Este, el editor utiliza redes neuronales con volucionales,
+
+135
+00:09:45,000 --> 00:09:50,000
+ es una tecnología diferente de redes neuronales recurrentes,
+
+136
+00:09:50,000 --> 00:09:55,000
+ fíjense estos conceptos que empiezan a aparecer.
+
+137
+00:09:55,000 --> 00:09:57,000
+ Las redes neuronales con volucionales
+
+138
+00:09:57,000 --> 00:10:00,000
+ utilizan a aprendizaje supervisado,
+
+139
+00:10:00,000 --> 00:10:02,000
+ el aprendizaje supervisado,
+
+140
+00:10:02,000 --> 00:10:05,000
+ se trata de militar,
+
+141
+00:10:05,000 --> 00:10:09,000
+ como si orden el cerebro para captar las imágenes
+
+142
+00:10:09,000 --> 00:10:11,000
+ a través de la vista,
+
+143
+00:10:11,000 --> 00:10:14,000
+ y identifican las distintas características que vinculan
+
+144
+00:10:14,000 --> 00:10:18,000
+ para poder especificar e identificar objetos,
+
+145
+00:10:18,000 --> 00:10:21,000
+ y ahí después capas ocultas especializadas
+
+146
+00:10:21,000 --> 00:10:23,000
+ que pueden identificar ya las líneas,
+
+147
+00:10:23,000 --> 00:10:25,000
+ las curvas y las formas más complejas.
+
+148
+00:10:25,000 --> 00:10:29,000
+ En el caso particular del editor,
+
+149
+00:10:29,000 --> 00:10:32,000
+ tiene mucho más profundidad,
+
+150
+00:10:32,000 --> 00:10:34,000
+ el mucho más exacto,
+
+151
+00:10:34,000 --> 00:10:36,000
+ lo que pasa que trabaja solamente con nueve idiomas,
+
+152
+00:10:36,000 --> 00:10:39,000
+ mientras que el Google tradutor
+
+153
+00:10:39,000 --> 00:10:41,000
+ trabaja con 103 idiomas.
+
+154
+00:10:41,000 --> 00:10:42,000
+ Por otro lado,
+
+155
+00:10:42,000 --> 00:10:44,000
+ vemos también inteligencia artificial
+
+156
+00:10:44,000 --> 00:10:47,000
+ en
+
+157
+00:10:47,000 --> 00:10:51,000
+ Netflix en
+
+158
+00:10:51,000 --> 00:10:54,000
+ aplicaciones que utilizan música
+
+159
+00:10:54,000 --> 00:10:57,000
+ en su aporte de compras
+
+160
+00:10:57,000 --> 00:10:59,000
+ para hacer shopping,
+
+161
+00:10:59,000 --> 00:11:00,000
+ detectión de fraudes,
+
+162
+00:11:00,000 --> 00:11:01,000
+ en los celulares,
+
+163
+00:11:01,000 --> 00:11:04,000
+ se utilizan para distintas actividades.
+
+164
+00:11:04,000 --> 00:11:05,000
+ Por ejemplo,
+
+165
+00:11:05,000 --> 00:11:08,000
+ podemos ver a los procesadores
+
+166
+00:11:08,000 --> 00:11:11,000
+ para mejorar la capacidad de los cálculos,
+
+167
+00:11:11,000 --> 00:11:13,000
+ en lo que es cámara,
+
+168
+00:11:13,000 --> 00:11:14,000
+ para reconocer,
+
+169
+00:11:14,000 --> 00:11:16,000
+ cuando dice son ríe y sacan las fotos,
+
+170
+00:11:16,000 --> 00:11:18,000
+ mejorar las fotos también
+
+171
+00:11:18,000 --> 00:11:20,000
+ para administrar los recursos
+
+172
+00:11:20,000 --> 00:11:23,000
+ para manejar mejor la memoria,
+
+173
+00:11:23,000 --> 00:11:26,000
+ el procesador y administrar la batería
+
+174
+00:11:26,000 --> 00:11:28,000
+ y cerrando aplicaciones
+
+175
+00:11:28,000 --> 00:11:29,000
+ para manejar agenda,
+
+176
+00:11:29,000 --> 00:11:30,000
+ los asistentes de agenda,
+
+177
+00:11:30,000 --> 00:11:32,000
+ de sugerencias,
+
+178
+00:11:32,000 --> 00:11:34,000
+ para hacer el aloque
+
+179
+00:11:34,000 --> 00:11:37,000
+ a través de la cara de uno,
+
+180
+00:11:37,000 --> 00:11:39,000
+ y hay un estudio que dice que
+
+181
+00:11:39,000 --> 00:11:41,000
+ para el año
+
+182
+00:11:41,000 --> 00:11:43,000
+ se espera que para el 2022,
+
+183
+00:11:43,000 --> 00:11:45,000
+ el 80% de los celulares
+
+184
+00:11:45,000 --> 00:11:46,000
+ ya se manejer
+
+185
+00:11:46,000 --> 00:11:48,000
+ su gran capacidad
+
+186
+00:11:48,000 --> 00:11:49,000
+ parte de su capacidad
+
+187
+00:11:49,000 --> 00:11:52,000
+ con tecnologías de inteligencia artificial.
+
+188
+00:11:52,000 --> 00:11:53,000
+ También podemos ver
+
+189
+00:11:53,000 --> 00:11:55,000
+ en lo que son los reconocimientos de imagen,
+
+190
+00:11:55,000 --> 00:11:58,000
+ la reconstrucción de textos antiguos,
+
+191
+00:11:58,000 --> 00:12:00,000
+ el reconocimiento facial,
+
+192
+00:12:00,000 --> 00:12:05,000
+ la ubicación y la relación entre objetos.
+
+193
+00:12:05,000 --> 00:12:09,000
+ Y acá vuelvo a atraer algo
+
+194
+00:12:09,000 --> 00:12:11,000
+ que ya hablamos al comienzo,
+
+195
+00:12:11,000 --> 00:12:13,000
+ lo que podemos hacer ahora
+
+196
+00:12:13,000 --> 00:12:15,000
+ era lo que se llamaba
+
+197
+00:12:15,000 --> 00:12:17,000
+ inteligencia artificial hace muchos años,
+
+198
+00:12:17,000 --> 00:12:18,000
+ sin embargo,
+
+199
+00:12:18,000 --> 00:12:20,000
+ para nosotros hoy es de uso como
+
+200
+00:12:20,000 --> 00:12:23,000
+ muy probablemente lo que para nosotros hoy es
+
+201
+00:12:23,000 --> 00:12:26,000
+ día 100% en unos años
+
+202
+00:12:26,000 --> 00:12:28,000
+ para hacer capacidad de procesos
+
+203
+00:12:28,000 --> 00:12:30,000
+ como un enloque circulan software.
+
+204
+00:12:30,000 --> 00:12:31,000
+ Sin embargo,
+
+205
+00:12:31,000 --> 00:12:33,000
+ la contracaradesto
+
+206
+00:12:33,000 --> 00:12:35,000
+ hay que muchas cosas
+
+207
+00:12:35,000 --> 00:12:38,000
+ se dicen que son inteligencias
+
+208
+00:12:38,000 --> 00:12:39,000
+ y muchas no.
+
+209
+00:12:39,000 --> 00:12:42,000
+ No todo lo que creen es cierto.
+
+210
+00:12:42,000 --> 00:12:43,000
+ Así que bueno,
+
+211
+00:12:43,000 --> 00:12:44,000
+ son 11 minutos,
+
+212
+00:12:44,000 --> 00:12:46,000
+ vamos a terminar el video 4,
+
+213
+00:12:46,000 --> 00:12:48,000
+ vamos a comenzar con el 5
+
+214
+00:12:48,000 --> 00:12:49,000
+ y bueno,
+
+215
+00:12:49,000 --> 00:12:51,000
+ se cuidan nuevamente,
+
+216
+00:12:51,000 --> 00:12:53,000
+ espero que este todo bien
+
+217
+00:12:53,000 --> 00:12:54,000
+ y vamos a hablar
+
+218
+00:12:54,000 --> 00:12:57,000
+ del lado de la inteligencia artificial.
+
+219
+00:12:57,000 --> 00:12:59,000
+ Lo que no es inteligencia artificial
+
+220
+00:12:59,000 --> 00:13:00,000
+ y uno
+
+221
+00:13:00,000 --> 00:13:02,000
+ cree que podría llegar a hacerlo.
+
+222
+00:13:02,000 --> 00:13:05,000
+ Bueno, un beso a todos y hasta luego.
+

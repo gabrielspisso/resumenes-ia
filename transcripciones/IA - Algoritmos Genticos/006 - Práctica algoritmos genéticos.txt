@@ -1,0 +1,119 @@
+ y enmenidos soy en ingeniero exequiel vanga
+ forma parte de la cátera de inteligencia artificial de la UTNFRVA
+ hoy vamos a ver en dos partes
+ algorithms géréticos de forma práctica
+ en la primera parte les voy a contar un poco acerca de framework que implementamos
+ y en la segunda vamos a ver un caso en concreto para que puedan justamente ver un ejemplo
+ entonces en cuanto al framework
+ lo que se hizo es organizar todo el tema del modelado y del algoritmo
+ en objetos de la clase gmán ayer que significa algoritmo genéticos
+ y se pensó de una forma imperativa y no sé cuál es el que significa
+ que vos ha alto nivel tenés que una vez que quería este
+ el gmán ayer que instancias de un objeto de esta clase
+ empieza a decirle cómo crejes en sus características
+ es decir, su algoritmo de selección, su algoritmo de cruza, de mutación,
+ su bloque de finalización y bloque de finalización de ciclo
+ bloque es un peso de código que se va a ejecutar
+ cuando sucede a cierta cosa o no lo vamos a ver
+ y luego vas a tener, por ejemplo, un vector con la población
+ un número máximo de iteraciones es decir, yo como máximo quiero
+ que hagas tantas generaciones
+ y un aptitud triple que es básicamente un punto en el cual yo de fino
+ así mi soluciones ya son lo suficientemente buenas como para frenar el algoritmo
+ y luego un start como para comenzar y un stop
+ eventualmente yo necesito frenarlo por alguna razón
+ entonces para cada uno de los algoritmos ya sea el selección de cruza
+ de mutación, fíjense lo que se hizo es definir como una propiedad
+ del madrashar a cualquier objeto que cumpla con esta interfaz
+ que significa esto, lo mismo pasa con la población, yo no reciero
+ como cuando lo implementamos, no nos pusimos como requisito
+ que los objetos sean de una clase en particular
+ sino que entiendan ciertos tipos de mensajes
+ esto es una ventaja cuando uno crea un framework
+ porque no limitas a que el que lo va a utilizar
+ tendrá que ir edar sus objetos o sus clases de
+ clases particulares por ejemplo el algoritmo de selección
+ mientras cumpla con los
+ digamos las propiedades o con los metodos
+ que nosotros definimos acá ya es más que suficiente en este caso
+ nosotros decimos con un algoritmo de selección
+ es considerado algoritmo de selección
+ sientiende que va a tener una propiedad de bloque de aptitud
+ es decir un pedazo de código que va a evaluar la aptitud de
+ los objetos, de los sendidos, si se fijan acá un bloque de aptitud
+ recibe cualquis, ahí disnefía cualquier tipo de objeto
+ y va a dar un float
+ con que entienda eso, se entienda que va a tener un pedazo de código
+ que va a evaluar los objetos y va a dar un float a mi me basta
+ y después un salto generacional va a tener un número
+ que es un salto generacional que va a indicar la proporción de la población
+ que yo quiero renovando generación por generación
+ después que más algoritmos de cruza
+ los algoritmos de cruza fíjense van a necesitar
+ cruzar un individuo con otro individuo
+ y que va a devoler un vector con los individuos que van a salir de esta cruza
+ hay cruzas que van a devoler un solo hijo, hay cruzas que van a devoler dos
+ adentro, lo van a hacer de distintas formas
+ a mi a nivel del manager, a nivel de abstracción no me importa como lo van a hacer
+ ahora vamos a ver casos de ejemplo estas cosas
+ algoritmos de mutación, lo mismo hay un montón de formas de mutar
+ pero en realidad lo único que se hace es
+ se define que estos objetos van a entender un mensaje que se llama mutar
+ y población y en base a su criterio, el algoritmo va a saber
+ si déja igual esa población, si la muta cuando la tiene que mutar etcétera
+ vamos a un caso en concreto de algoritmos de mutación
+ algoritmos de mutación, el más básico es el de la probabilidad de inversa
+ es decir, acá no se los definimos con qué probabilidad de inversa queremos que
+ mute la población es decir, si yo capongo el número mil
+ si yo me quiere un objeto de algoritmo de mutación básico
+ y le seteo es decir, pongo que la propiedad invers probabilitice a mil
+ significa que una de cada mil veces va a mutar, está bien
+ lo que se saca, fíjense tener un número de azar
+ y lo que se hace es si justo, si no me una dasar
+ es menor o igual o coincide con ese número, se va a mutar
+ está bien
+ ahora hay otro tipo de mutaciones, hay una un tipo de mutación
+ que es bastante útil para tratar de evitar la convergencia prenatura
+ que es cuanto más parecía la población
+ más chances tengo de mutar
+ y qué significa que es parecida de la población, significa que
+ sus funciones hasta el resultado de la función de aptitud de los individuos
+ es similar
+ entonces lo que hace es que debía y y y y y y y y y en
+ mutación a algoritmos, o sea algoritmo de mutación basado en la
+ eviación estándar lo que hace es evaluar la aptitud de todos los elementos
+ es decir, toda la población está comprometido y sacan les vio
+ estándar
+ cuanto más chico es ese de video, es decir,
+ cuanto más parecidos son la función de la ejecución de aptitud
+ para estos elementos, más chances se tiene de mutar
+ por ejemplo
+ imagínense que en la función de aptitud de bueno el promedio
+ hay notas que tienen los alumnos, entonces no es lo mismo
+ que todos tengan 7, a que la mítate de demandes y la mítate en
+ 4, el promedio es el mismo, el desvio estándar es muy distinto, la
+ población no es tan similar, en cambio si tienen todos 7
+ la población es bastante similar y ahí tiene más chances de mutar
+ luego vamos a ver, hay un ejemplo concreto de algoritmo
+ de selección, bueno acá el que hicimos fue una tabla, bastante simple
+ pero se podrían, se podrían implementar cualquier tipo de algoritmo
+ ya sea por ejemplo ruleta, acá lo que se hace es
+ simplemente se ordenan en base ranking que tienen la la población
+ y se corta en un momento determinado, está en ese devuelo en el formador de
+ nada y truncados
+ ¿qué más?
+ después el siguiente es el algoritmo de cruza, bueno el algoritmo de cruza
+ como dijimos tiene que entender un mensaje
+ el cual va a recibir dos objetos y va a devuelgar una raíz en este caso
+ hicimos una cruza binomial que fíjense va a cruzar las propiedades del
+ individuo, con las propiedades del individuo V, de forma dinámica va a entender
+ cuáles son las propiedades que tienen los objetos de estas clases
+ imagines que tienen color de pelo, no se color de ojos, por ejemplo
+ y no se capacidad física, bueno va a tomar la propiedad uno y
+ de forma sarosa va a decir esta la voy a tomar de individuo A,
+ la propiedad dos del individuo A, la propiedad 3 es del individuo V, por ejemplo
+ y luego con el siguiente hijo va a ser lo contrario, es decir el segundo hijo va a ser un
+ complemento del primero, pero hay un montón de formas de implementar una cruza
+ bueno en este caso el higimos esta, y después bueno se van a setear
+ las distintas propiedades, ahora en el siguiente vídeo vamos a ver el ejemplo
+ práctico para que puedan verlo de una forma concreto

@@ -1,0 +1,588 @@
+1
+00:00:00,000 --> 00:00:06,460
+ Hola, mi nombre es María Florencia Pollo, soy la Jéfa de Cátedra de la Signatura Inteligencia
+
+2
+00:00:06,460 --> 00:00:11,940
+ Artificial de la Facultar Regional, Buenos Aires y de la Facultar Regional la Plata. En el
+
+3
+00:00:11,940 --> 00:00:15,900
+ día de hoy, le voy a hablar sobre una técnica de educción de conocimiento que se
+
+4
+00:00:15,900 --> 00:00:22,400
+ le emparra. Esta técnica es una técnica que me permite obtener conocimiento de un
+
+5
+00:00:22,400 --> 00:00:27,000
+ experto, se da dentro del marco de lo que son las herramientas de adquisición de
+
+6
+00:00:27,000 --> 00:00:32,240
+ conocimiento y dentro de las de adquisiciones una técnica de educción. Recuerden que
+
+7
+00:00:32,240 --> 00:00:37,240
+ porque me permitió obtener conocimiento privado del experto. Se basa en la construcción
+
+8
+00:00:37,240 --> 00:00:43,360
+ de un modelo mental, se es la técnica del constructo personal, el cómo ve un
+
+9
+00:00:43,360 --> 00:00:49,160
+ individuo, un dominio determinado, inicialmente, se utilizó para gente con trastornos
+
+10
+00:00:49,160 --> 00:00:55,920
+ mentales y lo que buscaba yo es que la presenta esta técnica del año 1955 era obtener
+
+11
+00:00:55,920 --> 00:01:02,360
+ un mapa del domínio que el su paciente podía ver y a partir de ahí tratar de
+
+12
+00:01:02,360 --> 00:01:07,280
+ entender qué es lo que estaba viendo. Y esto lo hace a partir de la identificación
+
+13
+00:01:07,280 --> 00:01:12,480
+ de elementos sus características y cómo se relacionaban estas características. Se
+
+14
+00:01:12,480 --> 00:01:16,280
+ trabajó bajo la presunción que cada persona tiene su propia visión del mundo que
+
+15
+00:01:16,280 --> 00:01:20,280
+ lo rodea, que vea el mundo de una manera diferente y lo que se busca es obtener
+
+16
+00:01:20,280 --> 00:01:27,840
+ una imagen. Especificamente trabaja sobre una área de índeres. Acá hay una definición sobre
+
+17
+00:01:27,840 --> 00:01:34,360
+ que se le han parrayado, fíjense que es un test de clasificación, se busca vincular una
+
+18
+00:01:34,360 --> 00:01:39,080
+ lista de elementos homogéneos, por de pertenecen a un mismo dominio, comparten estas
+
+19
+00:01:39,080 --> 00:01:43,680
+ características en particular y son representativos, tienen que hacer los elementos que
+
+20
+00:01:43,680 --> 00:01:50,240
+ a mí como experto. Me parece más significativos del domínio y las características se tienen
+
+21
+00:01:50,240 --> 00:01:53,760
+ que manejar de manera bipónar. Esta bipolaridad va a estar dada por un conjunto de
+
+22
+00:01:53,760 --> 00:01:58,400
+ valores que van a tomar las distintas características en los elementos y a partir de
+
+23
+00:01:58,400 --> 00:02:03,240
+ aplicar la técnica se va a poder obtener una similitud entre estos elementos que
+
+24
+00:02:03,240 --> 00:02:09,120
+ comparten el domínio y también las diferencias entre ellos. Historicamente en sus
+
+25
+00:02:09,120 --> 00:02:15,600
+ comientos se utilizó para pacientes con problemas mentales y hoy por hoy tiene
+
+26
+00:02:15,600 --> 00:02:21,200
+ también distintos ámbitos de aplicación. Es una técnica más potente porque se
+
+27
+00:02:21,200 --> 00:02:25,320
+ va a ser en un modelo del pensamiento humano y va identificando prioridades y
+
+28
+00:02:25,320 --> 00:02:30,760
+ factores importantes que lo observador tiene, lo que era el paciente o el observador.
+
+29
+00:02:30,760 --> 00:02:35,240
+ Bien, en el caso no es en el marco de dirigir el conocimiento y el espuse acá el
+
+30
+00:02:35,240 --> 00:02:39,880
+ experto que es como que abriras humende indirectamente por lo cual a muchas veces
+
+31
+00:02:39,880 --> 00:02:44,480
+ también se la considera una técnica un poco intrusiva con lo cual los resultados de
+
+32
+00:02:44,480 --> 00:02:48,680
+ esta técnica hay que manejarlos con cuidado el momento de compartirlos con el
+
+33
+00:02:48,680 --> 00:02:52,980
+ experto y el ingeniero conocimiento a partir de estos datos, cursando el
+
+34
+00:02:52,980 --> 00:02:57,480
+ emparrillado, puede obtener conclusiones que después las tendrá que validar con
+
+35
+00:02:57,480 --> 00:03:01,960
+ el experto en cuestión. Las etapas por las que se transita son de un diálogo
+
+36
+00:03:01,960 --> 00:03:06,520
+ inicial en donde se identifica el domínio y se establecen una primera
+
+37
+00:03:06,520 --> 00:03:10,400
+ aproximación sobre estos elementos y se lo deje a reflexionar sobre los
+
+38
+00:03:10,400 --> 00:03:14,400
+ elementos y las características para que en la sesión de valoración justamente
+
+39
+00:03:14,400 --> 00:03:18,080
+ me permita a no obtener estos valores y construir la parilla. Luego de hacer la
+
+40
+00:03:18,080 --> 00:03:21,640
+ parillo un conjunto de etapas que vamos a ver que son las que hacen el
+
+41
+00:03:21,640 --> 00:03:24,800
+ el ingeniero de conocimiento se hace una validación buena alicina los
+
+42
+00:03:24,800 --> 00:03:29,920
+ resultados obtenidos a partir de los árboles de los árboles resultantes.
+
+43
+00:03:29,920 --> 00:03:33,840
+ Cabe de esta carfigencia en lo que acá les puse que el emparrillado
+
+44
+00:03:33,840 --> 00:03:37,600
+ describe a los elementos de un domínio en particular los ubican su imaginario
+
+45
+00:03:37,600 --> 00:03:41,020
+ esto es por lo cual a veces es como que el experto podría sentir
+
+46
+00:03:41,020 --> 00:03:44,760
+ si un poco invadido y tiene en cuenta los aspectos más importantes o
+
+47
+00:03:44,760 --> 00:03:47,960
+ representativos con lo cual también muchas veces se la considera una
+
+48
+00:03:47,960 --> 00:03:51,640
+ técnica incompleta porque solo lo estoy habla sobre lo más lo que el
+
+49
+00:03:51,640 --> 00:03:55,040
+ experto considera como más importante y representativa. Metajas que
+
+50
+00:03:55,040 --> 00:03:59,480
+ tiene el emparrillado se le permite al experto tener una
+
+51
+00:03:59,480 --> 00:04:02,400
+ reflexión sobre el tema en cuestión a partir de los diálogos que tiene
+
+52
+00:04:02,400 --> 00:04:08,160
+ con el ingeniero en conocimiento y el feedback con el tema de el
+
+53
+00:04:08,160 --> 00:04:15,920
+ final y si se resultados es también si obtiene una representación gráfica
+
+54
+00:04:15,920 --> 00:04:19,200
+ y esto es una ventaja vimos que siempre que podemos obtener una
+
+55
+00:04:19,200 --> 00:04:24,000
+ representación gráfica del cualquiera situación real específico más todavía
+
+56
+00:04:24,000 --> 00:04:28,720
+ para la la incoligeniría en conocimiento es verdaderamente interesante
+
+57
+00:04:28,720 --> 00:04:34,120
+ permite simplificar el marco de la realidad que uno tiene después por
+
+58
+00:04:34,120 --> 00:04:38,320
+ otro lado permite asociar elementos con sus características a través de
+
+59
+00:04:38,320 --> 00:04:44,640
+ la matriz y al experto le permite refinar el problema poder ayudarlo a
+
+60
+00:04:44,640 --> 00:04:49,520
+ adentificar los de mejor manera y formalizar el conocimiento que el tiene
+
+61
+00:04:49,520 --> 00:04:53,320
+ de manera más clara. Si le importa también algunos inconvenientes que
+
+62
+00:04:53,320 --> 00:04:56,800
+ podríamos citar con el emparrillado es que trabaja sobre
+
+63
+00:04:56,800 --> 00:05:01,480
+ valores subjetivos porque los valores que se obtienen en la matriz
+
+64
+00:05:01,480 --> 00:05:05,240
+ los valores que asignan el experto en la matriz dependente del
+
+65
+00:05:05,240 --> 00:05:09,280
+ experto que se estén realizando con lo cual la técnica es objetiva porque
+
+66
+00:05:09,280 --> 00:05:15,600
+ van a ver que es un proceso proceso de pasos números y no tiene más
+
+67
+00:05:15,600 --> 00:05:20,760
+ cuenta o sea que uno el proceso lo va a formalizar siempre de la misma manera
+
+68
+00:05:20,760 --> 00:05:24,760
+ lo que va a ir variando son las percepciones los valores que este
+
+69
+00:05:24,760 --> 00:05:27,840
+ experto le puede ir dando a las distintas características y a los
+
+70
+00:05:27,840 --> 00:05:32,800
+ valores con lo cual un mismo emparrillado hecho a dos expertos distintos a
+
+71
+00:05:32,800 --> 00:05:37,120
+ partir de darnos valores distintos en la matriz van a dar pueden dar
+
+72
+00:05:37,120 --> 00:05:40,720
+ valores diferentes eso también es rico porque muchas veces uno puede
+
+73
+00:05:40,720 --> 00:05:45,480
+ tener más de un experto hacer el emparrillado a los dos y ver que
+
+74
+00:05:45,480 --> 00:05:50,480
+ miradas semejantes o diferentes tienen los dos del mismo dominio obviamente
+
+75
+00:05:50,480 --> 00:05:53,920
+ si tuvieramos analizando los mismos elementos y las mismas
+
+76
+00:05:53,920 --> 00:05:58,600
+ características bien lo que se captura es un conocimiento superficial justamente
+
+77
+00:05:58,600 --> 00:06:01,880
+ por esto que yo les había dicho de hablar de elementos y características
+
+78
+00:06:01,880 --> 00:06:05,920
+ más representativas resulta complejo cuando hay una gran cantidad de
+
+79
+00:06:05,920 --> 00:06:10,120
+ elementos o características ya que los árboles se vuelven gráficos muy
+
+80
+00:06:10,120 --> 00:06:14,480
+ complejos y con información probablemente muy superficial y sólo
+
+81
+00:06:14,480 --> 00:06:17,720
+ este herramienta no es útil para la construcción de una base de conocimiento
+
+82
+00:06:17,720 --> 00:06:21,240
+ con lo cual hablamos siempre cuando hablamos de incódio un conjunto de
+
+83
+00:06:21,240 --> 00:06:26,080
+ característica bien esta son las etapas no voy de tiempo perfecto esta son
+
+84
+00:06:26,080 --> 00:06:30,080
+ las etapas que no pasa cuando construyó la parilla y hace todos estos
+
+85
+00:06:30,080 --> 00:06:33,600
+ cálculos que yo les comentaba hace un rato por un lado vamos a identificar
+
+86
+00:06:33,600 --> 00:06:38,560
+ los elementos las características también y vamos a diseñar la parilla a
+
+87
+00:06:38,560 --> 00:06:42,880
+ partir de ahí vamos a comenzar con todos los cálculos propios del método
+
+88
+00:06:42,880 --> 00:06:47,400
+ para finalmente obtener los árboles interpretarnos y hacer una análisis de
+
+89
+00:06:47,400 --> 00:06:52,120
+ los resultados vamos a comenzar entonces con la primera etapa y la
+
+90
+00:06:52,120 --> 00:06:56,480
+ identificación de los elementos para ello vamos a tomar un ejemplo y el
+
+91
+00:06:56,480 --> 00:07:02,160
+ ejemplo que vamos a tomar es con información relativa a lo que ustedes
+
+92
+00:07:02,160 --> 00:07:06,920
+ vieron en la otra lista de videos donde apretieron la técnica de la análisis
+
+93
+00:07:06,920 --> 00:07:13,080
+ de protocolos que hizo síntia y si recuerdan por las dudas vuelvo para
+
+94
+00:07:13,080 --> 00:07:17,520
+ atrás el objetivo del protocolo que habíamos hecho nosotros y identificar un
+
+95
+00:07:17,520 --> 00:07:20,720
+ diagnóstico según los síntobas que presentaba un paciente que se
+
+96
+00:07:20,720 --> 00:07:27,280
+ analizaba vamos a tomar esta misma esta misma este mismo dominio hablamos
+
+97
+00:07:27,280 --> 00:07:31,840
+ con el experto y identificamos el área de interés y los elementos que
+
+98
+00:07:31,840 --> 00:07:36,120
+ nos identifica el experto son estos cuatro el elemento 1 el coronavirus
+
+99
+00:07:36,120 --> 00:07:44,320
+ en un COVID 19 el elemento 2 el mers COVID el el 3 el SARS COVID y el 4 coronavirus
+
+100
+00:07:44,320 --> 00:07:49,480
+ 22 9 fíjense que lo que tenemos que identificar es que los elementos sean
+
+101
+00:07:49,480 --> 00:07:53,520
+ representativos y homogéneos pertene son distintos tipos de coronavirus y los
+
+102
+00:07:53,520 --> 00:07:58,000
+ elementos tienen que ser separables y no solo apados o sea que el elemento 1 no
+
+103
+00:07:58,000 --> 00:08:02,160
+ comparte no no se puede tener el elemento 1 y el elemento 2 al mismo tiempo
+
+104
+00:08:02,160 --> 00:08:06,600
+ está a veces uno en los gráficos dice que tiene que ser ordenales bien
+
+105
+00:08:06,600 --> 00:08:10,800
+ cuando hablamos de las características hablamos de la cualidad que se le
+
+106
+00:08:10,800 --> 00:08:14,680
+ puede atribuir a un elemento 1 concepto dentro del pensamiento humano en este
+
+107
+00:08:14,680 --> 00:08:19,800
+ contexto le vamos a asignar características a estos distintos elementos a los
+
+108
+00:08:19,800 --> 00:08:23,960
+ distintos tipos de coronavirus entonces decimos un son las características que
+
+109
+00:08:23,960 --> 00:08:27,720
+ puede tener la característica de uno en la frecuencia respiratoria alta baja
+
+110
+00:08:27,720 --> 00:08:32,040
+ recuerden que eran valores bipolares está lo científica generalmente les digo
+
+111
+00:08:32,040 --> 00:08:36,520
+ para los ejercicios entre parentes y con una barra la característica dos
+
+112
+00:08:36,520 --> 00:08:41,160
+ la fiebre la 3 la intensidad del dolor de garganta y las cuatro la intensidad
+
+113
+00:08:41,160 --> 00:08:45,640
+ del dolor de cabeza fíjense que estas intensidades del dolor funcionan con
+
+114
+00:08:45,640 --> 00:08:53,640
+ los límites de intenso y lea partir de ahí vamos a la etapa número 3
+
+115
+00:08:53,640 --> 00:08:58,520
+ acá ya se empieza todo a complicar un poquito más el diseño de la
+
+116
+00:08:58,520 --> 00:09:04,160
+ parrilla no pero las formalizaciones lo más complejos las la parrilla lo
+
+117
+00:09:04,160 --> 00:09:08,360
+ que va a identificar es la relación entre estos elementos y estas características
+
+118
+00:09:08,360 --> 00:09:13,080
+ o sea cuánto un elemento posee o no ahora veremos o como se lo evalua en
+
+119
+00:09:13,080 --> 00:09:16,880
+ relación a determinada característica la matriz vamos a hacer una
+
+120
+00:09:16,880 --> 00:09:21,520
+ matriz bidimensional puede ser de tres tipos puede ser una matriz icotómica
+
+121
+00:09:21,520 --> 00:09:26,720
+ donde los valores pueden ser ser robinarios 0 y 1 el elemento posee o no
+
+122
+00:09:26,720 --> 00:09:32,880
+ determinada característica la clasificatoria vamos a trabajar con una serie
+
+123
+00:09:32,880 --> 00:09:37,440
+ de una escala de 1 a n no tenes el número de elementos en nuestro caso de
+
+124
+00:09:37,440 --> 00:09:41,280
+ ejemplo rancuatro de casualidad coinciden con las características pero no
+
+125
+00:09:41,280 --> 00:09:44,960
+ necesariamente tiene que hacer los mismos y el valor m indica qué
+
+126
+00:09:44,960 --> 00:09:48,760
+ posición o culpa como un orden como si hicieron ranking de esos
+
+127
+00:09:48,760 --> 00:09:52,200
+ elementos en relación a cómo posee en esta carácterística entonces
+
+128
+00:09:52,200 --> 00:09:56,160
+ yo tendría que ver cuál es el que más tiene de esto el que un poquito
+
+129
+00:09:56,160 --> 00:10:01,120
+ menos y no pueden empatar si está o sea van a estar los cuatro
+
+130
+00:10:01,120 --> 00:10:06,520
+ valores puestos en determinada orden en esa carácterística finalmente
+
+131
+00:10:06,520 --> 00:10:09,880
+ la parrilla puede ser parrilla evaluativa en este caso nosotros vamos a
+
+132
+00:10:09,880 --> 00:10:13,360
+ usar una parrilla evaluativa para el ejemplo con una escala de una
+
+133
+00:10:13,360 --> 00:10:17,760
+ línea donde ene no necesariamente va a hacer la cantidad de elementos sino
+
+134
+00:10:17,760 --> 00:10:23,600
+ una escala que nos va a identificar el experto y cada relación el
+
+135
+00:10:23,600 --> 00:10:27,600
+ elemento carácterística va a tener un valor y va a dar el grado de
+
+136
+00:10:27,600 --> 00:10:33,960
+ satisfacción con el que es el elemento cubre esa carácterística entonces
+
+137
+00:10:33,960 --> 00:10:39,520
+ para nuestro ejemplo que teníamos se acuerdan las distintas
+
+138
+00:10:39,520 --> 00:10:45,000
+ tipos de COVID y teníamos síntomas y tenía fiebre se nos vuelve a mostrar
+
+139
+00:10:45,000 --> 00:10:49,840
+ la frecuencia respiratoria la fiebre la intensidad del dolor construimos una
+
+140
+00:10:49,840 --> 00:10:54,560
+ parrilla evaluativa y que se por ejemplo que acá el elemento un oben por ejemplo
+
+141
+00:10:54,560 --> 00:10:59,000
+ la característica uno tiene dos veces el elemento dos si fuera una matriz
+
+142
+00:10:59,000 --> 00:11:02,040
+ clasificatoria esto no podría haber pasado en un evaluativo así porque
+
+143
+00:11:02,040 --> 00:11:06,920
+ lo que te dice que el elemento uno tiene un grado dos de satisfacción de
+
+144
+00:11:06,920 --> 00:11:11,520
+ la carácterística segunda está y así se le sucesivamente bien a partir
+
+145
+00:11:11,520 --> 00:11:15,280
+ de ahí vamos a pasar la etapa de formalización que es una etapa bastante
+
+146
+00:11:15,280 --> 00:11:20,080
+ completa tiene varios cálculos así que los voy a dejar con el video
+
+147
+00:11:20,080 --> 00:11:24,320
+ acá espero no nos vemos en el próximo vídeo muchísimas gracias
+

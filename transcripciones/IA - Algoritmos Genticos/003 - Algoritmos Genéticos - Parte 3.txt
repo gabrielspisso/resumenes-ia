@@ -1,0 +1,98 @@
+ Hola, mi nombre es Maria Floriancio Apollo y vamos a continuar viendo la presentación de algoritmos genéticos.
+ Bueno, también hemos llegado abierto el ejercicio, el expresente de la estructura general de un algoritmos genético también.
+ Y ahora vamos a empezar a navegar en todos los pasos y los operadores dentro de un algoritmos genético.
+ Y comentario a tener en cuenta. Según distintas bibliografías, cuando se ha hablado de operadores de un algoritmos genético, algunos autores nombran la selección el cruzamiento y la montación.
+ Sin embargo, y otra bibliografía que incluye la generación del apo es de la población inicial y el criterio del pago.
+ Nosotros para este curso vamos a tomar en cuenta que cuando les hablemos de operadores de un algoritmos genético,
+ como mínimos no tienen que comentar estos tres.
+ Si además quieren agregar estos dos bienvenidos a sea, pero como mínimos si os tienen que estar estos tres.
+ Está bien. Recordemos, además, que una corrida que era cuando salió por la población final,
+ de un algoritmos genético implica una o muchas goeldas o ciclos. Está bien.
+ Vamos a comenzar entonces hablando de la población inicial.
+ Como definimos esta población inicial de individuos, como la forma.
+ Tenemos distintos metos distintas posibilidades.
+ Una opción es usar el método a la sara. O sea, definir un rano, uno ya tiene la estructura de finida y tira diversos números.
+ Fluevo qué pasa así, justo me da un valor inválido, qué pasaba si la función fitnes lo recuerda si la función fitnes.
+ Está bien hecha, debería penalizar ese individuo, entonces rápidamente va a desaparecer.
+ Y la otra opción es hacerlo ad hoc, o sea, generar una cantidad de individuos validos y yo digo,
+ no había tomado individuos de tales valores, tratos de tal valor, tanto de otro.
+ Generalmente nosotros trabajamos con algoritmos genéticos, sobre todo porque estamos comenzando estables,
+ que quiero decir que la cantidad de individuos se va a mantener a lo largo de todo el ciclo,
+ de toda la corrida del algoritmos genético, la cantidad de individuos de la población está.
+ Y debito el método a la sara bastante simple y no van a tener problema.
+ El relación de la población van a tener que definir la cantidad de individuos
+ y la varianza si va a ser constante o variable. Normalmente lo que les había dicho hace un ratito,
+ nosotros trabajamos con una población constante.
+ A partir de ahí y teniendo ya la población inicial a que están todos los individuos,
+ este es toda la población, de subsero, pasamos al operador de selección,
+ que es el operador de selección. El operador de selección, lo que va a ser, es este conjunto,
+ individuos, parmar un subconjunto para poder permitirle a ese subconjunto entrar en la siguiente
+ tapa, es lo que conociamos como la selección natural. Esto de uno podría pensar a priori
+ elegir los mejores los más lindos para que se cruzan y me generan más lindos.
+ Sin embargo, vimos que esto en la naturaleza no siempre funciona así, muchas veces dedos individuos
+ con una determinada característica sale un hijo de sentiente totalmente distita. Hay características
+ que se mantienen dentro de la biología, dos ojos recessivos generan un hijo resesivo,
+ hay características que se mantienen, pero no puedo garantizar que siempre va a ser mejor.
+ Entonces muchas veces conviene mantener lo que se conoce como cierta heterogeneria.
+ Ahora y sólo vamos a ir viendo. Por ahora concentratemonos,
+ entonces el operador de selección, que lo que va a ser es de la población que sale
+ de la población inicial o de esta vuelta del ciclo, lo que va a tomar existe sus conjuntos
+ para después de este subconjunto a hacerlo entrar al operador de cruzamiento.
+ Hay distintos metodos de selección. El torneo ranking ruleta y control sobre el número
+ esperado. Esto son los típicos. Nuevamente acá lo mismo que hablábamos la clase
+ pasada en ayer miel, de ayer lunes, que pasaba con los métodos de búsqueda,
+ si uno tenía un método que podía ser distinto combinado, nosotros acá les contamos los
+ métodos ideales, los teoricos fundamentales. Después existen muchos alternativas y muchas
+ variantes que tienen que ver a veces con características de problemas y ahí es donde generamos
+ mucho material los que hacemos investigación. Yo podría aplicar un método de torneo combinado
+ con talos y demostrar si es mejor, si espero peor, hacer una comparativa.
+ Eso es lo rico de todo en maneras. Acá nosotros proponemos métodos básicos bien.
+ Y vamos a comenzar con el método de selección el torneo. Fíjense que está basado en justa
+ y torneo de la media donde había dos caballeros, que rompía sus lanzas, uno venía contra el otro,
+ chocaban y aquí en ganaba ganaba el más fuerte, el más apto. Este es de la famosa
+ justa media y banes. Entonces lo que nosotros vamos a hacer, justamente es esto,
+ juntar los diapales y hacer los pelear. El lugar de hacer los pelear físicamente,
+ los vamos a hacer pelear con la función fíjense, es lo que ellos tienen, que va a decir
+ cuán buenos son para este problema. Entonces ejemplo, tenemos una población de, en este caso,
+ siete individuos y tienen la siguiente función fíjense. Se senta y uno se acá estamos pensando siempre
+ que a mayor función de aptitud el alú del alumno, el individuo es más apto. Entonces lo que dijimos,
+ lo vamos a ir tomando de aparez, es las parejas que se van tomando, pueden ser,
+ siempre, es precificar un patrón o ir tomando aleatoriamente las parejas, se puede repetir más
+ una vez un mismo individuo en ningún problema. Se los hace competir y con quién se queda, uno se queda
+ con el mejor. Entonces fíjense por ejemplo, entre el uno y el 3, uno se estaría quedando con el 61,
+ que es el mejor. Después podríamos maro otra pareja y se entre el 2 y el 4 y con quien se queda,
+ quien tiene mayor con 4, fíjense acá entre 4 y 6, entre 25 y 15, con quien se quedan con el
+ de 25, que si 4 y 5 hay 7 están tomando, con cual si quedan se van a quedar con y 5 que es 44 y después
+ también para que vean pueden mezclar también y uno con y 7 y generan y uno. Hay ustedes
+ van a tomar la cantidad de individuos que consideren y esta nueva población es la que para
+ saria al operador de cruzamiento. Florencia me quedó muchas veces el 1 y si puede ser,
+ ¿qué pasa con este método? Este método tiene ventajas y de ventajas. La ventaja que tiene
+ es que si yo gopelear al mejor en algún momento el mejor va a quedar, lo que pasa que si
+ yo gopelear al mejor, contra el segundo mejor, supongan si uno es 5, me va a quedar y uno,
+ pero si 5 no participan y uno trapelear, me voy a quedar solo con uno, el 5 lo perdí y a lo
+ mejor después yo hice pelear ahí 2 con y 7, con los 4 me va a quedar y 7 pero miren, perdí
+ y hay 5 y me ganea y 7. Entonces este método lo que plantea veces es que se pierde en algunos
+ buenos y a veces ya parecen algunos malos. Entonces para salvar esta diferencia aparece el método
+ de rancos y el método de rancos lo que haces, tomar la población inicial con los valores que
+ teníamos y armar una población ordenada, a partir de esa población ordenada uno decide, por
+ ejemplo, tomo. Entonces es el primero, una vez el segundo, una vez el tercero y el cuarto y ya está,
+ ahí garantizo quedarme con los mejores, la única de ventajas que también podría tener el
+ que nuevo participar nunca los malos y a veces eso también me sectoriza mucho la búsqueda y uno
+ lo que hace es perder seguir en esto del máximo local, una vez es lo que pierde, es que se queda
+ un clado en el máximo local, ya ya lo que se llama que es la convergencia prenatura, uno se queda
+ practicando sobre esos individuos y yo tuviera una familia y solo los hago reproducirse
+ entre ellos, no es algo nunca, a veces también entonces a lo mejor me quedo con una familia
+ que no os joclaro, todos tienen los joclaros joclaros joclaros joclaros, entonces la solución
+ siempre va a tener y me estoy perdiendo a lo mejor una solución por alguno otra columna,
+ a eso se lo conoce como convergencia prenatura, en mantener cierta heterogeneidad, en la población
+ es bastante interesada, esto es lo que decíamos en máximo local, para que lo viera en una corrida
+ acá yo me corto un poquito, ventla, convergencia prenatura, esperen, uno podría pensar
+ si yo me quedo, me tento que se lo marco con el dedo, perdón, que me quedo acá, me estoy
+ perdiendo de ir a dónde, a este lugar y a lo mejor si yo me quedo por acá y después sugo
+ y no quiero empezar a bajar, me olvidé que también podía venir por acá, entonces quedarse
+ en una convergencia prenatura, es pensar en esto y no poder verla totalidad, por no poder
+ verla totalidad el gráfico, el algoritmo genético, sino mantiene un poco de heterogeneidad
+ va a salvar esta problemática, y el otro método es el método de Rule, como el método de Ruleta,
+ es largo, yo sé que son 10 minutitos nada más, voy a cortar acá y el método de Ruleta
+ se lo se explico en la próxima, así que acá viene el momento del casino, nos vemos en un
+ ratito cuínense y quedense en casa, hasta luego.

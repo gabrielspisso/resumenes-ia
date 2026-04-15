@@ -1,0 +1,452 @@
+1
+00:00:00,000 --> 00:00:08,760
+ Hola, mi nombre es Pablo Pital, soy 200 de las asignaturas Inteligencia Artificial e Inteligencia Artificial
+
+2
+00:00:08,760 --> 00:00:14,600
+ avanzada, en este video veremos una introducción a lo que es el aprendizaje automático
+
+3
+00:00:14,600 --> 00:00:24,960
+ o machin learning, para profundizar un poco en más en este tema, bueno, cuando hablamos de
+
+4
+00:00:24,960 --> 00:00:30,560
+ machin learning, uno lo que se imagina es lo que muestra en esta figura, que es que un robot
+
+5
+00:00:30,560 --> 00:00:39,520
+ aprende solo o con ayuda de una persona y logra de esa manera resolver problemas. Machin
+
+6
+00:00:39,520 --> 00:00:47,880
+ learn real es algo bastante parecido, como habíamos visto en otro video, podemos ver que
+
+7
+00:00:47,880 --> 00:00:54,520
+ machin learning es un subcampal informática, de la que tiene que ver con la computación,
+
+8
+00:00:54,520 --> 00:01:01,600
+ las computadoras del software y lo que busca hacer este campo es definir y estudiar
+
+9
+00:01:01,600 --> 00:01:09,000
+ algoritmos o sea procedimiento software que pueden generar comportamientos generales a partir
+
+10
+00:01:09,000 --> 00:01:14,840
+ de ejemplos puntuales, o sea que está haciendo como una especie de inducción, porque está
+
+11
+00:01:14,840 --> 00:01:21,920
+ tratando de generalizar ciertas acciones que se tienen que hacer a partir de ejemplos puntuales.
+
+12
+00:01:21,920 --> 00:01:29,080
+ Para lograr esto, esto es algoritmos a procedimientos, muchas veces están basados en principios
+
+13
+00:01:29,080 --> 00:01:38,880
+ estadísticos y matemáticos, porque lo que tratan de encontrar es un modelo, una representación
+
+14
+00:01:38,880 --> 00:01:46,520
+ que trata de mostrar los patrones que tienen estos ejemplos o datos, y de esta forma
+
+15
+00:01:46,520 --> 00:01:54,040
+ la aplicar el modelo nosotros podemos resolver un problema. Entonces machin learn,
+
+16
+00:01:54,040 --> 00:01:59,700
+ lo podemos ver también como una búsqueda de patrones en datos, esto es muy parecido
+
+17
+00:01:59,700 --> 00:02:05,960
+ de lo que pasa con big data y data mining, donde aparte de ejemplos de base de datos
+
+18
+00:02:05,960 --> 00:02:13,520
+ se trata de encontrar comportamientos, que se van a mostrar en un reporte en un informe
+
+19
+00:02:13,520 --> 00:02:19,480
+ para que alguien toma una decisión. La diferencia sería en este caso, es que los patrones
+
+20
+00:02:19,480 --> 00:02:26,680
+ que nosotros queremos encontrar, los vamos a tratar de implementar en un modelo software
+
+21
+00:02:26,680 --> 00:02:32,160
+ para que después una computadora lo pueda ejecutar y resolver ciertos problemas.
+
+22
+00:02:32,160 --> 00:02:37,720
+ Esto es la búsqueda de patrones, podríamos decir que es como pasar en esta animación,
+
+23
+00:02:37,720 --> 00:02:47,360
+ a partir de muchos ejemplos encontramos así un signe, un dragón que nos sorprenda.
+
+24
+00:02:47,360 --> 00:02:53,100
+ Otro ejemplo para explicar machine learn muy interesante, es el que va a estar al torpedro
+
+25
+00:02:53,100 --> 00:03:00,520
+ domingo en su libro de Master, algo en que si alguno quiere leer sobre el tema es un libro
+
+26
+00:03:00,520 --> 00:03:09,280
+ muy recomendado para introducirse en machine learn en las distintos tipos de algoritmos relacionados
+
+27
+00:03:09,280 --> 00:03:18,000
+ a ellos. El autor hace una explicación muy conceptual de cómo trabaja cada uno de estos
+
+28
+00:03:18,000 --> 00:03:25,720
+ ejemplos muy divertidos y entendibles. Bueno, en el caso de machine learning, peda la
+
+29
+00:03:25,720 --> 00:03:30,640
+ domingo, sé que es como cultivar una planta. Nosotros una planta que hacemos para uno es una
+
+30
+00:03:30,640 --> 00:03:36,440
+ semilla en una máseta con tierra, la empezamos a regar la cuidamos y de ahí va a surgir
+
+31
+00:03:36,440 --> 00:03:41,280
+ una planta, ¿no? Bueno, como machine learn, va a pasar algo parecido. Nosotros vamos
+
+32
+00:03:41,280 --> 00:03:46,800
+ a tener un algoritmo que va a estar esta semilla, que la vamos a poner en un ambiente,
+
+33
+00:03:46,800 --> 00:03:53,160
+ va a hacer la máseta con tierra y en la cual le vamos a suministrar datos.
+
+34
+00:03:53,160 --> 00:03:59,920
+ Nosotros, lo podemos relacionar con el agua que le damos a la planta. Partir de estos datos,
+
+35
+00:03:59,920 --> 00:04:07,160
+ de estos ejemplos, el algoritmo va a generar un modelo, va a hacer aparecer la planta.
+
+36
+00:04:07,160 --> 00:04:14,160
+ Y se modelo, si nosotros después lo implementamos dentro de un software, va a formar un
+
+37
+00:04:14,160 --> 00:04:20,440
+ sistema inteligente. Entonces, parecería que hacer un sistema inteligente como machine learning
+
+38
+00:04:20,440 --> 00:04:25,600
+ es tan fácil como cuidar una planta. Tan fácil, lo tan difícil, no, porque a veces uno
+
+39
+00:04:25,600 --> 00:04:31,280
+ se olvida de regar a la planta y la pobre planta se marchita. Bueno, acá como machine learn
+
+40
+00:04:31,280 --> 00:04:38,080
+ pasa algo parecido, porque tenemos que tener cuidado de darle unas cantidas suficientes
+
+41
+00:04:38,080 --> 00:04:44,720
+ de datos, que tampoco demasiado para que se abre, y le tenemos que dar datos representativos,
+
+42
+00:04:44,720 --> 00:04:49,480
+ porque si nosotros no le damos datos representativos del problema, queremos resolver,
+
+43
+00:04:49,480 --> 00:04:54,240
+ nos hagelar un modelo, pero y no nos va a servir para resolver el problema que nosotros
+
+44
+00:04:54,240 --> 00:05:00,360
+ queremos. Bien, en general, entonces, puedo no decir que un algoritmo de machine learning
+
+45
+00:05:00,360 --> 00:05:05,640
+ recibiendo un conjunto de datos y como salida nos va a modelar que nosotros podemos
+
+46
+00:05:05,640 --> 00:05:11,080
+ desprosutilizar dentro de un sistema inteligente. Entonces, podemos decir que machine learning
+
+47
+00:05:11,080 --> 00:05:16,480
+ aprendizaje automática, para mí te genera un software que es autocráticamente capaz de
+
+48
+00:05:16,480 --> 00:05:21,600
+ adquirir capacidades y adaptarse a su entorno. Esto de adquirir capacidades y adaptarse a su
+
+49
+00:05:21,600 --> 00:05:26,840
+ entorno, lo podemos relacionar con el aprendizaje, que tenemos los seres vividos. Entonces,
+
+50
+00:05:26,840 --> 00:05:33,520
+ por eso en castellano, se habla de la aprendizaje automática más que el aprendizaje de máquinas.
+
+51
+00:05:33,520 --> 00:05:43,600
+ Dentro de estos algoritmos de machine learning, hay diferentes tipos, de hecho hay miles
+
+52
+00:05:43,600 --> 00:05:49,280
+ de algoritmos posibles con distintas características, pero esos algoritmos se pueden clasificar
+
+53
+00:05:49,280 --> 00:05:54,920
+ de acuerdo en un sentido a la estrategia de aprendizaje.
+
+54
+00:05:54,920 --> 00:06:02,960
+ Esta estrategia de aprendizaje puede ser algoritmos supervisadas o no supervisadas.
+
+55
+00:06:02,960 --> 00:06:09,600
+ En un algoritmo supervisado, al algoritmo, le vamos a dar además de los ejemplos
+
+56
+00:06:09,600 --> 00:06:15,200
+ de nutrado, también le vamos a ayudar información adicional para que el algoritmo
+
+57
+00:06:15,200 --> 00:06:20,720
+ pueda encontrar la relación el patron que le permita resolver el problema.
+
+58
+00:06:20,720 --> 00:06:27,040
+ Generalmente esa información adicional puede ser una salida de ciada o algo que le permita
+
+59
+00:06:27,040 --> 00:06:34,200
+ valorar si la salida que está generando es bueno o mal. En cambio en el algoritmos
+
+60
+00:06:34,200 --> 00:06:40,360
+ no supervisados, lo que le vamos a dar a la algoritmo son sólo ejemplos de entrada.
+
+61
+00:06:40,360 --> 00:06:45,320
+ A partir de esos ejemplos, el algoritmo va a tratar de terminar un modelo que el
+
+62
+00:06:45,320 --> 00:06:49,200
+ arrepresenta y de esa forma resolver un problema.
+
+63
+00:06:49,200 --> 00:06:53,960
+ Obviamente que las algoritmos con aprendizaje supervisado no supervisado no se puede
+
+64
+00:06:53,960 --> 00:06:59,080
+ neutralizar para el mismo tipo de problemas, así que vamos a ver un ejemplo de cada
+
+65
+00:06:59,080 --> 00:07:07,080
+ uno. Supongamos que yo quiero clasificar o reconocer tipos de flores.
+
+66
+00:07:07,080 --> 00:07:14,800
+ Entonces, por ejemplo, tengo flores de tipo iris que tienen un petal y un cepalo, los
+
+67
+00:07:14,800 --> 00:07:19,720
+ cuales tienen un largo y un ancho y a partir de esas características, yo quiero determinar
+
+68
+00:07:19,720 --> 00:07:25,360
+ aquel tipo de flores y iris corresponde, así es, se tosa a ver si colore a ver gínicas.
+
+69
+00:07:25,360 --> 00:07:31,800
+ En este caso, yo usaría un algoritmo de aprendizaje supervisado, porque yo le voy a
+
+70
+00:07:31,800 --> 00:07:37,120
+ ver como datos de entrada, ciertos ejemplos de valores del largo y ancho del petal
+
+71
+00:07:37,120 --> 00:07:43,000
+ del cepalo y a su vez le voy a decir cuál es la plaza que corresponde la salida de
+
+72
+00:07:43,000 --> 00:07:45,120
+ ciava que va a tener.
+
+73
+00:07:45,120 --> 00:07:50,560
+ El algoritmo, a partir de su funcionamiento, la tratar de encontrar una relación a un
+
+74
+00:07:50,560 --> 00:07:56,120
+ patrón entre los datos de entrada y los datos de salidas para generar un modelo que
+
+75
+00:07:56,120 --> 00:08:02,040
+ me permita hacer esta clasificación o no reconocimiento.
+
+76
+00:08:02,040 --> 00:08:11,440
+ Un ejemplo de algoritmo no supervisado podría ser tratar de definir en forma automática,
+
+77
+00:08:11,440 --> 00:08:17,120
+ grupos o clasters de vestidos que tengan características similares.
+
+78
+00:08:17,120 --> 00:08:23,720
+ En este caso, yo le daría a mi algoritmo como datos entran a los datos que tengo sobre
+
+79
+00:08:23,720 --> 00:08:30,880
+ distintos vestidos, gran cantidad de vestidos, por ejemplo el estilo de talle, la temporada
+
+80
+00:08:30,880 --> 00:08:36,640
+ que se usa al tipo de escoto de cintura y que la algoritmo me define a tres grupos
+
+81
+00:08:36,640 --> 00:08:37,640
+ de vestidos.
+
+82
+00:08:37,640 --> 00:08:44,240
+ Entonces me va a decir, por ejemplo, me van a agrupar vestidos de acuerdo a la temporada y
+
+83
+00:08:44,240 --> 00:08:50,960
+ el tipo de talla o el precio, a algun otro criterio que algoritmo que el algoritmo considere
+
+84
+00:08:50,960 --> 00:08:51,960
+ más relevante.
+
+85
+00:08:51,960 --> 00:08:56,720
+ Eso es importante porque en este caso, nosotros no les estamos diciendo de plasificarme
+
+86
+00:08:56,720 --> 00:09:00,640
+ los de acuerdo a este criterio, le estamos diciendo clasificarme los de acuerdo en los
+
+87
+00:09:00,640 --> 00:09:06,480
+ que te parezca mejor y el algoritmo de esta forma encuentra una relación entre los datos
+
+88
+00:09:06,480 --> 00:09:14,080
+ para encontrar grupos de datos similares, patrones similares.
+
+89
+00:09:14,080 --> 00:09:21,760
+ Este tipo de problemas, generalmente es el edal, los suele tener las empresas que se
+
+90
+00:09:21,760 --> 00:09:28,760
+ dedican a la venta de productos y servicios, entonces necesitan encontrar grupos de productos
+
+91
+00:09:28,760 --> 00:09:36,360
+ sus servicios con características similares, los grupos de clientes que comparan productos
+
+92
+00:09:36,360 --> 00:09:37,360
+ o servicios similares.
+
+93
+00:09:37,360 --> 00:09:43,480
+ Por ejemplo, los sistemas de recomendación que se utilizan en Amazon y en los sitios
+
+94
+00:09:43,480 --> 00:09:50,000
+ de venta online, generalmente, aplican este tipo de algoritmo, no supervisor.
+
+95
+00:09:50,000 --> 00:09:57,080
+ Entonces, por un lado tenemos esas estrategias de la aprendizaje, pero también la
+
+96
+00:09:57,080 --> 00:10:03,600
+ y los algoritmos de Machine Learning, los podemos distinguir entre distintos tipos de entrenamiento.
+
+97
+00:10:03,600 --> 00:10:11,200
+ Entonces, podemos tener entrenamiento offline o estatico que son los algoritmos que van a tener
+
+98
+00:10:11,200 --> 00:10:17,480
+ una fase de entrenamiento, una fase durante la cual el algoritmo va a aprender para generar
+
+99
+00:10:17,480 --> 00:10:24,160
+ el modelo y que luego de la instalación no aprende más, o sea, durante la fase de operación
+
+100
+00:10:24,160 --> 00:10:32,800
+ se mantiene la cantidad de conocimientos finales que se obtuvo luego de la fase de entrenamiento.
+
+101
+00:10:32,800 --> 00:10:38,800
+ En cambio, puede tener algoritmos online, en los algoritmos online, vamos a tener nuestra
+
+102
+00:10:38,800 --> 00:10:47,120
+ fase de entrenamiento donde el algoritmo va a aprender nuevos patrones para generar el modelo.
+
+103
+00:10:47,120 --> 00:10:52,520
+ Pero una vez puesto en producción luego de su instalación en la fase de operación, pueden
+
+104
+00:10:52,520 --> 00:10:56,160
+ seguir aprendiendo nuevos conocimientos.
+
+105
+00:10:56,160 --> 00:11:02,240
+ Obviamente que ese nuevo aprendizaje va a tener que ser monitoreado para tratar de que a
+
+106
+00:11:02,240 --> 00:11:11,040
+ aprender cosas nuevas no arromta algo que aprendió, se olvide de algo que aprendió previous.
+
+107
+00:11:11,040 --> 00:11:18,400
+ Bien, dentro de Machine Learning tenemos estrategias de la aprendizaje supervisado y no
+
+108
+00:11:18,400 --> 00:11:24,160
+ supervisado, tipos de entrenamiento online. Y a su vez tenemos distintas tipos de algoritmos,
+
+109
+00:11:24,160 --> 00:11:30,060
+ ponemos de clastering, de inducción, de regresión, basados en la teoría, el terema de
+
+110
+00:11:30,060 --> 00:11:39,520
+ baixas de probabilidad, redes neurones artificiales, etcétera. Nosotros para hacer un video muy largo,
+
+111
+00:11:39,520 --> 00:11:44,600
+ vamos a hablar de un ejemplo con algoritmos de inducción en otro video que viene a continuar
+
+112
+00:11:44,600 --> 00:11:50,680
+ la producción. Y entonces, de esta manera, terminamos con esta introducción en lo que es Machine Learning,
+
+113
+00:11:50,680 --> 00:11:55,080
+ espero que les haya servido y nos veremos en el próximo.
+

@@ -1,0 +1,81 @@
+ Hola, este es el segundo video correspondiente a la presentación de razónamiento
+ aproximado y lógica difusa. En este video vamos a hacer la introducción a la lógica difusa.
+ Entonces vamos a comenzar viendo la definición de lógica difusa.
+ La cual nos dice que es un mecanismo de razónamiento aproximado, cosa que ya habíamos dicho,
+ que proporciona una manera simple y elegante. Hayme gusta ahí lo de simple y elegante
+ porque es muy importante. La lógica difusa vamos a ver que es bastante sencillo
+ de entenderlo, no tiene grandes complicaciones como tiene otros modelos.
+ Y, a su vez, la solución que debían es fácil de mostrar y es más se pueden incluir en un
+ informe, donde se aplica para hacer la toma de decisiones. Entonces tiene una cualidad
+ de elegancia. Esta lógica difusa, entonces nos va a permitir obtener una conclusión
+ a partir de datos de entrada. Vagos, ambigos, impresicios, con ruido o incompletos.
+ Para ver cómo funciona esta lógica difusa, primero vamos a recordar cómo trabaja la lógica
+ tradicional. Entonces, trojimos que la lógica proposicional y la lógica de primera orden
+ tiene dos posibles valores de verdad. Algo puede ser verdadero, quiere decir que
+ tiene un grado de verdad del 100%, o sea que no hay duda que eso se cumpla o puede ser falso.
+ Entonces eso quiere decir que no tiene ningún grado de sartas. Algo de sartas es del 0%.
+ Con estos dos valores de verdad, entonces yo puede ser calgo se cumple o algo no se cumple.
+ Lo que no puede decir es que si algo se cumple por la mitad. Entonces, si, por ejemplo,
+ yo estoy hablando de la lluvia y quiere decir está lluviendo, le puede ser verdadero.
+ Si quiere decir está lluviendo igual falso, estaría diciendo que no llueve, pero si yo
+ quiere decir que llueve más o menos, no puedo decir lo porque voy a tener que decir que
+ es verdadero, que sería el mismo valor que va a tomar si llueve mucho y que si llueve
+ poco. Entonces, para tratar de solucionar este problema que tiene la lógica tradicional
+ para representar estas situaciones, aparecen la lógica polivalente.
+ La lógica polivalente lo que va a pasar es que en lugar de tener siempre, dos valores
+ de verdad, puedo tener tres o más. Entonces, en una lógica trivialmente, yo podría
+ tener algo que es verdadero, algo que es falso, o algo que es medio verdadero, o medio
+ falso, ¿no? Está intermedia entre verdadero y falso. Entonces, eso lo podría representar
+ con 1,1 o 100% para verdadero, un 0% de grado de verdad para falso y un 50% un 0,5 para medio
+ verdadero. Entonces, ahí sí podría decir está lluviendo 100%, no está lluviendo 0% o falso
+ y está lluviendo más o menos, o sea, está medio lluviendo con 1,0,5, ¿no? Con un valor de medio
+ verdadero. Entonces, si llego llueve, verdadero, considero que está lluviendo un montón,
+ si llego llueve, igual falso, estoy diciendo que no llueve, si llego llueve, medio
+ verdadero, es digo que llueve más o menos, llueve por la mitad. Si yo quisiera darles
+ a su vez más variedad, yo quisiera decir que yo vizna, llueve bastante, llueve mucho,
+ ahí tendría que empezar a agregarle más valores verdadero. Lo cual haría que la aplicación
+ de esos valores de verdad, en los distintos operadores de la lógica, porque en esta lógica
+ polivalente también vamos a tener el Lí, el O, la negación y la implicación, se mueve
+ algo un poquito más difícil. Entonces, para tratar de simplificar todo este problema,
+ en el año 1971, un señor llamado Sadden, propone la lógica difusa. La lógica difusa
+ que en castellano también se conoce como lógica borrosa y en inglés como fusiloxic,
+ es un tipo de lógica donde no se utilizan valores discretos de verdad. O sea,
+ no vamos a tener valores de verdad, verdadero, medio verdadero, poco verdadero, falso.
+ Si no, que vamos a manejar valores contiguos. Entonces, asociado una función de verdad,
+ vamos a tener una función de pertenencia que va a ser una función que nos va a devolver
+ un valor entre 0 y 1. Pero también nos puede devolver cualquier valor continuo entre
+ esos dos extremos del rango. Entonces, yo puedo tener una función de verdad que me devuelve
+ un 0,1, otra que me devuelve un 0,35, otra que me devuelve un 0,8,
+ detendiendo de lo que yo quiero representar. Y lo que si tengo que respetar es que siempre el
+ 0,0 es la falsidad absoluta y el 1,0 es la verdad absoluta. Entonces, la lógica difusa
+ de borrosa o fusilogic, lo que hace es utilizar esta función de pertenencia. Continúa
+ para representar la información que yo necesito manejar con cierto grado de imprescición.
+ Entonces, yo quiero decir que llueve un montón, podría decir que el valor de pertenencia es de 1.
+ Si yo digo que llueve más o menos, podría darle un valor de 0,5. Si yo de poco,
+ darle un valor de 0,2, si apenas yo vina podría ser un valor de 0,0,5. Si yo de bastante,
+ podría ser un 0,7. Entonces, fíjense de acuerdo a lo que yo quiero representar, le voy a
+ signar un valor diferente a esta función de verdad. Entonces, esta lógica difusa para trabajar,
+ sabe, la basó en otro teoría que él tenía anterior de 1965, que es el concepto de el conjunto
+ difuso o fusilogicerts. Que lo que hace con junto a difuso es indicar que un grupo de cosas
+ que puede ser definido, pero no de manera precisa si pertenece o no pertenece a un grupo. Entonces,
+ permite manejar conocimiento de naturaleza vada o imprescisa sobre ese concepto.
+ Para realizar estas evaluaciones borrosas, entonces, definen esta función de pertenencia,
+ que es lo llamado a grado de pertenencia de un elemento y que se representa con la letra a un
+ y una letra o palabra que representa a la función de verdad que queremos manejar. Entonces,
+ para el ejemplo que yo estaba referiendo sobre la lluvia, tendríamos un mú de lluvia,
+ donde le quisiería el día o la hora, donde yo estoy evaluando la cantidad de lluvia que está cayendo.
+ Esta función, como dijimos antes, tiene el valor extremo de cero que es no pertenencia o falsidad absoluta,
+ uno que es la pertenencia total o verdad absoluta y entre cero y uno teníamos todos los grados
+ intermedios con una función continua, no discreta. Entonces, no va a existir una transición abrupta
+ entre pertenencia y no pertenencia, por un lado, pero esta función es importante aclararlo,
+ no tiene sentido probabilistico. O sea, si yo estoy diciendo que la lluvia cae en un cero
+ como 6, no estoy diciendo que va a llover con una probabilidad del 60% porque ahí estaría diciendo
+ que no se exista lluviendo, no está lluviendo. Estoy dando una probabilidad al hecho de que pueda llover.
+ Yo lo que estoy representando con lluvia, cero como 6, estoy diciendo que lluvia un poquito más que el
+ por medio, o sea, yo veo más o menos tirando más, que a menos. Esta es importante porque,
+ si yo le doy un sentido probabilístico, las conclusiones que puedo tomar a través de los resultados
+ que me va a dar un sistema que aplique la lógica difusa pueden llevar a malas interpretaciones
+ y a una decisión erronio. Entonces, hay que tener cuidado y recordar que la lógica difusa
+ no tiene un sentido probabilístico sino que lo que me representa es el grado de permanencia
+ de un elemento a un conjunto. Bueno, para ver cómo funciona esta lógica difusa ahora en el próximo
+ vídeo, lo vamos a dar en un ejemplo donde la aplicamos para indicar si una persona es alta o no.

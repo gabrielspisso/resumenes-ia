@@ -1,0 +1,86 @@
+ Hola, este es el sexto video correspondiente a la presentación de relacionamiento aproximado y lógica difusa.
+ En este video vamos a hablar de los sistemas inteligentes difusos, que de ahora en más para llamarlo con un nombre más corto,
+ lo vamos a denominar sistemas difusos.
+ Bueno, los sistemas difusos, normalmente, obviamente van a aplicar la lógica difusa.
+ Para que, por un lado, para representar a los datos impresicios que ingrese al usuario.
+ Por otro lado, para aplicar reglas que pueden considerar esa impresición al momento de realizar la toma de decisionas.
+ Luego, también, la vamos a utilizar para mostrarle en los resultados en un lenguaje que el usuario pueda comprar más.
+ Por eso mismo, la arquitectura de un sistema difuso va a ser muy parecida a la arquitectura de un sistema basado en conocimientos.
+ Entonces, vemos que tiene una base de conocimientos y un motor de inferencias.
+ De manera que el motor de inferencias sabe cómo aplicar las distintas reglas difusas que tienen en su base de conocimiento.
+ Pero a esos dos módulos les agregamos dentro de lo que sería la interfaz de entrada salida, un módulo de codificación o fusification,
+ que va a ser el encargado de transformar los datos que ingrese al usuario a valores difusos o fusis.
+ Y un módulo de codificación o de fusification que se ocupa de hacer la tarea inversa, es decir, transformar los resultados difusos
+ a resultados que el usuario pueda entender.
+ Las reglas que van a estar en la base de conocimiento de un sistema difuso pueden ser reglas que vienen de fontes públicas.
+ Entonces, ahí el sistema difuso sería igual que un sistema basado en conocimientos,
+ o también puede incluir reglas que provienen de la mente de un experto, o sea, conocimiento interiorizado en la mente de un experto.
+ En este caso, sería un sistema difuso experto.
+ Los módulos de memoria de trabajo, trastador de consultas, trastador de explicaciones también podrían aparecer en ese caso.
+ Pero para simplificar la arquitectura del sistema difuso y imponer una arquitectura más general, no en la simplemente.
+ Bueno, entonces, como le decíamos antes, a partir del problema que tenga el usuario va a carrer los datos,
+ el módulo de fusificar y yo la va a transformar a valores difusos, que el motor de inferencias va a considerar al momento de aplicar las distintas reglas.
+ Cuando se obtiene resultado, se hace una diffusificación y ese resultado interpretado, se le mostra el usuario para que pueda resolver su problema.
+ Entonces, la arquitectura es poquito similar a la de un sistema basado en conocimiento, pero aparecen estos dos nuevos módulos
+ y la capacidad que va a tener el motor de inferencia para aplicar los conocimientos y datos difusos que se trata.
+ Bueno, como ventajas, entonces de un sistema difuso, podemos decir que si utilizan para modelar un comportamiento de un sistema real,
+ porque como habíamos visto antes, la lógica difusa nos permiten emular de mejor manera la forma en que una persona piensa,
+ pero al momento de implementar esta arquitectura, hay distintos tipos de módulos que se pueden usar para combinar las reglas,
+ o sea, dentro del motor de inferencias y dentro del módulo de fusificar y yo, se pueden implementar de distintas maneras.
+ Entonces, vamos a ver que hay varios módulos de los cuales nosotros vamos a mencionar solo dos, el módulo difuso mandani y el módulo difuso tacaje su geno,
+ que ahora vamos a ver cómo funciona cada uno.
+ Lo importante que sepan es que el primero del módulo mandani es más simple para implementar,
+ pero para funcionar, va a requerir de mucha más cantidad de reglas, ser más simple, van a necesitar contar con más reglas para generar resultados más precisos.
+ Mientras que el segundo puede resolver problemas complejos, o no alineales con menos reglas.
+ Por eso mismo, también es un módulo mucho más complejo.
+ En todas formas, no se preocupen que para nosotros, para la cursada, todo esto entre paréntesis,
+ no vamos a entrar en mucho detalle, en las formas que aplica cada uno de estos dos módulos.
+ Lo importante es que sepan que hay distintos módulos, y que hay algunos que son más simples, pero menos precisos,
+ y hay otro módulo que es más preciso, pero más complejo.
+ Bien, el primer módulo que entonces que mencionamos es el módulo difuso mandani.
+ En su funcionamiento, lo que va a ser es lo siguiente.
+ Primero, identificar todas las reglas que pueden ser aplicadas.
+ Segundo, calcular el valor de partenense correspondiente al consecuente de cada reglas mediante la aplicación de los operadores de lógica difuso.
+ Es el que en el módulo mandani, cuando yo quiero calcular el valor del consecuente,
+ lo que hace es directamente propagar el valor del antecedente, como nos decía, antes el operador de implicación de la lógica difusa.
+ Pero eso le agrega un tercer paso, porque, porque a partir de los resultados de todas las reglas, los tratas de combinar.
+ Entonces, en el tercer paso, lo que hace es combinar los valores obtenidos en cada reglas,
+ para obtener el valor final usando el criterio, que puede ser.
+ De centro de masa, donde se trata de encontrar un tomedio de los valores de partenencias que tienen cada uno de los consecuentes,
+ para eso utiliza esta fórmula, o usar el criterio del promedio del máximo.
+ O sea, busca cuál es el valor más grande que tiene y calcula el promedio de esos valores altos.
+ Bien, entonces el modelo mandani funciona de esta manera. En cambio, en el modelo tracajizujeno, vamos a ver que tiene una diferencia en el segundo y tercer paso.
+ Bueno, el primero entonces es igual, lo que hace es identificar todas las reglas que pueden ser aplicadas.
+ Luego, calcula el valor de partenencia correspondiente al consecuente de cada reglas,
+ aplicando una función línial de este estilo, o sea, en vez de propagar directamente el valor del antecedente hacia el consecuente, uso una función de este estilo.
+ Lo que hace esta función es decir que el valor que va a tener el consecuente, se va a calcular en base a los valores de cada una de las funciones que aparece en el antecedente,
+ pero ponderadas por una constante que va a ser predefinida. Y, a su vez, se le puede sumar una constante para también generarle más valor.
+ Y en el tercer paso lo que hacemos es combinarmos cada una de los valores obtenidos en cada reglas, usando una media ponderada. Entonces,
+ cada regla va a tener un peso, un importancia, que va a afectar el resultado general que devuelve nuestro sistema con este modelo.
+ Entonces, se puede ver que la diferencia principal entre el modelo y el modelo, tacas y sugeno, es que el segundo le puede dar distintos pesos de importancia o de gravedad o criticidad a distintas valores de verdad y a distintas reglas.
+ Bueno, una vez entonces conocemos cómo funciona cada una de estas arquitecturas, vamos a ver algunos ejemplos.
+ Primero ejemplo, es un sistema experto basado en lógica difuso para el diagnóstico de enfermedades cardiacas.
+ Lo que va a ser entonces este sistema difuso es determinar de acuerdo a un conjunto de factores que ingresa al médico del sistema,
+ si la persona que el paciente que se está tratando está saludable, medio saludable, con una salud moderada, severa o muy severa.
+ Entonces, le hace un diagnóstico, no ha sido no asignando en un valor de esta bien o está mal, sino ha asignandole un grado de valores posibles.
+ Eso lo logra a través de la lógica difuso.
+ El segundo ejemplo es el ejemplo de la barropa con fusilose. En este en la barropa se dice que tiene implementada lógica difusa para determinar en base a ciertos parámetros como son.
+ La temperatura del programa ladureza y calidad del agua y que tan lleno está en la barropa, le coleges son las condiciones óptimas para el lavado.
+ Obviamente que no cambian en si el programa, pero si pueden determinar cuánta detergente se tiene que utilizar para determinar cuánta espuma se tiene que hacer.
+ Cuántos minutos tiene que trabajar cada uno de los pasos del programa, cuánta agua tiene que agregar, cuánta agua tiene que liberar en un momento.
+ Entonces, utilizando la lógica difusa, toma decisiones que un la barropa normal no podría ser.
+ De toda forma, es bastante estático en cuanto a las decisiones que pueda ser y su clasificación como sistema inteligente hay que tomarlos con pinzas.
+ El tercer ejemplo es un sistema de control para automóveles y motos que se ocupa de a través de la lógica difusa de definir cómo van a trabajar los frenos, la tracción y la ira condicionado y el consumo de combustible.
+ Esa manera trata de mejorar la seguridad de los pasajeros y aumentar la eficiencia del vehículo.
+ Por ejemplo, si alguien está acelerando, hacer que la ira condicionado trabaje menos.
+ Así bueno, vamos a sentir más calor, pero el auto va a avanzar a la velocidad que es requerida.
+ No le estamos sacando potencia al motor por el funcionamiento de la ira condicionada.
+ Si este sistema de control no existiera, esa decisión la tendría que hacer el conductor o sea.
+ Apagar el aire a condicionado, por ejemplo, rebasará otro vehículo.
+ Bueno, y el último ejemplo es un sistema de estimación de costos de proyectos software, que hay lo que hace es aplicar el método a cocómodos,
+ que es muy conocido para hacer estimaciones de esfuerzo, costo y duración de un proyecto.
+ Pero, ahora lo que se le agrega es la aplicación de la lógica difusa para manejar y evaluar cada una de las características del proyecto,
+ de manera que el esfuerzo que se está generando es más preciso.
+ Bueno, con esto entonces terminamos la descripción de los sistemas difusos y ejemplos de aplicaciones.
+ En el siguiente vídeo vamos a dar un ejemplo nuestro donde vamos a construir un sistema difuso para tratar de determinar cuál es la emoción de una persona.
+ Nos vemos en el próximo vídeo.

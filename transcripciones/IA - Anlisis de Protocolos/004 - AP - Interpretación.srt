@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:05,880
+ Hola, como están, mi nombre es Cynthia de Jera y en este último vídeo lo que vamos
+
+2
+00:00:05,880 --> 00:00:10,540
+ a ver en la interpretación dentro de una análisis de protocolos.
+
+3
+00:00:10,540 --> 00:00:15,220
+ Se acueran que en los vídeos anteriores habíamos visto por un lado la grabación del
+
+4
+00:00:15,220 --> 00:00:23,960
+ protocolo, su transcripción y la codificación, en donde analizamos toda esa transcripción.
+
+5
+00:00:23,960 --> 00:00:27,640
+ Lo que entonces vamos a ver ahora es la interpretación.
+
+6
+00:00:27,640 --> 00:00:32,900
+ ¿Qué hago en esta etapa de interpretación y identificar las reglas de razonamiento
+
+7
+00:00:32,900 --> 00:00:34,580
+ del espereto?
+
+8
+00:00:34,580 --> 00:00:42,060
+ Para eso les vamos a identificar de una manera especial, que es a partir de un segundo código.
+
+9
+00:00:42,060 --> 00:00:49,640
+ Lo que vamos a decir es sí, se dan estas condiciones, entonces se da una acción en particular,
+
+10
+00:00:49,640 --> 00:00:54,980
+ que tiene que ver con la generación de un estado.
+
+11
+00:00:54,980 --> 00:01:01,220
+ Por otro lado, las condiciones siempre van a hacer de la forma concepto, punto carácterística
+
+12
+00:01:01,220 --> 00:01:04,840
+ igual a valor, esto lo hacemos por una convención.
+
+13
+00:01:04,840 --> 00:01:11,500
+ De esta manera, nosotros lo que tenemos que identificar son estas reglas de razonamiento.
+
+14
+00:01:11,500 --> 00:01:17,820
+ Si nosotros analizamos el protocolo, vemos que hay dos estados a los cuales del esperto
+
+15
+00:01:17,820 --> 00:01:26,360
+ llegó. De esta manera, lo que vamos a tener son dos reglas de razonamiento del esperto.
+
+16
+00:01:26,360 --> 00:01:29,120
+ ¿Cómo vamos a obtener las condiciones?
+
+17
+00:01:29,120 --> 00:01:35,340
+ Porque nosotros ya lo obtuvimos cuando realizamos la identificación de la búsqueda.
+
+18
+00:01:35,340 --> 00:01:39,700
+ De esa manera, nosotros obtenemos dos reglas.
+
+19
+00:01:39,700 --> 00:01:46,620
+ Una regla para lo cual el esperto, a partir de todos los síntomas del paciente, llega
+
+20
+00:01:46,620 --> 00:01:54,000
+ a que es un coronavirus y otra regla, por la cual llega, aunque es una gripe clasea.
+
+21
+00:01:54,000 --> 00:01:57,800
+ A veces uno se puede preguntar, bueno, ¿por qué?
+
+22
+00:01:57,800 --> 00:02:04,640
+ En la regla de la gripe clasea, no tengo también todos aquellos síntomas que el esperto
+
+23
+00:02:04,640 --> 00:02:06,900
+ fue identificado en el paciente.
+
+24
+00:02:06,900 --> 00:02:13,320
+ Esto es porque dentro de una análisis de protocolo, las reglas siempre se las considera de forma
+
+25
+00:02:13,320 --> 00:02:19,880
+ atómica. Es decir, que una regla no se relaciones con otra regla.
+
+26
+00:02:19,880 --> 00:02:27,880
+ Ya posterior a la análisis de protocolos, cuando yo ya tengo, si, gran cantidad de conocimiento,
+
+27
+00:02:27,880 --> 00:02:33,760
+ es ahí donde sí empieza a relacionar todos los conocimientos que obtuven.
+
+28
+00:02:33,760 --> 00:02:39,480
+ Es por eso que no hay subreglas alidad dentro de la análisis de protocolo, sino que
+
+29
+00:02:39,480 --> 00:02:49,740
+ se las considera de esta forma atómica. Una vez que yo tengo las reglas del razonamiento
+
+30
+00:02:49,740 --> 00:02:57,040
+ del experto, finalista la técnica de análisis de protocolos. Como yo les dije, esto es
+
+31
+00:02:57,040 --> 00:03:03,840
+ un primer protocolo. Luego vamos a tener que hacer muchos más protocolos con el experto para
+
+32
+00:03:03,840 --> 00:03:11,640
+ hacer tener todo el razonamiento completo. Así que bueno, con este último vídeo, terminamos
+
+33
+00:03:11,640 --> 00:03:15,080
+ la técnica de análisis de protocolos. Muchísimas gracias.
+

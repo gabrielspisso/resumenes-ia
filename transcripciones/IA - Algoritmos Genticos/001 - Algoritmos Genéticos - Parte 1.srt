@@ -1,0 +1,1272 @@
+1
+00:00:00,000 --> 00:00:07,000
+ Y no me disparía Florencia Pollo y hoy vamos a hablar de una propuesta de una tecnología
+
+2
+00:00:07,000 --> 00:00:12,000
+ particular de la inteligencia artificial que son los algoritmos genéticos.
+
+3
+00:00:12,000 --> 00:00:19,000
+ Bien, estuvimos hablando de la inteligencia artificial y acá me muevo yo.
+
+4
+00:00:19,000 --> 00:00:24,000
+ Habíamos visto que la inteligencia artificial no me daba conocimiento y herramientas
+
+5
+00:00:24,000 --> 00:00:27,000
+ para poder construir sistemas inteligentes.
+
+6
+00:00:27,000 --> 00:00:32,000
+ Dentro de los sistemas inteligentes habíamos hablado específicamente de los sistemas basados
+
+7
+00:00:32,000 --> 00:00:37,000
+ en conocimiento aquellos sistemas que tenían una base de conocimientos explícita.
+
+8
+00:00:37,000 --> 00:00:43,000
+ Una base de conocimiento en donde yo podían encontrar hechos y reglas donde alojar el conocimiento.
+
+9
+00:00:43,000 --> 00:00:48,000
+ A partir de ahí también habíamos hablado de los sistemas inteligentes aquellos sistemas
+
+10
+00:00:48,000 --> 00:00:54,000
+ que mulaban parte del comportamiento de un experto en el cual el dominio en este experto
+
+11
+00:00:54,000 --> 00:00:59,000
+ en el dominio y dentro de estos habíamos hablado específicamente de los sistemas expertos
+
+12
+00:00:59,000 --> 00:01:04,000
+ tradicionales aquellos sistemas expertos que tenían una base de conocimientos explícitas
+
+13
+00:01:04,000 --> 00:01:12,000
+ tienen una memoria de trabajo, tienen una base de datos, un explicador de consumo
+
+14
+00:01:12,000 --> 00:01:17,000
+ en trazador de consultas, bien y otro conjunto de componentes que también aplica
+
+15
+00:01:17,000 --> 00:01:20,000
+ a la idea de un sistema basado en conocimiento.
+
+16
+00:01:20,000 --> 00:01:25,000
+ Sin embargo, también existen otras tecnologías que proveen la inteligencia artificial y que permiten
+
+17
+00:01:25,000 --> 00:01:30,000
+ la construcción de sistemas expertos dentro de las cuales bueno, les pusimos rares neuronales
+
+18
+00:01:30,000 --> 00:01:35,000
+ si no vino del video si lo van a ver también lo tienen y en particular vamos a hablar
+
+19
+00:01:35,000 --> 00:01:37,000
+ de los algoritmos genicos.
+
+20
+00:01:37,000 --> 00:01:40,000
+ Vamos a cuando hablamos de los algoritmos genicos.
+
+21
+00:01:40,000 --> 00:01:46,000
+ No es algoritmos genital, no quiero que me vean tanto.
+
+22
+00:01:46,000 --> 00:01:51,000
+ ¿Qué son los algoritmos genéticos?
+
+23
+00:01:51,000 --> 00:01:56,000
+ Los algoritmos genéticos son algoritmos matemáticos, esperen que ahora sí, ahora mismo.
+
+24
+00:01:56,000 --> 00:02:00,000
+ Algoritmos matemáticos de optimización son de propósito general
+
+25
+00:02:00,000 --> 00:02:04,000
+ quiere decir que se pueden aplicar para cualquier tipo de problemas.
+
+26
+00:02:04,000 --> 00:02:07,000
+ Están basados en mecanismos naturales de selección y de genética ahí.
+
+27
+00:02:07,000 --> 00:02:15,000
+ Vamos a ver algunos pequeños conceptos de la teoría de la evolución y de las premisas
+
+28
+00:02:15,000 --> 00:02:20,000
+ y los conceptos que maneja para después ver su paralelo en los algoritmos genéticos
+
+29
+00:02:20,000 --> 00:02:25,000
+ y proporcionan fíjense excelentes soluciones, uno puede garantizar que las
+
+30
+00:02:25,000 --> 00:02:29,000
+ las soluciones que obtienen son excelentes no necesariamente son las mejores
+
+31
+00:02:29,000 --> 00:02:34,000
+ y sirven para problemas complejos con un gran número de parámetros porque
+
+32
+00:02:34,000 --> 00:02:37,000
+ ¿por qué para problemas donde uno puede manejar la cantidad de parámetros?
+
+33
+00:02:37,000 --> 00:02:41,000
+ Ahí existen un montón de mecanismos, de métodos matemáticos
+
+34
+00:02:41,000 --> 00:02:46,000
+ que ustedes han visto y que verdaderamente ofrecen y garantizan las mejores
+
+35
+00:02:46,000 --> 00:02:51,000
+ soluciones sin embargo en problemas donde los otros métodos nos sirven,
+
+36
+00:02:51,000 --> 00:02:55,000
+ los algoritmos genéticos son una muy buena puesta.
+
+37
+00:02:55,000 --> 00:03:02,000
+ El algoritmo genético en realidad no es complejo en cuanto a su arquitectura
+
+38
+00:03:02,000 --> 00:03:08,000
+ ustedes van a ver que para nosotros que estamos acostumbrados a manejar estructuras
+
+39
+00:03:08,000 --> 00:03:12,000
+ algoriticas tienen realidad un ciclo, distintas funciones y nada más,
+
+40
+00:03:12,000 --> 00:03:14,000
+ los operadores que los vamos a ir hablando,
+
+41
+00:03:14,000 --> 00:03:18,000
+ pero lo que tiene de maravilloso es que con toda esa información
+
+42
+00:03:18,000 --> 00:03:21,000
+ moviendo para metros haciendo corridas,
+
+43
+00:03:21,000 --> 00:03:24,000
+ puedo analizar estos problemas y ahí puedo obtener
+
+44
+00:03:24,000 --> 00:03:27,000
+ unas comparativas de soluciones muy buenas,
+
+45
+00:03:27,000 --> 00:03:31,000
+ depende de cuán rica ricos, sea la análisis que hagan ustedes
+
+46
+00:03:31,000 --> 00:03:34,000
+ de los resultados de las corridas de los algoritmos genéticos
+
+47
+00:03:34,000 --> 00:03:38,000
+ cuán beneficiosos puedan puedan ser. Y muchas veces también se utilizan
+
+48
+00:03:38,000 --> 00:03:42,000
+ combinados con otras tecnologías.
+
+49
+00:03:42,000 --> 00:03:46,000
+ Antes de hablar del algoritmo genético en particular,
+
+50
+00:03:46,000 --> 00:03:49,000
+ vamos a hablar un poquito de la teoría de la evolución
+
+51
+00:03:49,000 --> 00:03:55,000
+ y de todos los conceptos que esta teoría nos brinda
+
+52
+00:03:55,000 --> 00:03:59,000
+ para poder nosotros a partir de ahí desarrollar los algoritmos genéticos.
+
+53
+00:03:59,000 --> 00:04:03,000
+ Lejos está en pensar en explicarles es solamente una idea
+
+54
+00:04:03,000 --> 00:04:07,000
+ para que vean de dónde sale y no traerse los de traidos
+
+55
+00:04:07,000 --> 00:04:09,000
+ de los pelos y contárselos directamente.
+
+56
+00:04:09,000 --> 00:04:11,000
+ Bien, hay una teoría que es la teoría de la evolución
+
+57
+00:04:11,000 --> 00:04:15,000
+ por selección natural, estas dos investigadores
+
+58
+00:04:15,000 --> 00:04:17,000
+ comparten sus descubrimientos,
+
+59
+00:04:17,000 --> 00:04:20,000
+ los presentos 16 años en el año 1850,
+
+60
+00:04:20,000 --> 00:04:22,000
+ de hecho, juró que no había nacido otros papías,
+
+61
+00:04:22,000 --> 00:04:26,000
+ y un año más tarde darbo en publica una obra
+
+62
+00:04:26,000 --> 00:04:29,000
+ que la tiene acá, que se lo dijeron de las especies
+
+63
+00:04:29,000 --> 00:04:31,000
+ por selección natural,
+
+64
+00:04:31,000 --> 00:04:37,000
+ este material lo escribe a través de un montón de excursiones
+
+65
+00:04:37,000 --> 00:04:41,000
+ que te hace él y domanotas de cómo las distintas especies
+
+66
+00:04:41,000 --> 00:04:44,000
+ según el hábitat en el que se encontraba en tieren distintas características.
+
+67
+00:04:44,000 --> 00:04:50,000
+ Y esto empieza a hablar de cómo se van adaptando a partir de la hábitat
+
+68
+00:04:50,000 --> 00:04:54,000
+ para resolver su capacidad de superpocera poder sobrevivir.
+
+69
+00:04:54,000 --> 00:04:57,000
+ Está bien, a partir de ahí,
+
+70
+00:04:57,000 --> 00:05:05,000
+ la teoría de Darwin nos prenda un conjunto de postulados.
+
+71
+00:05:05,000 --> 00:05:10,000
+ En primer postulado,
+
+72
+00:05:10,000 --> 00:05:12,000
+ a la que las formas de vida no son estáticas
+
+73
+00:05:12,000 --> 00:05:13,000
+ sino que evolucionan.
+
+74
+00:05:13,000 --> 00:05:18,000
+ Quiere decir que un servivo, un servivo
+
+75
+00:05:18,000 --> 00:05:21,000
+ con el paso de los años y la evolución de la especie,
+
+76
+00:05:21,000 --> 00:05:23,000
+ va a cambiar en su fusión a mí, en su funcionalidad,
+
+77
+00:05:23,000 --> 00:05:26,000
+ este cambio gradual es lento y es como vivo.
+
+78
+00:05:26,000 --> 00:05:30,000
+ Uno no va a haber un cambio de una generación a otra,
+
+79
+00:05:30,000 --> 00:05:32,000
+ un cambio abrupto,
+
+80
+00:05:32,000 --> 00:05:37,000
+ sino que estos cambios se van dando muy lentamente con el paso y el paso de las generaciones.
+
+81
+00:05:37,000 --> 00:05:38,000
+ Esto habla,
+
+82
+00:05:38,000 --> 00:05:41,000
+ entonces de pensar en un ciclo de vida,
+
+83
+00:05:41,000 --> 00:05:43,000
+ te vida natural,
+
+84
+00:05:43,000 --> 00:05:44,000
+ donde un servivo nace,
+
+85
+00:05:44,000 --> 00:05:46,000
+ se reproduce de esa rolla,
+
+86
+00:05:46,000 --> 00:05:48,000
+ se reproduce y muere,
+
+87
+00:05:48,000 --> 00:05:50,000
+ y a partir de ahí su descendencia,
+
+88
+00:05:50,000 --> 00:05:51,000
+ se va haciendo lo mismo,
+
+89
+00:05:51,000 --> 00:05:54,000
+ esto hace que se vaya pasando las distintas generaciones.
+
+90
+00:05:54,000 --> 00:05:55,000
+ Otro lado,
+
+91
+00:05:55,000 --> 00:05:56,000
+ esto,
+
+92
+00:05:56,000 --> 00:05:59,000
+ esto de la reproducción de los individuos y la misma evolución,
+
+93
+00:05:59,000 --> 00:06:01,000
+ habla de cierto,
+
+94
+00:06:01,000 --> 00:06:02,000
+ en parentamiento,
+
+95
+00:06:02,000 --> 00:06:05,000
+ cierta relación a partir de la decendencia,
+
+96
+00:06:05,000 --> 00:06:07,000
+ la decendencia de estos individuos,
+
+97
+00:06:07,000 --> 00:06:09,000
+ y quiere decir que todos los individuos
+
+98
+00:06:09,000 --> 00:06:11,000
+ nos encontramos en parentados en algún punto,
+
+99
+00:06:11,000 --> 00:06:13,000
+ tenemos alguna antifasado como.
+
+100
+00:06:13,000 --> 00:06:15,000
+ Aquí en ejemplo,
+
+101
+00:06:15,000 --> 00:06:17,000
+ muy interesante,
+
+102
+00:06:17,000 --> 00:06:20,000
+ siempre quedó y casi se los jueves,
+
+103
+00:06:20,000 --> 00:06:22,000
+ y gente está mirante que estamos hablando,
+
+104
+00:06:22,000 --> 00:06:26,000
+ este señor fue un protagonista,
+
+105
+00:06:26,000 --> 00:06:27,000
+ muy importante,
+
+106
+00:06:27,000 --> 00:06:29,000
+ y ha dejado mucha decendencia,
+
+107
+00:06:29,000 --> 00:06:30,000
+ tal es así,
+
+108
+00:06:30,000 --> 00:06:33,000
+ que si ustedes se fijan que en gran parte de hace
+
+109
+00:06:33,000 --> 00:06:34,000
+ el este de Europa,
+
+110
+00:06:34,000 --> 00:06:36,000
+ uno de cada dos hombres,
+
+111
+00:06:36,000 --> 00:06:39,000
+ el 8% comparten un marcador en su adénita.
+
+112
+00:06:39,000 --> 00:06:42,000
+ Fíjense uno de cada 200 hombres en todo el mundo,
+
+113
+00:06:42,000 --> 00:06:44,000
+ aproximadamente 16 millones de personas.
+
+114
+00:06:44,000 --> 00:06:46,000
+ Esto del marcador de la adénita,
+
+115
+00:06:46,000 --> 00:06:47,000
+ en esta persona,
+
+116
+00:06:47,000 --> 00:06:50,000
+ el adénita viene a ser como matemáticamente
+
+117
+00:06:50,000 --> 00:06:52,000
+ hablando como un identificador único,
+
+118
+00:06:52,000 --> 00:06:54,000
+ que nombre a todas nuestras carácterísticas.
+
+119
+00:06:54,000 --> 00:06:55,000
+ Y bueno,
+
+120
+00:06:55,000 --> 00:06:57,000
+ estas carácterísticas tienen que ver también
+
+121
+00:06:57,000 --> 00:06:58,000
+ con lo que nosotros heredamos,
+
+122
+00:06:58,000 --> 00:06:59,000
+ y bueno,
+
+123
+00:06:59,000 --> 00:07:00,000
+ pareciera que dosillistan,
+
+124
+00:07:00,000 --> 00:07:03,000
+ a medida que han dudo conquistando el mundo,
+
+125
+00:07:03,000 --> 00:07:05,000
+ fue dejando de ascendencia,
+
+126
+00:07:05,000 --> 00:07:06,000
+ y esto hizo,
+
+127
+00:07:06,000 --> 00:07:07,000
+ acabado delante pasado como un,
+
+128
+00:07:07,000 --> 00:07:09,000
+ realmente,
+
+129
+00:07:09,000 --> 00:07:15,000
+ a muchas partes de estas cadenas de adénita,
+
+130
+00:07:15,000 --> 00:07:18,000
+ de que vienen desde nochesistas.
+
+131
+00:07:18,000 --> 00:07:19,000
+ Bien,
+
+132
+00:07:19,000 --> 00:07:21,000
+ a partir de ahí surge este concepto nuevo,
+
+133
+00:07:21,000 --> 00:07:23,000
+ que es la selección natural,
+
+134
+00:07:23,000 --> 00:07:24,000
+ la selección natural,
+
+135
+00:07:24,000 --> 00:07:26,000
+ habla de esta elección de dos individuos
+
+136
+00:07:26,000 --> 00:07:28,000
+ en pos de ir generando decendencias,
+
+137
+00:07:28,000 --> 00:07:29,000
+ y yo pudiera,
+
+138
+00:07:29,000 --> 00:07:32,000
+ uno pensar a manipular genéticamente,
+
+139
+00:07:32,000 --> 00:07:34,000
+ quién se tiene que reunir con quién,
+
+140
+00:07:34,000 --> 00:07:35,000
+ para que está decende,
+
+141
+00:07:35,000 --> 00:07:37,000
+ garantizar una decendencia,
+
+142
+00:07:37,000 --> 00:07:39,000
+ óptima, garantizaría,
+
+143
+00:07:39,000 --> 00:07:41,000
+ que la evolución de los seres vivos
+
+144
+00:07:41,000 --> 00:07:42,000
+ va a ser maravillosa.
+
+145
+00:07:42,000 --> 00:07:43,000
+ Eso no pasa,
+
+146
+00:07:43,000 --> 00:07:44,000
+ pero bueno,
+
+147
+00:07:44,000 --> 00:07:45,000
+ nos vamos a poner,
+
+148
+00:07:45,000 --> 00:07:47,000
+ y vamos a poner con la selección natural,
+
+149
+00:07:47,000 --> 00:07:49,000
+ dentro de la selección natural,
+
+150
+00:07:49,000 --> 00:07:51,000
+ hay varios conceptos a tener en cuenta,
+
+151
+00:07:51,000 --> 00:07:53,000
+ uno es la producción de la variabilidad,
+
+152
+00:07:53,000 --> 00:07:56,000
+ generación de modificaciones de escontanias en individuos,
+
+153
+00:07:56,000 --> 00:07:57,000
+ que quiere decir,
+
+154
+00:07:57,000 --> 00:08:00,000
+ que dos individuos que se reproducen,
+
+155
+00:08:00,000 --> 00:08:02,000
+ van a generar decendencia,
+
+156
+00:08:02,000 --> 00:08:03,000
+ y no necesariamente,
+
+157
+00:08:03,000 --> 00:08:05,000
+ en su próxima reproducción,
+
+158
+00:08:05,000 --> 00:08:07,000
+ la decendencia va a ser igual,
+
+159
+00:08:07,000 --> 00:08:09,000
+ ni a veces en la misma,
+
+160
+00:08:09,000 --> 00:08:10,000
+ fíjense que, por ejemplo,
+
+161
+00:08:10,000 --> 00:08:11,000
+ este el caso de los mesisos,
+
+162
+00:08:11,000 --> 00:08:13,000
+ este el caso de los gemelos,
+
+163
+00:08:13,000 --> 00:08:15,000
+ y los que comparten su cadena de adenio igual,
+
+164
+00:08:15,000 --> 00:08:16,000
+ pero después,
+
+165
+00:08:16,000 --> 00:08:19,000
+ hay matrimonios que tenemos varios hijos,
+
+166
+00:08:19,000 --> 00:08:22,000
+ y no salen totalmente distintos los hijos,
+
+167
+00:08:22,000 --> 00:08:23,000
+ y sin embargo,
+
+168
+00:08:23,000 --> 00:08:25,000
+ veremos los dos con la misma carga genética siempre,
+
+169
+00:08:25,000 --> 00:08:28,000
+ esto habla de la producción de la variabilidad,
+
+170
+00:08:28,000 --> 00:08:30,000
+ y hay otro concept muy interesante
+
+171
+00:08:30,000 --> 00:08:32,000
+ que nosotros sí lo vamos a utilizar
+
+172
+00:08:32,000 --> 00:08:34,000
+ que es la supervivencia del más fuerte,
+
+173
+00:08:34,000 --> 00:08:35,000
+ o el hápto,
+
+174
+00:08:35,000 --> 00:08:36,000
+ en la lucha por la vida,
+
+175
+00:08:36,000 --> 00:08:38,000
+ quienes tienen más probabilidades
+
+176
+00:08:38,000 --> 00:08:39,000
+ de sobrevivir,
+
+177
+00:08:39,000 --> 00:08:41,000
+ son quienes encuentren
+
+178
+00:08:41,000 --> 00:08:42,000
+ en mejores condiciones,
+
+179
+00:08:42,000 --> 00:08:44,000
+ nada,
+
+180
+00:08:44,000 --> 00:08:45,000
+ ejemplo,
+
+181
+00:08:45,000 --> 00:08:46,000
+ más interesante,
+
+182
+00:08:46,000 --> 00:08:48,000
+ que ahora con la situación que
+
+183
+00:08:48,000 --> 00:08:49,000
+ estamos viviendo,
+
+184
+00:08:49,000 --> 00:08:51,000
+ y aquí otros conceptos
+
+185
+00:08:51,000 --> 00:08:53,000
+ aparecen en la tieria de la evolución,
+
+186
+00:08:53,000 --> 00:08:54,000
+ por un lado,
+
+187
+00:08:54,000 --> 00:08:55,000
+ el ecosistema,
+
+188
+00:08:55,000 --> 00:08:56,000
+ el ecosistema habla
+
+189
+00:08:56,000 --> 00:08:57,000
+ de si ambiente,
+
+190
+00:08:57,000 --> 00:08:59,000
+ donde nosotros queremos sobrevivir,
+
+191
+00:08:59,000 --> 00:09:00,000
+ no es lo mismo,
+
+192
+00:09:00,000 --> 00:09:02,000
+ vivir en una pandemia,
+
+193
+00:09:02,000 --> 00:09:04,000
+ sobrevivir en una pandemia,
+
+194
+00:09:04,000 --> 00:09:06,000
+ los requisitos que tienen un organismo
+
+195
+00:09:06,000 --> 00:09:08,000
+ para sobrevivir un individuo,
+
+196
+00:09:08,000 --> 00:09:09,000
+ no ser humano,
+
+197
+00:09:09,000 --> 00:09:11,000
+ para sobrevivir en una pandemia,
+
+198
+00:09:11,000 --> 00:09:13,000
+ como la deora que a lo mejor el año pasado,
+
+199
+00:09:13,000 --> 00:09:14,000
+ en verano,
+
+200
+00:09:14,000 --> 00:09:16,000
+ está,
+
+201
+00:09:16,000 --> 00:09:19,000
+ la exigencia al organismo va a ser distinta,
+
+202
+00:09:19,000 --> 00:09:21,000
+ y obviamente quienes tienen más
+
+203
+00:09:21,000 --> 00:09:23,000
+ pero probabilidades de sobrevivir,
+
+204
+00:09:23,000 --> 00:09:26,000
+ son quienes encuentren en mejores condiciones,
+
+205
+00:09:26,000 --> 00:09:29,000
+ y esas personas que se encuentren en mejores condiciones,
+
+206
+00:09:29,000 --> 00:09:31,000
+ van a ser las que probabilisticamente también
+
+207
+00:09:31,000 --> 00:09:34,000
+ tengan más posibilidades de reproducirse,
+
+208
+00:09:34,000 --> 00:09:36,000
+ y a su generar de sentencia que tenga
+
+209
+00:09:36,000 --> 00:09:37,000
+ los mejores racos,
+
+210
+00:09:37,000 --> 00:09:39,000
+ quienes vayan quedados en los encuentren aptos,
+
+211
+00:09:39,000 --> 00:09:41,000
+ en las posibilidades van a ir
+
+212
+00:09:41,000 --> 00:09:44,000
+ bajando y tienen menos posibilidades
+
+213
+00:09:44,000 --> 00:09:45,000
+ sobrevivir también.
+
+214
+00:09:45,000 --> 00:09:46,000
+ Entonces,
+
+215
+00:09:46,000 --> 00:09:47,000
+ por un lado tenemos el ecosistema,
+
+216
+00:09:47,000 --> 00:09:48,000
+ el ambiente,
+
+217
+00:09:48,000 --> 00:09:50,000
+ este lugar donde uno se debe adaptar
+
+218
+00:09:50,000 --> 00:09:51,000
+ los requisitos,
+
+219
+00:09:51,000 --> 00:09:52,000
+ que aún no le va a exigir
+
+220
+00:09:52,000 --> 00:09:54,000
+ para poder adaptar si sobrevivir,
+
+221
+00:09:54,000 --> 00:09:56,000
+ por otro lado está la población
+
+222
+00:09:56,000 --> 00:09:57,000
+ el conjunto de individuos,
+
+223
+00:09:57,000 --> 00:09:59,000
+ donde todos que ríamos ranciar
+
+224
+00:09:59,000 --> 00:10:01,000
+ y poder sobrevivir y poder
+
+225
+00:10:01,000 --> 00:10:03,000
+ reproducirnos y generar de sentencia,
+
+226
+00:10:03,000 --> 00:10:05,000
+ y por otro lado está cada individuo,
+
+227
+00:10:05,000 --> 00:10:06,000
+ en particular,
+
+228
+00:10:06,000 --> 00:10:08,000
+ con sus características
+
+229
+00:10:08,000 --> 00:10:11,000
+ y con su capacidad de adaptación.
+
+230
+00:10:11,000 --> 00:10:13,000
+ Hay otros conceptos también
+
+231
+00:10:13,000 --> 00:10:16,000
+ de los cuales habla la taría de la evolución,
+
+232
+00:10:16,000 --> 00:10:18,000
+ es que es cuando se habla de la herencia.
+
+233
+00:10:18,000 --> 00:10:20,000
+ La herencia tiene que ver con
+
+234
+00:10:20,000 --> 00:10:24,000
+ qué le damos a nuestros hijos
+
+235
+00:10:24,000 --> 00:10:26,000
+ a quienes son el resultado
+
+236
+00:10:26,000 --> 00:10:28,000
+ de nuestra reproducción.
+
+237
+00:10:28,000 --> 00:10:29,000
+ Por un lado,
+
+238
+00:10:29,000 --> 00:10:31,000
+ dentro de lo que es la taría de la evolución,
+
+239
+00:10:31,000 --> 00:10:33,000
+ se redan rajo físicos,
+
+240
+00:10:33,000 --> 00:10:35,000
+ pero también rajo psicológicos
+
+241
+00:10:35,000 --> 00:10:38,000
+ y men delimorgad son los primeros que estudian
+
+242
+00:10:38,000 --> 00:10:41,000
+ la ciencia de la herencia que habla de genética.
+
+243
+00:10:41,000 --> 00:10:44,000
+ Los estudianillos a partir de unos insectos
+
+244
+00:10:44,000 --> 00:10:46,000
+ pero empiezan a descubrir
+
+245
+00:10:46,000 --> 00:10:48,000
+ cómo empieza a funcionar
+
+246
+00:10:48,000 --> 00:10:51,000
+ todo este tema de la herencia.
+
+247
+00:10:51,000 --> 00:10:53,000
+ Y lo que destaca es que
+
+248
+00:10:53,000 --> 00:10:56,000
+ los genes que hablan de estas caractes
+
+249
+00:10:56,000 --> 00:10:57,000
+ de esta porción de caractérísticas
+
+250
+00:10:57,000 --> 00:10:59,000
+ están dentro de los promosomas
+
+251
+00:10:59,000 --> 00:11:02,000
+ en donde se describen todas las caractérísticas
+
+252
+00:11:02,000 --> 00:11:05,000
+ que identifican uníbo,
+
+253
+00:11:05,000 --> 00:11:06,000
+ en mi caso florez,
+
+254
+00:11:06,000 --> 00:11:08,000
+ en el caso de sus octeles,
+
+255
+00:11:08,000 --> 00:11:10,000
+ sería como una cadena
+
+256
+00:11:10,000 --> 00:11:12,000
+ en donde están todas mis caractérísticas.
+
+257
+00:11:12,000 --> 00:11:13,000
+ En mi odirá
+
+258
+00:11:13,000 --> 00:11:15,000
+ mi dotanto, peso, tanto,
+
+259
+00:11:15,000 --> 00:11:17,000
+ color de ojos, tanto,
+
+260
+00:11:17,000 --> 00:11:19,000
+ todas mis caractérísticas,
+
+261
+00:11:19,000 --> 00:11:20,000
+ no sólo en las físicas,
+
+262
+00:11:20,000 --> 00:11:22,000
+ sino también las fisiológicas,
+
+263
+00:11:22,000 --> 00:11:24,000
+ se va a ir la psicológica,
+
+264
+00:11:24,000 --> 00:11:24,000
+ también se encuentran
+
+265
+00:11:24,000 --> 00:11:25,000
+ de filioso,
+
+266
+00:11:25,000 --> 00:11:27,000
+ y si uno quiere ubicar la floreencia,
+
+267
+00:11:27,000 --> 00:11:29,000
+ la ubica desde el mundo.
+
+268
+00:11:29,000 --> 00:11:31,000
+ Para presentar algunos conceptos,
+
+269
+00:11:31,000 --> 00:11:32,000
+ se iron cachito más,
+
+270
+00:11:32,000 --> 00:11:33,000
+ aunque sea largo un poquito
+
+271
+00:11:33,000 --> 00:11:34,000
+ el vídeo,
+
+272
+00:11:34,000 --> 00:11:35,000
+ ni que me gustan que no sean
+
+273
+00:11:35,000 --> 00:11:36,000
+ no más de 10,
+
+274
+00:11:36,000 --> 00:11:37,000
+ pasamos extendemos un poquito
+
+275
+00:11:37,000 --> 00:11:39,000
+ más para terminar con esto.
+
+276
+00:11:39,000 --> 00:11:40,000
+ Hablamos también
+
+277
+00:11:40,000 --> 00:11:41,000
+ del promosoma,
+
+278
+00:11:41,000 --> 00:11:42,000
+ como esta cadena,
+
+279
+00:11:42,000 --> 00:11:44,000
+ donde encontramos los genes,
+
+280
+00:11:44,000 --> 00:11:45,000
+ los genes se identifican
+
+281
+00:11:45,000 --> 00:11:46,000
+ una caractérística,
+
+282
+00:11:46,000 --> 00:11:48,000
+ esto viaja por nuestra DNA,
+
+283
+00:11:48,000 --> 00:11:49,000
+ el genotipo habla
+
+284
+00:11:49,000 --> 00:11:51,000
+ de la composición genética,
+
+285
+00:11:51,000 --> 00:11:54,000
+ y el fenotipo habla de cómo se manifiesta,
+
+286
+00:11:54,000 --> 00:11:55,000
+ físicamente,
+
+287
+00:11:55,000 --> 00:11:56,000
+ en un rasgo distintivo,
+
+288
+00:11:56,000 --> 00:11:59,000
+ se al valor que tienen mi,
+
+289
+00:11:59,000 --> 00:12:00,000
+ el genotipo hablaría
+
+290
+00:12:00,000 --> 00:12:01,000
+ de cómo de la plantilla,
+
+291
+00:12:01,000 --> 00:12:03,000
+ en matemáticamente hablando,
+
+292
+00:12:03,000 --> 00:12:05,000
+ y el fenotipo sería instanciarlo
+
+293
+00:12:05,000 --> 00:12:06,000
+ en cada una de las
+
+294
+00:12:06,000 --> 00:12:08,000
+ de las opciones
+
+295
+00:12:08,000 --> 00:12:09,000
+ que pueden tomar,
+
+296
+00:12:09,000 --> 00:12:10,000
+ funciona de cada y vivido
+
+297
+00:12:10,000 --> 00:12:12,000
+ que fue teniendo.
+
+298
+00:12:12,000 --> 00:12:13,000
+ ¿Qué para un gón podríamos
+
+299
+00:12:13,000 --> 00:12:14,000
+ hacer,
+
+300
+00:12:14,000 --> 00:12:15,000
+ entonces ahora,
+
+301
+00:12:15,000 --> 00:12:16,000
+ ahora lo vamos a dejar
+
+302
+00:12:16,000 --> 00:12:17,000
+ entre
+
+303
+00:12:17,000 --> 00:12:19,000
+ la teoría de la evolución
+
+304
+00:12:19,000 --> 00:12:21,000
+ que vimos y lo salgó ritmo generalmente.
+
+305
+00:12:21,000 --> 00:12:22,000
+ Así que bueno,
+
+306
+00:12:22,000 --> 00:12:23,000
+ yo lo voy a dejar acá,
+
+307
+00:12:23,000 --> 00:12:25,000
+ son dos minutos,
+
+308
+00:12:25,000 --> 00:12:27,000
+ fue solamente un panetito
+
+309
+00:12:27,000 --> 00:12:29,000
+ para que vean la teoría de evolución
+
+310
+00:12:29,000 --> 00:12:30,000
+ que principios tomamos
+
+311
+00:12:30,000 --> 00:12:31,000
+ para que vean después
+
+312
+00:12:31,000 --> 00:12:33,000
+ porque se usan algunos,
+
+313
+00:12:33,000 --> 00:12:34,000
+ algunas ideas
+
+314
+00:12:34,000 --> 00:12:36,000
+ para definir algunos operadores
+
+315
+00:12:36,000 --> 00:12:37,000
+ y bueno,
+
+316
+00:12:37,000 --> 00:12:38,000
+ ya son tres minutitos.
+
+317
+00:12:38,000 --> 00:12:39,000
+ Nos vemos en el próximo video.
+
+318
+00:12:39,000 --> 00:12:41,000
+ Muchas gracias y hasta luego.
+

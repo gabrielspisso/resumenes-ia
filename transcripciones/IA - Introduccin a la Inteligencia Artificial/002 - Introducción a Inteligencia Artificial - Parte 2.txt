@@ -1,0 +1,81 @@
+ Hola soy María Florensia Pollo y esta es la segunda parte de la presentación de la introducción
+ a la inteligencia artificial. Tal como les comentaba, estuvimos viendo que que había pasado
+ con la inteligencia artificial desde sus orígenes, lo estábamos vinculando con la informática,
+ habíamos comentado cuando se formanizaba por primera vez el concepto de inteligencia artificial,
+ y habíamos destacado estos tres items bastante interesantes en lo que respecto a la relación
+ entre las expectativas y el paso del tiempo en lo que se vinculaba la evolución de la
+ía. Al comienzo habíamos hablado de una gran expectativa, habíamos destacado algunas reflexiones,
+ principalmente una que hablaba de la temporalidad, tan pronto como funciona ya nadie lo llama
+ inteligencia artificial, esto aquí apunta, a que cuando habla del comportamiento inteligente habla
+ de la resolución de problemas que no son habituales, ni cómo se resuelven o resolverlo,
+ ¿qué quiero decir? Hay problemas que muy poca gente puede resolver, entonces se dice que estas
+ personas que resolver en ese tipo de problemas son inteligentes, pero también hay problemas que
+ se pueden resolver que lo pueden resolver muchas personas y sin embargo la persona que se
+ reconoce como inteligente lo resuelve de mi forma. Esto dije en claro que cuando uno reconoce
+ el comportamiento inteligente, lo reconoce a partir del entorno, yo puedo estar corriendo a los
+ gritos diciendo que inteligente que soy y en realidad eso no tener ninguna efecto, sin embargo,
+ si todos ustedes que son mi entorno declaran y me reconoce en a mí en un determinado dominio,
+ un comportamiento inteligente ahí ese comportamiento es el que puede ser analizado, quiere decir
+ que esto lo podríamos vincular con la teoría general de sistemas primer año, Libro Naranja,
+ cuando hablamos de cómo se conoce uno una entidad, y una entidad se reconoce a partir de sus características
+ que son sus atributos y también de su comportamiento, este comportamiento que es la interacción
+ delente con su entorno es lo que se reconoce como inteligente, ahí queda totalmente de manifesto
+ que cuando uno quiere estudiar este comportamiento inteligente debe adentrarse dentro de lo que sucede
+ en ese individuo que posteriormente tiene estas conductas, hay un dibujito que yo les hago en primer año,
+ que es una iceberg y yo les digo que el comportamiento del individuo es lo que se ve y lo que no se ve,
+ lo que se ve es la conducta que sería la punta de la iceberg, lo que no se ve son todos los procesos internos
+ que suceden en la mente de ese individuo para que resulten en una determinada conducta, tal es así que la
+ inteligencia artificial busca el momento de querer evolucionar como tecnología y como ciencia finalmente,
+ que trata de estudiar que suceden los procesos internos de estos individos que tienen este comportamiento
+ que es reconocido como comportamiento inteligente, vale aclarar también que uno es inteligente en un dominio
+ en particular, que un individuo pueda ser inteligente en determinado tipo de problemas no es concluyente
+ para decir que esas personas inteligentes en todo sentido y de eso tenemos miles de ejemplos, yo probablemente no
+ sea inteligente con nada, pero puedo tener cierta habilidad para resolución de otros pras y sin
+ hacen preguntas de giro, así o de historia no voy a poder responderles casi nada, esto es porque tengo más habilidad o
+ tengo más experiencia, más capacidad, también en un dominio en particular, sin embargo eso no me habilita a poder tener
+ un comportamiento inteligente en su manera más amplia y totalidad, otro concepto que aparece también muy interesante es el
+ de construir artefactos capaces de pensar enbulando el comportamiento de los seres humanos, a que es cuando se destaca esta
+ necesidad de estudiar el comportamiento de los seres humanos vamos a comenzar a hablar más adelante del protagonista
+ top dentro de este estudio y otra reflexión interesante que se tenía para esta época era decir que las máquinas
+ si van a poder pensar, para poder hacer que las máquinas pensaran lo primero que tienen que hacer es ver como se
+ va a automatizar la inteligencia, entonces bueno, y les muestro si es posible automatizar la inteligencia para eso hay que estudiar estos nuevos
+ protagonistas uno de estos nuevos protagonistas que aparecen son el cerebro, la mente y la conciencia, del cerebro que
+ podemos decir que el cerebro es un órgano que la mente no está enjeible, uno ubica el cerebro como el espacio físico donde
+ reside la mente y donde se suceden todos estos procesos internos en el individuo que después se manifiesta
+ en acta a través de una conducta, recordamos la conducta de lo que se podía ver, el comportamiento es la conducta y los procesos internos
+ el cerebro es parte del mundo visible y tangible del cuerpo, si quisieramos estudiar el comportamiento inteligente podemos agarrar el cerebro
+ partir o al medio y estudiar a ver qué pasa en relación a la conexión, esa que le pasa físicamente al cerebro, pero sabemos que el cerebro solo no está que está la mente que
+ al mente no la podemos partir al medio y también que está la conciencia y que la mente no se limita solamente al ámbito del cerebro que
+ también podríamos encontrar y destacar algunos otros elementos, bien les cor un cachito más para abajo así pueden pueden ver
+ Figense las reflexiones que hay en relación a la mente cuando hablábamos de mente hablamos de un conjunto de capacidades
+ cognitivas, capacidades que me permiten razonar a analizar, symbolizar, sintetizar, conceptualizar,
+ inducir, deducir, esa capacidad que me permite hacer algo con el cerebro y no podría pensar. Entonces leamos estas
+ estos conceptos, la mente es la manifestación del pensamiento, la percepción que es lo que yo puedo
+ que es lo que a mí me llega de mi entorno, la emoción, pero esos internos muy complejos de modelizar, la determinación, la memoria y la guadilla
+ de la imaginación, todo esto supuestamente reside en el cerebro, la mente se utiliza para referirse especialmente a los procesos del pensamiento de
+ la razón, los que me permiten razonar, inducir, deducir, etcétera, es parte del mundo invisible con lo cual volvemos a
+ vincular los informáticos en esto de modelar intangibles, cuando uno modela sistemas de información básicos, totalmente automatizables y
+ retetibles, está modelizando intangibles, redes de interconección, que yo las puedo percibir in modelar a través de lo que me dicen los usuarios sobre cómo interactúa, la información,
+ nosotros trabajamos, y esto lo hablamos mucho en los primeros años, trabajamos con metamodelo, modelos que simbolizan, lo que otros dicen que hacen, ¿no? en el pincuanto al intercambio de información,
+ la mente es parte del mundo invisible, vuelvo a la misma idea, y trascendente del pensamiento, el sentimiento de la actitud, la creencia y la imaginación, cuando hablamos de la mente podemos
+ pensar o podíamos, podemos en una primera instancia y identificar que la mente está formada por conocimiento y por experiencia,
+ se fue, cuando hablamos de conocimiento hablamos de una facultad que tiene el ser humano de comprender a través de la razón,
+ la naturaleza, las cualidades y las relaciones de las cosas, como estamos marijando este tipo de clases,
+ metomo el atrevimiento de la RPP, cuando yo estoy dando una clase presencial no lo hago, a colego por una cuestión de manejo de tiempo,
+ para darles tiempos, ustedes le aler y yo poderos seguirles hablando encima, cuando hablamos de conocimiento también lo podemos vincular,
+ no sé si recuerdan la pirámide de la información, de primer año, libro naranja, rato, noticia, conocimiento y sabiduría, se acordaban que el rato era la percepción del hecho,
+ la noticia será excedado, el conocimiento era todo lo que se podía hacer con grandes volumenes de noticia y ahí aparecía la razón,
+ la inducción, la deducción y todas las reglas que tenía ese individuo que interpretaba toda esa noticia, ese es el conocimiento,
+ volvemos a los orígenes. Finalmente también identificamos a la experiencia como un conocimiento adquirido por haber hecho algo un número significativo de veces.
+ Aquí vale la pena clara algo. Cuando no habla de experiencia no habla solamente de hacer algo por eso se habla de conocimiento adquirido,
+ es lo que a mí me queda como reflexión después de haber hecho algo muchas veces, es lo que logré aprender.
+ Cuando no habrás de aprender habla de modificar el comportamiento para futuras acciones,
+ yo aprendo en la medida que incorporo experiencia generando conocimiento nuevo y ese conocimiento nuevo impacten mi conducta.
+ Hay aparece la relación entre todos estos conceptos. Finalmente podríamos empezar a establecer estas relaciones,
+ el cerebro, como todo lo tangible, vinculado con el hardware, la mente, la conciencia con lo que no podemos tocar y eso sería el software.
+ Entonces supuestamente uno podría pensar es una primera instancia que si yo puedo modelar lo que pasa por el cerebro y la mente de un individuo,
+ podría obtener un sistema software inteligente. Y la gran duda que tenemos es si no hay nada más,
+ que solamente la mente está formada por conocimiento y experiencia. Bueno, siendo 11 minutos voy a cortar acá,
+ vamos a continuar en la versión 3 y vamos a ver si podemos dar respuesta a esta pregunta.
+ Desde ella muchísimas gracias, espero que esto esté saliendo lo mejor posible,
+ por favor cuídense mucho que dence en casa y nos vemos dentro de un poquito en el próximo video. Hasta luego.

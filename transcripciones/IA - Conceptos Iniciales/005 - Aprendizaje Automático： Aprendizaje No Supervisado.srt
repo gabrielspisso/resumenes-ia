@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:08,720
+ Ni Jama, mi nombre es Pablo Pital, aquí estamos con la segunda video de
+
+2
+00:00:08,720 --> 00:00:15,640
+ machine learning, estrategia de aprendizaje y el idioma Chino Han Yu, en este video
+
+3
+00:00:15,640 --> 00:00:22,160
+ hablaremos de la estrategia de aprendizaje, no supervisado y duremos cómo
+
+4
+00:00:22,160 --> 00:00:30,120
+ pueden ser capaces de aprendor, los distintos carácteres de los numeros Chinos, solos sin
+
+5
+00:00:30,120 --> 00:00:38,920
+ ningún ayuda, como habíamos visto anteriormente, machine learning, tiene dos tipos de aprendizaje
+
+6
+00:00:38,920 --> 00:00:44,200
+ y supervisado que habíamos en el video anterior donde hay un supervisor, un agente externo
+
+7
+00:00:44,200 --> 00:00:52,000
+ que aciste el aprendizaje del algoritmo, y hay otro tipo de aprendizaje que
+
+8
+00:00:52,000 --> 00:00:59,180
+ es el no supervisado donde no hay este agente, entonces el algoritmo puede aprender
+
+9
+00:00:59,180 --> 00:01:06,720
+ solo a partir de ejemplos, lo que hace en este caso el algoritmo es tratar de encontrar
+
+10
+00:01:06,720 --> 00:01:15,560
+ patrones para armar, de esa forma un conjunto de reglas y conocimientos que le permitan
+
+11
+00:01:15,560 --> 00:01:25,000
+ resolver el problema, en nuestro caso supongamos que nosotros queremos identificar,
+
+12
+00:01:25,000 --> 00:01:32,460
+ vamos a chicar esto un poquito para que se vea mejor, estamos y identificar cuáles son
+
+13
+00:01:32,460 --> 00:01:40,860
+ los carácteres que corresponden a estos numeros, lo cual muy bastante complicados si no
+
+14
+00:01:40,860 --> 00:01:47,380
+ conocemos al idioma China, pero que pasa, para aprender los distintos numeros les vamos a
+
+15
+00:01:47,380 --> 00:01:53,220
+ dar estos ejemplos, en estos ejemplos aparece en operaciones de suma, con el carácter de
+
+16
+00:01:53,220 --> 00:02:01,980
+ suma tradicional, el igual, igual que nosotros utilizamos y la multiplicación, entonces
+
+17
+00:02:01,980 --> 00:02:09,420
+ tenemos todas estas operaciones de suma y todas estas operaciones de multiplicación entre numeros
+
+18
+00:02:09,420 --> 00:02:17,100
+ que van del 0 al nuevo, entonces a partir de esto nosotros esperamos que logren y identificar
+
+19
+00:02:17,100 --> 00:02:24,900
+ qué caracter corresponde a cada uno, ahora les voy a dar unos segundos para que pueda
+
+20
+00:02:24,900 --> 00:02:31,740
+ mirar, si alguno quiere poder poner pausa, analizar y tratar de encontrar algún patron y
+
+21
+00:02:31,740 --> 00:02:36,420
+ después corrotorar a ver si lo que ustedes identificaron es correcto.
+
+22
+00:02:39,420 --> 00:02:48,580
+ Bueno, creo que han tenido tiempo suficiente para hacer su razonamiento, si quedamos a corrotorar
+
+23
+00:02:48,580 --> 00:02:55,380
+ si los resultados que obtuvieron son los validos los correctos y vamos a ver si no
+
+24
+00:02:55,380 --> 00:03:03,820
+ lo grado sacar de qué manera se podría haber hecho, bueno, vamos a empezar analizando
+
+25
+00:03:03,820 --> 00:03:12,220
+ esta columna y esta columna. ¿Qué pasa aquí? Fíjense que en el caso de la suma, yo siempre
+
+26
+00:03:12,220 --> 00:03:19,180
+ tengo en la izquierda el mismo carácter y luego tengo segundo carácter y como resulta
+
+27
+00:03:19,180 --> 00:03:25,620
+ obtengo el segundo carácter, o sea, en esta columna a lazar la suma entre este carácter
+
+28
+00:03:25,620 --> 00:03:32,100
+ y este carácter, obtengo siempre el mismo resultado. En esta otra columna con la multiplicación,
+
+29
+00:03:32,100 --> 00:03:38,860
+ fíjense que pasa lo contrario, si yo multiplico este carácter por cualquiera siempre me
+
+30
+00:03:38,860 --> 00:03:45,700
+ da el primero. Bueno, con que número del 0 al 9 sabemos que esta es este comportamiento,
+
+31
+00:03:45,700 --> 00:03:53,020
+ o sea, que con la suma no afecta nada al segundo valor y con la multiplicación lo cancelo.
+
+32
+00:03:53,020 --> 00:04:01,900
+ Sí, obviamente es el 0, entonces este carácter que es el link lo podemos remplazar por el número
+
+33
+00:04:01,900 --> 00:04:12,460
+ 0. Bien, con esto ya tenemos un número. Ahora nos quedan, los otros no, los otros no.
+
+34
+00:04:12,460 --> 00:04:20,860
+ ¿Qué podemos hacer ahora? Bueno, lo que podemos hacer es analizar la tarzar columna. Fíjense
+
+35
+00:04:20,860 --> 00:04:28,300
+ que con la multiplicación, si yo multiplico el carácter y por cada uno de los números, siempre
+
+36
+00:04:28,300 --> 00:04:37,540
+ me da el mismo resultado, o sea, me da el segundo carácter. Con que número del 1 al 9 nos
+
+37
+00:04:37,540 --> 00:04:44,780
+ otros sabemos que esta es este comportamiento. Sí, con el 1, que lo cual tiene sentido con el
+
+38
+00:04:44,780 --> 00:04:51,780
+ carácter y que está formado por un solo palito. Entonces cada vez que aparece el carácter
+
+39
+00:04:51,780 --> 00:04:59,980
+ y podemos poner 1 número. Bien, con esto ya tenemos 2 números. Ahora, ¿qué tenemos que
+
+40
+00:04:59,980 --> 00:05:06,180
+ hacer? Bueno, tenemos que empezar a sacar los otros carácteras. ¿Cómo podemos hacer eso
+
+41
+00:05:06,180 --> 00:05:12,700
+ mirando en la primer columna? Fíjense que en la segunda fila aparece 1 más 1 y aparece
+
+42
+00:05:12,700 --> 00:05:21,820
+ 1 2 palitos, que corresponden al carácter R. Ese R, entonces de resultado de sumar 1 más 1,
+
+43
+00:05:21,820 --> 00:05:31,180
+ o sea que R es igual a 2. Entonces cada vez que aparece R podemos poner 2. Lo mismo podemos
+
+44
+00:05:31,180 --> 00:05:38,580
+ hacer acá. Tenemos 1 más 2, es igual a 3 palitos, lo cual tiene sentido que corresponde
+
+45
+00:05:38,580 --> 00:05:43,980
+ con el número 3. Entonces cada vez que aparece Sán, lo vamos a ramblasar por el número
+
+46
+00:05:43,980 --> 00:05:52,980
+ 3. Y así hacemos con cada 1 de los números. De esta forma, podemos obtener la resultado
+
+47
+00:05:52,980 --> 00:06:04,260
+ que es 2, 9, 0, 8, 9, 97, 2, 14. Entonces, fíjense que sin ninguna ayuda externa han
+
+48
+00:06:04,260 --> 00:06:14,220
+ podido reconocer los distintos caráctelas de los números chinos. Muy bien. Bueno, espero que les haya
+
+49
+00:06:14,220 --> 00:06:22,260
+ gustado la presentación. Con esto, terminamos la el aprendizaje. No supervisado. Nos vemos luego.
+
+50
+00:06:22,260 --> 00:06:22,620
+ Saíche.
+

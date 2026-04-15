@@ -1,0 +1,476 @@
+1
+00:00:00,000 --> 00:00:02,800
+ y enmenidos soy en ingeniero exequiel vanga
+
+2
+00:00:02,800 --> 00:00:07,760
+ forma parte de la cátera de inteligencia artificial de la UTNFRVA
+
+3
+00:00:07,760 --> 00:00:10,080
+ hoy vamos a ver en dos partes
+
+4
+00:00:10,080 --> 00:00:12,480
+ algorithms géréticos de forma práctica
+
+5
+00:00:12,480 --> 00:00:17,120
+ en la primera parte les voy a contar un poco acerca de framework que implementamos
+
+6
+00:00:17,120 --> 00:00:23,280
+ y en la segunda vamos a ver un caso en concreto para que puedan justamente ver un ejemplo
+
+7
+00:00:23,280 --> 00:00:26,080
+ entonces en cuanto al framework
+
+8
+00:00:26,080 --> 00:00:32,160
+ lo que se hizo es organizar todo el tema del modelado y del algoritmo
+
+9
+00:00:32,160 --> 00:00:40,640
+ en objetos de la clase gmán ayer que significa algoritmo genéticos
+
+10
+00:00:40,640 --> 00:00:45,840
+ y se pensó de una forma imperativa y no sé cuál es el que significa
+
+11
+00:00:45,840 --> 00:00:48,800
+ que vos ha alto nivel tenés que una vez que quería este
+
+12
+00:00:48,800 --> 00:00:51,920
+ el gmán ayer que instancias de un objeto de esta clase
+
+13
+00:00:51,920 --> 00:00:54,960
+ empieza a decirle cómo crejes en sus características
+
+14
+00:00:54,960 --> 00:01:00,080
+ es decir, su algoritmo de selección, su algoritmo de cruza, de mutación,
+
+15
+00:01:00,080 --> 00:01:03,760
+ su bloque de finalización y bloque de finalización de ciclo
+
+16
+00:01:03,760 --> 00:01:06,400
+ bloque es un peso de código que se va a ejecutar
+
+17
+00:01:06,400 --> 00:01:09,280
+ cuando sucede a cierta cosa o no lo vamos a ver
+
+18
+00:01:09,280 --> 00:01:13,440
+ y luego vas a tener, por ejemplo, un vector con la población
+
+19
+00:01:13,440 --> 00:01:17,920
+ un número máximo de iteraciones es decir, yo como máximo quiero
+
+20
+00:01:17,920 --> 00:01:20,640
+ que hagas tantas generaciones
+
+21
+00:01:20,640 --> 00:01:25,040
+ y un aptitud triple que es básicamente un punto en el cual yo de fino
+
+22
+00:01:25,040 --> 00:01:31,760
+ así mi soluciones ya son lo suficientemente buenas como para frenar el algoritmo
+
+23
+00:01:31,760 --> 00:01:34,880
+ y luego un start como para comenzar y un stop
+
+24
+00:01:34,880 --> 00:01:38,480
+ eventualmente yo necesito frenarlo por alguna razón
+
+25
+00:01:38,480 --> 00:01:44,480
+ entonces para cada uno de los algoritmos ya sea el selección de cruza
+
+26
+00:01:44,480 --> 00:01:50,000
+ de mutación, fíjense lo que se hizo es definir como una propiedad
+
+27
+00:01:50,000 --> 00:01:54,560
+ del madrashar a cualquier objeto que cumpla con esta interfaz
+
+28
+00:01:54,560 --> 00:01:59,680
+ que significa esto, lo mismo pasa con la población, yo no reciero
+
+29
+00:01:59,680 --> 00:02:04,160
+ como cuando lo implementamos, no nos pusimos como requisito
+
+30
+00:02:04,160 --> 00:02:07,280
+ que los objetos sean de una clase en particular
+
+31
+00:02:07,280 --> 00:02:10,720
+ sino que entiendan ciertos tipos de mensajes
+
+32
+00:02:10,720 --> 00:02:13,600
+ esto es una ventaja cuando uno crea un framework
+
+33
+00:02:13,600 --> 00:02:17,200
+ porque no limitas a que el que lo va a utilizar
+
+34
+00:02:17,200 --> 00:02:21,600
+ tendrá que ir edar sus objetos o sus clases de
+
+35
+00:02:21,600 --> 00:02:25,600
+ clases particulares por ejemplo el algoritmo de selección
+
+36
+00:02:25,600 --> 00:02:29,840
+ mientras cumpla con los
+
+37
+00:02:29,840 --> 00:02:33,840
+ digamos las propiedades o con los metodos
+
+38
+00:02:33,840 --> 00:02:37,360
+ que nosotros definimos acá ya es más que suficiente en este caso
+
+39
+00:02:37,360 --> 00:02:39,600
+ nosotros decimos con un algoritmo de selección
+
+40
+00:02:39,600 --> 00:02:41,680
+ es considerado algoritmo de selección
+
+41
+00:02:41,680 --> 00:02:45,840
+ sientiende que va a tener una propiedad de bloque de aptitud
+
+42
+00:02:45,840 --> 00:02:49,280
+ es decir un pedazo de código que va a evaluar la aptitud de
+
+43
+00:02:49,280 --> 00:02:53,920
+ los objetos, de los sendidos, si se fijan acá un bloque de aptitud
+
+44
+00:02:53,920 --> 00:02:57,520
+ recibe cualquis, ahí disnefía cualquier tipo de objeto
+
+45
+00:02:57,520 --> 00:02:59,280
+ y va a dar un float
+
+46
+00:02:59,280 --> 00:03:03,200
+ con que entienda eso, se entienda que va a tener un pedazo de código
+
+47
+00:03:03,200 --> 00:03:06,720
+ que va a evaluar los objetos y va a dar un float a mi me basta
+
+48
+00:03:06,720 --> 00:03:10,240
+ y después un salto generacional va a tener un número
+
+49
+00:03:10,240 --> 00:03:13,680
+ que es un salto generacional que va a indicar la proporción de la población
+
+50
+00:03:13,680 --> 00:03:18,560
+ que yo quiero renovando generación por generación
+
+51
+00:03:18,560 --> 00:03:21,360
+ después que más algoritmos de cruza
+
+52
+00:03:21,360 --> 00:03:25,200
+ los algoritmos de cruza fíjense van a necesitar
+
+53
+00:03:25,200 --> 00:03:27,840
+ cruzar un individuo con otro individuo
+
+54
+00:03:27,840 --> 00:03:33,200
+ y que va a devoler un vector con los individuos que van a salir de esta cruza
+
+55
+00:03:33,200 --> 00:03:37,440
+ hay cruzas que van a devoler un solo hijo, hay cruzas que van a devoler dos
+
+56
+00:03:37,440 --> 00:03:39,840
+ adentro, lo van a hacer de distintas formas
+
+57
+00:03:39,840 --> 00:03:44,720
+ a mi a nivel del manager, a nivel de abstracción no me importa como lo van a hacer
+
+58
+00:03:44,720 --> 00:03:47,760
+ ahora vamos a ver casos de ejemplo estas cosas
+
+59
+00:03:47,760 --> 00:03:52,640
+ algoritmos de mutación, lo mismo hay un montón de formas de mutar
+
+60
+00:03:52,640 --> 00:03:57,840
+ pero en realidad lo único que se hace es
+
+61
+00:03:57,840 --> 00:04:02,800
+ se define que estos objetos van a entender un mensaje que se llama mutar
+
+62
+00:04:02,800 --> 00:04:06,560
+ y población y en base a su criterio, el algoritmo va a saber
+
+63
+00:04:06,560 --> 00:04:10,640
+ si déja igual esa población, si la muta cuando la tiene que mutar etcétera
+
+64
+00:04:10,640 --> 00:04:14,800
+ vamos a un caso en concreto de algoritmos de mutación
+
+65
+00:04:14,800 --> 00:04:18,880
+ algoritmos de mutación, el más básico es el de la probabilidad de inversa
+
+66
+00:04:18,880 --> 00:04:22,480
+ es decir, acá no se los definimos con qué probabilidad de inversa queremos que
+
+67
+00:04:22,480 --> 00:04:26,160
+ mute la población es decir, si yo capongo el número mil
+
+68
+00:04:26,160 --> 00:04:30,720
+ si yo me quiere un objeto de algoritmo de mutación básico
+
+69
+00:04:30,720 --> 00:04:36,720
+ y le seteo es decir, pongo que la propiedad invers probabilitice a mil
+
+70
+00:04:36,720 --> 00:04:40,160
+ significa que una de cada mil veces va a mutar, está bien
+
+71
+00:04:40,160 --> 00:04:43,040
+ lo que se saca, fíjense tener un número de azar
+
+72
+00:04:43,040 --> 00:04:46,640
+ y lo que se hace es si justo, si no me una dasar
+
+73
+00:04:46,640 --> 00:04:51,360
+ es menor o igual o coincide con ese número, se va a mutar
+
+74
+00:04:51,360 --> 00:04:54,000
+ está bien
+
+75
+00:04:54,000 --> 00:04:57,600
+ ahora hay otro tipo de mutaciones, hay una un tipo de mutación
+
+76
+00:04:57,600 --> 00:05:02,800
+ que es bastante útil para tratar de evitar la convergencia prenatura
+
+77
+00:05:02,800 --> 00:05:05,760
+ que es cuanto más parecía la población
+
+78
+00:05:05,760 --> 00:05:07,840
+ más chances tengo de mutar
+
+79
+00:05:07,840 --> 00:05:11,920
+ y qué significa que es parecida de la población, significa que
+
+80
+00:05:11,920 --> 00:05:15,440
+ sus funciones hasta el resultado de la función de aptitud de los individuos
+
+81
+00:05:15,440 --> 00:05:16,800
+ es similar
+
+82
+00:05:16,800 --> 00:05:20,400
+ entonces lo que hace es que debía y y y y y y y y y en
+
+83
+00:05:20,400 --> 00:05:23,680
+ mutación a algoritmos, o sea algoritmo de mutación basado en la
+
+84
+00:05:23,680 --> 00:05:30,000
+ eviación estándar lo que hace es evaluar la aptitud de todos los elementos
+
+85
+00:05:30,000 --> 00:05:34,080
+ es decir, toda la población está comprometido y sacan les vio
+
+86
+00:05:34,080 --> 00:05:35,360
+ estándar
+
+87
+00:05:35,360 --> 00:05:38,800
+ cuanto más chico es ese de video, es decir,
+
+88
+00:05:38,800 --> 00:05:44,800
+ cuanto más parecidos son la función de la ejecución de aptitud
+
+89
+00:05:44,800 --> 00:05:48,160
+ para estos elementos, más chances se tiene de mutar
+
+90
+00:05:48,160 --> 00:05:49,440
+ por ejemplo
+
+91
+00:05:49,440 --> 00:05:54,880
+ imagínense que en la función de aptitud de bueno el promedio
+
+92
+00:05:54,880 --> 00:05:59,680
+ hay notas que tienen los alumnos, entonces no es lo mismo
+
+93
+00:05:59,680 --> 00:06:03,760
+ que todos tengan 7, a que la mítate de demandes y la mítate en
+
+94
+00:06:03,760 --> 00:06:08,000
+ 4, el promedio es el mismo, el desvio estándar es muy distinto, la
+
+95
+00:06:08,000 --> 00:06:11,040
+ población no es tan similar, en cambio si tienen todos 7
+
+96
+00:06:11,040 --> 00:06:14,800
+ la población es bastante similar y ahí tiene más chances de mutar
+
+97
+00:06:14,800 --> 00:06:19,040
+ luego vamos a ver, hay un ejemplo concreto de algoritmo
+
+98
+00:06:19,040 --> 00:06:22,800
+ de selección, bueno acá el que hicimos fue una tabla, bastante simple
+
+99
+00:06:22,800 --> 00:06:26,800
+ pero se podrían, se podrían implementar cualquier tipo de algoritmo
+
+100
+00:06:26,800 --> 00:06:30,240
+ ya sea por ejemplo ruleta, acá lo que se hace es
+
+101
+00:06:30,240 --> 00:06:34,880
+ simplemente se ordenan en base ranking que tienen la la población
+
+102
+00:06:34,880 --> 00:06:38,640
+ y se corta en un momento determinado, está en ese devuelo en el formador de
+
+103
+00:06:38,640 --> 00:06:40,880
+ nada y truncados
+
+104
+00:06:40,880 --> 00:06:42,720
+ ¿qué más?
+
+105
+00:06:42,720 --> 00:06:47,440
+ después el siguiente es el algoritmo de cruza, bueno el algoritmo de cruza
+
+106
+00:06:47,440 --> 00:06:52,160
+ como dijimos tiene que entender un mensaje
+
+107
+00:06:52,160 --> 00:06:56,560
+ el cual va a recibir dos objetos y va a devuelgar una raíz en este caso
+
+108
+00:06:56,560 --> 00:07:00,800
+ hicimos una cruza binomial que fíjense va a cruzar las propiedades del
+
+109
+00:07:00,800 --> 00:07:05,600
+ individuo, con las propiedades del individuo V, de forma dinámica va a entender
+
+110
+00:07:05,600 --> 00:07:09,040
+ cuáles son las propiedades que tienen los objetos de estas clases
+
+111
+00:07:09,040 --> 00:07:17,040
+ imagines que tienen color de pelo, no se color de ojos, por ejemplo
+
+112
+00:07:17,040 --> 00:07:23,760
+ y no se capacidad física, bueno va a tomar la propiedad uno y
+
+113
+00:07:23,760 --> 00:07:27,600
+ de forma sarosa va a decir esta la voy a tomar de individuo A,
+
+114
+00:07:27,600 --> 00:07:32,720
+ la propiedad dos del individuo A, la propiedad 3 es del individuo V, por ejemplo
+
+115
+00:07:32,720 --> 00:07:37,520
+ y luego con el siguiente hijo va a ser lo contrario, es decir el segundo hijo va a ser un
+
+116
+00:07:37,520 --> 00:07:42,240
+ complemento del primero, pero hay un montón de formas de implementar una cruza
+
+117
+00:07:42,240 --> 00:07:47,280
+ bueno en este caso el higimos esta, y después bueno se van a setear
+
+118
+00:07:47,280 --> 00:07:51,440
+ las distintas propiedades, ahora en el siguiente vídeo vamos a ver el ejemplo
+
+119
+00:07:51,440 --> 00:07:57,200
+ práctico para que puedan verlo de una forma concreto
+

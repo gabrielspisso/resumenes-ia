@@ -1,0 +1,400 @@
+1
+00:00:00,000 --> 00:00:04,440
+ hola este es el séptimo video correspondiente a la presentación de razonamiento
+
+2
+00:00:04,440 --> 00:00:09,720
+ aproximado y lógica difusa, en este video vamos a ver un ejemplo de cómo se puede aplicar
+
+3
+00:00:09,720 --> 00:00:17,120
+ un sistema difuso con el modelo mandani, al momento de hacer este ejemplo estuvimos
+
+4
+00:00:17,120 --> 00:00:22,280
+ pensando a ver sobre el que se podría hacer un sistema difuso y nos pareció
+
+5
+00:00:22,280 --> 00:00:28,560
+ interesante hacer un sistema que maneje las emociones humanas, así como este
+
+6
+00:00:28,560 --> 00:00:34,120
+ robot que dice reacciona ante la emoción humana, tratar de hacer un sistema difuso
+
+7
+00:00:34,120 --> 00:00:40,560
+ que aunque sea trate de detectar con la emoción que tiene una persona, entonces hay
+
+8
+00:00:40,560 --> 00:00:45,320
+ lo primero que pensamos es tratar de hacer algo con los gestos de la cara,
+
+9
+00:00:45,320 --> 00:00:52,320
+ ahí como aparece en este dibujo de la serie "La Itumi" donde le acuerdo a la situación
+
+10
+00:00:52,320 --> 00:00:58,440
+ de la nariz, las sejas, los labios se puede terminar cuál es la emoción que está
+
+11
+00:00:58,440 --> 00:01:03,720
+ sintiendo una persona, creo que pasa, hay un sistema difuso, no sería lo más
+
+12
+00:01:03,720 --> 00:01:11,120
+ adecuado porque es muy difícil definir con valores difusos, cuánto se mide un labio, cuánto
+
+13
+00:01:11,120 --> 00:01:17,360
+ se cheque una nariz, una seja, como cuánto se sierra en los ojos, lo ideal para eso
+
+14
+00:01:17,360 --> 00:01:23,200
+ es utilizar directamente procesamiento de imágenes usando una rat neuronal profunda y
+
+15
+00:01:23,200 --> 00:01:30,360
+ de esa manera de detectar cuál es la emoción, bueno, eso ya está hecho además hay varias
+
+16
+00:01:30,360 --> 00:01:35,760
+ redes de este tila dando vuelta en internaf, de hecho hay una api de estar rat y uno
+
+17
+00:01:35,760 --> 00:01:40,280
+ puede usar en el sitio de Microsoft donde pone una foto y te dice cuál es la emoción
+
+18
+00:01:40,280 --> 00:01:46,080
+ que se detecta, entonces dijimos cuál, entonces con imágenes, no, pero buscando un poco más
+
+19
+00:01:46,080 --> 00:01:53,120
+ encontramos algo sobre kismet, kismet es un robot que también sabe detectar emociones
+
+20
+00:01:53,120 --> 00:01:57,960
+ pero que lo hace a partir del sonido, que quiere decir esto, entonces kismet lo que
+
+21
+00:01:57,960 --> 00:02:03,960
+ va a ser es analizar la voz de la persona que está hablando y evaluarlo utilizando estas
+
+22
+00:02:03,960 --> 00:02:09,840
+ reglas que consideran distintos parámetros, entonces de acuerdo a lo que está expresando
+
+23
+00:02:09,840 --> 00:02:17,440
+ con la voz puede determinar si una persona tiene tristeza, distinto, alegría, sorpresa, miedo,
+
+24
+00:02:17,440 --> 00:02:24,760
+ o ira, bien, para hacer eso kismet en sus reglas consideran un conjunto de parámetros
+
+25
+00:02:24,760 --> 00:02:30,920
+ bastante grandes, de estos parámetros nosotros elegimos tres para hacer un ejemplo más sencillo,
+
+26
+00:02:30,920 --> 00:02:36,660
+ entonces solamente vamos a considerar la intensidad de la voz, la velocidad con que se
+
+27
+00:02:36,660 --> 00:02:42,940
+ dedice en las distintas cosas y el tono promedio, entonces con estas reglas nosotros dijimos
+
+28
+00:02:42,940 --> 00:02:49,500
+ bueno, con esto se podría hacer alguna especie de sistema difuso para hacer encuestas
+
+29
+00:02:49,500 --> 00:02:56,020
+ por teléfono de forma que la persona pueda responder preguntas pero que también se
+
+30
+00:02:56,020 --> 00:03:03,420
+ value la emoción que está transmitiendo la persona para determinar el valor que va
+
+31
+00:03:03,420 --> 00:03:09,780
+ a tener cierto producto o servicio, entonces nuestro sistema difuso va a tener como objetivo
+
+32
+00:03:09,780 --> 00:03:15,500
+ identificar la emoción humana en base a la voz para hacer dicha valoración, los parámetros
+
+33
+00:03:15,500 --> 00:03:21,060
+ de entrada va a ser la intensidad de en decíbales, la velocidad con que se está hablando en palabras
+
+34
+00:03:21,060 --> 00:03:27,020
+ por minutos, el tono promedio en Hertz y como resultado se va a tener la valoración del
+
+35
+00:03:27,020 --> 00:03:34,260
+ sistema emocion identifica, bueno, como es un sistema difuso lo que vamos a tener que hacer es
+
+36
+00:03:34,260 --> 00:03:40,140
+ representar cada una de estos parámetros de entrada y parámetros de salida como funciones
+
+37
+00:03:40,140 --> 00:03:46,620
+ de partenencias difusas, entonces para intensidad vamos a tener tres funciones, una correspondiente
+
+38
+00:03:46,620 --> 00:03:53,260
+ abajo, otra normal y otra alta, fíjense que acá también aparece de manera simétrica como
+
+39
+00:03:53,260 --> 00:03:59,620
+ pasaba con la altura, pero en vez de ser todas rectas por tener porque antes para la altura
+
+40
+00:03:59,620 --> 00:04:05,220
+ teníamos un crecimiento alinial acá estamos utilizando curvas porque porque consideramos
+
+41
+00:04:05,220 --> 00:04:12,460
+ que la intensidad no es un crecimiento tan abrupt, en cuanto a la modificación de decíbales,
+
+42
+00:04:12,460 --> 00:04:19,420
+ lo mismo va a pasar para la velocidad, aquí también vamos a usar todas funciones curvas donde
+
+43
+00:04:19,420 --> 00:04:26,540
+ vamos a tener, la función muy lenta, lenta, normal, rápida y muy rápida, todas expresadas
+
+44
+00:04:26,540 --> 00:04:33,380
+ en palabras por minutos y por último vamos a tener el todo no promedio que también se va
+
+45
+00:04:33,380 --> 00:04:39,460
+ dividir en varias funciones que donde tenemos, muy bajo, bajo, normal, alto y muy alto,
+
+46
+00:04:39,460 --> 00:04:45,180
+ entonces con eso, estaríamos representando todos los parámetros de entrada, para representar
+
+47
+00:04:45,180 --> 00:04:52,580
+ el parámetro de salida tendremos las distintas emociones que son tristes de justo, alegría,
+
+48
+00:04:52,580 --> 00:04:58,780
+ sorpresa, miedo, e ira, fíjense que hay algunas emociones que tienen un solo apamiento en
+
+49
+00:04:58,780 --> 00:05:04,500
+ cuanto a los valores y hay otras que no, por ejemplo tristes de justo consideramos que se
+
+50
+00:05:04,500 --> 00:05:11,700
+ pueden solo apar bastante, alegría sorpresa un poquito, sorpresimiendo un poco más porque
+
+51
+00:05:11,700 --> 00:05:17,420
+ la sorpresa puede ser positivo o negativa, si es negativa, puede llevar al miedo, y el miedo
+
+52
+00:05:17,420 --> 00:05:22,940
+ puede llevar a la ira, entonces también ahí le pusimos ciertos olapamias, entonces la única
+
+53
+00:05:22,940 --> 00:05:30,540
+ que no necesito es solapam, son injusto y alegría, bueno, con todas estas funciones ya definidas
+
+54
+00:05:30,540 --> 00:05:36,340
+ entonces lo que nos quedó fue definir las reglas, para eso usamos la tabla de decisión
+
+55
+00:05:36,340 --> 00:05:42,500
+ que habíamos obtenido de quismet y entonces obtuvimos estas 11 reglas que, de acuerdo
+
+56
+00:05:42,500 --> 00:05:49,140
+ a la intensidad de los hidiptono promedio, determinar la emoción de la perso, bueno,
+
+57
+00:05:49,140 --> 00:05:55,540
+ entonces ya que tenemos nuestro sistema difuso mandani, completo, lo que vamos a ver es
+
+58
+00:05:55,540 --> 00:06:01,060
+ un caso donde se aplica para determinar la emoción de una perso, entonces vamos a ingresar
+
+59
+00:06:01,060 --> 00:06:09,940
+ como datos de entrada, 70 de cídeles, 260 palabras por minutos, y 210 Hz, para determinar
+
+60
+00:06:09,940 --> 00:06:15,700
+ cuál es la emoción que corresponde, lo primero que tenemos que hacer es aplicar el
+
+61
+00:06:15,700 --> 00:06:22,980
+ modulo de fusificación, de forma que transformamos estos datos a valores difusos, luego vamos
+
+62
+00:06:22,980 --> 00:06:29,740
+ a aplicar las distintas reglas que corresponden y con los resultados vamos a hacer la decodificación
+
+63
+00:06:29,740 --> 00:06:37,100
+ al de fusificación para determinar la valoración de las emociones correspondientes, bueno,
+
+64
+00:06:37,100 --> 00:06:43,100
+ para el intensidad entonces teníamos 70 de cídeles, 70 de cídeles podemos decir que corresponde
+
+65
+00:06:43,100 --> 00:06:52,620
+ a un intensidad normal en 0.85 y un intensidad alta en 0.50, para velocidad de 260 palabras
+
+66
+00:06:52,620 --> 00:07:02,380
+ por minutos podemos decir que corresponde a una velocidad rápida de 0.75 y muy rápida de 0.35.
+
+67
+00:07:02,380 --> 00:07:08,620
+ Por último, para el tono promedio de 210 Hz podemos decir que corresponde a un tono alto
+
+68
+00:07:08,620 --> 00:07:15,780
+ de 1 y solamente tenemos ese valor en la resta balesero, bien, entonces con estos tres
+
+69
+00:07:15,780 --> 00:07:22,500
+ valores tenemos que ver qué reglas aplican para intensidad normal, intensidad alta,
+
+70
+00:07:22,500 --> 00:07:29,380
+ velocidad rápida, velocidad muy rápida y tono promedio alto, en este caso serían las reglas
+
+71
+00:07:29,380 --> 00:07:39,220
+ 5, 6 y 7, en el resto no aplicarían esta combinación de valores, entonces las emociones
+
+72
+00:07:39,220 --> 00:07:47,060
+ que se podrían concluir que se están generando son alegría o sorpresa, bueno, entonces
+
+73
+00:07:47,060 --> 00:07:52,180
+ vamos a ver qué valor le corresponde a alegría, entonces como la regla nos dice que si
+
+74
+00:07:52,180 --> 00:07:57,900
+ la intensidad de salta y el tono promedio de salto le emociones alegría tenemos que hacer el
+
+75
+00:07:57,900 --> 00:08:03,900
+ mínimo entre el valor que tiene la intensidad alta y el tono promedio alto, entonces el
+
+76
+00:08:03,900 --> 00:08:13,520
+ mínimo entre 0.5 y 1 nos queda que alegría vale 0.5, tiene una alegría media, para
+
+77
+00:08:13,520 --> 00:08:19,360
+ la segunda regla, la regla seis tenemos que dice si la intensidad es alta y la velocidad
+
+78
+00:08:19,360 --> 00:08:25,200
+ muy rápida y el tono promedio alto entonces corresponde sorpresa, entonces tengo que hacer
+
+79
+00:08:25,200 --> 00:08:33,640
+ el mínimo porque son todos si entre intensidad alta, velocidad muy rápida y tono promedio
+
+80
+00:08:33,640 --> 00:08:42,440
+ alto, entonces tengo que hacer el mínimo entre 0.5, 0.35 e 1, entonces me quedo con 0.35,
+
+81
+00:08:42,440 --> 00:08:51,920
+ entonces puedo decir que tiene un poco o algo de sorpresa, pero algo poquito, por último para
+
+82
+00:08:51,920 --> 00:08:56,640
+ la regla siete que también aplica para sorpresa, nos dice que si la intensidad de salta,
+
+83
+00:08:56,640 --> 00:09:02,880
+ la velocidad es rápida y el tono promedio es alto corresponde sorpresa, entonces tengo que
+
+84
+00:09:02,880 --> 00:09:10,960
+ hacer el mínimo entre 0.5, 0.75 y 1, entonces corresponde que sorpresa también tono
+
+85
+00:09:10,960 --> 00:09:17,520
+ un valor de 0.5, con listos valores que yo voy a tener los dedos que combinar para obtener
+
+86
+00:09:17,520 --> 00:09:24,360
+ un único valor, como nosotros usamos el modelo mandani tenemos que calcular la área que corresponde
+
+87
+00:09:24,360 --> 00:09:32,920
+ a cada valor obtenido, para ello les mostramos que valor de alegría correspondería como lo
+
+88
+00:09:32,920 --> 00:09:39,540
+ podríamos representar con las funciones, entonces correspondería esta zona, para sorpresa
+
+89
+00:09:39,540 --> 00:09:49,340
+ 0.5 correspondería esta otra y para sorpresa 0.5 correspondería esta otra de aquí, bien, entonces
+
+90
+00:09:49,340 --> 00:09:55,460
+ estos tres valores corresponden a estar ya, con esta área vamos entonces a calcular el parámetro
+
+91
+00:09:55,460 --> 00:10:03,820
+ de salida unífica, entonces si nosotros calculamos el promedio del máximo, vamos a descartar
+
+92
+00:10:03,820 --> 00:10:10,380
+ los resultados de la segunda regla porque no me generan ningún tipo del máximo, entonces la salida
+
+93
+00:10:10,380 --> 00:10:18,220
+ correspondería de acuerdo a la aplicación de la fórmula un 5,633, si yo aplico la otra fórmula
+
+94
+00:10:18,220 --> 00:10:24,060
+ de centro de masa, entonces ahí sí voy a considerar las tres funciones y ahora resultado desde
+
+95
+00:10:24,060 --> 00:10:33,540
+ 5,9, fíjense que la diferencia es muy pequeña, 5,633 en este caso 5,9 y en segundo, bueno, entonces
+
+96
+00:10:33,540 --> 00:10:39,700
+ yo puedo decir que, pero una persona que hablo con una intensidad de 70 de ciberes, una velocidad
+
+97
+00:10:39,700 --> 00:10:47,100
+ de 260 palabras por minutos y un tono promedio de 200,10 Hz, como resulto puedo decir que la
+
+98
+00:10:47,100 --> 00:10:55,580
+ persona estaba medio alegre, medio sorprendida y eso me generaría una valoración entre 5,63 y 5,9,
+
+99
+00:10:55,580 --> 00:11:01,060
+ que si quiere lo puedo sacar un promedio, me va a quedar el puntaje que me va a signar a mi
+
+100
+00:11:01,060 --> 00:11:07,900
+ producto o servicio, con esto entonces finalizamos este ejemplo y este vídeo hasta
+

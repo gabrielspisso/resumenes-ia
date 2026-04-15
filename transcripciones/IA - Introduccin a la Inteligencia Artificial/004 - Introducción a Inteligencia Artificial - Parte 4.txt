@@ -1,0 +1,222 @@
+ Hola, mi nombre es Maria Florencia Pollo y continuamos con el vídeo con la parte número
+ cuesta. Hasta cada día hemos llegado a hablar del primer invierno de la inteligencia artificial,
+ después de su resurgimiento, ahí ven más o menos las décadas, después se ve de
+ la aparición de las redes neuronales artificiales en particular las arquitecturas de
+ el pacto padetion que son arquitecturas de redes neuronales que permiten resolver problemas de cierta complejidad.
+ Luego viene el segundo invierno que es bastante más corto del primero con todas estas enseñanzas
+ que ya habíamos visto en la presentación anterior.
+ Acá escorró un segundo de la foto paso a la parte más arriba.
+ Bien, fíjense entre el año 80 y el 2000 para que vean respecto entre el 80 y el 2000
+ compare en lo con la línea de tiempo, fíjense es una comparativa de cuanto aparecen estas palabras.
+ Si se fijan computación lógica, algoritmo genéticos, Machine Learning,
+ redes decisiones, inteligencia computacional, miren las redes neuronales artificiales
+ como están en Auge y este término es muchísimo más citado en toda la literatura.
+ Y esto es verdaderamente notable, esto deja de manifiestir de claro,
+ lo que fue la Auge de las redes neuronales artificiales para esta época.
+ Entonces, esta instancia también suger concepto de Machine Learning, un concepto muy conocido en el día de la fecha,
+ fíjensea que se apunta cuando habla de uno de Machine Learning,
+ es identificar patrones complejos en millones de datos con lo cual acá,
+ ya se toma de punto de partida que se necesita tener una gran capacidad de procesamiento
+ que años hace varios años el imposible de pensar, de predecir comportamiento,
+ o sea de tratar de poder inferir cosas que van a suceder en el futuro,
+ esto hacerlo a través de un algoritmo y otra de las características que tienen este tipo de tecnología,
+ es que mejora de forma independiente a lo largo del tiempo.
+ Y esto es una característica muy interesante de la inteligencia artificial,
+ ya que comparativamente con un sistema software tradicional,
+ el que tiene un excelente funcionamiento en sus etapas iniciales,
+ y después concepto de un miostasis y entroquía empieza a degradarse
+ y a perder calidad de funcionamiento por dificultades en la adaptación,
+ costos de la adaptación hasta llegar al momento donde el costo del mantenimiento
+ es mayor del cambio de una nueva tecnología, esto hay miles de ejemplos
+ que podemos tener en la vida cotidiana, tener una computadora un celular
+ donde tal aplicación, ya no funciona muy lento cuando lo levantamos,
+ nuevas versiones de sistemas de uso tradicional,
+ uno ofis son imposibles de implementar en un ordenador viejo o en un celular,
+ también pasa con determinadas apps a partir de ahí, es mucho más sano,
+ digamos, hacer un cambio de tecnología que sostenerla
+ la que uno ven para implementando. En el caso de la inteligencia artificial
+ de los sistemas software inteligentes, esta característica es inversa,
+ un sistema inteligente funciona bien en un comienzo,
+ pero va a ir mejorando superformas con el paso del tiempo,
+ porque debería poder aprender debería poder mejorar debería poder
+ retroalimentarse con todo lo que le pasó y poder incorporar nuevas
+ reglas pensando en un sistema basado en conocimiento,
+ podría mejorar su función debería mejorar su funcionamiento
+ con el paso del tiempo, este es una característica que tienen
+ los sistemas inteligentes. Bueno, Machine Learning surge este concepto
+ fíjense en que años yo era joven así que ustedes no habían nacido
+ probablemente y esto ya estaba dando vueltas.
+ Una de las primeras apariciones dentro de estas nuevas tecnologías
+ es Diplo, Diplo es un... se lo voy a dejar acá. Diplo es una aplicación
+ que juega a las gerdres, un ordenador que fue el primero que le gana
+ casparó en el año 96 en una partida histórica
+ que hubo miren la foto, miren las características de la pantalla,
+ una de las características importantes es que Diplo utilizaba
+ como método de búsqueda, métodos de búsqueda por fuerza brutal.
+ O sea que barría todas las opciones,
+ que para el juego de agerres uno tiene un movimiento y ese movimiento tiene
+ una baníco de posibilidades que se abren bueno.
+ Analizaba todas esas posibilidades y a partir de ahí
+ empezaba a construir su propio camino,
+ pero utilizaba un mezclodo de fuerza brutal,
+ se tenía que buscar en todo el abánico,
+ en todo el abánico de posibilidades.
+ Nosotros llevamos a hablar un poquito más adelante,
+ y no sé como nos morenejaríamos.
+ Ahora con el orden o sea,
+ ustedes todavía no saben,
+ pero el orden de los temas,
+ los estamos adaptando a esta modalidad tan particular,
+ cuando habíamos metodos de búsqueda,
+ recuerden cuando habremos de los métodos de búsqueda por fuerza brutal.
+ No cuando uno busca todo el espacio de soluciones que se genera.
+ Pero bueno, la capacidad de procesamiento
+ permitía poder tener este tipo de tecnología.
+ Bien.
+ Hay un aparado jamú interesante que se sintetiza todo esto,
+ que fíjense que plantea,
+ que es fácil comparativamente conseguir que las computadoras
+ muestren capacidad de similares
+ a las de un humano adulto ante esta inteligencia,
+ y difícil e imposible lograr que posiar las habilidades perceptivas y motrices
+ de un bebé de un año.
+ Yo siempre cuando propongo esta reflexión,
+ les digo, es muy fácil lograr hacer grandes combinaciones
+ de cálculos numericos para un ordenador,
+ y, sin embargo, reconocer un color, reconocer una forma,
+ se necesita una tecnología y una capacidad de procesamiento muy alta,
+ que una cálculadora científica tranquilamente puede dibujar una función,
+ hacer un montón de cosas matemáticamente complejas,
+ sin embargo, las que están vinculadas a lo mejor con los sentidos
+ para seguir un color y identificar si este color es rojo negro o azul
+ encontrar una forma y identificar una figura
+ para esos necesitan tecnologías mucho más complejas.
+ Bien.
+ Es ahí que a partir del surgimiento de Diplo surgen una vanico de necesidades complejas,
+ esto es muy parecido cuando explicamos en ingeniería en software
+ que a partir de la resolución de problemas operativos
+ simples de automatización de problemas,
+ el resto de las unidades dentro del negocio
+ comienza a encontrar necesidades que puede ser resultas a través del software,
+ comparativamente acá es lo mismo, a partir del tercer conocido
+ este tipo de soluciones, el ejemplo ahora de adaptamos hablando
+ del plup, a presentes necesidades complejas que derivan
+ en posibles aplicaciones y aplicaciones,
+ que vemos hoy día ahí, hoy ya, voy subiendo bajando.
+ A aplicaciones que podemos ver hoy día,
+ cuando hablamos de inteligencia artificial.
+ Interligencia artificial en un montón de cosas.
+ Acá nosotros le pusimos ejemplofigence,
+ filtros de email, GPS, ahí hay una foto de GPS bastante antiguo
+ y ya utilizaba un poquito de tecnología
+ de inteligencia artificial, videojuegos,
+ traductores, las famosas, aspiradoras de hogar,
+ las va a cumplir en relación a los traductores automáticos
+ hay algo para clarar bastante interesante.
+ Si ustedes se fijan Google,
+ tiene un traductor muy conocido para el año 2006,
+ mira de cuando estoy hablando,
+ se utiliza en celulares, NPCs,
+ tienen fíjense 100, 3 idiomas y utiliza este tipo de tecnología
+ fíjense redes neuronales recurrentes,
+ cuando veamos redes neuronales,
+ vamos a ver algunos tipos de redes neuronales básicas,
+ son distintas arquitecturas de redes neuronales,
+ y utilizan Google neural Machine Translation
+ es el motor que yo utiliza
+ para poder resolver toda esta problemática.
+ Hay otros traductores,
+ como por ejemplo,
+ el editor es uno que yo uso,
+ la verdad es bastante interesante,
+ los dos son gratuitos
+ y permiten la traducción entre diferentes idiomas.
+ Este, el editor utiliza redes neuronales con volucionales,
+ es una tecnología diferente de redes neuronales recurrentes,
+ fíjense estos conceptos que empiezan a aparecer.
+ Las redes neuronales con volucionales
+ utilizan a aprendizaje supervisado,
+ el aprendizaje supervisado,
+ se trata de militar,
+ como si orden el cerebro para captar las imágenes
+ a través de la vista,
+ y identifican las distintas características que vinculan
+ para poder especificar e identificar objetos,
+ y ahí después capas ocultas especializadas
+ que pueden identificar ya las líneas,
+ las curvas y las formas más complejas.
+ En el caso particular del editor,
+ tiene mucho más profundidad,
+ el mucho más exacto,
+ lo que pasa que trabaja solamente con nueve idiomas,
+ mientras que el Google tradutor
+ trabaja con 103 idiomas.
+ Por otro lado,
+ vemos también inteligencia artificial
+ en
+ Netflix en
+ aplicaciones que utilizan música
+ en su aporte de compras
+ para hacer shopping,
+ detectión de fraudes,
+ en los celulares,
+ se utilizan para distintas actividades.
+ Por ejemplo,
+ podemos ver a los procesadores
+ para mejorar la capacidad de los cálculos,
+ en lo que es cámara,
+ para reconocer,
+ cuando dice son ríe y sacan las fotos,
+ mejorar las fotos también
+ para administrar los recursos
+ para manejar mejor la memoria,
+ el procesador y administrar la batería
+ y cerrando aplicaciones
+ para manejar agenda,
+ los asistentes de agenda,
+ de sugerencias,
+ para hacer el aloque
+ a través de la cara de uno,
+ y hay un estudio que dice que
+ para el año
+ se espera que para el 2022,
+ el 80% de los celulares
+ ya se manejer
+ su gran capacidad
+ parte de su capacidad
+ con tecnologías de inteligencia artificial.
+ También podemos ver
+ en lo que son los reconocimientos de imagen,
+ la reconstrucción de textos antiguos,
+ el reconocimiento facial,
+ la ubicación y la relación entre objetos.
+ Y acá vuelvo a atraer algo
+ que ya hablamos al comienzo,
+ lo que podemos hacer ahora
+ era lo que se llamaba
+ inteligencia artificial hace muchos años,
+ sin embargo,
+ para nosotros hoy es de uso como
+ muy probablemente lo que para nosotros hoy es
+ día 100% en unos años
+ para hacer capacidad de procesos
+ como un enloque circulan software.
+ Sin embargo,
+ la contracaradesto
+ hay que muchas cosas
+ se dicen que son inteligencias
+ y muchas no.
+ No todo lo que creen es cierto.
+ Así que bueno,
+ son 11 minutos,
+ vamos a terminar el video 4,
+ vamos a comenzar con el 5
+ y bueno,
+ se cuidan nuevamente,
+ espero que este todo bien
+ y vamos a hablar
+ del lado de la inteligencia artificial.
+ Lo que no es inteligencia artificial
+ y uno
+ cree que podría llegar a hacerlo.
+ Bueno, un beso a todos y hasta luego.

@@ -1,0 +1,108 @@
+ Hola, mi nombre es María Florensia Pollo y me vengo a compartir con ustedes un bono
+ track 20/21 en relación al material que ustedes ya tienen disponible vinculado
+ con introducción a la inteligencia artificial. El objetivo de esta presentación,
+ de esta propuesta es ver algunos indicadores, algunas propuestas, algunos números vinculado
+ con lo que fue la inteligencia artificial en el año 2020, teniendo en cuenta toda la situación
+ mundial particular que hemos vivido y que estamos viviendo. En donde desarrollamos o
+ ponemos foco para continuar con esta presentación en material que comparte la universidad
+ de Stanford a través de un centro vinculado con lo que es la inteligencia artificial,
+ que ellos tienen un report anual que se llama Artificial Intelligence y Index que
+ a ello se los comparto donde muestran un conjunto de indicadores que van analizando el avance
+ de la inteligencia artificial, la presencia en realidad, de la inteligencia artificial vinculado
+ con distintas viscintas visiones desde el año 2017 pueden tener estos reportes y son abiertos
+ a la comodidad. Se puede detectar a grandes rasgos un gran crecimiento a pesar de la situación
+ de la pandemia, esto puede estar indicado en algunos valores también por el estado de madurez
+ ya de la industria, de lo que son los desarrollos y las tecnologías basadas en inteligencia
+ artificial, se destaca una interesante inversión privada, ya no es solo el papel fundamental,
+ de planes y políticas sustentables y políticas públicas que puede hacer el estado sino que
+ ya las empresas tienen un rol super interesante y queda totalmente a la luz la competencia
+ que hay entre los dos primeros puestos de Estados Unidos y China. Hay que entender de todas
+ las maneras que la universidad de Stanford tiene sus particularidades también cuando valigiendo
+ los distintos indicadores. El primer indicador que viene a presentarse tiene que ver con
+ la demanda de mano de obra de inteligencia artificial en 6 países fíjense, no es baselando
+ a Austria, Canadá, United Kingdom, Estados Unidos y Singapur. Singapur de Staca y crece muchísimo,
+ nosotros este año hicimos con exequil un curso con gente de intel en particular con gente de Singapur
+ y nos llamó muchísimo la atención la política educativa que la fuerte presencia que hay en
+ lo que respecta a inteligencia artificial. Nos contaban que los chicos del colegio secundario,
+ pero 12, 14 años tienen a contraturnos talleres o clubes y estos clubes en realidad son
+ clubes de programación, un alumno de secundario, sabe saliendo programar con un nivel de complejidad
+ bastante alto que para nosotros sería imposible de mencionar. Y esto es porque hay
+ sostenidamente de parte del gobierno con junto de políticas puestas y hace que entonces
+ también se genera mayor oferta y posibilidad de tener mayor demanda también. Bien, fíjense
+ que el único que cae en particular es Estados Unidos, que esto puede hablar también de cierta
+ madurez del mercado, que hace que no hay una necesidad de un crecimiento sostenido. Como indicador
+ número 2 tenemos la inversión mundial total de inteligencia artificial. Esto incluye inversión
+ política, inversión pública perdón en inversión pública y privada, fusiones adquisiciones
+ y también participaciones minoritarias de empresas muy pequeñas. Fíjense que entre
+ el 2019 y el 2020 aumentó un 20 por ciento. Y estamos hablando de una cifra de 67.900
+ millones de dólares para mí es imposible de mencionar eso, pero verdaderamente estamos
+ hablando de mucho movimiento económico. Y bueno, que la fusiones y adquisiciones constituyen
+ gran parte de la inversión total, lo hemos visto también a través de diversas noticias.
+ Después en donde se hace foco, ¿cuáles son los temas? La industria, en donde está poniendo
+ foco en los desarrollos de ella, en particular, en el año 2020. Si se fijan, bueno, la medicina,
+ yo creo que no es casual, no? La coyuntura mundial que hemos arrancado vivir y que estamos
+ viviendo hoy por hoy, que hacen que, miren, el crecimiento abismal que hubo entre lo que
+ es descubrimiento de drogas, cáncer, moléculares, verdaderamente, avasallantes. Fíjense
+ que después, lo que son vehículos autónomos es sostiene, bueno, hay bastante también un crecimiento
+ bastante marcadito en esta metrica. Después hay una baja, acá podemos observar.
+ Y después lo que es reconocimiento del lenguaje traducción esto también tiene bastante
+ despeg, pero, bueno, verdaderamente lo que ha crecido de manera imposible de dimensionar
+ fue la parte médica. En lo que son el cuarto indicador es un indicador superinteressante,
+ por lo menos para mí es superinteressante. Esfíjense, el número de papers en cuyo estítulos
+ se menciona la palabra inteligencia artificial y etiquano en diversas conferencias. Estos se
+ trabaja, fíjense, esa acumulativo, pero ha ido creciendo, sin embargo, lo que se considera
+ respecto de la problemática que trae la ética, ustedes vieron que este año tienen
+ una partadito particular que detalle un poquito, lo que es el tema de la ética y la inteligencia
+ artificial, lo que es la autonomía, se considera que este promedio todavía sigue siendo
+ un poco bajo. Bien, después este item está muy vinculado con el anterior, fíjense que las
+ empresas no muestran mucho interés vinculados con los problemas que puede traer la ética
+ y la inteligencia artificial y sin embargo sí, el problema de la seguridad en donde tiene
+ puesta una empresa puesta a la ética y todo el impacto que tiene por el uso de la inteligencia
+ artificial en relación con otras temáticas. Esto dejaría ver que para analizar y para
+ tener en cuenta. Después, acá podemos ver, ¿qué ha pasado con doctorados relacionados
+ con inteligencia artificial? Fíjense que han pasado del 14.2 acerca del 23 por ciento a partir
+ del 2019 y otros doctorados han ido decreciendo en cuanto a la cantidad de doctores que
+ se van generando al mercado. Yo siempre planteo lo vamos a hablar al final.
+ A mí estos números me llevan a pensar a mí como país, a mí como profesional, a mí como
+ educadora, compartiendo con ustedes estos espacios, en donde estamos nosotros con esto que
+ como podríamos compararnos o ver en qué estado de madurez, allá hemos en todo esto y como
+ podríamos empezar a ser nuestros propios cálculos también. Este indicador es muy interesante
+ fíjense en qué indicadores está poniendo enfasis una universidad super importante para
+ estudiar también, no sólo la industria sino también la producción de manos de obra,
+ científica como son los doctores, ¿no? Y bueno, acá se marca clarísimoamente y super super
+ interesante este número como el ámbito privado recurrió la adquisición de doctores para el
+ desarrollo de estas tecnologías, ¿no? En la inversión de doctores a la industria, de doctores
+ especializados brindando soporte y solidez a lo que son los nuevos desarrollos. Fíjense en los
+ últimos de los nuevos doctores en inteligencia artificial eligieron puestos de trabajo en la industria.
+ Miren del aumento que estamos hablando y en el mundo académico hubo una reducción bastante
+ interesante. Bien, esto tiene que ver con la diversidad, esto vinculado más en la problemática
+ de Estados Unidos también son números extraídos y ahí, pero bueno, el 50% de los nuevos doctores
+ eran blancos en 2019 y después un identificación también bastante significativa en relación
+ de hombres y mujeres que se han recibido y esto sí tiene que ver en los doctorados
+ vinculados con estas temáticas en los últimos años. Bien, como indicador número 9,
+ tenemos las estrategias vinculadas con inteligencia artificial, inteligencias que ya planes de
+ inteligencia artificial que ya los distintos estados están implementando en los que se están
+ desarrollando, fíjense que nosotros estamos ahí y después países que no tienen ninguna presencia
+ en lo que son estrategias nacionales de inteligencia artificial. En particular, lo que yo les podría
+ comentar, en otro vídeo hablábamos del Plan de inteligencia artificial de nacional, nosotros
+ participamos este año en el dictado de unos cursos que es una de las actividades dentro
+ del plan de la ciudad de Buenos Aires de inteligencia artificial. Se están haciendo actividades
+ de hecho el gobierno de la ciudad tiene un puesto vinculado con un como un grudo inteligencia
+ artificial que es el que maneja los proyectos que el gobierno de las ciudades.
+ Bien, y como último indicador, fíjense las agencias civiles federales de Estados Unidos que
+ no forman parte del departamento de defensa, asignaron, miren la cantidad de millones de dólares
+ 973, como 5 millones de dólares a la investigación en inteligencia artificial para 2020. Y
+ esta cifra se levó a 1.100 millones de dólares. Bueno, una vez que se tuvieron en consideración
+ a asignaciones y transferencias. Para el año 2021, presupuestaron 1.500 millones de dólares.
+ Casi un 55 por ciento más que lo que se les odicitó en 2020. Entonces, bueno, nada, fíjense
+ que, de las cánteras cifras que estamos hablando y de la importancia y de la presencia
+ que tiene la inteligencia artificial. Entonces, bueno, dejo solamente estas reflexiones para
+ cada uno donde estamos como país y que podemos hacer, para aunque sea empezar a poder tener
+ un diagnóstico. Yo sé que nos queda mucho trabajo, tenemos mucho por delante, sé
+ que en estos trayectos lo interesante es transitar el camino, es lo más rico, más allá de
+ llegar a una meta. Y yo estoy totalmente segura que cada uno desde su espacio pequeño puede
+ verdaderamente llevar esto a buen puerto, pensando en fíjense como se pone foco en lo público,
+ lo privado, lo académico y la inversión. Así que, bueno, nada, era una pequeña contribución
+ 21 a lo del material que llevamos teniendo desde ella muchísimas gracias. Y, bueno,
+ 13 minutos justo para terminar el vídeo. Muchísimas gracias, si nos vemos pronto, hasta
+ ¡Viego!

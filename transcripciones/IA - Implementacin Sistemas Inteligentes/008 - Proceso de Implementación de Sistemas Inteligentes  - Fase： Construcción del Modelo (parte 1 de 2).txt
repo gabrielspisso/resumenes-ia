@@ -1,0 +1,134 @@
+ Hola, este es el vídeo correspondiente a la cuarta fase del proceso de implementación de sistemas inteligentes,
+ la cual se denomina construcción del modelo.
+ En esta fase lo que se va a hacer es que a partir de toda la información establecida durante la definición del problema,
+ ahí vamos a tener la lista de modulos que va a formar parte de nuestros sistemas inteligentes,
+ por que la modulo vamos a tener, cuáles son las tareas o acciones que se tienen que realizar,
+ sobre qué datos de entrada para generar qué datos de salida,
+ su vez vamos a ver que manera se deberían conectar esos modulos,
+ a pesar que todavía no lo vamos a hacer.
+ Por otro lado, vamos a tener identificados los posibles datos que son representativos del problema,
+ que se podrían aplicar para la construcción o desarrollo de cada uno de estos modelos,
+ puede ser que también tenemos identificados que no hay datos,
+ entonces vamos a usar conocimientos forma de reglas o en formas de jurísticas para construir nuestro sistema inteligente.
+ Y por último, también vamos a tener elegida ya con la tecnología más adecuada y que es posible
+ para hacer empleada en la construcción de cada uno de los modelos.
+ Entonces, en esta fase, a partir de toda esta información vamos a desarrollar los modelos,
+ correspondientes a cada uno de los modelos.
+ Entonces, los modelos sería nuestro software que permitirá cumplir los objetivos de el sistema inteligente.
+ Como habíamos visto en la fase anterior,
+ yo puedo elegir como tener una energía para construir mi modelo.
+ Machine Learning, entonces el modelo se va a definir de manera automática,
+ entonces ahí voy a tener que hacer un proceso de entrenamiento y algunas cosas más que la vamos a dar
+ para lograr que nuestro modular funciona correctamente.
+ Pero también podría utilizar inteligencia artificial tradicional o inteligencia computacional.
+ En cuyo caso yo debería ser un desarrollo más manual.
+ Entonces, vamos a ver primero cómo se sea el desarrollo de modelos o construcción de modelos usando Machine Learning.
+ Luego vamos a dar brevemente cómo sea hace lo mismo con inteligencia artificial tradicional.
+ Y por último, vamos a hablar de cómo se aplica todos estos conocimientos
+ para desarrollar un algorithmo genético correspondiente a la inteligencia computacional.
+ Bueno, para Machine Learning nosotros habíamos visto al principio de la cruzada
+ que podemos decir que entrenar un algorithmo de Machine Learning,
+ construir un modelo de Machine Learning es como cultivar una planta.
+ Yo le tengo que dar datos que sería como el agua para arregar a la semilla,
+ que sería nuestro algorithmo.
+ Y como resultado vamos a tener nuestra flor, nuestra plantita,
+ que va a ser del modelo que puede representar el comportamiento de dichos datos.
+ Entonces, en Machine Learning, lo que yo voy a tener son datos, que se les voy a dar un algorithmo,
+ y eso me va a generar un modelo.
+ A veces, una podría pensar que están sencillos como armar partes, como si fuera de dibujo
+ que nos muestra como armar un mueble, cuando en nosotros tenemos la parte separada,
+ tengo que hacer algunos pasos que te dicen, no son bastante sencillos,
+ que te llevarían algo así como 15, 30 minutos, pero que en la realidad suele llevar más,
+ a veces estas varios días, siendo andando andando a andar,
+ como según en ciertas piezas porque en el diagrama no queda claro.
+ Con Machine Learning, va a pasar lo mismo a veces, lograr que tener el modelo es sencillo,
+ porque te lo da el algorithmo de Machine Learning, pero tener el modelo que cumpla los objetivos
+ que nosotros querramos es más difícil. Entonces, además de nosotros necesitar
+ entrenar al modelo, vamos a ver qué tenemos que realizar otras procesos que son complementarios.
+ Bueno, el entrenamiento ya habíamos hablado cuando vimos redes neuronales artificiales,
+ que es el proceso que busca determinar o aprender de manera automática, los valores
+ de correctos para construir un modelo que representa un conjunto de datos disponibles,
+ que eso sería nuestros ejemplos. En caso de las redes neuronales,
+ artificiales vimos que a partir de esos ejemplos se encuentra la combinación de pesos,
+ que serían estos parámetros o valores correctos, que nos permiten de definir nuestro modelo
+ que va a hacer la rende uruna artificial y entrenada, o ya aprendida para proceder el problema.
+ Entonces, hay para hacer el aprendizaje el entrenamiento de nuestro modelo,
+ nosotros tenemos que ver, bueno, si usamos un algorithmos supervisado, no supervisado,
+ si vamos a usar algún tipo de tecnología que offline o online.
+ Eso es temas ya, los vimos cuando hablamos de redes neuronales artificiales,
+ eso de que no voy a volver a entrar en detalle. Pero qué dificultad tenemos?
+ Muchas veces aplicará algoritmos más y leer un impudente de tener muchos parámetros.
+ Entonces, como me aseguro que estoy usando los parámetros mejores para generar el modelo optimal.
+ En redes neuronales artificiales vimos que uno había dos parámetros que eran muy importantes,
+ que son uno, el alfa, la tasa de aprendizaje, que si yo le poni una tasa muy chiquita,
+ se tardaba más en encontrar la combinación de pesos, pero si yo le poni un alfa muy grande,
+ podía hacer que se vuelva inestable y así podía pasar que aprende algo y se olvide de lo anterior.
+ Por otro lado, de segundo parámetro, es la cantidad de ciclos que se van a emplear durante el entrenamiento.
+ ¿Qué? Si yo pongo demasiado, puedo generar que mi modelo se sobre entrené, pero si pongo demasiado pocos,
+ poder pasar que mi modelo no llega a aprender. Entonces, eso son algunos tipos de parámetros
+ que se pueden usar. Hay algoritmos que tienen más, hay algoritmos que tienen menos, pero a veces la cuestión
+ está en qué parámetros le pongo para lograr que mi algoritmos aprenda, que se genera el modelo correcto,
+ que resolve el problema que yo quiero resolver, porque muchas veces los que nos puede pasar es que el modelo
+ lo voy a tener, pero no es el modelo que yo necesito. Separa asegurarme de eso, va a ver una etapa
+ durante la construcción del modelo que se va a denominar de prototipado y experimentación,
+ y que está incluido dentro del proceso de validación del modelo.
+ A veces, como les decía antes, entrenar un modelo uno podría pensar que es así, o sea,
+ yo entren el modelo y o gano o pierdo, o sea, obtengo el modelo que yo quería o no obtengo el modelo
+ que yo quería. Entonces, si falle, ya está todo que volver al principio para ver qué hago, en la realidad
+ es más así, muchas veces entrenar el modelo de chocarse muchas veces, o contra el algoritmo, contra el
+ framework, con la herramienta que estamos usando, peliarse con los datos, peliarse con los estejoles,
+ de la vez que no nos dan buenas definiciones, hasta que logramos obtener el modelo que nosotros
+ precisamos. A veces que es cuestión de encontrar un parámetro, a veces es cuestión de agregar
+ datos, a veces es cuestión de sacar datos, a veces sacar una tributo y logramos que nuestro modelo
+ aprenda bien y que es lo sobreviene el problema, a veces estamos más datos, a veces necesitamos normalizar
+ los datos fueron. Todes esas cuestiones para hacer que fallemos, fallemos, fallemos hasta que obtengamos
+ el modelo ideal o un modelo aunque sea que el satisface nuestras necesidades. Es que capaz que obtener el
+ modelo con el error mínimo, el error sero, es imposible y bueno, nos quedamos contento, teniendo un modelo que
+ tiene una error pequeña. Siempre y cuando hay que ver la criticidad que va a tener ese modelo en el
+ problema que queremos resolver si estamos en el ámbito de medicina, obviamente que tenemos que
+ entender a generar un error de cero, pero bueno, a veces también se complica. Entonces, luego de entrenar
+ el modelo, lo que tendremos que hacer es experimentar con el modelo, analizar cómo funciona nuestro
+ modelo con otros datos, analizar los resultados que nos genera este experimentación del modelo,
+ y a partir de ese análisis encontrar que no parámetros o que nuevas acciones tenemos que realizar
+ para mejorar el modelo que nosotros estamos generando. Entonces, ahí se va a producir un proceso
+ ciclico y estas dos áreas o etapas de experimentar y analices resultados, va a estar dentro de
+ otro proceso que vamos a denominar, validar el modelo. Entonces, validar el modelo a realizar la
+ validación del modelo consiste en un proceso que enevalió a los resultados de diferentes parámetros
+ en el entrenamiento para intentar optimizar el modelo obtenido. Entonces, lo que yo puedo hacer es
+ entrenar el modelo con unos parámetros veo los resultados y se modela los pruebas con otros datos
+ datos de validación y como resultados, vamos a ver una precisión más real porque si nuestro modelo
+ está sobre entrenado los resultados de la precisión del entrenamiento, pueden ser mentirosos.
+ Decional y si que vamos a hacer sobre los resultados de la validación vamos a determinar bueno,
+ ya tenemos el modelo que satisfáce las necesidades, tenemos el modelo ideal o no. Si decimos que no, bueno,
+ decimos bueno, ¿qué pasa si probamos con este otro parámetros? Entonces, podemos arrepetir a todo y vemos
+ que se resulta. Si funciona mejor, quiere decir que lo que elegimos, probar, andúbo bien.
+ Si lo que nos generamos es un modelo que es peor, quiere decir que tenemos que seguir probando o
+ hay que probar por otro lado porque capas que en el problema no son los parámetros, son los datos o son
+ alguna otra cuestión que tenemos que resolver. Bien, entonces, a la entrenamiento siempre tenemos
+ que hacerlo en la validación. Pero ¿qué pasa? ¿Cómo nos podemos asegurar si que nuestro modelo,
+ una vez que finaliza la validación, es capaz de generalizar. ¿Por qué podría ser que nuestro
+ modelo, que ya lo validamos y obtuvimos un modelo satisfactorio, puede ser que no genera lice
+ correctamente? Porque nosotros estamos iterando varias veces para entrenar y para la validación.
+ Entonces, puede ser que nuestro modelo que de sobreentrenado tanto por los datos de entrenamiento,
+ como los datos de validación. Entonces, en vez de tener un buena aprendizaje del modelo,
+ donde el nuestro modelo logra y respetar el comportamiento del problema que aprendió a partir
+ de los ejemplos, los que no puede pasar es que tengo un mala aprendizaje. Entonces, aprende de
+ demasiado bien sobre los datos de entrenamiento y capaz que sobre los datos de validación,
+ si nosotros consideramos muchas veces. Pero, para otro ejemplo, otra combinación de datos nos da
+ un resultado incorrecto. La estimación que genera ahí va a ser distinta del comportamiento
+ que nosotros queremos que tenga en teoría nuestro sistema elegante. Entonces, para lograr eso,
+ vamos a necesitar un tercer conjunto de datos que son los datos de prueba. Entonces, además de
+ entrenar, validar, también vamos a tener un proceso de prueba, que yo ahora acá me voy a correr
+ para que se lea la definición. Entonces, en la prueba o en probar el modelo lo que se hace es
+ buscar, evaluar si el modelo construido, posee una buena capacidad de generalización. Es decir,
+ si nuestro modelo que nosotros ya entrenamos y validamos, para ejemplos parecidos a los que
+ va a tener en producción, va a responder de manera correcta. Para hacer eso, entonces, vamos a necesitar
+ que los datos que le vamos a administrar al modelo en la fase de construcción, los tengamos que
+ dividir en datos de entrenamiento, datos de validación y datos de prueba. Para ello, lo que podemos
+ hacer es tomar muestras de datos, por ejemplo, yo podría tomar una muestra estratificada de datos
+ para hacer el entrenamiento, otra muestra para validación y otra muestra para prueba. De esto,
+ hablamos un poco cuando vimos redes neuronales artificiales donde vimos también que tipos de
+ métricas se pueden emplear para evaluar nuestros modelos, esas métricas también les vamos a usar
+ durante la validación y la prueba, teniendo en cuenta estos sus conjuntos de datos. Bueno,
+ con esto vamos a terminar este vídeo, en el vídeo siguiente vamos a hablar del proceso de construcción
+ de los modelos correspondientes para inteligencia artificial tradicional y para inteligencia computacional. Hasta

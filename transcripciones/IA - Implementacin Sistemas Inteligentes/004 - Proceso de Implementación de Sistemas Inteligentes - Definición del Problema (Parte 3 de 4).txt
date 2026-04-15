@@ -1,0 +1,59 @@
+ Hola, mi nombre es María Florencia Pollo y vamos a continuar con la tercera actividad que tiene que ver con la articulación de los requerimientos dentro de la fase de definición del problema.
+ Cuando queremos analizar la articulación, vamos a tratar de responder estos dos interrogantes, que es lo que se busca resolver a través de la definición de un conjunto de componentes,
+ y después por otro lado, si es viable la aplicación de la inteligencia artificial para la solución de este problema tan definido.
+ Para lo cual, con un segundo dato, ahí está. En relación a responder a esta interrogante que se busca responder,
+ pimos que los modelos conceptuales que desarrollamos en la fase anterior en la actividad anterior, nos van a describir formalmente,
+ que son las expectativas, todo lo que el cliente espera para lograr mediante la realización del proyecto,
+ lo que son los deseos en las necesidades, vinculando, figence con los stakeholders y viendo que es opcional obligatorio,
+ lo urgente y lo estable o lo que va cambiando, el conjunto de restricciones, todo lo que va a limitar y debe ser respetado dentro del proyecto y las suposiciones,
+ todo lo relacionado con el proyecto que no se puede estar totalmente seguro que puede llegar a cambiar en cualquier momento.
+ A partir de ahí, vamos a poder definir los objetivos, los criterios de éxito y los riesgos.
+ Bien, esto nos va a permitir identificar el alcance del proyecto, que es todo lo que se considera como parte del proyecto,
+ con lo cual todo lo que no está definido no forma parte del. A partir de ahí se van a identificar los objetivos,
+ todo lo que la aplicación de inteligencia artificial debe hacer para poder cumplir con todas estas expectativas,
+ figence los deseos y las necesidades considerando las restricciones que venían de la etapa previa en relación a los criterios de éxito,
+ todo lo que debe cumplir para que el proyecto se considera exitoso y acá es muy interesante la identificación y la medición,
+ por eso se habla de establecer métricas que nos permitan establecer de manera objetiva,
+ si se cumplió con el objetivo. Y los riesgos que todo lo que puede todo lo que tiene alguna probabilidad de ocurrencia,
+ que puede llegar a desviar la ejecución esperada y desciada en el marco del proyecto.
+ Por ejemplo, les vamos a dar acá tenemos un ejemplo. La expectativa podría ser queremos vender más productos,
+ que deseos si quienes necesidades podríamos tener identificadas, que se deben realizar mejoras en nuestro sitio web.
+ A partir de eso podríamos identificar cuáles son las restricciones, como por ejemplo,
+ que se cuentan con datos de los últimos 6 meses sobre clientes y ventas, no hay más información,
+ también podría ser el formato de estos datos y los datos están incompletos, suposiciones que uno tiene frente a determinados datos que capaz no existen
+ y uno supone que el comportamiento de los clientes se mantienen el tiempo, con lo cual uno podría tener un comportamiento y supone
+ que si no vuelve a aparecer otro, ese comportamiento es obtenido a lo largo del tiempo.
+ El objetivo es que frente a este conjunto de expectativas de ceos, restricciones y suposiciones, uno podría identificar el objetivo
+ como recomendar a los clientes en contra la posibilidad de recomendar a los clientes existentes,
+ productos similares a los comprados y recomendar también a los clientes nuevos productos de acuerdo a sus características.
+ El criterio de éxito que uno podría considerar para que medir la ejecución correcta del proyecto,
+ sería que cada cliente se le pudiera recomendar por lo menos tres productos de los cuales se consideran una probabilidad del 75% que acceda
+ por lo menos a uno y si lo hacía una probabilidad de 10% de que lo adquiera, se ha no solamente que acceda a visualizar lo sino que lo termine comprando.
+ Los riesgos que uno corre en este contexto podría hacer que las preferencias de los clientes cambian con el tiempo,
+ acá nosotros suponíamos que el comportamiento se podía mantener, pero capaz la preferencia podía cambiar
+ y después también que las preferencias de los clientes nuevos pueden ser diferentes a los clientes existentes con lo cual con determinados patrones,
+ uno podría apesar de que sea un cliente nuevo tener un comportamiento distinto.
+ Y el alcance podría hacer el modo de recomendación de productos en el sitio web y solamente alcanzaría a ese domín.
+ Y después por otro lado lo que tendríamos que ver es si es viable aplicar la inteligencia artificial.
+ En relación a eso hay que tener muy en claro lo que es el alcance del proyecto para poder identificar si es útil aplicar inteligencia artificial y que no.
+ Hoy por hoy el uso de inteligencia artificial está bien visto, tiene buena imagen y muchas veces si aplican a soluciones que no son necesarias.
+ Entonces muchas veces uno debería ver si si el problema que uno tiene que resolver no puede ser prácticamente resuelto solucionado,
+ si pueden no aplicar inteligencia artificial. En ese caso tampoco estaría mal y muchas veces son mejores soluciones.
+ Entonces uno por un lado debe analizar si es posible aplicarla para cumplir los objetivos y si es la mejor alternativa o existen otras posibilidades.
+ Muchas veces se forza porque uno quiere mostrar que hace inteligencia artificial.
+ Entonces fuerza el uso de inteligencia artificial sin necesidad de que esto lleve y la inteligencia artificial tiene su característica.
+ En el caso del desarrollo de un software tradicional, un software tradicional funciona excelentemente bien y después sistema entropico se empieza a dejar.
+ Sin embargo un sistema que tiene inteligencia artificial en su solución, muchas veces obviamente ustedes vieron que va aprendiendo que se va mejorando superformas con lo cual empieza con una
+ con una capa una calidad no tan buena como la va a lograr con el tiempo.
+ Con lo cual el usuario tiene que estar preparado, que va a gastar más plata, que va a llevar más tiempo y que el principio no va a funcionar excelentemente bien porque tiene que aprender.
+ Con lo cual, a veces si no es necesario, no es el mejor negocio.
+ Uno debería ver a la inteligencia artificial como un conjunto de herramientas y uno poder elegirla cuando verdaderamente es útil para la solución de los problemas de mi organización.
+ Y muchas veces si justifica aplicar inteligencia artificial porque con procesos manuales o con el desarrollo de software tradicional se puede dar una respuesta totalmente valida.
+ Acabemos también un ejemplo, una de las más grandes empresas de comética de Japón recibe una queja de un consumidor, que compró una caja de Japón y estaba vacía.
+ Entonces, las autoridades aislaron el problema dentro de la cadena de montaje que trasladaba todas las cajas en paquetadas y por alguna razón, una de las cajas de Japón pasó vacía.
+ Los artos cargos piden a los ingenieros que encuentren una buena y una rápida solución. La solución propuesta. Los ingenieros lanzaron a su labor para ir a una máquina de rayos secis con monitores de alta resolución manejados por un sistema inteligente y así poder vigilar que todas las cajas de Japón pasaran por la línea y que no estuvieran vacías.
+ Sin embargo, la mejor solución fue un empleado de una empresa pequeña que se le planteó en mismo problema y no entró en complicaciones que compró un ventilado en industrial. Lo apunto hacia la cadena de montaje la caja que se levantaba vacía.
+ Entonces, esto es un ejemplo bastante claro, bastante extremo que no siempre la mejor solución es la que probé la inteligencia artificial y muchas veces necesita de mucho más dedicación.
+ Está bien. Con esto terminamos la actividad de articulación y vamos a pasar a la de formaización.
+ Lo vamos a dejar en otro vídeo este quedo cortito para que les quede uno con cada actividad.
+ Así que, bueno, desde ella, muchísimas gracias.

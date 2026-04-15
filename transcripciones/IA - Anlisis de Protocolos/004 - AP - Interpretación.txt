@@ -1,0 +1,33 @@
+ Hola, como están, mi nombre es Cynthia de Jera y en este último vídeo lo que vamos
+ a ver en la interpretación dentro de una análisis de protocolos.
+ Se acueran que en los vídeos anteriores habíamos visto por un lado la grabación del
+ protocolo, su transcripción y la codificación, en donde analizamos toda esa transcripción.
+ Lo que entonces vamos a ver ahora es la interpretación.
+ ¿Qué hago en esta etapa de interpretación y identificar las reglas de razonamiento
+ del espereto?
+ Para eso les vamos a identificar de una manera especial, que es a partir de un segundo código.
+ Lo que vamos a decir es sí, se dan estas condiciones, entonces se da una acción en particular,
+ que tiene que ver con la generación de un estado.
+ Por otro lado, las condiciones siempre van a hacer de la forma concepto, punto carácterística
+ igual a valor, esto lo hacemos por una convención.
+ De esta manera, nosotros lo que tenemos que identificar son estas reglas de razonamiento.
+ Si nosotros analizamos el protocolo, vemos que hay dos estados a los cuales del esperto
+ llegó. De esta manera, lo que vamos a tener son dos reglas de razonamiento del esperto.
+ ¿Cómo vamos a obtener las condiciones?
+ Porque nosotros ya lo obtuvimos cuando realizamos la identificación de la búsqueda.
+ De esa manera, nosotros obtenemos dos reglas.
+ Una regla para lo cual el esperto, a partir de todos los síntomas del paciente, llega
+ a que es un coronavirus y otra regla, por la cual llega, aunque es una gripe clasea.
+ A veces uno se puede preguntar, bueno, ¿por qué?
+ En la regla de la gripe clasea, no tengo también todos aquellos síntomas que el esperto
+ fue identificado en el paciente.
+ Esto es porque dentro de una análisis de protocolo, las reglas siempre se las considera de forma
+ atómica. Es decir, que una regla no se relaciones con otra regla.
+ Ya posterior a la análisis de protocolos, cuando yo ya tengo, si, gran cantidad de conocimiento,
+ es ahí donde sí empieza a relacionar todos los conocimientos que obtuven.
+ Es por eso que no hay subreglas alidad dentro de la análisis de protocolo, sino que
+ se las considera de esta forma atómica. Una vez que yo tengo las reglas del razonamiento
+ del experto, finalista la técnica de análisis de protocolos. Como yo les dije, esto es
+ un primer protocolo. Luego vamos a tener que hacer muchos más protocolos con el experto para
+ hacer tener todo el razonamiento completo. Así que bueno, con este último vídeo, terminamos
+ la técnica de análisis de protocolos. Muchísimas gracias.

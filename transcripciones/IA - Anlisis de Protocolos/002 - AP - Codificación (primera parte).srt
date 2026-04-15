@@ -1,0 +1,564 @@
+1
+00:00:00,000 --> 00:00:06,040
+ Hola como están, soy Sintia Bejera, aseguran que nuestro primer vídeo, nosotros estuvimos
+
+2
+00:00:06,040 --> 00:00:10,840
+ viendo acerca de lo que era una análisis de protocólogos y vimos la primera etapa de
+
+3
+00:00:10,840 --> 00:00:15,960
+ grabación del protocólogo y la segunda etapa de trácripción.
+
+4
+00:00:15,960 --> 00:00:22,280
+ Entonces ahora en este video vamos a comenzar viendo la etapa de codificación, que la etapa
+
+5
+00:00:22,280 --> 00:00:28,240
+ más importante del protocólogo, porque van a ver que cuando yo termine este etapa, todo
+
+6
+00:00:28,240 --> 00:00:31,960
+ el protocólogo va a ser analizado.
+
+7
+00:00:31,960 --> 00:00:38,580
+ Para esto tiene tres suetapas que cumplir, la primera sedenomina y identificación de conceptos
+
+8
+00:00:38,580 --> 00:00:43,780
+ características, valores, relaciones y operadores.
+
+9
+00:00:43,780 --> 00:00:50,080
+ Luego tengo una segunda suetapa que es la identificación de la búsqueda y por último una
+
+10
+00:00:50,080 --> 00:00:59,140
+ tercera, que la identificación de sinónimos, meta comentarios e incertidumbres.
+
+11
+00:00:59,140 --> 00:01:04,680
+ Entonces comencemos con la identificación de cada uno de estos elementos del protocólogo
+
+12
+00:01:04,680 --> 00:01:07,980
+ que se denomilla.
+
+13
+00:01:07,980 --> 00:01:13,680
+ Porulado tenemos los conceptos, las características y los valores.
+
+14
+00:01:13,680 --> 00:01:20,040
+ Para poder saber que son estos conceptos características y valores, podemos hacer una analogía
+
+15
+00:01:20,040 --> 00:01:23,760
+ con un diagrama de entidad relación.
+
+16
+00:01:23,760 --> 00:01:27,760
+ Un entidad, la podemos tomar como un concepto.
+
+17
+00:01:27,760 --> 00:01:34,880
+ Luego se concepto, tendrá características o sea atributos propias y por último, esos atributos
+
+18
+00:01:34,880 --> 00:01:42,760
+ tendrán valores, puede ser un valor, puede ser más de un valor o un rango de valores.
+
+19
+00:01:42,760 --> 00:01:49,160
+ Por otro lado, tenemos las relaciones, estas relaciones que yo puedes establecer en un diagrama
+
+20
+00:01:49,160 --> 00:01:56,600
+ de entidad relación en entidad, pero que los analisis de protocolos también puede ser relaciones.
+
+21
+00:01:56,600 --> 00:02:03,240
+ Entre conceptos, pero también entre conceptos y características o características y valores,
+
+22
+00:02:03,240 --> 00:02:09,000
+ es decir que se amplió un poquito más el concepto de relación, y por último tenemos
+
+23
+00:02:09,000 --> 00:02:11,280
+ los operadores.
+
+24
+00:02:11,280 --> 00:02:18,840
+ Los operadores son aquellos medios que les perta usan para pasar de un estado del problema
+
+25
+00:02:18,840 --> 00:02:21,640
+ a otro estado más próximo a la solución.
+
+26
+00:02:21,640 --> 00:02:30,160
+ Es decir, que el operador es lo que me va a ir llevando a cada uno de los estados del protocolo.
+
+27
+00:02:30,160 --> 00:02:36,640
+ Como yo les dije, tanto los conceptos como las características, los valores, las relaciones
+
+28
+00:02:36,640 --> 00:02:41,880
+ y los operadores son los denominados elementos del protocolo.
+
+29
+00:02:41,880 --> 00:02:50,480
+ ¿Qué vamos a hacer entonces a continuación y identificando estos elementos del protocolo?
+
+30
+00:02:50,480 --> 00:02:56,880
+ Para eso, vamos a tener que ir analizando línea por línea de la transcripción y viendo
+
+31
+00:02:56,880 --> 00:02:59,440
+ que podemos encontrar.
+
+32
+00:02:59,440 --> 00:03:08,440
+ Si nosotros vemos acá, por un lado vemos el paciente, vemos presente, fiebre, superior
+
+33
+00:03:08,440 --> 00:03:16,480
+ a 38 grados, manifiesta, un fuerte dolor de garganta y 2 seca.
+
+34
+00:03:16,480 --> 00:03:19,560
+ ¿Qué podemos obtener de eso?
+
+35
+00:03:19,560 --> 00:03:24,960
+ Al paciente lo podemos considerar con un concepto.
+
+36
+00:03:24,960 --> 00:03:27,080
+ ¿Qué pasa con ese paciente?
+
+37
+00:03:27,080 --> 00:03:34,400
+ Tentas ciertos síntobas, entonces presentas puede ser una relación entre el paciente
+
+38
+00:03:34,400 --> 00:03:37,560
+ y lo que ahora vamos a identificar.
+
+39
+00:03:37,560 --> 00:03:43,040
+ Luego tenemos fiebre que la podemos considerar con una característica que tiene un valor
+
+40
+00:03:43,040 --> 00:03:46,520
+ superior a 38 grados.
+
+41
+00:03:46,520 --> 00:03:53,200
+ Manifiesta como otra relación fuerte y dolor de garganta con una característica con
+
+42
+00:03:53,200 --> 00:04:01,280
+ su valor asociado y lo mismo ocurre, digamos, con dos y seca, entonces una característica
+
+43
+00:04:01,280 --> 00:04:03,560
+ y seca el valor.
+
+44
+00:04:03,560 --> 00:04:08,000
+ De esta manera, vamos a seguir analizando la transcripción.
+
+45
+00:04:08,000 --> 00:04:10,480
+ Vamos a las líneas siguientes.
+
+46
+00:04:10,480 --> 00:04:17,720
+ Lo que nos dice es, su frecuencia respiratoria es muy elevada y tiene dolores musculares
+
+47
+00:04:17,720 --> 00:04:26,360
+ e intensos, entonces ven que tenemos frecuencia respiratoria muy elevada, tiene dolores musculares
+
+48
+00:04:26,360 --> 00:04:28,360
+ e intensos.
+
+49
+00:04:28,360 --> 00:04:34,440
+ Dice, podríamos pensar que es una línea que la vamos a dejar para después, que estamos
+
+50
+00:04:34,440 --> 00:04:41,760
+ ante un coronavirus COVID-19, que es lo que pasó ahí, yo llegué a un estado porque
+
+51
+00:04:41,760 --> 00:04:49,480
+ es bueno, podría hacer coronavirus, entonces que es lo que pasa, necesitamos un operador,
+
+52
+00:04:49,480 --> 00:04:55,360
+ porque por eso que les había dicho que el operador era el medio que les perteneaba para
+
+53
+00:04:55,360 --> 00:05:02,680
+ pasar de un estado a otro, entonces que lo que encontramos en estas frases, por un lado
+
+54
+00:05:02,680 --> 00:05:08,760
+ la frecuencia respiratoria como una característica con su valor que es muy elevada, dolores
+
+55
+00:05:08,760 --> 00:05:15,440
+ musculares como una característica que es otro de los síntomas con intensos que su valor,
+
+56
+00:05:15,440 --> 00:05:21,360
+ que estamos ante un es el operador, es el medio que me permite pasar, de no saber cuál
+
+57
+00:05:21,360 --> 00:05:28,080
+ era el diagnóstico a decir, puede ser este diagnóstico y tenemos el estado, si nosotros
+
+58
+00:05:28,080 --> 00:05:33,960
+ al estado lo tenemos que ubicar, teniendo un buen estos elementos del protocolo, lo podemos
+
+59
+00:05:33,960 --> 00:05:40,280
+ ubicar tanto como concepto como valor, ahora vamos a ver, después a continuación, que
+
+60
+00:05:40,280 --> 00:05:47,280
+ pasó si lo elijo como concepto y que pasó si lo elijo como valor, sigamos analizando,
+
+61
+00:05:47,280 --> 00:05:55,280
+ si se el paciente debe permanecer aislado por precaución, dado lo contagioso del virus,
+
+62
+00:05:55,280 --> 00:06:01,280
+ todo eso lo vamos a dejar también para después, en una segunda observación también lo
+
+63
+00:06:01,280 --> 00:06:10,160
+ vamos a dejar para después, dice vemos que esta persona presenta dolor de cabeza persistente
+
+64
+00:06:10,160 --> 00:06:16,560
+ y su freumareo repentino de larga duración, entonces hay también tenemos varias cosas,
+
+65
+00:06:16,560 --> 00:06:22,800
+ por un lado tenemos vemos que con una relación tenemos que hay una persona que sería el
+
+66
+00:06:22,800 --> 00:06:29,120
+ concepto que presenta como ta relación y que es lo que presenta, dolor de cabeza que lo
+
+67
+00:06:29,120 --> 00:06:36,080
+ podemos considerar como una carácterística persistente como su valor, su freum como otra
+
+68
+00:06:36,080 --> 00:06:42,600
+ relación, aunque ta relacionando a todos estos síntomas que el paciente presenta y acá
+
+69
+00:06:42,600 --> 00:06:49,800
+ que es lo que pasa, dice que presenta un maleo repentino de larga duración, entonces que hay
+
+70
+00:06:49,800 --> 00:06:56,320
+ ahí en mario, si lo puedo poner a mario como una carácterística, porque en realidad que es
+
+71
+00:06:56,320 --> 00:07:03,240
+ lo que pasa, el mario por un lado es repentino, o sea tiene un tipo no es un maleo común y por
+
+72
+00:07:03,240 --> 00:07:09,920
+ el otro lado tiene una duración, que son, que lo que dice es que es una duración larga,
+
+73
+00:07:09,920 --> 00:07:16,240
+ entonces que es lo que pasa ahí, llamarío no puede ser tomado como una carácterística,
+
+74
+00:07:16,240 --> 00:07:21,440
+ sino que tiene que ser tomado común concepto, porque a su vez tiene carácterísticas
+
+75
+00:07:21,440 --> 00:07:30,480
+ propias, por un lado el tipo de mario y por el otro lado la duración, y analizamos
+
+76
+00:07:30,480 --> 00:07:38,520
+ las últimas líneas, lo que nos dice es que hay una análisis de laboratorio que dio un resultado
+
+77
+00:07:38,520 --> 00:07:45,320
+ que es positivo este virus y por el otro lado dice que dado esto se concluye que se trata
+
+78
+00:07:45,320 --> 00:07:52,880
+ de una gripe clasea, o sea que se vuelve a llegar un estado, entonces este concluimos
+
+79
+00:07:52,880 --> 00:08:00,200
+ que se trata de una es otro operador, pues por un lado tengo, análisis de laboratorio como
+
+80
+00:08:00,200 --> 00:08:05,400
+ un concepto porque porque tiene un resultado, es una carácterística que les perto esplicitamente
+
+81
+00:08:05,400 --> 00:08:13,920
+ la dice, ese resultado positivo al virus hacha uno en uno, y por el otro tenemos que el concluimos
+
+82
+00:08:13,920 --> 00:08:20,680
+ que se trata de uno es el operador que me permite llegar a otro estado, este estado también
+
+83
+00:08:20,680 --> 00:08:29,600
+ puede ser considerado como concepto o como valor, ahora que es lo que pasa yo, lo que siempre
+
+84
+00:08:29,600 --> 00:08:36,680
+ digo es, si yo tengo todos esos textos, tengo todos esos elementos repartidos, parece que
+
+85
+00:08:36,680 --> 00:08:44,880
+ tuviera todo en una bolsa, y en realidad no tengo un orden mental, entonces lo necesito ordenar,
+
+86
+00:08:44,880 --> 00:08:51,400
+ para esto para poder ordenarlos, realizo lo que se llama una tabla de conceptos características
+
+87
+00:08:51,400 --> 00:08:57,760
+ y valores, donde lo que voy a hacer es ir ordenando, los conceptos con sus respectivas
+
+88
+00:08:57,760 --> 00:09:05,960
+ características y sus respectivos valores, si yo consideraba a los estados como conceptos la tabla
+
+89
+00:09:05,960 --> 00:09:14,760
+ queda de esta manera de, tengo el paciente, con sus características que son los síntomas y los
+
+90
+00:09:14,760 --> 00:09:22,080
+ valores de esos síntomas, por el otro lado tengo como conceptos, a los estados o sea el coronavirus
+
+91
+00:09:22,080 --> 00:09:27,560
+ y a la dereclacia, tengo como concepto a la persona que también apareció dentro de la
+
+92
+00:09:27,560 --> 00:09:36,080
+ transcripción, el análisis de laboratorio, con sus resultados y el mario, ¿qué pasa
+
+93
+00:09:36,080 --> 00:09:41,840
+ con el mario? por un lado el experto me dice que tiene una duración larga y eso esplicitamente
+
+94
+00:09:41,840 --> 00:09:48,320
+ lo dijo, pero por el otro lado dijo tiene un mario repentino, ahora repentimos nosotros lo
+
+95
+00:09:48,320 --> 00:09:55,600
+ consideramos como un valor, cuando esto pasa yo no puedo tener mario como concepto y repentino
+
+96
+00:09:55,600 --> 00:10:02,480
+ como un valor que no tiene relación entre sí, entonces es lo que tengo que hacer, tengo
+
+97
+00:10:02,480 --> 00:10:10,720
+ 5 corporal lo que se llama una característica implícita, por ejemplo el tipo, es una característica
+
+98
+00:10:10,720 --> 00:10:19,960
+ de relación al concepto con su valor, ahora no sabemos si tipo está bien, capaz que es otra
+
+99
+00:10:19,960 --> 00:10:25,320
+ palabra la que les perta usa para indicar que el mario repentino, por eso se la pone de algún
+
+100
+00:10:25,320 --> 00:10:31,720
+ modo que yo me de cuenta que eso lo agregue yo, por ejemplo, entre paréntesis entre corchetes
+
+101
+00:10:31,720 --> 00:10:37,080
+ con color, de esa manera lo que yo me de cuenta es que después voy a tener que ir al esporto
+
+102
+00:10:37,080 --> 00:10:43,680
+ a preguntar bueno esta característica implícita, ¿está bien? lo importante de esto es que
+
+103
+00:10:43,680 --> 00:10:50,800
+ en esta tabla de conceptos características y valores, no es lo que nosotros denominamos habitualmente
+
+104
+00:10:50,800 --> 00:10:56,880
+ huecos, que quiere decir esto, que tenga características sueltas que no corresponda en ningún
+
+105
+00:10:56,880 --> 00:11:04,360
+ concepto, que tenga valores sueltos que no tengan su característica social, en decir que cada
+
+106
+00:11:04,360 --> 00:11:12,080
+ vez que yo tengo una característica de esa característica de detener un concepto que va relacionado
+
+107
+00:11:12,080 --> 00:11:19,760
+ y su valor relacionado, los únicos que no pueden tener características son los conceptos considerados
+
+108
+00:11:19,760 --> 00:11:28,920
+ como estados o también otros considerados como sinónimos, si nosotros vamos a la transcripción
+
+109
+00:11:28,920 --> 00:11:37,320
+ del protocolo y empezamos a analizar que es para el esporto un paciente o una persona, nos
+
+110
+00:11:37,320 --> 00:11:45,640
+ vamos a dar cuenta que para el esporto paciente y persona es lo mismo en ese protocolo,
+
+111
+00:11:45,640 --> 00:11:54,120
+ por lo tanto los considera como sinónimos, cuando esto ocurre, el sinónimo, se establece
+
+112
+00:11:54,120 --> 00:12:00,560
+ en esta tabla de concepto característica valor pero sin ninguna característica social,
+
+113
+00:12:00,560 --> 00:12:07,800
+ ya ver un momento en la tapa de codificación donde vamos a identificar qué se paciente
+
+114
+00:12:07,800 --> 00:12:17,200
+ es una persona como un sinón, ve que acá entonces quedó todos los conceptos características
+
+115
+00:12:17,200 --> 00:12:24,040
+ y valores ordenados, a la que hubiera pasado si yo hubiera considerado a los estados como
+
+116
+00:12:24,040 --> 00:12:31,600
+ valores, no hubiera quedado una tabla de este modo, veen que lo único que cambió es que quedan
+
+117
+00:12:31,600 --> 00:12:38,800
+ como valores, el coronavirus y la dipeclasean, con que con una característica implícita
+
+118
+00:12:38,800 --> 00:12:45,160
+ que es el diagnóstico relacionada al paciente, esto es lo que ocurre si yo los considero
+
+119
+00:12:45,160 --> 00:12:52,280
+ como valores, a los estados y los puede considerar o como valores o como conceptos, en
+
+120
+00:12:52,280 --> 00:12:58,920
+ eso no hay ningún problema, el protocolo no cambia, pero los considero o como uno o como
+
+121
+00:12:58,920 --> 00:13:05,960
+ el otro, una vez que yo ya tengo esta tabla de conceptos características y valores donde
+
+122
+00:13:05,960 --> 00:13:12,320
+ yo ya me ordeno un poco más conceptualmente porque yo ya puedo identificar estos conceptos
+
+123
+00:13:12,320 --> 00:13:22,160
+ que relaciones hay, que características que valores tienen, entonces para terminar esta identificación
+
+124
+00:13:22,160 --> 00:13:29,760
+ con su haber y analizar las relaciones implícitas, que son aquellas relaciones que se dan
+
+125
+00:13:29,760 --> 00:13:35,880
+ entre conceptos, entonces yo analizo los conceptos que me quedaron en la tabla y lo se empiezo
+
+126
+00:13:35,880 --> 00:13:43,840
+ relacionar, si yo hubiera considerado a los estados como conceptos, ahora surge esta relación
+
+127
+00:13:43,840 --> 00:13:51,360
+ que el paciente puede tener coronavirus COVID-19 o gripe clasean, sino si lo subiera considero
+
+128
+00:13:51,360 --> 00:13:58,040
+ como valores esa relación ya estaba en la tabla anterior, luego que puedo poner que el paciente
+
+129
+00:13:58,040 --> 00:14:03,640
+ sufre de mario y que el paciente se realizó una análisis de laboratorio, que son los conceptos
+
+130
+00:14:03,640 --> 00:14:12,080
+ que me quedaron, si yo como les decía hubiera considerado a los estados como valores ya esa
+
+131
+00:14:12,080 --> 00:14:18,920
+ relación entre los estados de coronavirus y gripe no estaría relacionados con el paciente
+
+132
+00:14:18,920 --> 00:14:26,440
+ porque ya esta relación se establece en la otra tabla de concepto característica y valor,
+
+133
+00:14:26,440 --> 00:14:32,240
+ que lo que tengo en cuenta cuando realizo estas relaciones implícitas, esto que yo les
+
+134
+00:14:32,240 --> 00:14:38,120
+ decían anteriormente sobre los sinónimos, porque yo podría poner estas relaciones,
+
+135
+00:14:38,120 --> 00:14:47,000
+ yo podría decir paciente es una persona o la persona es un paciente, pero qué pasa con esto,
+
+136
+00:14:47,000 --> 00:14:56,480
+ no existen relaciones entre sinónimos, porque por que para el experto el paciente y la persona
+
+137
+00:14:56,480 --> 00:15:03,640
+ es considerada como lo mismo, entonces siempre tengo que tener en cuenta que no pueden existir
+
+138
+00:15:03,640 --> 00:15:11,880
+ relaciones implícitas que se han entre sinónimos, una vez que yo tengo ya las relaciones
+
+139
+00:15:11,880 --> 00:15:21,520
+ implícitas, termina esta primera subetapa donde ya identifice los conceptos, las características,
+
+140
+00:15:21,520 --> 00:15:30,400
+ los valores, las relaciones y los operadores. En los próximos videos vamos a seguir profundizando
+
+141
+00:15:30,400 --> 00:15:32,120
+ sobre la codificación.
+

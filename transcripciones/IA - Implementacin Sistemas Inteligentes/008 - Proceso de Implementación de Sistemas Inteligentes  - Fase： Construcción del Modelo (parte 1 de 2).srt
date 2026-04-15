@@ -1,0 +1,536 @@
+1
+00:00:00,000 --> 00:00:07,740
+ Hola, este es el vídeo correspondiente a la cuarta fase del proceso de implementación de sistemas inteligentes,
+
+2
+00:00:07,740 --> 00:00:11,100
+ la cual se denomina construcción del modelo.
+
+3
+00:00:11,100 --> 00:00:20,480
+ En esta fase lo que se va a hacer es que a partir de toda la información establecida durante la definición del problema,
+
+4
+00:00:20,480 --> 00:00:25,440
+ ahí vamos a tener la lista de modulos que va a formar parte de nuestros sistemas inteligentes,
+
+5
+00:00:25,440 --> 00:00:31,280
+ por que la modulo vamos a tener, cuáles son las tareas o acciones que se tienen que realizar,
+
+6
+00:00:31,280 --> 00:00:34,720
+ sobre qué datos de entrada para generar qué datos de salida,
+
+7
+00:00:34,720 --> 00:00:39,480
+ su vez vamos a ver que manera se deberían conectar esos modulos,
+
+8
+00:00:39,480 --> 00:00:41,920
+ a pesar que todavía no lo vamos a hacer.
+
+9
+00:00:41,920 --> 00:00:48,000
+ Por otro lado, vamos a tener identificados los posibles datos que son representativos del problema,
+
+10
+00:00:48,000 --> 00:00:53,880
+ que se podrían aplicar para la construcción o desarrollo de cada uno de estos modelos,
+
+11
+00:00:53,880 --> 00:00:57,480
+ puede ser que también tenemos identificados que no hay datos,
+
+12
+00:00:57,480 --> 00:01:05,080
+ entonces vamos a usar conocimientos forma de reglas o en formas de jurísticas para construir nuestro sistema inteligente.
+
+13
+00:01:05,080 --> 00:01:11,720
+ Y por último, también vamos a tener elegida ya con la tecnología más adecuada y que es posible
+
+14
+00:01:11,720 --> 00:01:15,360
+ para hacer empleada en la construcción de cada uno de los modelos.
+
+15
+00:01:15,360 --> 00:01:21,560
+ Entonces, en esta fase, a partir de toda esta información vamos a desarrollar los modelos,
+
+16
+00:01:21,560 --> 00:01:24,720
+ correspondientes a cada uno de los modelos.
+
+17
+00:01:24,720 --> 00:01:33,880
+ Entonces, los modelos sería nuestro software que permitirá cumplir los objetivos de el sistema inteligente.
+
+18
+00:01:33,880 --> 00:01:38,120
+ Como habíamos visto en la fase anterior,
+
+19
+00:01:38,120 --> 00:01:42,120
+ yo puedo elegir como tener una energía para construir mi modelo.
+
+20
+00:01:42,120 --> 00:01:46,120
+ Machine Learning, entonces el modelo se va a definir de manera automática,
+
+21
+00:01:46,120 --> 00:01:53,000
+ entonces ahí voy a tener que hacer un proceso de entrenamiento y algunas cosas más que la vamos a dar
+
+22
+00:01:53,000 --> 00:01:57,240
+ para lograr que nuestro modular funciona correctamente.
+
+23
+00:01:57,240 --> 00:02:02,840
+ Pero también podría utilizar inteligencia artificial tradicional o inteligencia computacional.
+
+24
+00:02:02,840 --> 00:02:07,000
+ En cuyo caso yo debería ser un desarrollo más manual.
+
+25
+00:02:07,000 --> 00:02:14,600
+ Entonces, vamos a ver primero cómo se sea el desarrollo de modelos o construcción de modelos usando Machine Learning.
+
+26
+00:02:14,600 --> 00:02:21,240
+ Luego vamos a dar brevemente cómo sea hace lo mismo con inteligencia artificial tradicional.
+
+27
+00:02:21,240 --> 00:02:27,960
+ Y por último, vamos a hablar de cómo se aplica todos estos conocimientos
+
+28
+00:02:27,960 --> 00:02:34,680
+ para desarrollar un algorithmo genético correspondiente a la inteligencia computacional.
+
+29
+00:02:34,680 --> 00:02:40,440
+ Bueno, para Machine Learning nosotros habíamos visto al principio de la cruzada
+
+30
+00:02:40,440 --> 00:02:44,600
+ que podemos decir que entrenar un algorithmo de Machine Learning,
+
+31
+00:02:44,600 --> 00:02:48,280
+ construir un modelo de Machine Learning es como cultivar una planta.
+
+32
+00:02:48,280 --> 00:02:54,040
+ Yo le tengo que dar datos que sería como el agua para arregar a la semilla,
+
+33
+00:02:54,040 --> 00:02:56,040
+ que sería nuestro algorithmo.
+
+34
+00:02:56,040 --> 00:03:00,440
+ Y como resultado vamos a tener nuestra flor, nuestra plantita,
+
+35
+00:03:00,440 --> 00:03:05,720
+ que va a ser del modelo que puede representar el comportamiento de dichos datos.
+
+36
+00:03:05,720 --> 00:03:10,840
+ Entonces, en Machine Learning, lo que yo voy a tener son datos, que se les voy a dar un algorithmo,
+
+37
+00:03:10,840 --> 00:03:13,240
+ y eso me va a generar un modelo.
+
+38
+00:03:13,240 --> 00:03:20,520
+ A veces, una podría pensar que están sencillos como armar partes, como si fuera de dibujo
+
+39
+00:03:20,520 --> 00:03:25,000
+ que nos muestra como armar un mueble, cuando en nosotros tenemos la parte separada,
+
+40
+00:03:25,000 --> 00:03:29,320
+ tengo que hacer algunos pasos que te dicen, no son bastante sencillos,
+
+41
+00:03:29,320 --> 00:03:36,440
+ que te llevarían algo así como 15, 30 minutos, pero que en la realidad suele llevar más,
+
+42
+00:03:36,440 --> 00:03:39,640
+ a veces estas varios días, siendo andando andando a andar,
+
+43
+00:03:39,640 --> 00:03:44,200
+ como según en ciertas piezas porque en el diagrama no queda claro.
+
+44
+00:03:44,200 --> 00:03:50,120
+ Con Machine Learning, va a pasar lo mismo a veces, lograr que tener el modelo es sencillo,
+
+45
+00:03:50,120 --> 00:03:54,760
+ porque te lo da el algorithmo de Machine Learning, pero tener el modelo que cumpla los objetivos
+
+46
+00:03:54,760 --> 00:04:00,200
+ que nosotros querramos es más difícil. Entonces, además de nosotros necesitar
+
+47
+00:04:00,200 --> 00:04:07,080
+ entrenar al modelo, vamos a ver qué tenemos que realizar otras procesos que son complementarios.
+
+48
+00:04:07,080 --> 00:04:14,120
+ Bueno, el entrenamiento ya habíamos hablado cuando vimos redes neuronales artificiales,
+
+49
+00:04:14,120 --> 00:04:19,160
+ que es el proceso que busca determinar o aprender de manera automática, los valores
+
+50
+00:04:19,160 --> 00:04:24,440
+ de correctos para construir un modelo que representa un conjunto de datos disponibles,
+
+51
+00:04:24,440 --> 00:04:28,040
+ que eso sería nuestros ejemplos. En caso de las redes neuronales,
+
+52
+00:04:28,040 --> 00:04:34,440
+ artificiales vimos que a partir de esos ejemplos se encuentra la combinación de pesos,
+
+53
+00:04:34,440 --> 00:04:39,640
+ que serían estos parámetros o valores correctos, que nos permiten de definir nuestro modelo
+
+54
+00:04:39,640 --> 00:04:45,720
+ que va a hacer la rende uruna artificial y entrenada, o ya aprendida para proceder el problema.
+
+55
+00:04:47,560 --> 00:04:53,560
+ Entonces, hay para hacer el aprendizaje el entrenamiento de nuestro modelo,
+
+56
+00:04:53,560 --> 00:04:58,360
+ nosotros tenemos que ver, bueno, si usamos un algorithmos supervisado, no supervisado,
+
+57
+00:04:58,360 --> 00:05:03,160
+ si vamos a usar algún tipo de tecnología que offline o online.
+
+58
+00:05:03,160 --> 00:05:08,840
+ Eso es temas ya, los vimos cuando hablamos de redes neuronales artificiales,
+
+59
+00:05:08,840 --> 00:05:14,600
+ eso de que no voy a volver a entrar en detalle. Pero qué dificultad tenemos?
+
+60
+00:05:14,600 --> 00:05:20,120
+ Muchas veces aplicará algoritmos más y leer un impudente de tener muchos parámetros.
+
+61
+00:05:20,120 --> 00:05:27,640
+ Entonces, como me aseguro que estoy usando los parámetros mejores para generar el modelo optimal.
+
+62
+00:05:27,640 --> 00:05:33,000
+ En redes neuronales artificiales vimos que uno había dos parámetros que eran muy importantes,
+
+63
+00:05:33,000 --> 00:05:39,160
+ que son uno, el alfa, la tasa de aprendizaje, que si yo le poni una tasa muy chiquita,
+
+64
+00:05:39,160 --> 00:05:45,720
+ se tardaba más en encontrar la combinación de pesos, pero si yo le poni un alfa muy grande,
+
+65
+00:05:45,720 --> 00:05:52,360
+ podía hacer que se vuelva inestable y así podía pasar que aprende algo y se olvide de lo anterior.
+
+66
+00:05:52,360 --> 00:05:59,480
+ Por otro lado, de segundo parámetro, es la cantidad de ciclos que se van a emplear durante el entrenamiento.
+
+67
+00:05:59,480 --> 00:06:05,560
+ ¿Qué? Si yo pongo demasiado, puedo generar que mi modelo se sobre entrené, pero si pongo demasiado pocos,
+
+68
+00:06:05,560 --> 00:06:12,680
+ poder pasar que mi modelo no llega a aprender. Entonces, eso son algunos tipos de parámetros
+
+69
+00:06:12,680 --> 00:06:18,840
+ que se pueden usar. Hay algoritmos que tienen más, hay algoritmos que tienen menos, pero a veces la cuestión
+
+70
+00:06:18,840 --> 00:06:24,680
+ está en qué parámetros le pongo para lograr que mi algoritmos aprenda, que se genera el modelo correcto,
+
+71
+00:06:24,680 --> 00:06:29,960
+ que resolve el problema que yo quiero resolver, porque muchas veces los que nos puede pasar es que el modelo
+
+72
+00:06:29,960 --> 00:06:37,880
+ lo voy a tener, pero no es el modelo que yo necesito. Separa asegurarme de eso, va a ver una etapa
+
+73
+00:06:37,880 --> 00:06:43,640
+ durante la construcción del modelo que se va a denominar de prototipado y experimentación,
+
+74
+00:06:43,640 --> 00:06:47,960
+ y que está incluido dentro del proceso de validación del modelo.
+
+75
+00:06:47,960 --> 00:06:55,000
+ A veces, como les decía antes, entrenar un modelo uno podría pensar que es así, o sea,
+
+76
+00:06:55,000 --> 00:07:01,080
+ yo entren el modelo y o gano o pierdo, o sea, obtengo el modelo que yo quería o no obtengo el modelo
+
+77
+00:07:01,080 --> 00:07:07,960
+ que yo quería. Entonces, si falle, ya está todo que volver al principio para ver qué hago, en la realidad
+
+78
+00:07:07,960 --> 00:07:15,960
+ es más así, muchas veces entrenar el modelo de chocarse muchas veces, o contra el algoritmo, contra el
+
+79
+00:07:15,960 --> 00:07:22,120
+ framework, con la herramienta que estamos usando, peliarse con los datos, peliarse con los estejoles,
+
+80
+00:07:22,120 --> 00:07:27,400
+ de la vez que no nos dan buenas definiciones, hasta que logramos obtener el modelo que nosotros
+
+81
+00:07:27,400 --> 00:07:32,440
+ precisamos. A veces que es cuestión de encontrar un parámetro, a veces es cuestión de agregar
+
+82
+00:07:32,440 --> 00:07:38,840
+ datos, a veces es cuestión de sacar datos, a veces sacar una tributo y logramos que nuestro modelo
+
+83
+00:07:38,840 --> 00:07:44,200
+ aprenda bien y que es lo sobreviene el problema, a veces estamos más datos, a veces necesitamos normalizar
+
+84
+00:07:44,200 --> 00:07:50,040
+ los datos fueron. Todes esas cuestiones para hacer que fallemos, fallemos, fallemos hasta que obtengamos
+
+85
+00:07:50,040 --> 00:07:58,920
+ el modelo ideal o un modelo aunque sea que el satisface nuestras necesidades. Es que capaz que obtener el
+
+86
+00:07:58,920 --> 00:08:07,320
+ modelo con el error mínimo, el error sero, es imposible y bueno, nos quedamos contento, teniendo un modelo que
+
+87
+00:08:07,320 --> 00:08:13,080
+ tiene una error pequeña. Siempre y cuando hay que ver la criticidad que va a tener ese modelo en el
+
+88
+00:08:13,080 --> 00:08:17,800
+ problema que queremos resolver si estamos en el ámbito de medicina, obviamente que tenemos que
+
+89
+00:08:17,800 --> 00:08:26,920
+ entender a generar un error de cero, pero bueno, a veces también se complica. Entonces, luego de entrenar
+
+90
+00:08:26,920 --> 00:08:32,520
+ el modelo, lo que tendremos que hacer es experimentar con el modelo, analizar cómo funciona nuestro
+
+91
+00:08:32,520 --> 00:08:39,080
+ modelo con otros datos, analizar los resultados que nos genera este experimentación del modelo,
+
+92
+00:08:39,080 --> 00:08:46,920
+ y a partir de ese análisis encontrar que no parámetros o que nuevas acciones tenemos que realizar
+
+93
+00:08:46,920 --> 00:08:55,640
+ para mejorar el modelo que nosotros estamos generando. Entonces, ahí se va a producir un proceso
+
+94
+00:08:55,640 --> 00:09:03,160
+ ciclico y estas dos áreas o etapas de experimentar y analices resultados, va a estar dentro de
+
+95
+00:09:03,160 --> 00:09:09,400
+ otro proceso que vamos a denominar, validar el modelo. Entonces, validar el modelo a realizar la
+
+96
+00:09:09,400 --> 00:09:14,440
+ validación del modelo consiste en un proceso que enevalió a los resultados de diferentes parámetros
+
+97
+00:09:14,440 --> 00:09:21,080
+ en el entrenamiento para intentar optimizar el modelo obtenido. Entonces, lo que yo puedo hacer es
+
+98
+00:09:21,080 --> 00:09:27,080
+ entrenar el modelo con unos parámetros veo los resultados y se modela los pruebas con otros datos
+
+99
+00:09:27,080 --> 00:09:33,880
+ datos de validación y como resultados, vamos a ver una precisión más real porque si nuestro modelo
+
+100
+00:09:33,880 --> 00:09:39,960
+ está sobre entrenado los resultados de la precisión del entrenamiento, pueden ser mentirosos.
+
+101
+00:09:41,480 --> 00:09:46,040
+ Decional y si que vamos a hacer sobre los resultados de la validación vamos a determinar bueno,
+
+102
+00:09:46,040 --> 00:09:52,760
+ ya tenemos el modelo que satisfáce las necesidades, tenemos el modelo ideal o no. Si decimos que no, bueno,
+
+103
+00:09:52,760 --> 00:09:58,120
+ decimos bueno, ¿qué pasa si probamos con este otro parámetros? Entonces, podemos arrepetir a todo y vemos
+
+104
+00:09:58,120 --> 00:10:04,440
+ que se resulta. Si funciona mejor, quiere decir que lo que elegimos, probar, andúbo bien.
+
+105
+00:10:04,440 --> 00:10:10,040
+ Si lo que nos generamos es un modelo que es peor, quiere decir que tenemos que seguir probando o
+
+106
+00:10:10,040 --> 00:10:15,560
+ hay que probar por otro lado porque capas que en el problema no son los parámetros, son los datos o son
+
+107
+00:10:15,560 --> 00:10:22,840
+ alguna otra cuestión que tenemos que resolver. Bien, entonces, a la entrenamiento siempre tenemos
+
+108
+00:10:22,840 --> 00:10:28,680
+ que hacerlo en la validación. Pero ¿qué pasa? ¿Cómo nos podemos asegurar si que nuestro modelo,
+
+109
+00:10:28,680 --> 00:10:35,800
+ una vez que finaliza la validación, es capaz de generalizar. ¿Por qué podría ser que nuestro
+
+110
+00:10:35,800 --> 00:10:42,280
+ modelo, que ya lo validamos y obtuvimos un modelo satisfactorio, puede ser que no genera lice
+
+111
+00:10:42,280 --> 00:10:48,280
+ correctamente? Porque nosotros estamos iterando varias veces para entrenar y para la validación.
+
+112
+00:10:48,280 --> 00:10:54,680
+ Entonces, puede ser que nuestro modelo que de sobreentrenado tanto por los datos de entrenamiento,
+
+113
+00:10:54,680 --> 00:11:00,360
+ como los datos de validación. Entonces, en vez de tener un buena aprendizaje del modelo,
+
+114
+00:11:00,360 --> 00:11:07,080
+ donde el nuestro modelo logra y respetar el comportamiento del problema que aprendió a partir
+
+115
+00:11:07,080 --> 00:11:12,840
+ de los ejemplos, los que no puede pasar es que tengo un mala aprendizaje. Entonces, aprende de
+
+116
+00:11:12,840 --> 00:11:17,000
+ demasiado bien sobre los datos de entrenamiento y capaz que sobre los datos de validación,
+
+117
+00:11:17,000 --> 00:11:23,240
+ si nosotros consideramos muchas veces. Pero, para otro ejemplo, otra combinación de datos nos da
+
+118
+00:11:23,240 --> 00:11:29,560
+ un resultado incorrecto. La estimación que genera ahí va a ser distinta del comportamiento
+
+119
+00:11:29,560 --> 00:11:35,480
+ que nosotros queremos que tenga en teoría nuestro sistema elegante. Entonces, para lograr eso,
+
+120
+00:11:35,480 --> 00:11:42,280
+ vamos a necesitar un tercer conjunto de datos que son los datos de prueba. Entonces, además de
+
+121
+00:11:42,280 --> 00:11:49,400
+ entrenar, validar, también vamos a tener un proceso de prueba, que yo ahora acá me voy a correr
+
+122
+00:11:49,400 --> 00:11:55,640
+ para que se lea la definición. Entonces, en la prueba o en probar el modelo lo que se hace es
+
+123
+00:11:55,640 --> 00:12:01,960
+ buscar, evaluar si el modelo construido, posee una buena capacidad de generalización. Es decir,
+
+124
+00:12:01,960 --> 00:12:08,680
+ si nuestro modelo que nosotros ya entrenamos y validamos, para ejemplos parecidos a los que
+
+125
+00:12:08,680 --> 00:12:16,120
+ va a tener en producción, va a responder de manera correcta. Para hacer eso, entonces, vamos a necesitar
+
+126
+00:12:16,120 --> 00:12:23,080
+ que los datos que le vamos a administrar al modelo en la fase de construcción, los tengamos que
+
+127
+00:12:23,080 --> 00:12:29,240
+ dividir en datos de entrenamiento, datos de validación y datos de prueba. Para ello, lo que podemos
+
+128
+00:12:29,240 --> 00:12:36,520
+ hacer es tomar muestras de datos, por ejemplo, yo podría tomar una muestra estratificada de datos
+
+129
+00:12:36,520 --> 00:12:41,880
+ para hacer el entrenamiento, otra muestra para validación y otra muestra para prueba. De esto,
+
+130
+00:12:41,880 --> 00:12:47,000
+ hablamos un poco cuando vimos redes neuronales artificiales donde vimos también que tipos de
+
+131
+00:12:47,000 --> 00:12:53,080
+ métricas se pueden emplear para evaluar nuestros modelos, esas métricas también les vamos a usar
+
+132
+00:12:53,080 --> 00:12:59,480
+ durante la validación y la prueba, teniendo en cuenta estos sus conjuntos de datos. Bueno,
+
+133
+00:12:59,480 --> 00:13:06,200
+ con esto vamos a terminar este vídeo, en el vídeo siguiente vamos a hablar del proceso de construcción
+
+134
+00:13:06,200 --> 00:13:13,000
+ de los modelos correspondientes para inteligencia artificial tradicional y para inteligencia computacional. Hasta
+

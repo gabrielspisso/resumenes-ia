@@ -1,0 +1,808 @@
+1
+00:00:00,000 --> 00:00:06,000
+ Hola, este es el primer vídeo correspondiente de la presentación de razonamiento aproximado y lógica difusa.
+
+2
+00:00:06,000 --> 00:00:12,000
+ En este vídeo vamos a ver una introducción al concepto del razonamiento aproximado,
+
+3
+00:00:12,000 --> 00:00:16,000
+ que es una tecnología del entro del inteligencia artificial,
+
+4
+00:00:16,000 --> 00:00:23,000
+ y ya en el vídeo siguiente vamos a empezar a ver qué es y cómo trabaja la lógica difusa.
+
+5
+00:00:23,000 --> 00:00:27,000
+ Bueno, una definición de razonamiento aproximada es la siguiente.
+
+6
+00:00:27,000 --> 00:00:32,000
+ Es un modelo que permiten imitar la manera en que las personas toman decisiones.
+
+7
+00:00:32,000 --> 00:00:37,000
+ Y se para ello aplican métodos para representar, combinar y propagar,
+
+8
+00:00:37,000 --> 00:00:41,000
+ información, impresiza y o incierto.
+
+9
+00:00:41,000 --> 00:00:47,000
+ Entonces, este a característica hace que los modelos de razonamiento aproximados
+
+10
+00:00:47,000 --> 00:00:55,000
+ se distinguan de los otros modelos que utilizan la inteligencia artificial porque permiten trabajar y gestionar con
+
+11
+00:00:55,000 --> 00:01:02,000
+ conocimiento o información que es impresiza y o incierto.
+
+12
+00:01:02,000 --> 00:01:12,000
+ De esta manera puede asistir a las tomas de decisiones realizando inferencias que tienen asociado un grado de serotesa.
+
+13
+00:01:12,000 --> 00:01:18,000
+ Para entender entonces cómo funciona este razonamiento aproximado y sus modelos
+
+14
+00:01:18,000 --> 00:01:22,000
+ vamos a ver qué significa información incierta.
+
+15
+00:01:22,000 --> 00:01:26,000
+ Entonces vamos a hablar sobre la incertidumbre.
+
+16
+00:01:26,000 --> 00:01:32,000
+ Un incertidumbre nos dice que es la falta de seguridad de confianza o de certeza sobre algo,
+
+17
+00:01:32,000 --> 00:01:34,000
+ especialmente cuando creen que tú.
+
+18
+00:01:34,000 --> 00:01:40,000
+ También se puede ver como un estado de duda en el que predomina el límito de la confianza o la creencia
+
+19
+00:01:40,000 --> 00:01:43,000
+ en la verdad de un determinado conocimiento.
+
+20
+00:01:43,000 --> 00:01:49,000
+ Este imperfectión en el conocimiento sobre el estado de los procesos de la naturaleza.
+
+21
+00:01:49,000 --> 00:01:57,000
+ Entonces, el incertidumbre tiene que ver con información de la cual nos estamos totalmente seguros de que sea así,
+
+22
+00:01:57,000 --> 00:01:59,000
+ que toma tal valor.
+
+23
+00:01:59,000 --> 00:02:06,000
+ Entonces, algunos ejemplos de incertidumbre podrían saber los juegos de asar como la ruleta de cartas,
+
+24
+00:02:06,000 --> 00:02:12,000
+ donde nosotros nos sabemos en la ruleta que número va a salir o en el juego de cartas,
+
+25
+00:02:12,000 --> 00:02:18,000
+ nos sabemos qué cartas vamos a recibir y qué cartas va a recibir nuestro contra incante.
+
+26
+00:02:18,000 --> 00:02:22,000
+ También aplicaría situaciones como la bolsa,
+
+27
+00:02:22,000 --> 00:02:27,000
+ y un ejemplo más cotidiano podría hacer la situación donde yo voy por una vereda
+
+28
+00:02:27,000 --> 00:02:29,000
+ y sé que hay algunas baldos aflojas,
+
+29
+00:02:29,000 --> 00:02:34,000
+ entonces yo tengo que adivinar cuál es la baldos afloja para no pisarla.
+
+30
+00:02:34,000 --> 00:02:37,000
+ Bien, por otro lado tenemos la impresición.
+
+31
+00:02:37,000 --> 00:02:43,000
+ La impresición nos dice que es una evividad donde es conocimiento del valor concreto de una variable.
+
+32
+00:02:43,000 --> 00:02:47,000
+ También se puede ver como una cualidad generalmente asociada al incertidumbre,
+
+33
+00:02:47,000 --> 00:02:50,000
+ aunque puede ser independiente.
+
+34
+00:02:50,000 --> 00:02:54,000
+ También se puede ver como la falta de presición o exactitud.
+
+35
+00:02:54,000 --> 00:02:57,000
+ Aunque esta última definición no es del todo correcta,
+
+36
+00:02:57,000 --> 00:03:04,000
+ porque era vamos a saber que la presición el aire exactitud puede ser cosas distintas.
+
+37
+00:03:04,000 --> 00:03:07,000
+ Porque como podemos ver en estos diagramas,
+
+38
+00:03:07,000 --> 00:03:10,000
+ yo puedo tener algo que sea preciso de exacto,
+
+39
+00:03:10,000 --> 00:03:14,000
+ pero también puedo tener algo preciso e inexacto
+
+40
+00:03:14,000 --> 00:03:21,000
+ o impresiso y exacto y también impresiso e inexacto.
+
+41
+00:03:21,000 --> 00:03:24,000
+ Bueno, pero qué es la impresición?
+
+42
+00:03:24,000 --> 00:03:28,000
+ Una ejemplo que podemos dar es el caso del vaso.
+
+43
+00:03:28,000 --> 00:03:30,000
+ Yo tengo un vaso con la mitad de agua,
+
+44
+00:03:30,000 --> 00:03:33,000
+ y un optimista me puede decir que está medio lleno,
+
+45
+00:03:33,000 --> 00:03:36,000
+ pero un pessimista me puede decir que está medio vacío.
+
+46
+00:03:36,000 --> 00:03:39,000
+ Sea, depende de la visión de la persona,
+
+47
+00:03:39,000 --> 00:03:41,000
+ va a tener un valor impresiso,
+
+48
+00:03:41,000 --> 00:03:44,000
+ tendriendo que está lleno o tendriendo que estiva así.
+
+49
+00:03:44,000 --> 00:03:48,000
+ Luego de decirme el vaso tiene tantos mililitros de agua
+
+50
+00:03:48,000 --> 00:03:52,000
+ me dan una valoración bastante ambigua.
+
+51
+00:03:52,000 --> 00:03:55,000
+ Esto también lo podemos ver con otros ejemplos,
+
+52
+00:03:55,000 --> 00:03:58,000
+ donde alguien que ve caer agua,
+
+53
+00:03:58,000 --> 00:04:00,000
+ está yo viendo, nos dice,
+
+54
+00:04:00,000 --> 00:04:01,000
+ está yo viendo poco,
+
+55
+00:04:01,000 --> 00:04:03,000
+ está yo viendo muy finito,
+
+56
+00:04:03,000 --> 00:04:05,000
+ está yo viendo un montón,
+
+57
+00:04:05,000 --> 00:04:07,000
+ está yo viendo bastante,
+
+58
+00:04:07,000 --> 00:04:12,000
+ todos estos son descripciones utilizando valores impresicios,
+
+59
+00:04:12,000 --> 00:04:15,000
+ donde no le doy una valoración concreta
+
+60
+00:04:15,000 --> 00:04:18,000
+ a la cantidad de agua que está cayendo,
+
+61
+00:04:18,000 --> 00:04:21,000
+ sino que una representación más subjetiva
+
+62
+00:04:21,000 --> 00:04:24,000
+ de el agua que cae.
+
+63
+00:04:24,000 --> 00:04:26,000
+ Si me la persona me dije,
+
+64
+00:04:26,000 --> 00:04:28,000
+ está yo viendo tantos mililitros de agua,
+
+65
+00:04:28,000 --> 00:04:29,000
+ por segundo,
+
+66
+00:04:29,000 --> 00:04:33,000
+ ahí se tendrían un información totalmente presisa.
+
+67
+00:04:33,000 --> 00:04:35,000
+ Otro ejemplo de esto,
+
+68
+00:04:35,000 --> 00:04:38,000
+ donde se puede aparecer una impresición,
+
+69
+00:04:38,000 --> 00:04:39,000
+ es describiendo un objeto.
+
+70
+00:04:39,000 --> 00:04:41,000
+ Entonces, si yo quiero describir una vaca,
+
+71
+00:04:41,000 --> 00:04:42,000
+ un toro,
+
+72
+00:04:42,000 --> 00:04:45,000
+ podría decir que es un animal con cuatro patas
+
+73
+00:04:45,000 --> 00:04:46,000
+ y tiene cuernos,
+
+74
+00:04:46,000 --> 00:04:48,000
+ o directamente es un animal con cuernos.
+
+75
+00:04:48,000 --> 00:04:51,000
+ Entonces, ahí también tenemos una descripción
+
+76
+00:04:51,000 --> 00:04:52,000
+ bastante impresisa,
+
+77
+00:04:52,000 --> 00:04:55,000
+ porque estamos obviendo mucho detalle
+
+78
+00:04:55,000 --> 00:04:58,000
+ de elementos que conforman a una vaca
+
+79
+00:04:58,000 --> 00:05:00,000
+ y la distingan de otros animales
+
+80
+00:05:00,000 --> 00:05:03,000
+ que también tienen cuatro patas y cuernos.
+
+81
+00:05:03,000 --> 00:05:09,000
+ Entonces, depende del nivel de detalle
+
+82
+00:05:09,000 --> 00:05:11,000
+ que nosotros estemos agregando,
+
+83
+00:05:11,000 --> 00:05:14,000
+ podemos tener distintos grados de impresición
+
+84
+00:05:14,000 --> 00:05:16,000
+ para describir algo.
+
+85
+00:05:16,000 --> 00:05:18,000
+ Otro tipo de situación,
+
+86
+00:05:18,000 --> 00:05:19,000
+ otro tipo de ejemplo,
+
+87
+00:05:19,000 --> 00:05:22,000
+ es cuando utilizamos no el nombre presiso
+
+88
+00:05:22,000 --> 00:05:24,000
+ para referirnos a un objeto.
+
+89
+00:05:24,000 --> 00:05:26,000
+ Eso es lo que pasa cuando vamos a la ferratería
+
+90
+00:05:26,000 --> 00:05:28,000
+ y le tedimos a el cozo,
+
+91
+00:05:28,000 --> 00:05:29,000
+ el cosito,
+
+92
+00:05:29,000 --> 00:05:31,000
+ el cómo se llama o la cosa esa.
+
+93
+00:05:31,000 --> 00:05:36,000
+ Entonces, cuando nos sabemos cómo denominar
+
+94
+00:05:36,000 --> 00:05:39,000
+ correctamente algún elemento que precisamos,
+
+95
+00:05:39,000 --> 00:05:43,000
+ utilizamos esos términos bastante amigos,
+
+96
+00:05:43,000 --> 00:05:44,000
+ bastante impresizo,
+
+97
+00:05:44,000 --> 00:05:46,000
+ así que el pobre ferratero tiene que adivinar
+
+98
+00:05:46,000 --> 00:05:50,000
+ para donar lo que nosotros necesitamos.
+
+99
+00:05:50,000 --> 00:05:52,000
+ Bien.
+
+100
+00:05:52,000 --> 00:05:54,000
+ Acá hay un último ejemplo
+
+101
+00:05:54,000 --> 00:05:57,000
+ donde una maestra fue bastante impresisa
+
+102
+00:05:57,000 --> 00:06:00,000
+ con la tarea que deberían hacer los chicos,
+
+103
+00:06:00,000 --> 00:06:02,000
+ el miércoles vendrán los alumnos
+
+104
+00:06:02,000 --> 00:06:05,000
+ difrazados de casa como quieran.
+
+105
+00:06:05,000 --> 00:06:06,000
+ Ese día en el colegio,
+
+106
+00:06:06,000 --> 00:06:08,000
+ ahora hemos un desfilito,
+
+107
+00:06:08,000 --> 00:06:10,000
+ marancho colate con mis coches.
+
+108
+00:06:10,000 --> 00:06:11,000
+ Entonces, todos los padres
+
+109
+00:06:11,000 --> 00:06:13,000
+ difrazaron a sus hijos de edificios
+
+110
+00:06:13,000 --> 00:06:15,000
+ porque pensaron que tenían que estar
+
+111
+00:06:15,000 --> 00:06:17,000
+ difrazados de casa
+
+112
+00:06:17,000 --> 00:06:20,000
+ y no entendieron que tenían que venir
+
+113
+00:06:20,000 --> 00:06:22,000
+ difrazado desde la casa.
+
+114
+00:06:22,000 --> 00:06:25,000
+ Lo cual es bastante distinto.
+
+115
+00:06:25,000 --> 00:06:27,000
+ Entonces, esa imposición
+
+116
+00:06:27,000 --> 00:06:30,000
+ en la frase "genero" que los pobres chicos
+
+117
+00:06:30,000 --> 00:06:32,000
+ se difrazaron todos los edificios.
+
+118
+00:06:32,000 --> 00:06:33,000
+ Bueno,
+
+119
+00:06:33,000 --> 00:06:35,000
+ ¿Cuáles son las fontes
+
+120
+00:06:35,000 --> 00:06:36,000
+ de esta impresición
+
+121
+00:06:36,000 --> 00:06:38,000
+ interincertidumbre? Bueno,
+
+122
+00:06:38,000 --> 00:06:40,000
+ por un lado, se dan por las características
+
+123
+00:06:40,000 --> 00:06:41,000
+ que tiene el mundo real,
+
+124
+00:06:41,000 --> 00:06:44,000
+ que tiene cierta alectoridad,
+
+125
+00:06:44,000 --> 00:06:45,000
+ asociada,
+
+126
+00:06:45,000 --> 00:06:46,000
+ es muy compleja,
+
+127
+00:06:46,000 --> 00:06:48,000
+ no podemos conocer todo lo que suceden
+
+128
+00:06:48,000 --> 00:06:50,000
+ y hay muchas decepciones,
+
+129
+00:06:50,000 --> 00:06:51,000
+ a su vez,
+
+130
+00:06:51,000 --> 00:06:52,000
+ la información,
+
+131
+00:06:52,000 --> 00:06:53,000
+ suele ser
+
+132
+00:06:53,000 --> 00:06:54,000
+ incorrecta,
+
+133
+00:06:54,000 --> 00:06:59,440
+ con traditoria que se tiene que gestionar y el lenguaje, el lenguaje natural, el castellano, en
+
+134
+00:06:59,440 --> 00:07:05,560
+ la esquina o lo que sea, también tiene deficiencias que le da cierta ambiguidad a lo que nosotros
+
+135
+00:07:05,560 --> 00:07:11,040
+ estamos diciendo. Por eso se dice que vos sabes lo que quisiste decir, pero no sabes lo que
+
+136
+00:07:11,040 --> 00:07:17,360
+ el otro entendió. Hay veces que para eso tenemos que utilizar otros ejemplos, otras términos,
+
+137
+00:07:17,360 --> 00:07:23,880
+ para que la otra persona entienda, lo que nosotros queremos decir. Entonces muchas veces el ser humano,
+
+138
+00:07:23,880 --> 00:07:31,280
+ es impreciso e incierto por su naturaleza y la naturaleza del mundo. Y cuando nosotros queremos
+
+139
+00:07:31,280 --> 00:07:36,160
+ implementar un sistema inteligente que maneja esa información, se nos vuelve un poquito más
+
+140
+00:07:36,160 --> 00:07:42,480
+ complica, porque no tenemos datos de los cuales estamos totalmente seguros, ni datos de los cuales
+
+141
+00:07:42,480 --> 00:07:50,960
+ no podemos definir cuántomiden exactamente. Por ejemplo, nosotros podemos tener este texto que
+
+142
+00:07:50,960 --> 00:07:57,360
+ podría ser el texto de un libro, de inteligencia artificial, donde hay muchos ejemplos de imprescición
+
+143
+00:07:57,360 --> 00:08:06,440
+ e incertidumbre. Hay cuando hablas de abeces, de varias, son demasiado, otras veces, son todos
+
+144
+00:08:06,440 --> 00:08:14,360
+ ejemplos de incertidumbre e imprescición. El muyobias, el casita catastrófico que está al final,
+
+145
+00:08:14,360 --> 00:08:23,680
+ son ejemplos también determinos que tienen ciertas incertidumbre o variedad al momento de referirlo.
+
+146
+00:08:23,680 --> 00:08:29,960
+ Entonces, en un conjunto de datos, en un texto, yo puedo tener datos inciertos o imprescisas,
+
+147
+00:08:29,960 --> 00:08:35,800
+ pero también esa imprescición e incertidumbre puede estar asociado de los conocimientos.
+
+148
+00:08:35,800 --> 00:08:42,000
+ Supongamos que estas son reglas que yo quiero utilizar para construir la base de conocimiento
+
+149
+00:08:42,000 --> 00:08:46,380
+ de un sistema basado de conocimiento de un sistema experto tradicional.
+
+150
+00:08:46,380 --> 00:08:51,680
+ Y tengo que manejar, entonces, cierta imprescición y cierta incertidumbre.
+
+151
+00:08:51,680 --> 00:08:56,640
+ Mire, la primera regla dice, si el paciente evidencia totalmente el síntoma uno, hay
+
+152
+00:08:56,640 --> 00:09:02,600
+ no hay problema, y, parcialmente, el síntoma dos, ahí ya tenemos un problema, ¿qué significa
+
+153
+00:09:02,600 --> 00:09:09,640
+ parcialmente el síntoma dos? Tenemos que definir, ¿no? Y se, entonces, creo que el diagnóstico
+
+154
+00:09:09,640 --> 00:09:17,140
+ podría ser, bueno, ahí el creo que podría ser es un incertidumbre claramente, que nosotros
+
+155
+00:09:17,140 --> 00:09:24,060
+ no, no sabemos cómo manejarla, porque eso es el diagnóstico o no es el si diagnóstico.
+
+156
+00:09:24,060 --> 00:09:28,760
+ Cuánta confianza tiene de que sea el diagnóstico de uno, y de que no sea el diagnóstico
+
+157
+00:09:28,760 --> 00:09:33,520
+ de uno. Tío todo el diagnóstico podría ser, bueno, entonces, son todas cuestiones
+
+158
+00:09:33,520 --> 00:09:38,600
+ que hay que definir antes de poder construir nuestro sistema inteligente.
+
+159
+00:09:38,600 --> 00:09:42,520
+ Por otro lado, la segunda regla dice, si el paciente tiene el síntoma uno, el síntoma
+
+160
+00:09:42,520 --> 00:09:47,840
+ dos, no hay dudas, dice entonces el diagnóstico, en la mayoría de los casos es de uno,
+
+161
+00:09:47,840 --> 00:09:53,000
+ pero en otros casos es posible que sea de dos, pero es ahí de vuelta, que es mayoría,
+
+162
+00:09:53,000 --> 00:09:59,600
+ que es otros casos, cómo valorar eso, cómo manejarlo dentro de nuestro sistema inteligente.
+
+163
+00:09:59,600 --> 00:10:05,000
+ Y estar cualidad de imprescición e incertidumbre, fíjense que se puede dar también con
+
+164
+00:10:05,000 --> 00:10:10,240
+ valores numericos, eso lo vamos a ver en el tercer ejemplo, dice, si el paciente evidencia
+
+165
+00:10:10,240 --> 00:10:17,920
+ el síntoma uno en un 80%, y el síntoma dos en un 55%, bueno, ¿qué significa
+
+166
+00:10:17,920 --> 00:10:23,360
+ que tiene el síntoma uno en 80%. Si el síntoma uno es fíjere, ¿qué consideramos
+
+167
+00:10:23,360 --> 00:10:30,840
+ que tenga un 80% de fíjere, que tiene un 80% de 37 grados, o que tuvo fíjere
+
+168
+00:10:30,840 --> 00:10:40,520
+ por un 80% a 80% del tiempo, bueno, hay que definirlo. Y con se cuente, nos dice, entonces el
+
+169
+00:10:40,520 --> 00:10:47,320
+ diagnóstico en el 75% de los casos es de uno, pero en el 40% de los casos es de dos.
+
+170
+00:10:47,320 --> 00:10:54,280
+ Si el 75% obviamente son insartidumbre, pues no estamos seguro de que es de uno, pero fíjense
+
+171
+00:10:54,280 --> 00:10:58,780
+ que también se puede solapar y se puede presentar de uno y de dos, porque se
+
+172
+00:10:58,780 --> 00:11:06,180
+ tiene un 75% más 40% da más del 100%. Entonces, ahí también tenemos un problema de que
+
+173
+00:11:06,180 --> 00:11:11,740
+ tenemos que conseguir tres posibles situaciones de las cuales no estamos seguros, cuales se
+
+174
+00:11:11,740 --> 00:11:17,820
+ pueden dar y como distinguir una de la otra. Entonces, para poder trabajar con este tipo de
+
+175
+00:11:17,820 --> 00:11:23,620
+ reglas, vamos a tener que usar alguna de los modelos de razonamiento aproximado. Y esos modelos
+
+176
+00:11:23,620 --> 00:11:30,260
+ de razonamiento de aproximado se pueden distinguir en dos tipos, los que usan métodos,
+
+177
+00:11:30,260 --> 00:11:37,740
+ cualitativos y los que usan métodos, cuantitativos o numericos. Los métitos, cualitativos,
+
+178
+00:11:37,740 --> 00:11:43,380
+ no les vamos a dar, porque porque son más teóricos que si deben para explicar cómo
+
+179
+00:11:43,380 --> 00:11:50,860
+ se debería manejar y potes y sotesis, con sierte, incertidumbre o sierte impresicción. Entonces,
+
+180
+00:11:50,860 --> 00:11:58,100
+ no tienen aplicaciones prácticas. Dentro de los métodos cuantitativos o numericos están.
+
+181
+00:11:58,100 --> 00:12:02,420
+ El método probabilístico plástico que ustedes ya conocen de la signatura probabilidad
+
+182
+00:12:02,420 --> 00:12:08,620
+ y estadística. Entonces, lo que hago es usar un sistema inteligente que aplicar esos métodos
+
+183
+00:12:08,620 --> 00:12:15,260
+ generalmente conformo las un poquito más complicadas para poder hacer razonamiento usando
+
+184
+00:12:15,260 --> 00:12:21,460
+ probabilidades. Un extensión de este método probabilístico clásico de son, los modelos de
+
+185
+00:12:21,460 --> 00:12:28,100
+ marco y las redes vayecianas que, por una cuestión de largo del programa de esta materia,
+
+186
+00:12:28,100 --> 00:12:36,100
+ no le habemos inteligencia artificial, pero si se den la signatura electiva. Por otro lado,
+
+187
+00:12:36,100 --> 00:12:41,400
+ tenemos el modelo de factores de sartezas, que es un modelo que se planteó en el año
+
+188
+00:12:41,400 --> 00:12:48,980
+ 1975, que permite construir un sistema inteligente para diagnosticar un tipo de enfermedad.
+
+189
+00:12:48,980 --> 00:12:54,320
+ El sistema inteligente se llama "My Sin", pero que pasa. El modelo es bastante simple,
+
+190
+00:12:54,320 --> 00:13:00,600
+ se puede entender y usar una fórmula bastante claras, pero está basada en varias
+
+191
+00:13:00,600 --> 00:13:07,120
+ suposiciones que restringen mucho suzo. Si nosotros queremos usar "My Sin", vamos a
+
+192
+00:13:07,120 --> 00:13:13,880
+ tener que aplicar algunas suposiciones que hacen que mucha información o muchas decisiones
+
+193
+00:13:13,880 --> 00:13:21,160
+ no se puedan tomar. Por eso se desjodelado y el único ejemplo donde se pudo aplicar con
+
+194
+00:13:21,160 --> 00:13:29,680
+ éxito fue "My Sin". El que sí vamos a hablar es la lógica difusa, que la lógica difusa
+
+195
+00:13:29,680 --> 00:13:35,000
+ tiene su relación con la lógica proposticional y la lógica de primer orden que ya vimos,
+
+196
+00:13:35,000 --> 00:13:41,320
+ tiene su relación también con la deducción natural obviamente, pero también tiene
+
+197
+00:13:41,320 --> 00:13:47,160
+ ciertas diferencias. Entonces vamos a ver de qué manera esta lógica difusa nos permite
+
+198
+00:13:47,160 --> 00:13:54,000
+ representar la información cuando hay impresición o incertidombre, y como permite llevar
+
+199
+00:13:54,000 --> 00:14:00,240
+ a cabo la toma de decisiones. Entonces, vamos a ver cómo yo las reglas que tengo representado
+
+200
+00:14:00,240 --> 00:14:07,520
+ en la lógica difusa, la puedo aplicar para construir mi sistema inteligente difusa.
+
+201
+00:14:07,520 --> 00:14:14,520
+ Bueno, con esta vamos a cortar el primer vídeo de introducción y así comenzamos hablando
+
+202
+00:14:14,520 --> 00:14:16,520
+ de la lógica de la fursa. Hasta luego.
+

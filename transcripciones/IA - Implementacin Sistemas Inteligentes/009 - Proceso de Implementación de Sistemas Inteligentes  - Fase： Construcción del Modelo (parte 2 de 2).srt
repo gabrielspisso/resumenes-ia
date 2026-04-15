@@ -1,0 +1,700 @@
+1
+00:00:00,000 --> 00:00:06,380
+ Hola, este es el segundo vídeo correspondiente a la fase de construcción del modelo,
+
+2
+00:00:06,380 --> 00:00:10,760
+ la cual pertenece el proceso de implementación de sistemas interligentes.
+
+3
+00:00:10,760 --> 00:00:16,640
+ En el vídeo anterior, habíamos visto grandes rasgos como es la construcción de modelo,
+
+4
+00:00:16,640 --> 00:00:20,720
+ usando aprendizaje automático o machine lab.
+
+5
+00:00:20,720 --> 00:00:25,080
+ En este vídeo vamos a hablar primero de cómo se realiza la construcción del modelo,
+
+6
+00:00:25,080 --> 00:00:30,960
+ cuando yo estoy aplicando o quiero aplicar inteligencia artificial tradicional.
+
+7
+00:00:30,960 --> 00:00:37,040
+ En este tipo de sistemas, lo que yo tengo que hacer es identificar todas las reglas y conceptos
+
+8
+00:00:37,040 --> 00:00:45,840
+ que se van a volcar dentro de la base de conocimiento, el cual va a ser nuestro modelo para resolver el problema.
+
+9
+00:00:45,840 --> 00:00:52,680
+ Entonces yo por otro lado voy a tener el motor de inferencias que va a ser el módulo que se va a ocupar
+
+10
+00:00:52,680 --> 00:00:58,440
+ de manejar todos esos hechos y reglas que van a estar en la base de conocimiento.
+
+11
+00:00:58,440 --> 00:01:07,560
+ Pero el motor de inferencia generalmente es generico, o sea que no yo no lo voy a hacer forma específica
+
+12
+00:01:07,560 --> 00:01:10,880
+ para un problema a un proyecto puntual.
+
+13
+00:01:10,880 --> 00:01:16,040
+ Si no que ahí voy a aplicar algoritmos de búsqueda, bastante genericos,
+
+14
+00:01:16,040 --> 00:01:22,560
+ por ejemplo, puedo usar asterisco primero el mejor para tratar de seleccionar las reglas y hechos
+
+15
+00:01:22,560 --> 00:01:25,520
+ que se necesitan para resolver el problema.
+
+16
+00:01:25,520 --> 00:01:31,300
+ Entonces lo que sí voy a tener que hacer es tratar de codificar de alguna manera todas
+
+17
+00:01:31,300 --> 00:01:38,440
+ las reglas y conceptos para que queden registrados dentro de mi base de conocimiento.
+
+18
+00:01:38,440 --> 00:01:44,680
+ Obviamente que eso va a depender mucho del tipo de tecnología, en general se usa algún tipo
+
+19
+00:01:44,680 --> 00:01:52,600
+ de formalismo similar a la lógica de primer orden, por eso también vemos en otros clases
+
+20
+00:01:52,600 --> 00:01:59,280
+ hablamos de cómo se puede usar la lógica de primer orden para representarlos conocimientos.
+
+21
+00:01:59,280 --> 00:02:06,000
+ Otras veces se puede utilizar un formalismo particular, que es muy parecido a como muchos
+
+22
+00:02:06,000 --> 00:02:14,480
+ lenguajes de programación de Finen IF, o como hace prologuees que es más parecido a funciones.
+
+23
+00:02:14,480 --> 00:02:20,800
+ Bueno, en nuestro caso, acá lo que vamos a ver es un ejemplo con un herramienta de
+
+24
+00:02:20,800 --> 00:02:26,160
+ llama K-P-C, que es una herramienta que permite construir sistemas basados en conocimientos
+
+25
+00:02:26,160 --> 00:02:32,800
+ o sistemas expertos tradicionales, y que está asociado al uso de clases.
+
+26
+00:02:32,800 --> 00:02:39,000
+ Entonces yo lo que puedo hacer es definir un conjunto de clases, en este caso lo vemos por
+
+27
+00:02:39,000 --> 00:02:43,640
+ un ejemplo donde se trata de identificar un tipo de flor, un tipo de amapola de acuerdos
+
+28
+00:02:43,640 --> 00:02:50,320
+ y artas características que tiene, entonces por cada una de estas clases tengo definido a tributos,
+
+29
+00:02:50,320 --> 00:02:57,440
+ tengo definidos metos y tengo definidos reglas. En estas reglas lo que voy a tener es cómo
+
+30
+00:02:57,440 --> 00:03:03,440
+ se combina los valores de ciertos atributos para determinar ciertas conclusiones.
+
+31
+00:03:03,440 --> 00:03:13,160
+ El framework K-P-C, lo que nos va a permitir hacer es propagar la información de las distintas
+
+32
+00:03:13,160 --> 00:03:19,160
+ reglas de terminar que reglas con bien usar o no de acuerdo a los datos que tenemos definidos
+
+33
+00:03:19,160 --> 00:03:25,040
+ y así encontrar la solución al problema. Entonces, como les decía yo anteriormente,
+
+34
+00:03:25,040 --> 00:03:29,480
+ con inteligencia artificial tradicional, la construcción del modelo es más manual, porque
+
+35
+00:03:29,480 --> 00:03:36,680
+ uno tiene que codificar, en este caso, todas las clases, todas las reglas usando la termo
+
+36
+00:03:36,680 --> 00:03:40,760
+ términología y la codificación correspondiente a la herramienta.
+
+37
+00:03:40,760 --> 00:03:45,800
+ Con la inteligencia computacional, los algoritmos genéticos va a pasar algo parecido. En
+
+38
+00:03:45,800 --> 00:03:52,480
+ caso de los algoritmos genéticos, que es el algoritmos que vimos correspondiente inteligencia
+
+39
+00:03:52,480 --> 00:03:56,880
+ computacional, también hablamos de errores neuronales artificiales, pero como en las
+
+40
+00:03:56,880 --> 00:04:02,520
+ redes neuronales artificiales son de Machine Learning, ahí se hace la construcción del modelo
+
+41
+00:04:02,520 --> 00:04:08,160
+ de manera automática. En cambio, en una algoritmos genético no tiene la capacidad de aprender,
+
+42
+00:04:08,160 --> 00:04:13,080
+ y todo el conocimiento del problema va a estar dado por estructura del cromosoma y la
+
+43
+00:04:13,080 --> 00:04:20,400
+ función de aptitud. Entonces, yo tengo que definir esas dos cosas que van a tratar de representar
+
+44
+00:04:20,400 --> 00:04:25,560
+ un modelo simplificado del problema que yo quiero resolver. Digo, simplificado porque,
+
+45
+00:04:25,560 --> 00:04:31,920
+ a veces, es muy difícil volcar todo la conocimiento que tengamos sobre el problema dentro
+
+46
+00:04:31,920 --> 00:04:36,280
+ de un estructura de encuramosoma y de una función de aptitud.
+
+47
+00:04:36,280 --> 00:04:41,960
+ Esta definición se tiene que hacer con mucho cuidado porque el cromosoma y la función de aptitud
+
+48
+00:04:41,960 --> 00:04:47,040
+ va a ser la principal fuente de conocimiento sobre el problema que le queríamos resolver.
+
+49
+00:04:47,040 --> 00:04:52,720
+ Los operadores de generar la población inicial, seleccion, cruzamiento, mutación,
+
+50
+00:04:52,720 --> 00:05:01,440
+ criterio de paro y análisis de la evaluación o evaluación de la población final, son genericos.
+
+51
+00:05:01,440 --> 00:05:06,200
+ Solo en el cromosoma y la función de aptitud es donde yo voy a poner el conocimiento
+
+52
+00:05:06,200 --> 00:05:12,000
+ del problema que quiero resolver. Entonces, y ni estás dos cosas yo tengo que volcar
+
+53
+00:05:12,000 --> 00:05:18,440
+ el conocimiento, pero no tiene que ser perfecto, por eso antes hables de modelo simplificado
+
+54
+00:05:18,440 --> 00:05:25,840
+ del problema. Si yo quiero lograr algo perfecto, sería el ideal, pero es preferible que se
+
+55
+00:05:25,840 --> 00:05:31,400
+ corresponda en el problema que no haya ningún error, ningún bug al momento de definir el cromosoma
+
+56
+00:05:31,400 --> 00:05:40,200
+ en la función de aptitud, más que sea perfecto. Si nosotros tenemos alguna error al momento
+
+57
+00:05:40,200 --> 00:05:44,840
+ de definir estas cuestiones, lo que nos puede llegar a pasar es que la algoritmo va a encontrar
+
+58
+00:05:44,840 --> 00:05:50,080
+ una solución correcta, pero para el problema equivocado. Es muy parecido a lo que hablamos
+
+59
+00:05:50,080 --> 00:05:57,080
+ antes de Machine Learning donde habíamos mencionado que si yo utilizó los datos incorrectos
+
+60
+00:05:57,080 --> 00:06:02,440
+ para construir mi modelo con aprendizaje automático, yo voy a tener modelo, pero no se va
+
+61
+00:06:02,440 --> 00:06:07,240
+ a corresponder con el problema que yo quiero resolver. En este caso, el problema puede ser
+
+62
+00:06:07,240 --> 00:06:14,600
+ que yo vuelquen reglas, heurísticas o algún tipo de definición incorrecta dentro de mi función
+
+63
+00:06:14,600 --> 00:06:19,920
+ de aptitud y eso genera que al momento de evaluar, las posibles soluciones, los individuos
+
+64
+00:06:19,920 --> 00:06:27,680
+ o cromosomas, se le de más valor a una solución que no es la mejor y eso puede ser que el
+
+65
+00:06:27,680 --> 00:06:32,280
+ algoritmo termina diciendo "mira, para mí la mejor solución es esta con una realidad
+
+66
+00:06:32,280 --> 00:06:38,760
+ no lo es". Dentro del cromosoma en sí, hay una serie de características deseables que
+
+67
+00:06:38,760 --> 00:06:45,120
+ se quiere que tenga. Estas características no son obligatorias y hay veces que pueden ser
+
+68
+00:06:45,120 --> 00:06:51,640
+ contradictorias o conflictivas entre sí. Entonces hay que ver a que uno le gustaría darle
+
+69
+00:06:51,640 --> 00:06:57,640
+ mayor incapia de acuerdo al problema o proyecto donde uno va a trabajar.
+
+70
+00:06:57,640 --> 00:07:02,120
+ La primera característica deseable habla de que el cromosoma tiene que tener un tamaño
+
+71
+00:07:02,120 --> 00:07:08,520
+ fijo, esto para los algoritmos genéticos que vimos en clases ya lo habíamos visto como
+
+72
+00:07:08,520 --> 00:07:15,520
+ obligatorio, pero hay dentro de la familia de computación evaluativa, hay otros algoritmos
+
+73
+00:07:15,520 --> 00:07:20,640
+ similares a los algoritmos genéticos que pueden tener un tamaño variable. De todas formas
+
+74
+00:07:20,640 --> 00:07:26,280
+ se recomienda que tengan un tamaño fijo y que se tamaño sea el mínimo posible o sea que
+
+75
+00:07:26,280 --> 00:07:31,240
+ tenga poca redundancia, que sea consisto, que quiere decir esto que dentro de la estructura
+
+76
+00:07:31,240 --> 00:07:36,760
+ de cromosoma solo pongamos atributos o características que sean relevantes para resolver
+
+77
+00:07:36,760 --> 00:07:43,000
+ el problema. No tiene sentido analizar un atributo que no me va a permitir el resolver
+
+78
+00:07:43,000 --> 00:07:46,760
+ el problema dentro del estructura de cromosoma porque eso le único que me va a generar
+
+79
+00:07:46,760 --> 00:07:52,200
+ de ruido y que mi algoritmo tarde más en el encontrar una solución.
+
+80
+00:07:52,200 --> 00:07:57,800
+ La segunda característica deseable es que todas las posibles soluciones deben ser representadas,
+
+81
+00:07:57,800 --> 00:08:02,880
+ debe ser completa. O sea, antes vimos que tiene que ser lo más pequeño posible tiene
+
+82
+00:08:02,880 --> 00:08:08,600
+ que haber poca una de redundancia, pero dentro de ese tamaño fijo y tamaño mínimo
+
+83
+00:08:08,600 --> 00:08:14,440
+ deberíamos poder representar todas las posibles soluciones. Si hay características o valores
+
+84
+00:08:14,440 --> 00:08:19,200
+ que no estamos representando van a ser valores o características que la algoritmo genético
+
+85
+00:08:19,200 --> 00:08:24,960
+ nunca va a probar y entonces puede ser que por eso no encontramos la solución optima
+
+86
+00:08:24,960 --> 00:08:31,160
+ para nuestro problema. Tercero como característica deseable tenemos evitar representar
+
+87
+00:08:31,160 --> 00:08:35,920
+ soluciones invalidas o se va a tener coherencia. Este es una característica deseable
+
+88
+00:08:35,920 --> 00:08:41,400
+ que muchas veces no se puede evitar pero bueno es una recomendación. Lo que hay que tratar
+
+89
+00:08:41,400 --> 00:08:45,880
+ de hacer es que en los valores que van a tomar los genes la probabilidad de que aparece
+
+90
+00:08:45,880 --> 00:08:51,640
+ con una solución invalida, o sea una combinación de valores binarios que me generé un
+
+91
+00:08:51,640 --> 00:08:59,200
+ nivido invalido sea muy baja. Hay veces que para eso se puede utilizar un poco de redundancia,
+
+92
+00:08:59,200 --> 00:09:04,560
+ es decir, por ejemplo, yo tengo que representar tres valores posibles, entonces voy a necesitar
+
+93
+00:09:04,560 --> 00:09:10,600
+ dos bits, pero en esos bits me pueden generar cuatro valores posibles. Entonces hay una combinación
+
+94
+00:09:10,600 --> 00:09:16,000
+ de bits que no estarí usando. Lo que puedo hacer es que si yo tengo los tres valores que
+
+95
+00:09:16,000 --> 00:09:22,280
+ son verde rojo y amarillo, lo que puedo hacer es que asignarle una combinación para verde, una
+
+96
+00:09:22,280 --> 00:09:27,440
+ combinación para rojo, una combinación para medio amarillo y una nueva combinación para
+
+97
+00:09:27,440 --> 00:09:34,720
+ verde. Entonces verde tiene el doble de chances de que aparezca. Esta manera, yo evito generar
+
+98
+00:09:34,720 --> 00:09:40,400
+ soluciones invalidas y le doy más posibles de que la solución que se genera sea verde.
+
+99
+00:09:40,400 --> 00:09:47,360
+ Si yo ya sé que verde es una característica que puedes ayudarme a encontrar la mejor solución,
+
+100
+00:09:47,360 --> 00:09:53,960
+ capaz que eso de hecho me sirve para que se encuentra más rápido una solución con verde. Pero,
+
+101
+00:09:53,960 --> 00:09:59,360
+ si la solución ideal no es verde, no voy a tener problema porque también estoy representando
+
+102
+00:09:59,360 --> 00:10:05,080
+ al rojo y al amarillo, con menos probabilidad de que aparezca, pero lo estoy así. Bueno,
+
+103
+00:10:05,080 --> 00:10:09,480
+ la cuarta característica dice, todas las soluciones deben tener la misma posibilidad de
+
+104
+00:10:09,480 --> 00:10:16,760
+ ser generadas uniformidad. Ahí tenemos el conflicto con la, como yo trate de solucionar, representar
+
+105
+00:10:16,760 --> 00:10:22,120
+ soluciones invalidas. Si yo quiero que no se genera en soluciones invalidas y algo que el
+
+106
+00:10:22,120 --> 00:10:27,480
+ verde tenga el doble de chance, pero por otro lado me dice que quiero uniformidad, todos tengan
+
+107
+00:10:27,480 --> 00:10:32,360
+ la misma probabilidad. Bueno, ahí estoy chocando. Ahí le tengo que ver a que le tengo que dar
+
+108
+00:10:32,360 --> 00:10:38,120
+ más importancia. Si no es lo que puedo hacer es dejar que se generen soluciones invalidas y después
+
+109
+00:10:38,120 --> 00:10:45,040
+ tener cuidado de la manera como vamos a penalizar las soluciones que tienen combinaciones que
+
+110
+00:10:45,040 --> 00:10:49,960
+ no se corresponden con la realidad, que eso era lo vamos a ver con la función de aptitud. Por
+
+111
+00:10:49,960 --> 00:10:55,080
+ último, como característica deseable para el cromo soma, tenemos que sea fácil de interpretar,
+
+112
+00:10:55,080 --> 00:11:02,640
+ o sea que sea sencillo. Ahí, a veces, conviene evitar hacer codificaciones muy complicadas y tratar
+
+113
+00:11:02,640 --> 00:11:08,680
+ de usar una representación que sea lo más directo o intuitiva y se pueda aplicar.
+
+114
+00:11:08,680 --> 00:11:15,040
+ Bueno, con respecto a la función de aptitud, también vamos a tener una serie de características
+
+115
+00:11:15,040 --> 00:11:20,840
+ deseables para considerar. La primera dice, utilizar de la mejor manera posible y conocimiento
+
+116
+00:11:20,840 --> 00:11:26,160
+ del problema. O sea, la aplicación de la oblitud. Como yo les decía antes, en un algoritmo
+
+117
+00:11:26,160 --> 00:11:30,800
+ genético, la función de aptitud y la estructura de cromos somas son la principal fuente sobre
+
+118
+00:11:30,800 --> 00:11:35,640
+ el problema. Entonces hay que tratar de ver cómo codificar esas función de aptitud, usando
+
+119
+00:11:35,640 --> 00:11:41,160
+ la manera más intuitiva, más en silla. Si no es traerística hasta definido en funciones
+
+120
+00:11:41,160 --> 00:11:45,960
+ matemáticas, la función de aptitud, pues voy a implementar usando una o más funciones
+
+121
+00:11:45,960 --> 00:11:51,200
+ matemáticas. Si mi aurística está definido por un procedimiento, la función de aptitud la
+
+122
+00:11:51,200 --> 00:11:56,080
+ voy a definir como un procedimiento. Si son reglas, voy a aplicar reglas. Entonces, usar
+
+123
+00:11:56,080 --> 00:12:03,200
+ lo más directo y no tratar de reconvertir algo que ya tengo lo cual después me puede llevar
+
+124
+00:12:03,200 --> 00:12:09,640
+ a que cometas errores. Obviamente, que es una característica es obligatoria que dice que la
+
+125
+00:12:09,640 --> 00:12:14,800
+ función de aptitud tiene que ser consistente con el cromos somas. O sea, la función de aptitud
+
+126
+00:12:14,800 --> 00:12:20,040
+ se deberían evaluar las características que están representadas en el cromos somas. Si no hago
+
+127
+00:12:20,040 --> 00:12:26,440
+ esto, después puedo tener problemas, porque en momento de calcular el valor de aptitud,
+
+128
+00:12:26,440 --> 00:12:32,380
+ no voy a estar obteniendo los valores correctos. La tercera característica dice reducir
+
+129
+00:12:32,380 --> 00:12:37,920
+ la influencia de ruido, se arrobe usted. Ahí lo que quiere decir es que hay que tratar que
+
+130
+00:12:37,920 --> 00:12:43,200
+ la función de aptitud no tenga errores al momento de la implementación y que se esté
+
+131
+00:12:43,200 --> 00:12:48,520
+ evaluando bien cada uno de los individuos y las combinaciones de valores que tenga.
+
+132
+00:12:48,520 --> 00:12:54,080
+ Para eso, a veces no viene mal a hacer una prueba de la función de aptitud, tirarle
+
+133
+00:12:54,080 --> 00:13:00,480
+ individuos generados al azar y analizar si lo que está generando es correcto o no. Entonces,
+
+134
+00:13:00,480 --> 00:13:06,440
+ esa manera vemos que tantas robustes tiene. En un último dice pequeños cambios en las
+
+135
+00:13:06,440 --> 00:13:12,240
+ características deven generar pequeños cambios en la valoración. Es decir, tiene una causalidad
+
+136
+00:13:12,240 --> 00:13:18,440
+ fuerte o atchacencia. ¿Qué quiere decir esto? Y bastante sencillo, y a veces uno se lo
+
+137
+00:13:18,440 --> 00:13:23,280
+ olvida. Lo que dice es que si yo tengo dos cromos somas, donde lo que cambia es un valor de
+
+138
+00:13:23,280 --> 00:13:27,800
+ un solo bit, o sea, en uno tiene una característica de que tiene un cero y en el otro tiene
+
+139
+00:13:27,800 --> 00:13:34,680
+ uno no. El valor de aptitud que tiene cada uno de estos individuos tiene que ser bastante parecido,
+
+140
+00:13:34,680 --> 00:13:41,080
+ porque un pequeño cambio, el coramos somas, me genera un pequeño cambio en la aptitud. En cambio,
+
+141
+00:13:41,080 --> 00:13:45,560
+ si yo tengo un individuo que tiene todos valores en uno y el otro tiene todos valores en cero,
+
+142
+00:13:45,560 --> 00:13:50,440
+ el valor de aptitud que debería antenar debería ser muy distinto, entonces.
+
+143
+00:13:50,440 --> 00:13:57,160
+ De esta manera, a la ser esta causalidad fuerte o atchacencia, lo que va a pasar que,
+
+144
+00:13:57,160 --> 00:14:02,520
+ al igual es nojético elevar, resultar más sencillo encontrar las mejores soluciones, porque va a
+
+145
+00:14:02,520 --> 00:14:09,400
+ saber que si cambia un poquito el bit de uno, puede ser que cambia un poquito para que suba o para
+
+146
+00:14:09,400 --> 00:14:16,920
+ que baja. Pero si yo no aplico esta de la causalidad fuerte y cambiarlo un bit, el valor de aptitud
+
+147
+00:14:16,920 --> 00:14:23,000
+ cambia de golpe, eso puede llegar a pasar con la penalización, o sea, por cambio un bit, lo penalizamos,
+
+148
+00:14:23,000 --> 00:14:28,760
+ y si le ponemos un valor de menos 100, cuando antes de cambiarlo, tenía un valor de 20,
+
+149
+00:14:28,760 --> 00:14:36,440
+ puede ser que a la genético pierda, y ahora no se por donde conviene probar. Entonces,
+
+150
+00:14:36,440 --> 00:14:43,320
+ siempre conviene hacer esto de la causalidad fuerte, donde pequeños cambios en el cramos
+
+151
+00:14:43,320 --> 00:14:49,480
+ abrima genera pequeños cambios en la aptitud. Bueno, y por último, la penalización que yo también
+
+152
+00:14:49,480 --> 00:14:55,960
+ les mencionaba reciam, hay que hacerlo de manera correcta. Muchas veces la penalización se aplica
+
+153
+00:14:55,960 --> 00:15:02,840
+ la pena de muerte. ¿Qué quiere decir eso? Que si yo veo que hay un individuo que tiene un valor
+
+154
+00:15:02,840 --> 00:15:09,240
+ invalido o sea dentro de un gen hay una combinación invalida, le pon un valor muy bajo y malo.
+
+155
+00:15:09,240 --> 00:15:15,560
+ Entonces, le pongo a todos menos 100. Si hago eso, al algoritmo genético no sabe distinguir cuáles
+
+156
+00:15:15,560 --> 00:15:21,560
+ un individuo malo de uno peor, porque yo puedo tener otro que tiene dos combinaciones invalidas
+
+157
+00:15:21,560 --> 00:15:27,880
+ y eso también va a leer menocían. Entonces, lo que combina hacer ahí es usar niveles de penas,
+
+158
+00:15:27,880 --> 00:15:35,800
+ o sea, aplicar distintas penas de muerte o distintas grados de penas, de acuerdo que tan mal están los
+
+159
+00:15:35,800 --> 00:15:41,720
+ individulos. Entonces, si tienen una combinación invalida, le pongo menos 20. Si tiene dos, le pongo
+
+160
+00:15:41,720 --> 00:15:48,440
+ menos 40, si tiene 3, le pongo menos 60 y así. Y esas valores que yo le voy a asignando las
+
+161
+00:15:48,440 --> 00:15:53,880
+ penas pueden ser valores constantes que durante toda la correguida van a ser iguales o pueden ser
+
+162
+00:15:53,880 --> 00:15:59,960
+ adaptativos. Si son adaptativos pueden ser que el valor de la pena cambia a medida que yo voy
+
+163
+00:15:59,960 --> 00:16:05,240
+ ciclando más. Entonces, al principio puedo ponerlo una mina más suave, pero a medida que voy
+
+164
+00:16:05,240 --> 00:16:10,040
+ ciclando más le pongo una pena más fuerte porque a medida que yo voy avanzando en la correguida no
+
+165
+00:16:10,040 --> 00:16:17,080
+ quiero que aparezcan individuos validos o que se adaptativos consideran que tan buena toda la población.
+
+166
+00:16:17,080 --> 00:16:23,080
+ Si toda la población es media mala, le pongo menos un poco más bajas. Si toda la población es buena
+
+167
+00:16:23,080 --> 00:16:29,960
+ y tengo un individuo invalido, ahí le pongo una pena peor, porque ese no me sirve y entonces lo quiero
+
+168
+00:16:29,960 --> 00:16:36,840
+ descantar. De esta manera, manejando distintos niveles de penas constantes o adaptativas, lo que
+
+169
+00:16:36,840 --> 00:16:44,520
+ le logro dar al agorismo genético es un conocimiento sobre los grises y de esa manera el agorismo
+
+170
+00:16:44,520 --> 00:16:51,800
+ puede elegir con mayor cuidado, cuáles son los individuos, o cremosonas que debería tomar para
+
+171
+00:16:51,800 --> 00:16:59,640
+ ser la mutación y el cruzamiento, que en cambio si yo lo hago con una pena y todas iguales no logros
+
+172
+00:16:59,640 --> 00:17:05,480
+ que genere. Bueno, entonces, esto es para que lo tengan en cuenta el momento de implementar una
+
+173
+00:17:05,480 --> 00:17:11,720
+ agorismo genético. Con esto finalizamos la explicación sobre la construcción del modelo
+
+174
+00:17:11,720 --> 00:17:17,080
+ bastante reducido, lo que hicimos, pero bueno, no queremos tampoco llenar los de información
+
+175
+00:17:17,080 --> 00:17:23,240
+ sobre el entranarlo. Vamos a ver el próximo vídeo, la última fase del proceso. Hasta luego.
+

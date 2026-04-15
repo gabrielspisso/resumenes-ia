@@ -1,0 +1,436 @@
+1
+00:00:00,000 --> 00:00:07,760
+ Hola, mi nombre es María Florensia Pollo y vamos a comenzar con un conjunto de videos que
+
+2
+00:00:07,760 --> 00:00:14,800
+ van a tratar sobre la respuesta que damos los ingenieros de la área de informática para
+
+3
+00:00:14,800 --> 00:00:21,600
+ la construcción de sistemas inteligentes en especial en el marco de los sistemas de
+
+4
+00:00:21,600 --> 00:00:30,000
+ información en general. Y así que bueno, ustedes vienen viendo a lo largo de la carrera que
+
+5
+00:00:30,000 --> 00:00:35,840
+ uno organización es un conjunto de individuos que busca en un fin común, desarrollan actividades,
+
+6
+00:00:35,840 --> 00:00:42,800
+ utilizan medios y se encuentran inmersos dentro de un contexto. Toda todo este conjunto de
+
+7
+00:00:42,800 --> 00:00:51,120
+ actividades, intercambio de recursos hacen que se genere a través de los procesos de comunicación,
+
+8
+00:00:51,120 --> 00:00:58,000
+ un sistema de información como toda esta red de comunicación y medios que que es el
+
+9
+00:00:58,000 --> 00:01:05,040
+ resultado y además la estructura de finida en las actividades de esta organización. Como
+
+10
+00:01:05,040 --> 00:01:10,960
+ todo el sistema que entre un funcionamiento, como conjunto de mecanismos, conformados por
+
+11
+00:01:10,960 --> 00:01:16,160
+ múltiples, múltiples componentes, se generan del videos de videos entre las situaciones
+
+12
+00:01:16,160 --> 00:01:22,000
+ esperad y la situación real. A esos de Dios los reconocemos como problemas. Frente estos
+
+13
+00:01:22,000 --> 00:01:29,440
+ problemas generalmente problemas vinculados con los síntomas se ven en los problemas generados en el
+
+14
+00:01:29,440 --> 00:01:37,920
+ negocio. Ase recurre un ingeniero sistema para que pueda traducir estos problemas de negocio,
+
+15
+00:01:37,920 --> 00:01:43,040
+ problemas de organización en problemas de sistemas de información, comprendiendo los componentes y
+
+16
+00:01:43,040 --> 00:01:49,840
+ elementos y que relaciones establecen entre todo esto. Finalmente el ingeniero sistema de información
+
+17
+00:01:49,840 --> 00:01:58,320
+ traslad a estos problemas de sistemas de información en en proyectos a desarrollar proyectos vinculados
+
+18
+00:01:58,320 --> 00:02:03,280
+ con la adquisición de hardware, la adquisición de software, la tercerización, la capacitación,
+
+19
+00:02:03,840 --> 00:02:09,680
+ si es necesario desarrollo de software, es aquí donde se construy un producto solución,
+
+20
+00:02:09,680 --> 00:02:17,280
+ ahí se invoca ni genería software y este producto solución puede dar respuesta a distintos
+
+21
+00:02:17,280 --> 00:02:24,800
+ procesos muchas veces no informatizados y cuando son procesos se informatizados y se necesita del desarrollo
+
+22
+00:02:24,800 --> 00:02:30,560
+ de software, sí involucrar las actividades de desarrollo de software que se encuentran agrupadas
+
+23
+00:02:30,560 --> 00:02:36,240
+ dentro de lo que es la ingeniería software. Y la ideamos resultamos respuesta con la construcción
+
+24
+00:02:36,240 --> 00:02:42,000
+ con la buena construcción, ¿no? bajo paraguas de buenas prácticas ingenieriles a lo que es un software
+
+25
+00:02:42,000 --> 00:02:48,000
+ tradicional, un software que de las respuestas a problemas que se pueden definir, uno sabe
+
+26
+00:02:48,000 --> 00:02:54,640
+ que frente a un conjunto de quise entrar, el resultado va a ser este o aquel otro, pero está
+
+27
+00:02:54,640 --> 00:03:00,960
+ todo, o sea, son actividades magnitivas, actividades que se pueden modelar contraanquilidad,
+
+28
+00:03:00,960 --> 00:03:05,600
+ más allá de que el dominio puedo no ser más complejo, que sucede cuando estas respuestas
+
+29
+00:03:05,600 --> 00:03:10,480
+ no se pueden dar, mediante el desarrollo de un software tradicional, nosotros hemos visto como
+
+30
+00:03:10,480 --> 00:03:16,480
+ la inteligencia artificial, nos provee de algunas tecnologías para dar respuesta y poder construir
+
+31
+00:03:16,480 --> 00:03:22,000
+ un sistema software que tenga en su comportamiento reconocido parte de actividad de lo que
+
+32
+00:03:22,000 --> 00:03:28,160
+ se considera con un sistema inteligente, te tales así que bueno, nosotros vimos dentro de los
+
+33
+00:03:28,160 --> 00:03:33,120
+ sistemas software tradicionales que no a veces podía tener que el sistema inteligente no estaba
+
+34
+00:03:33,120 --> 00:03:41,600
+ baso, lo que generalmente era algo que se se anexaba, se incorporaba, lo que era un software
+
+35
+00:03:41,600 --> 00:03:46,000
+ y resolvía alguna particularidad que el software tradicional no podía, dentro de los sistemas
+
+36
+00:03:46,000 --> 00:03:51,360
+ inteligentes habíamos visto los sistemas basados en conocimiento con una base de conocimientos
+
+37
+00:03:51,360 --> 00:03:56,160
+ explícita y también habíamos visto que eran los sistemas expertos, que eran los que múlaban
+
+38
+00:03:56,160 --> 00:04:02,000
+ parte del comportamiento de un experto, habíamos encontrado las relaciones de estos dos son
+
+39
+00:04:02,000 --> 00:04:09,200
+ conjuntos viendo que había ciertos pasiertos elementos en común y ahí encontramos a las distintas
+
+40
+00:04:09,200 --> 00:04:15,040
+ distintas tecnologías, sin embargo, también habíamos visto desde otro lado que bueno la capacidad,
+
+41
+00:04:15,040 --> 00:04:22,560
+ la capacidad, la potencia que podía tener un software tradicional era menor en cuanto a la
+
+42
+00:04:22,560 --> 00:04:26,880
+ complejidad de los problemas y la capacidad de autonomía, a la de un sistema inteligente pero
+
+43
+00:04:26,880 --> 00:04:35,120
+ también habíamos estado viendo que un sistema inteligente no podía equipararse a lo que era la
+
+44
+00:04:35,120 --> 00:04:42,560
+ ventiumana porque gozaba esta mente humana de otro montón de funcionalidades que un sistema inteligente,
+
+45
+00:04:42,560 --> 00:04:49,360
+ como cualquier sistema informático, es un sistema con ciertas limitaciones, porque a través se atraviesa
+
+46
+00:04:49,360 --> 00:04:57,760
+ en su construcción a través de uno de los, pero bueno, como podemos construir este tipo de de arte
+
+47
+00:04:57,760 --> 00:05:04,960
+ de factos, bien, nosotros estuvimos viendo las distintas tecnologías, vinculados con los distintos tipos de
+
+48
+00:05:04,960 --> 00:05:09,920
+ problema, a ver dónde podíamos encontrar estos puntos en común entre los sistemas inteligentes y los
+
+49
+00:05:09,920 --> 00:05:16,400
+ que conocemos como sistemas software tradicional. Pimos que ambos resuelven problemas y satisfazen deseos
+
+50
+00:05:16,400 --> 00:05:25,280
+ y necesidades de los stakeholders, de los interesados de quienes están participados en este proceso
+
+51
+00:05:25,280 --> 00:05:31,200
+ de desarrollo. Sin embargo, también vimos que los sistemas inteligentes, por si solos, se pueden aplicar
+
+52
+00:05:31,200 --> 00:05:38,480
+ a tareas poco conocidas y que requieres de conocimientos especializados. Ahí aparece el rol protagonico de
+
+53
+00:05:38,480 --> 00:05:44,880
+ este experto como este nuevo protagonista en la problemática de los sistemas inteligentes, de quién
+
+54
+00:05:44,880 --> 00:05:50,320
+ tenemos a adquirir el conocimiento, este conocimiento privado, este conocimiento procedimental,
+
+55
+00:05:50,320 --> 00:05:56,560
+ el propio de este experto que hace que estos sistemas no puedan ser fácilmente representados
+
+56
+00:05:56,560 --> 00:06:02,480
+ mediante lo que es el desarrollo de software tradicional. Fíjense que en el caso del software tradicional
+
+57
+00:06:02,480 --> 00:06:07,120
+ dice que es amplica de tareas sistemáticas y procedimentales para marijar datos huméricos,
+
+58
+00:06:07,120 --> 00:06:12,240
+ esto es lo que han venido resolviendo lo largo de toda su carrera. Y en los sistemas inteligentes
+
+59
+00:06:12,240 --> 00:06:16,720
+ por otro lado, simplemente han en forma declarativa mientras que los sistemas software tradicionales
+
+60
+00:06:16,720 --> 00:06:23,520
+ de manera algoritmica procedimental. Los sistemas inteligentes tienen flexibilidad y robustes
+
+61
+00:06:23,520 --> 00:06:31,600
+ tienen que tener capacidad de adaptarse a distintas etapas, tras no definidas, a priori,
+
+62
+00:06:31,600 --> 00:06:36,400
+ y tienen que tener robustes a pesar de todo eso seguir funcionando. Y los sistemas software tradicional
+
+63
+00:06:36,400 --> 00:06:43,440
+ son deterministas y tienen poca redundancia, a función, yo no sabe cuál es la respuesta que van a dar.
+
+64
+00:06:43,440 --> 00:06:49,040
+ Ustedes han visto lo largo de todo este curso, distintas tecnologías que probé la idea.
+
+65
+00:06:49,040 --> 00:06:54,640
+ Yo no podría pensar que en este contexto construyro sistema inteligente, no es tan fácil.
+
+66
+00:06:54,640 --> 00:07:02,480
+ Sin embargo, bueno, ahí les demostramos una ilustración que, que verdaderamente más allá de
+
+67
+00:07:02,480 --> 00:07:08,560
+ la problemática de la construcción, hay una problemática en el dominio en la comprensión del dominio
+
+68
+00:07:08,560 --> 00:07:15,360
+ y en la definición de estos conocimientos que hace que el desarrollo y la construcción de
+
+69
+00:07:15,360 --> 00:07:26,400
+ un sistema inteligente no sea una tarea tan simple. Acá los podemos compartirles un cuadro comparativo
+
+70
+00:07:26,400 --> 00:07:32,240
+ para que vea como desde una perspectiva, los proyectos de construcción de sistemas inteligentes
+
+71
+00:07:32,240 --> 00:07:39,360
+ implican en algún momento en alguna instancia el desarrollo de un software tradicional pero tienen distintas
+
+72
+00:07:39,360 --> 00:07:44,800
+ características. En relación a lo objetivo, la construcción del software tradicional está aplicada
+
+73
+00:07:44,800 --> 00:07:50,000
+ pura y exclusivamente ese tipo de artefacto mientras que cuando hablamos de un sistema inteligente
+
+74
+00:07:50,000 --> 00:07:56,640
+ estamos a hablar de construir un sistema de otra característica. Los requerimientos, cuando hablamos de
+
+75
+00:07:56,640 --> 00:08:02,640
+ requerimientos, recuerdan que hablamos de las características que tienen un artefacto para hacer
+
+76
+00:08:02,640 --> 00:08:10,880
+ considerado como tal, hablamos de estas expectativas, también que tienen usuarios puestas en la solución,
+
+77
+00:08:10,880 --> 00:08:16,480
+ en la construcción de lo que su software tradicional hablamos de deseos y necesidades y tenemos que tener
+
+78
+00:08:16,480 --> 00:08:21,920
+ en cuenta las características del dominio, que son identificables. Sin embargo, cuando una construcción
+
+79
+00:08:21,920 --> 00:08:29,360
+ un sistema inteligente tiene que identificar también la o las tareas que va a modelar y cuál es el problema
+
+80
+00:08:29,360 --> 00:08:34,400
+ que busca resolver a través de la acción de estas tareas. Y después hay un proceso muy complejo
+
+81
+00:08:34,400 --> 00:08:40,400
+ que es el proceso del manejo de la gestión de los requerimientos identificar, los de actirirlos
+
+82
+00:08:40,400 --> 00:08:44,880
+ de formalizarlos, de conceptualizarlos, que va a tener que ver no solo con conocimientos públicos,
+
+83
+00:08:44,880 --> 00:08:51,520
+ sino también con conocimientos privados. Los interesados las personas que participan de estos proyectos
+
+84
+00:08:51,520 --> 00:08:58,240
+ en un proyecto de software tradicional, directivos gerentes y usuarios, y acá parece el nuevo papel
+
+85
+00:08:58,240 --> 00:09:03,760
+ del experto como aquella persona que provee toda la riqueza de conocimiento del dominio,
+
+86
+00:09:03,760 --> 00:09:09,920
+ más allá de los conocimientos públicos que uno puede adquirir a través de material disponible. En relación
+
+87
+00:09:09,920 --> 00:09:18,000
+ en la tecnología para el desarrollo de un software tradicional hablamos de hardware distintos tipos de equipamiento
+
+88
+00:09:18,000 --> 00:09:24,320
+ y de arquitecturidad, pues hablamos de los distintos paradigmas de desarrollo de software tradicional.
+
+89
+00:09:24,320 --> 00:09:30,080
+ Sin embargo, cuando hablamos del desarrollo de proyectos de construcción de sistemas inteligentes,
+
+90
+00:09:30,080 --> 00:09:35,040
+ hablamos dentro de lo que es la inteligencia artificial como ciencia, o sea, tratando de actualizar
+
+91
+00:09:35,040 --> 00:09:41,120
+ y de conceptualizar todas estas problemáticas, vemos que hay arquitecturas tradicionales propias
+
+92
+00:09:41,120 --> 00:09:46,560
+ de la ya y, sin embargo, también tenemos otro conjunto de arquitecturas que vienen de la mano de
+
+93
+00:09:46,560 --> 00:09:50,880
+ la inteligencia, con puntacional y de machine learning. En relación al mantenimiento,
+
+94
+00:09:50,880 --> 00:09:57,680
+ qué es el sostener este producto, este producto solucion, una vez implementado a lo largo de
+
+95
+00:09:57,680 --> 00:10:02,720
+ el paso del tiempo, hasta que finaliza su vida útil, dentro de lo que es la construcción de software tradicional,
+
+96
+00:10:02,720 --> 00:10:07,520
+ hablamos del mantenimiento correctivo y adaptativo, pero en la construcción de sistemas de inteligencias
+
+97
+00:10:07,520 --> 00:10:12,960
+ de esa incluye además el mantenimiento perfectivo, que esa que el mantenimiento que busca mejorar la
+
+98
+00:10:12,960 --> 00:10:19,040
+ performance agregar a agregar alguna funcionalidad de mi jormanera que es la primera. Fíjense
+
+99
+00:10:19,040 --> 00:10:25,440
+ que en el software tradicional, solo podemos hablar de corregir y adaptarnos. Está pero a estructuras
+
+100
+00:10:25,440 --> 00:10:30,480
+ fíjas y determinadas. El sistema inteligente tendría que tener esta capacidad y cuando se acuerdan
+
+101
+00:10:30,480 --> 00:10:36,480
+ empezamos a hablar de la aprendizaje, también, ¿no? Bien, todavía me quedan un poquito más
+
+102
+00:10:36,480 --> 00:10:44,400
+ les voy a terminar con este. Bueno, lo que habíamos visto como para poder entender todo este camino,
+
+103
+00:10:44,400 --> 00:10:49,600
+ que vamos a hablar dentro del proceso, habíamos visto que este problema de organización se debería
+
+104
+00:10:49,600 --> 00:10:54,400
+ traducir mediante un conjunto de actividades que ahora vamos a ver cuál es, vamos a tratar de identificar
+
+105
+00:10:54,400 --> 00:11:01,360
+ lo cual son los objetivos, los datos que existen, los requerimientos que hay y elegir algún conjunto o
+
+106
+00:11:01,360 --> 00:11:09,040
+ alguna tecnología propia de la guía, y generar un modelo, ese modelo va a permitir implementar
+
+107
+00:11:09,040 --> 00:11:14,800
+ el sistema inteligente, funcionar y a su vez retroalimentarse y resolver el problema de organización
+
+108
+00:11:14,800 --> 00:11:21,200
+ y a su vez y el mejora. Bueno, ahora ya vamos a arrancar dentro de un poquito más de procesos,
+
+109
+00:11:21,200 --> 00:11:27,280
+ así que bueno, por ahora vamos a ir terminar, así que bueno, nos vemos en ese mundo video y muchas gracias.
+

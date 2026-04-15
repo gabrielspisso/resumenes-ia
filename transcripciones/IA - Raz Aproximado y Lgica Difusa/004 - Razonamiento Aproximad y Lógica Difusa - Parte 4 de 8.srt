@@ -1,0 +1,208 @@
+1
+00:00:00,000 --> 00:00:07,000
+ Hola, este es el cuarto vídeo correspondiente a la presentación de razonamiento aproximado y lógica difusa.
+
+2
+00:00:07,000 --> 00:00:17,000
+ En este vídeo vamos a comenzar hablando de las diferencias que tienen la lógica difusa contra la lógica tradicional o no difusa.
+
+3
+00:00:17,000 --> 00:00:24,000
+ Como habíamos visto antes, la lógica tradicional la no difusa manija valores discretos.
+
+4
+00:00:24,000 --> 00:00:29,000
+ Entonces ahí realmente se utilizan los valores, el verdadero y el falso.
+
+5
+00:00:29,000 --> 00:00:42,000
+ Mientras que en la lógica difusa se manejan valores continuos que se encuentran definidos dentro de la función de pertenencia associada a los valores y a las funciones de verdad.
+
+6
+00:00:42,000 --> 00:00:50,000
+ Y entonces en esas funciones de pertenencia yo puedo asignar valores entre 0 y 1.
+
+7
+00:00:50,000 --> 00:00:56,000
+ Alquiero valor en el rango continuo con la cantidad de decimales que yo consideré necesario.
+
+8
+00:00:56,000 --> 00:01:05,000
+ En la mayoría de los casos con un decimal al canse y sobra, pero en otros casos a veces se usan 2, 3 o más.
+
+9
+00:01:05,000 --> 00:01:21,000
+ Entonces la lógica difusa nos permite representar información impresisa correspondiente a cómo nosotros nombramos objetos o cualidades de los objetos en un lenguaje natural.
+
+10
+00:01:21,000 --> 00:01:25,000
+ Por eso se dice que está más basado en el sentido común.
+
+11
+00:01:25,000 --> 00:01:34,000
+ Mientras que la lógica tradicional para trabajar es que se encuentra más definido por la matemática y algoritmos complejos.
+
+12
+00:01:34,000 --> 00:01:44,000
+ Y eso lo lleva a que la lógica tradicional no pueda imitar tan fácil o tan bien la manera en que las personas razonan.
+
+13
+00:01:44,000 --> 00:01:59,000
+ Bientras que la lógica difusa sí lo puede hacer porque puede manejar la información en el mismo nivel de egrices y no quedarse con los blancos negro como todavía sería con la lógica tradicional.
+
+14
+00:01:59,000 --> 00:02:07,000
+ Entonces la lógica difusa permite datos impresisos mientras que la lógica tradicional no difusa no lo permite.
+
+15
+00:02:07,000 --> 00:02:19,000
+ Por eso mismo la lógica difusa es más fácil agregar nuevos conocimientos muchas veces mientras que con la lógica difusa no difusa a veces se complicas.
+
+16
+00:02:19,000 --> 00:02:32,000
+ Bueno una vez entonces en tenida la diferencia entre la lógica difusa y la lógica tradicional vamos a ver de qué manera trabajan cada uno de los operadores lógicos en la lógica difusa.
+
+17
+00:02:32,000 --> 00:02:45,000
+ Lo que vamos a ver es que los operadores lógicos en la lógica difusa van a afectar los valores de pertenencia que tienen asociada las funciones de verdad en cada momento.
+
+18
+00:02:45,000 --> 00:02:56,000
+ Entonces vamos a tener como operadores lógicos a la negación que es el no a la disciunción que es el no a la conjunción que es el ni y el implicación que es el entonces.
+
+19
+00:02:56,000 --> 00:03:06,000
+ En el caso de la negación si yo quiero calcular el negado de algo lo que voy a calcular es el módulo de uno a menos el valor de pertenencia.
+
+20
+00:03:06,000 --> 00:03:14,000
+ Entonces si yo quiero hacer el negado de a y a vale 0,2 le voy a signar un valor de 0,8.
+
+21
+00:03:14,000 --> 00:03:19,000
+ Si a vale 0,3 le voy a signar un valor de 0,8.
+
+22
+00:03:19,000 --> 00:03:25,000
+ Si a vale 0,4 le voy a signar un valor de 0,8.
+
+23
+00:03:25,000 --> 00:03:27,000
+ Tabea, lo bastante es sencillo no.
+
+24
+00:03:27,000 --> 00:03:43,000
+ Bueno, ¿qué pasaría con la disciunción? Cuando yo creo que el color de una disciunción tengo a y tengo b y puedo tener otras variables pero supongamos que tengo esas dos y quiero ver un arregla que me diga bueno si pasa a o pasabe que haga algo.
+
+25
+00:03:43,000 --> 00:03:47,000
+ Bueno, entonces tengo a o b y quiero calcular el valor de pertenencia.
+
+26
+00:03:47,000 --> 00:03:56,000
+ Bueno, en esa situación lo que tengo que hacer es tomar el máximo de los valores de pertenencia de a con el valor de pertenencia de b.
+
+27
+00:03:56,000 --> 00:04:12,000
+ Entonces si a vale 0,2 y b sale vale 0,6 me voy a quedar con 0,6 porque a o b en el entonces vale el valor del máximo entre 0,2 y 0,6 que es 0,6.
+
+28
+00:04:13,000 --> 00:04:20,000
+ ¿Ok? Bien. ¿Y qué pasa con le li con la conjunción? Bueno, con le li vamos a aplicar el mínimo.
+
+29
+00:04:20,000 --> 00:04:31,000
+ Entonces si yo tengo a y quiero calcular a y b lo que tengo que hacer es el mínimo del valor de pertenencia de a con el mínimo del valor de pertenencia de b.
+
+30
+00:04:31,000 --> 00:04:37,000
+ Entonces si yo tengo 0,2 y 0,6 para cada uno me voy a quedar con 0,2.
+
+31
+00:04:37,000 --> 00:04:43,000
+ Entonces a y b en su valor de pertenencia vale 0,2.
+
+32
+00:04:43,000 --> 00:04:51,000
+ Hasta ahí es bastante fácil entonces. Entonces para la negación hacemos un o menos el valor de pertenencia y eso tomamos la parte positivo.
+
+33
+00:04:51,000 --> 00:04:59,000
+ Para la disionción tomamos el máximo entre las dos valores que tengamos y para el mínimo el valor más chico.
+
+34
+00:04:59,000 --> 00:05:08,000
+ ¿Qué pasa con la implicación? Con la implicación se va a complicar un poquito pero de todo dan por. Maneras se puede hacer fácil.
+
+35
+00:05:08,000 --> 00:05:14,000
+ La implicación lo que nos define es un procedimiento que vamos a dar de esta manera.
+
+36
+00:05:14,000 --> 00:05:20,000
+ Lo primero que tenemos que hacer es determinar las entras de difusas del antecedente a.
+
+37
+00:05:20,000 --> 00:05:29,000
+ Siena en el antecedente de la implicación. Tengo más de una función de lo que definir cuáles son los valores de pertenencias que corrospona.
+
+38
+00:05:29,000 --> 00:05:34,000
+ Ok eso está ahora lo dábamos como os habido así que no hay ningún problema.
+
+39
+00:05:34,000 --> 00:05:39,000
+ Después vamos a aplicar los operadores difusos que aparezcan el antecedente.
+
+40
+00:05:39,000 --> 00:05:47,000
+ Yo puedo tener que la implicación sea y ve implicarse o no a o ve implicarse.
+
+41
+00:05:47,000 --> 00:05:55,000
+ Entonces antes de llevar el valor que tengamos para determinar cuál es el valor de pertenencia de C.
+
+42
+00:05:55,000 --> 00:06:00,000
+ Lo que vamos a tener que ver es que sucede en el antecedente.
+
+43
+00:06:00,000 --> 00:06:10,000
+ Esa unificar utilizando todos los operadores lógicos que aparecen el antecedente y calcular un único grado de pertenencia.
+
+44
+00:06:10,000 --> 00:06:19,000
+ Entonces para eso aplicamos lo que vimos anteriormente para la negación, para la conjunción y para la disjunción.
+
+45
+00:06:19,000 --> 00:06:25,000
+ Una vez que tenemos ese valor único lo único que tenemos que hacer es probar ese valor al consejo.
+
+46
+00:06:25,000 --> 00:06:35,000
+ El consejante va a hacer una función de verdad donde se le va a signar el mismo valor que tiene todo el antecedente.
+
+47
+00:06:35,000 --> 00:06:42,000
+ Entonces si yo tengo una regla sencilla que es a implicade y a vale 0,2 ve va a valer 0,2.
+
+48
+00:06:42,000 --> 00:06:49,000
+ Si a vale 0,5 ve va a valer 0,5, ahí no hay ningún problema y bastante directo.
+
+49
+00:06:49,000 --> 00:06:59,000
+ La cuestión que vamos a tener es cuando en la antecedente tenemos a su vez otras funciones y tengamos que hacer algunas cosas más complicadas.
+
+50
+00:06:59,000 --> 00:07:09,000
+ En esa situación vamos a ver que primero vamos a tener que calcular el valor único para todo el antecedente y ese valor propagarlo al consejo.
+
+51
+00:07:09,000 --> 00:07:14,000
+ Para ver cómo esto funciona lo vamos a ver en un ejemplo.
+
+52
+00:07:14,000 --> 00:07:18,000
+ Pero ese ejemplo lo vamos a dar en el siguiente video. Hasta luego.
+

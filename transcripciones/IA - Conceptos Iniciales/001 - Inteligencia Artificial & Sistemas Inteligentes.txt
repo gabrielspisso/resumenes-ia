@@ -1,0 +1,121 @@
+ Hola, mi nombre es Pablo Pitel, yo soy docente de las asignaturas inteligencias artificiales,
+ la inteligencia artificial avanzada. Este es uno de los vídeos que estamos preparando para que
+ los alumnos puedan acceder a los temas de ambas asignaturas. En este caso vamos a hablar de
+ la inteligencia artificial y los sistemas inteligentes. La idea es que sirva para que los alumnos
+ de inteligencia artificial puedan acceder a entender mejor estos temas. En el caso de la
+ sin actura electiva, la idea es darles un repaso de temas que ya han visto. Bueno, cuando nosotros
+ hablamos de la inteligencia artificial, muchas veces se hablen de robots. Estos robots se
+ buscan resolver problemas, entonces se trata de desarrollar robots que tengan características
+ similares a las sumanas para resolver problemas complejos, donde va a la pena aplicar
+ un robot. También se habla de oselirse que en los robots en algún momento nos van a robar
+ nuestras trabajos. Entonces se habla de que como los robots, al poder resolver cada vez
+ gracias más complejas, se van a quedar con el trabajo y los seres humanos nos vamos a quedar
+ desempleados. Sin embargo, eso no es tan así porque los robots van a poder resolver problemas
+ que son bastante complicadas en cuanto a operaciones matemáticas, razonamiento, pero hay otras
+ actividades de creatividad, como el arte, donde los robots no van a ser tan buenos. Entonces,
+ se puede ver que los robots también podría ser beneficiosos para la humanidad. No obstante
+ también está el punto de vista de las películas, donde los robots nos van a dominar y
+ van a acabar con los seres humanos. Bueno, nosotros en estas asignaturas, no vamos a hablar
+ de robots, pero los robots son conceptos más de la mecánica y de la electrónica. Nosotros
+ vamos a hablar de la inteligencia artificial relacionada de la computación y al software.
+ Entonces, una definición que vamos a usar para hablar de la inteligencia artificial tiene
+ que ver con una ramas de las ciencias computacionales que se encargan de estudiar modelos
+ de computación, los robots van a hacer tecnologías, artics, arquitecturas, para desarrollar
+ software que sean capaces de realizar actividades propias de las seres humanos. Esas actividades
+ van a tener que ver con el razonamiento, la conducta y obviamente la aprendizaje. Entonces,
+ nosotros vamos a quedar desarrollar de alguna forma software que se vaya mejorando con el uso
+ y vaya tratando de aprender sola hasta cierto punto. Estas máquinas inteligentes,
+ este software inteligente nosotros les vamos a llamar sistemas inteligentes para desarrollar
+ lo más fácil. Entonces, en esta visión del inteligencia artificial,
+ podemos ver que también va a estar dividida por distintas disciplinas. Vamos a tener
+ laía tradicional, la inteligencia computacional, el aprendizaje automático, machine learning,
+ la visión artificial, procesamiento del lenguaje natural, bit data y data mining. Las cuales
+ no tratan, estas dos últimos no tratan de construir sistemas inteligentes, pero aplican muchas
+ de las tecnologías que derivan de la inteligencia artificial. Entonces, están muy relacionadas.
+ A partir de todas estas disciplinas, entonces nos va a permitir construir este software inteligente
+ para resolver problemas. Pero estos problemas no van a hacer cualquier problema. Es un
+ buen hacer problemas especiales, problemas complejos, donde van a cumplir alguna o algunas de estas
+ características. Por ejemplo, en la primera característica es que el problema no se entiende completamente.
+ Si nosotros el problema no entendemos bien de qué trata y entonces no podemos encontrar una solución.
+ La inteligencia artificial es un buen medio que podemos utilizar para intentar resolverlo.
+ También podemos pensar problemas donde no podemos saber qué va a pasar a futuro. No podemos
+ anticipar todas las posibles situaciones que va a ver ni los futuros cambios en que va a decir
+ que el cambio es que se evamos a tener que aplicar en el sistema inteligente. Entonces,
+ la inteligencia artificial es un buen medio. Otra posibilidad es que la cantidad de posibles
+ opciones sean tan grandes que no es posible probar todas para encontrar la mejor solución. Entonces,
+ voy a hacer una búsqueda exhaustiva. Podemos aplicar métodos eurísticos que tratan de acotar
+ el espacio de búsqueda y de esa forma encontrar una buena solución al problema en poco tiempo o con un poco
+ costo. También, por último, puede pasar que el problema podemos entenderlo pero al tratar de modelarlo
+ en un software en tratar de programar la solución tendramos que dejar de lado muchas cosas tenemos
+ que simplificar esta solución. Entonces, esa solución tal vez después no resolga del todo el problema.
+ Entonces, en esta situación está bien la inteligencia artificial es una buena alternativa.
+ Entonces, la inteligencia artificial que nosotros vamos a ver tiene que ver con la construcción del sistema
+ inteligente. Pero estos sistemas inteligentes tienen como un característica que no logran emular de todos
+ los características de los seres humanos. Tenemos los dos tipos de inteligencia artificial que son laía fuerte,
+ laía devil. Nosotros no vamos a tratar de laía devil que tiene que ver con tratar de emular ciertas
+ características de los seres humanos. Entonces, en ninguna de los sistemas inteligentes que nosotros
+ vamos a desarrollar va a poder emular todas las características de los seres humanos. Pero, si van a ser
+ mejores que el software tradicional, porque si nosotros recordamos la pirámido de la información,
+ donde tenemos el concepto de datos, noticia, conocimiento y sabiduría, podemos ver que el software
+ tradicional puede transaccionar con datos para llegar a un nivel de noticias e encontrarles ciertos
+ significados a los datos. En cambio, los sistemas inteligentes llegan a un nivel superior,
+ porque transaccionan con conocimiento, es decir, datos, con significado y utilidad.
+ Entonces, estos sistemas inteligentes es como acá el concepto de la iceberg. No nos quedamos con la
+ punta de la iceberg que son los datos, sino que tratan de encontrar patrones relaciones entre
+ las distintos datos y estos conocimientos ocultos que puedan tener los datos, los utilizan para
+ resolver el problema. Entonces, ¿cómo podríamos definir a estos sistemas inteligentes de alguna
+ forma? Bueno, acá también tenemos distintos puntos de vista. Muchas veces, la sociedad, cuando una
+ le dice de això de desarrollos sistemas inteligentes, piensan en los robots, ¿no? ¿Qué como dijimos? No,
+ no es el objetivo de la inteligencia artificial que nosotros vamos a hacer. Por otro lado, hasta la visión
+ de los científicos que trabajan con la inteligencia artificial, los padres de estos sistemas inteligentes,
+ donde ellos piensan, ah, no, yo estoy haciendo un nente perfecto con un montón de características,
+ entonces estoy dando al uso, un software especial, lo que los amigos piensan que hace, en este caso,
+ los amigos, sería un otro software. Si nosotros vemos un sistema inteligente, vamos a ver que está formado por
+ código, está desarrollada en un envoaje, por ejemplo, acá tenemos está desarrollado en Python. Entonces,
+ no es que nosotros tengamos que desarrollar directamente en el hardware, esta sistema inteligente,
+ nosotros vamos a programar en algún lenguaje usando librerías especiales. Estas librerías,
+ lo que le va a permitir al sistema inteligente es generar un modelo del problema y así encontrar una solución.
+ Entonces, ¿qué es lo que realmente hace? Tiene algún tipo de comportamiento inteligente,
+ ese comportamiento puede ser algo tan trivial, como jugar un juego, en este caso del arcano,
+ este es un ejemplo del sistema inteligente de desarrollaron una de las empresas de Google,
+ para jugar al arcano y aprender a jugar solo del arcano. Entonces, los sistemas inteligentes,
+ los podemos ver como artefactos que tienen algún tipo de comportamiento inteligente. ¿Qué significa esto
+ de comportamiento inteligente? Bueno, que puede tomar decisiones consistentes con un objetivo,
+ sea son racionales, es que hacen cualquier cosa sino que ellos tienen definido un objetivo y tratar
+ de alguna forma a alcanzar ese objetivo. Pero no son omniscientes, no conocen todo ni tienen todos los datos sobre
+ el problema. Eso genera que no sean tan poco infalibles, no siempre son exitosos,
+ puede ser que nos den una solución satisfactoria, pero que no alcance a resolver todas las posibles
+ situaciones. De todas formas, estos sistemas inteligentes van a poder aprender, lo cual va a ser
+ que su durante su uso van a mejorar su performance. Y a su vez, van a poder suportar ciertos cambios
+ en el dominio. Al tener la capacidad de aprender y tener ciertas flexibilidades de robustas,
+ le va a dar la posibilidad de que se puedan adaptar a ciertos cambios, no a todos,
+ y de esa forma, poder seguir funcionando a pesar de que la situación no era la misma,
+ que cuando fue criado originalmente. Como habíamos visto antes, para desarrollar estos sistemas
+ inteligentes, hay dos grandes ramas que le haya tradicional, y por otro lado, tenemos la inteligencia
+ computacional y machine larga. La idea tradicional tiene que ver con más con los sistemas desarrollados
+ por la ingeniería del conocimiento o hínico que van a hacer sistemas que van a tener bases de conocimientos,
+ donde usamos reglas, metodoseurísticos y lógicas. En cambio, la inteligencia computacional tiene que
+ ver con sistemas inteligentes que donde la tecnología va a estar basada en una inspiración biológica.
+ Entonces, hay, por ejemplo, tenemos los salvadimos genéticos, que están basados en la teoría de la evolución,
+ y otra rama que es muy importante y que está muy aplicada actualmente, que es la aprendizaje automático
+ machine larga, que tiene que ver con sistemas que pueden aprender a partir de ejemplos. De estos sistemas de machine
+ larga, lo vamos a desarrollar un poco más en otro vídeo, pero acá tenemos un ejemplo,
+ de las redes neuronales artificiales, que atrenden a partir de ejemplos, y que también
+ partenés en la inteligencia computacional, porque tienen una inspiración biológica. Entonces,
+ por eso estas dos tecnologías, nosotros les ponemos juntas, porque pueden ser que se convienen
+ en algunas tecnologías. Entonces, como ejemplos de estos sistemas inteligentes, vamos a tener
+ algorithms de inducción, los sistemas multijentes, redes neuronales, y las redes de Deep Learning,
+ la computación evolutiva con los salvadimos genéticos, la inteligencia del enjambre, modelos
+ probabilísticos, son distintas tipos de tecnologías que se pueden aplicar para construir
+ sistemas inteligentes. Pero de todas formas, a pesar de que hay un montón de tecnologías,
+ hay un montón de arquitecturas que se pueden aplicar para construir estos sistemas inteligentes
+ y resolver problemas. Implementar un sistema inteligente no es trivial, no es tan fácil
+ como parece. Después vamos a dar que hay que tener conocimientos de la tecnología, pero
+ también tenemos que aplicar por esos ingenieriles. Por eso, la inteligencia artificial, nosotros
+ la vemos en una carrera de ingenieril, porque muchos de los conceptos de la ingenieril y
+ sistemas de información y la ingeniería de software, también se tienen que aplicar en la construcción
+ de estos sistemas inteligentes para que el sistema inteligente debe arreglar el resolver
+ el problema que tenga la organización. No es que nosotros resolvemos el problema que nosotros
+ carramos. Si no que nosotros nos vamos a enfocar en las necesidades y deseos que tenga
+ esa organización. Bueno, vamos a cortar acá la presentación. Nos veremos en
+ otra vida, espero que sigan bien, gracias por su atención.

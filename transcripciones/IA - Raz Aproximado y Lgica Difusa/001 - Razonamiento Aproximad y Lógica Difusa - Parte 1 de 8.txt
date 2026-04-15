@@ -1,0 +1,202 @@
+ Hola, este es el primer vídeo correspondiente de la presentación de razonamiento aproximado y lógica difusa.
+ En este vídeo vamos a ver una introducción al concepto del razonamiento aproximado,
+ que es una tecnología del entro del inteligencia artificial,
+ y ya en el vídeo siguiente vamos a empezar a ver qué es y cómo trabaja la lógica difusa.
+ Bueno, una definición de razonamiento aproximada es la siguiente.
+ Es un modelo que permiten imitar la manera en que las personas toman decisiones.
+ Y se para ello aplican métodos para representar, combinar y propagar,
+ información, impresiza y o incierto.
+ Entonces, este a característica hace que los modelos de razonamiento aproximados
+ se distinguan de los otros modelos que utilizan la inteligencia artificial porque permiten trabajar y gestionar con
+ conocimiento o información que es impresiza y o incierto.
+ De esta manera puede asistir a las tomas de decisiones realizando inferencias que tienen asociado un grado de serotesa.
+ Para entender entonces cómo funciona este razonamiento aproximado y sus modelos
+ vamos a ver qué significa información incierta.
+ Entonces vamos a hablar sobre la incertidumbre.
+ Un incertidumbre nos dice que es la falta de seguridad de confianza o de certeza sobre algo,
+ especialmente cuando creen que tú.
+ También se puede ver como un estado de duda en el que predomina el límito de la confianza o la creencia
+ en la verdad de un determinado conocimiento.
+ Este imperfectión en el conocimiento sobre el estado de los procesos de la naturaleza.
+ Entonces, el incertidumbre tiene que ver con información de la cual nos estamos totalmente seguros de que sea así,
+ que toma tal valor.
+ Entonces, algunos ejemplos de incertidumbre podrían saber los juegos de asar como la ruleta de cartas,
+ donde nosotros nos sabemos en la ruleta que número va a salir o en el juego de cartas,
+ nos sabemos qué cartas vamos a recibir y qué cartas va a recibir nuestro contra incante.
+ También aplicaría situaciones como la bolsa,
+ y un ejemplo más cotidiano podría hacer la situación donde yo voy por una vereda
+ y sé que hay algunas baldos aflojas,
+ entonces yo tengo que adivinar cuál es la baldos afloja para no pisarla.
+ Bien, por otro lado tenemos la impresición.
+ La impresición nos dice que es una evividad donde es conocimiento del valor concreto de una variable.
+ También se puede ver como una cualidad generalmente asociada al incertidumbre,
+ aunque puede ser independiente.
+ También se puede ver como la falta de presición o exactitud.
+ Aunque esta última definición no es del todo correcta,
+ porque era vamos a saber que la presición el aire exactitud puede ser cosas distintas.
+ Porque como podemos ver en estos diagramas,
+ yo puedo tener algo que sea preciso de exacto,
+ pero también puedo tener algo preciso e inexacto
+ o impresiso y exacto y también impresiso e inexacto.
+ Bueno, pero qué es la impresición?
+ Una ejemplo que podemos dar es el caso del vaso.
+ Yo tengo un vaso con la mitad de agua,
+ y un optimista me puede decir que está medio lleno,
+ pero un pessimista me puede decir que está medio vacío.
+ Sea, depende de la visión de la persona,
+ va a tener un valor impresiso,
+ tendriendo que está lleno o tendriendo que estiva así.
+ Luego de decirme el vaso tiene tantos mililitros de agua
+ me dan una valoración bastante ambigua.
+ Esto también lo podemos ver con otros ejemplos,
+ donde alguien que ve caer agua,
+ está yo viendo, nos dice,
+ está yo viendo poco,
+ está yo viendo muy finito,
+ está yo viendo un montón,
+ está yo viendo bastante,
+ todos estos son descripciones utilizando valores impresicios,
+ donde no le doy una valoración concreta
+ a la cantidad de agua que está cayendo,
+ sino que una representación más subjetiva
+ de el agua que cae.
+ Si me la persona me dije,
+ está yo viendo tantos mililitros de agua,
+ por segundo,
+ ahí se tendrían un información totalmente presisa.
+ Otro ejemplo de esto,
+ donde se puede aparecer una impresición,
+ es describiendo un objeto.
+ Entonces, si yo quiero describir una vaca,
+ un toro,
+ podría decir que es un animal con cuatro patas
+ y tiene cuernos,
+ o directamente es un animal con cuernos.
+ Entonces, ahí también tenemos una descripción
+ bastante impresisa,
+ porque estamos obviendo mucho detalle
+ de elementos que conforman a una vaca
+ y la distingan de otros animales
+ que también tienen cuatro patas y cuernos.
+ Entonces, depende del nivel de detalle
+ que nosotros estemos agregando,
+ podemos tener distintos grados de impresición
+ para describir algo.
+ Otro tipo de situación,
+ otro tipo de ejemplo,
+ es cuando utilizamos no el nombre presiso
+ para referirnos a un objeto.
+ Eso es lo que pasa cuando vamos a la ferratería
+ y le tedimos a el cozo,
+ el cosito,
+ el cómo se llama o la cosa esa.
+ Entonces, cuando nos sabemos cómo denominar
+ correctamente algún elemento que precisamos,
+ utilizamos esos términos bastante amigos,
+ bastante impresizo,
+ así que el pobre ferratero tiene que adivinar
+ para donar lo que nosotros necesitamos.
+ Bien.
+ Acá hay un último ejemplo
+ donde una maestra fue bastante impresisa
+ con la tarea que deberían hacer los chicos,
+ el miércoles vendrán los alumnos
+ difrazados de casa como quieran.
+ Ese día en el colegio,
+ ahora hemos un desfilito,
+ marancho colate con mis coches.
+ Entonces, todos los padres
+ difrazaron a sus hijos de edificios
+ porque pensaron que tenían que estar
+ difrazados de casa
+ y no entendieron que tenían que venir
+ difrazado desde la casa.
+ Lo cual es bastante distinto.
+ Entonces, esa imposición
+ en la frase "genero" que los pobres chicos
+ se difrazaron todos los edificios.
+ Bueno,
+ ¿Cuáles son las fontes
+ de esta impresición
+ interincertidumbre? Bueno,
+ por un lado, se dan por las características
+ que tiene el mundo real,
+ que tiene cierta alectoridad,
+ asociada,
+ es muy compleja,
+ no podemos conocer todo lo que suceden
+ y hay muchas decepciones,
+ a su vez,
+ la información,
+ suele ser
+ incorrecta,
+ con traditoria que se tiene que gestionar y el lenguaje, el lenguaje natural, el castellano, en
+ la esquina o lo que sea, también tiene deficiencias que le da cierta ambiguidad a lo que nosotros
+ estamos diciendo. Por eso se dice que vos sabes lo que quisiste decir, pero no sabes lo que
+ el otro entendió. Hay veces que para eso tenemos que utilizar otros ejemplos, otras términos,
+ para que la otra persona entienda, lo que nosotros queremos decir. Entonces muchas veces el ser humano,
+ es impreciso e incierto por su naturaleza y la naturaleza del mundo. Y cuando nosotros queremos
+ implementar un sistema inteligente que maneja esa información, se nos vuelve un poquito más
+ complica, porque no tenemos datos de los cuales estamos totalmente seguros, ni datos de los cuales
+ no podemos definir cuántomiden exactamente. Por ejemplo, nosotros podemos tener este texto que
+ podría ser el texto de un libro, de inteligencia artificial, donde hay muchos ejemplos de imprescición
+ e incertidumbre. Hay cuando hablas de abeces, de varias, son demasiado, otras veces, son todos
+ ejemplos de incertidumbre e imprescición. El muyobias, el casita catastrófico que está al final,
+ son ejemplos también determinos que tienen ciertas incertidumbre o variedad al momento de referirlo.
+ Entonces, en un conjunto de datos, en un texto, yo puedo tener datos inciertos o imprescisas,
+ pero también esa imprescición e incertidumbre puede estar asociado de los conocimientos.
+ Supongamos que estas son reglas que yo quiero utilizar para construir la base de conocimiento
+ de un sistema basado de conocimiento de un sistema experto tradicional.
+ Y tengo que manejar, entonces, cierta imprescición y cierta incertidumbre.
+ Mire, la primera regla dice, si el paciente evidencia totalmente el síntoma uno, hay
+ no hay problema, y, parcialmente, el síntoma dos, ahí ya tenemos un problema, ¿qué significa
+ parcialmente el síntoma dos? Tenemos que definir, ¿no? Y se, entonces, creo que el diagnóstico
+ podría ser, bueno, ahí el creo que podría ser es un incertidumbre claramente, que nosotros
+ no, no sabemos cómo manejarla, porque eso es el diagnóstico o no es el si diagnóstico.
+ Cuánta confianza tiene de que sea el diagnóstico de uno, y de que no sea el diagnóstico
+ de uno. Tío todo el diagnóstico podría ser, bueno, entonces, son todas cuestiones
+ que hay que definir antes de poder construir nuestro sistema inteligente.
+ Por otro lado, la segunda regla dice, si el paciente tiene el síntoma uno, el síntoma
+ dos, no hay dudas, dice entonces el diagnóstico, en la mayoría de los casos es de uno,
+ pero en otros casos es posible que sea de dos, pero es ahí de vuelta, que es mayoría,
+ que es otros casos, cómo valorar eso, cómo manejarlo dentro de nuestro sistema inteligente.
+ Y estar cualidad de imprescición e incertidumbre, fíjense que se puede dar también con
+ valores numericos, eso lo vamos a ver en el tercer ejemplo, dice, si el paciente evidencia
+ el síntoma uno en un 80%, y el síntoma dos en un 55%, bueno, ¿qué significa
+ que tiene el síntoma uno en 80%. Si el síntoma uno es fíjere, ¿qué consideramos
+ que tenga un 80% de fíjere, que tiene un 80% de 37 grados, o que tuvo fíjere
+ por un 80% a 80% del tiempo, bueno, hay que definirlo. Y con se cuente, nos dice, entonces el
+ diagnóstico en el 75% de los casos es de uno, pero en el 40% de los casos es de dos.
+ Si el 75% obviamente son insartidumbre, pues no estamos seguro de que es de uno, pero fíjense
+ que también se puede solapar y se puede presentar de uno y de dos, porque se
+ tiene un 75% más 40% da más del 100%. Entonces, ahí también tenemos un problema de que
+ tenemos que conseguir tres posibles situaciones de las cuales no estamos seguros, cuales se
+ pueden dar y como distinguir una de la otra. Entonces, para poder trabajar con este tipo de
+ reglas, vamos a tener que usar alguna de los modelos de razonamiento aproximado. Y esos modelos
+ de razonamiento de aproximado se pueden distinguir en dos tipos, los que usan métodos,
+ cualitativos y los que usan métodos, cuantitativos o numericos. Los métitos, cualitativos,
+ no les vamos a dar, porque porque son más teóricos que si deben para explicar cómo
+ se debería manejar y potes y sotesis, con sierte, incertidumbre o sierte impresicción. Entonces,
+ no tienen aplicaciones prácticas. Dentro de los métodos cuantitativos o numericos están.
+ El método probabilístico plástico que ustedes ya conocen de la signatura probabilidad
+ y estadística. Entonces, lo que hago es usar un sistema inteligente que aplicar esos métodos
+ generalmente conformo las un poquito más complicadas para poder hacer razonamiento usando
+ probabilidades. Un extensión de este método probabilístico clásico de son, los modelos de
+ marco y las redes vayecianas que, por una cuestión de largo del programa de esta materia,
+ no le habemos inteligencia artificial, pero si se den la signatura electiva. Por otro lado,
+ tenemos el modelo de factores de sartezas, que es un modelo que se planteó en el año
+ 1975, que permite construir un sistema inteligente para diagnosticar un tipo de enfermedad.
+ El sistema inteligente se llama "My Sin", pero que pasa. El modelo es bastante simple,
+ se puede entender y usar una fórmula bastante claras, pero está basada en varias
+ suposiciones que restringen mucho suzo. Si nosotros queremos usar "My Sin", vamos a
+ tener que aplicar algunas suposiciones que hacen que mucha información o muchas decisiones
+ no se puedan tomar. Por eso se desjodelado y el único ejemplo donde se pudo aplicar con
+ éxito fue "My Sin". El que sí vamos a hablar es la lógica difusa, que la lógica difusa
+ tiene su relación con la lógica proposticional y la lógica de primer orden que ya vimos,
+ tiene su relación también con la deducción natural obviamente, pero también tiene
+ ciertas diferencias. Entonces vamos a ver de qué manera esta lógica difusa nos permite
+ representar la información cuando hay impresición o incertidombre, y como permite llevar
+ a cabo la toma de decisiones. Entonces, vamos a ver cómo yo las reglas que tengo representado
+ en la lógica difusa, la puedo aplicar para construir mi sistema inteligente difusa.
+ Bueno, con esta vamos a cortar el primer vídeo de introducción y así comenzamos hablando
+ de la lógica de la fursa. Hasta luego.

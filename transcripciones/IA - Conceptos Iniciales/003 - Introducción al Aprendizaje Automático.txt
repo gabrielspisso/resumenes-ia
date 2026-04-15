@@ -1,0 +1,113 @@
+ Hola, mi nombre es Pablo Pital, soy 200 de las asignaturas Inteligencia Artificial e Inteligencia Artificial
+ avanzada, en este video veremos una introducción a lo que es el aprendizaje automático
+ o machin learning, para profundizar un poco en más en este tema, bueno, cuando hablamos de
+ machin learning, uno lo que se imagina es lo que muestra en esta figura, que es que un robot
+ aprende solo o con ayuda de una persona y logra de esa manera resolver problemas. Machin
+ learn real es algo bastante parecido, como habíamos visto en otro video, podemos ver que
+ machin learning es un subcampal informática, de la que tiene que ver con la computación,
+ las computadoras del software y lo que busca hacer este campo es definir y estudiar
+ algoritmos o sea procedimiento software que pueden generar comportamientos generales a partir
+ de ejemplos puntuales, o sea que está haciendo como una especie de inducción, porque está
+ tratando de generalizar ciertas acciones que se tienen que hacer a partir de ejemplos puntuales.
+ Para lograr esto, esto es algoritmos a procedimientos, muchas veces están basados en principios
+ estadísticos y matemáticos, porque lo que tratan de encontrar es un modelo, una representación
+ que trata de mostrar los patrones que tienen estos ejemplos o datos, y de esta forma
+ la aplicar el modelo nosotros podemos resolver un problema. Entonces machin learn,
+ lo podemos ver también como una búsqueda de patrones en datos, esto es muy parecido
+ de lo que pasa con big data y data mining, donde aparte de ejemplos de base de datos
+ se trata de encontrar comportamientos, que se van a mostrar en un reporte en un informe
+ para que alguien toma una decisión. La diferencia sería en este caso, es que los patrones
+ que nosotros queremos encontrar, los vamos a tratar de implementar en un modelo software
+ para que después una computadora lo pueda ejecutar y resolver ciertos problemas.
+ Esto es la búsqueda de patrones, podríamos decir que es como pasar en esta animación,
+ a partir de muchos ejemplos encontramos así un signe, un dragón que nos sorprenda.
+ Otro ejemplo para explicar machine learn muy interesante, es el que va a estar al torpedro
+ domingo en su libro de Master, algo en que si alguno quiere leer sobre el tema es un libro
+ muy recomendado para introducirse en machine learn en las distintos tipos de algoritmos relacionados
+ a ellos. El autor hace una explicación muy conceptual de cómo trabaja cada uno de estos
+ ejemplos muy divertidos y entendibles. Bueno, en el caso de machine learning, peda la
+ domingo, sé que es como cultivar una planta. Nosotros una planta que hacemos para uno es una
+ semilla en una máseta con tierra, la empezamos a regar la cuidamos y de ahí va a surgir
+ una planta, ¿no? Bueno, como machine learn, va a pasar algo parecido. Nosotros vamos
+ a tener un algoritmo que va a estar esta semilla, que la vamos a poner en un ambiente,
+ va a hacer la máseta con tierra y en la cual le vamos a suministrar datos.
+ Nosotros, lo podemos relacionar con el agua que le damos a la planta. Partir de estos datos,
+ de estos ejemplos, el algoritmo va a generar un modelo, va a hacer aparecer la planta.
+ Y se modelo, si nosotros después lo implementamos dentro de un software, va a formar un
+ sistema inteligente. Entonces, parecería que hacer un sistema inteligente como machine learning
+ es tan fácil como cuidar una planta. Tan fácil, lo tan difícil, no, porque a veces uno
+ se olvida de regar a la planta y la pobre planta se marchita. Bueno, acá como machine learn
+ pasa algo parecido, porque tenemos que tener cuidado de darle unas cantidas suficientes
+ de datos, que tampoco demasiado para que se abre, y le tenemos que dar datos representativos,
+ porque si nosotros no le damos datos representativos del problema, queremos resolver,
+ nos hagelar un modelo, pero y no nos va a servir para resolver el problema que nosotros
+ queremos. Bien, en general, entonces, puedo no decir que un algoritmo de machine learning
+ recibiendo un conjunto de datos y como salida nos va a modelar que nosotros podemos
+ desprosutilizar dentro de un sistema inteligente. Entonces, podemos decir que machine learning
+ aprendizaje automática, para mí te genera un software que es autocráticamente capaz de
+ adquirir capacidades y adaptarse a su entorno. Esto de adquirir capacidades y adaptarse a su
+ entorno, lo podemos relacionar con el aprendizaje, que tenemos los seres vividos. Entonces,
+ por eso en castellano, se habla de la aprendizaje automática más que el aprendizaje de máquinas.
+ Dentro de estos algoritmos de machine learning, hay diferentes tipos, de hecho hay miles
+ de algoritmos posibles con distintas características, pero esos algoritmos se pueden clasificar
+ de acuerdo en un sentido a la estrategia de aprendizaje.
+ Esta estrategia de aprendizaje puede ser algoritmos supervisadas o no supervisadas.
+ En un algoritmo supervisado, al algoritmo, le vamos a dar además de los ejemplos
+ de nutrado, también le vamos a ayudar información adicional para que el algoritmo
+ pueda encontrar la relación el patron que le permita resolver el problema.
+ Generalmente esa información adicional puede ser una salida de ciada o algo que le permita
+ valorar si la salida que está generando es bueno o mal. En cambio en el algoritmos
+ no supervisados, lo que le vamos a dar a la algoritmo son sólo ejemplos de entrada.
+ A partir de esos ejemplos, el algoritmo va a tratar de terminar un modelo que el
+ arrepresenta y de esa forma resolver un problema.
+ Obviamente que las algoritmos con aprendizaje supervisado no supervisado no se puede
+ neutralizar para el mismo tipo de problemas, así que vamos a ver un ejemplo de cada
+ uno. Supongamos que yo quiero clasificar o reconocer tipos de flores.
+ Entonces, por ejemplo, tengo flores de tipo iris que tienen un petal y un cepalo, los
+ cuales tienen un largo y un ancho y a partir de esas características, yo quiero determinar
+ aquel tipo de flores y iris corresponde, así es, se tosa a ver si colore a ver gínicas.
+ En este caso, yo usaría un algoritmo de aprendizaje supervisado, porque yo le voy a
+ ver como datos de entrada, ciertos ejemplos de valores del largo y ancho del petal
+ del cepalo y a su vez le voy a decir cuál es la plaza que corresponde la salida de
+ ciava que va a tener.
+ El algoritmo, a partir de su funcionamiento, la tratar de encontrar una relación a un
+ patrón entre los datos de entrada y los datos de salidas para generar un modelo que
+ me permita hacer esta clasificación o no reconocimiento.
+ Un ejemplo de algoritmo no supervisado podría ser tratar de definir en forma automática,
+ grupos o clasters de vestidos que tengan características similares.
+ En este caso, yo le daría a mi algoritmo como datos entran a los datos que tengo sobre
+ distintos vestidos, gran cantidad de vestidos, por ejemplo el estilo de talle, la temporada
+ que se usa al tipo de escoto de cintura y que la algoritmo me define a tres grupos
+ de vestidos.
+ Entonces me va a decir, por ejemplo, me van a agrupar vestidos de acuerdo a la temporada y
+ el tipo de talla o el precio, a algun otro criterio que algoritmo que el algoritmo considere
+ más relevante.
+ Eso es importante porque en este caso, nosotros no les estamos diciendo de plasificarme
+ los de acuerdo a este criterio, le estamos diciendo clasificarme los de acuerdo en los
+ que te parezca mejor y el algoritmo de esta forma encuentra una relación entre los datos
+ para encontrar grupos de datos similares, patrones similares.
+ Este tipo de problemas, generalmente es el edal, los suele tener las empresas que se
+ dedican a la venta de productos y servicios, entonces necesitan encontrar grupos de productos
+ sus servicios con características similares, los grupos de clientes que comparan productos
+ o servicios similares.
+ Por ejemplo, los sistemas de recomendación que se utilizan en Amazon y en los sitios
+ de venta online, generalmente, aplican este tipo de algoritmo, no supervisor.
+ Entonces, por un lado tenemos esas estrategias de la aprendizaje, pero también la
+ y los algoritmos de Machine Learning, los podemos distinguir entre distintos tipos de entrenamiento.
+ Entonces, podemos tener entrenamiento offline o estatico que son los algoritmos que van a tener
+ una fase de entrenamiento, una fase durante la cual el algoritmo va a aprender para generar
+ el modelo y que luego de la instalación no aprende más, o sea, durante la fase de operación
+ se mantiene la cantidad de conocimientos finales que se obtuvo luego de la fase de entrenamiento.
+ En cambio, puede tener algoritmos online, en los algoritmos online, vamos a tener nuestra
+ fase de entrenamiento donde el algoritmo va a aprender nuevos patrones para generar el modelo.
+ Pero una vez puesto en producción luego de su instalación en la fase de operación, pueden
+ seguir aprendiendo nuevos conocimientos.
+ Obviamente que ese nuevo aprendizaje va a tener que ser monitoreado para tratar de que a
+ aprender cosas nuevas no arromta algo que aprendió, se olvide de algo que aprendió previous.
+ Bien, dentro de Machine Learning tenemos estrategias de la aprendizaje supervisado y no
+ supervisado, tipos de entrenamiento online. Y a su vez tenemos distintas tipos de algoritmos,
+ ponemos de clastering, de inducción, de regresión, basados en la teoría, el terema de
+ baixas de probabilidad, redes neurones artificiales, etcétera. Nosotros para hacer un video muy largo,
+ vamos a hablar de un ejemplo con algoritmos de inducción en otro video que viene a continuar
+ la producción. Y entonces, de esta manera, terminamos con esta introducción en lo que es Machine Learning,
+ espero que les haya servido y nos veremos en el próximo.

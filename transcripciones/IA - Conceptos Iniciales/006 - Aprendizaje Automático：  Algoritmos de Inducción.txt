@@ -1,0 +1,148 @@
+ Hola, mi nombre es Pablo Pitel y en este vídeo vamos a hablar de los algoritmos de
+ inducción. Esto es algoritmos, es un ejemplo clásico de los algoritmos superovisados
+ de Machine Darwin, que tienen como función y identificar un conjunto de reglas que
+ permiten clasificar de manera similar a los ejemplos que uno le va a dar el algoritmo.
+ Para funcionar, estos algoritmos inducción van a necesitar que los datos
+ están estructurados en forma de tabla. Es decir, yo voy a tener un conjunto de
+ filas o ejemplos y un conjunto de columnas o atributos que se van a aplicar dentro
+ de la algoritmos para identificar las reglas. En estas reglas las condiciones del
+ antecedente, van a estar formado por los atributos de entrada, no todos algunos,
+ eso lo va a determinar solo el algoritmo y en el consecuante vamos a tener los
+ distintos valores de la atributo que. Siempre el atributo objetivo es uno solo,
+ entonces siempre el consecuante va a hacer ese atributo.
+ Esto, la identificación de las atributos de entrada y los atributos objetivos es importante
+ de hacerlo con cuidado de acuerdo el problema que no quiere resolver, porque si uno
+ elige más los atributos, puede ser que las reglas después no presenten utilidad
+ para resolver. Una vez elegido todo esto, nosotros podemos aplicar el algoritmo
+ que automáticamente nos va a definir las reglas corresponsas.
+ Dentro de las algoritmos de inducción hay muchas formas de implementarlo, nosotros vamos
+ a ver los algoritmos que se llaman "top down induction decision tree" o "t" de "t".
+ Esto es algoritmo, nos van a permitir generar árboles de decisión a través de una
+ inducción de arriba hacia abajo, para eso, el algoritmo va a utilizar con la filosofía
+ de dividir un faraz, va a partir de un conjunto de ejemplos filas, completa.
+ Esos ejemplos los va a ir dividiendo en sus conjuntos y a partir de esa subdivision
+ va a ir generando las reglas que corresponden, entonces por eso se dice que va a triunfar.
+ Y funcionamiento del procedimiento que van a aplicar estos algoritmos es bastante sencillo.
+ Inicialmente, va a partir de un conjunto de datos "t" que va a ser el conjunto completo de ejemplos
+ que yo voy a tener. Si ese conjunto estaba así, que no va a ser lo que va a suceder
+ la primera vez, pero puede pasar luego, el algoritmo va a finalizar.
+ Sin cambio, dentro de la tributo objetivo, todos los ejemplos toman el mismo valor, el
+ algoritmo va a finalizar, pero va a generar un nodo oja, es decir, va a generar una
+ consecuencia con el único valor que toma la tributo que va a cerrar una regla, podríamos
+ decir. Si estas condiciones no se da va a ir por la tercera alternativa, que es empezar a ser
+ estas subdivisiones. Para eso, lo que tiene que hacer es elegir cuál es el atributo
+ de entrada que presenta mayor ganancia de información. Ahora, como vamos a ver la ganancia de
+ información, se calcula utilizando diversas fórmulas. Entonces, el atributo de entrada que
+ presenta mayor valor va a ser el atributo seleccionado a hacerla subdivicio. Entonces, por cada
+ valor que toma, que puede tomar, es el atributo de entrada, se va a armar un subconjunto de
+ detén. Con cada uno de esos subconjunto se vuelve a aplicar todo el procedimiento. Entonces,
+ analizar. Si te estaba así o finalizar, si tiene un único valor en la tributo objetivo genera
+ lado. Si no, vuelve a hacer la subdivision tomando el atributo de entrada que ahora presenta
+ mayor ganancia. Y así va a ir ejecutando de forma recusiva hasta que el algoritmo logrará
+ generar todas las regas. Fíjense que el procedimiento es bastante sencillo. Al momento de implementar
+ este algoritmo, se puede llegar a para metrizar algunos situaciones, pero el formatorio rica
+ funcionó de esta manera. Una de las cosas que se pueden para metrizar es como el calcular la
+ ganancia de la información. Nosotros, a modo de ejemplo, les vamos a mostrar la fórmula que utiliza
+ el algoritmo y de tres que es la silla. La ganancia de la información de la tributo objetivo para
+ una tributo de entrada determinado se calcula como la diferencia entre la entropía y va a tener
+ el atributo objetivo menos la entropía de la tributo de entrada contra el atributo objetivo.
+ La entropía es lo que se considera en la tributo de la información como podríamos decir
+ la sorpresa o la importancia que va a tener un dato para tomar una decisión. En el caso
+ de la entropía, fíjense que se calcula usando la sumatoria por cada uno de los valores que
+ tiene ese atributo de la aprobabilidad del valor, multiplicado por el lugar en bambá sedos de
+ esa aprobabilidad. Esta fórmula fue definida por llanón en la teoría de la información como
+ la fórmula de la entropía negativa para ver la importancia o la relevancia que toma un atributo para
+ tomar una decisión. Y para agalcular la entropía de la tributo con respecto al atributo
+ entre la correspecta de la tributo objetivo, si usa la misma fórmula pero considerando en este
+ caso la digamos los ejemplos que van a tener el atributo objetivo con respecto al valor de
+ la tributo entre. Ahora después lo vamos a ver con un ejemplo va a crear más claro pero
+ de todas formas estas fórmulas uno no la tiene que modificar las va a utilizar directamente
+ en el algoritmo que yo lo voy a tener implementación. En algunos casos, en algunas implementaciones
+ uno puede llegar a cambiar qué tipo de fórmula utilizar, que en algunos tipos de problemas
+ puedes llegar más a hacer más utilizar otra fórmula pero esta es la fórmula más utilizada.
+ Bueno, como le decía vamos a ver un ejemplo de cómo se pueda aplicar eso. Para eso vamos a
+ considerar que tengo estos tres atributos de entrada que me identifican el tipo de problema,
+ el tipo de datos y la complejidad del problema y el atributo objetivo me va a determinar si
+ conviene a usar o no Machine Lab. Entonces a partir de estos ejemplos de problemas con distintas
+ tipos de datos y complejidades vamos a tratar de identificar las reglas que me van a permitir
+ definir si conviene utilizar Machine Lab en or. Bueno, supongamos que el conjunto de datos es pequeña,
+ son solamente estos ejemplos que aparecen aquí para poner un ejemplo más sencillo y entonces
+ vamos a aplicar el algoritmo y detrás para ver cómo se genialar. Bueno, lo primero que tenemos que
+ identificar es las tres condiciones que aplica el proceso. Bueno, vamos ahora. El conjunto T,
+ ¿es serían todos estos ejemplos? ¿Está vacío? No. Tienen un único valor en el atributo objetivo, no.
+ Entonces tengo que calcular la ganancia de la información. Yo acá en esta la presentación
+ ya tengo el calculador de los valores de la ganancia para el atributo de entrada tipo de
+ problema tipo de datos y complejidad del problema. Los cálculos que nosotros utilizamos para obtener
+ estos valores están definidos en esta planilla de cálculos que la podemos tener en esta planilla
+ de cálculos. Fíjense lo que hacemos es calcular la entropía, hubo un lado de la atributo objetivo
+ que nos da 0,985 y después calculamos la entropía de la atributo objetivo con respecto
+ al cada uno de los atributos de entrada tipo de problema tipo de datos y complejidad del
+ problema. Fíjense que acá lo que ponemos es la cantidad de ejemplos que tiene por cada valor
+ de la atributo objetivo con respecto a cada valor de la atributo de entrada y son los permite
+ obtener la entropía por cada uno de los valores y la entropía general de cada uno de los atributos.
+ Por eso, utilizamos para calcular la ganancia de información en este caso. Fíjense que el que tiene
+ mayor ganancia es el tipo de problema. Entonces me conviene lo que nos está diciendo esta
+ formula es hacer la primera división del conjunto de datos 10 de acuerdo del tipo de problema
+ y eso es lo que voy a hacer. Entonces que voy a hacer. Voy a armarchar mi árbol de decisión,
+ mi nodo, raíz, va a hacer el tipo de problema, pues fue el primer atributo de entrada seleccionado
+ y voy a armar tras ramas de acuerdo los valores de la atributo tipo de problema, clasificación
+ optimización o predicción. Entonces primero analizó que pasa con los ejemplos que tienen
+ el valor clasificación que son estos seis atributos. Entonces digo, el conjunto nuevo T de clasificación
+ está vacío, no. Tiene un único valor en el atributo objetivo, no. Entonces tengo que volver a
+ hacer una sub división. Entonces nuevamente tengo que calcular la ganancia, pero ahora calcular
+ la ganancia solamente con el tipo de datos y la complejidad del problema. Porque el tipo
+ de problema tiene todos los valores en clasificación, no tiene sentido, tampoco es posible hacer
+ una nueva sub división por el tipo de problema. Los cálculos aparecen en esta nueva sola
+ la planilla de cálculo. Y bueno, nos dice que el atributo como ayer ganancia es el tipo de
+ lado del lado. Entonces lo que vamos a hacer es subdividir al conjunto T en dos conjuntos, por un lado
+ voy a entrees perdón, entrees datos, entrees conjuntos, de acuerdo al valor ejemplos, regular
+ o irregularity. Entonces analizó. Para los que son de clasificación con ejemplos, con tipo de
+ datos ejemplos. Está vacío, no. Tiene un único valor en el atributo que tivo sí. Fíjense todos
+ disen sí. De hecho. Entonces ahí puedo jelerar mi nodoje. Ahí tengo ya mi primer regla.
+ ¿Qué es? Si el problema es clasificación y su uso de ejemplos, puedo usar machine
+ aquí. Ahora voy a analizar que pasa con la, la ejemplos que son de clasificación y reglas.
+ Y digo, está vacío, no. Tiene un único valor en el atributo objetivo, no, porque este
+ tiene sí y este tiene no. Entonces tengo que hacer una nueva subdivisiono. Que bueno, en este
+ caso lo que único que me queda como atributo dentro es la complejidad del problema. Entonces
+ lo he dividido de acuerdo al valor del complejidad del problema y me queda que complejidad
+ alta, genero un sí y complejidad baja, me genero un no. Entonces ahí ya puedo armar dos
+ nuevos nodoje que se va a responder a dos nuevas redes. Bueno, un segundo atrás. ¿Qué
+ voy a pasado sí en complejidad del problema? Los dos decían alta o los dos decían baja pero
+ el atributo objetivo uno de donde decía sí y el atruman decía no. Bueno, ahí de todas
+ maneras voy a tener que generar un nodoje, que no puedo subdividir más. Y lo que va a
+ pasar es que voy a tener una regla y no va a ser totalmente precisa. Va a tener en este caso
+ un 50, 50 chances de que sea sí o que sea no. Esto no puede llegar a pasar y bueno, en
+ esos casos y a reglar no va a ser tan confiable para poder ser aplicada. Eso va a depender
+ de los datos que yo tengo disponible y bueno puedo llegar a modificar el algoritmo, puedo
+ llegar a modificar los parámetros pero posiblemente y a reglar la voy a tener así. Lo
+ que tendría que ver es tratar de conseguir más casos, más ejemplos para este problema,
+ para ver si al menos podemos conseguir que haya dos consiguios dos con no y digamos poder
+ dar más un chance que no sea 50, 50 es resultado de la regla.
+ Bien, eso hay una acledación porque bueno puede llegar a pasar y bueno ahí es trabajo del
+ ingeniero, aplica el algoritmo de terminar como considerar la resolución para esas
+ situaciones. Bueno, volviendo al ejemplo, nos quedamos ahí con clasificación y nos faltaba
+ orgúrísticas. Bueno, con el jurística tengo un único ejemplo que tiene el atributo objetivo
+ con el valor no, entonces el ingeniero vino a dos y ya está. Entonces ya tengo mis primeras
+ cuatro. Ahora tengo que ver que pasa con el tipo de problema cuando es optimización.
+ Entonces acá de nuevo voy a analizar, digo, está vacío no. Tiene un único valor en el
+ atributo objetivo, sí el valor es no, pero tengo un único valor. Entonces ahí generó mi no
+ dojo y ahí fíjese que es mucho más fácil, ¿no? Ahí veces que esto nos puede llegar a
+ pasar donde directamente a partir de una único o valor de un único atributo de nada se
+ obtiene la regla y a veces que nos puede pasar que se tiene que ramificar mucho más para generar
+ las distintas reglas que se puedan dar. Eso va a depender de lo obviamente de los datos y
+ igual son situaciones que se puedan pagar. Y por último, bueno, con respecto a predicción
+ pasa lo mismo, se generan ahí el nodo oja con el valor sí y entonces el algoritmo,
+ como ya clasificamos todos los ejemplos, podemos decir que el árbol de decisión está
+ terminado para identificar las reglas lo que tengo que hacer es recorrer este árbol desde el nodo
+ raíz por cada uno de las hojas y por cada uno de las ramas, las que voy a pasar me va
+ a identificar las distintas condiciones que yo voy a tener. Entonces a partir de este árbol
+ de decisión, puede identificar todas estas. Con estas reglas, luego, luego, luego, yo
+ esto les puedo utilizar dentro de la base de conocimiento de un sistema inteligente basado
+ en inteligencia artificial tradicional o también lo puedo utilizar dentro de las condiciones
+ de un software tradicional, las pueden implementar como ish, anidados para decidir algo sin
+ necesidad de utilizar ningún motor de inferencia, el código va a ejecutar directamente
+ a lo sí, también se puede hacer, otra posible aplicabilidad de estas reglas es analizar
+ un conjunto de datos, es decir, aplicar minería de datos sobre un conjunto de datos para
+ ver qué condiciones se damos, cada vez que una tributo objetivo tomamos para, entonces también
+ estas reglas se pueden aplicar para esto. Bueno, con esto terminamos la explicación de algoritmos
+ de inducción, espero que les haya sido. Hasta luego.

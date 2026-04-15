@@ -1,0 +1,520 @@
+1
+00:00:00,000 --> 00:00:05,400
+ venidos al segundo vídeo de la parte práctica de algoritmos genéticos. En este caso
+
+2
+00:00:05,400 --> 00:00:14,180
+ los doros implementamos una solución que organiza las guardias dentro de un sistema
+
+3
+00:00:14,180 --> 00:00:23,220
+ médico con ene participantes y para contarles un poco el contexto les voy a presentar
+
+4
+00:00:23,220 --> 00:00:32,680
+ con esta p p, bueno, el proyecto se llama Guardia, de que se trata un poco, básicamente hoy
+
+5
+00:00:32,680 --> 00:00:40,280
+ en día un servicio que tiene que resolver el tema de las guardias mensuales, se junta
+
+6
+00:00:40,280 --> 00:00:44,420
+ varias veces por mes, pero implicaría un trabajo de varias horas, se puede llegar a decir
+
+7
+00:00:44,420 --> 00:00:51,300
+ de más o menos medio a día de todo el servicio, medio a día de 12 personas, por ejemplo,
+
+8
+00:00:51,300 --> 00:01:01,200
+ más o menos 6 días laborales involucra también, no sé si la palabra sería errores, pero injusticias
+
+9
+00:01:01,200 --> 00:01:06,500
+ o de seguir libros en la cantidad de fines de semana, cantidad de guardias que tiene que ser una
+
+10
+00:01:06,500 --> 00:01:12,840
+ persona, ferial, cantidad de veces seguidas que está una semana persona, es decir, todos
+
+11
+00:01:12,840 --> 00:01:20,820
+ estos temas se tienen que contemplar una forma manual, si uno quisiera empezar a resolver
+
+12
+00:01:20,820 --> 00:01:28,180
+ eso de una forma secuencia, o sea, no es un regorismo tradicional en lugar de algoritmos genéticos
+
+13
+00:01:28,180 --> 00:01:36,440
+ o algún método basado neurística, la cantidad de combinaciones simplemente para entender
+
+14
+00:01:36,440 --> 00:01:41,780
+ cuando una persona tiene que estar eneveses al mes, imagínense, si una persona tiene
+
+15
+00:01:41,780 --> 00:01:49,220
+ que estar 8 barres al mes, cuántas posibilidades hay, hay 8 millones, para los 5 millones
+
+16
+00:01:49,220 --> 00:01:56,020
+ 850 de dos mil, 925 posibilidades, es decir, hay una para que esa persona esté de 1 al
+
+17
+00:01:56,020 --> 00:02:06,060
+ 1, 2, 3, 4, 5, 6, 7, 8, luego 1, 2, 3, 4, 5, 6, 7, 9, luego 1, 3, 4, 5, 6, 7, 10, bueno, así, luego
+
+18
+00:02:06,060 --> 00:02:11,340
+ hay muchísimas combinaciones de cuántas, bueno, 5 millones de 8100 mil, cuando nosotros
+
+19
+00:02:11,340 --> 00:02:19,300
+ elevamos este número, a la 10, por ejemplo, si es un equipo de 10 personas, hay más combinaciones
+
+20
+00:02:19,300 --> 00:02:25,540
+ que atomos en el universo, realmente es imposible, cálculo a todas, fíjense, si se analizan
+
+21
+00:02:25,540 --> 00:02:31,780
+ 100 mil opciones por segundo, se tardaría 1,5 trichones de trichones de trichones de años
+
+22
+00:02:31,780 --> 00:02:38,100
+ evidentemente no podemos ir por ese lado, por el lado de evaluar todas las opciones, entonces
+
+23
+00:02:38,100 --> 00:02:45,660
+ tenemos que encontrar una forma de generar una jurística y ir guiando la búsqueda mediante
+
+24
+00:02:45,660 --> 00:02:51,540
+ esto, bueno, las opciones algoritmos genéticos, justamente lo que terminamos haciendo es
+
+25
+00:02:51,540 --> 00:02:58,220
+ seleccionando los más aptos, es decir, recuerden si lo comparamos justamente con la
+
+26
+00:02:58,220 --> 00:03:04,740
+ tereda de la evolución, el problema a resolver sería el entorno, está bien, las reglas
+
+27
+00:03:04,740 --> 00:03:11,100
+ que yo quiero que se cumple, y los individuos serían posibles soluciones a ese problema,
+
+28
+00:03:11,100 --> 00:03:17,900
+ en este caso, cada individuo sería un calendario posible, también cuando yo voy a generar
+
+29
+00:03:17,900 --> 00:03:23,740
+ la población inicial, muy seguramente no cumple a todas los requisitos de esos individuos,
+
+30
+00:03:23,740 --> 00:03:27,940
+ pero es decir, de esos calendarios yo me quedo con los mejores, los que yo considero
+
+31
+00:03:27,940 --> 00:03:32,940
+ mejores, los que se adaptan más a la miente y de esa forma en los cruzos, cada tanto
+
+32
+00:03:32,940 --> 00:03:37,740
+ ver una mutación, como ya como ya habieron en la parte teórica, y a medida que aún
+
+33
+00:03:37,740 --> 00:03:42,820
+ vas a una generación es, estas individuos se van a ir adaptando cada vez más, es decir, se
+
+34
+00:03:42,820 --> 00:03:48,180
+ van a generar individuos cada vez más aptos, cuando llegó a una solución lo suficientemente
+
+35
+00:03:48,180 --> 00:03:54,620
+ buena, ahí freno y obtengo el o los individuos que yo quiero, entonces vamos a mostrar un
+
+36
+00:03:54,620 --> 00:04:00,780
+ poco como es el modelado de esto, en cuanto al modelo fíjense los individuos van a hacer
+
+37
+00:04:00,780 --> 00:04:05,940
+ es que más de guardia, que es una esquema de guardia, es un calendario mensual donde van a
+
+38
+00:04:05,940 --> 00:04:13,620
+ ver días y participantes, y cada uno de estas participantes va a tener a parte de un nombre,
+
+39
+00:04:13,620 --> 00:04:21,060
+ va a tener reglas que cumplir, es decir, por ejemplo, yo quiero que el participante pp este
+
+40
+00:04:21,060 --> 00:04:28,460
+ 8 días, pero que no este el sábado 4, porque sábado 4 justo en lo puede, y que este si
+
+41
+00:04:28,460 --> 00:04:38,260
+ así el 2,5, por ejemplo, esta es una regla, la regla son un conjunto de días prohibidos, días
+
+42
+00:04:38,260 --> 00:04:43,220
+ asignados, que es básicamente lo que les comente, una cantidad de días que yo necesito que
+
+43
+00:04:43,220 --> 00:04:48,420
+ esa persona esté de guardia en el mes y una distancia mínima en tres días, es decir, no puede
+
+44
+00:04:48,420 --> 00:04:54,020
+ estar el lunes de guardia y el martes de guardia básicamente, eso no es posible, puede estar el lunes de
+
+45
+00:04:54,020 --> 00:05:01,300
+ guardia salir, que es el miercole, y depende mucho del servicio de racidencias, por ejemplo,
+
+46
+00:05:01,300 --> 00:05:07,580
+ o si no es un servicio que requiere que es una distancia mínima de tres o cuatro días, yo
+
+47
+00:05:07,580 --> 00:05:12,420
+ no podría ser tierno de esa forma, también, después se quedan un par de factorimetas de
+
+48
+00:05:12,420 --> 00:05:17,020
+ reglas básicas de racientes de primeros, segundo tercero y cuarto daño, simplemente para
+
+49
+00:05:17,020 --> 00:05:22,980
+ simplificar el ejemplo, acá regla básica de R2, de racientes de segundo daño es que tengas
+
+50
+00:05:22,980 --> 00:05:31,220
+ ahí guardias y que la estancia mínima entre días se ha de dos, también, fíjense un R1, tiene
+
+51
+00:05:31,220 --> 00:05:39,180
+ ocho días de guardias, por ejemplo, pues un día va a tener un asignado, una cantidad en el
+
+52
+00:05:39,180 --> 00:05:45,660
+ participantes, es decir, tal día va a estar pepe y Josefina de guardias, por ejemplo, el otro día va
+
+53
+00:05:45,660 --> 00:05:53,860
+ a estar Augustina y Marsello, y después, bueno, que más, no, después de estar el servicio, estos
+
+54
+00:05:53,860 --> 00:06:02,260
+ son temas de conexión con la base de datos, y bueno, lo que vamos a hacer es crear una instancia
+
+55
+00:06:02,260 --> 00:06:09,340
+ de la clase genetic algo del mal allá, que lo vimos en el video anterior, si pueden ver acá,
+
+56
+00:06:09,340 --> 00:06:14,020
+ cuando yo pongo calcular, cuando apreto el botón calcular, color ahora vamos a ver, lo que
+
+57
+00:06:14,020 --> 00:06:19,740
+ es que se va a hacer, que se va a generar un nuevo manager de algoritmos genéticos y se lo
+
+58
+00:06:19,740 --> 00:06:24,780
+ anpesar a setir a sus propiedades, en este caso que en propiedades son una cantidad máxima
+
+59
+00:06:24,780 --> 00:06:34,780
+ iteraciones de 0 de 1000, perdón, una un tríjol de 0, eso sí, es decir, cuando llega a ser
+
+60
+00:06:34,780 --> 00:06:40,140
+ o la aptitud, quiero que corte el algoritmo, qué significa ser, vamos a contar un poco
+
+61
+00:06:40,140 --> 00:06:46,900
+ como se va a lua esto, como se va a lua la aptitud de esos esquemas de guardia, básicamente
+
+62
+00:06:46,900 --> 00:06:51,380
+ un esquema de guardias como vieron, tiene días, tiene participantes y cada uno de estos tiene
+
+63
+00:06:51,380 --> 00:06:58,740
+ reglas, entonces cuando se genera un elemento a lazar muy posiblemente allá reglas que
+
+64
+00:06:58,740 --> 00:07:04,000
+ no se cumplan, está bien cuando se genera el primer calendario, tal vez yo dije que
+
+65
+00:07:04,000 --> 00:07:10,560
+ pepe tenía que estar 5 veces y al ser azar ozo, pepe está 15 veces, bueno cada una de estas
+
+66
+00:07:10,560 --> 00:07:17,320
+ fallas que hay se cuenta como menos uno, se arrasta uno a la aptitud, está bien, entonces
+
+67
+00:07:17,320 --> 00:07:22,800
+ al comienzo, ahora vamos a ver que los elementos tienen actitudes negativas muy grandes,
+
+68
+00:07:22,800 --> 00:07:28,920
+ es decir, tal vez tienen no se menos 40, otro tiene menos 30, son la cantidad de errores que
+
+69
+00:07:28,920 --> 00:07:34,860
+ tienen, y a medida que se va a evolucionar de hacer la solución, estos errores van
+
+70
+00:07:34,860 --> 00:07:40,080
+ desapareciendo, se va a atendiendo hacia el número 0, de hecho digo que cuando se llegue
+
+71
+00:07:40,080 --> 00:07:45,840
+ a 0 que ya no sean más fallas, ahí frenen el algoritmo, está bien, ahora lo vamos a
+
+72
+00:07:45,840 --> 00:07:52,160
+ ver en la práctica que hay en se tranquilos, después si están generando acá los esquemas de guardia
+
+73
+00:07:52,160 --> 00:07:59,900
+ de forma asalosa y se van agredando a la población, está bien, luego yo defino que el algoritmo
+
+74
+00:07:59,900 --> 00:08:07,640
+ de seleccion sea el de tablas, el salto generacional sea del 0,5, significa que en cada
+
+75
+00:08:07,640 --> 00:08:15,960
+ yteración yo lo que voy a hacer es renovar el 50% de la población, está bien, el algoritmo
+
+76
+00:08:15,960 --> 00:08:22,080
+ me cruzaba hacer el binomial y el algoritmo de mutación va a ser un divilloso en vez, es decir,
+
+77
+00:08:22,080 --> 00:08:28,800
+ cuánto más parecida es la población más probabilidad es ahí de mutar, también, cuando
+
+78
+00:08:28,800 --> 00:08:33,680
+ se termina el ciclo, es decir, cada vez que paso la generación se va a actualizar
+
+79
+00:08:33,680 --> 00:08:42,960
+ la interfaz usuario y luego una es que termina el algoritmo que encontró una solución,
+
+80
+00:08:42,960 --> 00:08:51,360
+ se va a imprimir en el log de década del divad, del activador, se va a imprimir la solución,
+
+81
+00:08:51,360 --> 00:09:00,360
+ está bien, entonces vamos a correr el algoritmo, esta está hecho para ayos, para iphone, en este
+
+82
+00:09:00,360 --> 00:09:12,600
+ caso voy a simular con un iphone 8, no que se va a ser, es sentiar las propiedades de cada
+
+83
+00:09:12,600 --> 00:09:19,240
+ uno de los participantes para definir las reglas, entonces por ejemplo, bueno, esto estáis
+
+84
+00:09:19,240 --> 00:09:25,920
+ actualizado, pero bueno, sería el mes actual, imagínense yo yo digo que esta persona, por ejemplo,
+
+85
+00:09:25,920 --> 00:09:37,520
+ uno, les voy a tener esta, va a tener los francos el día 5 y el día 11 y que sí así va a estar el día 12, por ejemplo,
+
+86
+00:09:37,520 --> 00:09:45,320
+ acá se se tiene la cantidad de días, se le distancia a mínima y luego yo digo que el día 5 que va a estar
+
+87
+00:09:45,320 --> 00:09:52,160
+ a esa persona de franco a gustinas y así este, no pongo ninguno de otra regla más, la cantidad
+
+88
+00:09:52,160 --> 00:10:00,200
+ de días son 8, fíjense en cambio, por ejemplo, esta chica romina tiene 6 días, ok, entonces lo que se va
+
+89
+00:10:00,200 --> 00:10:14,840
+ a ser, déjenme poner un breakpoint básicamente para que se entienda fácil, cruza, selección,
+
+90
+00:10:14,840 --> 00:10:20,960
+ acá, por ejemplo, acá es el algoritmo más alto nivel, fíjense mientras no termine, no tenga
+
+91
+00:10:20,960 --> 00:10:28,960
+ que terminar el algoritmo, lo que va a ser, a seleccionar los mejores elementos va a regresar
+
+92
+00:10:28,960 --> 00:10:34,500
+ la mutación, la cruza y va a seguir en la iteración, entonces cuando yo le voy a calcular,
+
+93
+00:10:34,500 --> 00:10:42,200
+ fíjense que va a pasar el principio, el principio va a tener una población inicial que tiene
+
+94
+00:10:42,200 --> 00:10:50,160
+ esta braca, acá, 100 elementos, también segundo, ahí está, y estos elementos como van a
+
+95
+00:10:50,160 --> 00:10:54,520
+ hacer, y por ejemplo el primero, el primer esquema de guarda, el primer calendario, creado
+
+96
+00:10:54,520 --> 00:11:02,360
+ el azar, tiene 200 días errores, en el segundo que tiene, el segundo tiene 120 y se
+
+97
+00:11:02,360 --> 00:11:09,280
+ errores, como 100, 120 se registra, vamos a ver, por ejemplo, como son los días, y fíjense,
+
+98
+00:11:09,280 --> 00:11:15,800
+ por ejemplo, el día 1 van a estar estas tres personas, el día 2, ah, miren, acá encontró
+
+99
+00:11:15,800 --> 00:11:22,920
+ un error, esta romina, el 2 días seguido, eso que eso no puede ser, mi cadena tiene
+
+100
+00:11:22,920 --> 00:11:31,800
+ 8 veces y está, cuantas veces, 6 veces, 6 y 7 veces, no sé, pero, sí que acá también hay otro
+
+101
+00:11:31,800 --> 00:11:39,160
+ error, está bien, entonces fíjense, acá lo que voy a hacer, si yo continuo en el algoritmo,
+
+102
+00:11:39,160 --> 00:11:46,860
+ luego de seleccionarlo, los mejores, los más aptos, muta, cruzar, fíjense, el mejor
+
+103
+00:11:46,860 --> 00:11:54,820
+ de apelación tenía 80, en la siguiente iteración es decir, luego de la selección, luego
+
+104
+00:11:54,820 --> 00:12:00,700
+ de la cruza, la siguiente generación, el mejor también sigue teniendo 80, en la siguiente
+
+105
+00:12:00,700 --> 00:12:07,700
+ 80, 80, a ver qué pasa si le voy a dar un poquito de velocidad a esta, fíjense, acá
+
+106
+00:12:07,700 --> 00:12:14,140
+ se ve como se va evolucionando, está bien, ya se llegó una solución, y fíjense como
+
+107
+00:12:14,140 --> 00:12:21,880
+ fue variando, se tendi 4, 50, 42, 32, 20, como va, convergiendo una solución, está
+
+108
+00:12:21,880 --> 00:12:28,520
+ bien, tarde a 93 segundos porque le dimos, le limos, pausa, el black, el combracto,
+
+109
+00:12:28,520 --> 00:12:35,080
+ inspera si yo, lo corro de esta forma, fíjense lo que, lo que tarda en, encontrar una solución,
+
+110
+00:12:35,080 --> 00:12:41,380
+ está bien, en este caso tardó 7 segundos, y cuando voy a la solución fíjense, por ejemplo,
+
+111
+00:12:41,380 --> 00:12:45,740
+ el día 5 que dijimos que no está la persona micaela, pero que este sido si a ustina
+
+112
+00:12:45,740 --> 00:12:51,020
+ acá se encuentra, en cambio, el día 12 que dijimos que esta micaela estaba, esta persona
+
+113
+00:12:51,020 --> 00:12:56,580
+ está en estos días, y a ustina, por ejemplo, están estos, uno, dos, tres, cuatro, cinco,
+
+114
+00:12:56,580 --> 00:13:05,420
+ seis, siete, ocho, y después no ahora quién era, creo que habíamos dicho romina, tenía
+
+115
+00:13:05,420 --> 00:13:10,260
+ que estar seis, no, dos, cuatro, seis veces, bueno, está cumpliendo con todas las reiras
+
+116
+00:13:10,260 --> 00:13:18,940
+ que nosotros dijimos, van a encontrar, siempre una solución esto, depende, a ver, hay veces que
+
+117
+00:13:18,940 --> 00:13:24,260
+ las reglas van a atender a la velocidad entre sí mismas y no tengan sentido, en ese caso no van
+
+118
+00:13:24,260 --> 00:13:29,580
+ a encontrar, pero bueno, sería cuestión de revisar las reglas, o en todo caso si se queda
+
+119
+00:13:29,580 --> 00:13:35,700
+ atrapado en un mínimo local, si bien hay técnicas como la evitación de la convergencia
+
+120
+00:13:35,700 --> 00:13:41,340
+ de la preparatura con la mutación en base al desvío standard, puede suceder en ese caso
+
+121
+00:13:41,340 --> 00:13:46,180
+ le puedes recetir y pedir otra solución, si ves que se te queda atravado, en general no
+
+122
+00:13:46,180 --> 00:13:55,140
+ sucede eso, y cuando sucede es porque están contrando algunas contradicciones en las reglas.
+
+123
+00:13:55,140 --> 00:14:01,820
+ Bueno, espero que esto les haya servido para entender una forma práctica, casos de ejemplo
+
+124
+00:14:01,820 --> 00:14:07,580
+ de los algoritmos genéticos, recuerden que esto no encuentra la mejor solución en
+
+125
+00:14:07,580 --> 00:14:14,900
+ cuando en una solución suficientemente buena para vos, y que principalmente se trisa cuando
+
+126
+00:14:14,900 --> 00:14:19,620
+ se produce una expresión con milatoria, es decir, en este caso habían más opciones que
+
+127
+00:14:19,620 --> 00:14:24,740
+ ha tomado en el universo, evidentemente me convenía ir por otro lado porque no iba a poder
+
+128
+00:14:24,740 --> 00:14:31,460
+ encontrar la mejor de las mejores soluciones, no tenía sentido siquiera buscar todas las
+
+129
+00:14:31,460 --> 00:14:36,740
+ soluciones si no puede ser bueno con la mejor, creo que esa sería la explicación, así que
+
+130
+00:14:36,740 --> 00:14:38,740
+ bueno, eso fue todo y espero que les haya gustado.
+

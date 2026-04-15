@@ -1,0 +1,632 @@
+1
+00:00:00,000 --> 00:00:06,240
+ Cuando la salida es discreta, es decir que el modelo nos está generando una lista de
+
+2
+00:00:06,240 --> 00:00:12,560
+ valores que se pueden diferenciar, fácilmente, uno de otros, como por ejemplo, valores
+
+3
+00:00:12,560 --> 00:00:23,680
+ alfanumericos, es decir, las clases si no o la clase alto medio bajo o una, nos devuelve una
+
+4
+00:00:23,680 --> 00:00:32,400
+ serie de valores numéricos enteros. Entonces, hay como metrica, conviene utilizar la
+
+5
+00:00:32,400 --> 00:00:41,400
+ matrices de confusión. En esta tabla podemos ver que tanto está convergiendo el modelo para
+
+6
+00:00:41,400 --> 00:00:49,620
+ generar los valores correctos de acuerdo a los datos que nosotros tenemos disponibles.
+
+7
+00:00:49,620 --> 00:00:57,140
+ Por ejemplo, si nosotros tenemos otro modelo que tiene que aprender a indicarnos si algo
+
+8
+00:00:57,140 --> 00:01:02,820
+ se da o no se da en ese reclases sino, yo voy a tener una matrices de confusión con las
+
+9
+00:01:02,820 --> 00:01:13,340
+ columnas, sino y las filas sino. Luego, lo que voy a hacer es completar las intersecciones
+
+10
+00:01:13,340 --> 00:01:19,460
+ de acuerdo a los resultados generados por el modelo. Si la clase de vuelta por el modelo es
+
+11
+00:01:19,460 --> 00:01:24,700
+ sí, y la clase que me indicaban los datos del problema era sí, lo voy a indicar el
+
+12
+00:01:24,700 --> 00:01:31,100
+ intersección de sí y sí. Si el modelo me devuelve sí, pero en realidad debería devolverlo,
+
+13
+00:01:31,100 --> 00:01:39,260
+ lo voy a indicar en la intersección entre sí y no. Lo mismo sería cuando no y sí y no y no.
+
+14
+00:01:39,260 --> 00:01:47,620
+ Idealmente, en la matrices de confusión, todas las cantidades deberían indicarse dentro de la
+
+15
+00:01:47,620 --> 00:01:54,380
+ diagonal, porque eso quiere decir que el modelo me está devolviendo siempre, la clase correcta
+
+16
+00:01:54,380 --> 00:02:00,900
+ de acuerdo a lo indicado por datos del problema. Pero esta vez puede ser que no se dé
+
+17
+00:02:00,900 --> 00:02:09,420
+ así. El show, mirando, entonces, esta matrices de confusión, y viendo don como están distribuidas
+
+18
+00:02:09,420 --> 00:02:15,660
+ las cantidades, puedo determinar si el modelo aprendió correctamente o no. El problema de esta
+
+19
+00:02:15,660 --> 00:02:25,660
+ matrices se da cuando yo tengo muchas clases. Por ejemplo, estoy tratando de indicar en el modelo
+
+20
+00:02:25,660 --> 00:02:33,060
+ que me devuelva el nombre de una provincia. Entonces, voy a tener 24 valores diferentes. Entonces,
+
+21
+00:02:33,060 --> 00:02:40,100
+ manejar una matrices de esa cantidad con 24 columnos, una si 24 filas, va a ser bastante
+
+22
+00:02:40,100 --> 00:02:48,140
+ complicado de evaluar. Para poder hacerlo en forma más sencilla, lo que conviene usar son unas
+
+23
+00:02:48,140 --> 00:02:53,820
+ formas las complementarias a esta matrices de confusión, que se calculan de la siguiente manera.
+
+24
+00:02:53,820 --> 00:03:02,580
+ Por un lado, tenemos la exactitud. La exactitud, lo que va a ser, es evaluar. Todos los
+
+25
+00:03:02,580 --> 00:03:10,820
+ verdaderos, que van a encontrarse en la diagonal de la matrices, correspecto el total de los datos
+
+26
+00:03:10,820 --> 00:03:18,340
+ disponibles. En este caso, estamos evaluando arriba de la diagonal, los casos de donde el modelo
+
+27
+00:03:18,340 --> 00:03:25,580
+ ha cierta, porque me está indicando la clase correcta como verdadero positivo o verdadero
+
+28
+00:03:25,580 --> 00:03:31,380
+ negativo, y ahí sólo divido por la cantidad total. Entonces, esto lo que me dice es la
+
+29
+00:03:31,380 --> 00:03:37,380
+ proporción de identificación es que el modelo realizó correctamente. Otra forma la que se
+
+30
+00:03:37,380 --> 00:03:46,460
+ puede utilizar es la precisión. La precisión lo que nos interesa evaluar es los por cada
+
+31
+00:03:46,460 --> 00:03:54,620
+ clase que yo tengo, qué tanto está certando el modelo. O sea, de todas las clases que son identificadas
+
+32
+00:03:54,620 --> 00:04:00,340
+ por el modelo, las cuantas son correctas, qué por son páginas. Entonces, yo lo que voy a hacer por cada
+
+33
+00:04:00,340 --> 00:04:06,940
+ clase es considerar los casos donde el modelo ha certo, en este caso los verdadero positivos,
+
+34
+00:04:06,940 --> 00:04:12,780
+ y los dividos por la cantidad total de casos donde el modelo indicó esa clase, en este caso
+
+35
+00:04:12,780 --> 00:04:21,300
+ los verdadero positivos y los falsos posibles. Por otro lado, también yo puedo calcular la recuperación
+
+36
+00:04:21,300 --> 00:04:27,580
+ o exhaustividad. Esta fórmula es muy parecida a la precisión, pero en vez de hacerlo a por
+
+37
+00:04:27,580 --> 00:04:34,380
+ columna, la hacemos por fina. Porque acá lo que queremos ver es de cada clase real,
+
+38
+00:04:34,380 --> 00:04:42,460
+ cuantos casos el modelo indicó esa clase. Entonces, en este caso, para la clase sí,
+
+39
+00:04:42,460 --> 00:04:49,060
+ vamos a evaluar los verdadero positivos y los vamos a comparar contra los verdadero positivos
+
+40
+00:04:49,060 --> 00:04:56,020
+ y los falsos negativos. Yo por cada una de las clases que tengo, voy a calcular entonces,
+
+41
+00:04:56,020 --> 00:05:01,820
+ la exactitud de la presición y recuperación, donde cuanto mayor valor tengan, el ideal sería
+
+42
+00:05:01,820 --> 00:05:09,620
+ un 100%, mejor va a funcionar el modelo. Cuando menor valor tenga, pero va a ser el modelo.
+
+43
+00:05:09,620 --> 00:05:20,380
+ Pero ahí eso no significa que yo debería decir que el modelo falla solamente cuando
+
+44
+00:05:20,380 --> 00:05:27,940
+ tengo, por ejemplo, una presición del 0%, porque si yo tengo una presición de 50%, quiere decir
+
+45
+00:05:27,940 --> 00:05:35,940
+ que el modelo está dividando la mitad de los casos, lo cual tampoco es muy confio. Eso
+
+46
+00:05:35,940 --> 00:05:44,640
+ lo vamos a ver en el ejemplo que está a continuación. En este ejemplo, vamos a considerar que
+
+47
+00:05:44,640 --> 00:05:53,980
+ nosotros tenemos 100 ejemplos de personas que compararon y no compraron un producto. En este caso,
+
+48
+00:05:53,980 --> 00:06:00,840
+ nos dice que de los 100 ejemplos que tenemos disponible en 9 del cliente compro y en 91
+
+49
+00:06:00,840 --> 00:06:07,920
+ el cliente no compro. Nosotros entrenamos un modelo, por ejemplo, identificamos reglas con
+
+50
+00:06:07,920 --> 00:06:14,480
+ depónimos de inducción y obtenemos nuestra matriz de confusión que nos indica la siguiente. Hay un
+
+51
+00:06:14,480 --> 00:06:20,600
+ sol ejemplo donde el modelo dijo que el cliente va a comprar y de verdad compro. Hay
+
+52
+00:06:20,600 --> 00:06:24,840
+ el hecho de ejemplos donde el modelo dijo que no iba a comprar, pero realidad diferente sí
+
+53
+00:06:24,840 --> 00:06:30,840
+ compro, tenemos un ejemplo donde el modelo dijo que sí iba a comprar, pero el modelo
+
+54
+00:06:30,840 --> 00:06:39,000
+ los datos el cliente no compro y 90 ejemplos donde el modelo no dice que no va a comprar
+
+55
+00:06:39,000 --> 00:06:44,680
+ y de verdad el cliente no compro. Entonces, ya viviendo esta matriz de confusión podemos
+
+56
+00:06:44,680 --> 00:06:56,280
+ notar que no está funcionando bien porque hay varios casos donde estos ochos casos donde
+
+57
+00:06:56,280 --> 00:07:01,700
+ los dimos de los están diciendo que no va a comprar cuando el cliente sí compro. No de todas formas
+
+58
+00:07:01,700 --> 00:07:07,000
+ vamos a ver qué nos dicen estas metricas de exactitud, precisión y recuperación y como
+
+59
+00:07:07,000 --> 00:07:14,040
+ lo podemos interpretar. Hay que circular la exactitud, nos da que la exactitud es de
+
+60
+00:07:14,040 --> 00:07:19,800
+ 91 por ciento, lo que podemos decir, bueno, están bastante cerca del 100 por ciento, no
+
+61
+00:07:19,800 --> 00:07:27,880
+ cuáal parecería que el modelo es bueno, ¿no? Hay cálculo la precisión para la clase sí,
+
+62
+00:07:27,880 --> 00:07:34,040
+ fijan sé que nos da un 50 por ciento, ¿por qué? Porque tiene un caso que sí es que correcto
+
+63
+00:07:34,040 --> 00:07:41,080
+ un caso que en realidad era uno es incorrecto, entonces no da una de videos dos, 50 por ciento.
+
+64
+00:07:41,080 --> 00:07:46,080
+ Entonces, ahí el modelo está saltando también como tirar una moneda, ¿no? Las dos
+
+65
+00:07:46,080 --> 00:07:54,240
+ caras de la moneda, 50, 50. Ahí ya podemos dudar de quitan buenas del modelo. Y por
+
+66
+00:07:54,240 --> 00:08:02,040
+ el último vemos la recuperación y acá podemos notar que para la clase sí, hay de los 9 casos donde
+
+67
+00:08:02,040 --> 00:08:08,760
+ el cliente compró el modelo acerto uno solo, entonces la recuperación es del 11 por ciento.
+
+68
+00:08:08,760 --> 00:08:15,600
+ Entonces, por eso, podríamos decir que el modelo no está certando, no es bueno y deberíamos
+
+69
+00:08:15,600 --> 00:08:21,320
+ trabajar más con este modelo para tratar de mejorar. De todas formas, lo que está sucediendo
+
+70
+00:08:21,320 --> 00:08:28,120
+ en este ejemplo es un caso que se suele dar en la realidad es que los datos no están del
+
+71
+00:08:28,120 --> 00:08:32,640
+ todo balance, si no fíjense yo tengo muchos casos de ejemplo, a donde el cliente no compró
+
+72
+00:08:32,640 --> 00:08:41,040
+ y muy pocos casos de situaciones donde el cliente sí compró. Entonces, al sucederisto en la mayoría
+
+73
+00:08:41,040 --> 00:08:46,440
+ de los algoritmos de Machine Learning, el modelo va a atender a decirme el que resultado va
+
+74
+00:08:46,440 --> 00:08:54,000
+ a ir por el lado de que no va a comprar porque es el que tiene mayor cantidad de ejemplos.
+
+75
+00:08:54,000 --> 00:08:59,840
+ Fíjense que si nosotros miramos las columnas, la mayor de las resultados están en el
+
+76
+00:08:59,840 --> 00:09:06,880
+ no, porque el modelo está tendiendo a ir por los casos donde está la mayor cantidad de
+
+77
+00:09:06,880 --> 00:09:12,280
+ ejemplos. Esta situación se dice que los datos no están balanceados por cada uno de las
+
+78
+00:09:12,280 --> 00:09:20,000
+ clases, y bueno, entonces ahí más allá de la tecnología que nosotros apliquemos, siempre
+
+79
+00:09:20,000 --> 00:09:27,520
+ vamos a tener alguna metrica que no nos va a dar de todo bien. Durante la preparación
+
+80
+00:09:27,520 --> 00:09:32,720
+ de los datos, nosotros vamos a tener que dar alguna forma balance de los datos para que
+
+81
+00:09:32,720 --> 00:09:39,240
+ el modelo operando a bien y ahí las resultados nos van a dar un poco más balanceados.
+
+82
+00:09:39,240 --> 00:09:47,720
+ Por otro lado, podemos ver que tener un exactitud buena, no significa que el modelo es
+
+83
+00:09:47,720 --> 00:09:52,320
+ confío en este caso, me olvides de decirlo que el modelo tenía un exactitud en la
+
+84
+00:09:52,320 --> 00:09:57,480
+ venta y un por ciento, pero la precisión de recuperación era mala. Entonces, no hay que
+
+85
+00:09:57,480 --> 00:10:03,640
+ darse con esto de solamente de evaluar una de las metricas siempre con bien evaluar
+
+86
+00:10:03,640 --> 00:10:09,240
+ los tres. En el caso de la precisión y la recuperación, ahí lo se nos puede pasar que
+
+87
+00:10:09,240 --> 00:10:15,480
+ mejorar una, puede perjudicar a la otra. Entonces, para poder evaluar, vas en conjunto,
+
+88
+00:10:15,480 --> 00:10:21,800
+ se suele utilizar una formula adicional que es la de F1 escor que se calcula en base
+
+89
+00:10:21,800 --> 00:10:28,840
+ de la presisión y en la recuperación. También está la versión de FB3COR, donde
+
+90
+00:10:28,840 --> 00:10:33,640
+ le agrega un parámetro veta que determina la importancia de la recuperación sobre la
+
+91
+00:10:33,640 --> 00:10:40,720
+ precisión. Pero bueno, estas son formulas adicionales y complementarias a las
+
+92
+00:10:40,720 --> 00:10:46,960
+ anteriores que se pueden utilizar para evaluar el modelo. En todos los casos, lo ideales
+
+93
+00:10:46,960 --> 00:10:54,720
+ que todo esté por arriba por lo menos del 90%. En algunos casos, se puede aceptar un modelo
+
+94
+00:10:54,720 --> 00:11:04,480
+ que tenga un 75-80% de presuciones recuperación. Ahí va de lo que va a impactar en esa
+
+95
+00:11:04,480 --> 00:11:11,320
+ decisión, es para que se utilizar el modelo y qué tan crítico es que el modelo hacía
+
+96
+00:11:11,320 --> 00:11:15,320
+ lo que es. Si yo estoy tratando de predecirse el cliente va a comprar o no, le ha
+
+97
+00:11:15,320 --> 00:11:22,200
+ apas que con 80% estoy bien, pero si estoy diagnosticando a un paciente tener una
+
+98
+00:11:22,200 --> 00:11:30,120
+ precisión del 80% o una recuperación del 75% no puede ser del todo confiable para
+
+99
+00:11:30,120 --> 00:11:36,560
+ que el médico considere ese diagnóstico como vale. Depende del dominio, no va a tener
+
+100
+00:11:36,560 --> 00:11:43,280
+ que evaluar los valores de estas metricas para ver si son confiable o no, y si lo puede utilizar
+
+101
+00:11:43,280 --> 00:11:49,800
+ ese resultado o no. Bueno, entonces todas estas metricas tienen que ver con salidas discretas.
+
+102
+00:11:49,800 --> 00:11:54,440
+ ¿Qué pasa si yo tengo una salida continua? Es decir que el modelo me está generando un
+
+103
+00:11:54,440 --> 00:12:02,960
+ valor real entre menos infinito o dentro de un rango determinado, pero que puede ser un número
+
+104
+00:12:02,960 --> 00:12:09,200
+ con valores decimales donde el suceder eso no lo puedo representar con una matriz de compusión
+
+105
+00:12:09,200 --> 00:12:15,000
+ y entonces no puedo calcular ni el exactito ni la precisión ni la recuperación. En estos casos
+
+106
+00:12:15,000 --> 00:12:21,040
+ directamente utiliza como ométricas a la rora absoluto y a la rora relativo.
+
+107
+00:12:21,040 --> 00:12:26,120
+ La rora absoluto es la diferencia absoluta entre el valor real y el valor estimado
+
+108
+00:12:26,120 --> 00:12:33,840
+ por el modelo o sea la resta sin signo y el valor relativo es el valor absoluto dividido
+
+109
+00:12:33,840 --> 00:12:40,240
+ por el valor real. El valor relativo nos va a dar la proporción o por sentaje que representa
+
+110
+00:12:40,240 --> 00:12:45,920
+ el error con respecto el error real y uno que liestima.
+
+111
+00:12:45,920 --> 00:12:51,800
+ Con estas dos errores uno puede calcular las metricas del modelo y determinar que también
+
+112
+00:12:51,800 --> 00:12:53,040
+ funciona.
+
+113
+00:12:53,040 --> 00:12:57,280
+ Acá sucede a graves de que lo que sucede con las metricas anteriores.
+
+114
+00:12:57,280 --> 00:13:02,960
+ ¿Cuánto menores el error absoluto y menores el error relativo mejor es el modelo?
+
+115
+00:13:02,960 --> 00:13:07,440
+ Dos mayores el error absoluto y mayores el error relativo, peores el modelo.
+
+116
+00:13:07,440 --> 00:13:11,320
+ Entonces, funciona la interpretación a errores.
+
+117
+00:13:11,320 --> 00:13:16,280
+ Para verlo podemos ver acá algunos ejemplos, fíjense.
+
+118
+00:13:16,280 --> 00:13:23,320
+ Yo tengo el valor que yo quería estimar ir a 10, el modelo de la medida 10,01 eso significa
+
+119
+00:13:23,320 --> 00:13:30,920
+ que el error absoluto es de 0,01, entonces el error relativo es de 0,09%.
+
+120
+00:13:30,920 --> 00:13:37,320
+ En el segundo caso, la diferencia es del 0,57, lo cual representa un error relativo del
+
+121
+00:13:37,320 --> 00:13:43,400
+ ocho por ciento. Fíjense que el primer caso es la casi perfecto acá hay un poquito de
+
+122
+00:13:43,400 --> 00:13:48,320
+ error, genere el tercer ejemplo. Fíjense que hay un error más importante porque tenía que
+
+123
+00:13:48,320 --> 00:13:55,200
+ dar un 38 me dios un 10,35, entonces el error absoluto es de 27, el error relativo es de
+
+124
+00:13:55,200 --> 00:14:02,760
+ el 72% y es más importante. En el cuarto caso pasa algo parecido, tengo un error relativo
+
+125
+00:14:02,760 --> 00:14:11,600
+ de casi 16, con un error relativo del 61%, bastante importante y en los dos últimos casos
+
+126
+00:14:11,600 --> 00:14:21,280
+ pasan situaciones que digamos que hay que tenerla en cuenta, donde un error da muy poquito
+
+127
+00:14:21,280 --> 00:14:32,280
+ y el error da muy grande. En el primero, en el final caso, Fíjense el error relativo es muy grande
+
+128
+00:14:32,280 --> 00:14:41,320
+ de 5 millones por ciento, un valor muy grande porque porque de un valor 0 me dio un 0,55, entonces
+
+129
+00:14:41,320 --> 00:14:50,320
+ ahí la diferencia relativo es muy grande de lo que tenía que dar el modelo, cuando el error absoluto
+
+130
+00:14:50,320 --> 00:14:59,320
+ es muy pequeña, 0,55%, entonces en este caso hay que analizar lo que yo estoy tratando de
+
+131
+00:14:59,320 --> 00:15:05,280
+ estimar y ver con cuál de estos errores me quedó para tomar la decisión si el modelo es bueno o no,
+
+132
+00:15:05,280 --> 00:15:13,200
+ si tal vez el hecho de tener un 0,55, como error absoluto, lo considero como valido, listo,
+
+133
+00:15:13,200 --> 00:15:20,120
+ el error relativo, no lo tengo en cuenta, pero si yo me interesa a medir algo que es muy pequeño,
+
+134
+00:15:20,120 --> 00:15:27,120
+ ahí el error relativo va a tener más impacto. Y en el último ejemplo pasa a través, Fíjense
+
+135
+00:15:27,120 --> 00:15:32,560
+ que los valores son muy grandes, entonces el error absoluto es bastante grande, está en el
+
+136
+00:15:32,560 --> 00:15:41,480
+ orden de los 3.200 puntos, pero el error relativo es del 2%, entonces Fíjese, estoy estimando
+
+137
+00:15:41,480 --> 00:15:49,440
+ algo tan grande que el error absoluto que me da es importante, pero el error relativo que tengo
+
+138
+00:15:49,440 --> 00:15:55,840
+ este pequeño, entonces cada devuelta, al manejar estos valores tan grandes, tal vez le de más
+
+139
+00:15:55,840 --> 00:16:02,000
+ importancia en el error relativo que el error absoluto, o no, va a depender allí del contexto del
+
+140
+00:16:02,000 --> 00:16:09,600
+ dominio, donde uno la está blica. ¿Cómo analizar tanto el error relativo como el absoluto
+
+141
+00:16:09,600 --> 00:16:14,040
+ cortado, uno de los ejemplos, puede ser algo bastante tedesos, sobre todo cuando hay muchos
+
+142
+00:16:14,040 --> 00:16:21,240
+ ejemplos, lo que se suele hacer es samarizar uno, hacer un resumen estadístico de estos dos
+
+143
+00:16:21,240 --> 00:16:26,640
+ errores para evaluar en general que también está funcionando en el modelo, entonces para
+
+144
+00:16:26,640 --> 00:16:32,480
+ el error absoluto y el error relativo, calculamos cuál es el error mínimo, el error máximo,
+
+145
+00:16:32,480 --> 00:16:39,560
+ el promedio y el desvillo. Entonces teniendo en cuenta, todo esto es para metrospamos a poder
+
+146
+00:16:39,560 --> 00:16:45,640
+ definir si el modelo es aceptable o no, de hecho muchas veces se hace una primer mirada
+
+147
+00:16:45,640 --> 00:16:54,080
+ con esto y ante la duda se va y se evaluan los ejemplos donde el error presenta una medida
+
+148
+00:16:54,080 --> 00:17:03,280
+ mayor al promedio o los casos donde el error es muy pequeño o donde un es muy grande y el
+
+149
+00:17:03,280 --> 00:17:11,040
+ otro muy pequeño, entonces de esa manera hay uno puede considerar si el modelo es aceptable o no.
+
+150
+00:17:11,040 --> 00:17:16,840
+ Lo importante es que todas estas métricas cuando nosotros hacemos la prueba del modelo,
+
+151
+00:17:16,840 --> 00:17:24,800
+ la tenemos que hacer con datos diferentes a los datos que yo tenía y que fui utilizando
+
+152
+00:17:24,800 --> 00:17:32,720
+ durante el entrenamiento. Si esto no lo hago voy a tener dificultades porque posiblemente
+
+153
+00:17:32,720 --> 00:17:38,320
+ el modelo me de muy bien con métricas muy correctas, pero cuando lo pongamos en producción
+
+154
+00:17:38,320 --> 00:17:45,440
+ y empieza a funcionar con datos diferentes, el modelo va a tender a fallar y nos vamos a
+
+155
+00:17:45,440 --> 00:17:54,520
+ dar cuenta que no era del todo, confiable porque no está generaliza. Bueno os dicho esto terminamos
+
+156
+00:17:54,520 --> 00:18:02,120
+ con este vídeo obviamente que queda mucho por hablar de lo que son las procesos de entrenamiento
+
+157
+00:18:02,120 --> 00:18:07,440
+ validación y prueba, pero eso lo vamos a ver más adelante durante la curso. Bueno, por ahora
+
+158
+00:18:07,440 --> 00:18:08,760
+ los dejamos hasta luego.
+

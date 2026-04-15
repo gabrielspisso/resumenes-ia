@@ -1,0 +1,98 @@
+ Hola, mi nombre es Pablo Pitel y en este vídeo vamos a hablar de los tres procesos que
+ se deben realizar al momento de aplicar Machine Learning para generar el modelo de un
+ sistema inteligente. Como ya hemos visto Machine Learning, los permite generar un modelo
+ a partir de un conjunto de datos. Este modelo que genera Machine Learning se dice que
+ busca emular el comportamiento de los datos. Entonces, con este modelo, yo lo puedo
+ ejecutar dentro del sistema inteligente para resolver un problema asociado a esos datos.
+ Los datos que va a utilizar Machine Learning pueden venir de fuentes públicas o de fuentes
+ privadas. Como ya hemos, yo puedo tener conocimientos privados que voy a reducir de la
+ mente de una persona, por ejemplo, de un experto, o puedo utilizar información que
+ ya está exteriorizado de publicada en algún medio de fuentes públicas.
+ Lo importante es que estos datos que yo voy a tener, yo las pueda digitalizar en algún tipo
+ de formato que la de gory no pueda aplicar. Tradicionalmente lo más utilizado con
+ por los agorismo de Machine Learning son datos estructurados. Es decir, una tabla donde voy
+ a tener columnas o tributos y filas o ejemplos para que el algoritmo puede generar el modelo.
+ Pero, actualmente, también hemos podido tener datos que están en documentos, que están
+ en preunillas de cálculo, que están en imágenes, en videos, en audios. Y hay algoritmo de Machine
+ Learning que, a partir de sin formación, me va a permitir generar el modelo.
+ Obviamente, no todos los algoritmos de Machine Learning soportan todos los formatos de datos.
+ Y todos los formatos de datos son posibles, ser procesados por todos los algoritmos
+ Machine Learning. En caso de necesarios, en el medio, yo voy a tener que hacer una
+ preparación de los datos para llevarlo a lo que la algoritmo necesita.
+ O yo tengo que buscar el algoritmo que soporta el tipo de datos que yo quiero utilizar.
+ Siempre para generar el modelo que va a ser utilizado dentro del sistema de inteligente
+ que va a resolver el programa. Entonces, bueno, eso va a depender de cada situación
+ y de cada proyecto. Bien.
+ Y esta construcción del modelo que nosotros lo vamos a hacer a través de la ejecución
+ de la algoritmo de Machine Learning va a tomar el nombre del entrenamiento del modelo
+ o del Trimin del modelo, como se lo suele decir en inglés.
+ Donde lo que va a ser el ingeniero ahí es ejecutar un procedimiento que ya va a estar
+ definido dentro de una librería, de un framework o de alguna herramienta.
+ Le va a suministar el conjunto de datos y la ejecución de este algoritmo de entrenamiento
+ me va a permitir generar el modelo. Este modelo va a tener un conjunto de valores
+ definidos por el algoritmo que con una estructura relacionada me va a representar el comportamiento
+ de esos ejemplos o datos que yo les suministre.
+ Entonces, por ejemplo, si yo uso el algoritmo de induction, el modelo va a estar formado
+ por una serie de reglas. Si yo uso una algoritmo de reglesión, lo que voy a generar es
+ una fórmula matemática de un estilo. Si yo estoy utilizando un algoritmo de errores
+ neuronales artificiales, el modelo va a estar formado por un errore neuronal y entrenada
+ con sus pesos de conexiones. Entonces, depende del tipo de algoritmo que de uso me va a
+ generar el modelo de core. Al momento de ejecutar el algoritmo, el ingeniero no tiene
+ que implementar el algoritmo porque ya va a estar dado, pero lo que sí va a tener que
+ hacer es modificar y definir obviamente con cuidado. ¿Cuáles son los valores de los
+ parámetros que tienen el algoritmo? ¿Por qué? Porque el algoritmo lo va a definir alguien
+ de la y a como siencia que va a estudiar ciertas formulas matemáticas, ciertas procedimientos,
+ va a definir cómo se tiene que hacer para que se pueda generar el modelo de forma optima.
+ Pero muchas veces, dejan cuestiones parametrizables para que en cada caso en cada proyecto
+ en cada situación se puedan modificar esos parámetros para afectar el modelo que se
+ genera. En algunos casos, hay parámetros que no tienen gran impacto en las resultados del modelo,
+ pero en otros casos hay parámetros que si van a tener un gran impacto. Entonces, el ingeniero
+ tiene que de alguna forma evaluar cada una de estos parámetros, ver quién pacto pueden
+ tener considerar la característica de los datos disponibles y en base a eso determinar cómo debería
+ ejecutar el algoritmo para generar el modelo.
+ Esto obviamente va a afectar el trabajo del ingeniero porque hay veces que va a tener un modelo
+ que funciona más o menos, hay veces que va a tener un modelo que funciona muy bien y hay
+ veces que va a tener un modelo que funciona muy mal. Entonces, de alguna forma, el ingeniero
+ va a tener que poder evaluar si el modelo aprendió correctable.
+ Porque puede ser que el modelo funciona de la manera que debería funcionar, o sea, que
+ tengan un comportamiento muy similar o identico al comportamiento del problema, pero
+ de veces nos puede pasar a la derecha, que no, el estimación del modelo presenta bastante
+ diferencias con el comportamiento normal. De hecho, nos puede pasar que para los ejemplos
+ que nosotros les suministra mal, el modelo funciona bien, sería en estos puntos asules, pero
+ para otros casos del modelo funciona muy mal. Ahí estaríamos diciendo que el modelo
+ está sobre entrenado y que no generaliza de forma correcta. Bueno, ¿cómo puede hacer el ingeniero
+ para evaluar esto? Porque el capaz que el ingeniero el modelo y no sabe si está en la situación
+ de buena aprendizaje o mala aprendizaje. Para poder hacer esto, el ingeniero va a tener que
+ ejecutar otros dos procesos. El proceso de valideración y el proceso de prueba. Validación
+ que en inglés les suele llamar "validerion" es un proceso que se va a ejecutar en
+ paralelo con el entrenamiento. Lo que va a buscar la validación es confirmar que los parámetros
+ que nosotros estamos utilizando durante el entrenamiento están tratando de generar un modelo
+ optimal. Entonces, en paralelo a ejecución del algoritmo de entrenamiento muchas veces se ejecuta
+ esta validación que nos permite ver cómo se comporta el modelo con otros datos diferentes
+ a los datos de entrenamiento. Una vez que el proceso de entrenamiento y validación finaliza,
+ recién voy a realizar la prueba del modelo. ¿Por qué? Porque una vez que el proceso de entrenamiento
+ finaliza, yo tengo ya mismo de lo cerrado, yo quiero ver de qué manera, mi modelo está
+ funcionando para otras situaciones con otros datos y de esa manera puedo asegurar si tiene una
+ buena capacidad de generalización. Es decir, que responde bien para otras situaciones. Entonces,
+ fíjense que para poder realizar estos procesos de entrenamiento, validación y prueba,
+ yo voy a tener que dividir mis datos entre con juntos. Voy a tener un conjunto de datos de
+ entrenamiento, un conjunto de datos de validación y un conjunto de datos de prueba.
+ Pueda ver datos de entrenamiento que se repitan con los datos de validación, pero con los
+ datos de prueba no debería pasar. ¿Por qué? Yo quiero que los datos de prueba me permiten
+ evaluar de verdad cómo generaliza el modelo. Si yo uso las mismos datos de entrenamiento para
+ probar el modelo, no puedo asegurar nada. Es como que si en una materia de la facultad,
+ el profesor le está para practicar ciertos problemas y en el examen le está en el examen,
+ el un ejemplo idéntico, esos ejemplos que ustedes practicaron durante la cruzada. Entonces,
+ que va a pasar. La gran mayoría le va a poder hacer bien porque si practico centreno,
+ sabe cómo resolver ese caso. Pero el profesor no sabe si tiene la capacidad de adaptarse
+ a nuevas habitaciones. No sabe si generaliza y logran resolver problemas con alguna variación
+ a lo que ustedes practicara. Entonces, con Machine Learning, es muy importante hacer esta
+ división de datos de entrenamiento, validación nipro. Los datos de entrenamiento tienen que
+ ser la gran mayoría porque son las que van a permitir general modelo. Los datos de validación
+ pueden ser poquitos porque yo quiero ver cómo va funcionando el entrenamiento y si los parámetros
+ que estoy utilizando están respondiendo bien para generar un buen modelo. Y los datos de prueba
+ tienen que ser una cantidad, no tanta como la entrenamiento, pero deberían ser más que la
+ de validación para ver si el modelo generaliza correctamente. Con esta validación y prueba,
+ a su vez, yo voy a tener que aplicar algunas formas para evaluar el funcionamiento del modelo.
+ Entonces, ahí vamos a utilizar un conjunto de métricas que va a depender de el tipo de resultado
+ que me genera el modelo.

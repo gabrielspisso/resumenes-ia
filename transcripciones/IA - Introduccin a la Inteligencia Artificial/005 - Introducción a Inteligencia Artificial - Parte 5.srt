@@ -1,0 +1,564 @@
+1
+00:00:00,000 --> 00:00:07,000
+ Hola, mi nombre es María Flarecia Pollo y ahora comenzamos con la presentación número 5
+
+2
+00:00:07,000 --> 00:00:15,000
+ de la introducción a lo que es la inteligencia artificial. Bueno, habíamos pedado en hablar respecto
+
+3
+00:00:15,000 --> 00:00:25,000
+ de estas cosas, de estos objetos, de estos productos que muchas veces se proponen como productos inteligentes
+
+4
+00:00:25,000 --> 00:00:35,000
+ y no lo son. Hay varios ejemplos ilustrativos, tal vez el caso de esta Barbie, que planteaba que podía chatiar
+
+5
+00:00:35,000 --> 00:00:41,000
+ con los chicos, con quienes usaran las muñecas y que tenía inteligencia en realidad respondía 4
+
+6
+00:00:41,000 --> 00:00:48,000
+ 5 preguntas, respondía siempre lo mismo, no modificaba su comportamiento, no tenía aprendizaje con lo cual
+
+7
+00:00:48,000 --> 00:00:56,000
+ ustedes ahora saben que eso no es considerado inteligente, algún inteligente tiene capacidad de adaptación
+
+8
+00:00:56,000 --> 00:01:04,000
+ y tiene que poder explicar su razónamiento. Esto era agregarle al algoritmo de funcionamiento 2 o 3
+
+9
+00:01:04,000 --> 00:01:13,000
+ reglas. Otre ejemplo bastante conocido fueron unos uno sepillo inteligentes, máquinas de la bar inteligente
+
+10
+00:01:13,000 --> 00:01:20,000
+ en realidad lo único que hacían era identificar por el peso de la ropa, si el lavador económico
+
+11
+00:01:20,000 --> 00:01:27,000
+ y en realidad eso no es inteligente. Uno podría pensar en una barropa inteligente que me encantaría
+
+12
+00:01:27,000 --> 00:01:36,000
+ tenerlo a que el artefacto que pudiera identificar qué tipo de ropa conviene, juntar con otra
+
+13
+00:01:36,000 --> 00:01:42,000
+ de no oflorencia, hoy no ponga a la bar porque mañana usted cambiaba las sábanas, entonces mejor que juntar
+
+14
+00:01:42,000 --> 00:01:50,000
+ ropa, su hija va a poner en un informe del colegio en tal día, entonces no conviene para optimizar
+
+15
+00:01:50,000 --> 00:01:58,000
+ esto ya destinió la semana el bravo anterior ahora no puede que tuviera cierta capacidad de aprendizaje
+
+16
+00:01:58,000 --> 00:02:05,000
+ y que fuera mejorando parte de que conoce mis hábitos del lavador de ropa y la ropa que se utiliza
+
+17
+00:02:05,000 --> 00:02:16,000
+ mi hogar. A partir de ahí surgen tantas, o sea, hay tanto a UG, pero en que corro esto
+
+18
+00:02:16,000 --> 00:02:26,000
+ de acá. Así que tal es así que para el año 2016 la palabra inteligencia artificial fue una de
+
+19
+00:02:26,000 --> 00:02:31,000
+ las más reconocidas como integrante de lo que fueron feignos y esto tiene que ver también
+
+20
+00:02:31,000 --> 00:02:38,000
+ con un montón con juntos de preságios siempre tremendistas porque dan mucha más
+
+21
+00:02:38,000 --> 00:02:46,000
+ noticia en relación a lo que iba a ir a hacerla la inteligencia artificial. En un momento
+
+22
+00:02:46,000 --> 00:02:53,000
+ curpén que yo vaya moviendo a mede lugar haciendo los maréos en un momento se había hablado
+
+23
+00:02:53,000 --> 00:03:00,000
+ que Facebook había apagado esta inteligencia artificial porque había dos chatbot que habían inventado
+
+24
+00:03:00,000 --> 00:03:09,000
+ su propia lenguaje. Y esto no fue así, en realidad Facebook, tería y había puesto dos chatbot
+
+25
+00:03:09,000 --> 00:03:15,000
+ a participar de un montón de actividades para entrenarlos que mejoraran su lenguaje y su capacidad
+
+26
+00:03:15,000 --> 00:03:22,000
+ de intervención. Obviamente esto con individuos estos dos chatbot se encontraron en algún momento
+
+27
+00:03:22,000 --> 00:03:29,000
+ y vieron que su comunicación era más fluida a partir de ahí hay distintos tipos de tecnología
+
+28
+00:03:29,000 --> 00:03:34,000
+ pero bueno, refuerzan que esa conexión estaba bueno entonces empezaron a comunicarse más
+
+29
+00:03:34,000 --> 00:03:41,000
+ entre ellos. Y obviamente la capacidad de entender el lenguaje de ellos es distinta a la
+
+30
+00:03:41,000 --> 00:03:46,000
+ humana. Entonces habían creado su propio lenguaje entre comillas a partir de la facilidad
+
+31
+00:03:46,000 --> 00:03:51,000
+ que tenían entre ellos pero en ningún momento era porque querían conquistar el mundo
+
+32
+00:03:51,000 --> 00:03:58,000
+ como piñeceré, pero está. Si no que en realidad no funcionaban para el negocio por eso
+
+33
+00:03:58,000 --> 00:04:05,000
+ fue que los los apagaron. Con lo cual a veces estos precisas y están tremendistas no hay que
+
+34
+00:04:05,000 --> 00:04:11,000
+ subirse a esas ideas. Bien, otra de las propuestas muy interesantes que marco unito
+
+35
+00:04:11,000 --> 00:04:17,000
+ dentro de lo que fue el desarrollo de la inteligencia artificial fue IBM Watson.
+
+36
+00:04:17,000 --> 00:04:28,000
+ Pero es IBM Watson. Es una aplicación que justamente utiliza computación cognitiva
+
+37
+00:04:28,000 --> 00:04:36,000
+ y funciona para debatir, para debatir sobre un tema específico, acá surge y es conocido
+
+38
+00:04:36,000 --> 00:04:43,000
+ el concepto de computación cognitiva, fíjense acá, se los leo, vieron que leemos por el
+
+39
+00:04:43,000 --> 00:04:48,000
+ tipo de material que tenemos este es un material presencial, habla de sistemas de auto aprendizaje
+
+40
+00:04:48,000 --> 00:04:53,000
+ quiere decir fíjense que aprenden que auto aprenden a aprender a aprender ellos mismos de
+
+41
+00:04:53,000 --> 00:04:59,000
+ su hacer a aprender recuerdan modificar el comportamiento. Utilizan minería de datos que esto
+
+42
+00:04:59,000 --> 00:05:05,000
+ habla de grandes volumenes de datos, reconocimiento de patrones, procesamiento de lenguaje
+
+43
+00:05:05,000 --> 00:05:10,000
+ natural para tratar de evitar el funcionamiento del cerebrumano. La computación cognitiva
+
+44
+00:05:10,000 --> 00:05:17,000
+ lo que busca es humanizar estos sistemas inteligentes a través del uso de muchas tecnologías
+
+45
+00:05:17,000 --> 00:05:23,000
+ por eso necesitancios y procesamiento de lenguaje natural, tratan de acercarse y de parecerse
+
+46
+00:05:23,000 --> 00:05:30,000
+ a cómo funcionaría un humano. Entonces, se habla mucho de la usabilidad que tienen
+
+47
+00:05:30,000 --> 00:05:37,000
+ estos sistemas y tienen que usar muchísimas tecnologías. De hecho, pijense IBM Watson
+
+48
+00:05:37,000 --> 00:05:46,000
+ todas las tecnologías que utilizan lenguaje, vinculadas con taxonomías, tagunes conceptos,
+
+49
+00:05:46,000 --> 00:05:55,000
+ data, conversión de documentos, un montón de tecnologías que todas confluyen para poder generar
+
+50
+00:05:55,000 --> 00:06:04,000
+ un producto software complejo que se se asimile lo más posible a cómo funciona un humano
+
+51
+00:06:04,000 --> 00:06:13,000
+ en su procesamiento de actividades inteligentes. Si o sí, necesitas ser muy usable,
+
+52
+00:06:13,000 --> 00:06:23,000
+ está bien. Y me guazone esta aplicación que permite debatir justamente participa
+
+53
+00:06:23,000 --> 00:06:34,000
+ de un programa, yo perdí donde logran ganar a dos de los finalistas de este programa
+
+54
+00:06:34,000 --> 00:06:42,000
+ a partir de un conjunto de preguntas y respuestas. Luego otra aplicación muy interesante
+
+55
+00:06:42,000 --> 00:06:51,000
+ que también surge. Luego IBM Watson es el alfago. El alfago juega, a un juego bastante
+
+56
+00:06:51,000 --> 00:06:57,000
+ conocido que es el Google, es un juego oriental, está desarrollado por la empresa DeepMind
+
+57
+00:06:57,000 --> 00:07:05,000
+ que luego es antirida obviamente por Google. Tuvo sus sucesores, es un juego muy complejo,
+
+58
+00:07:05,000 --> 00:07:11,000
+ es más comparecido al de las damas, pero es bastante más complejo, tienes sucesores
+
+59
+00:07:11,000 --> 00:07:19,000
+ que obviamente tienen mayor complejidad en la resolución de problemas, en octubre del 2015
+
+60
+00:07:19,000 --> 00:07:23,000
+ se fíjense que acá ya no hace tanto tiempo fue el primer programa que ven su jugador
+
+61
+00:07:23,000 --> 00:07:32,000
+ a un jugador profesional de Google humano. Si ustedes se fijan en esta visualización,
+
+62
+00:07:32,000 --> 00:07:39,000
+ apareció otro tema bastante interesante que es la pelata que hay puesta en desarrollo
+
+63
+00:07:39,000 --> 00:07:46,000
+ de lo que son sistemas que utilizan inteligencia artificial. Miren el incremento
+
+64
+00:07:46,000 --> 00:07:54,000
+ que tienen las empresas en desarrollar tecnología que puede implementar inteligencia artificial.
+
+65
+00:07:54,000 --> 00:08:01,000
+ Esto se junta ya por diversos factores, la capacidad de procesamiento es altísima, hay mucha
+
+66
+00:08:01,000 --> 00:08:05,000
+ posibilidad de manejar grandes revole, una necesidad, mucha capacidad de procesamiento.
+
+67
+00:08:05,000 --> 00:08:13,000
+ Esto hace que se le pueda ver la utilidad al negocio, empieza a ser rentable en desarrollo
+
+68
+00:08:13,000 --> 00:08:21,000
+ de productos que ayuden a la toma de decisión y al negocio en general.
+
+69
+00:08:21,000 --> 00:08:30,000
+ Bien, aparece finalmente acá, les corro un cachito más, otro, otra aplicación muy interesante
+
+70
+00:08:30,000 --> 00:08:39,000
+ que se libe de mi proyecto debate. Les cuento. Esta aplicación está obviamente desarrollada
+
+71
+00:08:39,000 --> 00:08:47,000
+ por IBM es un proyecto de día, participa también participa de debates, pero no subrúltima
+
+72
+00:08:47,000 --> 00:08:52,000
+ particular. Entonces en realidad lo que tiene que manejar es un autológico, un tesau,
+
+73
+00:08:52,000 --> 00:09:01,000
+ es un diccionario muy amplio y a partir de que sugi un tema para debate. Esta aplicación
+
+74
+00:09:01,000 --> 00:09:07,000
+ este desarrollo logra generar un debate parecido al que podrían ser entre dos humanos.
+
+75
+00:09:07,000 --> 00:09:15,000
+ En 2019, fíjense que un humano se impuso sobre IBM,
+
+76
+00:09:15,000 --> 00:09:21,000
+ que proyecto debate hablaba sobre una programática de la educación prescolar.
+
+77
+00:09:21,000 --> 00:09:27,000
+ Sin embargo, como varios momentos del debate, donde la aplicación tomó el mando
+
+78
+00:09:27,000 --> 00:09:33,000
+ y verdaderamente hizo una diferencia bastante, bastante sustantivas.
+
+79
+00:09:33,000 --> 00:09:37,000
+ Fíjense lo que les planteó ahí a la izquierda, miren estas estos tips
+
+80
+00:09:37,000 --> 00:09:42,000
+ que esta aplicación no centreno para discutir un tema específico, lo que veníamos hablando
+
+81
+00:09:42,000 --> 00:09:46,000
+ y miren la exploración sobre qué universo de datos.
+
+82
+00:09:46,000 --> 00:09:51,000
+ Esto habla de una capacidad altísima de procesas miren.
+
+83
+00:09:51,000 --> 00:09:56,000
+ Por otro lado, cuando hablamos de la inteligencia artificial,
+
+84
+00:09:56,000 --> 00:09:59,000
+ ubicada los números al negocio y a las empresas,
+
+85
+00:09:59,000 --> 00:10:04,000
+ también vemos que dentro de lo que son las empresas unicorns,
+
+86
+00:10:04,000 --> 00:10:09,000
+ que son empresas evaluadas en alto movimiento de dinero,
+
+87
+00:10:09,000 --> 00:10:15,000
+ en estos últimos cuatro años pasamos de empresas que se dedicaban
+
+88
+00:10:15,000 --> 00:10:20,000
+ a la inteligencia artificial de 0.32 hemos pasado,
+
+89
+00:10:20,000 --> 00:10:25,000
+ quiere decir que empresas que se dedican al desarrollo
+
+90
+00:10:25,000 --> 00:10:30,000
+ de tecnología de inteligencia artificial logran facturar muchísimo.
+
+91
+00:10:30,000 --> 00:10:34,000
+ Esto para los que hacemos inteligencia artificial está muy bueno,
+
+92
+00:10:34,000 --> 00:10:39,000
+ y en realidad esto habla que las grandes empresas también
+
+93
+00:10:39,000 --> 00:10:49,000
+ ya tienen dentro de su estructura de partamientos de ella en casi todos sus negocios.
+
+94
+00:10:49,000 --> 00:10:55,000
+ Bien, después acá podemos ver lo que son las inversiones
+
+95
+00:10:55,000 --> 00:11:03,000
+ también fíjense para 2023, esperan 98 millones de dólares en inteligencia artificial,
+
+96
+00:11:03,000 --> 00:11:07,000
+ y esto habla de la capacidad de...
+
+97
+00:11:07,000 --> 00:11:12,000
+ O sea, las ganas y las perspectivas y el entusias moquean.
+
+98
+00:11:12,000 --> 00:11:16,000
+ Bien, ¿qué pasó en el mundo en relación a la inteligencia artificial?
+
+99
+00:11:16,000 --> 00:11:22,000
+ Para los países, si se fijan, países la gran mayoría del primer mundo
+
+100
+00:11:22,000 --> 00:11:26,000
+ han desarrollado planes de inteligencia internacional.
+
+101
+00:11:26,000 --> 00:11:30,000
+ Nosotros el año pasado en 2019,
+
+102
+00:11:30,000 --> 00:11:36,000
+ se propuso y se presentó el plan nacional de inteligencia artificial,
+
+103
+00:11:36,000 --> 00:11:41,000
+ nosotros obviamente estamos dando recién los primeros pasos,
+
+104
+00:11:41,000 --> 00:11:45,000
+ más un montón de colecturas desde lo político económico,
+
+105
+00:11:45,000 --> 00:11:47,000
+ muy particulares, ahora ni hablar,
+
+106
+00:11:47,000 --> 00:11:49,000
+ pero existe un plan nacional,
+
+107
+00:11:49,000 --> 00:11:54,000
+ pueden buscar o está en internet el año pasado,
+
+108
+00:11:54,000 --> 00:11:56,000
+ se habían hecho una jornada de reflexión
+
+109
+00:11:56,000 --> 00:11:59,000
+ y después hizo la presentación del plan, pero bien,
+
+110
+00:11:59,000 --> 00:12:03,000
+ si el año 2017 fíjense precursores,
+
+111
+00:12:03,000 --> 00:12:06,000
+ que van marcando...
+
+112
+00:12:06,000 --> 00:12:10,000
+ ¿Cómo se va a posicionando cada país en relación
+
+113
+00:12:10,000 --> 00:12:14,000
+ como si apoyan estos proyectos de inteligencia artificial
+
+114
+00:12:14,000 --> 00:12:18,000
+ y que ruene se le va a dar siempre desde el ambiente científico
+
+115
+00:12:18,000 --> 00:12:20,000
+ y desde el ambiente empresarial?
+
+116
+00:12:20,000 --> 00:12:24,000
+ Cuando uno habla de una tecnología y quiere que esta tecnología
+
+117
+00:12:24,000 --> 00:12:26,000
+ se desarrolla el gobierno,
+
+118
+00:12:26,000 --> 00:12:30,000
+ tiene que ver bien entre comillas,
+
+119
+00:12:30,000 --> 00:12:33,000
+ el desarrollo de este tipo de actividades,
+
+120
+00:12:33,000 --> 00:12:35,000
+ fomentarlas,
+
+121
+00:12:35,000 --> 00:12:39,000
+ entonces las empresas con esto van a va a invertir
+
+122
+00:12:39,000 --> 00:12:42,000
+ en desarrollos de estas características.
+
+123
+00:12:42,000 --> 00:12:46,000
+ Nosotros tuvimos la ley de promoción de conocimiento,
+
+124
+00:12:46,000 --> 00:12:49,000
+ que el año pasado, ya se había armado,
+
+125
+00:12:49,000 --> 00:12:52,000
+ bueno, y ahora supuestamente está en esta bay,
+
+126
+00:12:52,000 --> 00:12:55,000
+ a la espera de algunas modificaciones,
+
+127
+00:12:55,000 --> 00:12:58,000
+ pero que promoción, a promulga,
+
+128
+00:12:58,000 --> 00:13:03,000
+ colabora con los investigadores y la ciencia
+
+129
+00:13:03,000 --> 00:13:06,000
+ y la vincula con las empresas que sabes,
+
+130
+00:13:06,000 --> 00:13:08,000
+ la gran triana que hay que armar,
+
+131
+00:13:08,000 --> 00:13:12,000
+ empresa, universidad, ambiente científico
+
+132
+00:13:12,000 --> 00:13:16,000
+ y que todos trabajen de manera ensinergia
+
+133
+00:13:16,000 --> 00:13:18,000
+ para lograr buenos resultados.
+
+134
+00:13:18,000 --> 00:13:21,000
+ Bueno, a ver qué sigue,
+
+135
+00:13:21,000 --> 00:13:24,000
+ ahora vamos a hablar de publicaciones,
+
+136
+00:13:24,000 --> 00:13:26,000
+ pero eso lo vamos a dejar para la próxima presentación
+
+137
+00:13:26,000 --> 00:13:29,000
+ por un show hoy por 13 minutos y se van a gore.
+
+138
+00:13:29,000 --> 00:13:30,000
+ Así que bueno,
+
+139
+00:13:30,000 --> 00:13:32,000
+ espero que se cuiden y si Dios quiere,
+
+140
+00:13:32,000 --> 00:13:35,000
+ nos vemos pronto en la parte número 6.
+
+141
+00:13:35,000 --> 00:13:36,000
+ Hasta luego.
+

@@ -1,0 +1,632 @@
+1
+00:00:00,000 --> 00:00:04,640
+ Hola, soy María Florencia Pollo y vamos a continuar con el video explicativo de
+
+2
+00:00:04,640 --> 00:00:11,280
+ algoritmos genéticos. Bien, habíamos planteado la usted terminados conceptos,
+
+3
+00:00:11,280 --> 00:00:14,280
+ hay hemos hablado de determinados conceptos de la teoría de la evolución,
+
+4
+00:00:14,280 --> 00:00:20,120
+ y ahora vamos a ver cómo se paran con él con los algoritmos genéticos. Bien,
+
+5
+00:00:20,120 --> 00:00:23,960
+ cuando hablamos del ecosistema, cuando estamos hablando del ecosistema en este
+
+6
+00:00:23,960 --> 00:00:29,160
+ ambiente donde estos individuos, creo que encontrar un individuo que cumple con
+
+7
+00:00:29,160 --> 00:00:34,880
+ los requisitos para poder sobrevivir y estar adaptado, estamos hablando
+
+8
+00:00:34,880 --> 00:00:38,040
+ cuando hablamos del ecosistema de la ambiente estamos hablando del problema que
+
+9
+00:00:38,040 --> 00:00:43,720
+ queremos resolver. Yo quiero encontrar ningún grupo de personas, una excelente
+
+10
+00:00:43,720 --> 00:00:48,800
+ persona para correr una carrera, quiero encontrar pero capaz de este capaces la
+
+11
+00:00:48,800 --> 00:00:54,320
+ persona de quiz, sin embargo, capaz de lo que quiero buscar es el que mejor se desempeño
+
+12
+00:00:54,320 --> 00:00:58,840
+ matemática va a ser otro, depende del problema, se conjunto de individuos, si van a ser
+
+13
+00:00:58,840 --> 00:01:03,880
+ buenos o malos. Después tengo cada individuo que es una posible solución son todos estos
+
+14
+00:01:03,880 --> 00:01:08,800
+ candidatos a hacer solución, después por otro lado tengo lo que se conoce como
+
+15
+00:01:08,800 --> 00:01:15,040
+ genotipo o cromosoma, que es la descripción de la solución, un individuo, por ejemplo,
+
+16
+00:01:15,040 --> 00:01:19,760
+ Florencia va a tener una información, entonces, pasar con una cadena donde
+
+17
+00:01:19,760 --> 00:01:25,640
+ vamos a poder ir ubicando los datos, los attributes que describen a esa solución.
+
+18
+00:01:25,640 --> 00:01:30,840
+ Después vamos a hablar de un gen, un gen es una característica o a tributo que va a estar formado
+
+19
+00:01:30,840 --> 00:01:35,120
+ por más de una posición, a la no vamos a ver con un con un ejemplo y después vamos a hablar
+
+20
+00:01:35,120 --> 00:01:40,040
+ del fenotipo que se apuera en que yo decía era lo que instantiaba, es lo que se conoce
+
+21
+00:01:40,040 --> 00:01:45,160
+ como la función de aptitud, esa que ya funciona, aplicada a los individuos que lo que
+
+22
+00:01:45,160 --> 00:01:50,600
+ me va a dar es cuán bueno es para, cómo califica para, cómo califica Florencia para una
+
+23
+00:01:50,600 --> 00:01:57,160
+ competencia de gimnasia, cómo califica Florencia para un examen de inglés, va a tener que
+
+24
+00:01:57,160 --> 00:02:01,080
+ ver con el problema y va a tener que ver también con cómo define la solución.
+
+25
+00:02:01,080 --> 00:02:11,800
+ Bien. Ahora les presento que te jolan, bueno, les diría que no está mucho mejor
+
+26
+00:02:11,800 --> 00:02:18,560
+ que yo, pero es lo que hay, jolan para el año 75, propone es la, la primer persona que
+
+27
+00:02:18,560 --> 00:02:23,440
+ propone la estructura de una algoritmo gen, digo que si ustedes no es muy simple la estructura
+
+28
+00:02:23,440 --> 00:02:28,720
+ de una algoritmo genético, miremoslo una una función que genera la población inicial,
+
+29
+00:02:28,720 --> 00:02:33,080
+ se hace ahora vamos a ir viendo la selección, el cruzamiento, la mutación, el criterio
+
+30
+00:02:33,080 --> 00:02:41,080
+ de paro que existí sigo ciclando, no? Si no paro vuelvo a caer un bucle y después si el criterio
+
+31
+00:02:41,080 --> 00:02:45,800
+ de paro se cumple salvo y tengo la población fin, cosa es importante esperar a dejar
+
+32
+00:02:45,800 --> 00:02:55,240
+ en clara. Cuando yo paso por todo esto, por cada vez que ciclo lo llamo que doy una vuelta.
+
+33
+00:02:55,240 --> 00:03:01,920
+ Y cada vez que el criterio de paro se cumple y salvo, se dice que hice una corrida.
+
+34
+00:03:01,920 --> 00:03:07,120
+ Esto se los marco porque la bibliografía a veces consiste en el espaterial, algunos
+
+35
+00:03:07,120 --> 00:03:11,720
+ lo topan de una manera a otros de otra y a veces hasta la misma literatura no es muy clara.
+
+36
+00:03:11,720 --> 00:03:15,760
+ A nosotros que estamos viendo una cosa simple que queremos que ustedes puedan empezar
+
+37
+00:03:15,760 --> 00:03:20,360
+ a entender este tipo de diarquitecturas para que queden claro de más cuando hablamos
+
+38
+00:03:20,360 --> 00:03:28,040
+ en los sexamenes, hablamos acá de vuelta o de ciclos y cuando salimos por acá hablamos
+
+39
+00:03:28,040 --> 00:03:34,120
+ de una corrida. Entonces una corrida va a tener muchas vueltas o muchos ciclos pero uno va
+
+40
+00:03:34,120 --> 00:03:42,240
+ a ser varias corridas de una algoritmo genético. Está bien acá les presentes a la algoritmo
+
+41
+00:03:42,240 --> 00:03:51,400
+ genético. Bien, vamos a pagar. Perfecto. Bien, vamos a mostrarles que deberíamos
+
+42
+00:03:51,400 --> 00:03:58,200
+ definir nosotros acá y me corroquen. Que deberíamos nosotros definir cuando hablamos que
+
+43
+00:03:58,200 --> 00:04:03,560
+ deberíamos identificar cuando empezamos a trabajar con una algoritmo genético.
+
+44
+00:04:03,560 --> 00:04:08,280
+ Pero tenemos que identificar el centro del cromo soma, vamos a tener que identificar el
+
+45
+00:04:08,280 --> 00:04:13,120
+ cromo soma va a ser una cadena de bits donde vamos a tener que identificar qué porción
+
+46
+00:04:13,120 --> 00:04:19,080
+ de esta cadena de bits va a identificar algún gen. Dentro de cada gen o sea en cada
+
+47
+00:04:19,080 --> 00:04:24,680
+ cada gen le vamos a atrimuir una carácterística. Fíjense para que queden claro que no todos
+
+48
+00:04:24,680 --> 00:04:28,840
+ los genes tienen que tener la misma algitud. Y esto tiene que ver, nosotros generalmente
+
+49
+00:04:28,840 --> 00:04:35,280
+ vamos a trabajar con cromosomas dinarios y esto va a tener que ver con la cantidad de
+
+50
+00:04:35,280 --> 00:04:40,240
+ valores que puede tomar esa carácterística. Su ponganse que fue lo vamos a ver con un ejemplo
+
+51
+00:04:40,240 --> 00:04:46,760
+ que fuera es y está en sentido o apagado. Entonces que va a ser, suponganse el 0, 0, 0,
+
+52
+00:04:46,760 --> 00:04:51,440
+ 1 o podemos hacer 0, 1 y 1, 0, pero entonces con dos posiciones no salcancos. A mí te
+
+53
+00:04:51,440 --> 00:04:55,120
+ es que sea el mejor tomamos los colores del semáfono, a tener que tener más posiciones.
+
+54
+00:04:55,120 --> 00:05:02,560
+ Pues por otro lado vamos a tener que definir la función de ápito de lo que conociamos
+
+55
+00:05:02,560 --> 00:05:07,820
+ como fenotipo. Es esto que me va a permitir instanciar y a partir de ahí decir cuán
+
+56
+00:05:07,820 --> 00:05:14,320
+ apto es este individuo para este determinado tipo de problema. La función de ápito es una
+
+57
+00:05:14,320 --> 00:05:20,120
+ función que se le aplica al cromosoma y lo que me da es un número real. Esta función generalmente
+
+58
+00:05:20,120 --> 00:05:26,480
+ es una función compleja, muchas veces uno utiliza funciones que hay en la literatura y muchas
+
+59
+00:05:26,480 --> 00:05:31,520
+ otras veces cuando está definiendo un problema muy complejo, puede recurrir a una persona
+
+60
+00:05:31,520 --> 00:05:37,800
+ de la área de matemática para que lo ayude a representar la función real. Bien, hablando
+
+61
+00:05:37,800 --> 00:05:43,520
+ de esto pero hay que decorar un cachito. ¿Qué pasa con los algoritmos genéticos? ¿Cuánto
+
+62
+00:05:43,520 --> 00:05:48,420
+ no habladó un algoritmo genético general? Una frase que a mí me encantó una vez que me lo
+
+63
+00:05:48,420 --> 00:05:53,880
+ precorna hace mucho tiempo decía que la algoritmo genético navega en una sabana de soluciones
+
+64
+00:05:53,880 --> 00:06:00,320
+ y es esto justamente. Ustedes lo que van a hacer es ustedes tienen todo el universo que son
+
+65
+00:06:00,320 --> 00:06:05,660
+ todas estas posibles soluciones por eso las combinaciones de genes, ¿no? Que acá son como
+
+66
+00:06:05,660 --> 00:06:12,300
+ si fueran dos genes y uno es como si fuera una política que va pasando, va pasando y van
+
+67
+00:06:12,300 --> 00:06:18,340
+ analizando estas distintas soluciones y puede que si uno viene analizando, por ejemplo, supongo
+
+68
+00:06:18,340 --> 00:06:22,780
+ que viene por acá, llega un valor y después este valor empieza a década, entonces uno dice
+
+69
+00:06:22,780 --> 00:06:27,320
+ "Esta es la mejor solución". Sin embargo eso no sería cierto porque miren soluciones
+
+70
+00:06:27,320 --> 00:06:32,680
+ mucho mejor es por acá. Uno se podría quedar clavado de lo que se conoce como un máximo
+
+71
+00:06:32,680 --> 00:06:40,460
+ local. Lo que hace el algoritmo genético es ir saltando de un lugar a otro y esto. Lo permite
+
+72
+00:06:40,460 --> 00:06:44,000
+ que gracias a los operadores que tienen que ya los vamos a ir viendo y esto lo que
+
+73
+00:06:44,000 --> 00:06:49,640
+ me permite en distintas corridas es ir teniendo distintos valores y yo después con muchas
+
+74
+00:06:49,640 --> 00:06:54,840
+ corridas podrán encontrar el mejor valor que yo haya encontrado de esta corrida que nuevamente
+
+75
+00:06:54,840 --> 00:07:01,480
+ vale aclarar no significa que sea el mejor valor del universo. Porque es más, muchas veces
+
+76
+00:07:01,480 --> 00:07:08,360
+ los algoritmos genéticos se utilizan para universos y fin. Bien, le mostramos acá ahora
+
+77
+00:07:08,360 --> 00:07:16,400
+ a dónde me volvio para el nuevo electrónica. Me voy por acá. Les mostramos para que vean
+
+78
+00:07:16,400 --> 00:07:25,400
+ una deemos, como se va a dándola las distintas cordias, probamos primero con un random
+
+79
+00:07:25,400 --> 00:07:31,600
+ search, para que vean miren casi más cable la pantalla. Acá tienen secada vuelta por
+
+80
+00:07:31,600 --> 00:07:36,400
+ ese simple todo esto es una corrida, de cada vuelta el valor máximo y el valor mínimo y miren
+
+81
+00:07:36,400 --> 00:07:42,320
+ como va cubriendo todo el espectro. Esto es prácticamente como si fue una búsqueda exáutica.
+
+82
+00:07:42,320 --> 00:07:48,360
+ Y en particular lo vamos a correr con un algoritmos genético, si ustedes se fijan terminamente.
+
+83
+00:07:48,360 --> 00:07:54,240
+ Si lo corremos con un algoritmos genético, ven como no va a reportar y miren acá nuevamente
+
+84
+00:07:54,240 --> 00:07:58,820
+ en las distintas vuelta, valores máximos mite, valores máximos y valores mínimos, miren
+
+85
+00:07:58,820 --> 00:08:05,120
+ como se estabiliza los valores máximos, los valores mínimos en pieza en bajos después se mantienen
+
+86
+00:08:05,120 --> 00:08:11,380
+ y no correr, no recorre, no buscere exactamente en todo el algoritmos.
+
+87
+00:08:11,380 --> 00:08:18,440
+ Saber para poder hablar para que vuelvo a correr la chica, solo para María Rios.
+
+88
+00:08:18,440 --> 00:08:24,680
+ Vamos a ver un ejemplo. El famoso es un problema que se puede resolver por otra manera
+
+89
+00:08:24,680 --> 00:08:28,340
+ que no sea con un algoritmos genético, pero es más que nada para que puedan ver como
+
+90
+00:08:28,340 --> 00:08:33,020
+ definir este tema del genotipo, el fenotipo y todo. Se los leo, se la certijo
+
+91
+00:08:33,020 --> 00:08:38,540
+ de insten, tenemos 5 casas de 5 colores diferentes en cada una de ellas vivió una persona
+
+92
+00:08:38,540 --> 00:08:43,100
+ de una nacionalidad diferente. Cada uno de los dueños ve una bebida diferente, fumo una
+
+93
+00:08:43,100 --> 00:08:48,520
+ marca de cigarrillas diferentes y tiene una mascota diferente. Se tienen las siguientes
+
+94
+00:08:48,520 --> 00:08:53,340
+ pitas. Fíjense que acá, el británico vive en la casa roja, el suico tiene un perro,
+
+95
+00:08:53,340 --> 00:08:58,020
+ el danesto mate, la casa verde está la izquierda de la casa blanca, el dueño de la casa
+
+96
+00:08:58,020 --> 00:09:03,020
+ verde toma café, le sabran de marcas de cigarrillas y les han un conjunto de pistas,
+
+97
+00:09:03,020 --> 00:09:10,020
+ el que fumabrens tiene un vecino que toma agua y lo que les pregunta después es
+
+98
+00:09:10,020 --> 00:09:16,820
+ y en ese dueño del pesecito, o sea deberíamos encontrar que combinación se da de todas estas
+
+99
+00:09:16,820 --> 00:09:23,260
+ opciones que cumpla con todas estas pistas y en ese contexto ver aquí en la pertenece el
+
+100
+00:09:23,260 --> 00:09:29,540
+ pesecito. Para eso, primero, para poder implementar esto con un resolver esto con un algoritmo
+
+101
+00:09:29,540 --> 00:09:35,860
+ genético, vamos a definir el promoso. Para eso, primero, nuevamente me corran nada más que
+
+102
+00:09:35,860 --> 00:09:41,860
+ para variarlos. Primero, lo que vamos a hacer es definir todos los conceptos que hay, que para
+
+103
+00:09:41,860 --> 00:09:46,620
+ nosotros esto es una tarea muy simple y gente que hablamos de un dueño que el dueño tiene una
+
+104
+00:09:46,620 --> 00:09:52,500
+ casa que fuma una marca de cigarrillas, que tiene una mascota y que bebe una bebida.
+
+105
+00:09:52,500 --> 00:09:58,900
+ A partir de ahí, vamos a ver qué variables identifican a estos conceptos. Entonces, respecto
+
+106
+00:09:58,900 --> 00:10:05,100
+ del dueño, vamos a identificarlo en relación a la adacionaridad, la casa en donde
+
+107
+00:10:05,100 --> 00:10:09,940
+ siubica, primero, se gobernar, tercera cuánto quinta, el color de la casa, el tipo de
+
+108
+00:10:09,940 --> 00:10:14,300
+ vivir del nombre del cigarrillo y el tipo de mascota, esto es donde salió del enunciado
+
+109
+00:10:14,300 --> 00:10:19,380
+ que yo tengo. A partir de ahí, le vamos a poner todos los valores que encontramos, los
+
+110
+00:10:19,380 --> 00:10:24,100
+ valores donde están en las pistas. Entonces, en algún momento de haberlo un británico,
+
+111
+00:10:24,100 --> 00:10:31,660
+ su escundanez, un alemán y completamos todos estos valores. Está? A partir de ahí, nuevamente
+
+112
+00:10:31,660 --> 00:10:36,900
+ me muevo para variarlos, otro rato, si se quedaban tranquilos. Nuevamente, en este caso,
+
+113
+00:10:36,900 --> 00:10:44,020
+ hablamos de un cromosoma compuesto. Porque la solución va a ser aquella combinación
+
+114
+00:10:44,020 --> 00:10:50,060
+ de distintos dueños, el británico, el sueco, el danés de la alemán y el Noruego. Y ahí
+
+115
+00:10:50,060 --> 00:10:54,540
+ vamos a tener que ver, en donde está la casa de que colorés, que tipo de bebida, que
+
+116
+00:10:54,540 --> 00:11:00,060
+ nombre de cigarrillo y que tipo de mascota, ven que lo que tenemos primero es como si fuera
+
+117
+00:11:00,060 --> 00:11:08,740
+ con je principal, que va identificando después la combinación, y después hay dentro de cada uno,
+
+118
+00:11:08,740 --> 00:11:13,980
+ vamos a tener combinado todo esto. Lesamos este ejemplo justamente porque es un poquito más
+
+119
+00:11:13,980 --> 00:11:20,220
+ complejo para que vean cómo se trabajaría con un cromosoma compuesto. Está, cómo sería
+
+120
+00:11:20,220 --> 00:11:31,500
+ un valor posible. Entonces, son los genes auxiliares. Entonces, lo que acá les muestras,
+
+121
+00:11:31,500 --> 00:11:37,460
+ a donde podrá parar yo para un destaca, para otro lado. Fíjense que entonces, una solución
+
+122
+00:11:37,460 --> 00:11:42,300
+ posible tendría el británico, el sueco, el danés a la alemán y al Noruego y por cada uno
+
+123
+00:11:42,300 --> 00:11:48,860
+ de estos, todos los valores, a dónde se ubica la casa, qué color tiene la casa, la bebida,
+
+124
+00:11:48,860 --> 00:11:53,860
+ el tipo, la marca de cigarrillo y la mascota, de dónde sale en todos esos valores y de
+
+125
+00:11:53,860 --> 00:11:58,820
+ ver la cantidad de instanciaciones que tengo posibles para tener, cada una de estas variables,
+
+126
+00:11:58,820 --> 00:12:04,700
+ y a partir de ahí asignarlo un valor en binario.
+
+127
+00:12:04,700 --> 00:12:12,180
+ Acá necesitamos asignando los valores que hicimos los distintos, los distintos valores que
+
+128
+00:12:12,180 --> 00:12:18,420
+ pueden tomar cada baña. Un ejemplo, acá tendríamos un cromosoma, los posimos asignos
+
+129
+00:12:18,420 --> 00:12:24,180
+ y son tal para que lo puedan ver, y después tenemos por el británico, recuerda, cada una
+
+130
+00:12:24,180 --> 00:12:31,180
+ de todas estas estructuras. Entonces, vamos a pensar en un ejemplo una solución posible.
+
+131
+00:12:31,180 --> 00:12:36,740
+ Acá tendríamos una solución posible que sería un individuo de la población decir que
+
+132
+00:12:36,740 --> 00:12:43,980
+ británico está en la quinta casa, la casa de color blanco, toma cerveza, fumada ángil y tiene
+
+133
+00:12:43,980 --> 00:12:52,140
+ un caballo. El sueco lo mismo pela obra. Yo diría, si esta la solución que, el dan es,
+
+134
+00:12:52,140 --> 00:13:00,780
+ el dan es, viene al pecesito. Entonces, como podríamos ver, si esta solución es viable.
+
+135
+00:13:00,780 --> 00:13:07,540
+ Tenemos que ver si cumple con las británicos, no figura que vive en la casa roja, no
+
+136
+00:13:07,540 --> 00:13:12,540
+ se vuelve, porque en el británico donde está, el británico, la casa es de color blanco,
+
+137
+00:13:12,540 --> 00:13:18,500
+ pero en que esa pista no se da, y así sucesivamente, el cual podríamos decir esa solución
+
+138
+00:13:18,500 --> 00:13:25,140
+ no es viable. Para eso, luego, vamos a tener que definir, ahí le mostramos un ejemplo del
+
+139
+00:13:25,140 --> 00:13:29,780
+ profesor más, además, teníamos que definir para el algoritmo genético en la función de
+
+140
+00:13:29,780 --> 00:13:36,060
+ aptitud. Para eso, tenemos que analizar la aptitud. Para analizar las pistas, con un lado tenemos
+
+141
+00:13:36,060 --> 00:13:41,660
+ que determinar las condiciones que debe cumplir esa solución. Esa condiciones que vendría
+
+142
+00:13:41,660 --> 00:13:47,980
+ a hacer las pistas, van ir aumentando el valor de la función de aptitud. Por otro lado,
+
+143
+00:13:47,980 --> 00:13:53,740
+ las restricciones no pueden cumplir la solución de la van a ir disminuyendo. Por otro lado,
+
+144
+00:13:53,740 --> 00:13:59,420
+ bien lo que hay que hacer es analizar la estructura del promosoma definido, que soba determinar
+
+145
+00:13:59,420 --> 00:14:05,380
+ combinaciones simbálidas en los genes, y deberían penalizar el valor de aptitud. Por ejemplo,
+
+146
+00:14:05,380 --> 00:14:19,500
+ a ver si les podemos traer. Por ejemplo, un promosoma que tenga un o uno o uno o uno
+
+147
+00:14:19,500 --> 00:14:25,340
+ o uno o cero en ubicación de la casa no es ninguna casa posible. Entonces, eso debería
+
+148
+00:14:25,340 --> 00:14:31,620
+ debería penalizarlo. Está porque no son valores de, como son los valores posibles que
+
+149
+00:14:31,620 --> 00:14:37,780
+ pueden tomar las gallanas. A eso se refería con, ¿cuánto en mente?
+
+150
+00:14:37,780 --> 00:14:47,060
+ Bien, y además, cuando uno define la función de aptitud, lo que tiene que hacer es determinar
+
+151
+00:14:47,060 --> 00:14:52,220
+ la operatoria para poder interpretar la estructura del promosoma, se sabe el uno uno
+
+152
+00:14:52,220 --> 00:14:58,380
+ o cero o uno, en la que significa. Y después, el poder calcular el valor de aptitud,
+
+153
+00:14:58,380 --> 00:15:05,180
+ sea poder aplicar la función. Y a partir de ahí empezaremos con la ejecución del algoritmo
+
+154
+00:15:05,180 --> 00:15:09,940
+ técnico. Acá me pase, le traté a apurar un poquito para no aborrer los tanto, llegados
+
+155
+00:15:09,940 --> 00:15:15,620
+ 15 minutos. Así que bueno, ahora vamos a arrancar con el algoritmo genético y los distintos
+
+156
+00:15:15,620 --> 00:15:20,300
+ los operadores. Así que bueno, nos queda nuestro ejercicio del pesecito y a partir de
+
+157
+00:15:20,300 --> 00:15:24,740
+ explicarles cómo avanza en los algoritmos genéticos vamos haciendo. Espero que les aburrino,
+
+158
+00:15:24,740 --> 00:15:27,660
+ muchísimas gracias y nos vemos en un alito. Hasta luego.
+

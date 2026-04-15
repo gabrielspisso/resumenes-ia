@@ -1,0 +1,73 @@
+ Hola, mi nombre es Pablo Pital,
+ docente de la signatura sin deligencia artificial e inteligencia artificial avanzada
+ en este video vamos a ver cómo funciona las estrategias de aprendizaje supervisado y no
+ supervisado para los algoritmos de Machine Learning
+ pero en vez de ver cómo funciona ese aprendizaje automático, esa estrategia de aprendizaje
+ para una computadora vamos a ver cómo funcionaría para un ser humano
+ entonces vamos a hacer un ejemplo usando Hanyu, o sea, el chino de mandarin
+ y vamos a ver cómo podemos lograr que la persona que ve este vídeo pueda aprender
+ algo de caracteres chinos utilizando estas dos tipos de aprendizaje
+ bueno como hemos visto anteriormente Machine Learning tiene dos grandes estrategias de
+ aprendizaje, tenemos en la aprendizaje supervisado y la aprendizaje no supervisado
+ en la aprendizaje supervisado, nosotros tenemos este supervisor o maestro que
+ existe al algoritmo dando le datos adicionales para que el algoritmo aprenda
+ en un algoritmo no es supervisado, el algoritmo puede aprender solo, entonces lograr
+ resolver problemas aprendiendo directamente a partir de ejemplos
+ vamos a comenzar, parece más fácil con el aprendizaje supervisor
+ entonces vamos a tener una cuestión que queremos resolver un problema
+ y va a ver un supervisor que en este caso se lo voy a tomar yo que lo va a insistir para
+ aprender y encontrar patrones que les permitan resolver ese problema, en este caso el problema
+ va a ser tratar de entender de que están hablando la persona a con la persona a ver
+ que supongamos que son dos amigos que están conversando entre sí y que toda la conversación
+ está escrita en idioma chino, nos vamos a tratar de lograr una traducción
+ aplicando este aprendizaje supervisor, bueno, lo primero que vamos a ayudarlos es ver
+ cuál es la traducción de cada uno de los carácteres que aparecen esta conversación
+ que fijanse que no son muchos son apenas nueve carácteres
+ y con estos nueve carácteres nosotros podemos lograr una conversación
+ entendible entre dos personas, bueno el primer carácter se lo la phonética nos dice
+ que es ni y que quiere decir la traducción tú o vos o sea es para tratar una persona
+ como dos tú podemos usar el carácter ni, el segundo carácter corresponde a
+ cómo que quiere decir bien el tercer carácter es más que no permite indicar que es
+ lo que se está planteando es una pregunta, el juego que quiere decir yo, el hon que quiere
+ decir muy, el pú que quiere decir más, más que quiere decir ocupal, sai que quiere decir
+ otra vez o la próxima vez y llen que quiere decir ver o mirar, entonces si nosotros consideramos
+ acá que tenemos estos ejemplos con esta traducción podemos intentar traducir lo que
+ aparecen la conversación tomando carácter para carácter, entonces qué nos queda, nos queda
+ dice vos bien, ve la responde, vos bien y después la pregunta vos bien, a lo que ya dice
+ yo muy bien, vos bien no bien, ve a su vez le dice yo no bien, yo muy ocupado, a lo cual
+ a dice bien otra vez vero y a lo cual finalmente ve responde otra vez vero, o sea hay una traducción
+ que le podríamos tratar de encontrar un sentido pero como que le está faltando cosas,
+ por ejemplo, no hay ningún tipo de barro, entonces hay una cuestión acá de toda esta
+ conversación, no se usan verbos, no, sí se usan verbos y deberían estarnos y esto otra vez
+ ver que da medio raro, entonces vamos a tratar de de a partir de más ejemplos en contra
+ un mejor significado a lo que dice en esta conversación, entonces acá podemos ver ya tomamos
+ ejemplos, más grande donde tenemos grupos de dos carácteres, entonces yo tengo uo y
+ jáo, ni jáo, jáo y jáo, a lo cual la traducción es yo estoy bien, vos está bien, él está bien
+ y yo está bien, o sea que el uo jáo se la graiga al showyam, se la graiga el verbo estar en
+ chino hay un tipo de gramática especial donde el verbo no es imprescindible indicarlo cuando
+ se trata del verbo estar, entonces nosotros podemos decir "buo jáo" para decir "yo estoy bien"
+ lo mismo pasa con el noo y el con el jáo, entonces el jáo es lo mismo que decir "yo estoy
+ muy bien", entonces el hecho de que la graiga de un adverbillo no tampoco me obliga a escribir en chino
+ el verbo estar mientras que en castellano no tenemos que poner para que formar frases
+ con sentido, con el pudo que es la negación va a ser lo mismo, yo digo "buo jáo" la traducción
+ debería ser "yo no estoy bien", ni "pujáo" vos no estás bien, entonces considerando
+ estos nuevos ejemplos podemos retocar un poco la traducción y nos va a quedar así,
+ entonces ahora a diría "buo se estás bien", a lo cual verá responde "buo se estás bien"
+ y después le pregunta "buo se estás bien", que era medio raro, luego a le dice "yo estoy muy bien"
+ "buo se están bien" o no bien, a lo cual verle dice "yo estoy no bien", "yo muy ocupado"
+ y por último que nos quedé igual está bien, otra vez ver, otra vez ver
+ o sea acá, hemos logrado mejorar bastante la traducción, pero estas frases de "buo se estás bien", "buo se estás bien"
+ que se le dicen y quedan medio raro, porque después le vuelve a preguntar "buo se estás bien"
+ digamos bastante inconsistente, parece que hay algún tipo de problema
+ entonces para tratar de entender que está pasando acá, vamos a agregar más ejemplos
+ ahora agregamos ejemplos más generales, ejemplos de distintos idiomas, donde se dicen "Hola y adiós"
+ entonces podemos ver que acá aparece el "Hola" en chino aparece el "nijado"
+ mientras que el "laidios" aparece el "saicha" o sea, el "pose estás bien"
+ cuando una persona china se le dice "a otra persona china" es como que le está diciendo "Hola"
+ y otra vez ver es lo mismo que decir "adiós" es como un... nos veremos luego, ¿no?
+ entonces ahora la traducción tiene mucho más sentido, ahora tenemos "Hola", "Hola", "pose estás bien", "yo estoy muy bien"
+ "pose estás bien" o "no" no "no" bien, a lo cual vele el "dice" "yo estoy en no" bien, "yo muy ocupado"
+ entonces a lo dice "Esta bien, adiós, adiós" entonces ahí ya tenemos una traducción un poco más, correcta, con mucho más sentido, en cuanto a la semática de lo que estábola
+ y ahora ¿qué para estaría con esta? bueno, entonces le dejamos de estaría para que ustedes piensan, no va a luchar del traducción de Google
+ y a ver si logran encontrar de qué se estábola
+ gracias, en el siguiente video veremos qué pasa con el aprendizaje no supervisado, hasta luego, ¡saycha!

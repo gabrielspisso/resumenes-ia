@@ -1,0 +1,468 @@
+1
+00:00:00,000 --> 00:00:08,200
+ Hola, este es el video correspondiente a la quinta fase del proceso de implementación de sistemas inteligentes,
+
+2
+00:00:08,200 --> 00:00:14,440
+ la cual también es la última fase, y que se denomina aplicación del sistema inteligente.
+
+3
+00:00:14,440 --> 00:00:22,640
+ En esta fase lo que vamos a ver es que por un lado se tiene que realizar la integración de los distintos modelos
+
+4
+00:00:22,640 --> 00:00:32,440
+ que nosotros construimos para cada modulo de nuestro sistema inteligente, de forma que generen un sistema inteligente integrado.
+
+5
+00:00:32,440 --> 00:00:39,440
+ Para ello, entonces vamos a tener en cuenta los objetivos y la alcance de nuestro sistema inteligente,
+
+6
+00:00:39,440 --> 00:00:47,480
+ que el cual lo definimos en la primer fase, pero también vamos a hacer en esta etapa de la fase,
+
+7
+00:00:47,480 --> 00:00:54,480
+ la integración con otros software que pueden ser software tradicionales que estén disponibles en la organización,
+
+8
+00:00:54,480 --> 00:01:03,480
+ y también incluir en caso necesario toda la cinta fase software para que nuestro sistema inteligente se comunique directamente con los usuarios.
+
+9
+00:01:03,480 --> 00:01:10,480
+ Entonces, lo primero que vamos a ver es cómo integrar los distintos modelos construidos.
+
+10
+00:01:10,480 --> 00:01:21,480
+ Para eso, si usa el concepto de canalizaciones o pipeline, que son las conexiones interfaces que van a tener los distintos modelos que nosotros generamos,
+
+11
+00:01:21,480 --> 00:01:29,480
+ y que van a determinar cómo se van a ejecutar en producción, todas las acciones relacionadas con el sistema inteligente.
+
+12
+00:01:29,480 --> 00:01:37,480
+ Entonces ahí se van a realizar de manera automática, las acciones de recolectar los datos, preparar los datos, ejecución de un modelo,
+
+13
+00:01:37,480 --> 00:01:43,480
+ ajuste de los resultados del modelo, para pasarse los a otro modelo que se va a ejecutar y a su vez,
+
+14
+00:01:43,480 --> 00:01:52,480
+ eso puede llevar a que este tenga que también ajustar para que los resultados del primer modelo y del segundo modelo pasen a un tercer modelo.
+
+15
+00:01:52,480 --> 00:02:02,480
+ Hasta que todo eso se genera un resultado para pasarse los a otro sistema software para guardarlo en una base de datos o mostrarse lo al usuario.
+
+16
+00:02:02,480 --> 00:02:09,480
+ Lo de que hay que considerar, que esto creo que lo mencionamos cuando hablamos de redes neuronales artificiales,
+
+17
+00:02:09,480 --> 00:02:13,480
+ es la regular dorada, el Golden Rule, como lo llaman en inglés.
+
+18
+00:02:13,480 --> 00:02:21,480
+ La cual dice que siempre se debe realizar en producción las mismas acciones de recolectión y preparación de los datos,
+
+19
+00:02:21,480 --> 00:02:26,480
+ de lo que se hizo durante el desarrollo, es decir, durante la construcción del modelo.
+
+20
+00:02:26,480 --> 00:02:34,480
+ Si no, los modelos pueden presentar un comportamiento a no esperado. Esto es bastante obvio de hacer no,
+
+21
+00:02:34,480 --> 00:02:41,480
+ si yo en el desarrollo del modelo, cuando yo construyo el arrande urbana al por ejemplo,
+
+22
+00:02:41,480 --> 00:02:47,480
+ a los datos que le doy, el arrande urbana antes, los normalise usando ciertos coeficientes,
+
+23
+00:02:47,480 --> 00:02:54,480
+ lo que tengo que hacer es que en producción los normalices a los datos que le voy a dar a la arrande urbana,
+
+24
+00:02:54,480 --> 00:02:56,480
+ usando las mismas coeficientes.
+
+25
+00:02:56,480 --> 00:03:02,480
+ Si no, la arrande urbana no va a darse cuenta que los datos que están recibiendo,
+
+26
+00:03:02,480 --> 00:03:08,480
+ son ahí vez, sino que van a entender que son 6 de, y entonces los resultados no me que me van a generar,
+
+27
+00:03:08,480 --> 00:03:10,480
+ no van a hacer los cortos.
+
+28
+00:03:10,480 --> 00:03:19,480
+ Esto que parece bastante obvio, muchas personas se lo suelen olvidar y eso genera problemas en producción,
+
+29
+00:03:19,480 --> 00:03:26,480
+ donde después no se entiende por qué el sistema inteligente está respondiendo de una manera
+
+30
+00:03:26,480 --> 00:03:32,480
+ indistinta o incorrecta cuando nosotros durante la validación y la prueba del modelo,
+
+31
+00:03:32,480 --> 00:03:34,480
+ probamos con las mismas datos.
+
+32
+00:03:34,480 --> 00:03:40,480
+ Entonces, siempre utilizar las mismas acciones de recolección y preparación de los datos,
+
+33
+00:03:40,480 --> 00:03:45,480
+ que usamos para la construcción, que las que usamos para producción.
+
+34
+00:03:45,480 --> 00:03:51,480
+ De hecho, ahí lo que comiene hacer es implementarse el programa, que hace la preparación de los datos y la recolección,
+
+35
+00:03:51,480 --> 00:03:57,480
+ y usar el mismo código de la misma manera con la misma tecnología en ambos lugares.
+
+36
+00:03:57,480 --> 00:04:02,480
+ De esa manera, nos podemos asegurar que va a generar lo mismo.
+
+37
+00:04:02,480 --> 00:04:12,480
+ Bien, con respecto a la integración con software externa, lo que hay que considerar es un modelo que se llama modelo de pan de pasas.
+
+38
+00:04:12,480 --> 00:04:19,480
+ Ahí, esto es modelos surge de una frase que dijo estar dison, la cual es.
+
+39
+00:04:19,480 --> 00:04:23,480
+ Hay una de las aplicaciones más exitosas de la inteligencia artificial,
+
+40
+00:04:23,480 --> 00:04:31,480
+ son aquellas en la cual es la inteligencia artificial, se extiende como las pasas en una hogas de pan de pasas.
+
+41
+00:04:31,480 --> 00:04:38,480
+ Entonces, las pasas no ocupan mucho espacio, pero con frecuencias son la principal fuente de nutricio.
+
+42
+00:04:38,480 --> 00:04:47,480
+ ¿Qué quiere decir este modelo de pan de pasas? Que yo puedo tener en una organización varios sistemas de software tradicional, que ya se están empleando.
+
+43
+00:04:47,480 --> 00:04:56,480
+ Y lo que puedo hacer es para que esos sistemas puedan resolver problemas más complejos o puedan utilizar conocimientos,
+
+44
+00:04:56,480 --> 00:05:06,480
+ que no son fáciles de llevar para poder codificarlos en un conjunto de instrucciones de un paradigma tradicional.
+
+45
+00:05:06,480 --> 00:05:12,480
+ Entonces, lo que puedo hacer es integrarlos con modelos de inteligencia artificial.
+
+46
+00:05:12,480 --> 00:05:22,480
+ Por ejemplo, dentro del sistema que maneja stock, puedo incluir un modelo para hacer la predicción de materiaes primas
+
+47
+00:05:22,480 --> 00:05:25,480
+ y ver qué necesidades voy a tener a futuro de materiaes primas.
+
+48
+00:05:25,480 --> 00:05:38,480
+ Para la oqué es gestión de clientes, puedo hacer segmentación o clástrenes de clientes en el modelo o sistema de finanzas, puedo hacer un análisis de riesgo o financiero
+
+49
+00:05:38,480 --> 00:05:45,480
+ para hacer una predicción y determinar qué clientes me van a pagar y qué clientes.
+
+50
+00:05:45,480 --> 00:05:54,480
+ Entonces, a hacer esto lo que estoy logrando es que mi sistema inteligente no quede como algo totalmente separado.
+
+51
+00:05:54,480 --> 00:06:00,480
+ De lo que es el sistema que actualmente está utilizando la organización.
+
+52
+00:06:00,480 --> 00:06:09,480
+ Y así estoy reduciendo la chance de tener un rechazo de parte de los usuarios para utilizar el nuevo sistema inteligencia.
+
+53
+00:06:09,480 --> 00:06:18,480
+ En muchos sistemas de hecho ERP, actualmente se están empezando a aplicar muchos módulos con inteligencia artificial,
+
+54
+00:06:18,480 --> 00:06:27,480
+ que son totalmente transparentes para los usuarios porque se ejecutan en forma de servicios o procesos vach,
+
+55
+00:06:27,480 --> 00:06:33,480
+ y entonces el usuario no sabe que está usando un inteligencia artificial,
+
+56
+00:06:33,480 --> 00:06:38,480
+ pero está aprovechando las ventajas que le otorga esta tecnología.
+
+57
+00:06:38,480 --> 00:06:47,480
+ Sin embargo, hay que tener cuidado que hay veces integrar un sistema software existente con un inteligencia artificial,
+
+58
+00:06:47,480 --> 00:06:58,480
+ o de generar problemas. Para eso voy a mostrarles un ejemplo de la realidad que en esta noticia habla de sobre los asientos y errores del nuevo sistema de reconocimiento facial,
+
+59
+00:06:58,480 --> 00:07:06,480
+ que se emplean las callas de Buenos Aires. Como ustedes saben, en casi todas las estaciones de subte y de trenes de la ciudad de Buenos Aires,
+
+60
+00:07:06,480 --> 00:07:16,480
+ hay sistemas de cámaras que capturan a las personas que van pasando y esas imágenes se pasan por un sistema de reconocimiento facial,
+
+61
+00:07:16,480 --> 00:07:22,480
+ el cual utiliza inteligencia artificial para tratar de detectar una persona,
+
+62
+00:07:22,480 --> 00:07:35,480
+ y así detectar posibles casos de personas que tengan ordenes de captura porque son delincuentes o tienen algún problema judicial.
+
+63
+00:07:35,480 --> 00:07:41,480
+ Según la noticia, el sistema de reconocimiento facial que está implementado funciona muy bien,
+
+64
+00:07:41,480 --> 00:07:53,480
+ porque es bastante rápido de mora a 0,5 segundos y tiene una tasa de precisión del 99% para detectar el género de la persona,
+
+65
+00:07:53,480 --> 00:08:02,480
+ y un 95% para detectar la edad dentro de un umbral de tres años. Además funciona con personas que tengan cambios en la apariencia,
+
+66
+00:08:02,480 --> 00:08:10,480
+ o sea que puedan tener antiojos, barba, biotejo, razonbreros o cambios de peinados.
+
+67
+00:08:10,480 --> 00:08:14,480
+ Bien, entonces, ese sistema de reconocimiento facial funciona muy bien,
+
+68
+00:08:14,480 --> 00:08:18,480
+ pero entonces, ¿cuál? ¿Por qué acaba la de aciertos y errores?
+
+69
+00:08:18,480 --> 00:08:25,480
+ Porque a tres meses de su implementación, estan noticias de julio del año pasado,
+
+70
+00:08:25,480 --> 00:08:34,480
+ había pasado que se habían generado 1.227 alertas de personas con ordenes de captura,
+
+71
+00:08:34,480 --> 00:08:42,480
+ se habían detenido 226 y 1.1 personas de esas 1.227 fueron liberados,
+
+72
+00:08:42,480 --> 00:08:50,480
+ o sea, el 81,6% de las personas fueron liberados porque en realidad la alerta no correspondía de tenerlo.
+
+73
+00:08:50,480 --> 00:08:59,480
+ Bueno, entonces ¿por qué esa alta tasa de liberación si el sistema tenía una buena tasa de reconocimiento de personas?
+
+74
+00:08:59,480 --> 00:09:05,480
+ Bueno, porque el problema lo tenían los datos que utilizaba el sistema de reconocimiento facial.
+
+75
+00:09:05,480 --> 00:09:13,480
+ Entonces, hay en las motivos en la noticia dice, en algunos casos el pedido judicial no implicaba necesariamente una detección.
+
+76
+00:09:13,480 --> 00:09:16,480
+ La decisión final quedaba en manos de las justicios.
+
+77
+00:09:16,480 --> 00:09:23,480
+ O sea, el sistema reconocía que la persona tenía que ser detenida porque le había llegado la información de las justicia,
+
+78
+00:09:23,480 --> 00:09:26,480
+ pero la justicia en realidad no decía que lo tenían que detenar.
+
+79
+00:09:26,480 --> 00:09:29,480
+ Le decía que era una persona de interés.
+
+80
+00:09:29,480 --> 00:09:41,480
+ Entonces, como no se había hecho bien la integración, el sistema de reconocimiento facial no distingue a una persona de interés de una persona que había que detenar y se detenían a todas las personas.
+
+81
+00:09:41,480 --> 00:09:49,480
+ El segundo motivo grupo de motivos era que las causas judiciales no estaban desactualizadas.
+
+82
+00:09:49,480 --> 00:09:57,480
+ Entonces, por ejemplo, un acusado podía haber sido sobreseído, pero el orden de captura todavía estaba trabajando.
+
+83
+00:09:57,480 --> 00:10:06,480
+ Entonces, ahí el problema era que el sistema judicial no había actualizado el estado del estado de la persona,
+
+84
+00:10:06,480 --> 00:10:13,480
+ que entonces el sistema reconocimiento facial indicaba que se lo tenían que detener cuando la realidad ya había sido liberado.
+
+85
+00:10:13,480 --> 00:10:15,480
+ Se va a sobreseído.
+
+86
+00:10:15,480 --> 00:10:20,480
+ Y por último, el tercer grupo de motivos eran errores en las carga de los datos.
+
+87
+00:10:20,480 --> 00:10:27,480
+ Por ejemplo, en la orden judicial se había puesto un de ney malo o un correcto en alguno de los digitos.
+
+88
+00:10:27,480 --> 00:10:32,480
+ Entonces, como este sistema se va a hacer en las fotos del de ney, para reconocer las personas,
+
+89
+00:10:32,480 --> 00:10:38,480
+ capaz que identificaban que había que detener a Pablo, cuando la realidad había que detener a julio.
+
+90
+00:10:38,480 --> 00:10:45,480
+ Entonces, la pobre Pablo, lo detenían y julio pasaba sin ningún tipo de problemas.
+
+91
+00:10:45,480 --> 00:10:54,480
+ Bueno, con esto, que les quiero mostrar que hay veces que si yo tengo que integrar un sistema inteligente con un software que ya existe,
+
+92
+00:10:54,480 --> 00:11:04,480
+ y se software que ya existe tiene datos cerróneos o problemas en la manera que manijan los datos, esos errores pueden perjudicar a nuestro sistema inteligente.
+
+93
+00:11:04,480 --> 00:11:10,480
+ Entonces, no es una mala idea antes de poner en producción a nuestro sistema inteligente,
+
+94
+00:11:10,480 --> 00:11:18,480
+ hacer una prueba con datos reales del sistema de producción que va a tener el sistema software que ya existe,
+
+95
+00:11:18,480 --> 00:11:26,480
+ para ver que también va a funcionar y tratar de mitigar estos posibles errores y estos efectos ordenar datos sin corrodos.
+
+96
+00:11:26,480 --> 00:11:33,480
+ Entonces, si no te pasa esto de un corrente integración, puede llevar a falta de confianza en el sistema inteligente.
+
+97
+00:11:33,480 --> 00:11:40,480
+ Bueno, por último, una vez que nosotros tenemos nuestro sistema inteligente, que ya tiene todos sus modos,
+
+98
+00:11:40,480 --> 00:11:51,480
+ los integrados a partir de canalizaciones y del cual ya tenemos definidas todas las interfaces con el software existente y con los usuarios y hace falta,
+
+99
+00:11:51,480 --> 00:11:56,480
+ lo que tenemos que hacer es ponerla en producción, o sea, la tenemos que instalar.
+
+100
+00:11:56,480 --> 00:12:08,480
+ Ahí hay que hacer lo mismo que se hacen la instalación de un software tradicional, al igual que con un software tradicional, no es mala idea hacer una prueba de aceptación con los usuarios,
+
+101
+00:12:08,480 --> 00:12:21,480
+ hacer una prueba en paralelo donde se pone el sistema inteligente utilizando datos de producción o datos iguales a los de producción para ver cómo va ir respondiendo.
+
+102
+00:12:21,480 --> 00:12:29,480
+ En esa manera, tratar de evitar problemas como nos pasó ahí, recién les comentaba el sistema de reconocimiento facial.
+
+103
+00:12:29,480 --> 00:12:36,480
+ Una vez que nuestro sistema está en producción, esto ha distalado, también deberíamos hacer un monitoreo,
+
+104
+00:12:36,480 --> 00:12:49,480
+ ahí generalmente en las primeras días horas y de poner el sistema en producción hay que hacer un monitoreo más exhaustivo para ver que no esté fallando nada.
+
+105
+00:12:49,480 --> 00:12:59,480
+ Hay veces que demoras de minutos o segundos pueden generar problemas, entonces hay que ver cómo está funcionando nuestro sistema en el hardware de producción,
+
+106
+00:12:59,480 --> 00:13:09,480
+ con los tiempos que tiene la operatoria de producción para ver si está respondiendo de manera satisfactoria.
+
+107
+00:13:09,480 --> 00:13:22,480
+ Y en casos de que este monitoreo se detecta algún error o que la organización determina que quiere hacer algún cambio, vamos a entrar en la etapa de mantenimiento de nuestro sistema inteligente.
+
+108
+00:13:22,480 --> 00:13:30,480
+ La cual va a implicar llevar a cabo todas las distintas fases del proceso, pero en un orden contrario.
+
+109
+00:13:30,480 --> 00:13:40,480
+ Y a partir del sistema inteligente ya desarrollado, tal vez tengo que hacer modificaciones sobre el modelo, o sea que vuelva a construir el modelo,
+
+110
+00:13:40,480 --> 00:13:47,480
+ cambiar la tecnología, porque me de cuenta que la tecnología que estoy usando capaz que no era la mejor.
+
+111
+00:13:47,480 --> 00:13:55,480
+ Y la buscar nuevos datos o cambiar los datos, cambiar la definición del problema, porque ahora hay una nueva requerimiento,
+
+112
+00:13:55,480 --> 00:13:59,480
+ o un cambio en la forma de trabajo que se le quería dar al sistema.
+
+113
+00:13:59,480 --> 00:14:13,480
+ Entonces esto va a implicar llevar a cabo todo un nuevo proyecto de ahora en mantenimiento donde yo ya tengo una versión en producción y otra que voy a ir modificando o haciendo de cero.
+
+114
+00:14:13,480 --> 00:14:25,480
+ Porque hay veces que el mantenimiento en un sistema inteligente puede implicar que como cambia la tecnología tengo que volver a hacer la construcción de mi sistema de cero.
+
+115
+00:14:25,480 --> 00:14:50,480
+ Bueno, entonces nuestro proceso que nosotros lo habíamos visto bastante en cascada en realidad es más un idiota, porque puede ser que sea necesario que tengamos que volver atrás cuando estamos realizando cada una de las fases, porque nos vemos cuenta que algo no está bien o que conviene cambiarlo para que la solución que generamos sea mejor.
+
+116
+00:14:50,480 --> 00:15:02,480
+ Bueno, con esto dejamos acá un poco de bibliografía para que puedan leer y investigar y damos por terminado este tema,
+
+117
+00:15:02,480 --> 00:15:10,480
+ pero que les haya resultado interesante, pero que sigan bien y nos veremos en el próximo clase o encuentro virtual.
+

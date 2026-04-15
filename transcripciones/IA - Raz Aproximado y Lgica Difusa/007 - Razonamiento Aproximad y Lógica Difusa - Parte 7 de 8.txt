@@ -1,0 +1,100 @@
+ hola este es el séptimo video correspondiente a la presentación de razonamiento
+ aproximado y lógica difusa, en este video vamos a ver un ejemplo de cómo se puede aplicar
+ un sistema difuso con el modelo mandani, al momento de hacer este ejemplo estuvimos
+ pensando a ver sobre el que se podría hacer un sistema difuso y nos pareció
+ interesante hacer un sistema que maneje las emociones humanas, así como este
+ robot que dice reacciona ante la emoción humana, tratar de hacer un sistema difuso
+ que aunque sea trate de detectar con la emoción que tiene una persona, entonces hay
+ lo primero que pensamos es tratar de hacer algo con los gestos de la cara,
+ ahí como aparece en este dibujo de la serie "La Itumi" donde le acuerdo a la situación
+ de la nariz, las sejas, los labios se puede terminar cuál es la emoción que está
+ sintiendo una persona, creo que pasa, hay un sistema difuso, no sería lo más
+ adecuado porque es muy difícil definir con valores difusos, cuánto se mide un labio, cuánto
+ se cheque una nariz, una seja, como cuánto se sierra en los ojos, lo ideal para eso
+ es utilizar directamente procesamiento de imágenes usando una rat neuronal profunda y
+ de esa manera de detectar cuál es la emoción, bueno, eso ya está hecho además hay varias
+ redes de este tila dando vuelta en internaf, de hecho hay una api de estar rat y uno
+ puede usar en el sitio de Microsoft donde pone una foto y te dice cuál es la emoción
+ que se detecta, entonces dijimos cuál, entonces con imágenes, no, pero buscando un poco más
+ encontramos algo sobre kismet, kismet es un robot que también sabe detectar emociones
+ pero que lo hace a partir del sonido, que quiere decir esto, entonces kismet lo que
+ va a ser es analizar la voz de la persona que está hablando y evaluarlo utilizando estas
+ reglas que consideran distintos parámetros, entonces de acuerdo a lo que está expresando
+ con la voz puede determinar si una persona tiene tristeza, distinto, alegría, sorpresa, miedo,
+ o ira, bien, para hacer eso kismet en sus reglas consideran un conjunto de parámetros
+ bastante grandes, de estos parámetros nosotros elegimos tres para hacer un ejemplo más sencillo,
+ entonces solamente vamos a considerar la intensidad de la voz, la velocidad con que se
+ dedice en las distintas cosas y el tono promedio, entonces con estas reglas nosotros dijimos
+ bueno, con esto se podría hacer alguna especie de sistema difuso para hacer encuestas
+ por teléfono de forma que la persona pueda responder preguntas pero que también se
+ value la emoción que está transmitiendo la persona para determinar el valor que va
+ a tener cierto producto o servicio, entonces nuestro sistema difuso va a tener como objetivo
+ identificar la emoción humana en base a la voz para hacer dicha valoración, los parámetros
+ de entrada va a ser la intensidad de en decíbales, la velocidad con que se está hablando en palabras
+ por minutos, el tono promedio en Hertz y como resultado se va a tener la valoración del
+ sistema emocion identifica, bueno, como es un sistema difuso lo que vamos a tener que hacer es
+ representar cada una de estos parámetros de entrada y parámetros de salida como funciones
+ de partenencias difusas, entonces para intensidad vamos a tener tres funciones, una correspondiente
+ abajo, otra normal y otra alta, fíjense que acá también aparece de manera simétrica como
+ pasaba con la altura, pero en vez de ser todas rectas por tener porque antes para la altura
+ teníamos un crecimiento alinial acá estamos utilizando curvas porque porque consideramos
+ que la intensidad no es un crecimiento tan abrupt, en cuanto a la modificación de decíbales,
+ lo mismo va a pasar para la velocidad, aquí también vamos a usar todas funciones curvas donde
+ vamos a tener, la función muy lenta, lenta, normal, rápida y muy rápida, todas expresadas
+ en palabras por minutos y por último vamos a tener el todo no promedio que también se va
+ dividir en varias funciones que donde tenemos, muy bajo, bajo, normal, alto y muy alto,
+ entonces con eso, estaríamos representando todos los parámetros de entrada, para representar
+ el parámetro de salida tendremos las distintas emociones que son tristes de justo, alegría,
+ sorpresa, miedo, e ira, fíjense que hay algunas emociones que tienen un solo apamiento en
+ cuanto a los valores y hay otras que no, por ejemplo tristes de justo consideramos que se
+ pueden solo apar bastante, alegría sorpresa un poquito, sorpresimiendo un poco más porque
+ la sorpresa puede ser positivo o negativa, si es negativa, puede llevar al miedo, y el miedo
+ puede llevar a la ira, entonces también ahí le pusimos ciertos olapamias, entonces la única
+ que no necesito es solapam, son injusto y alegría, bueno, con todas estas funciones ya definidas
+ entonces lo que nos quedó fue definir las reglas, para eso usamos la tabla de decisión
+ que habíamos obtenido de quismet y entonces obtuvimos estas 11 reglas que, de acuerdo
+ a la intensidad de los hidiptono promedio, determinar la emoción de la perso, bueno,
+ entonces ya que tenemos nuestro sistema difuso mandani, completo, lo que vamos a ver es
+ un caso donde se aplica para determinar la emoción de una perso, entonces vamos a ingresar
+ como datos de entrada, 70 de cídeles, 260 palabras por minutos, y 210 Hz, para determinar
+ cuál es la emoción que corresponde, lo primero que tenemos que hacer es aplicar el
+ modulo de fusificación, de forma que transformamos estos datos a valores difusos, luego vamos
+ a aplicar las distintas reglas que corresponden y con los resultados vamos a hacer la decodificación
+ al de fusificación para determinar la valoración de las emociones correspondientes, bueno,
+ para el intensidad entonces teníamos 70 de cídeles, 70 de cídeles podemos decir que corresponde
+ a un intensidad normal en 0.85 y un intensidad alta en 0.50, para velocidad de 260 palabras
+ por minutos podemos decir que corresponde a una velocidad rápida de 0.75 y muy rápida de 0.35.
+ Por último, para el tono promedio de 210 Hz podemos decir que corresponde a un tono alto
+ de 1 y solamente tenemos ese valor en la resta balesero, bien, entonces con estos tres
+ valores tenemos que ver qué reglas aplican para intensidad normal, intensidad alta,
+ velocidad rápida, velocidad muy rápida y tono promedio alto, en este caso serían las reglas
+ 5, 6 y 7, en el resto no aplicarían esta combinación de valores, entonces las emociones
+ que se podrían concluir que se están generando son alegría o sorpresa, bueno, entonces
+ vamos a ver qué valor le corresponde a alegría, entonces como la regla nos dice que si
+ la intensidad de salta y el tono promedio de salto le emociones alegría tenemos que hacer el
+ mínimo entre el valor que tiene la intensidad alta y el tono promedio alto, entonces el
+ mínimo entre 0.5 y 1 nos queda que alegría vale 0.5, tiene una alegría media, para
+ la segunda regla, la regla seis tenemos que dice si la intensidad es alta y la velocidad
+ muy rápida y el tono promedio alto entonces corresponde sorpresa, entonces tengo que hacer
+ el mínimo porque son todos si entre intensidad alta, velocidad muy rápida y tono promedio
+ alto, entonces tengo que hacer el mínimo entre 0.5, 0.35 e 1, entonces me quedo con 0.35,
+ entonces puedo decir que tiene un poco o algo de sorpresa, pero algo poquito, por último para
+ la regla siete que también aplica para sorpresa, nos dice que si la intensidad de salta,
+ la velocidad es rápida y el tono promedio es alto corresponde sorpresa, entonces tengo que
+ hacer el mínimo entre 0.5, 0.75 y 1, entonces corresponde que sorpresa también tono
+ un valor de 0.5, con listos valores que yo voy a tener los dedos que combinar para obtener
+ un único valor, como nosotros usamos el modelo mandani tenemos que calcular la área que corresponde
+ a cada valor obtenido, para ello les mostramos que valor de alegría correspondería como lo
+ podríamos representar con las funciones, entonces correspondería esta zona, para sorpresa
+ 0.5 correspondería esta otra y para sorpresa 0.5 correspondería esta otra de aquí, bien, entonces
+ estos tres valores corresponden a estar ya, con esta área vamos entonces a calcular el parámetro
+ de salida unífica, entonces si nosotros calculamos el promedio del máximo, vamos a descartar
+ los resultados de la segunda regla porque no me generan ningún tipo del máximo, entonces la salida
+ correspondería de acuerdo a la aplicación de la fórmula un 5,633, si yo aplico la otra fórmula
+ de centro de masa, entonces ahí sí voy a considerar las tres funciones y ahora resultado desde
+ 5,9, fíjense que la diferencia es muy pequeña, 5,633 en este caso 5,9 y en segundo, bueno, entonces
+ yo puedo decir que, pero una persona que hablo con una intensidad de 70 de ciberes, una velocidad
+ de 260 palabras por minutos y un tono promedio de 200,10 Hz, como resulto puedo decir que la
+ persona estaba medio alegre, medio sorprendida y eso me generaría una valoración entre 5,63 y 5,9,
+ que si quiere lo puedo sacar un promedio, me va a quedar el puntaje que me va a signar a mi
+ producto o servicio, con esto entonces finalizamos este ejemplo y este vídeo hasta

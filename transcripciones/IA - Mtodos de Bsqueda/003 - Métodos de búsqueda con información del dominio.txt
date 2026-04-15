@@ -1,0 +1,296 @@
+ bienvenidas, soy el ingeniero exequiel vanga, formo parte de la cátera de interginsartificial,
+ de la UTN, facultad original de Buenos Aires y hoy vamos a ver metodos de búsquedas con
+ información de domino. En videos anteriores hemos visto detalles y tipos de algoritmos sin
+ información del domino o lo que también se denomina de búsquedas ciedas y ahora vamos a
+ ver un poco la comparativa con algoritmos que incluso sin información del domino o que
+ también se denomina de búsquedas grísticas. Con es la principal diferencia entre estos tipos
+ algoritmos, lo ajustamente que estos segundos, incluso información, es decir, de alguna forma
+ cuento con algoritmos que me va a permitir quitar el proceso. Este algoritmos es información
+ se denomina a búsquedas. La palabra proviene de griego eurekaín que significa descubrir y lo
+ que me permite hacer es aumentar la fisiensa de un proceso de búsquedas posiblemente sacrificando
+ exhaustividad. ¿Qué significa esto? ¿Por cómo es la estructura agolada o la estructura
+ de los grafos? Muchas veces el crecimiento es exponencial, no es genial. ¿Qué significa?
+ Sua medida que me voy metiendo en profundidad en los hijos, la capacidad de memoria que
+ requiero se va incrementando de una forma exponencial. Es decir, yo aquí se la cuenta.
+ Imagínense que un nodo ocupa 100 bytes en memoria y que cada nodo tiene 4 hijos. Es un ejemplo,
+ ¿OK? En el nivel 9 de profundidad ocupa 20 melas. En el nivel 14 ocupa 25 sigas. En el
+ nivel 15 ocupas 100 sigas y así sucesivamente. Evidentemente, llegó un punto en el cual
+ esto no me va a entrar en una página al menos hoy en día y ni hablar del tiempo que
+ me llevaría, el estar evaluando todos los nodos o el estar generándolos. Entonces,
+ yo de alguna forma necesito justamente sacrificar esta actividad y aumentar la eficiencia
+ del proceso de búsquedas. Ahora, esto tiene un costo, tiene una desventaja justamente
+ que dependiendo el tipo de problema que yo tengo y la solución que necesito, ahí
+ me va a convenir o no utilizar este tipo de métodos. La principal desventaja es que uno
+ puede esperar buenas soluciones aunque no siempre óptimas. Es decir, yo al no estar evaluando
+ exhaustivamente el árbol o el grajo, no puedo asegurar que la solución que encuentra es
+ la mejor. Pero muchas veces con una solución lo suficientemente buena es más que suficiente
+ para resolver el problema, para que a mí me sirva, me sirva la solución que me está
+ aprendiendo. Ni hablar que es un tiempo mucho menor, un tiempo lógico o utilizando una
+ máquina con cierta cantidad de memoria. Esas son básicamente las principales diferencias.
+ Algunos tipos de aplicaciones o motivos comunes serían, por ejemplo, búsqueda de rutas
+ de viaje, ni hablar que cuanto más alejados están los puntos que yo quiero unir la cantidad
+ de de viaje esposibles, va a creciendo de forma exponencial y había requerido justamente
+ encontrar alguna forma que me permita no estar generando todos los nodos de este árbol o ni
+ hablar de cálculo o a nivel tiempo o a nivel memoria. Otro ejemplo que me gustó bastante
+ es el esaje, es una herramienta de maecrasas que te permite hacer testeos y encontrar
+ bugs con un método de caja blanca es decir, inspeccionando el código. Lo que va haciendo
+ es evaluando, evaluando resultados de estos testes y generando nuevos testes en nuevas partes
+ del código. Esto más allá de tener una necesidad a nivel tiempo o memoria es porque
+ dentro yo no tengo generado el árbol y lo va generando en una forma dramica. Y acá también
+ es requerido justamente no estar generando nodos que no corresponden para este camino.
+ Luego, bueno, hay varios motores diferencias, ya sea del sistema hasta los enconocimientos
+ o sistemas expertos tradicionales que utilizan métodos de métodos de búsqueda con información
+ del domino y bueno, en compro un par de resolución de problemas de optimización de que
+ ser uso de baterías en celulares, siguen muchos utilizan algoritmos genéticos que lo
+ va a saber más adelante, encontrar algunas que resolen con métodos de búsqueda con información
+ del domino. Bueno, ahora vamos a ver cómo representar esta información o
+ esta urística dentro del grafo o del árbol que nosotros con un momento utilizamos para estos
+ métodos de búsqueda. Los componentes de de estas estructuras, cuáles son básicamente
+ nodos o aristas. Está bien. Entonces, yo ni por la cena puedo incluir en cualquiera de estas
+ de subestruturas. Básicamente, la pongo incluir dentro de los nodos con las funciones
+ urísticas asociadas al estado. ¿Qué significa esto? Yo puedo definir una función que
+ evalué estos estados, es decir, que reciba un nodo y que devuelva un número, por ejemplo.
+ Y este número te puede representar el grado de seabilidad de un estado un particular.
+ Está bien lo que puede significar que cuanto más grandes, más deseable o cuando más
+ chico, más deseable. Eso va a depender de cómo yo represento el problema. Puede ser distancia
+ recorrida o puede ser distancia para llegar a la meta. Por ejemplo, la única sol caminó. Entonces,
+ de acuerdo a cómo yo representé mi problema es en un número cuanto más grande mejor o cuanto
+ más chico mejor. Está bien. Ahora, por el otro lado, yo también puedo representar esa
+ urística dentro de las transiciones. Es decir, cuánto me cuesta pasar un estado a otro.
+ Está bien. En este caso lo que nosotros hacemos es que siempre representa el costo de los
+ caminos aplicables. ¿Qué significa esto? Que siempre va a penalizar esta urística.
+ Es decir, si, por ejemplo, yo estoy representando que cuanto más grande es el número, más
+ deseal es el nodo. Entonces, la la función, cuando evalué el costo de los caminos
+ aplicables, va a restar el número que yo tengo en la transición. ¿Por qué? Porque
+ está penalizando al número final. Por el otro lado, si cuanto más chico es el número,
+ más deseable es el nodo. En ese caso, la transición va a sumar a ese número. ¿Por qué?
+ Porque está penalizando nuevamente. Sentiendo. Entonces, lo que se hace siempre es
+ se representa las transiciones. El costo es decir, se penaliza el costo de los caminos aplicables.
+ Vamos a arrancar viendo algunos ejemplos algoritmos. Los cuales necesitas
+ representar la información solamente en los nodos. Es decir, el valorístico está en los
+ Estados, no las transiciones. Y luego vamos a ver algunos que se incluyen información
+ en las transiciones también. De los primeros que quiero hablar, son de los métodos
+ de escalada, también. Hay varios. El primer que vamos a ver es de escalada simple,
+ es cuál primero necesito definir cómo va a hacer el sentido de recorridos. En este
+ caso, puede ser de izquierda derecha. Está bien. Y el valor eurístico me va a indicar
+ que cuanto más grandes, más deseables el nodo. Está bien, cuanto más chico menos
+ deseable. Lo que se hace en este anorismo de escalada simple es dado un nodo determinado
+ como un nodo actual. Se va generando los hijos en el orden indicado. Es decir, el primer
+ hijo que se genera en este ejemplo es el nodo B. Y lo que se hace es preguntarse si el
+ estado B tiene un valorubristico mayor. Si es así, ese nodo pasaría ser el actual. Está
+ bien. En el caso contrario, se continúa con los siguientes hijos, siempre siendo el orden
+ de izquierda derecha, hasta encontrar algún hijo que tenga un valorubrístico mayor al
+ estado actual, en el estado del nodo actual. Y en ese caso lo vuelvo el nodo actual,
+ o en el caso no encontrar ningún hijo, detengo el valorismo y termina ahí el recorrido.
+ Entonces en este caso, de izquierda derecha, lo que se hace genera el nodo B y al
+ pasero B, un valorubristico mayor, pasa ser nodo actual. Luego se genera el nodo B y al
+ evaluar el valorubrístico y entender que es mayor, es casasar el nodo actual. Luego se genera
+ el nodo B y dado que lo valorubrístico es menor, el valorubrístico D se continua con el
+ siguiente hijo, se genera jota y jota al ser al pasero un valorubrístico mayor, pasa ser el
+ nodo actual y luego jota el ser solucion, termino laborismo, básicamente contra una solucion
+ y este es el camino o los nodos visitados. Está bien. Ahora, analizando un poco
+ a las características de escaladas simples, podemos entender que los momentos de escalada por
+ un lado no requieren encontrar con mucha memoria al almacenamiento, no estoy generando todo el
+ lado como pueden ver. Solamente los nodos que generen son estos y por el otro lado, bueno, visité
+ los que y van creciendo en valorubrístico y ahí voy a lo un poquito de no diría las
+ eventajas, sino de entender en qué tipo de problemas me sirve o no utilizar este método.
+ B básicamente ha caído cosas que podemos sacar al uso. La primera es que se existen su
+ sucesor mejor que por el que yo estoy escalando y que aún no lo generé se pierde. Es decir,
+ yo acá podría haber meído el lugar de por ver por ser que tiene mayor valorubrístico, pero
+ no estarlo generando no lo encontré por así decirlo y fui directamente por ver. Y después
+ los segundos que no contemplan retrocesos en la búsqueda es decir, me puedo quedar atrapado
+ en un máximo local o en un mínimo local dependiendo como yo haya definido mi problema,
+ se entiende, es decir, la función de audística tendría que ser monotonamente creciente y a
+ medida que yo voy pasando por los distintos hijos de mis nodos, deberé creciendo el valorubrístico.
+ Esto no siempre es suceder, entonces lo que uno tiene encacer es asegurarse que la función
+ se va a comportar esta forma y son o en ese caso utilizar escalada cible, sino pueden
+ encontrar una solución a menos que yo, en el también dentro de mi problema, puede contemplarlo
+ encontrar una solución sería medio raro, pero bueno, básicamente tengo que tener en cuenta cómo
+ sea comportar las funcioneurísticas. En el caso de dereche izquierda, vamos a ver que sucede si
+ yo arranco generando desde mi primer hijo de dereche izquierda es el nod de y al pasar un valor
+ jurístico mayor, lo vuelvo el noddo actual, lo genero el nodo hache y al tener un valorubrístico
+ menor, no puedo seguir siendo por ese nodo, por ese camino, así que genero mi próximo
+ hijo, el próximo hijo sale, él no tiene un valor jurístico mayor, entonces al quedarme ya
+ sin hijos directamente termina de recorra de algoritmos, no encuentro una solución, los
+ no visitados hayan a y de, pero más allá que yo generé a hache y él no los visité porque
+ no tenien un valorubrístico mayor y el valorismo no encuentro una solución, la trasera variante
+ de los métodos escaladas es la escalada de máxima pendiente, lo que hace escalada máxima pendiente
+ básicamente es unas que yo tengo un nodo actual genera todos los hijos, en este caso
+ estos tres hijos, y lo que hace es que ya con el mejor, en este caso al, al, al, yo haber
+ definido que cuanto mayor, el valorurístico, más decíbales el nodo, se queda con C, luego
+ de quedarse con C, que hace genera todos los hijos de C, que básicamente son uno solo que G y
+ bueno, al pasar un valorubrístico mayor pasa a G y se pasa a ser el nodo actual, pero fíjense
+ de la misma forma que el caso anterior no encuentro a solución, porque al generar los dos
+ nodos hijos de G, que son C, y que poseen 5 y 10, de valorubrístico, ni uno superaje
+ en valorubrístico, por lo que termina el valorubrismo, entonces básicamente para resumir los
+ métodos de escalada, si bien no requieren encontrar con mucha memoria al almacenamiento
+ por un lado, al tener mejor razón de dominio y al sacrificar esa actividad, no te pueden
+ asegurar en encontrar el mejor, digamos o el más optimo de los nodos solución, pero
+ por el otro lado, eso no es que sería un problema, eso es como todos los algoritmos con
+ información de dominio, pero lo que sí es que no contemplan retraciosos en la búsqueda,
+ y que pueden quedar atrapados en un máximo o mínimo local. Ahora vamos a ver el regorismo
+ el primero mejor que se puede considerar una mejora de los mentos de escalada, dado que
+ incorpora la capacidad de cambiar de camino cuando parece otro mejor, otro más prometedor,
+ utilizados listas de nodos, la lista de nodos abiertos, que es la lista de nodos que
+ yo voy generando, pero que todavía no recorrí que no elegí como nodos actores en ningún
+ momento, y la lista de nodos cerrados, que es la lista de nodos que yo generé y que por
+ lo cual yo fui recorriendo el árbol. Ahora, en cuanto a las principales características,
+ fíjese en cuanto a la comparación con escalada de máxima pendiente, es bastante similar
+ pero existen dos diferencias importantes, las primeras que en escalada al elegir un nodo
+ todos los demás abandonan y el primero mejor agrega en la lista de nodos abiertos, entonces
+ lo que permite implementar que es el retroceso, no necesita que la función orística
+ sea monotodamente creciente, entonces no puede ser estancado en un máximo o un mínimo local
+ y por el betrólado, primero mejor puede seleccionar el mejor estado disponible a un
+ cuándo su valor eurístico es menor al de nodo actual, recuerden que en un momento
+ determinado, en el ejemplo anterior, cuando iba de derecha izquierda, en nodo de no
+ podía elegir nodo a ele, por más de que sea igual, en valor eurístico porque no era
+ mayor, el momento de escalada siempre tiene que elegir un hijo con un valor eurístico
+ mayor, bueno, primero el mejor no tiene en cuenta el valor eurístico del nodo actual para
+ evaluar el valor de sus hijos, simplemente dice cuál es el mejor y lo elige, entonces básicamente
+ nunca va a quedar adrapado en un máximo o un mínimo local y pueden encontrar siempre
+ un nodo solución si es que existe, eso es algo que lo diferencia socialmente de los
+ métodos anteriores, bueno vamos a pasar a realizar el recorrido con el agurismo justamente,
+ el primero paso es arrancando el nodo a preguntar si ese nodo el senudo actual es solucion,
+ al no ser solucion lo que hago es "genero los hijos", "genero los hijos" y ordeno la lista en
+ dos abiertos que en este caso contiene solamente los hijos de "a" de mayor a menor valor
+ eurístico porque yo en este caso dije que era más deseable, básicamente cuando mayor
+ valorístico los ordeno de más deseable a menos deseable y cierro el nodo, todo el primero
+ de la lista de "no sabiertos", es decir, el "no más deseable" y lo hago un nodo actual y lo
+ que hago es lo mismo, digo "es solucion" no es solucion, o que hay entonces "genero" el
+ hijo de "se" que en este caso tiene uno solo que es "g" y lo que hago es ordeno de nuevo
+ en el lista de "no sabiertos", me queda de esta forma, esta bien, y si era un nodo se luego
+ cuánto vamos, "g" que es el nodo más deseable, "g" es solucion no, entonces "genero los hijos
+ de "g" que son "k" y "ele" y ordeno en el lista de "no" de "no sabiertos" me queda de esta
+ forma, en este caso yo lo que define es que en el caso de encontrar dos nodos con el mismo
+ valor de "urístico" vaya a tener mayor prioridad el que estaba desde antes, no pero
+ justamente porque yo define así mi problema, entonces "luego", bueno, si era "no" de "g"
+ y digo "tomo" el más deseable que es de "es solucion" no "genero" sus hijos que en este
+ caso son "h" y "ele" que ya lo genera, así que no lo genera nuevamente y "lordeno"
+ la lista de "no" de "sabiertos" de mayor menor de "seabilidad" en este caso de mayor
+ menor valor "urístico" si era "o" de "iserección a "ele" como el nodo actual "ele"
+ no es solucion, genera "su hijo" que es "m" y "o" de "no" de "no" de "sabiertos" y "lo si"
+ era, y luego "m" que es "no" actual "es solucion" sí, entonces simplemente "lo si"
+ de "ro" lo pongo dentro de "resianados" cerrados y concluye el algoritmo.
+ Como habíamos visto, esto siempre va a encontrar una solución si es que existe la solución
+ al permitir el retoceso, ahora vamos a ver una variante, un realidad, es justamente el
+ algoritmo aplicado de primero en mejor con una limitación de memoria, "bim search" es una
+ variante, que lo que hace es con ese número "n" o ese representado como "m" te dice
+ cuál es el tamaño máximo o la cantidad máxima de "no" que se van a alberra en la lista de
+ "no" de "sabiertos". En este caso, para esa lo bastante evidente, dijimos que "n" se
+ igual a "un" entonces solamente va a permitir un nodo en la lista de "no" de "sabiertos" a
+ la vez. Vamos a ver cómo se arrasó el vesto y si permite o no en todos los casos o en algunos
+ en otras soluciones. Bueno, en este caso genera los tres hijos de "a" para
+ volvemos a arrancar de la misma forma, no actualizar a los soluciones genera las tres
+ hijos de "a" orden la lista de "no" de "sabiertos", pero luego de eso se queda solamente
+ con uno, se queda con el mayor y si arra luego pasa por "se" genera su hijo y bueno la lista
+ de "no" "sabiertos" termina de "no" solamente "g" porque es el el que tiene mayor
+ van a lo jurístico. Luego que hace esto genera "sundos hijos" y dice bueno el "in" de
+ mayor van a lo jurístico es "e" entonces me quedo con "e" "le" en la nuestra solución genera
+ su hijo que "se" "me" y "me" de "sabiertos" bueno, "le" lo incomoda dentro de la lista de "no"
+ serados y conclusión. Ahora, esto se comporta si se dan cuenta de una forma similar al método
+ escalada de máxima pendiente, pero con una gran diferencia que no necesita evaluar
+ el estado de lijo, el estado jurístico del hijo comparado con el estado actual, es decir,
+ el valor de jurístico, por ejemplo, de "ele" era menor al valor jurístico de "g" y sin embargo
+ recorrió este camino, es decir, no se detuvo porque la función agurística era generada una
+ forma monotonamente creciente, es decir, permitio no estar estancado en un máximo local
+ en este caso. Esa es una de las principales diferencias cuando digamos entrevimos con el
+ igual a uno y escalada de máxima pendiente. Ahora vamos a pasar el agurismo de "astrisco" que es
+ un agurismo que también está incluyendo como pueden ver valores o información jurística en las
+ transiciones. Recuerden que siempre esta información nosotros la utilizamos para que para
+ penalizar esta bien, para calcular o de una forma entender o representar el costo de los caminos
+ asociados. En este caso, si yo estoy diciendo que cuando mayor vale el jurístico más
+ diceable, es el nodo, este número, estas transiciones que van a ser van a reestar, va a ser
+ valor jurístico. En este caso, al poseer todas las transiciones, el mismo valor, yo
+ puedo entender que lo que estoy penalizando es el tamaño del recorrido, es decir, que tan
+ largo se ha recorrido, cuanto mayor es el número de nodos porque hoy pasando digamos menos
+ decíables este camino, no necesariamente siempre tienen en el mismo valor, porque tan les
+ puede estar que llegar de un nodo a uno de sus hijos cueste más o menos que llegar a otro
+ de los nodos. En este caso, en particular, yo simplemente estoy considerando que tienen el mismo
+ valor jurístico. Entonces, se hace una lógica muy similar al primero mejor, pero lo que también
+ se hace es penalizar en el caso de las transiciones. Fíjense, arranco por el nodo actual, digo,
+ es solución, no, no es solución, ok, entonces, género los hijos de a y cálculo, la
+ función de jurística, que como se cálculo con el estado, el valor jurístico del Estado,
+ que en este caso sería 11, por ejemplo, en C, menos el costo de la transición, en este
+ caso me quedaría en 10, está bien, en este caso, C quedan 10 de queda 9 y ve que han
+ ocho, cierro a y que hago el hijo, el nodo más deseable, que en este caso al ser el mismo
+ valor jurístico las transiciones, voy a también elegirse, está bien, como en el caso del
+ primero mejor. Ahora, se solución, no, no es solución, entonces género el hijo que
+ quedaría como 12, menos 1, menos el costo de llegar desde mi nodo inicial hasta el nodo G.
+ Entonces, me quedaría con un valor de 10, está bien, igualmente, aunque el estudio restándolos
+ por haber tenido un valor jurístico de 12 sigue siendo el nodo más deseable, entonces lo
+ el hijo como, no, no, actual, al no es solución, género sus hijos, también, y ya con los cálculos,
+ básicamente acá, fíjense, por más de que él tenía 10 inicialmente de valor jurístico y de
+ también voy a elegir de porque me cuesta mucho menos llegar a de, entonces el hijo de como un
+ nodo actual, al no ser nodo solución, género sus hijos, y ordeno en la lista de, no, los aviótos
+ luego de hacer el cálculo de la función de, de la función de jurística, luego de eso, continuó
+ conmé, conmé larga y género al no ser solución género sus dos hijos y ya o los cálculos
+ de sus valores jurísticos, e con 13, porque sería 15, -1, -1 y f, con 1, porque sea 3, -1, -1, ordeno en el lista de
+ los aviótos, si oronó a ver y el hijo, el nodo más deseable que en este caso sería "E", "E", "Generapt",
+ sus hijos que son jota y son "E", que me quedaré con un valor, el jurístico final, no es
+ en 96 y de 5, si oron, y luego el hijo jota y eso no de solución, lo sierra y terminó el algoritmo,
+ termino el recorrido. Entonces, en este caso, además de tener en cuenta, los valores
+ jurísticos de cada nodo también se considera el costo asociado de las reglas aplicadas para
+ llegar al mismo, es una variante más, también se podría llegar a decirte el primero
+ mejor. Vamos con otro ejemplo en el cual los valores de las transiciones son diferentes en cada
+ una de las mismas, es decir, no necesariamente como lo habíamos dicho, tiene que tener el mismo
+ valor, en este caso que significa, significa que si yo quiero hacer una transición entre el
+ nodo y pasar el nodo, me va a costar 9, pero así quiero pasar el nodo, se me ha gastado
+ 11. Entonces, se realiza de la misma forma el cálculo. Lo que se hace es primero, se
+ se reacciona el nodo actual, al no ser solucion, se generan sus hijos y se realiza el
+ cálculo. De me quedo con 7, porque sería un valor jurístico inicial de 10, menos el costo
+ de la transición que estrés, me quedo 7, c queda con valor jurístico final de 5, porque sería 11
+ menos 6, y me queda con un valor de 0, porque sería 9 menos 9, y puede que han negativo,
+ incluso, sí, sí, de hecho, ahora en el paso siempre va a quedar negativo, es simplemente hacer
+ una cuenta de sumas y restas. Entonces, el valor mayor, el nuevo con mayor valorístico sería
+ de, está bien, lo dijo como un nodo actual, al no ser solucion, genero sus hijos, h con 5,
+ pero 5 menos 4 menos 3, me da menos 2, h queda con un valor jurístico final de menos 2,
+ y el con un valor jurístico final de 6, sí, arrando de y paso a, bueno, esta está mal,
+ es justamente a cada día así, el, está bien, disculpen, paso a seleccionar el, el,
+ al no ser un nodo solucion, lo que hago es generar sus hijos, esta es el genero m con un
+ valorístico de 90, y bueno, sí, arro, el, y luego de seleccionar m, a ser nodo solucion, a ser
+ nodo solucion, termino agolimos, arrando cerrando el nodo y compluyendo, contando la solucion.
+ Entonces, acá puedo en ver cómo, en el caso de asteriscos, estamos utilizando la información
+ del dominio para indicar distintos valores de costos ofucidos a las transiciones.
+ Vamos a hacer una comparación de los métodos ya a nivel general, primero ha sido información
+ de dominio, en cuanto a cómo se recorren y cuando finalizan, más que nada para tener un
+ valor general y todos los métodos, entonces lo que es primero en amplitud, básicamente
+ genera todos los estados y cómo recorren, recorren por nivel ya vemos visto, en cambio genera
+ así ni prueba y primero profundidad lo que hacen es recorrar por ramas y encontrar el primer
+ estado final, una vez que lo encuentran finalizan. Por el otro lado, viene de exceral,
+ acuerdense que tiene dos punteros y lo que hace es que al menos uno de ellos recorra por niveles,
+ lo que hace es encontrarlo de estado intermedio común entre ambos estados, el inicial y el final.
+ Realizando la misma comparativa en cuanto a métodos con información de dominio, todos
+ recorren por ramas por lado y todos encuentran en el primer estado final, que significa
+ que una vez que encuentran en la solución se detienen. Ahora vamos a comparar a los métodos
+ con información de dominio entre sí con las siguientes características, vamos a ver si tiene
+ un nuevo retroceso, si garantizan en contra del estado final, si tienen como es el criterio
+ de selección de el siguiente estado y algunas características especiales. Bueno, los métodos
+ descaladas ya se da simple, o máximo evidente, como dijimos, no tienen el retroceso y esa
+ se que puedan quedar atrapados a estancados en un estado intermedio, en un máximo local,
+ está bien en una mezceta. Entonces, no garantizan en contra del estado final, el sus criterios
+ de selecciones cuáles son el primer mejor hijo generado por el nuevo doctoral en el caso
+ de la escala de Asimble, ya sea de izquierda derecho, o de dicha izquierda, o en el caso
+ al máximo pendiente, el mejor de los hijos. Pero en ambos casos como dije pueden quedar atrapados
+ en si la función eurística, no es monotonamente creciente. Ahora, en cuanto a algunas características
+ especiales, fíjese que sólo se decisen a dijo que tengan eurística mayor a la que
+ su padre, es lo que estaba diciendo recién. En cuanto a primero el mejor, tiene el retroceso
+ sí, tiene el retroceso, y eso también provas que dado que no tengo ninguna limitación
+ en los tamaños de las listas que siempre puedan encontrar un estado final, básicamente,
+ el criterio de seleccion es el mejor no de abierto, al igual que los siguientes que son
+ casos especiales, se podría decir de primero el mejor tanto bien search como hasta risco,
+ y la carratriz especial de primero el mejor es que el no doce seleccionado puede no ser mejor
+ que el actual, acuerdanse esas la diferencia con escalada de máxima pendiente cuando
+ beam search es igual a uno, por ejemplo, no necesariamente estaba evaluando comparando contra
+ el estado actual. Luego, beam search, fíjense que primero mejor más una lista de no saber
+ que os limitada esta es la principal diferencia entre beam search y primero mejor, es decir,
+ tengo un número máximo y no dos permitidos en la lista de no dos aviertos, y hasta risco
+ es también una variante primero el mejor, pero que tiene un costo de las transiciones
+ asociadas, es decir, le estoy agregando información en las transiciones, es hacer una
+ comparativa de todos los métodos con información de dominio, acá tiene un poco de bibliografía
+ por un lado es la punte, tiene que resolver de ejercicio 5, que para la clase que viene lo vamos a
+ saber, lo vamos a ver, si tiene una duda, ya no se escriben en el campo virtual o en la misma clase
+ podemos resolverla y tenemos algunos links que después cuando les comparda la presentación les recomienda
+ que visiten en especie de segundo es bastante gráfico, es una idea interactiva que te permite
+ seleccionar en un camino, en un mapa determinado, un punto de inicio y un punto de fin,
+ y los recorridos distintos con las diferentes métodos para ver cómo van convergiendo a soluciones
+ eso fue todo y espero que les haya gustado, muchísimas gracias.

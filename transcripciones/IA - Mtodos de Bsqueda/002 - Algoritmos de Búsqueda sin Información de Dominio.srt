@@ -1,0 +1,572 @@
+1
+00:00:00,000 --> 00:00:04,760
+ Bienvenidos, mi nombre es María Florencia Pochocatánio, soy la jefa de Cateda de la
+
+2
+00:00:04,760 --> 00:00:09,880
+ Signatura Inteligencia Artificial, de la Universidad Technológica Nacional Facultar Regional
+
+3
+00:00:09,880 --> 00:00:11,000
+ Buenos Aires.
+
+4
+00:00:11,000 --> 00:00:17,400
+ A continuación vamos a desarrollar los métodos de búsqueda sin información de dominio.
+
+5
+00:00:17,400 --> 00:00:23,680
+ Estos métodos sin información del dominio corresponden a métodos que buscan encontrar el
+
+6
+00:00:23,680 --> 00:00:29,800
+ camino desde el Estado inicial hacia uno más estado solución, pero sin contar con información
+
+7
+00:00:29,800 --> 00:00:36,000
+ a priori sobre el mejor camino posible, se suele decir que estos métodos aplican una búsqueda
+
+8
+00:00:36,000 --> 00:00:38,160
+ ciega o búsqueda exhaustiva.
+
+9
+00:00:38,160 --> 00:00:43,520
+ Dentro de estos métodos se destacan primero en amplitud, primero en profundidad generación
+
+10
+00:00:43,520 --> 00:00:46,600
+ y prueba y bidireccional entre otros.
+
+11
+00:00:46,600 --> 00:00:53,320
+ Vamos a comenzar desarrollando el método de búsqueda, primero en amplitud.
+
+12
+00:00:53,320 --> 00:00:58,800
+ Este método comienza por el Estado inicial o no dos raíz, aplicando todas las reglas posibles,
+
+13
+00:00:58,800 --> 00:01:03,840
+ como resultado se obtienen un conjunto de nuevos no dos, sobre cada uno de estos nuevos
+
+14
+00:01:03,840 --> 00:01:08,800
+ no dos, se aplica cada una de las reglas posibles y así sucesivamente hasta que se genera
+
+15
+00:01:08,800 --> 00:01:10,320
+ todo el árbol.
+
+16
+00:01:10,320 --> 00:01:15,400
+ De esta manera se va construyendo un árbol de no dos por niveles, generando todos los
+
+17
+00:01:15,400 --> 00:01:21,040
+ dos y un nivel antes de pasar al siguiente, también desconocido como un método de búsqueda
+
+18
+00:01:21,040 --> 00:01:23,040
+ en amplitud.
+
+19
+00:01:23,040 --> 00:01:28,680
+ Que son las principales características de este algoritmo, que aplica el concepto de cola
+
+20
+00:01:28,680 --> 00:01:34,520
+ FIFO, First in First Adon, es decir que el primero que ingresa es el primero que sale,
+
+21
+00:01:34,520 --> 00:01:39,680
+ en el que todos los primeros no dos generados serán los primeros enceranalizados.
+
+22
+00:01:39,680 --> 00:01:45,280
+ Por otro lado, debido a que recorre todos los estados en forma de de nada, si el Estado
+
+23
+00:01:45,280 --> 00:01:49,440
+ es el espacio de búsqueda finito y existe una solución la va a encontrar.
+
+24
+00:01:49,440 --> 00:01:54,160
+ En el caso de que existan múltiples soluciones, en numerar a todas, por lo que permitían
+
+25
+00:01:54,160 --> 00:01:59,080
+ identificar a la mejor solución, también conocida como solución óptima.
+
+26
+00:01:59,080 --> 00:02:04,000
+ Por otro lado, es útil cuando existen pocos no dos finales y estos no dos son cercanos
+
+27
+00:02:04,000 --> 00:02:07,280
+ a la raíz para no ocupar tanta memoria.
+
+28
+00:02:07,280 --> 00:02:12,720
+ Y otra, la última de las características es que utiliza mucha memoria, ya que recorre todo el
+
+29
+00:02:12,720 --> 00:02:14,880
+ árbol de manera exhaustiva.
+
+30
+00:02:14,880 --> 00:02:21,480
+ Como ejemplo, vamos a ver un recorrido de primero en amplitud de izquierda derecha comenzando
+
+31
+00:02:21,480 --> 00:02:28,240
+ naturalmente por el Estado inicial o no dos a partir de ahí, vamos a pasar en primero
+
+32
+00:02:28,240 --> 00:02:35,600
+ en amplitud al no dobé, después al no doce y al no dode dando por finalizado la recorrida
+
+33
+00:02:35,600 --> 00:02:36,960
+ de un nivel.
+
+34
+00:02:36,960 --> 00:02:41,760
+ A partir de allí comenzamos nuevamente de izquierda derecha donde vamos a pasar por el
+
+35
+00:02:41,760 --> 00:02:49,640
+ no doE, a continuación por el no doE, pasando por el J y el H, interviniendo antes con
+
+36
+00:02:49,640 --> 00:02:54,960
+ el no doE y dando por finalizada el siguiente nivel.
+
+37
+00:02:54,960 --> 00:03:00,680
+ A continuación, pasamos por el no doE, el no dojota que es no dos solución, pero habíamos
+
+38
+00:03:00,680 --> 00:03:07,760
+ visto que este algoritmo sigue recorriendo el árbol, luego el no doCá, el no doE, y el
+
+39
+00:03:07,760 --> 00:03:12,880
+ no doE me para dar por finalizado el nivel, a continuación se pasa el próximo nivel
+
+40
+00:03:12,880 --> 00:03:18,800
+ por lo tanto se vuelve a pasar por el no doE, y a cada más por finalizado el recorrido
+
+41
+00:03:18,800 --> 00:03:23,320
+ de primero en el amplitud de izquierda derecha.
+
+42
+00:03:23,320 --> 00:03:28,160
+ Ahora vamos a ver este mismo algoritmo, primero en amplitud, pero haciendo un recorrido
+
+43
+00:03:28,160 --> 00:03:33,440
+ de derecha izquierda, comenzamos nuevamente por el no doE, ahora comenzamos por la derecha
+
+44
+00:03:33,440 --> 00:03:40,840
+ o sea que tomamos el no doD, el C y el B, dando por finalizado ese nivel, pasamos
+
+45
+00:03:40,840 --> 00:03:51,240
+ al no doH, al no doE, al G, al F y al E, y damos por finalizado ese nivel, y a continuación
+
+46
+00:03:51,240 --> 00:03:56,840
+ vemos el nivel siguiente, que se ve desplazado el no doE, pero pertenece al nivel anterior,
+
+47
+00:03:56,840 --> 00:04:05,280
+ el no doE me, el no doEle, el C, el Jota y el I, y nuevamente el no doE me, aquí daríamos
+
+48
+00:04:05,280 --> 00:04:10,720
+ por finalizado el recorrido de primero en amplitud de derecha izquierda, ahora vamos a ver
+
+49
+00:04:10,720 --> 00:04:15,160
+ el algoritmo, primero en profundidad, al contrario del método anterior o el algoritmo
+
+50
+00:04:15,160 --> 00:04:20,080
+ que era en amplitud, donde el exploración se realizaba por niveles, esto me todo analiza
+
+51
+00:04:20,080 --> 00:04:25,120
+ una rama por vez, por lo que también es conocido como busqueden profundidad, porque
+
+52
+00:04:25,120 --> 00:04:32,000
+ la no do se generan todos sus sucesores hasta que siga un no doE, o un no doS indescendientes,
+
+53
+00:04:32,000 --> 00:04:40,000
+ se encuentra un no doEle alcanzado, y que este no conduzca la solución, o la ruta, el camino,
+
+54
+00:04:40,000 --> 00:04:47,680
+ se puede alargar más de lo que este especificado produciendo una vuelta hacia atrás, otra diferencia
+
+55
+00:04:47,680 --> 00:04:52,360
+ con el algoritmo anterior, es que en este caso el proceso termina cuando se encuentra
+
+56
+00:04:52,360 --> 00:04:58,760
+ una un estado solución, principales características que tiene este algoritmo, alplica del concepto
+
+57
+00:04:58,760 --> 00:05:05,320
+ de Pila Lifo, la Stingford Stout, es decir, que el último quincrés es el primero que sale,
+
+58
+00:05:05,320 --> 00:05:09,520
+ en el que el último no doEle generado, será el primero en ser analizado, por otro lado
+
+59
+00:05:09,520 --> 00:05:16,480
+ no requiere mucha memoria debido a que se expande de una rama por vez, es muy útil cuando
+
+60
+00:05:16,480 --> 00:05:24,080
+ los no doS solución son muchos y están alejados del no doEle, y no recorre todo el espacio
+
+61
+00:05:24,080 --> 00:05:29,020
+ de busqueda por lo cual no garantiza encontrar la solución óptima, porque no se existen
+
+62
+00:05:29,020 --> 00:05:35,200
+ otras soluciones mejores, y debería consumir menos memoria que primero en amplito.
+
+63
+00:05:35,200 --> 00:05:40,320
+ A continuación, vamos a ver un ejemplo, un recorrido de la algoritmo primero en profundidad
+
+64
+00:05:40,320 --> 00:05:46,280
+ de izquierda de leche, el recorrido pasaría ser el siguiente, pasamos por el no doEle, ya
+
+65
+00:05:46,280 --> 00:05:51,240
+ estamos recorriendo por la izquierda, vamos a bajar por el árbol hasta el final, vamos a pasar
+
+66
+00:05:51,240 --> 00:05:58,360
+ por el no doEle y el I, que es una hoja y no tiene descendientes, tampoco es solución, entonces
+
+67
+00:05:58,360 --> 00:06:04,120
+ debo volver al no doE, que, como sigue teniendo descendientes, debo bajar al no doJota,
+
+68
+00:06:04,120 --> 00:06:10,400
+ el no doJote solución por lo tanto el algoritmo da por finalizado su recorrido.
+
+69
+00:06:10,400 --> 00:06:15,000
+ Ahora vamos a ver que hubiese sucedido con el algoritmo primero en profundidad, subísemos
+
+70
+00:06:15,000 --> 00:06:20,460
+ hecho un recorrido de derecha izquierda, en este caso comenzamos con el no el estado inicial
+
+71
+00:06:20,460 --> 00:06:27,120
+ a y vamos a bajar por el no doE, que es el que se encuentra más a la derecha, vamos a
+
+72
+00:06:27,120 --> 00:06:31,460
+ seguir con su descendiente de la derecha que es el no doH, que es un no doJote, que no tiene
+
+73
+00:06:31,460 --> 00:06:36,860
+ descendiente, por lo tanto debemos volver al no doE y vamos a seguir bajando, ya que
+
+74
+00:06:36,860 --> 00:06:41,680
+ si tiene descendientes y vamos a ir al no doEle, el no doEle tiene un único descendiente
+
+75
+00:06:41,680 --> 00:06:49,080
+ que es el no doEle, que es un no doSolución y por lo tanto finalizaríamos ahí el recorrido.
+
+76
+00:06:49,080 --> 00:06:54,280
+ Con esto vamos por finalizado el método los algoritmos de búsqueda en profundidad, y vamos
+
+77
+00:06:54,280 --> 00:06:59,500
+ a ver el método de búsqueda de generación y prueba. Este método se puede considerar un método
+
+78
+00:06:59,500 --> 00:07:05,000
+ y brido o una combinación, porque aplica principios de los dos descriptos anteriormente,
+
+79
+00:07:05,000 --> 00:07:12,240
+ la plito y profundidad. Por un lado utilizo un procedimiento igual al de primero en profundidad,
+
+80
+00:07:12,240 --> 00:07:17,080
+ donde se va al recorriendo el árbol de una rama por vez. Sin embargo, una vez concluida
+
+81
+00:07:17,080 --> 00:07:22,600
+ a una rama, repita el proceso generando nuevas ramas hasta que se recorre todo el árbol
+
+82
+00:07:22,600 --> 00:07:28,560
+ como ocurre el recorrido por ámbito, cuáles son las características de este algoritmo,
+
+83
+00:07:28,560 --> 00:07:34,320
+ esa de ecuado y es útil para problemas sencillos, recorre todos los nodos, permiten
+
+84
+00:07:34,320 --> 00:07:40,320
+ encontrar todos los estados soluciones y encontrar la mejor solución, consume más memoria
+
+85
+00:07:40,320 --> 00:07:47,360
+ y permiten encontrar todos los estados soluciones al problema y por lo tanto puede consumir
+
+86
+00:07:47,360 --> 00:07:53,160
+ bastante más tiempo. Vamos a ver ahora un funcionamiento de generación y prueba.
+
+87
+00:07:53,160 --> 00:07:57,720
+ Vamos a ver un recorrido izquierda de hecha. Entonces vamos a tener como estado inicial
+
+88
+00:07:57,720 --> 00:08:04,040
+ del nodo a, vamos a pasar al nodo B, al E y Alí, porque estamos recorriendo en profundidad,
+
+89
+00:08:04,040 --> 00:08:08,960
+ no encontramos ninguna solución. Entonces lo que habíamos visto era que seguía generando
+
+90
+00:08:08,960 --> 00:08:13,840
+ todo lo que quedaba. Entonces vuelve al estado anterior E, que como tiene un descendiente
+
+91
+00:08:13,840 --> 00:08:19,280
+ pasa a ser al nodo Jota. Nosotros en profundidad habíamos finalizado a nuestra búsqueda,
+
+92
+00:08:19,280 --> 00:08:25,880
+ sin embargo, ahora seguimos recorriendo el árbol, por lo cual volvemos al E y volvemos al B,
+
+93
+00:08:25,880 --> 00:08:31,240
+ que tiene descendientes, quien es el descendiente el E, tampoco es solución, pero vamos a seguir
+
+94
+00:08:31,240 --> 00:08:36,200
+ recorriendo el árbol, por lo que vamos a subir al nodo B y al nodo A para bajar por los
+
+95
+00:08:36,200 --> 00:08:42,240
+ otros descendientes que no recorrimos, donde está el nodo C, que tiene un único descendiente
+
+96
+00:08:42,240 --> 00:08:48,960
+ que es J, y de J vamos a ir al nodo C, del nodo C, como no tiene más descendientes, subimos a
+
+97
+00:08:48,960 --> 00:08:56,600
+ su padre, que es el G, y va a seguir con LL, que es el otro descendiente y con LM, que es solución.
+
+98
+00:08:56,600 --> 00:09:03,080
+ Como vamos a terminar de recorrere el árbol, subimos al L, al G y al C para volver a
+
+99
+00:09:03,080 --> 00:09:11,560
+ la y ahora ir por la ruta del D, que nos permite ir al L y al M y subir nuevamente hacia
+
+100
+00:09:11,560 --> 00:09:17,280
+ el nodo D y tomar como último descendiente al nodo A, esto es lo que respecto a generación
+
+101
+00:09:17,280 --> 00:09:23,240
+ y prueba de izquierda de leche, ahora vamos a ver que mismo algoritmo recorriendo lo
+
+102
+00:09:23,240 --> 00:09:31,640
+ de derecha izquierda, para eso comenzamos nuevamente por el estado A, y entonces el recorrido
+
+103
+00:09:31,640 --> 00:09:37,840
+ va a ser, del nodo A, vamos de derecha izquierda con lo cual, vamos al nodo D, seguimos
+
+104
+00:09:37,840 --> 00:09:43,640
+ por derecha al nodo H, debemos subir nuevamente al nodo D, que tiene descendientes con
+
+105
+00:09:43,640 --> 00:09:50,360
+ lo cual seguimos al nodo L y tiene un único descendiente que se le me, solución, pero seguimos
+
+106
+00:09:50,360 --> 00:09:58,100
+ recorriendo, para eso como ya estamos en una doja, volvemos a subir al nodo L al nodo D y
+
+107
+00:09:58,100 --> 00:10:04,200
+ tenemos que subir al nodo A, ahora vamos a seguir por los otras, las otras ramas no analizadas
+
+108
+00:10:04,200 --> 00:10:15,760
+ vamos a empezar por la ramada de la derecha, que es la ramada C, para pasar por G, por L y M,
+
+109
+00:10:15,760 --> 00:10:22,320
+ siendo M no doja, volviendo a subir, hasta encontrar alguna rama que no haya sido analizada
+
+110
+00:10:22,320 --> 00:10:29,000
+ con lo cual subimos al nodo L al nodo G y bajamos al nodo C que no había sido esa
+
+111
+00:10:29,000 --> 00:10:35,080
+ rama no había sido recorrido, nuevamente volvemos a subir al nodo C, como no tiene ningún
+
+112
+00:10:35,080 --> 00:10:41,440
+ otra descendiente para analizar, tenemos que subir al C, sucede lo mismo y debemos ir a
+
+113
+00:10:41,440 --> 00:10:48,340
+ la, ahora vamos a analizar la última rama con lo cual bajamos por el nodo B y bajamos por el
+
+114
+00:10:48,340 --> 00:10:54,900
+ nodo F porque analizamos por derecha, subimos al nodo B y analizamos la última ramada de este
+
+115
+00:10:54,900 --> 00:11:05,040
+ nivel, que es la del nodo E y el nodo Jota debiendo subir ya que es nodo Oja, subiendo al nodo E
+
+116
+00:11:05,040 --> 00:11:10,500
+ y bajando al nodo I, de esta manera, vamos por finalizada al recorrido de generación
+
+117
+00:11:10,500 --> 00:11:16,260
+ y prueba de derecha y izquierda, finalizado al método de generación y prueba, vamos a ver el método
+
+118
+00:11:16,260 --> 00:11:22,260
+ de búsqueda bidireccional, el método de búsqueda bidireccional debe conocer tanto el
+
+119
+00:11:22,260 --> 00:11:28,020
+ estado inicial como el estado final, a fin de poder realizar dos búsquedas en simultáneo,
+
+120
+00:11:28,020 --> 00:11:33,340
+ una partiendo del estado inicial para hallar el estado final y otra partiendo del estado
+
+121
+00:11:33,340 --> 00:11:39,820
+ final hasta llegar al estado inicial, tiene dos búsquedas simultáneas, topoto mi voto map,
+
+122
+00:11:39,820 --> 00:11:45,280
+ si bien cada búsqueda puede utilizar un método distinta es necesario que por lo menos una
+
+123
+00:11:45,280 --> 00:11:50,500
+ de ellas utilizo una búsqueda en amplitud, de existir un camino solución en algún momento,
+
+124
+00:11:50,500 --> 00:11:55,580
+ que el gas búsquedas pasaran por un mismo estado de del cual se podrá recrear el camino.
+
+125
+00:11:55,580 --> 00:12:00,760
+ Finalmente a realizar dos búsquedas en forma conjunta, hasta un nodo intermedio del árbol,
+
+126
+00:12:00,760 --> 00:12:05,680
+ la complejidad es igual a dos búsquedas unidireccionales para un árbol con la mitad de nodos
+
+127
+00:12:05,680 --> 00:12:12,000
+ del árbol analizado. A continuación vamos a ver el recorrido del método bidireccional
+
+128
+00:12:12,000 --> 00:12:18,420
+ de izquierda derecha, partimos del nodo A y del nodo Jota, que es el nodo uno de los nodos
+
+129
+00:12:18,420 --> 00:12:24,400
+ solución. Entonces, fíjense que por A vamos a hacer una análisis por profundidad y de Jota
+
+130
+00:12:24,400 --> 00:12:29,400
+ vamos a partir para hacer una búsqueda por ram. Entonces, lo que hacemos primero
+
+131
+00:12:29,400 --> 00:12:36,940
+ a la analizar en profundidad vamos a parar de A a B y por ramas del Jota nos vamos
+
+132
+00:12:36,940 --> 00:12:46,480
+ irá leer. Paso siguiente, el E va a pasar al nodo B y el B va a pasar al nodo B. Entonces,
+
+133
+00:12:46,480 --> 00:12:53,240
+ ya nos encontramos con lo cual el resultado de esta búsqueda bidireccional va a ser el nodo A,
+
+134
+00:12:53,240 --> 00:13:02,200
+ el nodo B, el nodo E y el nodo Jota. Vamos ahora a ser el recorrido del algoritmo bidireccional
+
+135
+00:13:02,200 --> 00:13:08,080
+ pero empezando de derecha izquierda. Para lo cual vamos a comenzar por el nodo A, haciendo
+
+136
+00:13:08,080 --> 00:13:13,840
+ un barrido en por profundidad y por ramas vamos a partir del nodo M, que era el otro nodo
+
+137
+00:13:13,840 --> 00:13:22,580
+ solución. Vamos a analizar el nodo A y vamos a pasar ya que es de derecha izquierda por
+
+138
+00:13:22,580 --> 00:13:30,820
+ el nodo D y por ramas vamos a ir del M al E. Finalmente del nodo D ya que vamos por profundidad
+
+139
+00:13:30,820 --> 00:13:37,780
+ deberíamos caer en el nodo L mientras que el nodo L va a caer al nodo D ya que va por ramas.
+
+140
+00:13:37,780 --> 00:13:47,600
+ Con lo cual el resultado del recorrido sería el nodo A, el nodo D, el nodo L y el nodo M.
+
+141
+00:13:47,600 --> 00:13:53,000
+ Con esto damos por finalizado la descripción de los métodos de búsqueda sin información
+
+142
+00:13:53,000 --> 00:13:59,480
+ de dominio. Les recomendamos suscribirse a nuestro canal de YouTube para poder tener información
+
+143
+00:13:59,480 --> 00:14:03,640
+ sobre todo el material que vamos subiendo. Desde ya muchísimas gracias y hasta pronto.
+

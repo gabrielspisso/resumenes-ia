@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:09,400
+ Hola, mi nombre es Pablo Pital y yo les voy a presentar las últimas tres fases del proceso de implementación de sistemas inteligentes.
+
+2
+00:00:09,400 --> 00:00:15,000
+ En este video vamos a hablar sobre la fase de selección de la tecnología.
+
+3
+00:00:15,000 --> 00:00:28,700
+ Como bien lo indicas un hombre, en esta fase se va a determinar cuál es la tecnología de la inteligencia artificial que deberíamos aplicar para la construcción de cada uno de los modelos
+
+4
+00:00:28,700 --> 00:00:42,300
+ que formaran parte del sistema inteligente que al fin de cuentas resolverá el problema de la organización donde estamos trabajando.
+
+5
+00:00:42,300 --> 00:00:54,500
+ Entonces para llevar a cabo esta selección de la tecnología vamos a considerar información que fue definida anteriormente en las fases anteriores.
+
+6
+00:00:54,500 --> 00:01:02,100
+ Por un lado vamos a tener la lista de modulos que forman parte nuestros sistemas inteligentes,
+
+7
+00:01:02,100 --> 00:01:08,100
+ cuál fue establecido durante la fase de definición del problema.
+
+8
+00:01:08,100 --> 00:01:22,500
+ Y por otro lado también todo en la alcance del proyecto es decir, todos los objetivos criterios de éxitos y riesgos que hay que considerar para llevar a cabo el proyecto de implementación.
+
+9
+00:01:22,500 --> 00:01:39,100
+ Por otro lado también vamos a tener los resultados de la fase anteriores es decir que vamos a tener identificados un conjunto de datos disponibles que se pueden emplear para la construcción del sistema inteligente o no.
+
+10
+00:01:39,100 --> 00:01:49,300
+ Porque puede ser que los datos que tengamos no sean suficiente o no sean representativos para la construcción del sistema inteligente.
+
+11
+00:01:49,300 --> 00:01:55,900
+ Eso también lo definimos o lo identificamos en la fase anteriores.
+
+12
+00:01:55,900 --> 00:02:06,100
+ A partir de toda esta información entonces lo que vamos a buscar es que por cada modulo del sistema inteligente que fue establecido,
+
+13
+00:02:06,100 --> 00:02:15,700
+ vamos a determinar cuál es la tecnología más adecuada y posible para ser empleado en su construcción.
+
+14
+00:02:15,700 --> 00:02:29,700
+ Para ello nosotros ya habíamos visto la cursada al principio que la inteligencia artificial tiene varias familias de tecnologías o de arquitecturas que se pueden utilizar.
+
+15
+00:02:29,700 --> 00:02:37,100
+ En este caso vamos a hablar de las dos familias más grandes, las que incluyen a la inteligencia artificial tradicional,
+
+16
+00:02:37,100 --> 00:02:43,900
+ que en inglés muchas veces se lo denomina Udolfachion Artificial Intelligence,
+
+17
+00:02:43,900 --> 00:02:55,100
+ que corresponden a todos los sistemas inteligentes que poseen una base de conocimiento y por lo tanto también poseen un motor de inferencias.
+
+18
+00:02:55,100 --> 00:03:06,300
+ En este caso podemos incluir entonces a los sistemas basados en conocimientos, los cuales utilizan sólo conocimientos públicos,
+
+19
+00:03:06,300 --> 00:03:19,900
+ y los sistemas expertos tradicionales que además de utilizar conocimiento público también aplican reglas obtenidas de la educación a expertos humanos.
+
+20
+00:03:19,900 --> 00:03:28,900
+ Por otro lado en la otra gran familia de algoritmos vamos a tener a los sistemas que aplican inteligencia computacional,
+
+21
+00:03:28,900 --> 00:03:37,500
+ es decir, los que tienen una inspiración biológica, tales el caso de los algoritmos genéticos y las redes neuronales artificiales,
+
+22
+00:03:37,500 --> 00:03:47,500
+ y por otro lado los algoritmos que aprenden solos a partir de ejemplos, o sea, los algoritmos de aprendizaje automático o machine learning.
+
+23
+00:03:47,500 --> 00:03:54,100
+ Ahí podríamos incluir a las redes neuronales artificiales y a los algoritmos de inducción.
+
+24
+00:03:54,100 --> 00:04:04,900
+ Entonces en esta fase del proceso lo que vamos a hacer es ver primero, qué tipo de tecnología es más viable,
+
+25
+00:04:04,900 --> 00:04:09,300
+ es más posible de ser aplicada para la construcción de cada uno de los modulos.
+
+26
+00:04:09,300 --> 00:04:23,300
+ Y por otro lado ver cuál tecnología en particular tendríamos que usar dentro de ese tipo de tecnología para resolver el problema mediante la construcción del modulo correspondiente.
+
+27
+00:04:23,300 --> 00:04:32,500
+ Entonces para llevar a cabo la, para el selección de la tecnología, por cada uno de los modulos del sistema inteligente deberíamos evaluar.
+
+28
+00:04:32,500 --> 00:04:42,500
+ Si yo tengo datos disponibles o no, si tengo reglas disponibles o no, y si hay heurísticas o no.
+
+29
+00:04:42,500 --> 00:04:51,500
+ Bueno, si yo tengo datos disponibles, esos datos son completos o lo cual está muy relacionado.
+
+30
+00:04:51,500 --> 00:04:56,900
+ Entonces son suficientemente representativos del problema que queremos resolver.
+
+31
+00:04:56,900 --> 00:05:05,100
+ Nosotros queremos que la construcción del sistema inteligente se haga de manera automática, aprendiendo a partir de esos datos.
+
+32
+00:05:05,100 --> 00:05:13,100
+ Entonces, el tipo de tecnología candidata que se deberíamos aplicar es machine learning, aprendizaje automático.
+
+33
+00:05:13,100 --> 00:05:20,300
+ En cambio, si yo no tengo datos, ahí no puedo lograr que mi algoritmo de machine learning aprenda.
+
+34
+00:05:20,300 --> 00:05:32,500
+ Si yo tengo reglas representativas del comportamiento que queremos que nuestro sistema tenga, lo que puedo hacer es a partir de las reglas generar datos.
+
+35
+00:05:32,500 --> 00:05:42,500
+ Con esos datos, si puedo aplicar machine learning, entonces si no hay datos disponibles, pero hay reglas representativas, una opción también es usar machine learning.
+
+36
+00:05:42,500 --> 00:05:58,900
+ Si no, lo más directo podría usar un sistema con base de conocimientos, donde dentro de la base de conocimientos vamos a poner de manera explicita cada una de las reglas que fueron extraídas de fontes públicas o educidas de fontes privadas.
+
+37
+00:05:58,900 --> 00:06:09,300
+ Entonces, ahí estaríamos aplicando inteligencia artificial tradicional, con un sistema basado en conocimiento, o un sistema experto tradicional.
+
+38
+00:06:09,300 --> 00:06:18,700
+ Por otro lado, con estas reglas también yo puedo construir algún algoritmo de inteligencia computacional, por ejemplo.
+
+39
+00:06:18,700 --> 00:06:27,300
+ Yo a partir de estas reglas, las puedo implementar dentro de la función de aptitud de un algoritmo genético para poder evaluar posibles soluciones.
+
+40
+00:06:27,300 --> 00:06:33,700
+ Entonces, si yo tengo reglas representativas, puedo usar cualquiera de los tres tipos de tecnologías.
+
+41
+00:06:33,700 --> 00:06:46,700
+ Bien, pero ¿qué pasa si no hay datos ni hay reglas? En ese caso, tal vez tenga definido algún tipo de hurística, algún conocimiento que megui en el proceso de búsqueda de la solución.
+
+42
+00:06:46,700 --> 00:06:56,500
+ Entonces, con esta hurística, yo podría desarrollar también alguna algoritmo genético, algun otro algoritmo de inteligencia computacional para resolver el problema.
+
+43
+00:06:56,500 --> 00:07:05,500
+ Bueno, por último, ¿qué pasa si no hay datos, no hay reglas y no hay heurísticas? Bueno, ahí no podríamos construir nuestro sistema inteligencia.
+
+44
+00:07:05,500 --> 00:07:15,500
+ Porque, no hicimos bien el trabajo durante la fase de definición del problema, no tenemos conocimientos necesarios para llevar a cabo la construcción.
+
+45
+00:07:15,500 --> 00:07:23,900
+ Entonces, ahí ya podríamos decir que la construcción en este proyecto tiene que ser cancelada.
+
+46
+00:07:23,900 --> 00:07:31,100
+ Obviamente que no vamos a hacer eso, lo que deberíamos hacer es en este caso si no dasmos cuenta que no tenemos ni datos ni reglas ni hurísticas.
+
+47
+00:07:31,100 --> 00:07:37,900
+ Es volver a la fase inicial para tratar de identificar alguna de estas tres cosas.
+
+48
+00:07:37,900 --> 00:07:48,300
+ Una vez que tenemos parece seleccionado el tipo de tecnología, lo que tendríamos que ver es cuál es la tarea que se quiere realizar con el modulo del sistema inteligencia.
+
+49
+00:07:48,300 --> 00:08:02,300
+ Entonces, por cada modulo, vamos a dar quitaria o acción tiene que realizar. Si es una tarea de optimización, donde nosotros queremos intentar obtener la mejor solución a un problema.
+
+50
+00:08:02,300 --> 00:08:14,300
+ Eso puede ser, por ejemplo, nosotros tenemos una función para maximizar y queremos encontrar la combinación de valores que hace que esa función devuelva el valor más grande.
+
+51
+00:08:14,300 --> 00:08:31,300
+ O tenemos un problema de búsqueda donde queremos encontrar el mejor camino, minimizando un costo. Bueno, en ambos casos hay lo que nos comiene aplicar son algoritmos genéticos, que es la tecnología más adecuada de las que nosotros vimos obviamente.
+
+52
+00:08:31,300 --> 00:08:47,300
+ Si en cambio, yo no quiero realizar optimización, pero quiero hacer regresión. Es decir, yo tengo ciertos valores y quieren encontrar una función matemática que me permite representar el comportamiento de esos valores de esos puntos.
+
+53
+00:08:47,300 --> 00:09:03,300
+ Hay podría también usar un algoritmo genético donde el cromozoma me va a representar la función matemática, pero también puedo usar algoritmos de regresión que son algoritmos de aprendizaje supervisados propios de la aprendizaje automático.
+
+54
+00:09:03,300 --> 00:09:19,300
+ Por otro lado, si yo quiero resolver problemas donde necesito ver la relación o la asociación entre conjuntos de valores que tienen las distintos atributos, ahí podría usar algoritmos de inducción no supervisados.
+
+55
+00:09:19,300 --> 00:09:37,300
+ Esos algoritmos son similares a los que vimos anteriormente en la acursada, pero que no tienen definida ninguna atributo objetivo. Ahí se trata de encontrar combinaciones de valores que permiten determinar a otros atributos que también son detrás.
+
+56
+00:09:37,300 --> 00:09:56,300
+ En cambio, si yo lo que quiero hacer es clasificar, es decir, tratar de encontrar cómo se pueden definir con algún criterio pero definido cómo se debería comportar ciertos valores o cómo yo debería tomar esos valores.
+
+57
+00:09:56,300 --> 00:10:10,300
+ Por ejemplo, yo tengo clientes dentro de mi empresa y quiero definir si el cliente me conviene venderle a crédito o no, o sea, si el cliente es bueno porque me va a pagar o no es bueno porque no me va a pagar.
+
+58
+00:10:10,300 --> 00:10:23,300
+ Ahí tengo varias alternativas. Por un lado, podría usar algoritmos de inducción supervisados como el ID3, c4.5 de la familia TDIT que nosotros vimos.
+
+59
+00:10:23,300 --> 00:10:47,300
+ También podría usar errores neuronales artificiales que también usan un aprendizaje supervisado como, por ejemplo, la errore neuronal multiperceptrom back propagation o puede usar sistemas basados en reglas de la inteligencia artificial tradicional como los sistemas basados en conocimientos y los sistemas expertos tradicionales.
+
+60
+00:10:47,300 --> 00:11:08,300
+ Si yo lo que busco en cambio es resolver un problema de predicción para ver qué va a pasar a futuro, ahí también puedo usar sistemas basados en conocimientos sistemas expertos tradicionales si tengo reglas o también un arrand neuronal con aprendizaje supervisado como, por ejemplo, la arrand neuronal multiperceptrom back propagation.
+
+61
+00:11:08,300 --> 00:11:26,300
+ Ahí en vez de definirme que me devuelvo una clase me va a devolver un valor que es el valor que yo quiero predecir. Por último, para tareas de clasterin y detección de anomalías se pueden aplicar también redes neuronales artificiales pero con una aprendizaje no supervisado.
+
+62
+00:11:26,300 --> 00:11:45,300
+ Ahí aparece un arrand que se denomina rád de cojone, son que permite a encontrar combinaciones de valores que tengan un comportamiento similar entre sí, es decir que nos permite nacer segmentación o clasterin de datos y esto también lo puede usar para detectar anomalías.
+
+63
+00:11:45,300 --> 00:12:06,300
+ Bueno, como obviamente nosotros en esta cruzada no vimos todos los algoritmos que hay disponibles dentro de la inteligencia artificial, hay muchos huecos dentro de nuestra tabla y ahí seguramente algunos conocen alguna algoritmos que dice "Ah, pero esto también lo puede usar para clasificación para clasterin o regresión".
+
+64
+00:12:06,300 --> 00:12:29,300
+ Sí, eso es valido, pero nosotros preferimos poner los algoritmos más conocidos que se pueden emplear y sobre todos los que nosotros ya vimos. Bueno, entonces de esta manera vamos a terminar con la explicación de esta fase y en el próximo vídeo vamos a hablar sobre la fase de construcción del modelo.
+

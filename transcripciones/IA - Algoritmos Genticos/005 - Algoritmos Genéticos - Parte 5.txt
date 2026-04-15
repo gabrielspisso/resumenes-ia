@@ -1,0 +1,122 @@
+ Hola, soy María Florencia Pollo y vamos a continuar hablando sobre los distintas operadores
+ de los salvo al mismo genéticos. El último de ese acuerdo en el Grupo mínimo que siempre
+ pedimos que pedimos que como mínimo hablente selección cruzamiento y mutación nos queda
+ hablar de mutación. La mutación es el operador que se da después del cruzamiento donde
+ se genera la población cruzada y lo que hace la mutación en general, conceptualmente
+ hablando es cuando unable de mutación oblente alterar a alguna alteración cromosómica en
+ los individuos a partir de agentes exógenos o sea gente que vienen de afuera a lo que no
+ tiene que ver con el ambiente o sea con el problema que se está tratando ni con el individuo
+ en particular. En el caso de la algo desde el punto de vista de los algoritmos uno habla de
+ mutación cuando cambia una posición del cromosómica del gente un individuo a veces no siempre.
+ ¿Qué quiere decir? Que siempre que ustedes pasen en un ciclo, la mutación, la mutación
+ se va a activar. El operador se activa, está pero no necesariamente se ejecuta. Entonces
+ la activación de lo operador de mutación imprita. A partir de la población cruzada
+ preguntarse si uno la va a ejecutar, que es distinto de activarlo, si no la va a ejecutar,
+ la población mutada es exactamente igual a la población cruzada, no se ejecuta la
+ mutación y sale la población mutada, caso contrario, si se decide ejecutar la mutación,
+ lo que se hace es aplicar una función de de mutar, que va a ser alterar un gen de un
+ individuo, después vemos cómo me va a quedar una población nueva, que va a ser distinta
+ la población cruzada y a partir de ahí obtengo la población mutada. Está entonces para dejar
+ en claro, cada vez que ustedes pasan por un ciclo el operador se activa, pero no necesariamente
+ se ejecuta, se ejecuta en algunos casos. Vamos a ver un ejemplo, como se hace y como sería
+ esta modificación, o no, bien tenemos acá una población compuesta por siete individuos desde
+ uno, desde un hasta y siete, cada uno de los individuos tiene 10 posiciones. Entonces ustedes lo
+ que teníamos que hacer una vez lo que teníamos a hacer al momento de activar la mutación,
+ es ver si la vamos a ejecutar, entonces acuerda que estaba el ronbo, el ronbo para preguntar si
+ se va ejecutando, como simplemente eso, definiendo una probabilidad de mutación y proponiendo
+ que, si el randon que van a tirar cada vez que pasa por el ciclo para que que activa digamos
+ la mutación, si el randon que tira, es mayor que la probabilidad no la va a ejecutar,
+ mientras que sí es menor igual si lo va a ejecutar. Entonces vamos a pensar, vamos a ver
+ estas dos alternativas. La primera alternativa que sería que el randon, es mayor que
+ la probabilidad de mutación significada que no mutaba, con lo cual la población mutada
+ que daba igual que la población cruzada, les muestro como habíamos visto, se acuerdan,
+ si decía que no, la población cruzada era igual a la población mutada, en el otro caso,
+ pero en este sí, entonces lo que va a quedar, fíjense la población mutada, va a quedar nuevamente
+ se los pusimos de distintos colores para que los puedan ver el randon, los siete individuos
+ exactamente iguales, la población mutada igual que la población cruzada, caso número 2,
+ cuando el randon que se genera es menor igual que la probabilidad de mutación, en ese caso
+ sí se va a mutar. Entonces, lo que uno va a tener que generar es otro randon que se llaman
+ nosotros los llamamos un randon de posición en este caso fue 27 y uno va a empezar a contar
+ todas las posiciones y en la posición 27 va a marcar ese elemento y lo va a cambiar,
+ como trabajamos con algoritmos con cromas o más binarios, entonces si es un cero que va a pasar
+ a hacer un uno, fíjense que entonces lo que cambia es este individuo que antes será y tres
+ y ahora es y tres primas en que es exactamente igual, pero con uno en la cambiado por lo cual
+ es otro individuo y queda esta nueva población que sí es distinta la población cruzada y esto
+ es lo que se conoce como la población mutada, una claración podría suceder que fuera un número
+ mayor que 70, supongan se es 72, una contaría 10 de manera de 70, 71, 72, está se hace una lista
+ cíclica con todas las posiciones. Y ahora que sirve la mutación, vamos a ver un ejemplo,
+ vamos a ver con distintas probabilidades de mutación, bien con una proyea de mutación cero
+ como va recorriendo, bien queda y clavado, con una mutación un poquito más elevada,
+ bien como los puntitos rojos ya se empiezan a dispersar un poquito más, mira en la medida que
+ no va aumentando la probabilidad de mutación, como ya empieza a saltar el algoritmo genético
+ y eso está muy bueno para obtener valores y mira en cuando uno ya le va mucho, la probabilidad
+ de mutación que es lo que sucede se recorre prácticamente todo el gráfico. Existen distintas
+ formas de establecer esta probabilidad de la probabilidad de mutación y esto tiene que ver
+ con los distintos netodos. La el método de mutación simple tiene una probabilidad de
+ mutación constante, que quiere decir que en esa corrida recuerda que la corrida era donde
+ salía por la población inicial y tiene muchos ciclos, entonces esos ciclos la probabilidad
+ constante, entonces hay ustedes ponen la probabilidad y corren el algoritmo genético, después
+ esta la probabilidad de mutación adaptativa por convergencias con la probabilidad de mutación
+ es una función que tiene que ver con el promedio de la función fíjense. Finalmente tienen
+ el otro mismo de mutación que es la adaptativa por temperatura, a sentente y de ascendente
+ donde la probabilidad de mutación tiene que ver con la cantidad de vuelta, en la sentente
+ empieza con una probabilidad de bajar y empieza a aumentar y en la descendente exactamente
+ al res. Una vez tenemos la mutación obtenemos la población mutada acá nosotros
+ vamos a hacer como que se se activó y se aplico, no se ejecutó la mutación y quedó
+ por eso. Tiene otro color hablamos del criterio del paro, el criterio del paro lo que
+ va a indicar es si vuelvo y tengo otro ciclo o, si se cumple el criterio de paro, salgo
+ y genero la población fíjense. Bien, cuáles son los distintos criterios de paro que
+ no puede tener. Un lado de la cantidad de vuelta, que son los ciclos, recuerdan, los
+ ciclos serán todas las vueltas que daba el algoritmo genético, las, las corridas, tenían
+ que ver con salir con la población final. Bien, entonces no puede tener la cantidad
+ de vuelta, a veces también puede tener los dejo corriendo tanto tiempo y a partir
+ de ahí corta, a veces también pueden plantear que se ejecute la algoritmo genético hasta
+ que la función fíjense de algún individuo, sea mayor que un determinado valor si lo que
+ quieren es maximizar y después también si no lo que se pueda hacer es cuando el promedio
+ de la función fíjense de una población da un valor aproximado a partir de ahí cumplen
+ el criterio del paro. Lo que hay que tener en cuenta con el criterio del paro es que
+ ahí veces fíjense las dos últimas podría quedarse iterando eternamente. Entonces muchas
+ veces se se va combinando, veces lo hacen correr un tiempo con una cosa y si sostiene
+ lo cortan directamente a ustedes. Bien, vamos a suponer el criterio de paro no se cumpleo
+ porque decía que tenía que haber una vuelta, entonces volvemos y la población que ingresa
+ es igual a la población mutada de acá y ventrar nuevamente fíjense que antes estos
+ estaban asules ahora van a cambiar de color cuando lo sacamos pasar nuevamente un nuevo
+ ciclo por los operadores que vimos. Lo operador excepción para generar la población
+ seleccionada con la cruza su su población respectiva con la mutación también y nuevamente
+ que haymos criterio de paro. En este caso como el criterio de paro y va a decir que sí
+ que ya tenemos una vuelta, entonces ahí si obtenemos que la población final es la población
+ mutada que obtuvimos de este operador y que hacemos con la población final, en teoría
+ cárice teoría, en teoría a partir de obtener lo que dice la literatura, a partir de obtener
+ la población final lo que no hace es correrles la función fitness y buscar el individuo
+ que mejor rancera para esta función. A partir de ahí elige lo que se conoce como el candidato
+ solución e interpreta. Recuerdan que cuando habíamos dicho que teníamos que decidir en
+ un algoritmo genético para que habíamos hablado de ejercicio, si acuerdan del pesecito,
+ decimos que tenemos que poder interpretar estos crocosos. Entonces ahora lo que haríamos
+ es de codificarlo también. Y se hace en la práctica, a que les voy a establecer
+ estamos tratando una corrida, ver la cantidad de vueltas, la aptitud, esto es de una corrida
+ de una algoritmo fíjense como termina. Si yo me quedara con esta población final me quedaría
+ con este valor, mientras que yo vi que a lo largo de distintas vueltas hubo individuos
+ mucho mejores. ¿Qué pasa? Con los mismos parámetros vuelvo a correr, fíjense como en
+ la corrida anterior, miren, miren hasta donde llegó 7,5 miren ahora, cuando te fui llegando.
+ Sin embargo, lo mejor es la corrida final podía mantener si cuando este es el valor que
+ he dividido el mejor rachado, este es un promedio y este es el más bajo. Fíjense que si yo
+ lo mejor, acá corte acá, pero si yo vese cortado acá, en valor de 8,5 miren acá,
+ fíjense con los mismos parámetros, nuevamente otra corrida como se va, como se va modificando,
+ miren ahora lo que va pasando, quinteresante, cuando uno va ajustando los parámetros, como
+ ya la franja superior, como empieza a alinear si un poco ahí se va para arriba, ¿no?
+ Miren con los parámetros optimizados como está en la algoritmo genético a día por día,
+ con lo cual en la práctica calice práctica les corro para que vean, en la práctica lo que
+ no hace es tener los logs de diferentes corridas y de todos los logs, buscar cuál fue el
+ individuo mejor, como y por hoy gracias a Dios, se pueden hacer con herramientas automatizadas,
+ o mismo lo pueden codificar ustedes, con distintas librerías lo interesante no es que
+ darse con la población final, sino verdaderamente a partir de los logs poder identificar en
+ cuálquiera de todas esas corridas, en cuál dentro de todos los ciclos de esas corridas,
+ ver cuál fue el individuo mejor, y a partir de ahí sí encontrar aquel individuo candidato
+ e interpretar esa solución, con lo cual fíjense que más que el correr el algoritmo genético
+ es como establecer los parámetros y que hacen después de él, con lo cual para finalizar
+ les podemos contar si ustedes resuelven en el ejercicio del pecesito, que el dueño del
+ pecesito era el ánima, así que bueno, espero que se haya entendido esto recuerden que es
+ como un primer paso y fundamentos, de lo que son los algoritmos genéticos, a partir
+ de acá y ya nos queden pesar a trabajar, hay muchas bibliotecas disponibles y herramientas
+ para que puedan implementar algoritmos genéticos de manera bastante simple, así que bueno
+ desde ella, muchísimas gracias, secuidad y nos vemos pronto, hasta luego.

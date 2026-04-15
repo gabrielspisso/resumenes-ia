@@ -1,0 +1,72 @@
+ Hola, este es el tercer video correspondiente a la presentación de razonamiento
+ aproximado y lógica difusa, en este video vamos a dar un ejemplo de cómo se
+ puede aplicar la lógica difusa para representar información impresisa,
+ entonces supongamos que yo quiero evaluar si una persona es alta o no, para eso
+ supongamos que un experto nos define los siguientes criterios, nos dice, una
+ persona se considera alta si mi de más de un metro 80, una persona es baja si mi
+ de menos de un metro 50 y las personas entre esos valores es decir, entre un metro
+ 50 y un metro 80 se consideran de esta tura mediana, entonces ahí tengo
+ tres reglas bastante claras que nos permitían determinar su una persona
+ es alta de esta tura mediana o baja, pero qué pasa? si bien una persona de un metro
+ 70 y 8, ¿qué tenemos que decir? de acuerdo de esta regla nos tendríamos
+ que decir que es de esta tura mediana, pero el sentido común nos indica que una
+ persona de metro 70 y 8 debería ser alguien casi alto o muy cercano alto porque
+ la diferencia son solo dos centímetros, entonces ya que no existen un salto abrupto
+ entre las transiciones de alturas o sea, no por el hecho de llegar a un metro 80
+ corresponde a otra categoría, sino que tendría que ser un poco más gradual, vamos a
+ ver cómo se puede aplicar las funciones de partnercias, de la lógica difusa para
+ representar los distintos cambios de status o categoría para una persona de
+ acuerdo a la altura que vive, entonces para ello vamos a definir las funciones
+ de partnercias correspondiente, la primera función de partnercia que vamos a definir
+ es la que nos va a indicar si una persona es alta o no, entonces la función alta
+ la vamos a definir de la siguiente manera, entonces vamos a la sala de decir que
+ va a valer uno cuando la persona mide más o igual a un metro 80, antes habíamos
+ dicho más, pero podríamos incluir el igual ya que es el punto de inicio para
+ considerar que una persona es totalmente alta, si la persona mide un metro 65 o menos
+ vamos a considerar que no es nada alta, entonces la signamos un valor de cero y entre
+ un metro 65 y un metro 80 vamos a considerar que la persona tiende a subir en el valor
+ de partnercia a alto, entonces un metro 66 va a valer muy poco, un metro 79 va a valer casi uno
+ bien, entonces esta función que yo puedo representar de esta manera, donde voy
+ definiendo una función que si vale menos de un metro 65 vale cero, si vale
+ 1, si mide un metro 80 o más es alta y si está entre un metro 65 y un metro 80
+ no está, tengo una recta que me muestra las distintas graduaciones, hay veces que en las
+ funciones de partnership no se utilizo una recta sino que se utilizo una curva, eso
+ lo vamos a ver en el otro ejemplo como se puede aplicar, cualquiera de las dos formas
+ es valida va a depender de lo que yo quiero representar, en nuestro caso vamos a considerar
+ que el crecimiento de la función de partnership es proporcional al crecimiento de la
+ estatura de la persona, entonces ahí ya tengo la definida mi función de partnership
+ para definir una persona es alta o no, de la misma manera o civilar, porque vamos a
+ que los parámetros son distintos, se aplica en la función para definir una persona
+ tiene estaatura baja y si tiene estaatura mediana, entonces para baja vamos a decir que
+ mide un metro 50 o menos esto talmente baja, si mide un metro 65 o más no es nada baja y
+ entre un metro 50 y un metro 65 van a ir cambiando los valores de partnership, en este caso
+ va a ser inversamente proporcional es decir si yo tengo alguien que mide un metro 49
+ se va a ser cara a uno, si alguien mide un metro 64 va a tender a ser bien por último nos
+ queda definir la función de estaatura mediana, en este caso tendríamos toda la situación
+ intermedia, entonces aquí lo que vamos a definir es que un metro 65 que justo la mitad
+ entre un metro 50 y un metro 80, lo definimos nosotros, una persona que mide un metro 65 va
+ a tener un valor de partnership total para estaatura mediana, entonces va a leer uno, si mide
+ un metro 50 o menos o mide un metro 80 o más no es nada de estaatura mediana y entre un metro
+ 50 y un metro 65 y un metro 65 y un metro 80 va a tener el crecimiento y el de crecimiento
+ que le corresponde, también bueno para representar estas dos nuevas funciones entonces lo
+ podemos usar de la siguiente manera, ahí tenemos la función de partnership mediana y así
+ tenemos la función de partnership para abajo, fíjense que en este ejemplo nos queda bastante
+ simétrico, el gráfico de la derecha y de la izquierda, pero no siempre tiene que ser así,
+ de hecho después vamos a verlo en un ejemplo más complejo donde eso no se cumple, lo importante
+ que si tiene que cumplir es que se representen en qué situación es toma un valor y en qué
+ situación es toma otro valor, o sea de acuerdo a la altura de la persona en centímetros cuál
+ es el grado de partnership para abajo, mediana y ya, está bien, bueno entonces teniendo en
+ cuenta estas tres funciones podemos determinar que una persona de un metro 78 va a cortar a la
+ función mediana en un valor y en la función alta en otro valor, entonces si esto lo hacemos
+ bien escala podemos determinar que cortaría a mediana en cero comados y a alta en cero
+ comadocho entonces alguien de un metro 78 podemos decir que tiene para alto un valor de
+ partnership de cero comadocho para mediana de cero comados y para abajo decero entonces si esto
+ nosotros lo interpretamos podemos decir que una persona de un metro 78 es casi alta un poco
+ de esta altura mediana y nada abajo entonces con los valores correspondientes a las funciones de
+ partencias podríamos manejar esos valores borrosos o impresisos que estamos dando por una
+ descripción en castellano y a su vez podemos clasificar mejor a una persona de metro 78 no
+ generando un salto abrupto de acuerdo a los parámetros que antes de fíjimos, bueno espero
+ que con este ejemplo se haya entendido y con esto vamos a cortar este vídeo para que no
+ sea demasiado largo y en el próximo vamos a ver ya cómo funciona la lógica difusa para
+ poder hacer toma de decisión eso sea como se puede utilizar esta información en reglas para
+ llegar a conclusiones. Hasta luego.

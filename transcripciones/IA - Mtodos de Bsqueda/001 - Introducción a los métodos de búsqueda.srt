@@ -1,0 +1,284 @@
+1
+00:00:00,000 --> 00:00:06,080
+ Bienvenidos, mi nombre es María Florensia Pochocatánio, soy la jefa de Catedra de la
+
+2
+00:00:06,080 --> 00:00:10,800
+ Signatura Inteligencia Artificial de la Universidad Technológica Facultar Regional
+
+3
+00:00:10,800 --> 00:00:18,040
+ Buenos Aires. A continuación, vamos a ver una introducción a los métodos de Boque.
+
+4
+00:00:18,040 --> 00:00:22,480
+ Tad un problema determinado, el primer paso es el desarrollo de un sistema inteligente que
+
+5
+00:00:22,480 --> 00:00:28,160
+ pueda resolverlo, debe ser poder modelar el problema, de una manera formal y manipulable
+
+6
+00:00:28,160 --> 00:00:34,320
+ a partir de la descripción informal. Una vez enco de definir a todas las características
+
+7
+00:00:34,320 --> 00:00:39,560
+ propias de este problema, se debe definir al mismo en términos de una búsqueda
+
+8
+00:00:39,560 --> 00:00:45,200
+ en espacio de estados, dentro de los distintos espacios de estados, vamos a considerar los
+
+9
+00:00:45,200 --> 00:00:52,520
+ estados iniciales, intermedios y finales o solución del mismo. Esta concepción forma la
+
+10
+00:00:52,520 --> 00:00:57,640
+ base de la mayoría de los métodos que se utilizan para la resolución de problemas aplicando
+
+11
+00:00:57,640 --> 00:01:03,840
+ técnicas de la inteligencia artificial. Los estados son representaciones que contienen el conjunto
+
+12
+00:01:03,840 --> 00:01:09,800
+ de toda la información que describe la situación del sistema en un momento determinado.
+
+13
+00:01:09,800 --> 00:01:15,920
+ Se puede pensar como una foto del instante que no quiere describir. De esta manera, el conjunto
+
+14
+00:01:15,920 --> 00:01:21,120
+ de espacios de estados del sistema también conocidos como estados del problema, se puede
+
+15
+00:01:21,120 --> 00:01:26,600
+ considerar como en dominio que contiene todos los posibles estados del sistema. Este
+
+16
+00:01:26,600 --> 00:01:31,980
+ conjunto puede ser finito cuando se pueden conocer todos los estados posibles o puede ser
+
+17
+00:01:31,980 --> 00:01:37,740
+ infinito si no es posible numerar todos los estados posibles. A su vez dentro de este conjunto
+
+18
+00:01:37,740 --> 00:01:43,360
+ de estados posibles encontramos el estado inicial que describe la situación actual,
+
+19
+00:01:43,360 --> 00:01:48,920
+ originaria del problema, el conjunto de estados objetivos o finales que es donde se pueden
+
+20
+00:01:48,920 --> 00:01:54,760
+ encontrar las distintas soluciones y los estados intermedios que son aquellos estados
+
+21
+00:01:54,760 --> 00:02:00,200
+ por los que uno transita empos de encontrar la solución. Por otro lado, tenemos los operadores
+
+22
+00:02:00,200 --> 00:02:04,980
+ sorreglas. Cuando queremos identificar o describir que son los operadores sorreglas, podemos
+
+23
+00:02:04,980 --> 00:02:09,880
+ decir que un operador sorreglas, vinculados estados posibles, un estado originó padre con
+
+24
+00:02:09,880 --> 00:02:16,840
+ un estado destino hoy. Podemos representar un problema en este ejemplo a través de un
+
+25
+00:02:16,840 --> 00:02:27,040
+ árbol donde tenemos un estado inicial A, un conjunto de estados intermedios B, C, D,
+
+26
+00:02:27,040 --> 00:02:39,040
+ E, F, G, H y K y N. Y un conjunto de estados solución que en este caso están marcados
+
+27
+00:02:39,040 --> 00:02:46,800
+ con color verde, J y M. Las distintas transiciones implican el armado de este árbol
+
+28
+00:02:46,800 --> 00:02:56,440
+ y podemos destacar las siguientes. De a si a B, en este caso, de A si a C, de A si a D,
+
+29
+00:02:56,440 --> 00:03:10,120
+ de B a E y de B a F, de C a C, de D a L, de D a H, de E a I y de A J, siendo J, no lo solucion
+
+30
+00:03:10,120 --> 00:03:18,280
+ de J acá, de J a L, del Estado de Alestado L, y finalmente del Estado L, el Estado M,
+
+31
+00:03:18,280 --> 00:03:23,520
+ que también es un nodo solución. Ahora vamos a hablar del proceso de búsqueda para
+
+32
+00:03:23,520 --> 00:03:29,800
+ la solución de problemas. Como representamos esta búsqueda, a través de una representación
+
+33
+00:03:29,800 --> 00:03:36,160
+ del problema con todos sus componentes y la definición de la estrategia de control. La estrategia
+
+34
+00:03:36,160 --> 00:03:43,320
+ de control es el conjunto de técnicas que nos permiten elegir las distintas reglas
+
+35
+00:03:43,320 --> 00:03:48,920
+ o estados a través de los distintos métodos de búsqueda. El proceso de solución de
+
+36
+00:03:48,920 --> 00:03:54,360
+ un problema se puede definir entonces como el mecanismo mediante el cual, partiendo de un
+
+37
+00:03:54,360 --> 00:04:01,400
+ estado inicial, se llega algún estado solución, utilizando una estructura de control. Esta
+
+38
+00:04:01,400 --> 00:04:06,080
+ nos permite seleccionar y aplicar las reglas que producen las transiciones entre los
+
+39
+00:04:06,080 --> 00:04:14,440
+ estados pertenecientes al conjunto de estados del problema. Nosotros tenemos un estado inicial
+
+40
+00:04:14,440 --> 00:04:20,640
+ este estado inicial a través de la ejecución del estructura del control, nos permite obtener
+
+41
+00:04:20,640 --> 00:04:28,080
+ un nuevo estado. Este nuevo estado será considerado y analizado a ver si es solución. En
+
+42
+00:04:28,080 --> 00:04:33,360
+ caso de no serlo nuevamente sin Greza ese nuevo estado en la estructura de control para
+
+43
+00:04:33,360 --> 00:04:39,600
+ si poder ir avanzando. Mientras que en el caso que se nuevos estados sea solución uno
+
+44
+00:04:39,600 --> 00:04:46,120
+ considera que el problema ha sido resuelto. Pero como funciona la estructura de control
+
+45
+00:04:46,120 --> 00:04:51,960
+ internamente, a partir de un estado entrada, se analiza en el conjunto de reglas aplicables.
+
+46
+00:04:51,960 --> 00:04:56,960
+ En el primer caso que es que no existan reglas posibles aplicar el estado salida que
+
+47
+00:04:56,960 --> 00:05:01,600
+ daría identico al estado entrada sin haber modificado y por no haber aplicado ninguna
+
+48
+00:05:01,600 --> 00:05:07,600
+ transición. Una segunda opción que es en el caso que exista una única regla aplicar es a
+
+49
+00:05:07,600 --> 00:05:14,040
+ mismas reglas detectada, se aplica y el estado salida va a ser el resultado de la aplicación
+
+50
+00:05:14,040 --> 00:05:21,160
+ de la regla. Sin embargo, la tercera opción o la opción más interesante, más completa en
+
+51
+00:05:21,160 --> 00:05:26,320
+ la estructura de control tiene más tareas para hacer es en el caso que existan dos o más
+
+52
+00:05:26,320 --> 00:05:31,400
+ reglas. En este caso existe un estado anterior a aplicar la regla que es la selección
+
+53
+00:05:31,400 --> 00:05:38,640
+ de la regla aplicar. A partir de haber seleccionado la regla aplicar, se aplica la misma
+
+54
+00:05:38,640 --> 00:05:45,680
+ y se obtiene el nuevo estado salida de haber aplicado la estructura de control.
+
+55
+00:05:45,680 --> 00:05:50,520
+ Dentro de los métodos de búsqueda, tenemos dos grandes conjuntos. Por un lado, tenemos
+
+56
+00:05:50,520 --> 00:05:56,520
+ los métodos sin información del dominio o búsqueda ciega. En este caso, estos métodos no
+
+57
+00:05:56,520 --> 00:06:04,520
+ tienen información complementaria del dominio que diga si un estado es mejor que otro
+
+58
+00:06:04,520 --> 00:06:09,960
+ al un estado intermedio, solamente tiene la descripción propia de los estados y la identificación
+
+59
+00:06:09,960 --> 00:06:14,840
+ de los estados solucion. Dentro de estos conjuntos de métodos de búsqueda, tenemos
+
+60
+00:06:14,840 --> 00:06:19,920
+ primero en amplitud, primero en profundidad, generación y prueba, primero en profundidad
+
+61
+00:06:19,920 --> 00:06:26,040
+ iterativa y bidireccional entre otros. Por otro lado, tenemos otro conjunto de métodos de
+
+62
+00:06:26,040 --> 00:06:31,880
+ búsqueda, los métodos con información del dominio o de búsqueda húrística, donde tenemos
+
+63
+00:06:31,880 --> 00:06:37,600
+ información propia del dominio, donde podríamos ir analizando estos distintos estados
+
+64
+00:06:37,600 --> 00:06:46,240
+ intermedios, cuán candidatos buenos o no tan buenos en postestar más o menos cerca de la solución
+
+65
+00:06:46,240 --> 00:06:52,360
+ son a través de una definición de su egoíctica. Dentro de estos métodos, tenemos la escalada
+
+66
+00:06:52,360 --> 00:06:59,640
+ simple, escalada máxima pendiente, el primero mejor, pinch search, a estrella y díxtra
+
+67
+00:06:59,640 --> 00:07:04,640
+ entre otros. A partir de acá, vamos por finalizada la presentación de la introducción
+
+68
+00:07:04,640 --> 00:07:10,600
+ de los métodos de búsqueda, debajo de esta pantalla, tendrán los links con los
+
+69
+00:07:10,600 --> 00:07:16,200
+ vídeos para poder seguir desarrollando los distintos métodos y les recomendamos suscribirse
+
+70
+00:07:16,200 --> 00:07:20,960
+ al canal de YouTube, donde podrán tener información respecto de las últimas novedades que
+
+71
+00:07:20,960 --> 00:07:24,720
+ vayamos ingresando. Desde ya, muchísimas gracias y nos vemos la próxima.
+

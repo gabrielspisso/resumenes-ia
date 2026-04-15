@@ -1,0 +1,820 @@
+1
+00:00:00,000 --> 00:00:09,000
+ Hola, mi nombre es María Florencia Pollo y vamos a continuar con la explicación de los operadores de selección de un algoritmo genético.
+
+2
+00:00:09,000 --> 00:00:15,000
+ Habíamos pasado por el torneo, habíamos después pasado por el ranking y ahora y vamos a explicar rulita.
+
+3
+00:00:15,000 --> 00:00:20,000
+ Rulete es un poquito más con pleto, no con plijo.
+
+4
+00:00:20,000 --> 00:00:22,000
+ Vamos a haber.
+
+5
+00:00:22,000 --> 00:00:29,000
+ Bien, comenzamos definiendo la población inicial, tal como la teníamos antes con los distintos valores de función de aptitud.
+
+6
+00:00:30,000 --> 00:00:39,000
+ A todos estos los sumamos y a partir de ahí calculamos cuál es la proporción que tienen de pertenencia.
+
+7
+00:00:39,000 --> 00:00:48,000
+ Entonces hacemos 61 divididos 126, 101 divididos 126, 33 divididos 126, etcétera.
+
+8
+00:00:48,000 --> 00:00:53,000
+ Obviamente que la suma de todos estos va a darcia.
+
+9
+00:00:53,000 --> 00:00:59,000
+ Esta, a partir de ahí lo que calculamos lo que se conoce como la probabilidad acumulada.
+
+10
+00:00:59,000 --> 00:01:08,000
+ Para el primer caso es el mismo valor y después lo que se hace es 29,61 más 5,34.
+
+11
+00:01:08,000 --> 00:01:12,000
+ Eso me da 34,95.
+
+12
+00:01:12,000 --> 00:01:25,000
+ 34,95 más 16,02 me va a dar 50 y así sucesivamente voy sumando el anterior y voy acumulando porque yo lo que quiero acá
+
+13
+00:01:25,000 --> 00:01:33,000
+ es armar como un baño de la rouleta, vieron que cuando no tira una bolita en la rouleta que pasa,
+
+14
+00:01:33,000 --> 00:01:39,000
+ cada porción debería medire exactamente lo mismo para que la probabilidad sea la misma,
+
+15
+00:01:39,000 --> 00:01:42,000
+ uno tiró una pelotita girajira girajira y caen alguna porción.
+
+16
+00:01:42,000 --> 00:01:48,000
+ La probabilidad de ocurrencia de todos los estos números, si todo estuviera bien, debería ser la misma.
+
+17
+00:01:48,000 --> 00:01:53,000
+ Ahora qué pasa si yo quiero que salgan que tengas más probabilidad es uno número.
+
+18
+00:01:53,000 --> 00:01:57,000
+ Yo podría darle esa rouleta como más espacio para algunos valores.
+
+19
+00:01:57,000 --> 00:02:00,000
+ Entonces, eso es lo que vamos a hacer ahora.
+
+20
+00:02:00,000 --> 00:02:04,000
+ Vamos a generar una rouleta redonda, si lo con un baño rectángular,
+
+21
+00:02:04,000 --> 00:02:10,000
+ y lo que vamos a hacer es ir anotando las probabilidades de cada uno de los individuos.
+
+22
+00:02:10,000 --> 00:02:13,000
+ Fíjense voy a volver para atrás, mira en los valores.
+
+23
+00:02:13,000 --> 00:02:21,000
+ 29,61 y 34,95. 29,61 y 34,90.
+
+24
+00:02:21,000 --> 00:02:27,000
+ Entonces, lo que hago es esta nueva rouleta, si yo tiraras, supongo que yo decido tirar,
+
+25
+00:02:27,000 --> 00:02:36,000
+ cinco randos tienen obviamente más probabilidades de salir el uno y el 5,
+
+26
+00:02:36,000 --> 00:02:40,000
+ que o casualidad si nos fijamos, mira el uno y el 5,
+
+27
+00:02:40,000 --> 00:02:44,000
+ son los que tienen mayor función de actitud, lo cual es correcto.
+
+28
+00:02:44,000 --> 00:02:51,000
+ Sin embargo, no le quito las probabilidades de existir o de salir a los malos,
+
+29
+00:02:51,000 --> 00:02:55,000
+ y el más puede salir raro y que me salgan muchos malos.
+
+30
+00:02:55,000 --> 00:03:00,000
+ Cuando explico esto en el curso antes de comenzar explicar algo bueno chicos,
+
+31
+00:03:00,000 --> 00:03:03,000
+ tiremos seiz random.
+
+32
+00:03:03,000 --> 00:03:06,000
+ Entonces, después nos calculamos a que le vemos lo que salió.
+
+33
+00:03:06,000 --> 00:03:11,000
+ En salir números repetidos, puede que generalmente los buenos deberían salir,
+
+34
+00:03:11,000 --> 00:03:15,000
+ puede salir más de una vez y también pueden ocurrir de los que no tienen
+
+35
+00:03:15,000 --> 00:03:16,000
+ tan buena función de actitud.
+
+36
+00:03:16,000 --> 00:03:21,000
+ Pero esto le da mucha posibilidad de tener más heterogénial a la población.
+
+37
+00:03:21,000 --> 00:03:25,000
+ Y a partir de ahí tendríamos la población selección.
+
+38
+00:03:25,000 --> 00:03:28,000
+ Ahora bien, qué crítica tiene el método de rouleta,
+
+39
+00:03:28,000 --> 00:03:33,000
+ que a veces uno puede pasar esto, tira los randos y salen todos números malos.
+
+40
+00:03:33,000 --> 00:03:38,000
+ Entonces estaría bueno, estaría bueno un método que para esto parece
+
+41
+00:03:38,000 --> 00:03:42,000
+ este control sobre el número esperado que en realidad me garantice,
+
+42
+00:03:42,000 --> 00:03:45,000
+ que salen los buenos y que después tira probabilidades.
+
+43
+00:03:45,000 --> 00:03:49,000
+ Entonces, para eso parece este método y se los voy a contar.
+
+44
+00:03:49,000 --> 00:03:52,000
+ Como primer paso es una presa elección de los mejores.
+
+45
+00:03:52,000 --> 00:03:56,000
+ Entonces, tomar la población, la defunción fitness,
+
+46
+00:03:56,000 --> 00:04:00,000
+ de cada uno de estos y calcula el total, o sea, la sumatoria.
+
+47
+00:04:00,000 --> 00:04:04,000
+ Y calcula el promedio, o sea, 126 divididos 7 y la este valor.
+
+48
+00:04:04,000 --> 00:04:09,000
+ Quiero decir que es el promedio de la función fitness de estos individuos.
+
+49
+00:04:09,000 --> 00:04:14,000
+ Y a partir de ahí lo que calcula es la relación entre la función fitness
+
+50
+00:04:14,000 --> 00:04:16,000
+ que tienen y el promedio.
+
+51
+00:04:16,000 --> 00:04:21,000
+ Entonces, lo que hace es la función fitness 61 dividido el promedio,
+
+52
+00:04:21,000 --> 00:04:29,000
+ 29,42 y lo que me da es en cuanto supera o no el promedio.
+
+53
+00:04:29,000 --> 00:04:34,000
+ Finalmente, que quienes más superen van a tener mayor número entero.
+
+54
+00:04:34,000 --> 00:04:38,000
+ Entonces, ya se en todos esos cálculos y después lo que hago es tomar.
+
+55
+00:04:38,000 --> 00:04:42,000
+ Por el valor entre la parte entera de estos números,
+
+56
+00:04:42,000 --> 00:04:44,000
+ es la cantidad de veces que tomas este individuo.
+
+57
+00:04:44,000 --> 00:04:45,000
+ ¿Qué quiero decir?
+
+58
+00:04:45,000 --> 00:04:47,000
+ Caca estaría tomo, iría tomar.
+
+59
+00:04:47,000 --> 00:04:53,000
+ Dos veces el número uno, una vez el número tres y una vez el número cinco.
+
+60
+00:04:53,000 --> 00:04:58,000
+ Se lecciono, entonces, ya hay, me guardo esos individuos.
+
+61
+00:04:58,000 --> 00:05:03,000
+ Y acá, ya me garantizo que aquellos valores que son mayores que el promedio
+
+62
+00:05:03,000 --> 00:05:04,000
+ me queden.
+
+63
+00:05:04,000 --> 00:05:07,000
+ Y después con el resto, hago ruletante.
+
+64
+00:05:07,000 --> 00:05:10,000
+ Entonces, si ustedes se fijan el espírito que presten atención,
+
+65
+00:05:10,000 --> 00:05:18,000
+ miren la bandiza 0,728 y 37,38 y 37,38.
+
+66
+00:05:18,000 --> 00:05:23,000
+ Creo una nueva función fitness por eso es efeprima,
+
+67
+00:05:23,000 --> 00:05:27,000
+ donde ese valor es la bandiza que tienen todos estos números.
+
+68
+00:05:27,000 --> 00:05:30,000
+ Bueno, vuelve para atrás, miren, por ejemplo, hay yo mismo este valor con el dedo.
+
+69
+00:05:30,000 --> 00:05:33,000
+ Y siete, cinco con más siete, siete, ven.
+
+70
+00:05:33,000 --> 00:05:35,000
+ Toma la bandiza.
+
+71
+00:05:35,000 --> 00:05:38,000
+ Y ahí esto, a esto.
+
+72
+00:05:38,000 --> 00:05:39,000
+ Y que calculo rulet.
+
+73
+00:05:39,000 --> 00:05:43,000
+ Entonces, yo ya por lo un lado, me garantice los buenos.
+
+74
+00:05:43,000 --> 00:05:45,000
+ Que fue que tomé dos veces el uno,
+
+75
+00:05:45,000 --> 00:05:49,000
+ una vez el tres y una vez el cinco.
+
+76
+00:05:49,000 --> 00:05:54,000
+ Y por otro lado, otro lado, digo bueno, ahora, plico ruleta.
+
+77
+00:05:54,000 --> 00:05:56,000
+ Entonces, como era ruleta,
+
+78
+00:05:56,000 --> 00:06:01,000
+ suma teoría, después calculo esto dividido esto y calcula en porcentaje.
+
+79
+00:06:01,000 --> 00:06:05,000
+ Y después la probabilidad, a la probabilidad acumulada.
+
+80
+00:06:05,000 --> 00:06:09,000
+ Este, este, este, que me va a dar este, este, que me va a dar este.
+
+81
+00:06:09,000 --> 00:06:11,000
+ Y así sucesivamente.
+
+82
+00:06:11,000 --> 00:06:17,000
+ Y con esto que haremos una nueva, una nueva ruleta.
+
+83
+00:06:17,000 --> 00:06:19,000
+ Está un nuevo paino.
+
+84
+00:06:19,000 --> 00:06:22,000
+ Si ustedes recuerdan antes, lo que estaban ponísimos era y uno y cinco.
+
+85
+00:06:22,000 --> 00:06:25,000
+ Miren que ahora miren y uno, que poquito y ahora miren y cuatro,
+
+86
+00:06:25,000 --> 00:06:29,000
+ le víamos traer el cuatro como hasta antes.
+
+87
+00:06:29,000 --> 00:06:32,000
+ Antes los que estaban mejores era ni uno y cinco.
+
+88
+00:06:32,000 --> 00:06:36,000
+ Y fíjense que ahora, el cuatro, siete.
+
+89
+00:06:36,000 --> 00:06:40,000
+ Y ahí tiró los randos de los números que me hacen falta.
+
+90
+00:06:40,000 --> 00:06:46,000
+ Entonces, si recordamos y hacemos un, como un paino rápido,
+
+91
+00:06:46,000 --> 00:06:50,000
+ métodos de selección, torneo, recuerdan.
+
+92
+00:06:50,000 --> 00:06:55,000
+ El día bandiados, después lo que hacíamos era ordenar los por ranquincinos.
+
+93
+00:06:55,000 --> 00:06:59,000
+ Después teníamos la, la, la ruleta.
+
+94
+00:06:59,000 --> 00:07:02,000
+ Y después teníamos el control sobre el número esperado.
+
+95
+00:07:02,000 --> 00:07:06,000
+ Con estos tenemos los mét distintos métodos de selección.
+
+96
+00:07:06,000 --> 00:07:09,000
+ A partir de ahora está bien el tiempo, si llegamos,
+
+97
+00:07:09,000 --> 00:07:10,000
+ pasaríamos al cruzamiento.
+
+98
+00:07:10,000 --> 00:07:15,000
+ Entonces, este grupo, este sur conjunto de individuos que yo selecciones,
+
+99
+00:07:15,000 --> 00:07:18,000
+ entrarían al cruzamiento y que es el cruzamiento.
+
+100
+00:07:18,000 --> 00:07:25,000
+ El cruzamiento es realizar alguna actividad de aparez y generar de sendencia.
+
+101
+00:07:25,000 --> 00:07:32,000
+ Esta de sendencia hace que se eliminen lo que se conocen como los padres.
+
+102
+00:07:32,000 --> 00:07:37,000
+ Yo siempre digo que el algoritmo genético es muy,
+
+103
+00:07:37,000 --> 00:07:43,000
+ muy, muy, muy clásico de dos padres, salen dos hijos.
+
+104
+00:07:43,000 --> 00:07:45,000
+ Los padres se eliminan y quedan los dos hijos.
+
+105
+00:07:45,000 --> 00:07:48,000
+ Obviamente acá, pero aunque se puede repetir,
+
+106
+00:07:48,000 --> 00:07:51,000
+ puede haber dos padres que sean iguales,
+
+107
+00:07:51,000 --> 00:07:54,000
+ pueden quedar distintos, obviamente, desde dos padres iguales,
+
+108
+00:07:54,000 --> 00:07:59,000
+ va a quedar un hijo igual y vamos a ir viendo cómo se hace este cruzamiento.
+
+109
+00:07:59,000 --> 00:08:02,000
+ Existen distintos métodos de cruzamiento.
+
+110
+00:08:02,000 --> 00:08:07,000
+ El cruzamiento simple y gente acá tienen un padre, un padre,
+
+111
+00:08:07,000 --> 00:08:10,000
+ un padre y un padre y se toman dos hijos.
+
+112
+00:08:10,000 --> 00:08:13,000
+ Lo que se tome es un punto de corte en este caso,
+
+113
+00:08:13,000 --> 00:08:17,000
+ va a ser 4 y ahí es como que se cortaran con una tijera.
+
+114
+00:08:17,000 --> 00:08:23,000
+ Se ve muy claro para un hijo, para una parte de un padre,
+
+115
+00:08:23,000 --> 00:08:27,000
+ va a un hijo y se llama con la otra papá de la otra parte de la otra papá.
+
+116
+00:08:27,000 --> 00:08:30,000
+ Y lo que queda, se junta en el próximo hijo.
+
+117
+00:08:30,000 --> 00:08:32,000
+ Esto es una cruza simple.
+
+118
+00:08:32,000 --> 00:08:37,000
+ Tienen un único punto de corte y ahí es donde se frena el cromosoma,
+
+119
+00:08:37,000 --> 00:08:42,000
+ lo que se pide, generalmente, para que no disparen con los errores,
+
+120
+00:08:42,000 --> 00:08:48,000
+ es que donde hagan los puntos de corte sean cambios de día tributos.
+
+121
+00:08:48,000 --> 00:08:53,000
+ No corten, pieron que no tenía veces varias posiciones para un gen,
+
+122
+00:08:53,000 --> 00:08:59,000
+ no corten ese general medio, sino que permita que la porción que le completa.
+
+123
+00:08:59,000 --> 00:09:02,000
+ Y pues está la cruzamiento y punto de la cruzamiento,
+
+124
+00:09:02,000 --> 00:09:06,000
+ ustedes pueden poner más de un punto de corte en este caso
+
+125
+00:09:06,000 --> 00:09:10,000
+ para que tenemos el 4 y el 8 y nuevamente hacemos lo mismo.
+
+126
+00:09:10,000 --> 00:09:14,000
+ Tomamos una parte de cada papá y ahí las mandamos a los hijos.
+
+127
+00:09:14,000 --> 00:09:20,000
+ En estos dos metodos, local, la característica que va para un papá,
+
+128
+00:09:20,000 --> 00:09:23,000
+ no va para un hijo, no va para el otro.
+
+129
+00:09:23,000 --> 00:09:28,000
+ Esto es bastante interesante, es una característica del método.
+
+130
+00:09:28,000 --> 00:09:31,000
+ Después está la cruzamiento mundial.
+
+131
+00:09:31,000 --> 00:09:33,000
+ El primer caso es con más cara complemento.
+
+132
+00:09:33,000 --> 00:09:37,000
+ Este caso se define una más cara que está explicada acá,
+
+133
+00:09:37,000 --> 00:09:40,000
+ y se fijan esta más cara dice que en la primera posición
+
+134
+00:09:40,000 --> 00:09:43,000
+ se toma la posición del papá de X en la segunda del papá y
+
+135
+00:09:43,000 --> 00:09:47,000
+ fíjense de tercera y cuarta del papá de X y así sucesivamente.
+
+136
+00:09:47,000 --> 00:09:50,000
+ Y acá armamos un hijo.
+
+137
+00:09:50,000 --> 00:09:54,000
+ Obviamente, capacidad creativa, como es el otro hijo,
+
+138
+00:09:54,000 --> 00:09:56,000
+ el otro hijo, como es más cara complemento,
+
+139
+00:09:56,000 --> 00:10:01,000
+ son las otras posiciones que no fueron ocupadas por el otro papá.
+
+140
+00:10:01,000 --> 00:10:05,000
+ Este caso, de cruza binomial por más cara complemento,
+
+141
+00:10:05,000 --> 00:10:08,000
+ sería igual a una cruza multipunto,
+
+142
+00:10:08,000 --> 00:10:11,000
+ donde voy cambiando en la máscara en los lugares
+
+143
+00:10:11,000 --> 00:10:13,000
+ y como si fuera poniendo los puntos de corte.
+
+144
+00:10:13,000 --> 00:10:17,000
+ Está plos puntos de corte, no tiene por tener la misma distancia.
+
+145
+00:10:17,000 --> 00:10:21,000
+ Pero bueno, la máscara comprimento de cruza binomial
+
+146
+00:10:21,000 --> 00:10:25,000
+ podría dar los mismos resultados que una cruza multipunto.
+
+147
+00:10:25,000 --> 00:10:28,000
+ Después, hay otro método y este es el primer método
+
+148
+00:10:28,000 --> 00:10:31,000
+ que vemos donde sí se pueden repetir características
+
+149
+00:10:31,000 --> 00:10:33,000
+ de un papá y es el de máscarado.
+
+150
+00:10:33,000 --> 00:10:35,000
+ ¿Por qué? Porque acá son dos máscaras,
+
+151
+00:10:35,000 --> 00:10:37,000
+ independientes unas de otras.
+
+152
+00:10:37,000 --> 00:10:40,000
+ Y si ustedes se fijan en la posición uno,
+
+153
+00:10:40,000 --> 00:10:42,000
+ hay dos veces el papá de X,
+
+154
+00:10:42,000 --> 00:10:45,000
+ o sea que el papá hay nunca prestó su primera posición.
+
+155
+00:10:45,000 --> 00:10:47,000
+ Y después se puede repetir alguna otra,
+
+156
+00:10:47,000 --> 00:10:49,000
+ como por ejemplo en la 8,
+
+157
+00:10:49,000 --> 00:10:51,000
+ la 3, 4, no la 5 tampoco,
+
+158
+00:10:51,000 --> 00:10:54,000
+ está pero acá sí ya se pueden repetir posiciones
+
+159
+00:10:54,000 --> 00:10:58,000
+ de carácterísticas de un papá de sus doscientos.
+
+160
+00:10:58,000 --> 00:11:02,000
+ Bien, y después siempre el largo ritmo genético
+
+161
+00:11:02,000 --> 00:11:04,000
+ trabajando con el azar,
+
+162
+00:11:04,000 --> 00:11:06,000
+ hay una cruza binomial al azar,
+
+163
+00:11:06,000 --> 00:11:08,000
+ la cruza binomial al azar,
+
+164
+00:11:08,000 --> 00:11:11,000
+ ustedes van a definir un random,
+
+165
+00:11:11,000 --> 00:11:13,000
+ un random,
+
+166
+00:11:13,000 --> 00:11:15,000
+ donde va a decir qué papá toman,
+
+167
+00:11:15,000 --> 00:11:17,000
+ entonces dicen que sí se randon para este caso.
+
+168
+00:11:17,000 --> 00:11:18,000
+ Es menos igual que 0,5,
+
+169
+00:11:18,000 --> 00:11:21,000
+ van a tomar el papá y si es mayor que 0,5
+
+170
+00:11:21,000 --> 00:11:23,000
+ van a tirar el papá y quiz y van a tirar
+
+171
+00:11:23,000 --> 00:11:25,000
+ cuántos randoms,
+
+172
+00:11:25,000 --> 00:11:29,000
+ obviamente 10 para ir cubriendo todas las posiciones.
+
+173
+00:11:29,000 --> 00:11:30,000
+ Por ejemplo,
+
+174
+00:11:30,000 --> 00:11:32,000
+ tiramos el primer random que 0,3,
+
+175
+00:11:32,000 --> 00:11:33,000
+ como es menor que 0,5,
+
+176
+00:11:33,000 --> 00:11:35,000
+ aquí entomó a X,
+
+177
+00:11:35,000 --> 00:11:36,000
+ entonces vino a X.
+
+178
+00:11:36,000 --> 00:11:38,000
+ Les muestra con el 2 y esta,
+
+179
+00:11:38,000 --> 00:11:42,000
+ el 2 fue 0,6 tomó y vino a Y.
+
+180
+00:11:42,000 --> 00:11:44,000
+ Esto es para definir un hijo.
+
+181
+00:11:44,000 --> 00:11:46,000
+ ¿Qué pasaría con el otro hijo?
+
+182
+00:11:46,000 --> 00:11:48,000
+ Tenemos dos posibilidades.
+
+183
+00:11:48,000 --> 00:11:51,000
+ La primera opción es tomar el complemento,
+
+184
+00:11:51,000 --> 00:11:53,000
+ o sea, ¿y si cubrir?
+
+185
+00:11:53,000 --> 00:11:54,000
+ ¿Qué?
+
+186
+00:11:54,000 --> 00:11:56,000
+ Lo que no entro para uno,
+
+187
+00:11:56,000 --> 00:11:58,000
+ la característica de el papá
+
+188
+00:11:58,000 --> 00:11:59,000
+ con nuestro para uno ventrar para el otro.
+
+189
+00:11:59,000 --> 00:12:01,000
+ Y la otra opción es nuevamente tirar al azar
+
+190
+00:12:01,000 --> 00:12:04,000
+ 10 posibilidades y con eso armará el otro hijo.
+
+191
+00:12:04,000 --> 00:12:06,000
+ Y en ese caso sí se podrían repetir
+
+192
+00:12:06,000 --> 00:12:08,000
+ características de un mismo papá.
+
+193
+00:12:08,000 --> 00:12:11,000
+ Con esto terminamos el cruzamiento.
+
+194
+00:12:11,000 --> 00:12:13,000
+ Ya tenemos la población cruzado
+
+195
+00:12:13,000 --> 00:12:15,000
+ hacia todos estos híjitos
+
+196
+00:12:15,000 --> 00:12:17,000
+ que vinieron de la población seleccionada
+
+197
+00:12:17,000 --> 00:12:19,000
+ y recuerden que los padres desaparecen.
+
+198
+00:12:19,000 --> 00:12:22,000
+ Ahora vamos a generar a la operadora de mutación.
+
+199
+00:12:22,000 --> 00:12:27,000
+ Voy a cortar acá porque ya son casi 13 minutos.
+
+200
+00:12:27,000 --> 00:12:29,000
+ Espero que no se ha borrido.
+
+201
+00:12:29,000 --> 00:12:30,000
+ Uyden se queden en casa
+
+202
+00:12:30,000 --> 00:12:32,000
+ y nos vemos en el próximo vídeo
+
+203
+00:12:32,000 --> 00:12:33,000
+ para hablar de la montación.
+
+204
+00:12:33,000 --> 00:12:34,000
+ Que ya falta bonito.
+
+205
+00:12:34,000 --> 00:12:36,000
+ Muchísimas gracias y hasta luego.
+

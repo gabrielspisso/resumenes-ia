@@ -1,0 +1,536 @@
+1
+00:00:00,000 --> 00:00:07,760
+ Hola, mi nombre es María Florencia Pollo y vamos a continuar con la serie de videos explicando
+
+2
+00:00:07,760 --> 00:00:11,000
+ el proceso de implementación de sistemas inteligentes.
+
+3
+00:00:11,000 --> 00:00:17,760
+ Bien, habíamos llegado a identificar a resumir en el primer video que atento a los problemas
+
+4
+00:00:17,760 --> 00:00:22,640
+ que encontramos en una organización vinculado con su sistema de información, a bien lo identificado
+
+5
+00:00:22,640 --> 00:00:27,280
+ de los objetivos mesatos y los requerimientos para determinados tipos de problemas podíamos
+
+6
+00:00:27,280 --> 00:00:33,400
+ suvilizar distintas técnicas que nos viban a la inteligencia artificial y a partir de estas
+
+7
+00:00:33,400 --> 00:00:38,440
+ construir un modelo que nos permitiera implementar un sistema inteligente como un modelo probablemente
+
+8
+00:00:38,440 --> 00:00:42,840
+ a un sistema software tradicional y a partir de esto resolver alguna problemática dentro
+
+9
+00:00:42,840 --> 00:00:44,840
+ de la organización.
+
+10
+00:00:44,840 --> 00:00:50,960
+ Esa sí que la inteligencia artificial tiene dos dos perspectivas distintas, dos miradas distintas,
+
+11
+00:00:50,960 --> 00:00:56,560
+ como si se estudiando al comportamiento de los sistemas inteligentes y como ingeniería
+
+12
+00:00:56,560 --> 00:01:02,920
+ proveyendo las herramientas y los procesos y los métodos y las tecnologías que nos permitan
+
+13
+00:01:02,920 --> 00:01:08,560
+ construir este sistema inteligente, la ciencia apoyando desde el desarrollo de nuevos conocimientos
+
+14
+00:01:08,560 --> 00:01:14,320
+ bajo, un método científico y la ingeniería dando los suéste conjunto de herramientas
+
+15
+00:01:14,320 --> 00:01:20,920
+ y de buenas prácticas que nos permitan llevar adelante proyectos, la mirada que tenemos
+
+16
+00:01:20,920 --> 00:01:25,200
+ dos ingenieros siempre dentro de estos hábitos.
+
+17
+00:01:25,200 --> 00:01:29,640
+ Entonces lo que uno plantea dentro de esta problemática en la construcción del sistema
+
+18
+00:01:29,640 --> 00:01:35,000
+ inteligente es decir, bueno necesitamos una construcción a nivel conceptual pero utilizando
+
+19
+00:01:35,000 --> 00:01:40,160
+ principios ingenieriles y con un fin práctico que es resolver un problema.
+
+20
+00:01:40,160 --> 00:01:48,520
+ En este contexto, acá les presentamos el proceso para la construcción y el desarrollo y la
+
+21
+00:01:48,520 --> 00:01:55,640
+ implementación de sistemas inteligentes. Tenemos identificadas todas estas grandes
+
+22
+00:01:55,640 --> 00:02:00,760
+ fases, la identificación del problema de los datos, la tecnología, la identificación del
+
+23
+00:02:00,760 --> 00:02:07,240
+ modelo y el desarrollo propio del sistema inteligente, como ven es un proceso que básica.
+
+24
+00:02:07,240 --> 00:02:15,120
+ Lo bien, vamos a comenzar hablando de la primera fase, tiene que ver con definir el problema.
+
+25
+00:02:15,120 --> 00:02:20,280
+ Y hablamos cuando queremos decir que queremos definir un problema, queremos identificar
+
+26
+00:02:20,280 --> 00:02:26,200
+ el que hay que resolver y determinar el cómo lo vamos a resolver y esto se vería plasmado
+
+27
+00:02:26,200 --> 00:02:33,840
+ en el sistema inteligente. Desde otro lado, lo organización va a ser la fuente de información
+
+28
+00:02:33,840 --> 00:02:41,040
+ en relación a los datos que es organización maneja y las tecnologías posibles para
+
+29
+00:02:41,040 --> 00:02:46,600
+ aplicar en el desarrollo de este sistema inteligente. Al momento de querer definir el que,
+
+30
+00:02:46,600 --> 00:02:53,200
+ vamos a tener que poder identificar las metas las expectativas que es lo que se espera,
+
+31
+00:02:53,200 --> 00:03:00,840
+ el contexto en que ambiente las necesidades que tienen que organización, cuáles son los deseos,
+
+32
+00:03:00,840 --> 00:03:05,880
+ las restricciones y todo este conjunto de elementos que sabemos definir propios de la ingeniería
+
+33
+00:03:05,880 --> 00:03:12,680
+ bien software también. Y bueno, donde vamos a encontrar conflictos y tearias van a generar
+
+34
+00:03:12,680 --> 00:03:19,720
+ problemas que queremos atender. En relación a la información vinculada con la estructura
+
+35
+00:03:19,720 --> 00:03:25,280
+ informal de la organización que no va a estar documentada, la funcionaridad es implícita
+
+36
+00:03:25,280 --> 00:03:31,040
+ sino establecidas muchas veces este tipo de actividades que logramos de descubrir al momento
+
+37
+00:03:31,040 --> 00:03:35,680
+ de hacer una observación de tareas habituales, pero que no se encuentran formalizadas en
+
+38
+00:03:35,680 --> 00:03:42,280
+ un tipo de documento. Y que sí aplican mucho, hay impactan mucho en el proceso que quiero
+
+39
+00:03:42,280 --> 00:03:47,280
+ modelar esto en las tareas de los expertos, en las tareas complejas, las tareas miculadas
+
+40
+00:03:47,280 --> 00:03:53,520
+ condiciones no programadas es moneda corriente. También las suposiciones no fundamentadas son
+
+41
+00:03:53,520 --> 00:03:59,640
+ comunidades, tienen que ver muchas veces con estos procesos complejos que utilizan los expertos
+
+42
+00:03:59,640 --> 00:04:05,400
+ o aquellos directivos que toman decisiones muy complejas y presuponen un conjunto de
+
+43
+00:04:05,400 --> 00:04:12,400
+ condiciones que no las tienen formalizadas y declaradas de manera explicita en ningún lado.
+
+44
+00:04:12,400 --> 00:04:20,080
+ Y bueno, la falta de documentación viene acá tenemos cuando hablamos no de todas
+
+45
+00:04:20,080 --> 00:04:24,820
+ cuales son las las expectativas y las suposiciones que tenemos los distintos
+
+46
+00:04:24,820 --> 00:04:35,240
+ actores en todos estos proyectos bien. Una de todas estas salvidades se ve a través de
+
+47
+00:04:35,240 --> 00:04:42,040
+ él la disculpenme a acelerar. La definición del problema del negocio,
+
+48
+00:04:42,040 --> 00:04:47,120
+ a través de entender la situación de la organización y por otro lado poder traducir esto
+
+49
+00:04:47,120 --> 00:04:53,200
+ al dominio de la solución o la implementación a través de lo que se conoce como uno podría
+
+50
+00:04:53,200 --> 00:04:58,720
+ si bueno a través de la definición y la gestión de los requerimientos se va a poder administrar
+
+51
+00:04:58,720 --> 00:05:06,600
+ gestionar este pasaje de la manera más natural. El proceso de gestión de requerimientos
+
+52
+00:05:06,600 --> 00:05:15,040
+ me permite identificar todas estas cuestiones documentarlas y formalizarlas para poder traducir
+
+53
+00:05:15,040 --> 00:05:20,440
+ lo que es claramente un problema del negocio que no puede tener en el habla directamente
+
+54
+00:05:20,440 --> 00:05:26,600
+ con mujerente, con un este hijo, de muchas veces y eso después poderlo llevar a un problema
+
+55
+00:05:26,600 --> 00:05:32,560
+ a un dominio de solución donde tendré implementado parte de esta mis solución mediante
+
+56
+00:05:32,560 --> 00:05:38,840
+ tecnología de IA y probablemente también desde desarrollo del sistema sofrero pelicional.
+
+57
+00:05:38,840 --> 00:05:44,400
+ Una de las primeras actividades dentro de esta gran fase es lo que se conoce como la licitación
+
+58
+00:05:44,400 --> 00:05:48,640
+ de requerimientos, los requerimientos, las características o condiciones que tiene que tener
+
+59
+00:05:48,640 --> 00:05:53,880
+ algo para hacer considerado como tal, juegan un rol fundamental al momento, sin embargo
+
+60
+00:05:53,880 --> 00:05:59,680
+ ustedes también leyeron en cierta documentación que los requerimientos dentro de un sistema
+
+61
+00:05:59,680 --> 00:06:05,640
+ inteligente son distintos tienen tienen noto identificación, los requerimientos hay un conjunto
+
+62
+00:06:05,640 --> 00:06:09,960
+ requerimientos propios del proyecto pero después en la actividad los requerimientos se van
+
+63
+00:06:09,960 --> 00:06:15,800
+ reformulando bien. Para poder licitarlos y identificarlos a estos requerimientos, yo tengo
+
+64
+00:06:15,800 --> 00:06:21,800
+ distintas fuentes de información por un lado lo que son las las fuentes formales documentarlas
+
+65
+00:06:21,800 --> 00:06:26,920
+ y muchas veces también el y sobre todo estamos trabajando con sistemas inteligentes, los mismos
+
+66
+00:06:26,920 --> 00:06:34,160
+ usuarios, los mismos expertos van a ser el gran fuente de información. Fíjense, bueno esta frase
+
+67
+00:06:34,160 --> 00:06:38,720
+ es súper interesante cuando existe un buen proceso de licitación de requerimientos, se ayuda
+
+68
+00:06:38,720 --> 00:06:43,080
+ a los usuarios, a que puedan entender que quieren que es lo que necesitan las restricciones
+
+69
+00:06:43,080 --> 00:06:48,920
+ y las alternativas y su ventajas y de ventajas. Muchas veces en usuarios creen tender que
+
+70
+00:06:48,920 --> 00:06:53,880
+ necesita pero a través de un proceso de gestión de requerimientos de edificación de requerimientos
+
+71
+00:06:53,880 --> 00:07:01,080
+ llega a una definición mucho más solida, ¿no? Bien, para poder licitarlos requerimientos
+
+72
+00:07:01,080 --> 00:07:05,720
+ uno va a tener que identificar por un lado las distintas fuentes de información y después
+
+73
+00:07:05,720 --> 00:07:11,640
+ va a tener que poder recolecernos en relación a la distintas fuentes de información, uno
+
+74
+00:07:11,640 --> 00:07:16,640
+ va a poder encontrarse con los recursos que pueden ser propios de organización o externos,
+
+75
+00:07:16,640 --> 00:07:20,200
+ y en prefíjense que tenían que ver con los documentos que habíamos hablado del servujito
+
+76
+00:07:20,200 --> 00:07:25,400
+ que tenían en unas PTT anteriores y en relación a los individuos, a los stakeholders, a
+
+77
+00:07:25,400 --> 00:07:31,720
+ los interesados, a los actores que pueden ser de, de, de, de adentro o de afuera de
+
+78
+00:07:31,720 --> 00:07:36,800
+ organización y que van a impactar claramente en lo que son las rutinas de trabajo que yo
+
+79
+00:07:36,800 --> 00:07:45,720
+ quiero, quiero modelar, eh, van a ser obviamente, eh, estos, la principal fuente humana, eh, los
+
+80
+00:07:45,720 --> 00:07:51,160
+ principales clientes que no van a tener en el sistema que va a conflictar, y como puede
+
+81
+00:07:51,160 --> 00:07:59,160
+ identificar a los distintos stakeholders, por un lado analizando todo lo que son las, eh,
+
+82
+00:07:59,160 --> 00:08:05,760
+ los, las premisas, formalmente establecidas, ¿no? Todo lo que son las normas y las reglas,
+
+83
+00:08:05,760 --> 00:08:11,480
+ lo que se conocemos con un mente como a la estructura formal, sin embargo, bien sabemos que
+
+84
+00:08:11,480 --> 00:08:17,040
+ todos los establecidos, la estructura formal, se encuentra atravesada por la estructura informal
+
+85
+00:08:17,040 --> 00:08:22,520
+ que deforma todo el establecido, y da como, como comunión de, de la convivencia de estas
+
+86
+00:08:22,520 --> 00:08:28,240
+ dos estructuras, la realidad de la organización. Esa hija donde yo tengo que poner pie, eh,
+
+87
+00:08:28,240 --> 00:08:33,960
+ y ser un correcto un correcto observado. En relación a recolectar los hechos y las necesidades
+
+88
+00:08:33,960 --> 00:08:39,920
+ que eran otras de las actividades que habíamos visto, tenemos distintas técnicas, eh, según
+
+89
+00:08:39,920 --> 00:08:45,680
+ la, la, la fuente de, de información. Cuando las técnicas tienen que ver con la extracción
+
+90
+00:08:45,680 --> 00:08:51,360
+ de documentos de fuente de documentos públicos, entonces voy a hablar de extracción de conocimientos.
+
+91
+00:08:51,360 --> 00:08:57,160
+ Ahí voy a hacer un análisis de documentación o analicidad. Y en la extracción yo busco,
+
+92
+00:08:57,160 --> 00:09:01,720
+ o puedo recolectar todo lo que son conocimientos públicos. Por otro lado, cuando hablamos
+
+93
+00:09:01,720 --> 00:09:08,760
+ de elucción de, de, de requerimientos, de lo que estamos hablando es de obtener información
+
+94
+00:09:08,760 --> 00:09:14,000
+ privativa en el experto privativa del individuo información que no está documentada, que no está
+
+95
+00:09:14,000 --> 00:09:19,560
+ formalizada, y las distintas técnicas fíjense que van apareciendo entre vistas y cuestionarios
+
+96
+00:09:19,560 --> 00:09:24,600
+ que un bastante conocemos, el uso de protototipos, observación de analiciciatarías,
+
+97
+00:09:24,600 --> 00:09:30,000
+ la tormenta de analiciciatarías, la, el prenafamos sobre en Storming, el manejo de las reuniones,
+
+98
+00:09:30,000 --> 00:09:34,840
+ el enparallado y la naricic de prototocólogos como dos técnicas diferentes que han aprendido
+
+99
+00:09:34,840 --> 00:09:39,640
+ este, este cuadro del menstrure, el enparallado recuerda no teniendo un modelo mental del
+
+100
+00:09:39,640 --> 00:09:45,520
+ individuo conocimiento declarativo y la naricic de protocólog, teniendo esta famosa reglas procedimentales
+
+101
+00:09:45,520 --> 00:09:50,520
+ este conocimiento procedimental a través de estas reglas que me permiten es ver cómo
+
+102
+00:09:50,520 --> 00:09:56,400
+ se van relacionando los distintos estados de estos conocimientos declarativos.
+
+103
+00:09:56,400 --> 00:10:04,480
+ Bien, para poder recolectar estos hechos en necesidades tenemos que ver toda la información
+
+104
+00:10:04,480 --> 00:10:08,720
+ que sea suficiente para poder identificar, que es lo que tenemos que identificar.
+
+105
+00:10:08,720 --> 00:10:13,320
+ Los elementos del problema a través de respondernos la pregunta, qué incluso este problema
+
+106
+00:10:13,320 --> 00:10:17,520
+ está, después vamos a tener que poder identificar el contexto porque todo el problema va
+
+107
+00:10:17,520 --> 00:10:23,640
+ estar inmerso en un contexto y la alteración a las modificaciones de esto, de este entorno
+
+108
+00:10:23,640 --> 00:10:28,000
+ van a afectar notablemente al problema, para eso hay que ver dónde se produce el problema
+
+109
+00:10:28,000 --> 00:10:33,400
+ para poder identificar también cómo se relaciona el contexto que en contexto con el sistema
+
+110
+00:10:33,400 --> 00:10:34,400
+ modular.
+
+111
+00:10:34,400 --> 00:10:38,800
+ Después hay que identificar estos nuevos estáis conders identificando, respondiendo la
+
+112
+00:10:38,800 --> 00:10:43,320
+ pregunta de aquí en esa afecta más, este problema, ahí vamos a ver quiénes se encuentran
+
+113
+00:10:43,320 --> 00:10:50,000
+ vinculados directamente con con el problema a solucionar y después por qué necesario
+
+114
+00:10:50,000 --> 00:10:54,240
+ resolverlo a través de las metas, donde quiero llegar y las expectativas que es lo que
+
+115
+00:10:54,240 --> 00:10:59,160
+ se espera. Los distintos escenarios me van a permitir definir estas precondiciones como se
+
+116
+00:10:59,160 --> 00:11:04,200
+ manifiesta el problema en que ha estado me voy a encontrar al momento de querer solucionar
+
+117
+00:11:04,200 --> 00:11:09,760
+ un problema y las famosas y conocidas restricciones que lo que van a marcar es que puede
+
+118
+00:11:09,760 --> 00:11:13,480
+ impedir presolver este problema con claridad.
+
+119
+00:11:13,480 --> 00:11:18,920
+ No es suficientemente exacto decir que los requerimientos están en la mente de los clientes
+
+120
+00:11:18,920 --> 00:11:23,880
+ sería más exacto decir que están en el sistema social de la organización, no son privativos
+
+121
+00:11:23,880 --> 00:11:28,800
+ del individuo, tienen que ser inventados, no capturados o felicitaros y esa intención tiene
+
+122
+00:11:28,800 --> 00:11:34,520
+ que ser un trabajo cooperativo, esto es fundamentante, el cliente y usuario si es desarrollador.
+
+123
+00:11:34,520 --> 00:11:39,200
+ Las dificultades son principalmente sociales, políticas y culturales y notélicas, ahí es cuando
+
+124
+00:11:39,200 --> 00:11:44,760
+ muchas veces más allá de la disposición de herramientas y técnicas cuando no hay apoyo
+
+125
+00:11:44,760 --> 00:11:52,560
+ de la altajerezia, cuando no hay disposición del equipo, en pintar la solución es imposible
+
+126
+00:11:52,560 --> 00:11:56,880
+ la respuesta a todo este tipo de requerimientos.
+
+127
+00:11:56,880 --> 00:12:02,840
+ Sin embargo no es tan sencillo como parece, ya que el conocimiento propio del dominio no se
+
+128
+00:12:02,840 --> 00:12:09,200
+ les dar disponible en forma explicita en su totalidad, se encuentra muchas veces distribuido
+
+129
+00:12:09,200 --> 00:12:16,480
+ en muchas fuentes de manera incompleta y no documentada, hay situaciones en donde distintas
+
+130
+00:12:16,480 --> 00:12:21,400
+ fuentes pueden ser hasta contradictorias y en muchísimos casos gran parte de toda esta
+
+131
+00:12:21,400 --> 00:12:26,600
+ descripción se encuentra en lenguaje natural, la presencia del licitador puede cambiar
+
+132
+00:12:26,600 --> 00:12:32,000
+ el problema su contexto, el momento de participar en el mismo, obviamente los está en Jolders
+
+133
+00:12:32,000 --> 00:12:41,600
+ también vamos a dejar acá este video explicando la primera actividad y vamos a pasar
+
+134
+00:12:41,600 --> 00:12:45,120
+ en el segundo hablar de la comprensión, desde ella muchísimas gracias y hasta el juego.
+

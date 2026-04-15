@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:04,380
+ Hola, este es el tercer video correspondiente a la presentación de razonamiento
+
+2
+00:00:04,380 --> 00:00:10,040
+ aproximado y lógica difusa, en este video vamos a dar un ejemplo de cómo se
+
+3
+00:00:10,040 --> 00:00:15,560
+ puede aplicar la lógica difusa para representar información impresisa,
+
+4
+00:00:15,560 --> 00:00:22,080
+ entonces supongamos que yo quiero evaluar si una persona es alta o no, para eso
+
+5
+00:00:22,080 --> 00:00:27,320
+ supongamos que un experto nos define los siguientes criterios, nos dice, una
+
+6
+00:00:27,320 --> 00:00:33,280
+ persona se considera alta si mi de más de un metro 80, una persona es baja si mi
+
+7
+00:00:33,280 --> 00:00:39,200
+ de menos de un metro 50 y las personas entre esos valores es decir, entre un metro
+
+8
+00:00:39,200 --> 00:00:45,480
+ 50 y un metro 80 se consideran de esta tura mediana, entonces ahí tengo
+
+9
+00:00:45,480 --> 00:00:50,840
+ tres reglas bastante claras que nos permitían determinar su una persona
+
+10
+00:00:50,840 --> 00:00:58,040
+ es alta de esta tura mediana o baja, pero qué pasa? si bien una persona de un metro
+
+11
+00:00:58,040 --> 00:01:02,240
+ 70 y 8, ¿qué tenemos que decir? de acuerdo de esta regla nos tendríamos
+
+12
+00:01:02,240 --> 00:01:08,080
+ que decir que es de esta tura mediana, pero el sentido común nos indica que una
+
+13
+00:01:08,080 --> 00:01:14,400
+ persona de metro 70 y 8 debería ser alguien casi alto o muy cercano alto porque
+
+14
+00:01:14,400 --> 00:01:21,680
+ la diferencia son solo dos centímetros, entonces ya que no existen un salto abrupto
+
+15
+00:01:21,680 --> 00:01:26,320
+ entre las transiciones de alturas o sea, no por el hecho de llegar a un metro 80
+
+16
+00:01:26,320 --> 00:01:31,800
+ corresponde a otra categoría, sino que tendría que ser un poco más gradual, vamos a
+
+17
+00:01:31,800 --> 00:01:37,640
+ ver cómo se puede aplicar las funciones de partnercias, de la lógica difusa para
+
+18
+00:01:37,640 --> 00:01:45,280
+ representar los distintos cambios de status o categoría para una persona de
+
+19
+00:01:45,280 --> 00:01:52,080
+ acuerdo a la altura que vive, entonces para ello vamos a definir las funciones
+
+20
+00:01:52,080 --> 00:01:57,840
+ de partnercias correspondiente, la primera función de partnercia que vamos a definir
+
+21
+00:01:57,840 --> 00:02:04,760
+ es la que nos va a indicar si una persona es alta o no, entonces la función alta
+
+22
+00:02:04,760 --> 00:02:09,840
+ la vamos a definir de la siguiente manera, entonces vamos a la sala de decir que
+
+23
+00:02:09,840 --> 00:02:17,000
+ va a valer uno cuando la persona mide más o igual a un metro 80, antes habíamos
+
+24
+00:02:17,000 --> 00:02:22,080
+ dicho más, pero podríamos incluir el igual ya que es el punto de inicio para
+
+25
+00:02:22,080 --> 00:02:30,320
+ considerar que una persona es totalmente alta, si la persona mide un metro 65 o menos
+
+26
+00:02:30,320 --> 00:02:36,680
+ vamos a considerar que no es nada alta, entonces la signamos un valor de cero y entre
+
+27
+00:02:36,680 --> 00:02:43,520
+ un metro 65 y un metro 80 vamos a considerar que la persona tiende a subir en el valor
+
+28
+00:02:43,520 --> 00:02:53,000
+ de partnercia a alto, entonces un metro 66 va a valer muy poco, un metro 79 va a valer casi uno
+
+29
+00:02:53,000 --> 00:03:00,760
+ bien, entonces esta función que yo puedo representar de esta manera, donde voy
+
+30
+00:03:00,760 --> 00:03:09,760
+ definiendo una función que si vale menos de un metro 65 vale cero, si vale
+
+31
+00:03:09,760 --> 00:03:17,360
+ 1, si mide un metro 80 o más es alta y si está entre un metro 65 y un metro 80
+
+32
+00:03:17,360 --> 00:03:24,160
+ no está, tengo una recta que me muestra las distintas graduaciones, hay veces que en las
+
+33
+00:03:24,160 --> 00:03:28,960
+ funciones de partnership no se utilizo una recta sino que se utilizo una curva, eso
+
+34
+00:03:28,960 --> 00:03:33,760
+ lo vamos a ver en el otro ejemplo como se puede aplicar, cualquiera de las dos formas
+
+35
+00:03:33,760 --> 00:03:39,200
+ es valida va a depender de lo que yo quiero representar, en nuestro caso vamos a considerar
+
+36
+00:03:39,200 --> 00:03:46,560
+ que el crecimiento de la función de partnership es proporcional al crecimiento de la
+
+37
+00:03:46,560 --> 00:03:52,080
+ estatura de la persona, entonces ahí ya tengo la definida mi función de partnership
+
+38
+00:03:52,080 --> 00:04:00,920
+ para definir una persona es alta o no, de la misma manera o civilar, porque vamos a
+
+39
+00:04:00,920 --> 00:04:07,600
+ que los parámetros son distintos, se aplica en la función para definir una persona
+
+40
+00:04:07,600 --> 00:04:13,680
+ tiene estaatura baja y si tiene estaatura mediana, entonces para baja vamos a decir que
+
+41
+00:04:13,680 --> 00:04:23,920
+ mide un metro 50 o menos esto talmente baja, si mide un metro 65 o más no es nada baja y
+
+42
+00:04:23,920 --> 00:04:30,480
+ entre un metro 50 y un metro 65 van a ir cambiando los valores de partnership, en este caso
+
+43
+00:04:30,480 --> 00:04:37,520
+ va a ser inversamente proporcional es decir si yo tengo alguien que mide un metro 49
+
+44
+00:04:37,520 --> 00:04:47,160
+ se va a ser cara a uno, si alguien mide un metro 64 va a tender a ser bien por último nos
+
+45
+00:04:47,160 --> 00:04:52,440
+ queda definir la función de estaatura mediana, en este caso tendríamos toda la situación
+
+46
+00:04:52,440 --> 00:05:00,200
+ intermedia, entonces aquí lo que vamos a definir es que un metro 65 que justo la mitad
+
+47
+00:05:00,200 --> 00:05:09,000
+ entre un metro 50 y un metro 80, lo definimos nosotros, una persona que mide un metro 65 va
+
+48
+00:05:09,000 --> 00:05:15,440
+ a tener un valor de partnership total para estaatura mediana, entonces va a leer uno, si mide
+
+49
+00:05:15,440 --> 00:05:23,640
+ un metro 50 o menos o mide un metro 80 o más no es nada de estaatura mediana y entre un metro
+
+50
+00:05:23,640 --> 00:05:31,200
+ 50 y un metro 65 y un metro 65 y un metro 80 va a tener el crecimiento y el de crecimiento
+
+51
+00:05:31,200 --> 00:05:37,200
+ que le corresponde, también bueno para representar estas dos nuevas funciones entonces lo
+
+52
+00:05:37,200 --> 00:05:44,240
+ podemos usar de la siguiente manera, ahí tenemos la función de partnership mediana y así
+
+53
+00:05:44,240 --> 00:05:51,040
+ tenemos la función de partnership para abajo, fíjense que en este ejemplo nos queda bastante
+
+54
+00:05:51,040 --> 00:05:56,800
+ simétrico, el gráfico de la derecha y de la izquierda, pero no siempre tiene que ser así,
+
+55
+00:05:56,800 --> 00:06:03,560
+ de hecho después vamos a verlo en un ejemplo más complejo donde eso no se cumple, lo importante
+
+56
+00:06:03,560 --> 00:06:08,840
+ que si tiene que cumplir es que se representen en qué situación es toma un valor y en qué
+
+57
+00:06:08,840 --> 00:06:16,040
+ situación es toma otro valor, o sea de acuerdo a la altura de la persona en centímetros cuál
+
+58
+00:06:16,040 --> 00:06:24,700
+ es el grado de partnership para abajo, mediana y ya, está bien, bueno entonces teniendo en
+
+59
+00:06:24,700 --> 00:06:32,160
+ cuenta estas tres funciones podemos determinar que una persona de un metro 78 va a cortar a la
+
+60
+00:06:32,160 --> 00:06:38,280
+ función mediana en un valor y en la función alta en otro valor, entonces si esto lo hacemos
+
+61
+00:06:38,280 --> 00:06:44,880
+ bien escala podemos determinar que cortaría a mediana en cero comados y a alta en cero
+
+62
+00:06:44,880 --> 00:06:52,100
+ comadocho entonces alguien de un metro 78 podemos decir que tiene para alto un valor de
+
+63
+00:06:52,100 --> 00:06:59,840
+ partnership de cero comadocho para mediana de cero comados y para abajo decero entonces si esto
+
+64
+00:06:59,840 --> 00:07:07,680
+ nosotros lo interpretamos podemos decir que una persona de un metro 78 es casi alta un poco
+
+65
+00:07:07,680 --> 00:07:14,120
+ de esta altura mediana y nada abajo entonces con los valores correspondientes a las funciones de
+
+66
+00:07:14,120 --> 00:07:23,580
+ partencias podríamos manejar esos valores borrosos o impresisos que estamos dando por una
+
+67
+00:07:23,580 --> 00:07:32,460
+ descripción en castellano y a su vez podemos clasificar mejor a una persona de metro 78 no
+
+68
+00:07:32,460 --> 00:07:38,760
+ generando un salto abrupto de acuerdo a los parámetros que antes de fíjimos, bueno espero
+
+69
+00:07:38,760 --> 00:07:44,760
+ que con este ejemplo se haya entendido y con esto vamos a cortar este vídeo para que no
+
+70
+00:07:44,760 --> 00:07:50,600
+ sea demasiado largo y en el próximo vamos a ver ya cómo funciona la lógica difusa para
+
+71
+00:07:50,600 --> 00:07:57,280
+ poder hacer toma de decisión eso sea como se puede utilizar esta información en reglas para
+
+72
+00:07:57,280 --> 00:08:01,520
+ llegar a conclusiones. Hasta luego.
+

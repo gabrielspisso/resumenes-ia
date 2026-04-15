@@ -1,0 +1,484 @@
+1
+00:00:00,000 --> 00:00:07,680
+ Hola, mi nombre es Pablo Pitel, yo soy docente de las asignaturas inteligencias artificiales,
+
+2
+00:00:07,680 --> 00:00:14,740
+ la inteligencia artificial avanzada. Este es uno de los vídeos que estamos preparando para que
+
+3
+00:00:14,740 --> 00:00:22,900
+ los alumnos puedan acceder a los temas de ambas asignaturas. En este caso vamos a hablar de
+
+4
+00:00:22,900 --> 00:00:29,400
+ la inteligencia artificial y los sistemas inteligentes. La idea es que sirva para que los alumnos
+
+5
+00:00:29,400 --> 00:00:37,320
+ de inteligencia artificial puedan acceder a entender mejor estos temas. En el caso de la
+
+6
+00:00:37,320 --> 00:00:48,720
+ sin actura electiva, la idea es darles un repaso de temas que ya han visto. Bueno, cuando nosotros
+
+7
+00:00:48,720 --> 00:00:56,160
+ hablamos de la inteligencia artificial, muchas veces se hablen de robots. Estos robots se
+
+8
+00:00:56,160 --> 00:01:02,540
+ buscan resolver problemas, entonces se trata de desarrollar robots que tengan características
+
+9
+00:01:02,540 --> 00:01:08,880
+ similares a las sumanas para resolver problemas complejos, donde va a la pena aplicar
+
+10
+00:01:08,880 --> 00:01:16,760
+ un robot. También se habla de oselirse que en los robots en algún momento nos van a robar
+
+11
+00:01:16,760 --> 00:01:23,960
+ nuestras trabajos. Entonces se habla de que como los robots, al poder resolver cada vez
+
+12
+00:01:23,960 --> 00:01:30,000
+ gracias más complejas, se van a quedar con el trabajo y los seres humanos nos vamos a quedar
+
+13
+00:01:30,000 --> 00:01:37,640
+ desempleados. Sin embargo, eso no es tan así porque los robots van a poder resolver problemas
+
+14
+00:01:37,640 --> 00:01:45,960
+ que son bastante complicadas en cuanto a operaciones matemáticas, razonamiento, pero hay otras
+
+15
+00:01:45,960 --> 00:01:53,360
+ actividades de creatividad, como el arte, donde los robots no van a ser tan buenos. Entonces,
+
+16
+00:01:53,360 --> 00:02:00,000
+ se puede ver que los robots también podría ser beneficiosos para la humanidad. No obstante
+
+17
+00:02:00,000 --> 00:02:05,340
+ también está el punto de vista de las películas, donde los robots nos van a dominar y
+
+18
+00:02:05,340 --> 00:02:12,880
+ van a acabar con los seres humanos. Bueno, nosotros en estas asignaturas, no vamos a hablar
+
+19
+00:02:12,880 --> 00:02:20,280
+ de robots, pero los robots son conceptos más de la mecánica y de la electrónica. Nosotros
+
+20
+00:02:20,280 --> 00:02:26,120
+ vamos a hablar de la inteligencia artificial relacionada de la computación y al software.
+
+21
+00:02:26,120 --> 00:02:32,840
+ Entonces, una definición que vamos a usar para hablar de la inteligencia artificial tiene
+
+22
+00:02:32,840 --> 00:02:38,800
+ que ver con una ramas de las ciencias computacionales que se encargan de estudiar modelos
+
+23
+00:02:38,800 --> 00:02:46,240
+ de computación, los robots van a hacer tecnologías, artics, arquitecturas, para desarrollar
+
+24
+00:02:46,240 --> 00:02:52,960
+ software que sean capaces de realizar actividades propias de las seres humanos. Esas actividades
+
+25
+00:02:52,960 --> 00:02:59,280
+ van a tener que ver con el razonamiento, la conducta y obviamente la aprendizaje. Entonces,
+
+26
+00:02:59,280 --> 00:03:07,440
+ nosotros vamos a quedar desarrollar de alguna forma software que se vaya mejorando con el uso
+
+27
+00:03:07,440 --> 00:03:18,400
+ y vaya tratando de aprender sola hasta cierto punto. Estas máquinas inteligentes,
+
+28
+00:03:18,400 --> 00:03:24,840
+ este software inteligente nosotros les vamos a llamar sistemas inteligentes para desarrollar
+
+29
+00:03:24,840 --> 00:03:32,040
+ lo más fácil. Entonces, en esta visión del inteligencia artificial,
+
+30
+00:03:32,040 --> 00:03:38,040
+ podemos ver que también va a estar dividida por distintas disciplinas. Vamos a tener
+
+31
+00:03:38,040 --> 00:03:46,680
+ laía tradicional, la inteligencia computacional, el aprendizaje automático, machine learning,
+
+32
+00:03:46,680 --> 00:03:54,520
+ la visión artificial, procesamiento del lenguaje natural, bit data y data mining. Las cuales
+
+33
+00:03:54,520 --> 00:04:00,760
+ no tratan, estas dos últimos no tratan de construir sistemas inteligentes, pero aplican muchas
+
+34
+00:04:00,760 --> 00:04:08,200
+ de las tecnologías que derivan de la inteligencia artificial. Entonces, están muy relacionadas.
+
+35
+00:04:08,200 --> 00:04:17,480
+ A partir de todas estas disciplinas, entonces nos va a permitir construir este software inteligente
+
+36
+00:04:17,480 --> 00:04:23,080
+ para resolver problemas. Pero estos problemas no van a hacer cualquier problema. Es un
+
+37
+00:04:23,080 --> 00:04:30,120
+ buen hacer problemas especiales, problemas complejos, donde van a cumplir alguna o algunas de estas
+
+38
+00:04:30,120 --> 00:04:35,960
+ características. Por ejemplo, en la primera característica es que el problema no se entiende completamente.
+
+39
+00:04:35,960 --> 00:04:43,800
+ Si nosotros el problema no entendemos bien de qué trata y entonces no podemos encontrar una solución.
+
+40
+00:04:43,800 --> 00:04:49,160
+ La inteligencia artificial es un buen medio que podemos utilizar para intentar resolverlo.
+
+41
+00:04:49,160 --> 00:04:54,920
+ También podemos pensar problemas donde no podemos saber qué va a pasar a futuro. No podemos
+
+42
+00:04:54,920 --> 00:05:01,640
+ anticipar todas las posibles situaciones que va a ver ni los futuros cambios en que va a decir
+
+43
+00:05:01,640 --> 00:05:05,080
+ que el cambio es que se evamos a tener que aplicar en el sistema inteligente. Entonces,
+
+44
+00:05:05,080 --> 00:05:13,240
+ la inteligencia artificial es un buen medio. Otra posibilidad es que la cantidad de posibles
+
+45
+00:05:13,240 --> 00:05:20,600
+ opciones sean tan grandes que no es posible probar todas para encontrar la mejor solución. Entonces,
+
+46
+00:05:20,600 --> 00:05:26,680
+ voy a hacer una búsqueda exhaustiva. Podemos aplicar métodos eurísticos que tratan de acotar
+
+47
+00:05:26,680 --> 00:05:34,600
+ el espacio de búsqueda y de esa forma encontrar una buena solución al problema en poco tiempo o con un poco
+
+48
+00:05:34,600 --> 00:05:43,000
+ costo. También, por último, puede pasar que el problema podemos entenderlo pero al tratar de modelarlo
+
+49
+00:05:43,000 --> 00:05:50,200
+ en un software en tratar de programar la solución tendramos que dejar de lado muchas cosas tenemos
+
+50
+00:05:50,200 --> 00:05:56,600
+ que simplificar esta solución. Entonces, esa solución tal vez después no resolga del todo el problema.
+
+51
+00:05:56,600 --> 00:06:01,960
+ Entonces, en esta situación está bien la inteligencia artificial es una buena alternativa.
+
+52
+00:06:03,000 --> 00:06:08,760
+ Entonces, la inteligencia artificial que nosotros vamos a ver tiene que ver con la construcción del sistema
+
+53
+00:06:08,760 --> 00:06:16,680
+ inteligente. Pero estos sistemas inteligentes tienen como un característica que no logran emular de todos
+
+54
+00:06:16,680 --> 00:06:24,120
+ los características de los seres humanos. Tenemos los dos tipos de inteligencia artificial que son laía fuerte,
+
+55
+00:06:24,120 --> 00:06:32,680
+ laía devil. Nosotros no vamos a tratar de laía devil que tiene que ver con tratar de emular ciertas
+
+56
+00:06:32,680 --> 00:06:38,440
+ características de los seres humanos. Entonces, en ninguna de los sistemas inteligentes que nosotros
+
+57
+00:06:38,440 --> 00:06:47,240
+ vamos a desarrollar va a poder emular todas las características de los seres humanos. Pero, si van a ser
+
+58
+00:06:47,240 --> 00:06:54,520
+ mejores que el software tradicional, porque si nosotros recordamos la pirámido de la información,
+
+59
+00:06:54,520 --> 00:07:00,360
+ donde tenemos el concepto de datos, noticia, conocimiento y sabiduría, podemos ver que el software
+
+60
+00:07:00,360 --> 00:07:07,080
+ tradicional puede transaccionar con datos para llegar a un nivel de noticias e encontrarles ciertos
+
+61
+00:07:07,080 --> 00:07:12,840
+ significados a los datos. En cambio, los sistemas inteligentes llegan a un nivel superior,
+
+62
+00:07:12,840 --> 00:07:19,400
+ porque transaccionan con conocimiento, es decir, datos, con significado y utilidad.
+
+63
+00:07:19,400 --> 00:07:28,840
+ Entonces, estos sistemas inteligentes es como acá el concepto de la iceberg. No nos quedamos con la
+
+64
+00:07:28,840 --> 00:07:34,600
+ punta de la iceberg que son los datos, sino que tratan de encontrar patrones relaciones entre
+
+65
+00:07:34,600 --> 00:07:40,040
+ las distintos datos y estos conocimientos ocultos que puedan tener los datos, los utilizan para
+
+66
+00:07:40,040 --> 00:07:50,520
+ resolver el problema. Entonces, ¿cómo podríamos definir a estos sistemas inteligentes de alguna
+
+67
+00:07:50,520 --> 00:07:56,680
+ forma? Bueno, acá también tenemos distintos puntos de vista. Muchas veces, la sociedad, cuando una
+
+68
+00:07:56,680 --> 00:08:03,400
+ le dice de això de desarrollos sistemas inteligentes, piensan en los robots, ¿no? ¿Qué como dijimos? No,
+
+69
+00:08:03,400 --> 00:08:11,400
+ no es el objetivo de la inteligencia artificial que nosotros vamos a hacer. Por otro lado, hasta la visión
+
+70
+00:08:11,400 --> 00:08:19,000
+ de los científicos que trabajan con la inteligencia artificial, los padres de estos sistemas inteligentes,
+
+71
+00:08:19,000 --> 00:08:26,120
+ donde ellos piensan, ah, no, yo estoy haciendo un nente perfecto con un montón de características,
+
+72
+00:08:26,120 --> 00:08:37,720
+ entonces estoy dando al uso, un software especial, lo que los amigos piensan que hace, en este caso,
+
+73
+00:08:37,720 --> 00:08:42,440
+ los amigos, sería un otro software. Si nosotros vemos un sistema inteligente, vamos a ver que está formado por
+
+74
+00:08:42,440 --> 00:08:51,080
+ código, está desarrollada en un envoaje, por ejemplo, acá tenemos está desarrollado en Python. Entonces,
+
+75
+00:08:51,080 --> 00:08:56,840
+ no es que nosotros tengamos que desarrollar directamente en el hardware, esta sistema inteligente,
+
+76
+00:08:56,840 --> 00:09:03,720
+ nosotros vamos a programar en algún lenguaje usando librerías especiales. Estas librerías,
+
+77
+00:09:03,720 --> 00:09:11,480
+ lo que le va a permitir al sistema inteligente es generar un modelo del problema y así encontrar una solución.
+
+78
+00:09:12,840 --> 00:09:18,120
+ Entonces, ¿qué es lo que realmente hace? Tiene algún tipo de comportamiento inteligente,
+
+79
+00:09:18,120 --> 00:09:24,120
+ ese comportamiento puede ser algo tan trivial, como jugar un juego, en este caso del arcano,
+
+80
+00:09:24,120 --> 00:09:31,240
+ este es un ejemplo del sistema inteligente de desarrollaron una de las empresas de Google,
+
+81
+00:09:31,240 --> 00:09:38,360
+ para jugar al arcano y aprender a jugar solo del arcano. Entonces, los sistemas inteligentes,
+
+82
+00:09:38,360 --> 00:09:44,840
+ los podemos ver como artefactos que tienen algún tipo de comportamiento inteligente. ¿Qué significa esto
+
+83
+00:09:44,840 --> 00:09:50,520
+ de comportamiento inteligente? Bueno, que puede tomar decisiones consistentes con un objetivo,
+
+84
+00:09:50,520 --> 00:09:56,360
+ sea son racionales, es que hacen cualquier cosa sino que ellos tienen definido un objetivo y tratar
+
+85
+00:09:56,360 --> 00:10:04,600
+ de alguna forma a alcanzar ese objetivo. Pero no son omniscientes, no conocen todo ni tienen todos los datos sobre
+
+86
+00:10:04,600 --> 00:10:11,080
+ el problema. Eso genera que no sean tan poco infalibles, no siempre son exitosos,
+
+87
+00:10:11,080 --> 00:10:19,400
+ puede ser que nos den una solución satisfactoria, pero que no alcance a resolver todas las posibles
+
+88
+00:10:19,400 --> 00:10:28,200
+ situaciones. De todas formas, estos sistemas inteligentes van a poder aprender, lo cual va a ser
+
+89
+00:10:28,200 --> 00:10:37,720
+ que su durante su uso van a mejorar su performance. Y a su vez, van a poder suportar ciertos cambios
+
+90
+00:10:37,720 --> 00:10:43,480
+ en el dominio. Al tener la capacidad de aprender y tener ciertas flexibilidades de robustas,
+
+91
+00:10:43,480 --> 00:10:49,880
+ le va a dar la posibilidad de que se puedan adaptar a ciertos cambios, no a todos,
+
+92
+00:10:50,600 --> 00:10:57,560
+ y de esa forma, poder seguir funcionando a pesar de que la situación no era la misma,
+
+93
+00:10:57,560 --> 00:11:05,280
+ que cuando fue criado originalmente. Como habíamos visto antes, para desarrollar estos sistemas
+
+94
+00:11:05,280 --> 00:11:13,320
+ inteligentes, hay dos grandes ramas que le haya tradicional, y por otro lado, tenemos la inteligencia
+
+95
+00:11:13,320 --> 00:11:20,760
+ computacional y machine larga. La idea tradicional tiene que ver con más con los sistemas desarrollados
+
+96
+00:11:20,760 --> 00:11:27,560
+ por la ingeniería del conocimiento o hínico que van a hacer sistemas que van a tener bases de conocimientos,
+
+97
+00:11:27,560 --> 00:11:35,040
+ donde usamos reglas, metodoseurísticos y lógicas. En cambio, la inteligencia computacional tiene que
+
+98
+00:11:35,040 --> 00:11:41,160
+ ver con sistemas inteligentes que donde la tecnología va a estar basada en una inspiración biológica.
+
+99
+00:11:41,160 --> 00:11:46,920
+ Entonces, hay, por ejemplo, tenemos los salvadimos genéticos, que están basados en la teoría de la evolución,
+
+100
+00:11:46,920 --> 00:11:55,520
+ y otra rama que es muy importante y que está muy aplicada actualmente, que es la aprendizaje automático
+
+101
+00:11:55,520 --> 00:12:03,280
+ machine larga, que tiene que ver con sistemas que pueden aprender a partir de ejemplos. De estos sistemas de machine
+
+102
+00:12:03,280 --> 00:12:08,480
+ larga, lo vamos a desarrollar un poco más en otro vídeo, pero acá tenemos un ejemplo,
+
+103
+00:12:08,480 --> 00:12:14,320
+ de las redes neuronales artificiales, que atrenden a partir de ejemplos, y que también
+
+104
+00:12:14,320 --> 00:12:19,680
+ partenés en la inteligencia computacional, porque tienen una inspiración biológica. Entonces,
+
+105
+00:12:19,680 --> 00:12:25,720
+ por eso estas dos tecnologías, nosotros les ponemos juntas, porque pueden ser que se convienen
+
+106
+00:12:25,720 --> 00:12:33,560
+ en algunas tecnologías. Entonces, como ejemplos de estos sistemas inteligentes, vamos a tener
+
+107
+00:12:33,560 --> 00:12:41,960
+ algorithms de inducción, los sistemas multijentes, redes neuronales, y las redes de Deep Learning,
+
+108
+00:12:41,960 --> 00:12:46,440
+ la computación evolutiva con los salvadimos genéticos, la inteligencia del enjambre, modelos
+
+109
+00:12:46,440 --> 00:12:51,680
+ probabilísticos, son distintas tipos de tecnologías que se pueden aplicar para construir
+
+110
+00:12:51,680 --> 00:12:57,680
+ sistemas inteligentes. Pero de todas formas, a pesar de que hay un montón de tecnologías,
+
+111
+00:12:57,680 --> 00:13:03,160
+ hay un montón de arquitecturas que se pueden aplicar para construir estos sistemas inteligentes
+
+112
+00:13:03,160 --> 00:13:09,480
+ y resolver problemas. Implementar un sistema inteligente no es trivial, no es tan fácil
+
+113
+00:13:09,480 --> 00:13:16,440
+ como parece. Después vamos a dar que hay que tener conocimientos de la tecnología, pero
+
+114
+00:13:16,440 --> 00:13:22,400
+ también tenemos que aplicar por esos ingenieriles. Por eso, la inteligencia artificial, nosotros
+
+115
+00:13:22,400 --> 00:13:27,960
+ la vemos en una carrera de ingenieril, porque muchos de los conceptos de la ingenieril y
+
+116
+00:13:27,960 --> 00:13:33,760
+ sistemas de información y la ingeniería de software, también se tienen que aplicar en la construcción
+
+117
+00:13:33,760 --> 00:13:38,040
+ de estos sistemas inteligentes para que el sistema inteligente debe arreglar el resolver
+
+118
+00:13:38,040 --> 00:13:42,600
+ el problema que tenga la organización. No es que nosotros resolvemos el problema que nosotros
+
+119
+00:13:42,600 --> 00:13:48,880
+ carramos. Si no que nosotros nos vamos a enfocar en las necesidades y deseos que tenga
+
+120
+00:13:48,880 --> 00:13:57,640
+ esa organización. Bueno, vamos a cortar acá la presentación. Nos veremos en
+
+121
+00:13:57,640 --> 00:14:01,280
+ otra vida, espero que sigan bien, gracias por su atención.
+

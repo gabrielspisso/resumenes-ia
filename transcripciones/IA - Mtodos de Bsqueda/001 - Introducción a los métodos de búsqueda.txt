@@ -1,0 +1,71 @@
+ Bienvenidos, mi nombre es María Florensia Pochocatánio, soy la jefa de Catedra de la
+ Signatura Inteligencia Artificial de la Universidad Technológica Facultar Regional
+ Buenos Aires. A continuación, vamos a ver una introducción a los métodos de Boque.
+ Tad un problema determinado, el primer paso es el desarrollo de un sistema inteligente que
+ pueda resolverlo, debe ser poder modelar el problema, de una manera formal y manipulable
+ a partir de la descripción informal. Una vez enco de definir a todas las características
+ propias de este problema, se debe definir al mismo en términos de una búsqueda
+ en espacio de estados, dentro de los distintos espacios de estados, vamos a considerar los
+ estados iniciales, intermedios y finales o solución del mismo. Esta concepción forma la
+ base de la mayoría de los métodos que se utilizan para la resolución de problemas aplicando
+ técnicas de la inteligencia artificial. Los estados son representaciones que contienen el conjunto
+ de toda la información que describe la situación del sistema en un momento determinado.
+ Se puede pensar como una foto del instante que no quiere describir. De esta manera, el conjunto
+ de espacios de estados del sistema también conocidos como estados del problema, se puede
+ considerar como en dominio que contiene todos los posibles estados del sistema. Este
+ conjunto puede ser finito cuando se pueden conocer todos los estados posibles o puede ser
+ infinito si no es posible numerar todos los estados posibles. A su vez dentro de este conjunto
+ de estados posibles encontramos el estado inicial que describe la situación actual,
+ originaria del problema, el conjunto de estados objetivos o finales que es donde se pueden
+ encontrar las distintas soluciones y los estados intermedios que son aquellos estados
+ por los que uno transita empos de encontrar la solución. Por otro lado, tenemos los operadores
+ sorreglas. Cuando queremos identificar o describir que son los operadores sorreglas, podemos
+ decir que un operador sorreglas, vinculados estados posibles, un estado originó padre con
+ un estado destino hoy. Podemos representar un problema en este ejemplo a través de un
+ árbol donde tenemos un estado inicial A, un conjunto de estados intermedios B, C, D,
+ E, F, G, H y K y N. Y un conjunto de estados solución que en este caso están marcados
+ con color verde, J y M. Las distintas transiciones implican el armado de este árbol
+ y podemos destacar las siguientes. De a si a B, en este caso, de A si a C, de A si a D,
+ de B a E y de B a F, de C a C, de D a L, de D a H, de E a I y de A J, siendo J, no lo solucion
+ de J acá, de J a L, del Estado de Alestado L, y finalmente del Estado L, el Estado M,
+ que también es un nodo solución. Ahora vamos a hablar del proceso de búsqueda para
+ la solución de problemas. Como representamos esta búsqueda, a través de una representación
+ del problema con todos sus componentes y la definición de la estrategia de control. La estrategia
+ de control es el conjunto de técnicas que nos permiten elegir las distintas reglas
+ o estados a través de los distintos métodos de búsqueda. El proceso de solución de
+ un problema se puede definir entonces como el mecanismo mediante el cual, partiendo de un
+ estado inicial, se llega algún estado solución, utilizando una estructura de control. Esta
+ nos permite seleccionar y aplicar las reglas que producen las transiciones entre los
+ estados pertenecientes al conjunto de estados del problema. Nosotros tenemos un estado inicial
+ este estado inicial a través de la ejecución del estructura del control, nos permite obtener
+ un nuevo estado. Este nuevo estado será considerado y analizado a ver si es solución. En
+ caso de no serlo nuevamente sin Greza ese nuevo estado en la estructura de control para
+ si poder ir avanzando. Mientras que en el caso que se nuevos estados sea solución uno
+ considera que el problema ha sido resuelto. Pero como funciona la estructura de control
+ internamente, a partir de un estado entrada, se analiza en el conjunto de reglas aplicables.
+ En el primer caso que es que no existan reglas posibles aplicar el estado salida que
+ daría identico al estado entrada sin haber modificado y por no haber aplicado ninguna
+ transición. Una segunda opción que es en el caso que exista una única regla aplicar es a
+ mismas reglas detectada, se aplica y el estado salida va a ser el resultado de la aplicación
+ de la regla. Sin embargo, la tercera opción o la opción más interesante, más completa en
+ la estructura de control tiene más tareas para hacer es en el caso que existan dos o más
+ reglas. En este caso existe un estado anterior a aplicar la regla que es la selección
+ de la regla aplicar. A partir de haber seleccionado la regla aplicar, se aplica la misma
+ y se obtiene el nuevo estado salida de haber aplicado la estructura de control.
+ Dentro de los métodos de búsqueda, tenemos dos grandes conjuntos. Por un lado, tenemos
+ los métodos sin información del dominio o búsqueda ciega. En este caso, estos métodos no
+ tienen información complementaria del dominio que diga si un estado es mejor que otro
+ al un estado intermedio, solamente tiene la descripción propia de los estados y la identificación
+ de los estados solucion. Dentro de estos conjuntos de métodos de búsqueda, tenemos
+ primero en amplitud, primero en profundidad, generación y prueba, primero en profundidad
+ iterativa y bidireccional entre otros. Por otro lado, tenemos otro conjunto de métodos de
+ búsqueda, los métodos con información del dominio o de búsqueda húrística, donde tenemos
+ información propia del dominio, donde podríamos ir analizando estos distintos estados
+ intermedios, cuán candidatos buenos o no tan buenos en postestar más o menos cerca de la solución
+ son a través de una definición de su egoíctica. Dentro de estos métodos, tenemos la escalada
+ simple, escalada máxima pendiente, el primero mejor, pinch search, a estrella y díxtra
+ entre otros. A partir de acá, vamos por finalizada la presentación de la introducción
+ de los métodos de búsqueda, debajo de esta pantalla, tendrán los links con los
+ vídeos para poder seguir desarrollando los distintos métodos y les recomendamos suscribirse
+ al canal de YouTube, donde podrán tener información respecto de las últimas novedades que
+ vayamos ingresando. Desde ya, muchísimas gracias y nos vemos la próxima.

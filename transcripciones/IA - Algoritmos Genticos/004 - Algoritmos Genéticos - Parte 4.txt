@@ -1,0 +1,205 @@
+ Hola, mi nombre es María Florencia Pollo y vamos a continuar con la explicación de los operadores de selección de un algoritmo genético.
+ Habíamos pasado por el torneo, habíamos después pasado por el ranking y ahora y vamos a explicar rulita.
+ Rulete es un poquito más con pleto, no con plijo.
+ Vamos a haber.
+ Bien, comenzamos definiendo la población inicial, tal como la teníamos antes con los distintos valores de función de aptitud.
+ A todos estos los sumamos y a partir de ahí calculamos cuál es la proporción que tienen de pertenencia.
+ Entonces hacemos 61 divididos 126, 101 divididos 126, 33 divididos 126, etcétera.
+ Obviamente que la suma de todos estos va a darcia.
+ Esta, a partir de ahí lo que calculamos lo que se conoce como la probabilidad acumulada.
+ Para el primer caso es el mismo valor y después lo que se hace es 29,61 más 5,34.
+ Eso me da 34,95.
+ 34,95 más 16,02 me va a dar 50 y así sucesivamente voy sumando el anterior y voy acumulando porque yo lo que quiero acá
+ es armar como un baño de la rouleta, vieron que cuando no tira una bolita en la rouleta que pasa,
+ cada porción debería medire exactamente lo mismo para que la probabilidad sea la misma,
+ uno tiró una pelotita girajira girajira y caen alguna porción.
+ La probabilidad de ocurrencia de todos los estos números, si todo estuviera bien, debería ser la misma.
+ Ahora qué pasa si yo quiero que salgan que tengas más probabilidad es uno número.
+ Yo podría darle esa rouleta como más espacio para algunos valores.
+ Entonces, eso es lo que vamos a hacer ahora.
+ Vamos a generar una rouleta redonda, si lo con un baño rectángular,
+ y lo que vamos a hacer es ir anotando las probabilidades de cada uno de los individuos.
+ Fíjense voy a volver para atrás, mira en los valores.
+ 29,61 y 34,95. 29,61 y 34,90.
+ Entonces, lo que hago es esta nueva rouleta, si yo tiraras, supongo que yo decido tirar,
+ cinco randos tienen obviamente más probabilidades de salir el uno y el 5,
+ que o casualidad si nos fijamos, mira el uno y el 5,
+ son los que tienen mayor función de actitud, lo cual es correcto.
+ Sin embargo, no le quito las probabilidades de existir o de salir a los malos,
+ y el más puede salir raro y que me salgan muchos malos.
+ Cuando explico esto en el curso antes de comenzar explicar algo bueno chicos,
+ tiremos seiz random.
+ Entonces, después nos calculamos a que le vemos lo que salió.
+ En salir números repetidos, puede que generalmente los buenos deberían salir,
+ puede salir más de una vez y también pueden ocurrir de los que no tienen
+ tan buena función de actitud.
+ Pero esto le da mucha posibilidad de tener más heterogénial a la población.
+ Y a partir de ahí tendríamos la población selección.
+ Ahora bien, qué crítica tiene el método de rouleta,
+ que a veces uno puede pasar esto, tira los randos y salen todos números malos.
+ Entonces estaría bueno, estaría bueno un método que para esto parece
+ este control sobre el número esperado que en realidad me garantice,
+ que salen los buenos y que después tira probabilidades.
+ Entonces, para eso parece este método y se los voy a contar.
+ Como primer paso es una presa elección de los mejores.
+ Entonces, tomar la población, la defunción fitness,
+ de cada uno de estos y calcula el total, o sea, la sumatoria.
+ Y calcula el promedio, o sea, 126 divididos 7 y la este valor.
+ Quiero decir que es el promedio de la función fitness de estos individuos.
+ Y a partir de ahí lo que calcula es la relación entre la función fitness
+ que tienen y el promedio.
+ Entonces, lo que hace es la función fitness 61 dividido el promedio,
+ 29,42 y lo que me da es en cuanto supera o no el promedio.
+ Finalmente, que quienes más superen van a tener mayor número entero.
+ Entonces, ya se en todos esos cálculos y después lo que hago es tomar.
+ Por el valor entre la parte entera de estos números,
+ es la cantidad de veces que tomas este individuo.
+ ¿Qué quiero decir?
+ Caca estaría tomo, iría tomar.
+ Dos veces el número uno, una vez el número tres y una vez el número cinco.
+ Se lecciono, entonces, ya hay, me guardo esos individuos.
+ Y acá, ya me garantizo que aquellos valores que son mayores que el promedio
+ me queden.
+ Y después con el resto, hago ruletante.
+ Entonces, si ustedes se fijan el espírito que presten atención,
+ miren la bandiza 0,728 y 37,38 y 37,38.
+ Creo una nueva función fitness por eso es efeprima,
+ donde ese valor es la bandiza que tienen todos estos números.
+ Bueno, vuelve para atrás, miren, por ejemplo, hay yo mismo este valor con el dedo.
+ Y siete, cinco con más siete, siete, ven.
+ Toma la bandiza.
+ Y ahí esto, a esto.
+ Y que calculo rulet.
+ Entonces, yo ya por lo un lado, me garantice los buenos.
+ Que fue que tomé dos veces el uno,
+ una vez el tres y una vez el cinco.
+ Y por otro lado, otro lado, digo bueno, ahora, plico ruleta.
+ Entonces, como era ruleta,
+ suma teoría, después calculo esto dividido esto y calcula en porcentaje.
+ Y después la probabilidad, a la probabilidad acumulada.
+ Este, este, este, que me va a dar este, este, que me va a dar este.
+ Y así sucesivamente.
+ Y con esto que haremos una nueva, una nueva ruleta.
+ Está un nuevo paino.
+ Si ustedes recuerdan antes, lo que estaban ponísimos era y uno y cinco.
+ Miren que ahora miren y uno, que poquito y ahora miren y cuatro,
+ le víamos traer el cuatro como hasta antes.
+ Antes los que estaban mejores era ni uno y cinco.
+ Y fíjense que ahora, el cuatro, siete.
+ Y ahí tiró los randos de los números que me hacen falta.
+ Entonces, si recordamos y hacemos un, como un paino rápido,
+ métodos de selección, torneo, recuerdan.
+ El día bandiados, después lo que hacíamos era ordenar los por ranquincinos.
+ Después teníamos la, la, la ruleta.
+ Y después teníamos el control sobre el número esperado.
+ Con estos tenemos los mét distintos métodos de selección.
+ A partir de ahora está bien el tiempo, si llegamos,
+ pasaríamos al cruzamiento.
+ Entonces, este grupo, este sur conjunto de individuos que yo selecciones,
+ entrarían al cruzamiento y que es el cruzamiento.
+ El cruzamiento es realizar alguna actividad de aparez y generar de sendencia.
+ Esta de sendencia hace que se eliminen lo que se conocen como los padres.
+ Yo siempre digo que el algoritmo genético es muy,
+ muy, muy, muy clásico de dos padres, salen dos hijos.
+ Los padres se eliminan y quedan los dos hijos.
+ Obviamente acá, pero aunque se puede repetir,
+ puede haber dos padres que sean iguales,
+ pueden quedar distintos, obviamente, desde dos padres iguales,
+ va a quedar un hijo igual y vamos a ir viendo cómo se hace este cruzamiento.
+ Existen distintos métodos de cruzamiento.
+ El cruzamiento simple y gente acá tienen un padre, un padre,
+ un padre y un padre y se toman dos hijos.
+ Lo que se tome es un punto de corte en este caso,
+ va a ser 4 y ahí es como que se cortaran con una tijera.
+ Se ve muy claro para un hijo, para una parte de un padre,
+ va a un hijo y se llama con la otra papá de la otra parte de la otra papá.
+ Y lo que queda, se junta en el próximo hijo.
+ Esto es una cruza simple.
+ Tienen un único punto de corte y ahí es donde se frena el cromosoma,
+ lo que se pide, generalmente, para que no disparen con los errores,
+ es que donde hagan los puntos de corte sean cambios de día tributos.
+ No corten, pieron que no tenía veces varias posiciones para un gen,
+ no corten ese general medio, sino que permita que la porción que le completa.
+ Y pues está la cruzamiento y punto de la cruzamiento,
+ ustedes pueden poner más de un punto de corte en este caso
+ para que tenemos el 4 y el 8 y nuevamente hacemos lo mismo.
+ Tomamos una parte de cada papá y ahí las mandamos a los hijos.
+ En estos dos metodos, local, la característica que va para un papá,
+ no va para un hijo, no va para el otro.
+ Esto es bastante interesante, es una característica del método.
+ Después está la cruzamiento mundial.
+ El primer caso es con más cara complemento.
+ Este caso se define una más cara que está explicada acá,
+ y se fijan esta más cara dice que en la primera posición
+ se toma la posición del papá de X en la segunda del papá y
+ fíjense de tercera y cuarta del papá de X y así sucesivamente.
+ Y acá armamos un hijo.
+ Obviamente, capacidad creativa, como es el otro hijo,
+ el otro hijo, como es más cara complemento,
+ son las otras posiciones que no fueron ocupadas por el otro papá.
+ Este caso, de cruza binomial por más cara complemento,
+ sería igual a una cruza multipunto,
+ donde voy cambiando en la máscara en los lugares
+ y como si fuera poniendo los puntos de corte.
+ Está plos puntos de corte, no tiene por tener la misma distancia.
+ Pero bueno, la máscara comprimento de cruza binomial
+ podría dar los mismos resultados que una cruza multipunto.
+ Después, hay otro método y este es el primer método
+ que vemos donde sí se pueden repetir características
+ de un papá y es el de máscarado.
+ ¿Por qué? Porque acá son dos máscaras,
+ independientes unas de otras.
+ Y si ustedes se fijan en la posición uno,
+ hay dos veces el papá de X,
+ o sea que el papá hay nunca prestó su primera posición.
+ Y después se puede repetir alguna otra,
+ como por ejemplo en la 8,
+ la 3, 4, no la 5 tampoco,
+ está pero acá sí ya se pueden repetir posiciones
+ de carácterísticas de un papá de sus doscientos.
+ Bien, y después siempre el largo ritmo genético
+ trabajando con el azar,
+ hay una cruza binomial al azar,
+ la cruza binomial al azar,
+ ustedes van a definir un random,
+ un random,
+ donde va a decir qué papá toman,
+ entonces dicen que sí se randon para este caso.
+ Es menos igual que 0,5,
+ van a tomar el papá y si es mayor que 0,5
+ van a tirar el papá y quiz y van a tirar
+ cuántos randoms,
+ obviamente 10 para ir cubriendo todas las posiciones.
+ Por ejemplo,
+ tiramos el primer random que 0,3,
+ como es menor que 0,5,
+ aquí entomó a X,
+ entonces vino a X.
+ Les muestra con el 2 y esta,
+ el 2 fue 0,6 tomó y vino a Y.
+ Esto es para definir un hijo.
+ ¿Qué pasaría con el otro hijo?
+ Tenemos dos posibilidades.
+ La primera opción es tomar el complemento,
+ o sea, ¿y si cubrir?
+ ¿Qué?
+ Lo que no entro para uno,
+ la característica de el papá
+ con nuestro para uno ventrar para el otro.
+ Y la otra opción es nuevamente tirar al azar
+ 10 posibilidades y con eso armará el otro hijo.
+ Y en ese caso sí se podrían repetir
+ características de un mismo papá.
+ Con esto terminamos el cruzamiento.
+ Ya tenemos la población cruzado
+ hacia todos estos híjitos
+ que vinieron de la población seleccionada
+ y recuerden que los padres desaparecen.
+ Ahora vamos a generar a la operadora de mutación.
+ Voy a cortar acá porque ya son casi 13 minutos.
+ Espero que no se ha borrido.
+ Uyden se queden en casa
+ y nos vemos en el próximo vídeo
+ para hablar de la montación.
+ Que ya falta bonito.
+ Muchísimas gracias y hasta luego.

@@ -1,0 +1,109 @@
+ Hola, mi nombre es María Florensia Pollo y vamos a comenzar con un conjunto de videos que
+ van a tratar sobre la respuesta que damos los ingenieros de la área de informática para
+ la construcción de sistemas inteligentes en especial en el marco de los sistemas de
+ información en general. Y así que bueno, ustedes vienen viendo a lo largo de la carrera que
+ uno organización es un conjunto de individuos que busca en un fin común, desarrollan actividades,
+ utilizan medios y se encuentran inmersos dentro de un contexto. Toda todo este conjunto de
+ actividades, intercambio de recursos hacen que se genere a través de los procesos de comunicación,
+ un sistema de información como toda esta red de comunicación y medios que que es el
+ resultado y además la estructura de finida en las actividades de esta organización. Como
+ todo el sistema que entre un funcionamiento, como conjunto de mecanismos, conformados por
+ múltiples, múltiples componentes, se generan del videos de videos entre las situaciones
+ esperad y la situación real. A esos de Dios los reconocemos como problemas. Frente estos
+ problemas generalmente problemas vinculados con los síntomas se ven en los problemas generados en el
+ negocio. Ase recurre un ingeniero sistema para que pueda traducir estos problemas de negocio,
+ problemas de organización en problemas de sistemas de información, comprendiendo los componentes y
+ elementos y que relaciones establecen entre todo esto. Finalmente el ingeniero sistema de información
+ traslad a estos problemas de sistemas de información en en proyectos a desarrollar proyectos vinculados
+ con la adquisición de hardware, la adquisición de software, la tercerización, la capacitación,
+ si es necesario desarrollo de software, es aquí donde se construy un producto solución,
+ ahí se invoca ni genería software y este producto solución puede dar respuesta a distintos
+ procesos muchas veces no informatizados y cuando son procesos se informatizados y se necesita del desarrollo
+ de software, sí involucrar las actividades de desarrollo de software que se encuentran agrupadas
+ dentro de lo que es la ingeniería software. Y la ideamos resultamos respuesta con la construcción
+ con la buena construcción, ¿no? bajo paraguas de buenas prácticas ingenieriles a lo que es un software
+ tradicional, un software que de las respuestas a problemas que se pueden definir, uno sabe
+ que frente a un conjunto de quise entrar, el resultado va a ser este o aquel otro, pero está
+ todo, o sea, son actividades magnitivas, actividades que se pueden modelar contraanquilidad,
+ más allá de que el dominio puedo no ser más complejo, que sucede cuando estas respuestas
+ no se pueden dar, mediante el desarrollo de un software tradicional, nosotros hemos visto como
+ la inteligencia artificial, nos provee de algunas tecnologías para dar respuesta y poder construir
+ un sistema software que tenga en su comportamiento reconocido parte de actividad de lo que
+ se considera con un sistema inteligente, te tales así que bueno, nosotros vimos dentro de los
+ sistemas software tradicionales que no a veces podía tener que el sistema inteligente no estaba
+ baso, lo que generalmente era algo que se se anexaba, se incorporaba, lo que era un software
+ y resolvía alguna particularidad que el software tradicional no podía, dentro de los sistemas
+ inteligentes habíamos visto los sistemas basados en conocimiento con una base de conocimientos
+ explícita y también habíamos visto que eran los sistemas expertos, que eran los que múlaban
+ parte del comportamiento de un experto, habíamos encontrado las relaciones de estos dos son
+ conjuntos viendo que había ciertos pasiertos elementos en común y ahí encontramos a las distintas
+ distintas tecnologías, sin embargo, también habíamos visto desde otro lado que bueno la capacidad,
+ la capacidad, la potencia que podía tener un software tradicional era menor en cuanto a la
+ complejidad de los problemas y la capacidad de autonomía, a la de un sistema inteligente pero
+ también habíamos estado viendo que un sistema inteligente no podía equipararse a lo que era la
+ ventiumana porque gozaba esta mente humana de otro montón de funcionalidades que un sistema inteligente,
+ como cualquier sistema informático, es un sistema con ciertas limitaciones, porque a través se atraviesa
+ en su construcción a través de uno de los, pero bueno, como podemos construir este tipo de de arte
+ de factos, bien, nosotros estuvimos viendo las distintas tecnologías, vinculados con los distintos tipos de
+ problema, a ver dónde podíamos encontrar estos puntos en común entre los sistemas inteligentes y los
+ que conocemos como sistemas software tradicional. Pimos que ambos resuelven problemas y satisfazen deseos
+ y necesidades de los stakeholders, de los interesados de quienes están participados en este proceso
+ de desarrollo. Sin embargo, también vimos que los sistemas inteligentes, por si solos, se pueden aplicar
+ a tareas poco conocidas y que requieres de conocimientos especializados. Ahí aparece el rol protagonico de
+ este experto como este nuevo protagonista en la problemática de los sistemas inteligentes, de quién
+ tenemos a adquirir el conocimiento, este conocimiento privado, este conocimiento procedimental,
+ el propio de este experto que hace que estos sistemas no puedan ser fácilmente representados
+ mediante lo que es el desarrollo de software tradicional. Fíjense que en el caso del software tradicional
+ dice que es amplica de tareas sistemáticas y procedimentales para marijar datos huméricos,
+ esto es lo que han venido resolviendo lo largo de toda su carrera. Y en los sistemas inteligentes
+ por otro lado, simplemente han en forma declarativa mientras que los sistemas software tradicionales
+ de manera algoritmica procedimental. Los sistemas inteligentes tienen flexibilidad y robustes
+ tienen que tener capacidad de adaptarse a distintas etapas, tras no definidas, a priori,
+ y tienen que tener robustes a pesar de todo eso seguir funcionando. Y los sistemas software tradicional
+ son deterministas y tienen poca redundancia, a función, yo no sabe cuál es la respuesta que van a dar.
+ Ustedes han visto lo largo de todo este curso, distintas tecnologías que probé la idea.
+ Yo no podría pensar que en este contexto construyro sistema inteligente, no es tan fácil.
+ Sin embargo, bueno, ahí les demostramos una ilustración que, que verdaderamente más allá de
+ la problemática de la construcción, hay una problemática en el dominio en la comprensión del dominio
+ y en la definición de estos conocimientos que hace que el desarrollo y la construcción de
+ un sistema inteligente no sea una tarea tan simple. Acá los podemos compartirles un cuadro comparativo
+ para que vea como desde una perspectiva, los proyectos de construcción de sistemas inteligentes
+ implican en algún momento en alguna instancia el desarrollo de un software tradicional pero tienen distintas
+ características. En relación a lo objetivo, la construcción del software tradicional está aplicada
+ pura y exclusivamente ese tipo de artefacto mientras que cuando hablamos de un sistema inteligente
+ estamos a hablar de construir un sistema de otra característica. Los requerimientos, cuando hablamos de
+ requerimientos, recuerdan que hablamos de las características que tienen un artefacto para hacer
+ considerado como tal, hablamos de estas expectativas, también que tienen usuarios puestas en la solución,
+ en la construcción de lo que su software tradicional hablamos de deseos y necesidades y tenemos que tener
+ en cuenta las características del dominio, que son identificables. Sin embargo, cuando una construcción
+ un sistema inteligente tiene que identificar también la o las tareas que va a modelar y cuál es el problema
+ que busca resolver a través de la acción de estas tareas. Y después hay un proceso muy complejo
+ que es el proceso del manejo de la gestión de los requerimientos identificar, los de actirirlos
+ de formalizarlos, de conceptualizarlos, que va a tener que ver no solo con conocimientos públicos,
+ sino también con conocimientos privados. Los interesados las personas que participan de estos proyectos
+ en un proyecto de software tradicional, directivos gerentes y usuarios, y acá parece el nuevo papel
+ del experto como aquella persona que provee toda la riqueza de conocimiento del dominio,
+ más allá de los conocimientos públicos que uno puede adquirir a través de material disponible. En relación
+ en la tecnología para el desarrollo de un software tradicional hablamos de hardware distintos tipos de equipamiento
+ y de arquitecturidad, pues hablamos de los distintos paradigmas de desarrollo de software tradicional.
+ Sin embargo, cuando hablamos del desarrollo de proyectos de construcción de sistemas inteligentes,
+ hablamos dentro de lo que es la inteligencia artificial como ciencia, o sea, tratando de actualizar
+ y de conceptualizar todas estas problemáticas, vemos que hay arquitecturas tradicionales propias
+ de la ya y, sin embargo, también tenemos otro conjunto de arquitecturas que vienen de la mano de
+ la inteligencia, con puntacional y de machine learning. En relación al mantenimiento,
+ qué es el sostener este producto, este producto solucion, una vez implementado a lo largo de
+ el paso del tiempo, hasta que finaliza su vida útil, dentro de lo que es la construcción de software tradicional,
+ hablamos del mantenimiento correctivo y adaptativo, pero en la construcción de sistemas de inteligencias
+ de esa incluye además el mantenimiento perfectivo, que esa que el mantenimiento que busca mejorar la
+ performance agregar a agregar alguna funcionalidad de mi jormanera que es la primera. Fíjense
+ que en el software tradicional, solo podemos hablar de corregir y adaptarnos. Está pero a estructuras
+ fíjas y determinadas. El sistema inteligente tendría que tener esta capacidad y cuando se acuerdan
+ empezamos a hablar de la aprendizaje, también, ¿no? Bien, todavía me quedan un poquito más
+ les voy a terminar con este. Bueno, lo que habíamos visto como para poder entender todo este camino,
+ que vamos a hablar dentro del proceso, habíamos visto que este problema de organización se debería
+ traducir mediante un conjunto de actividades que ahora vamos a ver cuál es, vamos a tratar de identificar
+ lo cual son los objetivos, los datos que existen, los requerimientos que hay y elegir algún conjunto o
+ alguna tecnología propia de la guía, y generar un modelo, ese modelo va a permitir implementar
+ el sistema inteligente, funcionar y a su vez retroalimentarse y resolver el problema de organización
+ y a su vez y el mejora. Bueno, ahora ya vamos a arrancar dentro de un poquito más de procesos,
+ así que bueno, por ahora vamos a ir terminar, así que bueno, nos vemos en ese mundo video y muchas gracias.

@@ -1,0 +1,143 @@
+ Bienvenidos, mi nombre es María Florencia Pochocatánio, soy la jefa de Cateda de la
+ Signatura Inteligencia Artificial, de la Universidad Technológica Nacional Facultar Regional
+ Buenos Aires.
+ A continuación vamos a desarrollar los métodos de búsqueda sin información de dominio.
+ Estos métodos sin información del dominio corresponden a métodos que buscan encontrar el
+ camino desde el Estado inicial hacia uno más estado solución, pero sin contar con información
+ a priori sobre el mejor camino posible, se suele decir que estos métodos aplican una búsqueda
+ ciega o búsqueda exhaustiva.
+ Dentro de estos métodos se destacan primero en amplitud, primero en profundidad generación
+ y prueba y bidireccional entre otros.
+ Vamos a comenzar desarrollando el método de búsqueda, primero en amplitud.
+ Este método comienza por el Estado inicial o no dos raíz, aplicando todas las reglas posibles,
+ como resultado se obtienen un conjunto de nuevos no dos, sobre cada uno de estos nuevos
+ no dos, se aplica cada una de las reglas posibles y así sucesivamente hasta que se genera
+ todo el árbol.
+ De esta manera se va construyendo un árbol de no dos por niveles, generando todos los
+ dos y un nivel antes de pasar al siguiente, también desconocido como un método de búsqueda
+ en amplitud.
+ Que son las principales características de este algoritmo, que aplica el concepto de cola
+ FIFO, First in First Adon, es decir que el primero que ingresa es el primero que sale,
+ en el que todos los primeros no dos generados serán los primeros enceranalizados.
+ Por otro lado, debido a que recorre todos los estados en forma de de nada, si el Estado
+ es el espacio de búsqueda finito y existe una solución la va a encontrar.
+ En el caso de que existan múltiples soluciones, en numerar a todas, por lo que permitían
+ identificar a la mejor solución, también conocida como solución óptima.
+ Por otro lado, es útil cuando existen pocos no dos finales y estos no dos son cercanos
+ a la raíz para no ocupar tanta memoria.
+ Y otra, la última de las características es que utiliza mucha memoria, ya que recorre todo el
+ árbol de manera exhaustiva.
+ Como ejemplo, vamos a ver un recorrido de primero en amplitud de izquierda derecha comenzando
+ naturalmente por el Estado inicial o no dos a partir de ahí, vamos a pasar en primero
+ en amplitud al no dobé, después al no doce y al no dode dando por finalizado la recorrida
+ de un nivel.
+ A partir de allí comenzamos nuevamente de izquierda derecha donde vamos a pasar por el
+ no doE, a continuación por el no doE, pasando por el J y el H, interviniendo antes con
+ el no doE y dando por finalizada el siguiente nivel.
+ A continuación, pasamos por el no doE, el no dojota que es no dos solución, pero habíamos
+ visto que este algoritmo sigue recorriendo el árbol, luego el no doCá, el no doE, y el
+ no doE me para dar por finalizado el nivel, a continuación se pasa el próximo nivel
+ por lo tanto se vuelve a pasar por el no doE, y a cada más por finalizado el recorrido
+ de primero en el amplitud de izquierda derecha.
+ Ahora vamos a ver este mismo algoritmo, primero en amplitud, pero haciendo un recorrido
+ de derecha izquierda, comenzamos nuevamente por el no doE, ahora comenzamos por la derecha
+ o sea que tomamos el no doD, el C y el B, dando por finalizado ese nivel, pasamos
+ al no doH, al no doE, al G, al F y al E, y damos por finalizado ese nivel, y a continuación
+ vemos el nivel siguiente, que se ve desplazado el no doE, pero pertenece al nivel anterior,
+ el no doE me, el no doEle, el C, el Jota y el I, y nuevamente el no doE me, aquí daríamos
+ por finalizado el recorrido de primero en amplitud de derecha izquierda, ahora vamos a ver
+ el algoritmo, primero en profundidad, al contrario del método anterior o el algoritmo
+ que era en amplitud, donde el exploración se realizaba por niveles, esto me todo analiza
+ una rama por vez, por lo que también es conocido como busqueden profundidad, porque
+ la no do se generan todos sus sucesores hasta que siga un no doE, o un no doS indescendientes,
+ se encuentra un no doEle alcanzado, y que este no conduzca la solución, o la ruta, el camino,
+ se puede alargar más de lo que este especificado produciendo una vuelta hacia atrás, otra diferencia
+ con el algoritmo anterior, es que en este caso el proceso termina cuando se encuentra
+ una un estado solución, principales características que tiene este algoritmo, alplica del concepto
+ de Pila Lifo, la Stingford Stout, es decir, que el último quincrés es el primero que sale,
+ en el que el último no doEle generado, será el primero en ser analizado, por otro lado
+ no requiere mucha memoria debido a que se expande de una rama por vez, es muy útil cuando
+ los no doS solución son muchos y están alejados del no doEle, y no recorre todo el espacio
+ de busqueda por lo cual no garantiza encontrar la solución óptima, porque no se existen
+ otras soluciones mejores, y debería consumir menos memoria que primero en amplito.
+ A continuación, vamos a ver un ejemplo, un recorrido de la algoritmo primero en profundidad
+ de izquierda de leche, el recorrido pasaría ser el siguiente, pasamos por el no doEle, ya
+ estamos recorriendo por la izquierda, vamos a bajar por el árbol hasta el final, vamos a pasar
+ por el no doEle y el I, que es una hoja y no tiene descendientes, tampoco es solución, entonces
+ debo volver al no doE, que, como sigue teniendo descendientes, debo bajar al no doJota,
+ el no doJote solución por lo tanto el algoritmo da por finalizado su recorrido.
+ Ahora vamos a ver que hubiese sucedido con el algoritmo primero en profundidad, subísemos
+ hecho un recorrido de derecha izquierda, en este caso comenzamos con el no el estado inicial
+ a y vamos a bajar por el no doE, que es el que se encuentra más a la derecha, vamos a
+ seguir con su descendiente de la derecha que es el no doH, que es un no doJote, que no tiene
+ descendiente, por lo tanto debemos volver al no doE y vamos a seguir bajando, ya que
+ si tiene descendientes y vamos a ir al no doEle, el no doEle tiene un único descendiente
+ que es el no doEle, que es un no doSolución y por lo tanto finalizaríamos ahí el recorrido.
+ Con esto vamos por finalizado el método los algoritmos de búsqueda en profundidad, y vamos
+ a ver el método de búsqueda de generación y prueba. Este método se puede considerar un método
+ y brido o una combinación, porque aplica principios de los dos descriptos anteriormente,
+ la plito y profundidad. Por un lado utilizo un procedimiento igual al de primero en profundidad,
+ donde se va al recorriendo el árbol de una rama por vez. Sin embargo, una vez concluida
+ a una rama, repita el proceso generando nuevas ramas hasta que se recorre todo el árbol
+ como ocurre el recorrido por ámbito, cuáles son las características de este algoritmo,
+ esa de ecuado y es útil para problemas sencillos, recorre todos los nodos, permiten
+ encontrar todos los estados soluciones y encontrar la mejor solución, consume más memoria
+ y permiten encontrar todos los estados soluciones al problema y por lo tanto puede consumir
+ bastante más tiempo. Vamos a ver ahora un funcionamiento de generación y prueba.
+ Vamos a ver un recorrido izquierda de hecha. Entonces vamos a tener como estado inicial
+ del nodo a, vamos a pasar al nodo B, al E y Alí, porque estamos recorriendo en profundidad,
+ no encontramos ninguna solución. Entonces lo que habíamos visto era que seguía generando
+ todo lo que quedaba. Entonces vuelve al estado anterior E, que como tiene un descendiente
+ pasa a ser al nodo Jota. Nosotros en profundidad habíamos finalizado a nuestra búsqueda,
+ sin embargo, ahora seguimos recorriendo el árbol, por lo cual volvemos al E y volvemos al B,
+ que tiene descendientes, quien es el descendiente el E, tampoco es solución, pero vamos a seguir
+ recorriendo el árbol, por lo que vamos a subir al nodo B y al nodo A para bajar por los
+ otros descendientes que no recorrimos, donde está el nodo C, que tiene un único descendiente
+ que es J, y de J vamos a ir al nodo C, del nodo C, como no tiene más descendientes, subimos a
+ su padre, que es el G, y va a seguir con LL, que es el otro descendiente y con LM, que es solución.
+ Como vamos a terminar de recorrere el árbol, subimos al L, al G y al C para volver a
+ la y ahora ir por la ruta del D, que nos permite ir al L y al M y subir nuevamente hacia
+ el nodo D y tomar como último descendiente al nodo A, esto es lo que respecto a generación
+ y prueba de izquierda de leche, ahora vamos a ver que mismo algoritmo recorriendo lo
+ de derecha izquierda, para eso comenzamos nuevamente por el estado A, y entonces el recorrido
+ va a ser, del nodo A, vamos de derecha izquierda con lo cual, vamos al nodo D, seguimos
+ por derecha al nodo H, debemos subir nuevamente al nodo D, que tiene descendientes con
+ lo cual seguimos al nodo L y tiene un único descendiente que se le me, solución, pero seguimos
+ recorriendo, para eso como ya estamos en una doja, volvemos a subir al nodo L al nodo D y
+ tenemos que subir al nodo A, ahora vamos a seguir por los otras, las otras ramas no analizadas
+ vamos a empezar por la ramada de la derecha, que es la ramada C, para pasar por G, por L y M,
+ siendo M no doja, volviendo a subir, hasta encontrar alguna rama que no haya sido analizada
+ con lo cual subimos al nodo L al nodo G y bajamos al nodo C que no había sido esa
+ rama no había sido recorrido, nuevamente volvemos a subir al nodo C, como no tiene ningún
+ otra descendiente para analizar, tenemos que subir al C, sucede lo mismo y debemos ir a
+ la, ahora vamos a analizar la última rama con lo cual bajamos por el nodo B y bajamos por el
+ nodo F porque analizamos por derecha, subimos al nodo B y analizamos la última ramada de este
+ nivel, que es la del nodo E y el nodo Jota debiendo subir ya que es nodo Oja, subiendo al nodo E
+ y bajando al nodo I, de esta manera, vamos por finalizada al recorrido de generación
+ y prueba de derecha y izquierda, finalizado al método de generación y prueba, vamos a ver el método
+ de búsqueda bidireccional, el método de búsqueda bidireccional debe conocer tanto el
+ estado inicial como el estado final, a fin de poder realizar dos búsquedas en simultáneo,
+ una partiendo del estado inicial para hallar el estado final y otra partiendo del estado
+ final hasta llegar al estado inicial, tiene dos búsquedas simultáneas, topoto mi voto map,
+ si bien cada búsqueda puede utilizar un método distinta es necesario que por lo menos una
+ de ellas utilizo una búsqueda en amplitud, de existir un camino solución en algún momento,
+ que el gas búsquedas pasaran por un mismo estado de del cual se podrá recrear el camino.
+ Finalmente a realizar dos búsquedas en forma conjunta, hasta un nodo intermedio del árbol,
+ la complejidad es igual a dos búsquedas unidireccionales para un árbol con la mitad de nodos
+ del árbol analizado. A continuación vamos a ver el recorrido del método bidireccional
+ de izquierda derecha, partimos del nodo A y del nodo Jota, que es el nodo uno de los nodos
+ solución. Entonces, fíjense que por A vamos a hacer una análisis por profundidad y de Jota
+ vamos a partir para hacer una búsqueda por ram. Entonces, lo que hacemos primero
+ a la analizar en profundidad vamos a parar de A a B y por ramas del Jota nos vamos
+ irá leer. Paso siguiente, el E va a pasar al nodo B y el B va a pasar al nodo B. Entonces,
+ ya nos encontramos con lo cual el resultado de esta búsqueda bidireccional va a ser el nodo A,
+ el nodo B, el nodo E y el nodo Jota. Vamos ahora a ser el recorrido del algoritmo bidireccional
+ pero empezando de derecha izquierda. Para lo cual vamos a comenzar por el nodo A, haciendo
+ un barrido en por profundidad y por ramas vamos a partir del nodo M, que era el otro nodo
+ solución. Vamos a analizar el nodo A y vamos a pasar ya que es de derecha izquierda por
+ el nodo D y por ramas vamos a ir del M al E. Finalmente del nodo D ya que vamos por profundidad
+ deberíamos caer en el nodo L mientras que el nodo L va a caer al nodo D ya que va por ramas.
+ Con lo cual el resultado del recorrido sería el nodo A, el nodo D, el nodo L y el nodo M.
+ Con esto damos por finalizado la descripción de los métodos de búsqueda sin información
+ de dominio. Les recomendamos suscribirse a nuestro canal de YouTube para poder tener información
+ sobre todo el material que vamos subiendo. Desde ya muchísimas gracias y hasta pronto.

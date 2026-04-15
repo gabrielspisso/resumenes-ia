@@ -1,0 +1,508 @@
+1
+00:00:00,000 --> 00:00:06,480
+ Hola, soy María Florencia Pollo, y ahora continuamos con la parte número 3 de esta clase
+
+2
+00:00:06,480 --> 00:00:15,960
+ introductoria. Bueno, habíamos llegado a que habíamos comparado a la parte física de este
+
+3
+00:00:15,960 --> 00:00:22,120
+ comportamiento inteligente que era el cerebro, la habíamos comparado con el hardware, habíamos
+
+4
+00:00:22,120 --> 00:00:30,800
+ pensado que en la mente, el razonamiento, todo a todas estas actividades que tienen
+
+5
+00:00:30,800 --> 00:00:37,680
+ que ver con el pensar tenían más que ver con lo intangible, entonces lo vinculábamos
+
+6
+00:00:37,680 --> 00:00:42,840
+ más con el software y a partir del día a ir, hicíamos si no habían nada más, ahí había
+
+7
+00:00:42,840 --> 00:00:49,160
+ quedado nuestra segunda presentación, que lo que queríamos ver era si es posible automatizar
+
+8
+00:00:49,160 --> 00:00:57,860
+ la inteligencia. Bien, a partir de esto, hay una parábola muy interesante para ejemplificar
+
+9
+00:00:57,860 --> 00:01:04,680
+ que pasa si hay algo más, se las voy a leer que es la parábola del perrito, dice, ahí les
+
+10
+00:01:04,680 --> 00:01:10,860
+ bajó, te saparezco un rato para no molestar, un cazador va a África, lleva a consiguar un
+
+11
+00:01:10,860 --> 00:01:16,960
+ perrito para que no se esperan o sentirse solo, un día ya en África el perrito que estaba
+
+12
+00:01:16,960 --> 00:01:23,880
+ presento mariposas, se aleja de su amo y se pierde, lleva un buen rato vagando solo por
+
+13
+00:01:23,880 --> 00:01:30,240
+ la selva vialorejos una panteera, que se le acercató a carrera con la intención de devorarlo,
+
+14
+00:01:30,240 --> 00:01:36,760
+ el perrito piensa rápidamente que puede hacer, ve un montón de huesos de un animal muerto
+
+15
+00:01:36,760 --> 00:01:42,040
+ y se ponia mordisciarlos, cuando la panteera está a punto de atacarlo, el perrito dice,
+
+16
+00:01:42,040 --> 00:01:46,680
+ ahí que rique estaba esta panteera que me acabó de comer, la panteera le escucha por lo que
+
+17
+00:01:46,680 --> 00:01:52,040
+ frenense cojira, uye de esta gorida y piensa, caramba con el perrito salvaje, por poco
+
+18
+00:01:52,040 --> 00:01:58,960
+ me comia mi tambien, mientras tanto un mono, el candaba trepando en un argo al cercano y que
+
+19
+00:01:58,960 --> 00:02:04,120
+ había presenciado toda la escena, sale corriendo tras la panteera y le cuenta como la
+
+20
+00:02:04,120 --> 00:02:08,980
+ vengaña del perro, la panteera se no usa y le dice al mono, subitia mi espalde y vamos a buscar
+
+21
+00:02:08,980 --> 00:02:14,020
+ ese perro sin viergüenza a ver quién se va a comer aquí, sale corriendo toda velocidad
+
+22
+00:02:14,020 --> 00:02:20,740
+ a buscar al perrito, el perro el canso oírlos al canso viral al mono ximoso y se pregunta
+
+23
+00:02:20,740 --> 00:02:26,100
+ que puede hacer, el lugar de salir corriendo se queda sentado dándole en la espalda como
+
+24
+00:02:26,100 --> 00:02:30,940
+ si no lo subiera disto, cuando la panteera está a punto de atacarlo, el perro dice,
+
+25
+00:02:30,940 --> 00:02:36,420
+ malgito mono mentiroso hace media hora que lo mandé atraerme otra panteera y todavía
+
+26
+00:02:36,420 --> 00:02:43,820
+ no apareció, esto deja muy en claro una moral hija que tiene esta parábola, que es que
+
+27
+00:02:43,820 --> 00:02:49,380
+ la imaginación es más importante que el conocimiento, ya que el conocimiento es limitado
+
+28
+00:02:49,380 --> 00:02:56,380
+ mientras que la imaginación, incluye a todos, estimó el progreso de la luz de evolución,
+
+29
+00:02:56,380 --> 00:03:03,740
+ la imaginación nos permite encontrar una de las herramientas que nos permiten encontrar
+
+30
+00:03:03,740 --> 00:03:11,860
+ estas salidas distintas estos nuevos caminos, estas marcas diferenciadoras en el Proceder
+
+31
+00:03:11,860 --> 00:03:19,820
+ y es ilimitado, no es que lo tengo que adquirir a partir de una experiencia previa,
+
+32
+00:03:19,820 --> 00:03:27,580
+ con lo cual esta pregunta que nos habíamos hecho, si no había nada más en relación al
+
+33
+00:03:27,580 --> 00:03:33,900
+ conocimiento y al experiencia, vemos que aparece otro para otro protagonista muy importante
+
+34
+00:03:33,900 --> 00:03:40,060
+ dentro del desarrollo y la explicación de lo que es la mente y es la creatividad,
+
+35
+00:03:40,060 --> 00:03:46,820
+ hay una frase muy linda que me parece que representa bastante esto que dice que hace falta
+
+36
+00:03:46,820 --> 00:03:54,180
+ más que inteligencia para actuar inteligenemente, ya que queda de manifiesto.
+
+37
+00:03:54,180 --> 00:04:03,420
+ Entonces, frente a esta propuesta inicial que habíamos visto que esta primera aparición
+
+38
+00:04:03,420 --> 00:04:07,620
+ formal de lo que era la inteligencia artificial, donde se había propuesto general
+
+39
+00:04:07,620 --> 00:04:12,980
+ algoritmos basados en lógicas y aurísticas que se había que se consiguió y con la otra
+
+40
+00:04:12,980 --> 00:04:18,140
+ propuesta que tenían que ir a pensar que van a poder construir artefactos, capaces de pensar,
+
+41
+00:04:18,140 --> 00:04:25,700
+ emulando el comportamiento de los seres humanos, en esta estructura no pudo cumplirse con
+
+42
+00:04:25,700 --> 00:04:31,980
+ con esas expectativas, por lo cual pensar que el hardware y el software y van a equipar
+
+43
+00:04:31,980 --> 00:04:39,460
+ a lo que era el cerebrilamente en relación al hardware y el software no fue viable.
+
+44
+00:04:39,460 --> 00:04:45,940
+ Ahí aparece lo que se conoce como el primer invierno de la inteligencia artificial.
+
+45
+00:04:45,940 --> 00:04:52,740
+ Antes de hablar del primer invierno de la inteligencia artificial, en esta primera aparición
+
+46
+00:04:52,740 --> 00:05:01,180
+ surge una clasificación muy conocida dentro de la inteligencia artificial que son dos enfoque.
+
+47
+00:05:01,180 --> 00:05:09,820
+ El primer enfoque es la AIS de artificial inteligencia porque esta PP originalmente está
+
+48
+00:05:09,820 --> 00:05:20,500
+ en inglés por eso. Una inteligencia artificial fuerte en la cual se perseguía el hardware
+
+49
+00:05:20,500 --> 00:05:27,780
+ y van a software, pudieran equipar a la mente y por otro lado una inteligencia artificial
+
+50
+00:05:27,780 --> 00:05:36,740
+ devel en donde se sabía o se presuponía que el hardware y al software eran un modelo de la
+
+51
+00:05:36,740 --> 00:05:44,380
+ mente humana con lo cual se sabía que la capacidad iba a ser menor. La inteligencia
+
+52
+00:05:44,380 --> 00:05:50,700
+ artificial fuerte bajo este concepto se sabía que eso no iba a ser viable pero era lo
+
+53
+00:05:50,700 --> 00:05:58,940
+ que se perseguía. Bien. Ahí surge lo que se conoce como el primer invierno de la inteligencia
+
+54
+00:05:58,940 --> 00:06:07,580
+ artificial escórrica para que vean, que es la palabra predicciones. Bien. ¿Cuáles fueron las
+
+55
+00:06:07,580 --> 00:06:13,140
+ predicciones que se dieron para que sucediera este primer invierno de la inteligencia
+
+56
+00:06:13,140 --> 00:06:20,540
+ artificial que fueron todos estos preconceptos que se tuvieron en su momento para que después
+
+57
+00:06:20,540 --> 00:06:30,900
+ al momento de no poder cumplirse central en esta mesa. Fíjense la primera frase que propone
+
+58
+00:06:30,900 --> 00:06:36,500
+ en diez años, un ordenador será el campeón mundial de ajedres. Y otro, las máquinas
+
+59
+00:06:36,500 --> 00:06:41,180
+ serán capaces dentro de 20 años de ser cualquier trabajo que el nombre puede hacer. Miren
+
+60
+00:06:41,180 --> 00:06:48,060
+ los años después otra frase en diez años una computadora descubrirá y probará un nuevo
+
+61
+00:06:48,060 --> 00:06:56,260
+ e importante de orema matemático. Miren las expectativas que había puestas frente a la
+
+62
+00:06:56,260 --> 00:07:03,420
+ errupción de la inteligencia artificial. Y le han la última dentro de una generación, el problema
+
+63
+00:07:03,420 --> 00:07:09,060
+ de crear inteligencia artificial se resolverá sustancialmente y dentro de tres ocho años tendremos
+
+64
+00:07:09,060 --> 00:07:13,660
+ una máquina con la inteligencia artificial que un ser humano promedio. Miren los años,
+
+65
+00:07:13,660 --> 00:07:22,860
+ yo nací en el 68 y todavía estamos muy alejados y hoy estamos bastante alejados de
+
+66
+00:07:22,860 --> 00:07:29,700
+ estos conceptos de manera absoluta. Esta es ahí donde aparece el primer invierno de la inteligencia
+
+67
+00:07:29,700 --> 00:07:41,300
+ artificial todas las inversiones económicas que se habían hecho finalizaron como en todas las
+
+68
+00:07:41,300 --> 00:07:50,100
+ apariciones de nueva tecnología, comenzaron siendo desarrollos para cosas militares, propuestas
+
+69
+00:07:50,100 --> 00:07:55,700
+ de modelos matemáticos y todas esas cosas al ver que no se pueden implementar o que lo poco
+
+70
+00:07:55,700 --> 00:08:01,940
+ que se puede implementar no alcanzaba con la capacidad de procesamiento que había esos proyectos
+
+71
+00:08:01,940 --> 00:08:08,300
+ que daron truncos. Y la inteligencia artificial, en una vezeta cuando no hay plata, no hay proyectos
+
+72
+00:08:08,300 --> 00:08:14,900
+ dentro de lo que es la investigación que puedan seguir solventándose. Los estados no
+
+73
+00:08:14,900 --> 00:08:24,140
+ ponen plata porque no es rentable, está. A partir de ahí le bajó esto aquí, ahora bajo
+
+74
+00:08:24,140 --> 00:08:31,140
+ ahí está. Terminado el primer invierno de la inteligencia artificial, fíjense para el año
+
+75
+00:08:31,140 --> 00:08:39,540
+ 80, surge un concepto que es la ingeniería del conocimiento. La ingeniería de conocimiento es la
+
+76
+00:08:39,540 --> 00:08:49,940
+ responsable de construir sistemas basados en conocimiento. Se dice que un sistema está basado
+
+77
+00:08:49,940 --> 00:08:57,500
+ en conocimiento cuando tienen una base de conocimientos explicidas y que es una base de conocimientos
+
+78
+00:08:57,500 --> 00:09:06,020
+ explicida. Una base de conocimientos explicita es aquella que contiene. Hechos y reglas del determinado
+
+79
+00:09:06,020 --> 00:09:12,860
+ dominio del problema que se quiere resolver y es llamada después por otras otros componentes
+
+80
+00:09:12,860 --> 00:09:18,740
+ de los sistemas basados en conocimiento y de ahí adquiren las premisas y las reglas para
+
+81
+00:09:18,740 --> 00:09:27,300
+ poder ir construyendo su razónamiento. Por otro lado, dentro de los sistemas basados en conocimiento
+
+82
+00:09:27,300 --> 00:09:37,020
+ tenemos distintas tecnologías que pueden resolver esta problemática. Una vez que surge en los sistemas
+
+83
+00:09:37,020 --> 00:09:44,820
+ basados en conocimiento, también surge el concepto de lo que es un sistema inteligente. Un sistema
+
+84
+00:09:44,820 --> 00:09:52,140
+ inteligente en la medida que reconocemos que tiene un comportamiento vinculado con una actividad
+
+85
+00:09:52,140 --> 00:09:58,500
+ inteligente con una conducta inteligente. Y ahí también apareció otro concepto más que
+
+86
+00:09:58,500 --> 00:10:04,980
+ es el que tiene en ahí escrito en la APT que son los sistemas expertos. Aparece un concepto
+
+87
+00:10:04,980 --> 00:10:12,660
+ previo que son los expertos. Un experto es una persona que tiene saber sobre un dominio
+
+88
+00:10:12,660 --> 00:10:18,060
+ que tiene este comportamiento inteligente que lo puede desarrollar y resolver problemas
+
+89
+00:10:18,060 --> 00:10:24,100
+ de esas características que no puede resolver el resto o los resuelve siempre de mejor manera
+
+90
+00:10:24,100 --> 00:10:31,900
+ con una salida mejor que el resto. Así que acá parece en mí en todos los conceptos.
+
+91
+00:10:31,900 --> 00:10:39,420
+ La ingeniería de conocimiento aparece como el proceso ingenieril las buenas prácticas
+
+92
+00:10:39,420 --> 00:10:46,100
+ ingenieriles que hablamos nosotros tanto de construir un artefacto, de construir lo metodelógicamente
+
+93
+00:10:46,100 --> 00:10:53,740
+ de construir pensando en el mantenimiento y la supervivencia y la adaptabilidad de esa solución
+
+94
+00:10:53,740 --> 00:11:01,580
+ en un entorno y rumpen estos conceptos el concepto del sistema inteligente, el sistema
+
+95
+00:11:01,580 --> 00:11:08,820
+ basado en conocimiento y sistema experto. Y en pose poder construir estas cosas surge la ingeniería
+
+96
+00:11:08,820 --> 00:11:14,220
+ de conocimiento como aquella actividad ingenieril que permite construir mediante buenas prácticas
+
+97
+00:11:14,220 --> 00:11:21,420
+ estos sistemas inteligentes. Así como la ingeniería en software en su momento vino a adargar
+
+98
+00:11:21,420 --> 00:11:29,140
+ a dar todo este paraguas esta disciplina ingenierir para la construcción de los sistemas software
+
+99
+00:11:29,140 --> 00:11:35,180
+ la ingeniería de conocimiento hace lo propio con los sistemas basados en los sistemas basados
+
+100
+00:11:35,180 --> 00:11:38,180
+ en conocimiento de los sistemas inteligentes en general.
+
+101
+00:11:38,180 --> 00:11:45,660
+ Bien, una vez que termine el invierno surge en estos nuevos conceptos la inteligencia
+
+102
+00:11:45,660 --> 00:11:58,420
+ artificial recibe como otros embujón digamos y la próxima surge en distintas arquitecturas
+
+103
+00:11:58,420 --> 00:12:05,300
+ de distintas tecnologías, las redes neuronales artificiales son unas en particular las redes
+
+104
+00:12:05,300 --> 00:12:15,420
+ neuronales de las va a propaganda y que permiten resolver problemas de relativa complejira.
+
+105
+00:12:15,420 --> 00:12:21,580
+ Capacidad de procesamiento empieza a existir mayor, mayor capacidad de almacenamiento también,
+
+106
+00:12:21,580 --> 00:12:27,100
+ esto lo que lo veníamos hablando desde hace un rato y este invierno, este primer invierno nos
+
+107
+00:12:27,100 --> 00:12:34,420
+ deja algunas enseñanzas para poder empezar a surgir nuevamente.
+
+108
+00:12:34,420 --> 00:12:39,020
+ En enseñanzas que nos deja que la inteligencia artificial requiere para trabajar equipamiento
+
+109
+00:12:39,020 --> 00:12:46,340
+ convencional y no hardware especializado esto vinculado a los costos por eso es que después
+
+110
+00:12:46,340 --> 00:12:50,980
+ pueden surgir estas redes de las redes de pack propaganda y pueden resolver problemas
+
+111
+00:12:50,980 --> 00:12:56,940
+ y se trata de implementar en equipo en la arquitecto tecnología tradicional para disminuir
+
+112
+00:12:56,940 --> 00:13:02,940
+ los costos. Se deduce también que los nuevos desarrollos deben saber cómo reaccionar
+
+113
+00:13:02,940 --> 00:13:10,420
+ de datos cerróneos ya que el mundo real tiene muchas imperfecciones. De hecho es común que nosotros
+
+114
+00:13:10,420 --> 00:13:17,740
+ como seres humanos resolvamos problemas completando las entradas a problemas que nos dan.
+
+115
+00:13:17,740 --> 00:13:24,020
+ Un simple ejercicio de matemática que le dan a un alumno, el enunciado siempre falta algún dato,
+
+116
+00:13:24,020 --> 00:13:28,780
+ siempre falta algo que el alumno puede ir a preguntar que la alumno tiene herramientas para
+
+117
+00:13:28,780 --> 00:13:35,660
+ deducir que regla a publicar a caldo donde se empieza a ver que los sistemas inteligentes
+
+118
+00:13:35,660 --> 00:13:42,540
+ tienen que tener mayor capacidad. Y después finalmente otra enseñanza que deja que es que los
+
+119
+00:13:42,540 --> 00:13:50,860
+ algoritmos deben ser programados en lenguaje flexible y esto lo que va a permitir es universalizar
+
+120
+00:13:50,860 --> 00:13:58,540
+ bastante más la actividad. Así que bueno ya son tres minutos me base, pimos un primer invierno,
+
+121
+00:13:58,540 --> 00:14:04,100
+ pimos el surgimiento, hay un segundo invierno que es mucho más corto que el primer, dura muy
+
+122
+00:14:04,100 --> 00:14:09,780
+ poquito tiempo, fíjense que ya estamos por el año 90, donde nuevamente pareciera como
+
+123
+00:14:09,780 --> 00:14:14,940
+ que se pinchas, se decir, un phela estantuciado y estas expectativas que había respecto
+
+124
+00:14:14,940 --> 00:14:20,260
+ de la inteligencia artificial. Así que bueno para no entretenos pues ya estoy casi en 14 minutos
+
+125
+00:14:20,260 --> 00:14:28,260
+ y me excedo, espero que haya entendido ya no vamos a poder encontrar caracara, Dios mediante
+
+126
+00:14:28,260 --> 00:14:35,660
+ y vamos a poder charlar de todo esto de manera muy tranquila. Y a mí, bueno, los dejo y lo
+
+127
+00:14:35,660 --> 00:14:38,500
+ se espero en el vídeo número 4, hasta luego.
+

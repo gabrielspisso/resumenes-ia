@@ -1,0 +1,130 @@
+ venidos al segundo vídeo de la parte práctica de algoritmos genéticos. En este caso
+ los doros implementamos una solución que organiza las guardias dentro de un sistema
+ médico con ene participantes y para contarles un poco el contexto les voy a presentar
+ con esta p p, bueno, el proyecto se llama Guardia, de que se trata un poco, básicamente hoy
+ en día un servicio que tiene que resolver el tema de las guardias mensuales, se junta
+ varias veces por mes, pero implicaría un trabajo de varias horas, se puede llegar a decir
+ de más o menos medio a día de todo el servicio, medio a día de 12 personas, por ejemplo,
+ más o menos 6 días laborales involucra también, no sé si la palabra sería errores, pero injusticias
+ o de seguir libros en la cantidad de fines de semana, cantidad de guardias que tiene que ser una
+ persona, ferial, cantidad de veces seguidas que está una semana persona, es decir, todos
+ estos temas se tienen que contemplar una forma manual, si uno quisiera empezar a resolver
+ eso de una forma secuencia, o sea, no es un regorismo tradicional en lugar de algoritmos genéticos
+ o algún método basado neurística, la cantidad de combinaciones simplemente para entender
+ cuando una persona tiene que estar eneveses al mes, imagínense, si una persona tiene
+ que estar 8 barres al mes, cuántas posibilidades hay, hay 8 millones, para los 5 millones
+ 850 de dos mil, 925 posibilidades, es decir, hay una para que esa persona esté de 1 al
+ 1, 2, 3, 4, 5, 6, 7, 8, luego 1, 2, 3, 4, 5, 6, 7, 9, luego 1, 3, 4, 5, 6, 7, 10, bueno, así, luego
+ hay muchísimas combinaciones de cuántas, bueno, 5 millones de 8100 mil, cuando nosotros
+ elevamos este número, a la 10, por ejemplo, si es un equipo de 10 personas, hay más combinaciones
+ que atomos en el universo, realmente es imposible, cálculo a todas, fíjense, si se analizan
+ 100 mil opciones por segundo, se tardaría 1,5 trichones de trichones de trichones de años
+ evidentemente no podemos ir por ese lado, por el lado de evaluar todas las opciones, entonces
+ tenemos que encontrar una forma de generar una jurística y ir guiando la búsqueda mediante
+ esto, bueno, las opciones algoritmos genéticos, justamente lo que terminamos haciendo es
+ seleccionando los más aptos, es decir, recuerden si lo comparamos justamente con la
+ tereda de la evolución, el problema a resolver sería el entorno, está bien, las reglas
+ que yo quiero que se cumple, y los individuos serían posibles soluciones a ese problema,
+ en este caso, cada individuo sería un calendario posible, también cuando yo voy a generar
+ la población inicial, muy seguramente no cumple a todas los requisitos de esos individuos,
+ pero es decir, de esos calendarios yo me quedo con los mejores, los que yo considero
+ mejores, los que se adaptan más a la miente y de esa forma en los cruzos, cada tanto
+ ver una mutación, como ya como ya habieron en la parte teórica, y a medida que aún
+ vas a una generación es, estas individuos se van a ir adaptando cada vez más, es decir, se
+ van a generar individuos cada vez más aptos, cuando llegó a una solución lo suficientemente
+ buena, ahí freno y obtengo el o los individuos que yo quiero, entonces vamos a mostrar un
+ poco como es el modelado de esto, en cuanto al modelo fíjense los individuos van a hacer
+ es que más de guardia, que es una esquema de guardia, es un calendario mensual donde van a
+ ver días y participantes, y cada uno de estas participantes va a tener a parte de un nombre,
+ va a tener reglas que cumplir, es decir, por ejemplo, yo quiero que el participante pp este
+ 8 días, pero que no este el sábado 4, porque sábado 4 justo en lo puede, y que este si
+ así el 2,5, por ejemplo, esta es una regla, la regla son un conjunto de días prohibidos, días
+ asignados, que es básicamente lo que les comente, una cantidad de días que yo necesito que
+ esa persona esté de guardia en el mes y una distancia mínima en tres días, es decir, no puede
+ estar el lunes de guardia y el martes de guardia básicamente, eso no es posible, puede estar el lunes de
+ guardia salir, que es el miercole, y depende mucho del servicio de racidencias, por ejemplo,
+ o si no es un servicio que requiere que es una distancia mínima de tres o cuatro días, yo
+ no podría ser tierno de esa forma, también, después se quedan un par de factorimetas de
+ reglas básicas de racientes de primeros, segundo tercero y cuarto daño, simplemente para
+ simplificar el ejemplo, acá regla básica de R2, de racientes de segundo daño es que tengas
+ ahí guardias y que la estancia mínima entre días se ha de dos, también, fíjense un R1, tiene
+ ocho días de guardias, por ejemplo, pues un día va a tener un asignado, una cantidad en el
+ participantes, es decir, tal día va a estar pepe y Josefina de guardias, por ejemplo, el otro día va
+ a estar Augustina y Marsello, y después, bueno, que más, no, después de estar el servicio, estos
+ son temas de conexión con la base de datos, y bueno, lo que vamos a hacer es crear una instancia
+ de la clase genetic algo del mal allá, que lo vimos en el video anterior, si pueden ver acá,
+ cuando yo pongo calcular, cuando apreto el botón calcular, color ahora vamos a ver, lo que
+ es que se va a hacer, que se va a generar un nuevo manager de algoritmos genéticos y se lo
+ anpesar a setir a sus propiedades, en este caso que en propiedades son una cantidad máxima
+ iteraciones de 0 de 1000, perdón, una un tríjol de 0, eso sí, es decir, cuando llega a ser
+ o la aptitud, quiero que corte el algoritmo, qué significa ser, vamos a contar un poco
+ como se va a lua esto, como se va a lua la aptitud de esos esquemas de guardia, básicamente
+ un esquema de guardias como vieron, tiene días, tiene participantes y cada uno de estos tiene
+ reglas, entonces cuando se genera un elemento a lazar muy posiblemente allá reglas que
+ no se cumplan, está bien cuando se genera el primer calendario, tal vez yo dije que
+ pepe tenía que estar 5 veces y al ser azar ozo, pepe está 15 veces, bueno cada una de estas
+ fallas que hay se cuenta como menos uno, se arrasta uno a la aptitud, está bien, entonces
+ al comienzo, ahora vamos a ver que los elementos tienen actitudes negativas muy grandes,
+ es decir, tal vez tienen no se menos 40, otro tiene menos 30, son la cantidad de errores que
+ tienen, y a medida que se va a evolucionar de hacer la solución, estos errores van
+ desapareciendo, se va a atendiendo hacia el número 0, de hecho digo que cuando se llegue
+ a 0 que ya no sean más fallas, ahí frenen el algoritmo, está bien, ahora lo vamos a
+ ver en la práctica que hay en se tranquilos, después si están generando acá los esquemas de guardia
+ de forma asalosa y se van agredando a la población, está bien, luego yo defino que el algoritmo
+ de seleccion sea el de tablas, el salto generacional sea del 0,5, significa que en cada
+ yteración yo lo que voy a hacer es renovar el 50% de la población, está bien, el algoritmo
+ me cruzaba hacer el binomial y el algoritmo de mutación va a ser un divilloso en vez, es decir,
+ cuánto más parecida es la población más probabilidad es ahí de mutar, también, cuando
+ se termina el ciclo, es decir, cada vez que paso la generación se va a actualizar
+ la interfaz usuario y luego una es que termina el algoritmo que encontró una solución,
+ se va a imprimir en el log de década del divad, del activador, se va a imprimir la solución,
+ está bien, entonces vamos a correr el algoritmo, esta está hecho para ayos, para iphone, en este
+ caso voy a simular con un iphone 8, no que se va a ser, es sentiar las propiedades de cada
+ uno de los participantes para definir las reglas, entonces por ejemplo, bueno, esto estáis
+ actualizado, pero bueno, sería el mes actual, imagínense yo yo digo que esta persona, por ejemplo,
+ uno, les voy a tener esta, va a tener los francos el día 5 y el día 11 y que sí así va a estar el día 12, por ejemplo,
+ acá se se tiene la cantidad de días, se le distancia a mínima y luego yo digo que el día 5 que va a estar
+ a esa persona de franco a gustinas y así este, no pongo ninguno de otra regla más, la cantidad
+ de días son 8, fíjense en cambio, por ejemplo, esta chica romina tiene 6 días, ok, entonces lo que se va
+ a ser, déjenme poner un breakpoint básicamente para que se entienda fácil, cruza, selección,
+ acá, por ejemplo, acá es el algoritmo más alto nivel, fíjense mientras no termine, no tenga
+ que terminar el algoritmo, lo que va a ser, a seleccionar los mejores elementos va a regresar
+ la mutación, la cruza y va a seguir en la iteración, entonces cuando yo le voy a calcular,
+ fíjense que va a pasar el principio, el principio va a tener una población inicial que tiene
+ esta braca, acá, 100 elementos, también segundo, ahí está, y estos elementos como van a
+ hacer, y por ejemplo el primero, el primer esquema de guarda, el primer calendario, creado
+ el azar, tiene 200 días errores, en el segundo que tiene, el segundo tiene 120 y se
+ errores, como 100, 120 se registra, vamos a ver, por ejemplo, como son los días, y fíjense,
+ por ejemplo, el día 1 van a estar estas tres personas, el día 2, ah, miren, acá encontró
+ un error, esta romina, el 2 días seguido, eso que eso no puede ser, mi cadena tiene
+ 8 veces y está, cuantas veces, 6 veces, 6 y 7 veces, no sé, pero, sí que acá también hay otro
+ error, está bien, entonces fíjense, acá lo que voy a hacer, si yo continuo en el algoritmo,
+ luego de seleccionarlo, los mejores, los más aptos, muta, cruzar, fíjense, el mejor
+ de apelación tenía 80, en la siguiente iteración es decir, luego de la selección, luego
+ de la cruza, la siguiente generación, el mejor también sigue teniendo 80, en la siguiente
+ 80, 80, a ver qué pasa si le voy a dar un poquito de velocidad a esta, fíjense, acá
+ se ve como se va evolucionando, está bien, ya se llegó una solución, y fíjense como
+ fue variando, se tendi 4, 50, 42, 32, 20, como va, convergiendo una solución, está
+ bien, tarde a 93 segundos porque le dimos, le limos, pausa, el black, el combracto,
+ inspera si yo, lo corro de esta forma, fíjense lo que, lo que tarda en, encontrar una solución,
+ está bien, en este caso tardó 7 segundos, y cuando voy a la solución fíjense, por ejemplo,
+ el día 5 que dijimos que no está la persona micaela, pero que este sido si a ustina
+ acá se encuentra, en cambio, el día 12 que dijimos que esta micaela estaba, esta persona
+ está en estos días, y a ustina, por ejemplo, están estos, uno, dos, tres, cuatro, cinco,
+ seis, siete, ocho, y después no ahora quién era, creo que habíamos dicho romina, tenía
+ que estar seis, no, dos, cuatro, seis veces, bueno, está cumpliendo con todas las reiras
+ que nosotros dijimos, van a encontrar, siempre una solución esto, depende, a ver, hay veces que
+ las reglas van a atender a la velocidad entre sí mismas y no tengan sentido, en ese caso no van
+ a encontrar, pero bueno, sería cuestión de revisar las reglas, o en todo caso si se queda
+ atrapado en un mínimo local, si bien hay técnicas como la evitación de la convergencia
+ de la preparatura con la mutación en base al desvío standard, puede suceder en ese caso
+ le puedes recetir y pedir otra solución, si ves que se te queda atravado, en general no
+ sucede eso, y cuando sucede es porque están contrando algunas contradicciones en las reglas.
+ Bueno, espero que esto les haya servido para entender una forma práctica, casos de ejemplo
+ de los algoritmos genéticos, recuerden que esto no encuentra la mejor solución en
+ cuando en una solución suficientemente buena para vos, y que principalmente se trisa cuando
+ se produce una expresión con milatoria, es decir, en este caso habían más opciones que
+ ha tomado en el universo, evidentemente me convenía ir por otro lado porque no iba a poder
+ encontrar la mejor de las mejores soluciones, no tenía sentido siquiera buscar todas las
+ soluciones si no puede ser bueno con la mejor, creo que esa sería la explicación, así que
+ bueno, eso fue todo y espero que les haya gustado.

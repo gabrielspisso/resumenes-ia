@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:07,080
+ Hola, mi nombre es Pablo Pitel y en este vídeo vamos a hablar de los tres procesos que
+
+2
+00:00:07,080 --> 00:00:12,920
+ se deben realizar al momento de aplicar Machine Learning para generar el modelo de un
+
+3
+00:00:12,920 --> 00:00:19,880
+ sistema inteligente. Como ya hemos visto Machine Learning, los permite generar un modelo
+
+4
+00:00:19,880 --> 00:00:25,400
+ a partir de un conjunto de datos. Este modelo que genera Machine Learning se dice que
+
+5
+00:00:25,400 --> 00:00:31,400
+ busca emular el comportamiento de los datos. Entonces, con este modelo, yo lo puedo
+
+6
+00:00:31,400 --> 00:00:38,240
+ ejecutar dentro del sistema inteligente para resolver un problema asociado a esos datos.
+
+7
+00:00:38,240 --> 00:00:45,160
+ Los datos que va a utilizar Machine Learning pueden venir de fuentes públicas o de fuentes
+
+8
+00:00:45,160 --> 00:00:50,920
+ privadas. Como ya hemos, yo puedo tener conocimientos privados que voy a reducir de la
+
+9
+00:00:50,920 --> 00:00:56,440
+ mente de una persona, por ejemplo, de un experto, o puedo utilizar información que
+
+10
+00:00:56,440 --> 00:01:02,200
+ ya está exteriorizado de publicada en algún medio de fuentes públicas.
+
+11
+00:01:02,200 --> 00:01:09,720
+ Lo importante es que estos datos que yo voy a tener, yo las pueda digitalizar en algún tipo
+
+12
+00:01:09,720 --> 00:01:16,360
+ de formato que la de gory no pueda aplicar. Tradicionalmente lo más utilizado con
+
+13
+00:01:16,360 --> 00:01:21,040
+ por los agorismo de Machine Learning son datos estructurados. Es decir, una tabla donde voy
+
+14
+00:01:21,040 --> 00:01:29,080
+ a tener columnas o tributos y filas o ejemplos para que el algoritmo puede generar el modelo.
+
+15
+00:01:29,080 --> 00:01:34,640
+ Pero, actualmente, también hemos podido tener datos que están en documentos, que están
+
+16
+00:01:34,640 --> 00:01:41,920
+ en preunillas de cálculo, que están en imágenes, en videos, en audios. Y hay algoritmo de Machine
+
+17
+00:01:41,920 --> 00:01:47,640
+ Learning que, a partir de sin formación, me va a permitir generar el modelo.
+
+18
+00:01:47,640 --> 00:01:53,520
+ Obviamente, no todos los algoritmos de Machine Learning soportan todos los formatos de datos.
+
+19
+00:01:53,520 --> 00:02:00,000
+ Y todos los formatos de datos son posibles, ser procesados por todos los algoritmos
+
+20
+00:02:00,000 --> 00:02:04,160
+ Machine Learning. En caso de necesarios, en el medio, yo voy a tener que hacer una
+
+21
+00:02:04,160 --> 00:02:09,640
+ preparación de los datos para llevarlo a lo que la algoritmo necesita.
+
+22
+00:02:09,640 --> 00:02:15,040
+ O yo tengo que buscar el algoritmo que soporta el tipo de datos que yo quiero utilizar.
+
+23
+00:02:15,040 --> 00:02:20,400
+ Siempre para generar el modelo que va a ser utilizado dentro del sistema de inteligente
+
+24
+00:02:20,400 --> 00:02:25,880
+ que va a resolver el programa. Entonces, bueno, eso va a depender de cada situación
+
+25
+00:02:25,880 --> 00:02:30,000
+ y de cada proyecto. Bien.
+
+26
+00:02:30,000 --> 00:02:34,320
+ Y esta construcción del modelo que nosotros lo vamos a hacer a través de la ejecución
+
+27
+00:02:34,320 --> 00:02:41,720
+ de la algoritmo de Machine Learning va a tomar el nombre del entrenamiento del modelo
+
+28
+00:02:41,720 --> 00:02:46,360
+ o del Trimin del modelo, como se lo suele decir en inglés.
+
+29
+00:02:46,360 --> 00:02:53,280
+ Donde lo que va a ser el ingeniero ahí es ejecutar un procedimiento que ya va a estar
+
+30
+00:02:53,280 --> 00:02:58,600
+ definido dentro de una librería, de un framework o de alguna herramienta.
+
+31
+00:02:58,600 --> 00:03:05,840
+ Le va a suministar el conjunto de datos y la ejecución de este algoritmo de entrenamiento
+
+32
+00:03:05,840 --> 00:03:11,240
+ me va a permitir generar el modelo. Este modelo va a tener un conjunto de valores
+
+33
+00:03:11,240 --> 00:03:19,800
+ definidos por el algoritmo que con una estructura relacionada me va a representar el comportamiento
+
+34
+00:03:19,800 --> 00:03:23,520
+ de esos ejemplos o datos que yo les suministre.
+
+35
+00:03:23,520 --> 00:03:28,400
+ Entonces, por ejemplo, si yo uso el algoritmo de induction, el modelo va a estar formado
+
+36
+00:03:28,400 --> 00:03:34,320
+ por una serie de reglas. Si yo uso una algoritmo de reglesión, lo que voy a generar es
+
+37
+00:03:34,320 --> 00:03:41,400
+ una fórmula matemática de un estilo. Si yo estoy utilizando un algoritmo de errores
+
+38
+00:03:41,400 --> 00:03:48,560
+ neuronales artificiales, el modelo va a estar formado por un errore neuronal y entrenada
+
+39
+00:03:48,560 --> 00:03:53,960
+ con sus pesos de conexiones. Entonces, depende del tipo de algoritmo que de uso me va a
+
+40
+00:03:53,960 --> 00:04:00,240
+ generar el modelo de core. Al momento de ejecutar el algoritmo, el ingeniero no tiene
+
+41
+00:04:00,240 --> 00:04:04,800
+ que implementar el algoritmo porque ya va a estar dado, pero lo que sí va a tener que
+
+42
+00:04:04,800 --> 00:04:12,820
+ hacer es modificar y definir obviamente con cuidado. ¿Cuáles son los valores de los
+
+43
+00:04:12,820 --> 00:04:17,520
+ parámetros que tienen el algoritmo? ¿Por qué? Porque el algoritmo lo va a definir alguien
+
+44
+00:04:17,520 --> 00:04:24,680
+ de la y a como siencia que va a estudiar ciertas formulas matemáticas, ciertas procedimientos,
+
+45
+00:04:24,680 --> 00:04:30,440
+ va a definir cómo se tiene que hacer para que se pueda generar el modelo de forma optima.
+
+46
+00:04:30,440 --> 00:04:39,760
+ Pero muchas veces, dejan cuestiones parametrizables para que en cada caso en cada proyecto
+
+47
+00:04:39,760 --> 00:04:47,040
+ en cada situación se puedan modificar esos parámetros para afectar el modelo que se
+
+48
+00:04:47,040 --> 00:04:55,040
+ genera. En algunos casos, hay parámetros que no tienen gran impacto en las resultados del modelo,
+
+49
+00:04:55,040 --> 00:05:00,240
+ pero en otros casos hay parámetros que si van a tener un gran impacto. Entonces, el ingeniero
+
+50
+00:05:00,240 --> 00:05:08,800
+ tiene que de alguna forma evaluar cada una de estos parámetros, ver quién pacto pueden
+
+51
+00:05:08,800 --> 00:05:17,680
+ tener considerar la característica de los datos disponibles y en base a eso determinar cómo debería
+
+52
+00:05:17,680 --> 00:05:22,480
+ ejecutar el algoritmo para generar el modelo.
+
+53
+00:05:22,480 --> 00:05:30,000
+ Esto obviamente va a afectar el trabajo del ingeniero porque hay veces que va a tener un modelo
+
+54
+00:05:30,000 --> 00:05:34,380
+ que funciona más o menos, hay veces que va a tener un modelo que funciona muy bien y hay
+
+55
+00:05:34,380 --> 00:05:39,140
+ veces que va a tener un modelo que funciona muy mal. Entonces, de alguna forma, el ingeniero
+
+56
+00:05:39,140 --> 00:05:45,700
+ va a tener que poder evaluar si el modelo aprendió correctable.
+
+57
+00:05:45,700 --> 00:05:53,860
+ Porque puede ser que el modelo funciona de la manera que debería funcionar, o sea, que
+
+58
+00:05:53,860 --> 00:06:00,980
+ tengan un comportamiento muy similar o identico al comportamiento del problema, pero
+
+59
+00:06:00,980 --> 00:06:09,900
+ de veces nos puede pasar a la derecha, que no, el estimación del modelo presenta bastante
+
+60
+00:06:09,900 --> 00:06:16,580
+ diferencias con el comportamiento normal. De hecho, nos puede pasar que para los ejemplos
+
+61
+00:06:16,580 --> 00:06:22,980
+ que nosotros les suministra mal, el modelo funciona bien, sería en estos puntos asules, pero
+
+62
+00:06:22,980 --> 00:06:27,340
+ para otros casos del modelo funciona muy mal. Ahí estaríamos diciendo que el modelo
+
+63
+00:06:27,340 --> 00:06:35,860
+ está sobre entrenado y que no generaliza de forma correcta. Bueno, ¿cómo puede hacer el ingeniero
+
+64
+00:06:35,860 --> 00:06:45,060
+ para evaluar esto? Porque el capaz que el ingeniero el modelo y no sabe si está en la situación
+
+65
+00:06:45,060 --> 00:06:51,920
+ de buena aprendizaje o mala aprendizaje. Para poder hacer esto, el ingeniero va a tener que
+
+66
+00:06:51,920 --> 00:07:01,040
+ ejecutar otros dos procesos. El proceso de valideración y el proceso de prueba. Validación
+
+67
+00:07:01,040 --> 00:07:06,680
+ que en inglés les suele llamar "validerion" es un proceso que se va a ejecutar en
+
+68
+00:07:06,680 --> 00:07:15,240
+ paralelo con el entrenamiento. Lo que va a buscar la validación es confirmar que los parámetros
+
+69
+00:07:15,240 --> 00:07:23,680
+ que nosotros estamos utilizando durante el entrenamiento están tratando de generar un modelo
+
+70
+00:07:23,680 --> 00:07:34,560
+ optimal. Entonces, en paralelo a ejecución del algoritmo de entrenamiento muchas veces se ejecuta
+
+71
+00:07:34,560 --> 00:07:43,080
+ esta validación que nos permite ver cómo se comporta el modelo con otros datos diferentes
+
+72
+00:07:43,080 --> 00:07:50,480
+ a los datos de entrenamiento. Una vez que el proceso de entrenamiento y validación finaliza,
+
+73
+00:07:50,480 --> 00:07:57,960
+ recién voy a realizar la prueba del modelo. ¿Por qué? Porque una vez que el proceso de entrenamiento
+
+74
+00:07:57,960 --> 00:08:06,200
+ finaliza, yo tengo ya mismo de lo cerrado, yo quiero ver de qué manera, mi modelo está
+
+75
+00:08:06,200 --> 00:08:14,000
+ funcionando para otras situaciones con otros datos y de esa manera puedo asegurar si tiene una
+
+76
+00:08:14,000 --> 00:08:21,160
+ buena capacidad de generalización. Es decir, que responde bien para otras situaciones. Entonces,
+
+77
+00:08:21,160 --> 00:08:27,360
+ fíjense que para poder realizar estos procesos de entrenamiento, validación y prueba,
+
+78
+00:08:27,360 --> 00:08:33,440
+ yo voy a tener que dividir mis datos entre con juntos. Voy a tener un conjunto de datos de
+
+79
+00:08:33,440 --> 00:08:39,960
+ entrenamiento, un conjunto de datos de validación y un conjunto de datos de prueba.
+
+80
+00:08:39,960 --> 00:08:51,700
+ Pueda ver datos de entrenamiento que se repitan con los datos de validación, pero con los
+
+81
+00:08:51,700 --> 00:08:58,520
+ datos de prueba no debería pasar. ¿Por qué? Yo quiero que los datos de prueba me permiten
+
+82
+00:08:58,520 --> 00:09:04,760
+ evaluar de verdad cómo generaliza el modelo. Si yo uso las mismos datos de entrenamiento para
+
+83
+00:09:04,760 --> 00:09:13,600
+ probar el modelo, no puedo asegurar nada. Es como que si en una materia de la facultad,
+
+84
+00:09:13,600 --> 00:09:22,280
+ el profesor le está para practicar ciertos problemas y en el examen le está en el examen,
+
+85
+00:09:22,280 --> 00:09:29,920
+ el un ejemplo idéntico, esos ejemplos que ustedes practicaron durante la cruzada. Entonces,
+
+86
+00:09:29,920 --> 00:09:35,240
+ que va a pasar. La gran mayoría le va a poder hacer bien porque si practico centreno,
+
+87
+00:09:35,240 --> 00:09:43,880
+ sabe cómo resolver ese caso. Pero el profesor no sabe si tiene la capacidad de adaptarse
+
+88
+00:09:43,880 --> 00:09:54,840
+ a nuevas habitaciones. No sabe si generaliza y logran resolver problemas con alguna variación
+
+89
+00:09:54,840 --> 00:10:02,600
+ a lo que ustedes practicara. Entonces, con Machine Learning, es muy importante hacer esta
+
+90
+00:10:02,600 --> 00:10:07,400
+ división de datos de entrenamiento, validación nipro. Los datos de entrenamiento tienen que
+
+91
+00:10:07,400 --> 00:10:12,440
+ ser la gran mayoría porque son las que van a permitir general modelo. Los datos de validación
+
+92
+00:10:12,440 --> 00:10:20,360
+ pueden ser poquitos porque yo quiero ver cómo va funcionando el entrenamiento y si los parámetros
+
+93
+00:10:20,360 --> 00:10:26,280
+ que estoy utilizando están respondiendo bien para generar un buen modelo. Y los datos de prueba
+
+94
+00:10:26,280 --> 00:10:31,240
+ tienen que ser una cantidad, no tanta como la entrenamiento, pero deberían ser más que la
+
+95
+00:10:31,240 --> 00:10:39,840
+ de validación para ver si el modelo generaliza correctamente. Con esta validación y prueba,
+
+96
+00:10:39,840 --> 00:10:47,440
+ a su vez, yo voy a tener que aplicar algunas formas para evaluar el funcionamiento del modelo.
+
+97
+00:10:47,440 --> 00:10:54,640
+ Entonces, ahí vamos a utilizar un conjunto de métricas que va a depender de el tipo de resultado
+
+98
+00:10:54,640 --> 00:10:55,680
+ que me genera el modelo.
+

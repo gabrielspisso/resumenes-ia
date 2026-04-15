@@ -1,0 +1,512 @@
+1
+00:00:00,000 --> 00:00:05,880
+ Hola, como están, mi nombre es Cynthia Avejera y lo que vamos a ver en este video
+
+2
+00:00:05,880 --> 00:00:12,040
+ tiene que ver con la segunda fase del proceso de implementación de sistemas inteligentes
+
+3
+00:00:12,040 --> 00:00:19,720
+ esta fase tiene que ver con lo que es la identificación y transformación de los datos
+
+4
+00:00:19,720 --> 00:00:28,240
+ que es entonces un dato, esto de que es información que se asucia el problema que yo ya identificé en la fase anterior
+
+5
+00:00:28,240 --> 00:00:36,160
+ que se encuentra generalmente en forma de una tabla, su su una estructura muy general que nosotros podemos encontrar
+
+6
+00:00:36,160 --> 00:00:44,840
+ una tabla que está formada por columnas o los llamados atributos y que también está formada por filas y ejemplos
+
+7
+00:00:44,840 --> 00:00:51,600
+ una columna es una propiedad o una característica de una instancia que se utiliza para resolver el problema
+
+8
+00:00:51,600 --> 00:01:00,600
+ puedo tener atributos de entrada, un atributo objetivo de clase y por el troblado las filas que son instancias de esos atributos
+
+9
+00:01:00,600 --> 00:01:09,080
+ y valores por lo tanto lo que yo ahora entonces voy a hacer es a partir de la alcance del proyecto
+
+10
+00:01:09,080 --> 00:01:19,040
+ en el cuayo de identificar los objetivos del proyecto y identificar el problema, los criterios de éxito y riesgo que tengo que tener en cuenta
+
+11
+00:01:19,040 --> 00:01:25,360
+ lo que voy a hacer es una recolección de los datos, una análisis de los mismos y una preparación
+
+12
+00:01:25,360 --> 00:01:30,880
+ para que me estirbo en para luego la implementación del sistema inteligente
+
+13
+00:01:30,880 --> 00:01:35,640
+ por lo tanto lo primero que voy a hacer es recolectar los datos disponibles
+
+14
+00:01:35,640 --> 00:01:42,520
+ a través como yo les decía de la alcance del proyecto, teniendo en cuenta el contexto de organización
+
+15
+00:01:42,520 --> 00:01:45,720
+ comenzaré con la recolección de los datos
+
+16
+00:01:45,720 --> 00:01:53,160
+ ¿Cuáles son las principales fuentes de datos? Bueno, los pueden encontrar estos datos en bases de datos transaccionales
+
+17
+00:01:53,160 --> 00:02:00,480
+ en planillas de cálculo, en los que se utilicen en diferentes procesos, en informes estadísticos
+
+18
+00:02:00,480 --> 00:02:09,560
+ puede ser que lo organización también utilice datos de acceso público, puede ser que los datos se han generado por otros sistemas inteligentes
+
+19
+00:02:09,560 --> 00:02:19,280
+ o por propias teorísticas del experto, y a través de esto voy recolectando todos los datos, ahora el momento de hacer esta recolección
+
+20
+00:02:19,280 --> 00:02:27,320
+ y del acceso a las fuentes de datos, lo que nosotros nos tenemos que preguntar es bueno, esos datos son confiables
+
+21
+00:02:27,320 --> 00:02:35,600
+ ¿Quiénes son los creadores de esos datos? Son datos que se modifican, quienes los modifican, quienes los usan
+
+22
+00:02:35,600 --> 00:02:43,520
+ tal vez son datos muy viejos, o son datos que se actualiza cada tanto y no son muy confiables
+
+23
+00:02:43,520 --> 00:02:50,480
+ es muy costoso acceder estos datos, os acueles, la utilidad de esos datos frente a mi proyecto
+
+24
+00:02:50,480 --> 00:02:59,840
+ por eso el recolectarlo yo tengo que considerar si tienen en cuenta lo que es la privacidad, lo que son cuestiones más operativas y técnicas
+
+25
+00:02:59,840 --> 00:03:09,880
+ siempre recomendable ir gestionando las versiones de los datos que yo voy recolectando, porque puede ser que una vez que yo analicipre para los datos
+
+26
+00:03:09,880 --> 00:03:15,680
+ me de cuenta que necesito más datos, por lo tanto tengo una nueva versión
+
+27
+00:03:15,680 --> 00:03:19,880
+ entonces siempre recomendable la gestión de los mismos
+
+28
+00:03:19,880 --> 00:03:27,480
+ una vez que yo recolecto estos datos, lo que voy a hacer es estudiarlos o sea analizar esos datos
+
+29
+00:03:27,480 --> 00:03:34,120
+ buscando que, buscando determinar, bueno, cuántos datos voy a necesitar para la implementación
+
+30
+00:03:34,120 --> 00:03:40,480
+ si tengo que usar todos los atributos o capaz utilizo solamente los atributos relevantes
+
+31
+00:03:40,480 --> 00:03:46,280
+ si los datos tienen ruido capaz, tienen muchos errores, tienen valores duplicados
+
+32
+00:03:46,280 --> 00:03:49,960
+ puede ser que tengan nulos que tenga valores sin definir
+
+33
+00:03:49,960 --> 00:03:57,440
+ y algo muy importante, si estos datos son, suficientemente representativos para cumplir el objetivo que me plante
+
+34
+00:03:57,440 --> 00:04:05,040
+ si, o si capaz los datos tienen algún cejo, un cejo que lo que luego me va a pasar es que
+
+35
+00:04:05,040 --> 00:04:12,760
+ estos datos después no sean representativos para mi problema, para esto conviene ir preparándolos
+
+36
+00:04:12,760 --> 00:04:21,440
+ y como conviene prepararlos, para poder estudiar estos datos se pueden usar técnicas estadísticas tradicionales
+
+37
+00:04:21,440 --> 00:04:28,640
+ algunos algoritmos propios de la minería de datos o también métodos a dos, uno de estos métodos
+
+38
+00:04:28,640 --> 00:04:36,520
+ es un método que nosotros propusimos que es un método que se base la técnica del emparrillado
+
+39
+00:04:36,520 --> 00:04:43,280
+ para poder evaluar estos datos que se aplican en el entrenamiento de algoritmo de Machine Learning
+
+40
+00:04:43,280 --> 00:04:51,040
+ este método que nosotros propusimos tiene dos etapas, un etapo donde se hace una confección de las parillas
+
+41
+00:04:51,040 --> 00:04:57,160
+ y una segunda etapa donde se hace la formalización y el análisis de las parillas
+
+42
+00:04:57,160 --> 00:05:04,760
+ ahí nosotros les dejamos si la URL por si quieren acceder al paper completo para poder leerlo
+
+43
+00:05:04,760 --> 00:05:08,400
+ dentro de lo que es la confección de las parillas
+
+44
+00:05:08,400 --> 00:05:14,400
+ nosotros tenemos algunas fases que realizar, por un lado vamos a preparar a los datos
+
+45
+00:05:14,400 --> 00:05:22,800
+ nos vamos a comentar, vamos a diseñar la parilla de elementos, vamos a diseñar la parilla de características
+
+46
+00:05:22,800 --> 00:05:28,840
+ ponderando los atributos que va a tener esa parilla y una vez que tenemos las parillas
+
+47
+00:05:28,840 --> 00:05:33,600
+ lo que vamos a hacer es justamente la segunda etapa de formalización
+
+48
+00:05:33,600 --> 00:05:37,880
+ bueno, hacer la clasificación de los elementos tal como uno en el parillado
+
+49
+00:05:37,880 --> 00:05:47,960
+ hacer la clasificación de las características, interpretar los resultados de los árboles y también discutir con el experto los resultados
+
+50
+00:05:47,960 --> 00:05:57,960
+ en este paper lo que nosotros hicimos fue utilizar ejemplo de las flores series que sonorían uniendas de Canadá
+
+51
+00:05:57,960 --> 00:06:06,280
+ este set de datos es muy utilizado en muchas publicaciones de los utilizó para generar diferentes modelos
+
+52
+00:06:06,280 --> 00:06:15,280
+ por eso nosotros lo veíamos como un repositorio que es muy bueno importante para poder tener un ejemplo de eso
+
+53
+00:06:15,280 --> 00:06:20,240
+ si para poder aplicar este método que habíamos propuesto
+
+54
+00:06:20,240 --> 00:06:27,760
+ para eso nosotros confeccionamos las parillas, la parilla de elementos lo que tenía eran las tres flores
+
+55
+00:06:27,760 --> 00:06:36,240
+ que este repositorio tenía y clasificaba que eran las iris que tenían que ver con centosa, versicolor y virigenia
+
+56
+00:06:36,240 --> 00:06:46,920
+ y también lo que vimos es las características que se han realizado que tenían que ver con el largo y el ancho del cepalo y el largo y el ancho del petalo
+
+57
+00:06:46,920 --> 00:06:55,680
+ para esto lo que nosotros fuimos haciendo para realizar la parilla de los elementos es utilizar estos mismos datos
+
+58
+00:06:55,680 --> 00:07:03,440
+ para poder armar una segmentación de los mismos a través de la RNA de cozon en som
+
+59
+00:07:03,440 --> 00:07:10,960
+ y también lo que hicimos es para hacer la parilla de características hacer una pondiración de los atributos
+
+60
+00:07:10,960 --> 00:07:18,560
+ a través de la algoritmo donde hay bayes, una vez que nosotros creamos estas parillas de elementos y de características
+
+61
+00:07:18,560 --> 00:07:22,560
+ luego lo que hicimos justamente es hacer la formalización
+
+62
+00:07:22,560 --> 00:07:29,200
+ o sea, sacamos las distancias y obtuvimos el arbol de elementos y de características
+
+63
+00:07:29,200 --> 00:07:38,560
+ si nosotros nos fijamos en el arbol de elementos tenemos dos grupos, uno formado por la siris versicolor y la siris virgenia
+
+64
+00:07:38,560 --> 00:07:41,840
+ y en el otro las iris se tosa
+
+65
+00:07:41,840 --> 00:07:54,280
+ respecto del arbol de características tenemos dos grupos el ancho del cepalo por un lado y el largo del cepalo junto con el largo y el ancho del petalo por otro
+
+66
+00:07:54,280 --> 00:08:02,040
+ que es entonces lo que hicimos esto se contrasta con lo que sería lo que piense el experto
+
+67
+00:08:02,040 --> 00:08:10,240
+ como en este momento no tenemos el experto que el experto es fíjara quien hizo este este de datos original
+
+68
+00:08:10,240 --> 00:08:17,640
+ lo que hicimos es ir viendo las el análisis de las diferentes publicaciones que hicieron a través de los datos
+
+69
+00:08:17,640 --> 00:08:23,200
+ a ver si nos habían dado seguir los grupos correctos de elementos y características
+
+70
+00:08:23,200 --> 00:08:31,640
+ nos dimos cuenta que respecto de los grupos de los elementos estaba correcto pero respecto de los grupos de características no
+
+71
+00:08:31,640 --> 00:08:38,720
+ porque mientras el largo y el ancho del petalo estaban relacionados el largo del cepalo no era así
+
+72
+00:08:38,720 --> 00:08:45,000
+ que hicimos entonces una vez que comprobamos que nuestro método era valido
+
+73
+00:08:45,000 --> 00:08:54,400
+ o sea que no teníamos un error de cuentas ni nada por el estilo lo que hicimos es utilizar el repositorioli original de fíjaro
+
+74
+00:08:54,400 --> 00:09:03,800
+ sí que lo estableció en 1936 que tenía algunas diferencias en valores en las diferentes tuplas que hayamos analizado
+
+75
+00:09:03,800 --> 00:09:13,800
+ y realizamos el mismo procedimiento en este caso una vez que contrastamos con lo que los diferentes investigadores en sus publicaciones
+
+76
+00:09:13,800 --> 00:09:23,880
+ fueron analizando nos dimos cuenta que ahora sí los elementos estaban bien si ustedes ven es el mismo árbol de elementos
+
+77
+00:09:23,880 --> 00:09:30,320
+ pero en cuanto a las características ahora sí estaban relacionados el largo del petalo y el ancho
+
+78
+00:09:30,320 --> 00:09:34,200
+ y no hacía el largo del cepalo y el ancho del cepalo
+
+79
+00:09:34,200 --> 00:09:39,160
+ por lo tanto nos dimos cuenta que se primerce de datos no era representativo
+
+80
+00:09:39,160 --> 00:09:44,640
+ y con los datos originales de fíjaro nos dio que el set sí era representativo
+
+81
+00:09:44,640 --> 00:09:54,040
+ por lo tanto este sumeto que se puede utilizar parir obteniendo eso para poder saber si los datos que yo voy a utilizar después en el sistema inteligente
+
+82
+00:09:54,040 --> 00:10:01,760
+ no tienen algún sejo que después se llama lo para mí porque el sistema no va a dar el resultado que yo quiero
+
+83
+00:10:01,760 --> 00:10:05,000
+ ni el resultado correcto deamente
+
+84
+00:10:05,000 --> 00:10:13,760
+ una vez que nosotros estudiamos los datos los analizamos vemos que son representativos lo que vamos a hacer es preparar estos datos
+
+85
+00:10:13,760 --> 00:10:18,480
+ lo vamos a integrar, formatiar y limpiar
+
+86
+00:10:18,480 --> 00:10:24,720
+ el cuidado que tenemos que tener con esto es que es una etapa que nos puede consumir mucho esfuerzo
+
+87
+00:10:24,720 --> 00:10:30,480
+ por lo tanto es una etapa que lo que conviene es poder planificarla
+
+88
+00:10:30,480 --> 00:10:36,960
+ por ejemplo como recomendación podemos proponer el diseñar estas acciones que se van a realizar
+
+89
+00:10:36,960 --> 00:10:46,640
+ el desarrollo de una forma lo más automático posible y el probarlo para asegurarse que cumplan lo que yo estoy decían
+
+90
+00:10:46,640 --> 00:10:52,560
+ en cuanto a la integración es poder unificar los datos en una sola tabla
+
+91
+00:10:52,560 --> 00:11:01,600
+ de tal manera de que me facilite el uso de estos datos siguen sí mismos y no tener los todos repartidos
+
+92
+00:11:01,600 --> 00:11:08,240
+ luego tengo la limpieza que mucho de estos te ya usaron para el trabajo práctico cuando hicieron redes neuronales
+
+93
+00:11:08,240 --> 00:11:16,160
+ o algoritmos genéticos tuvieron que trabajar mucho con los datos la limpieza lleva a ver si estos datos
+
+94
+00:11:16,160 --> 00:11:24,960
+ no tienen nulos o están en completos o capas que tienen muchos errores o ruido tanto en las colunes como en las filas
+
+95
+00:11:24,960 --> 00:11:32,400
+ por lo tanto como posibles acciones puede ser bueno asignar un nuevo valor teniendo en cuenta un promedio
+
+96
+00:11:32,400 --> 00:11:39,920
+ o mínimo o máximo o capas comiene directamente eliminar el ejemplo o el atributo si es que no
+
+97
+00:11:39,920 --> 00:11:47,680
+ influye después si en todo lo que va a hacer el análisis que voy a hacer en cuanto a lo que es el formativo
+
+98
+00:11:47,680 --> 00:11:54,320
+ lo que me puede pasar es que yo tenga atributos continúas si que sean atributos numericos o
+
+99
+00:11:54,320 --> 00:12:01,200
+ valores vinarias números enteros números condecimales puedo tener atributos discretos no en un
+
+100
+00:12:01,200 --> 00:12:10,480
+ médico como valores logicos al fenúmericos la fechiladora en este caso lo que podemos crear son nuevos atributos
+
+101
+00:12:10,480 --> 00:12:17,360
+ podemos cambiar el tipo de valor podemos normalizar los o capas representar alguna combinación
+
+102
+00:12:17,360 --> 00:12:24,720
+ entre otros atributos en cuanto a lo que es el formativo por ejemplo si yo quiero hacer el cambio entre
+
+103
+00:12:24,720 --> 00:12:30,480
+ los tipos de valores a mí lo que me puede pasar es que tenga un atributo continúas que lo quiero
+
+104
+00:12:30,480 --> 00:12:36,800
+ convertir en un atributo discreto entonces lo que puedo hacer es discretizar en rangos definidos
+
+105
+00:12:36,800 --> 00:12:45,360
+ manualmente o en rangos que tienen igual longitud o cantidad de ejemplos o teniendo un puente una
+
+106
+00:12:45,360 --> 00:12:52,560
+ atributo objetivo o sea son diferentes formas si de convertir un atributo continúan un atributo discreto
+
+107
+00:12:53,680 --> 00:12:59,520
+ si yo tengo un atributo discreto por ejemplo al fenúmerico lo puedo también convertir si necesito en
+
+108
+00:12:59,520 --> 00:13:06,800
+ un atributo continúo entonces puedo asignarle un código en un médico único a cada valor o alguna
+
+109
+00:13:06,800 --> 00:13:12,640
+ atributo vinario para cada uno de esos valores si yo tengo un atributo discreto que tiene que
+
+110
+00:13:12,640 --> 00:13:18,800
+ ver con la fecha y la hora también capaz lo necesito tener en un atributo continúo entonces lo
+
+111
+00:13:18,800 --> 00:13:25,840
+ puedo separar en elementos más simples o sea tener el día el mes el año la hora los minutos
+
+112
+00:13:25,840 --> 00:13:32,880
+ los segundos o hacer un cálculo de la cantidad de años de meses de día si desde un momento
+
+113
+00:13:32,880 --> 00:13:41,360
+ definido o simplemente representar la fecha y asignarle diferentes códigos numericos por ejemplo el
+
+114
+00:13:41,360 --> 00:13:46,640
+ día de la semana si su fin es semana un feriado o la estación del año
+
+115
+00:13:48,240 --> 00:13:54,720
+ también puedo hacer una normalización que esto segura lo utilizar en un montón sin para poder
+
+116
+00:13:54,720 --> 00:14:02,560
+ normalizar estos atributos numericos por lo tanto son cosas que yo puedo ir teniendo en cuenta en lo que
+
+117
+00:14:02,560 --> 00:14:09,920
+ tiene que ver con la preparación de los datos entonces en este proceso propuesto en esta segunda fase
+
+118
+00:14:09,920 --> 00:14:16,560
+ lo que vimos es como recolectar los datos disponibles como analizar los datos disponibles
+
+119
+00:14:16,560 --> 00:14:19,520
+ y como prepararlos
+
+120
+00:14:19,520 --> 00:14:27,600
+ por lo tanto teniendo en cuenta el alcance del proyecto con los objetivos que se plantearon el problema
+
+121
+00:14:27,600 --> 00:14:34,240
+ definido en la primera fase los criterios de éxito y los riesgos lo que yo yo voy a hacer entonces
+
+122
+00:14:34,240 --> 00:14:40,000
+ es una recolección de los datos una análisis y una preparación
+
+123
+00:14:40,000 --> 00:14:46,480
+ obviamente lo que me puede pasar es que una despreparados me de cuenta que la analizar los me faltaron algunos
+
+124
+00:14:46,480 --> 00:14:53,280
+ datos y debo volver a hacer una recolección por lo tanto su neta pa que va enterando hasta que yo
+
+125
+00:14:53,280 --> 00:14:59,280
+ ya me sienta conforme con los datos que tengos para poder pasar a la etapa siguiente
+
+126
+00:14:59,280 --> 00:15:08,320
+ obviamente que también es opcional porque solo esto ocurre si yo tengo datos disponibles en mi organización
+
+127
+00:15:09,520 --> 00:15:16,880
+ así que bueno con esto vimos la segunda fase acerca de la implementación de sistemas inteligentes
+
+128
+00:15:16,880 --> 00:15:25,200
+ en los próximos vídeos veremos las próximas etapas bueno espero que estén bien muchas gracias y nos vemos
+

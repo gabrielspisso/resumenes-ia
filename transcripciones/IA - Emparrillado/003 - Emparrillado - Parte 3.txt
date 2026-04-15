@@ -1,0 +1,62 @@
+ Hola, mi nombre es Maria Florencia Pollo y vamos ahora a pasarla la última parte de la técnica
+ de embarillado. Bien, estamos por la última fase que es la interpretación guanalicígena
+ resultados. Esta última etapa tiene dos subetapas. La primera etapa es el analicicinincusión
+ de los árboles ordenados, recuerden que habíamos armado un árbol de elementos y un árbol
+ de carácterística. Bueno, los gráficamos sin nada más, ahora vamos a hacer un análisis de esos
+ elementos. Y después por otro lado, en la siguiente subetapa vamos a hablar de posibles relaciones
+ entre las características a partir de un texto que me darían en el enunciado. Bien. Entonces,
+ dentro de la análisis discusión de los árboles, hemos dos actividades que por un lado es el análisis de el árbol de los elementos,
+ atento a las mínimas distancias y otro relacionado con las características dos árboles. Yo les traje a
+ hablar porque habíamos generado a partir del trabajo sobre las matrices y lo que podemos decir es lo siguiente.
+ ¿Qué en el árbol se observan dos grupos? Esto se observa sin plebista. El primer grupo formado por los
+ elementos E1 y E4 y el segundo formado por los elementos E2 y E3. Los elementos E1 y E4 son
+ similares de hecho se vinculan en una distancia de 2, ya que tienen una distancia de 2 para el punto de vista del
+ experto y los elementos E2 y E3 son similares en un nivel de 3 para la visión del experto,
+ también. Esto es lo que podríamos decir en relación a este árbol de elementos. 2 grupos E1 y E4 y E3 y
+ la similitud y el nivel de conexión de cada uno de los elementos entre sí de los grupos. En relación al
+ otro árbol, yo terminamos con el análisis del árbol de elementos, vamos a pasar a analizar el árbol de
+ características. Acá observamos tres grupos. El primer grupo está formado por C1 y C2.
+ El segundo grupo está formado por el elemento E4 y el otro grupo por el elemento E3. Las características
+ que son similares son las E1 y C2, desde el punto de vista del experto, ya que tienen una distancia
+ de 1. Esto es lo que podríamos decir en relación a árbol de características. Bien, una vez que
+ terminamos con los análisis de los árboles, vamos a pasar a la subetapados que es la red de relaciones
+ entre características. Para ello, lo que tenemos que ver es a partir de un texto que nos darían en el
+ enunciado, ver si las características que se relacionan se encuentran dentro de algunas de las relaciones
+ típificadas. Nosotros, como relaciones típificadas, tenemos para la Ley, resiproca,
+ hortigona, hortagonal y ambiguante. Quiere decir que es posible que, que se pueda plantear
+ otros tipos de relaciones que generen otros gráficos, pero si esos gráficos que generan
+ no están dentro de las relaciones que nosotros tenemos para estudiar, decimos relación
+ notificadas. Y otra cosa importante, solamente se pueden relacionar características que
+ armen un grupo. Está en nuestra ejemplo, serían según y sedos. Sin el texto, le dan una relación
+ entre 3 y 4, dicen que esa relación no es valida porque no se están relacionando características
+ que pertenecan a un grupo. Estamos. Así que bueno, ahora vamos a salir del ejemplo, ver
+ las distintas relaciones que hay, se los vamos a mostrar graficamente, después con el ejemplo
+ van a ver ustedes que es muy fácil de hacer el match entre el texto y las características.
+ Las relaciones de las características las van a tener en el webcampos en una pp a parte,
+ pero yo sé las traduje también acá. Encas son las relaciones posibles que podemos tener,
+ fíjense la relación para la Ley, se relacionan características de a pares. Entonces,
+ por ejemplo, se uno con sedos o séquicos, se irinporta, pero que teníamos los polos, uno
+ toma los polos tal cual como nos los diero y deberían relacionarse en el texto un polo con el
+ otro de hida o de vuelta, a fíjense que es un lado, la resípro que atendría que tener
+ la hida y la vuelta, ni en la autogonal, no, a esta diferencia, estos son gráficos para que
+ bien, ahora lo vamos a ver en el texto como se ve, es bastante simple. Después está la relación
+ a mi igual que es bastante cuarenta el gráfico que da para con el texto que debería representar.
+ Después ahí tendríamos todas las opciones, bien. Vamos a ver en el texto como sería
+ el ejemplo. Nosotros le decimos, en las observaciones realizadas a diferentes pacientes
+ se puede apreciar que aquellos coronavirus que se manifestan, con frecuencia respiratorialta,
+ que caracterizan por presentarse con fíbrer alta también, mientras que en aquellos casos que se
+ manifiesta, con frecuencia respiratoria baja, poseen fiebre baja también. Entonces, lo que podemos
+ ver en el texto rápidamente es que habla de una frecuencia respiratoria alta y baja, a que
+ están los polos, los nosotros se los ponemos bien claro para que lo vean y de una fiebre
+ alta y de una fiebre baja. Entonces, acá está relacionando la característica uno con la
+ característica dos que si nosotros vamos, la característica una y la característica dos armaba
+ en un grupo. Entonces, es valida esta relación. Entonces, vamos a ver si se encuentra dentro
+ de alguna de las típicas. Entonces, lo que hacemos es el sé que es lo que decía el texto,
+ y la frecuencia respiratoria alta, la fiebre alta. Si la frecuencia respiratoria baja,
+ la fiebre baja. Entonces, estoy poniendo, ve que está exactamente igual como viene puesto,
+ este gráfico a que responde a una relación paralelo. Entonces, yo voy a decir que hay una relación
+ paralela entre c1 y c2. Esta, los otros gráficos deberían dar alguna de las otras posibilidades,
+ y si no da ninguna de las típicas se pone relación notipificada. Esta, a partir de esto,
+ terminamos ya con la explicación de la técnica de emparrillado, espero que no se haya
+ ocurrido. Y bueno, nos vemos pronto en alguna otra vida explicada alguna, alguna otra técnica,
+ alguna otra, alguna, alguna otra proceso. Les mando un beso y cuidense. ¡Hasta luego!
