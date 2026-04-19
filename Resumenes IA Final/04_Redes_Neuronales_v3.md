@@ -12,7 +12,7 @@ Sistema de cómputo inspirado en el cerebro biológico formado por **neuronas ar
 - **Inteligencia Computacional:** inspiración biológica
 - **Machine Learning:** aprenden automáticamente de ejemplos
 
-**Ventajas:** Aprendizaje adaptativo · Autoorganización · Tolerancia a fallos · Operación en tiempo real
+**Ventajas:** Aprendizaje adaptativo · Autoorganización · Tolerancia a fallos · Operación en tiempo real · Fácil inserción en tecnología existente
 
 ---
 
@@ -103,11 +103,15 @@ Sistema de cómputo inspirado en el cerebro biológico formado por **neuronas ar
 | Softmax (múltiples clases) | **CrossEntropy** |
 
 **Topología (neuronas ocultas):**
+- **Teorema de Aproximación Universal:** existe una red suficientemente grande para aprender cualquier conjunto de datos con el grado de precisión deseado, pero **no indica cuántas capas ni neuronas** hacen falta
 - 1 capa oculta: suficiente para la mayoría · 2 capas: aprende más rápido
+- **Más de 3 capas puede dificultar el ajuste de pesos en las capas más profundas**
 - No hay regla general → prueba y corrección, o usar AG
 
+**Pesos iniciales:** entre 0 y 0.5, **inicializados al azar y distintos entre neuronas de la misma capa** para "romper simetrías" y evitar que aprendan lo mismo.
+
 **Si la red no aprende → en orden:**
-1. Normalizar datos · 2. Modificar alfa · 3. Cambiar pesos iniciales · 4. Cambiar orden de patrones · 5. Agregar neuronas/capas
+1. Normalizar datos · 2. Modificar alfa · 3. Cambiar pesos iniciales · 4. Cambiar orden de patrones · 5. Agregar neuronas/capas · 6. Revisar los datos de los patrones de entrenamiento
 
 **Ciclos de entrenamiento:**
 - Pocos → **underfitting** (no terminó de aprender) · Demasiados → **overfitting** (memoriza, no generaliza)
@@ -152,7 +156,7 @@ Una imagen 200×200 px = 40.000 entradas. Con 4.000 neuronas ocultas → **160 m
 | Etapa | Qué hace |
 |-------|---------|
 | **1. Convolución** | Filtro F×F se desliza por la imagen (stride) → genera el feature map. Con k filtros: solo `k × F × F` pesos |
-| **2. Detector (activación)** | Aplica función no lineal al feature map → generalmente **ReLU** |
+| **2. Detector (activación)** | Aplica función no lineal al feature map → sigmoidal, tanh o **ReLU** (la más recomendada actualmente) |
 | **3. Pooling (reducción)** | Reduce dimensiones. **Max Pooling** (toma el máximo de cada región 2×2) — el más usado |
 
 > Los valores de los filtros **se aprenden durante el entrenamiento** (son los pesos que ajusta backprop).
